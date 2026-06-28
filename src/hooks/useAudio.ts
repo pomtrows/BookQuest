@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { useGameStore } from '../store/gameStore';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
@@ -8,14 +8,28 @@ export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
   const { isCombatActive, combatVictory, character } = useGameStore();
 
-  // Handle source changes and global play state
+  // 1. Initialize and cleanup Audio element on mount/unmount
   useEffect(() => {
     if (!audioRef.current) {
       audioRef.current = new Audio();
       audioRef.current.loop = true;
     }
 
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.removeAttribute('src');
+        audioRef.current.load();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  // 2. Handle source changes based on game state
+  useEffect(() => {
     const audio = audioRef.current;
+    if (!audio) return;
+
     let newSrc = '';
     let shouldLoop = true;
 
@@ -35,49 +49,45 @@ export const useAudio = (appState: AppState) => {
       }
     }
 
-    // Only change source if it's different
     if (!audio.src.endsWith(newSrc)) {
       audio.src = newSrc;
       audio.loop = shouldLoop;
-      audio.muted = isMuted; // Ensure it stays muted
+      audio.muted = isMuted; 
       
       if (!isMuted) {
-        audio.play().catch(e => {
-          console.log('Audio autoplay blocked by browser policy. Interaction required.', e);
+        audio.play().catch(() => {
+          // Autoplay policy expected block
         });
       }
     }
-
-    return () => {
-      // Cleanup is handled by the overall component lifecycle
-    };
   }, [appState, isCombatActive, combatVictory, character?.endurance, isMuted]);
 
-  // Handle muting specifically
+  // 3. Handle muting specifically
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.muted = isMuted;
-      if (isMuted) {
-        audioRef.current.pause();
-      } else {
-        // Only try to play if it has a source
-        if (audioRef.current.src) {
-          audioRef.current.play().catch(() => {});
-        }
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.muted = isMuted;
+    if (isMuted) {
+      audio.pause();
+    } else {
+      if (audio.src) {
+        audio.play().catch(() => {});
       }
     }
   }, [isMuted]);
 
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-  };
+  const toggleMute = useCallback(() => {
+    setIsMuted(prev => !prev);
+  }, []);
 
-  // Expose a function to manually trigger play (e.g., after first click)
-  const playAudio = () => {
-    if (audioRef.current && audioRef.current.paused && !isMuted) {
-      audioRef.current.play().catch(() => {});
+  // 4. Handle manual play on user interaction
+  const playAudio = useCallback(() => {
+    const audio = audioRef.current;
+    if (audio && audio.paused && !isMuted && audio.src) {
+      audio.play().catch(() => {});
     }
-  };
+  }, [isMuted]);
 
   return { playAudio, isMuted, toggleMute };
 };
