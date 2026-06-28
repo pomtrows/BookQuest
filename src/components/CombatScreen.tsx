@@ -25,6 +25,20 @@ const HealthBar = ({ current, max }: { current: number, max: number }) => {
   );
 };
 
+const D10Icon = ({ number, rolling }: { number: number | string, rolling: boolean }) => (
+  <div className={`relative w-24 h-24 mb-4 flex items-center justify-center ${rolling ? 'animate-dice-tumble' : ''}`} style={rolling ? { transformStyle: 'preserve-3d' } : {}}>
+    <svg viewBox="0 0 100 100" className={`absolute inset-0 w-full h-full text-[#d4af37] ${rolling ? '' : 'drop-shadow-2xl'}`} style={!rolling ? { filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.5))' } : {}}>
+      <polygon points="50,5 95,40 50,95 5,40" stroke="currentColor" strokeWidth="4" fill="#1e1e1e" />
+      <polygon points="50,5 50,95 95,40" stroke="currentColor" strokeWidth="2" fill="rgba(255,255,255,0.05)"/>
+      <polygon points="50,5 5,40 50,95" stroke="currentColor" strokeWidth="2" fill="rgba(0,0,0,0.2)"/>
+      <polygon points="50,5 75,35 50,85 25,35" stroke="currentColor" strokeWidth="3" fill="#2a2a2a" />
+    </svg>
+    <span className="relative z-10 text-5xl font-bold text-white mt-2" style={{ fontFamily: 'Cinzel, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+      {number}
+    </span>
+  </div>
+);
+
 export function CombatScreen() {
   const { 
     currentSectionId, 
@@ -131,9 +145,7 @@ export function CombatScreen() {
         <div className="w-1/3 flex flex-col items-center justify-center pb-8">
           <div className="text-4xl font-bold text-red-600 mb-6" style={{ fontFamily: 'Cinzel, serif' }}>VS</div>
           
-          <div className={`w-24 h-24 bg-gray-800 border-4 border-[#d4af37] rounded-xl flex items-center justify-center shadow-2xl mb-4 ${diceRolling ? 'animate-shake' : ''}`}>
-            <span className="text-5xl font-bold text-white drop-shadow-md" style={{ fontFamily: 'Cinzel, serif' }}>{currentFace}</span>
-          </div>
+          <D10Icon number={currentFace} rolling={diceRolling} />
 
           {!combatVictory && (
             <button 
