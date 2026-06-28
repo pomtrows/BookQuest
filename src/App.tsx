@@ -165,11 +165,11 @@ function App() {
 
           {showInventory && (
             <div className="absolute top-0 right-0 w-full md:w-96 h-full bg-[#1e1e1e] border-l border-[#333333] overflow-y-auto z-50 shadow-2xl flex flex-col">
-              <div className="p-4 border-b border-[#333333] flex justify-between items-center sticky top-0 bg-[#1e1e1e] z-10">
-                 <h2 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
+              <div className="p-4 border-b border-[#333333] flex justify-end items-center sticky top-0 bg-[#1e1e1e] z-10 relative">
+                 <h2 className="text-xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
                  <div 
                    onClick={() => setShowInventory(false)} 
-                   className="text-[#d4af37] hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors cursor-pointer"
+                   className="text-[#d4af37] hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors cursor-pointer relative z-10"
                    role="button"
                  >
                    <X size={24} strokeWidth={2} />
