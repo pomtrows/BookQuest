@@ -70,7 +70,7 @@ function App() {
             )}
             <button 
               onClick={() => handleStateChange('RULES')}
-              className="choice-btn text-center text-xl bg-black/50"
+              className="choice-btn text-center text-xl bg-[#1e1e1e]/90 hover:bg-[#2a2a2a] border-[#d4af37]/60 text-[#d4af37] transition-all"
             >
               Règles du Jeu
             </button>
