@@ -43,7 +43,7 @@ interface GameStore extends GameState {
 
 const initialState = {
   character: null,
-  currentSectionId: '1',
+  currentSectionId: 'prologue',
   history: [],
   isCombatActive: false,
   currentEnemies: [],
@@ -76,7 +76,7 @@ export const useGameStore = create<GameStore>()(
       },
 
       startNewGame: (character) => {
-        set({ ...initialState, character, currentSectionId: '1' });
+        set({ ...initialState, character, currentSectionId: 'prologue' });
       },
 
       loadGame: () => {},
