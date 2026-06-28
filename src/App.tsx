@@ -48,7 +48,7 @@ function App() {
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
           <div className="relative z-10 text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Loup Solitaire</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Book Quest</h1>
             <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Loup Solitaire: Les Maîtres des Ténèbres</h2>
           </div>
 
@@ -94,68 +94,10 @@ function App() {
               >
                 <Menu size={24} />
               </div>
-              
-              {showDropdownMenu && (
-                <>
-                  <div 
-                    className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" 
-                    onClick={() => setShowDropdownMenu(false)}
-                  ></div>
-                  <div className="fixed top-0 left-0 bottom-0 w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
-                    
-                    {/* Header */}
-                    <div className="flex items-center justify-center h-20 px-6 border-b border-gray-800/60 relative">
-                      <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
-                      <h2 className="text-xl md:text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
-                        Loup Solitaire
-                      </h2>
-                    </div>
-                    
-                    {/* Main Menu Items */}
-                    <div className="flex-1 px-4 py-6 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
-                      <button 
-                        onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
-                        className="sidebar-btn group"
-                      >
-                        <ScrollText size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-                        <span className="font-medium text-[15px] tracking-wide">Feuille d'Aventure</span>
-                      </button>
-                      
-                      <button 
-                        onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
-                        className="sidebar-btn group"
-                      >
-                        <BookOpen size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-                        <span className="font-medium text-[15px] tracking-wide">Règles du jeu</span>
-                      </button>
-                      
-                      <button 
-                        onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
-                        className="sidebar-btn group"
-                      >
-                        <Home size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-                        <span className="font-medium text-[15px] tracking-wide">Menu Principal</span>
-                      </button>
-                    </div>
-
-                    {/* Bottom Settings */}
-                    <div className="p-4 border-t border-gray-800/60 bg-[#0d0d10] mt-auto">
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
-                        className="sidebar-btn group rounded-xl border-l-0 hover:border-l-0 hover:bg-white/5"
-                        style={{ borderRadius: '0.75rem' }}
-                      >
-                        {isMuted ? <VolumeX size={20} strokeWidth={1.5} /> : <Volume2 size={20} strokeWidth={1.5} />} 
-                        <span className="font-medium text-[15px] tracking-wide">{isMuted ? "Activer le son" : "Couper le son"}</span>
-                      </button>
-                    </div>
-                  </div>
-                </>
-              )}
             </div>
             
-            <h1 className="text-xl md:text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
-              Loup Solitaire
+            <h1 className="text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>
+              Book Quest
             </h1>
           </div>
           
@@ -177,6 +119,64 @@ function App() {
               </div>
               <Inventory />
             </div>
+          )}
+
+          {showDropdownMenu && (
+            <>
+              <div 
+                className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" 
+                onClick={() => setShowDropdownMenu(false)}
+              ></div>
+              <div className="fixed top-0 left-0 bottom-0 w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
+                
+                {/* Header */}
+                <div className="flex items-center justify-center h-20 px-6 border-b border-gray-800/60 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
+                  <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
+                    Book Quest
+                  </h2>
+                </div>
+                
+                {/* Main Menu Items */}
+                <div className="flex-1 px-4 py-6 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
+                  <button 
+                    onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <ScrollText size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Feuille d'Aventure</span>
+                  </button>
+                  
+                  <button 
+                    onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <BookOpen size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Règles du jeu</span>
+                  </button>
+                  
+                  <button 
+                    onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <Home size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Menu Principal</span>
+                  </button>
+                </div>
+
+                {/* Bottom Settings */}
+                <div className="p-4 border-t border-gray-800/60 bg-[#0d0d10] mt-auto">
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
+                    className="sidebar-btn group rounded-xl border-l-0 hover:border-l-0 hover:bg-white/5"
+                    style={{ borderRadius: '0.75rem' }}
+                  >
+                    {isMuted ? <VolumeX size={20} strokeWidth={1.5} /> : <Volume2 size={20} strokeWidth={1.5} />} 
+                    <span className="font-medium text-[15px] tracking-wide">{isMuted ? "Activer le son" : "Couper le son"}</span>
+                  </button>
+                </div>
+              </div>
+            </>
           )}
         </div>
       )}
