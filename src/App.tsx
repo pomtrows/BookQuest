@@ -15,31 +15,41 @@ function App() {
   return (
     <div className="min-h-screen bg-[#121212] text-[#e4d5b7] font-sans">
       {appState === 'MENU' && (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37' }}>Book Quest</h1>
-            <h2 className="text-2xl md:text-3xl text-gray-400">Loup Solitaire: Les Maîtres des Ténèbres</h2>
+        <div 
+          className="flex flex-col items-center justify-center min-h-screen p-4 relative"
+          style={{
+            backgroundImage: "url('/images/title_bg.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          {/* Overlay gradient to darken the background and make text readable */}
+          <div className="absolute inset-0 bg-black bg-opacity-60 bg-gradient-to-t from-black via-transparent to-black"></div>
+          
+          <div className="relative z-10 text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)' }}>Book Quest</h1>
+            <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Loup Solitaire: Les Maîtres des Ténèbres</h2>
           </div>
 
-          <div className="flex flex-col gap-4 w-full max-w-md">
+          <div className="relative z-10 flex flex-col gap-4 w-full max-w-md backdrop-blur-sm bg-black/30 p-8 rounded-xl border border-[#d4af37]/30 shadow-2xl">
             <button 
               onClick={() => setAppState('CREATION')}
-              className="primary-btn text-xl py-3"
+              className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
             >
               Nouvelle Partie
             </button>
             {character && (
               <button 
                 onClick={() => setAppState('GAME')}
-                className="primary-btn text-xl py-3 bg-[#1e1e1e] text-[#d4af37] border border-[#d4af37]"
-                style={{ backgroundColor: '#1e1e1e', color: '#d4af37' }}
+                className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                style={{ backgroundColor: 'rgba(30, 30, 30, 0.8)', color: '#d4af37', borderColor: '#d4af37' }}
               >
                 Continuer l'Aventure
               </button>
             )}
             <button 
               onClick={() => setAppState('RULES')}
-              className="choice-btn text-center text-xl"
+              className="choice-btn text-center text-xl bg-black/50"
             >
               Règles du Jeu
             </button>
