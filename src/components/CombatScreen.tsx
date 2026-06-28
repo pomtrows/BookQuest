@@ -55,6 +55,8 @@ export function CombatScreen() {
   const [diceRolling, setDiceRolling] = useState(false);
   const [currentFace, setCurrentFace] = useState(0);
   const [showDamage, setShowDamage] = useState(false);
+  const [playerShake, setPlayerShake] = useState(false);
+  const [enemyShake, setEnemyShake] = useState(false);
   
   const lastRoundCount = useRef(combatRounds.length);
 
@@ -63,10 +65,21 @@ export function CombatScreen() {
     if (combatRounds.length > lastRoundCount.current) {
       setShowDamage(true);
       const timer = setTimeout(() => setShowDamage(false), 1500);
+      
+      const lastRound = combatRounds[combatRounds.length - 1];
+      if (lastRound.playerDamage > 0) {
+        setPlayerShake(true);
+        setTimeout(() => setPlayerShake(false), 300);
+      }
+      if (lastRound.enemyDamage > 0) {
+        setEnemyShake(true);
+        setTimeout(() => setEnemyShake(false), 300);
+      }
+      
       lastRoundCount.current = combatRounds.length;
       return () => clearTimeout(timer);
     }
-  }, [combatRounds.length]);
+  }, [combatRounds]);
 
   if (!character || !enemy) return null;
 
@@ -130,7 +143,7 @@ export function CombatScreen() {
         {/* Player Side */}
         <div className="w-1/3 flex flex-col items-center">
           <div className="relative">
-            <div className="w-32 h-32 rounded border-2 border-[#d4af37] overflow-hidden mb-4 shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+            <div className={`w-32 h-32 rounded border-2 border-[#d4af37] overflow-hidden mb-4 shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-all ${playerShake ? 'animate-damage-shake' : ''}`}>
               <img src={character.avatar || '/images/avatars/avatar_1.png'} alt="Player" className="w-full h-full object-cover" />
             </div>
             {showDamage && latestRound && latestRound.playerDamage > 0 && (
@@ -190,7 +203,7 @@ export function CombatScreen() {
         {/* Enemy Side */}
         <div className="w-1/3 flex flex-col items-center">
           <div className="relative">
-            <div className="w-32 h-32 rounded border-2 border-red-700 overflow-hidden mb-4 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
+            <div className={`w-32 h-32 rounded border-2 border-red-700 overflow-hidden mb-4 shadow-[0_0_15px_rgba(220,38,38,0.4)] transition-all ${enemyShake ? 'animate-damage-shake' : ''}`}>
               <img src={`/images/enemies/${enemySprite}`} alt={enemy.name} className="w-full h-full object-cover rendering-pixelated" style={{ imageRendering: 'pixelated' }} />
             </div>
             {showDamage && latestRound && latestRound.enemyDamage > 0 && (

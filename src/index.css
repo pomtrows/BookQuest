@@ -117,3 +117,16 @@ h1, h2, h3, h4, h5, h6 {
   animation: dice-tumble 0.3s linear infinite;
   transform-style: preserve-3d;
 }
+
+@keyframes damage-shake {
+  0% { transform: translate(0, 0); filter: brightness(1); }
+  20% { transform: translate(-4px, 2px) rotate(-3deg); filter: brightness(1.5) sepia(1) hue-rotate(-50deg) saturate(5); }
+  40% { transform: translate(4px, -2px) rotate(3deg); filter: brightness(1); }
+  60% { transform: translate(-4px, -2px) rotate(-3deg); filter: brightness(1.5) sepia(1) hue-rotate(-50deg) saturate(5); }
+  80% { transform: translate(4px, 2px) rotate(3deg); filter: brightness(1); }
+  100% { transform: translate(0, 0); filter: brightness(1); }
+}
+
+.animate-damage-shake {
+  animation: damage-shake 0.3s ease-in-out;
+}
