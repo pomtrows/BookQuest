@@ -111,6 +111,12 @@ function App() {
                       Menu Principal
                     </button>
                     <button 
+                      onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
+                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
+                    >
+                      Règles du jeu
+                    </button>
+                    <button 
                       onClick={(e) => { e.stopPropagation(); toggleMute(); setShowDropdownMenu(false); }} 
                       className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors flex items-center gap-3"
                     >
