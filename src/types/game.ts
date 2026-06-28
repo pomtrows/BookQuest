@@ -52,7 +52,7 @@ export interface Choice {
 
 export interface Section {
   id: string;
-  text: string[];
+  text: string | string[];
   choices: Choice[];
   combat?: Enemy | Enemy[];
   loot?: {
