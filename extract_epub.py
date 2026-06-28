@@ -41,17 +41,34 @@ for i in range(len(section_starts)):
                 })
             
             combat = None
-            combat_pattern = re.compile(r'([A-Z\s]+)\s*-\s*HABILET[EÉ]\s*:\s*(\d+)\s*ENDURANCE\s*:\s*(\d+)', re.IGNORECASE)
+            # Standard single combat
+            combat_pattern = re.compile(r'([A-ZÀ-Ÿ\+\s-]{3,})HABILET[EÉ]\s*[:.]?\s*(\d+)\s*ENDURANCE\s*[:.]?\s*(\d+)')
             combat_match = combat_pattern.search(text_clean)
-            if combat_match:
+            
+            # Multi combat table (e.g., 2 Gloks)
+            multi_combat_pattern = re.compile(r'HABILET[EÉ]\s*ENDURANCE\s*(?:(?:Premier|Deuxième|Troisième|Quatrième|CHEF DES SOLDATS)\s+([A-ZÀ-Ÿ\s]+)\s+(\d+)\s+(\d+)\s*)+')
+            multi_match = multi_combat_pattern.search(text_clean)
+            
+            if multi_match:
+                # Extract all enemies from the table
+                enemies = []
+                enemy_pattern = re.compile(r'(Premier|Deuxième|Troisième|Quatrième|CHEF DES SOLDATS)\s+([A-ZÀ-Ÿ\s]+)\s+(\d+)\s+(\d+)')
+                for ematch in enemy_pattern.finditer(text_clean):
+                    enemies.append({
+                        "name": ematch.group(1).strip() + " " + ematch.group(2).strip(),
+                        "combatSkill": int(ematch.group(3)),
+                        "endurance": int(ematch.group(4))
+                    })
+                if enemies:
+                    combat = enemies
+            elif combat_match:
+                name = combat_match.group(1).replace('-', '').strip()
                 combat = {
-                    "enemy": {
-                        "name": combat_match.group(1).strip(),
-                        "skill": int(combat_match.group(2)),
-                        "endurance": int(combat_match.group(3))
-                    },
-                    "victorySectionId": choices[0]['targetId'] if choices else section_id
+                    "name": name,
+                    "combatSkill": int(combat_match.group(2)),
+                    "endurance": int(combat_match.group(3))
                 }
+
             
             story_data[str(sid)] = {
                 "id": str(sid),

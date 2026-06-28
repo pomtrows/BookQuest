@@ -237,7 +237,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous tirez entre 3 et 9, rendez-vous au 331.",
         "targetId": "331"
       }
-    ]
+    ],
+    "combat": {
+      "name": "KRAAN",
+      "combatSkill": 16,
+      "endurance": 24
+    }
   },
   "18": {
     "id": "18",
@@ -401,7 +406,12 @@ export const storyData: Record<string, Section> = {
         "text": "VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 270.",
         "targetId": "270"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VORDAK",
+      "combatSkill": 17,
+      "endurance": 25
+    }
   },
   "30": {
     "id": "30",
@@ -459,7 +469,12 @@ export const storyData: Record<string, Section> = {
         "text": "VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 328.",
         "targetId": "328"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VORDAK",
+      "combatSkill": 17,
+      "endurance": 25
+    }
   },
   "35": {
     "id": "35",
@@ -572,7 +587,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous souhaitez vous échapper après avoir livré ces trois assauts obligatoires, rendez-vous au 106.",
         "targetId": "106"
       }
-    ]
+    ],
+    "combat": {
+      "name": "OURS NOIR",
+      "combatSkill": 16,
+      "endurance": 10
+    }
   },
   "44": {
     "id": "44",
@@ -706,7 +726,12 @@ export const storyData: Record<string, Section> = {
         "text": "GLOK HABILETÉ: 9 ENDURANCE: 9 Si vous êtes vainqueur, rendez-vous au 325.",
         "targetId": "325"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GLOK",
+      "combatSkill": 9,
+      "endurance": 9
+    }
   },
   "56": {
     "id": "56",
@@ -801,7 +826,12 @@ export const storyData: Record<string, Section> = {
         "text": "VIEIL HOMME FOU HABILETÉ : 11 ENDURANCE : 10 Si vous êtes vainqueur, rendez-vous au 269.",
         "targetId": "269"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VIEIL HOMME FOU",
+      "combatSkill": 11,
+      "endurance": 10
+    }
   },
   "64": {
     "id": "64",
@@ -915,7 +945,12 @@ export const storyData: Record<string, Section> = {
         "text": "GLOK+ LOUP MAUDIT HABILETÉ : 15 ENDURANCE : 24 Si vous êtes vainqueur, rendez-vous au 265.",
         "targetId": "265"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GLOK+ LOUP MAUDIT",
+      "combatSkill": 15,
+      "endurance": 24
+    }
   },
   "73": {
     "id": "73",
@@ -1409,6 +1444,18 @@ export const storyData: Record<string, Section> = {
         "text": "Mais vous pouvez également quitter les lieux et descendre le flanc de la colline ; rendez-vous pour cela au 248.",
         "targetId": "248"
       }
+    ],
+    "combat": [
+      {
+        "name": "Premier GLOK",
+        "combatSkill": 13,
+        "endurance": 10
+      },
+      {
+        "name": "Deuxième GLOK",
+        "combatSkill": 12,
+        "endurance": 10
+      }
     ]
   },
   "113": {
@@ -1673,7 +1720,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous êtes vainqueur, rendez-vous au 266.",
         "targetId": "266"
       }
-    ]
+    ],
+    "combat": {
+      "name": "SERPENT AILÉ",
+      "combatSkill": 16,
+      "endurance": 18
+    }
   },
   "134": {
     "id": "134",
@@ -1711,6 +1763,18 @@ export const storyData: Record<string, Section> = {
         "text": "HABILETÉ ENDURANCE Premier GLOK 13 10 Deuxième GLOK 12 10 Si vous êtes vainqueur, rendez-vous au 313.",
         "targetId": "313"
       }
+    ],
+    "combat": [
+      {
+        "name": "Premier GLOK",
+        "combatSkill": 13,
+        "endurance": 10
+      },
+      {
+        "name": "Deuxième GLOK",
+        "combatSkill": 12,
+        "endurance": 10
+      }
     ]
   },
   "137": {
@@ -1730,6 +1794,18 @@ export const storyData: Record<string, Section> = {
       {
         "text": "HABILETÉ ENDURANCE Premier GLOK 13 10 Deuxième GLOK 12 10 Si vous êtes vainqueur, rendez-vous au 291.",
         "targetId": "291"
+      }
+    ],
+    "combat": [
+      {
+        "name": "Premier GLOK",
+        "combatSkill": 13,
+        "endurance": 10
+      },
+      {
+        "name": "Deuxième GLOK",
+        "combatSkill": 12,
+        "endurance": 10
       }
     ]
   },
@@ -2106,7 +2182,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous décidez de combattre et que vous êtes vainqueur, rendez-vous au 137.",
         "targetId": "137"
       }
-    ]
+    ],
+    "combat": {
+      "name": "MONSTRES DES CRYPTES",
+      "combatSkill": 16,
+      "endurance": 16
+    }
   },
   "170": {
     "id": "170",
@@ -2116,7 +2197,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous êtes vainqueur, rendez-vous au 319.",
         "targetId": "319"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GLUÂTRE DES PROFONDEURS",
+      "combatSkill": 17,
+      "endurance": 7
+    }
   },
   "171": {
     "id": "171",
@@ -2369,7 +2455,12 @@ export const storyData: Record<string, Section> = {
         "text": "GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 21 Si vous êtes vainqueur, rendez-vous au 24.",
         "targetId": "24"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GARDE DU CORPS",
+      "combatSkill": 11,
+      "endurance": 21
+    }
   },
   "192": {
     "id": "192",
@@ -2575,7 +2666,12 @@ export const storyData: Record<string, Section> = {
         "text": "Rendez-vous alors au 320.",
         "targetId": "320"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GLOKS",
+      "combatSkill": 15,
+      "endurance": 13
+    }
   },
   "209": {
     "id": "209",
@@ -2706,7 +2802,12 @@ export const storyData: Record<string, Section> = {
         "text": "GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 20 Si vous êtes vainqueur, rendez-vous au 24.",
         "targetId": "24"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GARDE DU CORPS",
+      "combatSkill": 11,
+      "endurance": 20
+    }
   },
   "221": {
     "id": "221",
@@ -2796,7 +2897,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous parvenez à tuer la Vipère sans perdre aucun point d'ENDURANCE, rendez-vous au 348.",
         "targetId": "348"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VIPÈRE DES MARAIS",
+      "combatSkill": 16,
+      "endurance": 6
+    }
   },
   "228": {
     "id": "228",
@@ -2824,7 +2930,12 @@ export const storyData: Record<string, Section> = {
         "text": "Rendez-vous pour cela au 125.",
         "targetId": "125"
       }
-    ]
+    ],
+    "combat": {
+      "name": "KRAAN",
+      "combatSkill": 16,
+      "endurance": 25
+    }
   },
   "230": {
     "id": "230",
@@ -2848,7 +2959,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si, après quatre assauts, il est toujours vivant, rendez-vous au 203.",
         "targetId": "203"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VOLEUR AU POIGNARD",
+      "combatSkill": 13,
+      "endurance": 20
+    }
   },
   "232": {
     "id": "232",
@@ -3012,7 +3128,12 @@ export const storyData: Record<string, Section> = {
         "text": "DRAKKARIM HABILETÉ: 15 ENDURANCE: 23 Si vous êtes vainqueur, rendez-vous au 197.",
         "targetId": "197"
       }
-    ]
+    ],
+    "combat": {
+      "name": "DRAKKARIM",
+      "combatSkill": 15,
+      "endurance": 23
+    }
   },
   "247": {
     "id": "247",
@@ -3098,6 +3219,28 @@ export const storyData: Record<string, Section> = {
         "text": "HABILETÉ ENDURANCE Premier LOUP MAUDIT 13 24 Deuxième LOUP MAUDIT 14 23 Troisième LOUP MAUDIT 14 22 Quatrième LOUP MAUDIT 15 21 Si vous parvenez à les tuer tous, rendez-vous au 278.",
         "targetId": "278"
       }
+    ],
+    "combat": [
+      {
+        "name": "Premier LOUP MAUDIT",
+        "combatSkill": 13,
+        "endurance": 24
+      },
+      {
+        "name": "Deuxième LOUP MAUDIT",
+        "combatSkill": 14,
+        "endurance": 23
+      },
+      {
+        "name": "Troisième LOUP MAUDIT",
+        "combatSkill": 14,
+        "endurance": 22
+      },
+      {
+        "name": "Quatrième LOUP MAUDIT",
+        "combatSkill": 15,
+        "endurance": 21
+      }
     ]
   },
   "254": {
@@ -3122,7 +3265,12 @@ export const storyData: Record<string, Section> = {
         "text": "Si vous êtes vainqueur, rendez-vous au 82.",
         "targetId": "82"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GOURGAZ",
+      "combatSkill": 20,
+      "endurance": 30
+    }
   },
   "256": {
     "id": "256",
@@ -3170,6 +3318,18 @@ export const storyData: Record<string, Section> = {
       {
         "text": "HABILETÉ ENDURANCE Premier GLOK 11 18 Deuxième GLOK 12 17 Si vous êtes vainqueur, rendez-vous au 156.",
         "targetId": "156"
+      }
+    ],
+    "combat": [
+      {
+        "name": "Premier GLOK",
+        "combatSkill": 11,
+        "endurance": 18
+      },
+      {
+        "name": "Deuxième GLOK",
+        "combatSkill": 12,
+        "endurance": 17
       }
     ]
   },
@@ -3427,7 +3587,12 @@ export const storyData: Record<string, Section> = {
         "text": "VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 123.",
         "targetId": "123"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VORDAK",
+      "combatSkill": 17,
+      "endurance": 25
+    }
   },
   "284": {
     "id": "284",
@@ -3993,7 +4158,19 @@ export const storyData: Record<string, Section> = {
   "336": {
     "id": "336",
     "text": "Vous vous ruez dans la clairière en prenant les Gloks au dépourvu. Sans la moindre seconde d'hésitation, vous frappez celui qui se trouve le plus proche de vous et vous le tuez avant même que son corps se soit écroulé sur le sol. Les autres Gloks dégainent leurs épées à la lame recourbée et vous attaquent, il vous faut les combattre un par un. HABILETÉ ENDURANCE Premier GLOK 14 11 Deuxième GLOK 13 11 Si vous êtes vainqueur, vous libérez le soldat et vous vous rendez au 117.",
-    "choices": []
+    "choices": [],
+    "combat": [
+      {
+        "name": "Premier GLOK",
+        "combatSkill": 14,
+        "endurance": 11
+      },
+      {
+        "name": "Deuxième GLOK",
+        "combatSkill": 13,
+        "endurance": 11
+      }
+    ]
   },
   "337": {
     "id": "337",
@@ -4035,7 +4212,12 @@ export const storyData: Record<string, Section> = {
         "text": "Rendez-vous pour cela au 7.",
         "targetId": "7"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VOLEUR",
+      "combatSkill": 13,
+      "endurance": 20
+    }
   },
   "340": {
     "id": "340",
@@ -4045,7 +4227,12 @@ export const storyData: Record<string, Section> = {
         "text": "14 ENDURANCE : 24 Si vous êtes vainqueur, rendez-vous au 193.",
         "targetId": "193"
       }
-    ]
+    ],
+    "combat": {
+      "name": "GLOK + LOUP MAUDIT",
+      "combatSkill": 14,
+      "endurance": 24
+    }
   },
   "341": {
     "id": "341",
@@ -4073,7 +4260,12 @@ export const storyData: Record<string, Section> = {
         "text": "VORDAK HABILETÉ: 18 ENDURANCE: 26 Si vous êtes vainqueur, rendez-vous au 123.",
         "targetId": "123"
       }
-    ]
+    ],
+    "combat": {
+      "name": "VORDAK",
+      "combatSkill": 18,
+      "endurance": 26
+    }
   },
   "343": {
     "id": "343",
