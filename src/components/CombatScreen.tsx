@@ -108,6 +108,7 @@ export function CombatScreen() {
   const enemyMaxEndurance = enemy.endurance;
 
   const latestRound = combatRounds.length > 0 ? combatRounds[combatRounds.length - 1] : null;
+  const isPlayerDead = character.endurance <= 0;
 
   return (
     <div className="book-panel p-6 mb-8 relative overflow-hidden bg-[#1a0a0a] border border-red-900 rounded-lg shadow-2xl">
@@ -147,11 +148,26 @@ export function CombatScreen() {
           
           <D10Icon number={currentFace} rolling={diceRolling} />
 
-          {!combatVictory && (
+          {isPlayerDead && (
+            <div className="text-center mt-4 animate-fade-in">
+              <div className="text-red-600 font-bold text-3xl mb-4" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Vous êtes mort...</div>
+              <button 
+                onClick={() => {
+                  localStorage.removeItem('book-quest-storage');
+                  window.location.reload();
+                }}
+                className="primary-btn px-6 py-3 text-lg bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
+              >
+                Recommencer l'Aventure
+              </button>
+            </div>
+          )}
+
+          {!combatVictory && !isPlayerDead && (
             <button 
               onClick={handleRoll}
               disabled={diceRolling}
-              className={`primary-btn px-8 py-3 text-lg ${diceRolling ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'} transition-transform`}
+              className={`primary-btn px-8 py-3 text-lg mt-4 ${diceRolling ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'} transition-transform`}
             >
               {diceRolling ? 'Tirage...' : 'Assaut'}
             </button>
