@@ -135,6 +135,13 @@ function App() {
                   <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
                     Book Quest
                   </h2>
+                  <div 
+                    onClick={() => setShowDropdownMenu(false)} 
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#d4af37] hover:bg-white/5 p-1.5 rounded transition-colors cursor-pointer z-20"
+                    role="button"
+                  >
+                    <X size={20} strokeWidth={2} />
+                  </div>
                 </div>
                 
                 {/* Main Menu Items */}
