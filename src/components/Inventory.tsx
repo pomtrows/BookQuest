@@ -41,7 +41,7 @@ export function Inventory() {
 
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
         <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Disciplines Kaï</h3>
-        <ul className="text-sm">
+        <ul className="text-sm list-none pl-0">
           {character.disciplines.map(d => (
             <li key={d} className="mb-1 text-[#e4d5b7]">
               • {d} {d === 'Maîtrise des armes' && character.weaponMastery ? `(${character.weaponMastery})` : ''}
@@ -52,7 +52,7 @@ export function Inventory() {
 
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
         <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Armes (Max 2)</h3>
-        <ul className="text-sm">
+        <ul className="text-sm list-none pl-0">
           {character.weapons.map((w, idx) => (
             <li key={idx} className="mb-1">• {w}</li>
           ))}
@@ -64,7 +64,7 @@ export function Inventory() {
           <h3 className="text-sm text-gray-400 uppercase tracking-wider">Sac à Dos (Max 8)</h3>
           <span className="text-xs">{character.backpack.length + character.meals}/8</span>
         </div>
-        <ul className="text-sm mb-2">
+        <ul className="text-sm mb-2 list-none pl-0">
           {character.backpack.filter(i => i !== 'Repas').map((item, idx) => (
             <li key={idx} className="mb-1 flex justify-between">
               <span>• {item}</span>
@@ -86,7 +86,7 @@ export function Inventory() {
 
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
         <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Objets Spéciaux</h3>
-        <ul className="text-sm">
+        <ul className="text-sm list-none pl-0">
           {character.specialItems.map((item, idx) => (
             <li key={idx} className="mb-1 text-[#00ffcc]">• {item}</li>
           ))}
