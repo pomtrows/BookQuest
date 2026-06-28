@@ -8,6 +8,7 @@ export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
   const { isCombatActive, combatVictory, character } = useGameStore();
 
+  // Handle source changes and global play state
   useEffect(() => {
     if (!audioRef.current) {
       audioRef.current = new Audio();
@@ -38,22 +39,32 @@ export const useAudio = (appState: AppState) => {
     if (!audio.src.endsWith(newSrc)) {
       audio.src = newSrc;
       audio.loop = shouldLoop;
+      audio.muted = isMuted; // Ensure it stays muted
       
-      // Modern browsers require user interaction before playing audio.
-      // This catch block silently ignores the initial auto-play policy error.
-      audio.play().catch(e => {
-        console.log('Audio autoplay blocked by browser policy. Interaction required.', e);
-      });
+      if (!isMuted) {
+        audio.play().catch(e => {
+          console.log('Audio autoplay blocked by browser policy. Interaction required.', e);
+        });
+      }
     }
 
     return () => {
       // Cleanup is handled by the overall component lifecycle
     };
-  }, [appState, isCombatActive, combatVictory, character?.endurance]);
+  }, [appState, isCombatActive, combatVictory, character?.endurance, isMuted]);
 
+  // Handle muting specifically
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.muted = isMuted;
+      if (isMuted) {
+        audioRef.current.pause();
+      } else {
+        // Only try to play if it has a source
+        if (audioRef.current.src) {
+          audioRef.current.play().catch(() => {});
+        }
+      }
     }
   }, [isMuted]);
 
@@ -63,7 +74,7 @@ export const useAudio = (appState: AppState) => {
 
   // Expose a function to manually trigger play (e.g., after first click)
   const playAudio = () => {
-    if (audioRef.current && audioRef.current.paused) {
+    if (audioRef.current && audioRef.current.paused && !isMuted) {
       audioRef.current.play().catch(() => {});
     }
   };
