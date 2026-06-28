@@ -125,7 +125,7 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
                     onChange={(e) => setWeaponskillChoice(e.target.value as Weapon)}
                   >
                     <option value="" disabled>Sélectionner...</option>
-                    {WEAPONS.map(w => <option key={w} value={w}>{w}</option>)}
+                    {Array.from(new Set(WEAPONS)).map(w => <option key={w} value={w}>{w}</option>)}
                   </select>
                 </div>
               )}

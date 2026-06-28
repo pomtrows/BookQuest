@@ -46,9 +46,12 @@ export function StoryViewer() {
       </h2>
 
       <div className="book-panel p-6 mb-8 text-lg">
-        {section.text.map((paragraph, idx) => (
-          <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>
-        ))}
+        {Array.isArray(section.text) 
+          ? section.text.map((paragraph, idx) => (
+              <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>
+            ))
+          : <p className="mb-4 leading-relaxed whitespace-pre-wrap">{section.text}</p>
+        }
       </div>
 
       {section.combat && !isCombatActive && !combatVictory && (
