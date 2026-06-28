@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
 export const useAudio = (appState: AppState) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isMuted, setIsMuted] = useState(false);
   const { isCombatActive, combatVictory, character } = useGameStore();
 
   useEffect(() => {
@@ -50,6 +51,16 @@ export const useAudio = (appState: AppState) => {
     };
   }, [appState, isCombatActive, combatVictory, character?.endurance]);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.muted = isMuted;
+    }
+  }, [isMuted]);
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
+
   // Expose a function to manually trigger play (e.g., after first click)
   const playAudio = () => {
     if (audioRef.current && audioRef.current.paused) {
@@ -57,5 +68,5 @@ export const useAudio = (appState: AppState) => {
     }
   };
 
-  return { playAudio };
+  return { playAudio, isMuted, toggleMute };
 };

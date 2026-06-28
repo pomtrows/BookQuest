@@ -3,7 +3,7 @@ import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { useGameStore } from './store/gameStore';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
@@ -12,7 +12,7 @@ function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
   const [showInventory, setShowInventory] = useState(false);
   const { character } = useGameStore();
-  const { playAudio } = useAudio(appState);
+  const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
   // Helper to ensure audio starts on user interaction
   const handleStateChange = (newState: AppState) => {
@@ -33,6 +33,14 @@ function App() {
         >
           {/* Overlay gradient to darken the background and make text readable */}
           <div className="absolute inset-0 bg-black bg-opacity-60 bg-gradient-to-t from-black via-transparent to-black"></div>
+          
+          <button 
+            onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
+            className="absolute top-4 right-4 z-50 text-gray-300 hover:text-[#d4af37] bg-black/50 p-3 rounded-full transition-all border border-gray-600 hover:border-[#d4af37]"
+            title={isMuted ? "Activer le son" : "Couper le son"}
+          >
+            {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
+          </button>
           
           <div className="relative z-10 text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)' }}>Book Quest</h1>
@@ -74,6 +82,9 @@ function App() {
           <div className="flex justify-between items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10">
             <h1 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Book Quest</h1>
             <div className="flex gap-3 items-center">
+              <button onClick={(e) => { e.stopPropagation(); toggleMute(); }} className="text-gray-400 hover:text-[#d4af37] transition-colors p-1" title={isMuted ? "Activer le son" : "Couper le son"}>
+                {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+              </button>
               <button onClick={() => handleStateChange('MENU')} className="choice-btn !mt-0 !py-1 !px-3 text-sm">Menu</button>
               <button onClick={() => setShowInventory(!showInventory)} className="primary-btn !py-1 !px-3 text-sm flex items-center gap-2">
                 <Menu size={16} /> Feuille d'Aventure
