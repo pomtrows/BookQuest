@@ -39,6 +39,7 @@ export const storyData: Record<string, Section> = {
   "2": {
     "id": "2",
     "text": "Tandis que vous courez à perdre haleine dans la forêt qui s'épaissit, les cris des Gloks s'évanouissent peu à peu derrière vous. Vous les avez presque semés lorsque vous trébuchez soudain en tombant tête la première dans un enchevêtrement de branches basses. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez entre 0 et 4, rendez-vous au 343. Entre 5 et 9, rendez-vous au 276.",
+    "image": "/images/sections/sect2.png",
     "choices": [
       {
         "text": "Si vous tirez entre 0 et 4, rendez-vous au 343.",
@@ -109,6 +110,7 @@ export const storyData: Record<string, Section> = {
   "7": {
     "id": "7",
     "text": "Pendant un moment qui vous semble une éternité, le flot de la foule vous entraîne comme une feuille au fil du courant. Vous essayez désespérément de rester debout, mais vos épreuves vous ont affaibli, vous avez le vertige et vos jambes sont lourdes comme du plomb. Soudain, vous apercevez un escalier de pierre, long et étroit, qui mène sur le toit d'une auberge. Rassemblant vos dernières forces, vous vous frayez un chemin jusqu'à ces marches que vous grimpez péniblement. Parvenu au sommet, vous contemplez alors une vue magnifique : les toits et les tours de Holmgard s'étendent sous vos yeux et les hauts murs de pierre de la citadelle resplendissent au soleil. Les maisons et tous les bâtiments de la capitale ont été construits très près les uns des autres et il est tout à fait possible de sauter de toit en toit. Autrefois, les habitants de Holmgard empruntaient volontiers ce « Chemin des Toits » (comme on l'appelle ici) lorsque de trop fortes pluies rendaient impraticables certaines rues non pavées. Mais les accidents ont été si nombreux qu'il est désormais interdit, par décret du Roi, de se déplacer ainsi. Dans votre cas, cependant, seul le Chemin des Toits peut vous mener jusqu'au souverain, et vous décidez donc de vous rendre au palais de cette manière. Après avoir bondi et sauté de maison en maison, vous parvenez au bout d'une rangée de toits et il ne vous reste bientôt plus qu'une seule rue à franchir pour atteindre la citadelle. Cette rue, malheureusement, est plus large que les autres et il vous faudra réussir un bond spectaculaire si vous voulez passer de l'autre côté. La gorge un peu serrée, le sang battant à vos tempes, vous prenez donc votre élan en courant sur toute la longueur du toit, puis vous vous élancez, le regard fixé sur la maison d'en face. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 2, rendez-vous au 108. Entre 3 et 9, rendez- vous au 25.",
+    "image": "/images/sections/sect7.png",
     "choices": [
       {
         "text": "Si vous tirez un chiffre entre 0 et 2, rendez-vous au 108.",
@@ -328,6 +330,7 @@ export const storyData: Record<string, Section> = {
   "22": {
     "id": "22",
     "text": "D'un coup d'épaule, vous bousculez le chef et vous vous enfuyez à toutes jambes le long de la route. Vous entendez aussitôt derrière vous le déclic menaçant d'une arbalète que l'on tend. Un frisson vous parcourt l'échiné et vous saisissez d'un geste prompt votre Table de Hasard afin de tirer un chiffre. Si vous obtenez entre 0 et 4, rendez-vous au 181. Entre 5 et 9, rendez-vous au 145.",
+    "image": "/images/sections/sect22.png",
     "choices": [
       {
         "text": "Si vous obtenez entre 0 et 4, rendez-vous au 181.",
@@ -441,6 +444,7 @@ export const storyData: Record<string, Section> = {
   "30": {
     "id": "30",
     "text": "Tous ces gens semblent fatigués et affamés. Ils ont parcouru des dizaines de kilomètres pour fuir leur ville incendiée. Soudain, vous entendez en direction du nord de forts battements d'ailes. « Des Kraans ! Cachez-vous ! » hurlent des voix tout au long du chemin. En face de vous, un chariot transportant des enfants casse un essieu : l'une des roues s'est coincée dans une ornière profonde. Les enfants, saisis de panique, se mettent à hurler. Si vous souhaitez aider ces enfants, rendez-vous au 194. Si vous préférez vous mettre à l'abri des arbres, rendez-vous au 261.",
+    "image": "/images/sections/sect30.png",
     "choices": [
       {
         "text": "Si vous souhaitez aider ces enfants, rendez-vous au 194.",
@@ -489,6 +493,7 @@ export const storyData: Record<string, Section> = {
   "34": {
     "id": "34",
     "text": "Sans crier gare, une terrifiante apparition fond sur vous. C'est une créature vêtue de longs vêtements rouges et montée sur le dos d'un Kraan. Votre assaillant pousse un cri à vous glacer le sang : il s'agit d'un Vordak, un féroce lieutenant des Maîtres des Ténèbres. Il est juste au-dessus de vous et il vous faut le combattre. Le monstre vous attaque à l'aide d'une grosse Masse d'Armes et il est également doué d'une redoutable Puissance Psychique, dont il va faire usage au cours de l'affrontement. Si vous ne maîtrisez pas la Discipline Kaï du Bouclier Psychique, vous devrez réduire de 2 points votre total d'HABILETÉ pendant toute la durée du combat. VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 328.",
+    "image": "/images/sections/sect34.png",
     "choices": [
       {
         "text": "VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 328.",
@@ -556,6 +561,7 @@ export const storyData: Record<string, Section> = {
   "39": {
     "id": "39",
     "text": "Quelques secondes plus tard, deux petites têtes au pelage ras et à la mine inquiète apparaissent derrière le tronc : ce sont des Kakarmis qui se sont cachés là. Ils vous avertissent que les Kraans sont partout et qu'ils ont attaqué leur village, un peu plus loin à l'ouest, ne laissant que ruines sur leur passage. Les Kakarmis essaient de retrouver le reste de leur tribu qui s'est enfuie dans la forêt lorsque les Ailes Noires ont lancé leur assaut sur le village. Les petites créatures apeurées vous montrent la direction de l'est : le chemin semble aboutir à un cul-de-sac, mais d'après elles, si vous vous enfoncez dans les sous-bois, vous trouverez quelques mètres plus loin une tour de guet où le sentier se divise en trois voies. En continuant alors vers l'est, vous arriverez bientôt à la Route du Roi qui relie Holmgard, la capitale, au port de Toran. Vous remerciez les Kakarmis et vous prenez congé d'eux. Rendez-vous ensuite au 228.",
+    "image": "/images/sections/sect39.png",
     "choices": [
       {
         "text": "Rendez-vous ensuite au 228.",
@@ -711,6 +717,7 @@ export const storyData: Record<string, Section> = {
   "50": {
     "id": "50",
     "text": "Vous entendez les échos d'un combat qui se déroule à quelque distance. Si vous souhaitez poursuivre votre chemin vers le nord en direction de la bataille, rendez-vous au 97. Si vous préférez éviter ce combat, prenez une autre direction en vous rendant au 243.",
+    "image": "/images/sections/sect50.png",
     "choices": [
       {
         "text": "Si vous souhaitez poursuivre votre chemin vers le nord en direction de la bataille, rendez-vous au 97.",
@@ -806,6 +813,7 @@ export const storyData: Record<string, Section> = {
   "58": {
     "id": "58",
     "text": "Vous vous lancez sur la route au pas de course en maintenant une allure régulière. A l'ouest, l'armée des Maîtres des Ténèbres ressemble à une immense tache d'encre noire qui se serait répandue entre les montagnes. Vous courez depuis vingt minutes environ lorsque vous apercevez à votre droite une meute de Loups Maudits qui avancent en file indienne le long d'une corniche. Si vous souhaitez vous plaquer contre les rochers qui bordent la route et attendre qu'ils soient passés, rendez-vous au 286. Si vous préférez continuer à courir en tirant votre épée pour vous préparer à toute éventualité, rendez-vous au 160.",
+    "image": "/images/sections/sect58.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous plaquer contre les rochers qui bordent la route et attendre qu'ils soient passés, rendez-vous au 286.",

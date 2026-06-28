@@ -48,6 +48,16 @@ export function StoryViewer() {
         Section {section.id}
       </h2>
 
+      {section.image && (
+        <div className="w-full mb-8 rounded-md overflow-hidden border border-[#333333]">
+          <img 
+            src={section.image} 
+            alt={`Illustration for section ${section.id}`} 
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )}
+
       <div className="book-panel p-6 mb-8 text-lg">
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => (
