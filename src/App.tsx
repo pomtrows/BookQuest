@@ -5,6 +5,7 @@ import { Inventory } from './components/Inventory';
 import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
+import { Rules } from './components/Rules';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
@@ -112,12 +113,7 @@ function App() {
       )}
 
       {appState === 'RULES' && (
-        <div className="p-8 max-w-3xl mx-auto">
-          <h1 className="text-3xl mb-6">Règles du Jeu</h1>
-          <p className="mb-4">Au cours de l'initiation qui vous a permis de devenir un Seigneur Kaï, vous avez acquis une force exceptionnelle ; les deux éléments essentiels de cette force sont représentés par votre HABILETÉ AU COMBAT et VOTRE ENDURANCE.</p>
-          <p className="mb-4">Pour générer vos statistiques, l'application utilise une "Table de Hasard" (un nombre aléatoire de 0 à 9). Votre Habileté est de 10 + le nombre aléatoire. Votre Endurance est de 20 + le nombre aléatoire.</p>
-          <button onClick={() => setAppState('MENU')} className="primary-btn mt-8">Retour au Menu</button>
-        </div>
+        <Rules onBack={() => handleStateChange('MENU')} />
       )}
     </div>
   );
