@@ -29,7 +29,7 @@ function App() {
       
       {appState === 'MENU' && (
         <div 
-          className="flex flex-col items-center justify-start min-h-screen p-4 pt-16 md:pt-24 relative"
+          className="flex flex-col items-center justify-center min-h-screen p-4 relative"
           style={{
             backgroundImage: "url('/images/title_bg.png')",
             backgroundSize: 'cover',
@@ -47,13 +47,12 @@ function App() {
           >
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
-          
           <div className="relative z-10 text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)' }}>Book Quest</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-150px)', display: 'block' }}>Book Quest</h1>
             <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Loup Solitaire: Les Maîtres des Ténèbres</h2>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-4 w-full max-w-md backdrop-blur-sm bg-black/30 p-8 rounded-xl border border-[#d4af37]/30 shadow-2xl mt-auto mb-24">
+          <div className="relative z-10 flex flex-col gap-4 w-full max-w-md backdrop-blur-sm bg-black/30 p-8 rounded-xl border border-[#d4af37]/30 shadow-2xl">
             <button 
               onClick={() => handleStateChange('CREATION')}
               className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
