@@ -4,6 +4,7 @@ import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { useGameStore } from './store/gameStore';
 import { Menu, X } from 'lucide-react';
+import { useAudio } from './hooks/useAudio';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
@@ -11,9 +12,16 @@ function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
   const [showInventory, setShowInventory] = useState(false);
   const { character } = useGameStore();
+  const { playAudio } = useAudio(appState);
+
+  // Helper to ensure audio starts on user interaction
+  const handleStateChange = (newState: AppState) => {
+    playAudio();
+    setAppState(newState);
+  };
 
   return (
-    <div className="min-h-screen bg-[#121212] text-[#e4d5b7] font-sans">
+    <div className="min-h-screen bg-[#121212] text-[#e4d5b7] font-sans" onClick={playAudio}>
       {appState === 'MENU' && (
         <div 
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
@@ -33,14 +41,14 @@ function App() {
 
           <div className="relative z-10 flex flex-col gap-4 w-full max-w-md backdrop-blur-sm bg-black/30 p-8 rounded-xl border border-[#d4af37]/30 shadow-2xl">
             <button 
-              onClick={() => setAppState('CREATION')}
+              onClick={() => handleStateChange('CREATION')}
               className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
             >
               Nouvelle Partie
             </button>
             {character && (
               <button 
-                onClick={() => setAppState('GAME')}
+                onClick={() => handleStateChange('GAME')}
                 className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
                 style={{ backgroundColor: 'rgba(30, 30, 30, 0.8)', color: '#d4af37', borderColor: '#d4af37' }}
               >
@@ -48,7 +56,7 @@ function App() {
               </button>
             )}
             <button 
-              onClick={() => setAppState('RULES')}
+              onClick={() => handleStateChange('RULES')}
               className="choice-btn text-center text-xl bg-black/50"
             >
               Règles du Jeu
@@ -58,7 +66,7 @@ function App() {
       )}
 
       {appState === 'CREATION' && (
-        <CharacterCreation onComplete={() => setAppState('GAME')} onCancel={() => setAppState('MENU')} />
+        <CharacterCreation onComplete={() => handleStateChange('GAME')} onCancel={() => handleStateChange('MENU')} />
       )}
 
       {appState === 'GAME' && (
@@ -66,7 +74,7 @@ function App() {
           <div className="flex justify-between items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10">
             <h1 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Book Quest</h1>
             <div className="flex gap-3 items-center">
-              <button onClick={() => setAppState('MENU')} className="choice-btn !mt-0 !py-1 !px-3 text-sm">Menu</button>
+              <button onClick={() => handleStateChange('MENU')} className="choice-btn !mt-0 !py-1 !px-3 text-sm">Menu</button>
               <button onClick={() => setShowInventory(!showInventory)} className="primary-btn !py-1 !px-3 text-sm flex items-center gap-2">
                 <Menu size={16} /> Feuille d'Aventure
               </button>
