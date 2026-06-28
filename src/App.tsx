@@ -3,7 +3,7 @@ import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { useGameStore } from './store/gameStore';
-import { Menu, X, Volume2, VolumeX } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
 import { Notifications } from './components/Notifications';
@@ -96,33 +96,51 @@ function App() {
               
               {showDropdownMenu && (
                 <>
-                  <div className="fixed inset-0 z-40" onClick={() => setShowDropdownMenu(false)}></div>
-                  <div className="absolute top-12 left-0 bg-[#1e1e1e] border border-[#333333] rounded-md shadow-2xl py-2 w-56 z-50 animate-fade-in">
-                    <button 
-                      onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
-                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
-                    >
-                      Feuille d'Aventure
-                    </button>
-                    <button 
-                      onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
-                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
-                    >
-                      Menu Principal
-                    </button>
-                    <button 
-                      onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
-                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
-                    >
-                      Règles du jeu
-                    </button>
-                    <button 
-                      onClick={(e) => { e.stopPropagation(); toggleMute(); setShowDropdownMenu(false); }} 
-                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors flex items-center gap-3"
-                    >
-                      {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />} 
-                      {isMuted ? "Activer le son" : "Couper le son"}
-                    </button>
+                  <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" onClick={() => setShowDropdownMenu(false)}></div>
+                  <div className="fixed top-0 left-0 h-full w-72 sm:w-80 bg-[#121212] border-r border-[#d4af37]/20 shadow-[5px_0_25px_rgba(0,0,0,0.8)] z-[110] flex flex-col animate-fade-in">
+                    <div className="flex items-center justify-between p-6 border-b border-gray-800">
+                      <h2 className="text-2xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Book Quest</h2>
+                      <button 
+                        onClick={() => setShowDropdownMenu(false)}
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <X size={24} />
+                      </button>
+                    </div>
+                    
+                    <div className="flex-1 py-4 flex flex-col gap-1 overflow-y-auto custom-scrollbar">
+                      <button 
+                        onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
+                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                      >
+                        <ScrollText size={20} />
+                        <span className="font-medium text-lg">Feuille d'Aventure</span>
+                      </button>
+                      <button 
+                        onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
+                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                      >
+                        <BookOpen size={20} />
+                        <span className="font-medium text-lg">Règles du jeu</span>
+                      </button>
+                      <button 
+                        onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
+                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                      >
+                        <Home size={20} />
+                        <span className="font-medium text-lg">Menu Principal</span>
+                      </button>
+                    </div>
+
+                    <div className="p-4 border-t border-gray-800 bg-[#0a0a0a]">
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
+                        className="w-full text-left px-4 py-3 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-3 rounded-lg hover:bg-[#222]"
+                      >
+                        {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />} 
+                        {isMuted ? "Activer le son" : "Couper le son"}
+                      </button>
+                    </div>
                   </div>
                 </>
               )}
