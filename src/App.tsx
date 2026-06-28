@@ -106,7 +106,7 @@ function App() {
                     {/* Header */}
                     <div className="flex items-center justify-center h-20 px-6 border-b border-gray-800/60 relative">
                       <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
-                      <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
+                      <h2 className="text-xl md:text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
                         Loup Solitaire
                       </h2>
                     </div>
@@ -154,7 +154,7 @@ function App() {
               )}
             </div>
             
-            <h1 className="text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>
+            <h1 className="text-xl md:text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
               Loup Solitaire
             </h1>
           </div>
