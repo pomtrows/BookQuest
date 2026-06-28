@@ -87,12 +87,13 @@ function App() {
         <div className="flex flex-col h-screen relative">
           <div className="flex items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10 relative">
             <div className="relative z-50">
-              <button 
+              <div 
                 onClick={() => setShowDropdownMenu(!showDropdownMenu)} 
-                className="text-[#d4af37] hover:text-white hover:bg-black/30 p-2 rounded transition-all flex items-center justify-center border border-transparent hover:border-[#d4af37]/30"
+                className="text-[#d4af37] hover:text-white hover:bg-black/30 p-2 rounded transition-all flex items-center justify-center border border-transparent hover:border-[#d4af37]/30 cursor-pointer"
+                role="button"
               >
                 <Menu size={24} />
-              </button>
+              </div>
               
               {showDropdownMenu && (
                 <>
@@ -166,13 +167,13 @@ function App() {
             <div className="absolute top-0 right-0 w-full md:w-96 h-full bg-[#1e1e1e] border-l border-[#333333] overflow-y-auto z-50 shadow-2xl flex flex-col">
               <div className="p-4 border-b border-[#333333] flex justify-between items-center sticky top-0 bg-[#1e1e1e] z-10">
                  <h2 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
-                 <button 
+                 <div 
                    onClick={() => setShowInventory(false)} 
-                   className="text-gray-400 hover:text-[#d4af37] p-1 rounded transition-colors cursor-pointer"
-                   style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
+                   className="text-[#d4af37] hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors cursor-pointer"
+                   role="button"
                  >
                    <X size={24} strokeWidth={2} />
-                 </button>
+                 </div>
               </div>
               <Inventory />
             </div>
