@@ -48,7 +48,7 @@ function App() {
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
           <div className="relative z-10 text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Book Quest</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Loup Solitaire</h1>
             <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Loup Solitaire: Les Maîtres des Ténèbres</h2>
           </div>
 
@@ -107,7 +107,7 @@ function App() {
                     <div className="flex items-center justify-center h-20 px-6 border-b border-gray-800/60 relative">
                       <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
                       <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
-                        Book Quest
+                        Loup Solitaire
                       </h2>
                     </div>
                     
@@ -155,7 +155,7 @@ function App() {
             </div>
             
             <h1 className="text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>
-              Book Quest
+              Loup Solitaire
             </h1>
           </div>
           
