@@ -71,6 +71,7 @@ export interface GameState {
   currentSectionId: string;
   history: string[];
   isCombatActive: boolean;
+  currentEnemies: Enemy[];
   currentEnemyIndex: number;
   enemyCurrentEndurance: number;
   combatRounds: {

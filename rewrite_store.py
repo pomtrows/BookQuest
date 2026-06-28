@@ -1,8 +1,10 @@
-import { create } from 'zustand';
+import os
+
+CONTENT = """import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { GameState, CharacterState, Enemy } from '../types/game';
 import { getCombatResult, K } from '../data/combatTable';
-import { storyData } from '../data/story';
+import { story } from '../data/story';
 
 export interface Notification {
   id: string;
@@ -98,7 +100,7 @@ export const useGameStore = create<GameStore>()(
         }
 
         // Check Meals requirement
-        const sectionData = storyData[sectionId];
+        const sectionData = story[sectionId];
         if (sectionData) {
           const textStr = Array.isArray(sectionData.text) ? sectionData.text.join(' ') : sectionData.text;
           const mealTriggers = [
@@ -333,3 +335,7 @@ export const useGameStore = create<GameStore>()(
     }
   )
 );
+"""
+
+with open(r'C:\PROJET\Book Quest\src\store\gameStore.ts', 'w', encoding='utf-8') as f:
+    f.write(CONTENT)

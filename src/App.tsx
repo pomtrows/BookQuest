@@ -6,6 +6,7 @@ import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
+import { Notifications } from './components/Notifications';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
@@ -23,6 +24,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#121212] text-[#e4d5b7] font-sans" onClick={playAudio}>
+      <Notifications />
+      
       {appState === 'MENU' && (
         <div 
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
