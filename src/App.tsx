@@ -130,19 +130,19 @@ function App() {
               <div className="fixed top-0 left-0 bottom-0 w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
                 
                 {/* Header */}
-                <div className="flex items-center justify-center h-20 px-6 border-b border-gray-800/60 relative">
-                  <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
-                  <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
-                    Book Quest
-                  </h2>
-                  <div 
-                    onClick={() => setShowDropdownMenu(false)} 
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#d4af37] hover:bg-white/5 p-1.5 rounded transition-colors cursor-pointer z-20"
-                    role="button"
-                  >
-                    <X size={20} strokeWidth={2} />
-                  </div>
-                </div>
+                 <div className="flex justify-end items-center h-20 px-4 border-b border-gray-800/60 relative">
+                   <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
+                   <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md absolute left-1/2 -translate-x-1/2 z-10" style={{ fontFamily: 'Cinzel, serif' }}>
+                     Book Quest
+                   </h2>
+                   <div 
+                     onClick={() => setShowDropdownMenu(false)} 
+                     className="text-gray-400 hover:text-[#d4af37] hover:bg-white/5 p-1.5 rounded transition-colors cursor-pointer relative z-20"
+                     role="button"
+                   >
+                     <X size={24} strokeWidth={2} />
+                   </div>
+                 </div>
                 
                 {/* Main Menu Items */}
                 <div className="flex-1 px-4 py-6 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
