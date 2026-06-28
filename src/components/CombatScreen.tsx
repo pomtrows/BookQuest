@@ -15,10 +15,10 @@ const HealthBar = ({ current, max }: { current: number, max: number }) => {
           <rect x="3" y="3" width="1" height="1" fill="#FFFFFF"/>
         </svg>
       </div>
-      <div className="flex-1 h-5 bg-white border-2 border-black rounded-r-md overflow-hidden relative shadow-inner">
+      <div className="flex-1 bg-white border-2 border-black rounded-r-md overflow-hidden relative shadow-inner" style={{ height: '20px' }}>
         <div 
-          className="h-full bg-red-600 transition-all duration-500 ease-out"
-          style={{ width: `${pct}%`, boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.2), inset 0 3px 0 rgba(255,255,255,0.3)' }}
+          className="bg-red-600 transition-all duration-500 ease-out"
+          style={{ height: '100%', width: `${pct}%`, boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.2), inset 0 3px 0 rgba(255,255,255,0.3)' }}
         ></div>
       </div>
     </div>
