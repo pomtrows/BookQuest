@@ -128,7 +128,7 @@ function App() {
                 className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" 
                 onClick={() => setShowDropdownMenu(false)}
               ></div>
-              <div className="fixed top-0 left-0 bottom-0 w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
+              <div className="fixed top-0 left-0 h-full w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
                 
                 {/* Header */}
                  <div className="flex justify-between items-center h-20 px-4 border-b border-gray-800/60 relative">
