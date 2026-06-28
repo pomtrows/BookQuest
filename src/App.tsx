@@ -36,7 +36,8 @@ function App() {
           
           <button 
             onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
-            className="absolute top-4 right-4 z-50 text-gray-300 hover:text-[#d4af37] bg-black/50 p-3 rounded-full transition-all border border-gray-600 hover:border-[#d4af37]"
+            className="z-50 text-gray-300 hover:text-[#d4af37] bg-black/50 p-3 rounded-full transition-all border border-gray-600 hover:border-[#d4af37]"
+            style={{ position: 'absolute', top: '20px', right: '20px' }}
             title={isMuted ? "Activer le son" : "Couper le son"}
           >
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
