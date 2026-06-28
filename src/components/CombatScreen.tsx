@@ -99,6 +99,15 @@ export function CombatScreen() {
     if (n.includes('kraan')) return 'kraan.png';
     if (n.includes('vordak')) return 'vordak.png';
     if (n.includes('gourgaz')) return 'gourgaz.png';
+    if (n.includes('drakkarim')) return 'drakkarim.png';
+    if (n.includes('garde')) return 'garde.png';
+    if (n.includes('gluâtre')) return 'gluatre.png';
+    if (n.includes('ours')) return 'ours.png';
+    if (n.includes('serpent')) return 'serpent.png';
+    if (n.includes('fou')) return 'fou.png';
+    if (n.includes('vipère')) return 'vipere.png';
+    if (n.includes('voleur')) return 'voleur.png';
+    if (n.includes('crypte')) return 'crypte.png';
     return 'generic.png';
   };
 
