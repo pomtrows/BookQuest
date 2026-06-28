@@ -166,8 +166,12 @@ function App() {
             <div className="absolute top-0 right-0 w-full md:w-96 h-full bg-[#1e1e1e] border-l border-[#333333] overflow-y-auto z-50 shadow-2xl flex flex-col">
               <div className="p-4 border-b border-[#333333] flex justify-between items-center sticky top-0 bg-[#1e1e1e] z-10">
                  <h2 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
-                 <button onClick={() => setShowInventory(false)} className="text-gray-400 hover:text-white bg-[#333] hover:bg-[#444] p-1 rounded">
-                   <X size={20} />
+                 <button 
+                   onClick={() => setShowInventory(false)} 
+                   className="text-gray-400 hover:text-[#d4af37] p-1 rounded transition-colors cursor-pointer"
+                   style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
+                 >
+                   <X size={24} strokeWidth={2} />
                  </button>
               </div>
               <Inventory />
