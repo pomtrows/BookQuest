@@ -89,7 +89,7 @@ function App() {
             <div className="relative z-50">
               <button 
                 onClick={() => setShowDropdownMenu(!showDropdownMenu)} 
-                className="text-gray-400 hover:text-[#d4af37] bg-[#333] hover:bg-[#444] p-2 rounded transition-colors flex items-center justify-center"
+                className="text-[#d4af37] hover:text-white hover:bg-black/30 p-2 rounded transition-all flex items-center justify-center border border-transparent hover:border-[#d4af37]/30"
               >
                 <Menu size={24} />
               </button>
