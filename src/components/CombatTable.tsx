@@ -52,12 +52,12 @@ export const CombatTable: React.FC = () => {
   return (
     <div className="my-8 overflow-x-auto overflow-y-auto max-h-[60vh] custom-scrollbar border border-[#d4af37]/40 rounded-lg bg-black/80 p-0 relative shadow-[0_0_15px_rgba(212,175,55,0.15)]">
       <h3 className="text-xl font-bold text-center text-[#d4af37] py-4 bg-black/90 border-b border-[#d4af37]/40 m-0" style={{ position: 'sticky', left: 0, fontFamily: 'Cinzel, serif' }}>Table des coups portés</h3>
-      <table className="w-full text-xs sm:text-sm text-center border-collapse" style={{ position: 'relative' }}>
+      <table className="w-full text-[10px] sm:text-[11px] leading-tight text-center border-collapse" style={{ position: 'relative' }}>
         <thead className="shadow-md" style={{ position: 'sticky', top: 0, zIndex: 20 }}>
           <tr>
-            <th className="border border-gray-600 p-2 text-gray-400 bg-[#1a1a1a] whitespace-pre-wrap shadow-[2px_0_5px_rgba(0,0,0,0.5)]" style={{ position: 'sticky', top: 0, left: 0, zIndex: 30 }}>Quotient d'attaque →<br/>Dé ↓</th>
+            <th className="border border-gray-600 px-1 py-1.5 text-gray-400 bg-[#1a1a1a] whitespace-pre-wrap shadow-[2px_0_5px_rgba(0,0,0,0.5)]" style={{ position: 'sticky', top: 0, left: 0, zIndex: 30 }}>Quotient d'attaque →<br/>Dé ↓</th>
             {columns.map((col, i) => (
-              <th key={i} className="border border-gray-600 p-2 text-[#d4af37] bg-[#1a1a1a] whitespace-pre-wrap min-w-[70px]" style={{ position: 'sticky', top: 0, zIndex: 20 }}>
+              <th key={i} className="border border-gray-600 px-1 py-1.5 text-[#d4af37] bg-[#1a1a1a] whitespace-pre-wrap min-w-[50px]" style={{ position: 'sticky', top: 0, zIndex: 20 }}>
                 {col}
               </th>
             ))}
@@ -66,18 +66,18 @@ export const CombatTable: React.FC = () => {
         <tbody>
           {rows.map((row, rowIndex) => (
             <tr key={rowIndex} className="hover:bg-gray-800/50 transition-colors">
-              <td className="border border-gray-600 p-2 font-bold text-gray-300 bg-[#1a1a1a] shadow-[2px_0_5px_rgba(0,0,0,0.5)]" style={{ position: 'sticky', left: 0, zIndex: 10 }}>
+              <td className="border border-gray-600 p-1 font-bold text-gray-300 bg-[#1a1a1a] shadow-[2px_0_5px_rgba(0,0,0,0.5)]" style={{ position: 'sticky', left: 0, zIndex: 10 }}>
                 {rowIndex === 9 ? '0' : rowIndex + 1}
               </td>
               {row.map((cell, colIndex) => (
-                <td key={colIndex} className="border border-gray-600 p-1">
-                  <div className="flex flex-col gap-1 items-center justify-center">
-                    <span className="text-red-400 flex justify-between w-full px-1">
-                      <span>E:</span> <span className="font-bold">{cell.e === 'T' ? 'T' : `-${cell.e}`}</span>
+                <td key={colIndex} className="border border-gray-600 p-0.5">
+                  <div className="flex flex-col gap-0 items-center justify-center">
+                    <span className="text-red-400 flex justify-between w-full px-0.5">
+                      <span className="opacity-70 text-[9px]">E:</span> <span className="font-bold">{cell.e === 'T' ? 'T' : `-${cell.e}`}</span>
                     </span>
-                    <hr className="w-full border-gray-700 border-t-1" />
-                    <span className="text-green-400 flex justify-between w-full px-1">
-                      <span>LS:</span> <span className="font-bold">{cell.ls === 'T' ? 'T' : `-${cell.ls}`}</span>
+                    <hr className="w-full border-gray-700 m-0" />
+                    <span className="text-green-400 flex justify-between w-full px-0.5">
+                      <span className="opacity-70 text-[9px]">LS:</span> <span className="font-bold">{cell.ls === 'T' ? 'T' : `-${cell.ls}`}</span>
                     </span>
                   </div>
                 </td>
