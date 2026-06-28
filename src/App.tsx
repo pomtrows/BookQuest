@@ -96,49 +96,61 @@ function App() {
               
               {showDropdownMenu && (
                 <>
-                  <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" onClick={() => setShowDropdownMenu(false)}></div>
-                  <div className="fixed top-0 left-0 h-full w-72 sm:w-80 bg-[#121212] border-r border-[#d4af37]/20 shadow-[5px_0_25px_rgba(0,0,0,0.8)] z-[110] flex flex-col animate-fade-in">
-                    <div className="flex items-center justify-between p-6 border-b border-gray-800">
-                      <h2 className="text-2xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Book Quest</h2>
+                  <div 
+                    className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in" 
+                    onClick={() => setShowDropdownMenu(false)}
+                  ></div>
+                  <div className="fixed top-0 left-0 h-full w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
+                    
+                    {/* Header */}
+                    <div className="flex items-center justify-between h-20 px-6 border-b border-gray-800/60 relative">
+                      <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
+                      <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
+                        Book Quest
+                      </h2>
                       <button 
                         onClick={() => setShowDropdownMenu(false)}
-                        className="text-gray-400 hover:text-white transition-colors"
+                        className="text-gray-500 hover:text-white bg-gray-900/50 hover:bg-gray-800 p-2 rounded-full transition-all relative z-10"
                       >
-                        <X size={24} />
+                        <X size={20} strokeWidth={2.5} />
                       </button>
                     </div>
                     
-                    <div className="flex-1 py-4 flex flex-col gap-1 overflow-y-auto custom-scrollbar">
+                    {/* Main Menu Items */}
+                    <div className="flex-1 px-4 py-6 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
                       <button 
                         onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
-                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                        className="w-full text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
                       >
-                        <ScrollText size={20} />
-                        <span className="font-medium text-lg">Feuille d'Aventure</span>
+                        <ScrollText size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                        <span className="font-medium text-[15px] tracking-wide">Feuille d'Aventure</span>
                       </button>
+                      
                       <button 
                         onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
-                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                        className="w-full text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
                       >
-                        <BookOpen size={20} />
-                        <span className="font-medium text-lg">Règles du jeu</span>
+                        <BookOpen size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                        <span className="font-medium text-[15px] tracking-wide">Règles du jeu</span>
                       </button>
+                      
                       <button 
                         onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
-                        className="w-full text-left px-6 py-4 flex items-center gap-4 text-gray-300 hover:bg-[#1a1a1a] hover:text-[#d4af37] border-l-4 border-transparent hover:border-[#d4af37] transition-all"
+                        className="w-full text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
                       >
-                        <Home size={20} />
-                        <span className="font-medium text-lg">Menu Principal</span>
+                        <Home size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                        <span className="font-medium text-[15px] tracking-wide">Menu Principal</span>
                       </button>
                     </div>
 
-                    <div className="p-4 border-t border-gray-800 bg-[#0a0a0a]">
+                    {/* Bottom Settings */}
+                    <div className="p-4 border-t border-gray-800/60 bg-[#0d0d10]">
                       <button 
                         onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
-                        className="w-full text-left px-4 py-3 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-3 rounded-lg hover:bg-[#222]"
+                        className="w-full text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-300"
                       >
-                        {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />} 
-                        {isMuted ? "Activer le son" : "Couper le son"}
+                        {isMuted ? <VolumeX size={20} strokeWidth={1.5} /> : <Volume2 size={20} strokeWidth={1.5} />} 
+                        <span className="font-medium text-[15px] tracking-wide">{isMuted ? "Activer le son" : "Couper le son"}</span>
                       </button>
                     </div>
                   </div>
