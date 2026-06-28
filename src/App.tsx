@@ -107,11 +107,12 @@ function App() {
 
           {showInventory && (
             <div className="absolute top-0 right-0 w-full md:w-96 h-full bg-[#1e1e1e] border-l border-[#333333] overflow-y-auto z-50 shadow-2xl flex flex-col">
-              <div className="p-4 border-b border-[#333333] flex justify-end items-center sticky top-0 bg-[#1e1e1e] z-10 relative">
-                 <h2 className="text-xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
+              <div className="p-4 border-b border-[#333333] flex justify-between items-center sticky top-0 bg-[#1e1e1e] z-10 relative">
+                 <div className="w-8"></div> {/* Spacer */}
+                 <h2 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Feuille d'Aventure</h2>
                  <div 
                    onClick={() => setShowInventory(false)} 
-                   className="text-[#d4af37] hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors cursor-pointer relative z-10"
+                   className="text-[#d4af37] hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors cursor-pointer relative z-10 w-8 flex items-center justify-center"
                    role="button"
                  >
                    <X size={24} strokeWidth={2} />
@@ -130,14 +131,15 @@ function App() {
               <div className="fixed top-0 left-0 bottom-0 w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
                 
                 {/* Header */}
-                 <div className="flex justify-end items-center h-20 px-4 border-b border-gray-800/60 relative">
+                 <div className="flex justify-between items-center h-20 px-4 border-b border-gray-800/60 relative">
                    <div className="absolute inset-0 bg-gradient-to-b from-[#d4af37]/5 to-transparent pointer-events-none"></div>
-                   <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md absolute left-1/2 -translate-x-1/2 z-10" style={{ fontFamily: 'Cinzel, serif' }}>
+                   <div className="w-8 relative z-20"></div> {/* Spacer */}
+                   <h2 className="text-2xl font-bold text-[#d4af37] tracking-wider drop-shadow-md relative z-10" style={{ fontFamily: 'Cinzel, serif' }}>
                      Book Quest
                    </h2>
                    <div 
                      onClick={() => setShowDropdownMenu(false)} 
-                     className="text-gray-400 hover:text-[#d4af37] hover:bg-white/5 p-1.5 rounded transition-colors cursor-pointer relative z-20"
+                     className="text-gray-400 hover:text-[#d4af37] hover:bg-white/5 p-1.5 rounded transition-colors cursor-pointer relative z-20 w-8 flex items-center justify-center"
                      role="button"
                    >
                      <X size={24} strokeWidth={2} />
