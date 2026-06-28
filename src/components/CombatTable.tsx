@@ -50,12 +50,12 @@ export const CombatTable: React.FC = () => {
   ];
 
   return (
-    <div className="my-8 overflow-x-auto custom-scrollbar border border-[#d4af37]/40 rounded-lg bg-black/80 p-4">
-      <h3 className="text-xl font-bold text-center text-[#d4af37] mb-4" style={{ fontFamily: 'Cinzel, serif' }}>Table des coups portés</h3>
+    <div className="my-8 overflow-x-auto overflow-y-auto max-h-[60vh] custom-scrollbar border border-[#d4af37]/40 rounded-lg bg-black/80 p-0 relative shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+      <h3 className="text-xl font-bold text-center text-[#d4af37] py-4 bg-black/90 sticky left-0 border-b border-[#d4af37]/40 m-0" style={{ fontFamily: 'Cinzel, serif' }}>Table des coups portés</h3>
       <table className="w-full text-xs sm:text-sm text-center border-collapse">
-        <thead>
+        <thead className="sticky top-0 z-20 bg-[#1a1a1a] shadow-md">
           <tr>
-            <th className="border border-gray-600 p-2 text-gray-400 bg-[#1a1a1a] whitespace-pre-wrap">Quotient d'attaque →<br/>Dé ↓</th>
+            <th className="border border-gray-600 p-2 text-gray-400 bg-[#1a1a1a] whitespace-pre-wrap sticky left-0 z-30 shadow-[2px_0_5px_rgba(0,0,0,0.5)]">Quotient d'attaque →<br/>Dé ↓</th>
             {columns.map((col, i) => (
               <th key={i} className="border border-gray-600 p-2 text-[#d4af37] bg-[#1a1a1a] whitespace-pre-wrap min-w-[70px]">
                 {col}
@@ -66,7 +66,7 @@ export const CombatTable: React.FC = () => {
         <tbody>
           {rows.map((row, rowIndex) => (
             <tr key={rowIndex} className="hover:bg-gray-800/50 transition-colors">
-              <td className="border border-gray-600 p-2 font-bold text-gray-300 bg-[#1a1a1a]">
+              <td className="border border-gray-600 p-2 font-bold text-gray-300 bg-[#1a1a1a] sticky left-0 z-10 shadow-[2px_0_5px_rgba(0,0,0,0.5)]">
                 {rowIndex === 9 ? '0' : rowIndex + 1}
               </td>
               {row.map((cell, colIndex) => (
@@ -86,7 +86,7 @@ export const CombatTable: React.FC = () => {
           ))}
         </tbody>
       </table>
-      <div className="mt-4 flex justify-around text-xs text-gray-400">
+      <div className="py-4 bg-black/90 sticky left-0 border-t border-gray-600 flex justify-around text-xs text-gray-400">
         <span><strong className="text-red-400">E</strong> = Ennemi</span>
         <span><strong className="text-green-400">LS</strong> = Loup Solitaire</span>
         <span><strong className="text-white">T</strong> = Tué sur le coup</span>
