@@ -1,10 +1,23 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useGameStore } from '../store/gameStore';
 
-// Create a single global audio instance outside the React lifecycle
-// This guarantees we NEVER have multiple overlapping audio elements
-const globalAudio = new Audio();
-globalAudio.loop = true;
+// Attach to window to survive Vite HMR (Hot Module Replacement)
+// This strictly guarantees only one audio object ever exists even if the file is recompiled.
+const getGlobalAudio = (): HTMLAudioElement => {
+  if (typeof window !== 'undefined') {
+    const win = window as any;
+    if (!win.__globalAudio) {
+      win.__globalAudio = new Audio();
+      win.__globalAudio.loop = true;
+    }
+    return win.__globalAudio;
+  }
+  const fallback = new Audio();
+  fallback.loop = true;
+  return fallback;
+};
+
+const globalAudio = getGlobalAudio();
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
@@ -33,10 +46,11 @@ export const useAudio = (appState: AppState) => {
       }
     }
 
-    if (!globalAudio.src.endsWith(newSrc)) {
+    if (newSrc && !globalAudio.src.endsWith(newSrc)) {
       globalAudio.src = newSrc;
       globalAudio.loop = shouldLoop;
-      globalAudio.muted = isMuted; 
+      globalAudio.muted = isMuted;
+      globalAudio.volume = isMuted ? 0 : 1;
       
       if (!isMuted) {
         globalAudio.play().catch(() => {
@@ -49,6 +63,8 @@ export const useAudio = (appState: AppState) => {
   // 2. Handle muting specifically
   useEffect(() => {
     globalAudio.muted = isMuted;
+    globalAudio.volume = isMuted ? 0 : 1;
+    
     if (isMuted) {
       globalAudio.pause();
     } else {
