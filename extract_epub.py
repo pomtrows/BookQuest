@@ -33,7 +33,7 @@ for i in range(len(section_starts)):
         sid = int(section_id)
         if 1 <= sid <= 350:
             choices = []
-            choice_pattern = re.compile(r'([^\.]*?rendez[- ]*vous.*?au\s*(\d+)[^\.]*\.)', re.IGNORECASE)
+            choice_pattern = re.compile(r'([^\.]*?(?:rend[a-zà-ÿ\s-]*?au|allez[a-zà-ÿ\s-]*?au)\s*(\d+)[^\.]*\.)', re.IGNORECASE)
             for choice_match in choice_pattern.findall(text_clean):
                 choices.append({
                     "text": choice_match[0].strip(),

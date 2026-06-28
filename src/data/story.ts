@@ -295,6 +295,14 @@ export const storyData: Record<string, Section> = {
     "text": "Vous avez parcouru trois kilomètres à cheval parmi les arbres touffus lorsque le sol devient soudain marécageux. Utilisez la Table de Hasard pour obtenir un chiffre : Si vous tirez un chiffre inférieur à 5, votre cheval s'est enfoncé jusqu'au ventre dans une boue épaisse. Si le chiffre obtenu est égal ou supérieur à 5, vous parvenez à vous éloigner de ce bourbier et vous vous rendez au 189. Si votre cheval s'est enlisé, utilisez à nouveau la Table de Hasard pour tirer un autre chiffre. Si vous obtenez cette fois un chiffre égal ou inférieur à 7, vous vous enfoncez dans la boue jusqu'aux aisselles. En poussant un ultime hennissement désespéré, votre cheval, quant à lui, disparaît définitivement dans la vase. Si le chiffre que vous avez tiré est supérieur à 7, vous réussissez tant bien que mal à vous hisser sur un sol plus ferme et vous vous rendez au 189. Si vous êtes enlisé jusqu'aux aisselles, voici votre dernière chance ! Tirez un autre chiffre à l'aide de la Table de Hasard. Si vous obtenez tout autre chiffre que le 9, le marécage vous engloutit définitivement et votre mission s'achève ici, en même temps que votre vie. Si en revanche vous tirez un 9, rendez-vous au 312.",
     "choices": [
       {
+        "text": "Si le chiffre obtenu est égal ou supérieur à 5, vous parvenez à vous éloigner de ce bourbier et vous vous rendez au 189.",
+        "targetId": "189"
+      },
+      {
+        "text": "Si le chiffre que vous avez tiré est supérieur à 7, vous réussissez tant bien que mal à vous hisser sur un sol plus ferme et vous vous rendez au 189.",
+        "targetId": "189"
+      },
+      {
         "text": "Si en revanche vous tirez un 9, rendez-vous au 312.",
         "targetId": "312"
       }
@@ -489,7 +497,16 @@ export const storyData: Record<string, Section> = {
   "36": {
     "id": "36",
     "text": "Le bois de l'échelle qui monte à la vieille tour de guet, est pourri et plusieurs barreaux cèdent sous votre poids. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre égal ou inférieur à 4, vous tombez. Vous perdez donc 2 points d'ENDURANCE et vous vous rendez au 140. Si ce chiffre est supérieur à 4, vous ne tombez pas et vous vous rendez au 323.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous perdez donc 2 points d'ENDURANCE et vous vous rendez au 140.",
+        "targetId": "140"
+      },
+      {
+        "text": "Si ce chiffre est supérieur à 4, vous ne tombez pas et vous vous rendez au 323.",
+        "targetId": "323"
+      }
+    ]
   },
   "37": {
     "id": "37",
@@ -643,6 +660,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Souhaitez-vous attendre les Gloks pour les affronter en prenant avantage de votre position élevée ? Rendez-vous dans ce cas au 136.",
         "targetId": "136"
+      },
+      {
+        "text": "Préférez-vous serrer les dents et poursuivre l'escalade jusqu'au sommet ? Vous vous rendrez alors au 322.",
+        "targetId": "322"
       }
     ]
   },
@@ -677,6 +698,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez poursuivre votre chemin vers le nord en direction de la bataille, rendez-vous au 97.",
         "targetId": "97"
+      },
+      {
+        "text": "Si vous préférez éviter ce combat, prenez une autre direction en vous rendant au 243.",
+        "targetId": "243"
       }
     ]
   },
@@ -1373,6 +1398,10 @@ export const storyData: Record<string, Section> = {
     "text": "Un peu plus loin, vous apercevez un Corbeau, d'un noir de jais, perché sur la branche d'un vieux chêne. Si vous maîtrisez la Discipline Kaï de la Communication Animale, vous pouvez appeler cet oiseau en vous rendant au 298. Sinon, rendez-vous au 335.",
     "choices": [
       {
+        "text": "Si vous maîtrisez la Discipline Kaï de la Communication Animale, vous pouvez appeler cet oiseau en vous rendant au 298.",
+        "targetId": "298"
+      },
+      {
         "text": "Sinon, rendez-vous au 335.",
         "targetId": "335"
       }
@@ -1410,7 +1439,16 @@ export const storyData: Record<string, Section> = {
   "109": {
     "id": "109",
     "text": "Sous le tapis, vous ne trouvez que de la poussière ! Vous pouvez à présent examiner les bouteilles en vous rendant au 164. Vous pouvez également quitter la cabane et inspecter l'écurie ; vous vous rendrez alors au 308.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Sous le tapis, vous ne trouvez que de la poussière ! Vous pouvez à présent examiner les bouteilles en vous rendant au 164.",
+        "targetId": "164"
+      },
+      {
+        "text": "Vous pouvez également quitter la cabane et inspecter l'écurie ; vous vous rendrez alors au 308.",
+        "targetId": "308"
+      }
+    ]
   },
   "110": {
     "id": "110",
@@ -1440,6 +1478,10 @@ export const storyData: Record<string, Section> = {
     "id": "112",
     "text": "Soudain, le gros rocher derrière lequel vous vous êtes caché roule sur lui-même, poussé par deux Gloks hurlants qui vous font face et qui ont visiblement l'intention de vous tuer. L'entrée de la grotte est étroite, et vous ne pouvez combattre qu'un Glok à la fois. Vous devrez donc les affronter à tour de rôle. HABILETÉ ENDURANCE Premier GLOK 13 10 Deuxième GLOK 12 10 Si vous êtes vainqueur, vous pouvez explorer la grotte plus avant en vous rendant au 33. Mais vous pouvez également quitter les lieux et descendre le flanc de la colline ; rendez-vous pour cela au 248.",
     "choices": [
+      {
+        "text": "HABILETÉ ENDURANCE Premier GLOK 13 10 Deuxième GLOK 12 10 Si vous êtes vainqueur, vous pouvez explorer la grotte plus avant en vous rendant au 33.",
+        "targetId": "33"
+      },
       {
         "text": "Mais vous pouvez également quitter les lieux et descendre le flanc de la colline ; rendez-vous pour cela au 248.",
         "targetId": "248"
@@ -1537,6 +1579,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez vous laisser glisser le long de cette pente en prenant bien garde à ne pas tomber, rendez-vous au 226.",
         "targetId": "226"
+      },
+      {
+        "text": "Si, en revanche, vous ne voulez pas prendre le risque de descendre la pente dans l'état de somnolence où vous êtes, vous marcherez le long du bord en vous rendant au 38.",
+        "targetId": "38"
       }
     ]
   },
@@ -1603,7 +1649,16 @@ export const storyData: Record<string, Section> = {
   "124": {
     "id": "124",
     "text": "Dans la boîte, vous trouvez 15 Pièces d'Or et une Clé d'Argent. Si vous souhaitez conserver la Clé, inscrivez-la sur votre Feuille d'Aventure dans la case Objets Spéciaux. Vous pouvez continuer à explorer le tunnel en vous rendant au 211. Vous pouvez également descendre le flanc de la colline en vous rendant au 106.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous pouvez continuer à explorer le tunnel en vous rendant au 211.",
+        "targetId": "211"
+      },
+      {
+        "text": "Vous pouvez également descendre le flanc de la colline en vous rendant au 106.",
+        "targetId": "106"
+      }
+    ]
   },
   "125": {
     "id": "125",
@@ -1674,6 +1729,10 @@ export const storyData: Record<string, Section> = {
     "id": "130",
     "text": "Vous parvenez bientôt à une petite clairière. En son centre, vous trouvez un banc taillé dans le tronc d'un arbre. Vous avez faim, et il vous faut prendre un Repas, sinon, vous perdrez 3 points d'ENDURANCE. Lorsque vous avez fini de manger, vous pourrez quitter la clairière par le sud en vous rendant au 28. Mais si vous préférez emprunter le sentier plus étroit qui mène vers l'est en s'enfonçant dans la forêt, rendez- vous au 201.",
     "choices": [
+      {
+        "text": "Lorsque vous avez fini de manger, vous pourrez quitter la clairière par le sud en vous rendant au 28.",
+        "targetId": "28"
+      },
       {
         "text": "Mais si vous préférez emprunter le sentier plus étroit qui mène vers l'est en s'enfonçant dans la forêt, rendez- vous au 201.",
         "targetId": "201"
@@ -1940,6 +1999,10 @@ export const storyData: Record<string, Section> = {
         "targetId": "81"
       },
       {
+        "text": "Si vous pensez que vous serez plus en sécurité dans la forêt, vous pouvez courir vous y réfugier en vous rendant au 320.",
+        "targetId": "320"
+      },
+      {
         "text": "Enfin, si vous souhaitez inspecter plus avant la pièce dans laquelle vous vous trouvez, rendez-vous au 199.",
         "targetId": "199"
       }
@@ -1958,7 +2021,12 @@ export const storyData: Record<string, Section> = {
   "150": {
     "id": "150",
     "text": "Bien qu'elle soit un peu trop cuite, cette nourriture a un goût délicieux (il n'y en a pas assez cependant pour constituer un repas complet) et l'eau claire étanche votre soif. Vous avez passé environ une demi-heure dans cette maison lorsque vous vous rendez soudain compte que vous êtes en train de prendre du retard. Ramassez vos affaires et reprenez votre chemin en vous rendant au 83.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Ramassez vos affaires et reprenez votre chemin en vous rendant au 83.",
+        "targetId": "83"
+      }
+    ]
   },
   "151": {
     "id": "151",
@@ -2120,7 +2188,12 @@ export const storyData: Record<string, Section> = {
   "164": {
     "id": "164",
     "text": "Vous débouchez prudemment chacune des bouteilles et vous reniflez son contenu. Il semble s'agir là de différentes sortes de vin. Mais soudain, une autre bouteille, plus petite, coincée parmi les autres, attire votre attention. Elle est remplie d'un liquide de couleur orange dont l'odeur vous est familière : c'est de l'Essence d'Alether, une puissante potion qui a la propriété d'accroître votre force. Vous pouvez conserver cette fiole et en boire le contenu au début d'un combat : votre total d'HABILETÉ augmentera alors de 2 points pendant toute la durée de l'affrontement. Cette quantité d'essence d'Alether ne représente qu'une seule dose, vous ne pourrez donc en faire usage qu'une fois. Inscrivez cette Potion dans la case Objets Spéciaux de votre Feuille d'Aventure, et n'oubliez pas de l'effacer lorsque vous l'aurez bue. Vous décidez à présent d'inspecter l'écurie en vous rendant au 308.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous décidez à présent d'inspecter l'écurie en vous rendant au 308.",
+        "targetId": "308"
+      }
+    ]
   },
   "165": {
     "id": "165",
@@ -2454,6 +2527,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 21 Si vous êtes vainqueur, rendez-vous au 24.",
         "targetId": "24"
+      },
+      {
+        "text": "Si vous souhaitez prendre la fuite au cours du combat, vous pourrez sauter de la roulotte en vous rendant au 234.",
+        "targetId": "234"
       }
     ],
     "combat": {
@@ -2525,6 +2602,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez suivre cet homme dans le passage, rendez-vous au 332.",
         "targetId": "332"
+      },
+      {
+        "text": "Si vous ne voulez pas pénétrer dans ce sombre couloir, vous quittez les lieux et vous retournez dans la rue en vous rendant au 144.",
+        "targetId": "144"
       }
     ]
   },
@@ -2569,6 +2650,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez sauter sur la roulotte, rendez-vous au 78.",
         "targetId": "78"
+      },
+      {
+        "text": "Si vous maîtrisez la Discipline Kaï du Camouflage, vous pourrez vous accrocher à la roulotte et vous dissimuler parmi les bagages attachés sur le toit en vous rendant au 168.",
+        "targetId": "168"
       }
     ]
   },
@@ -2663,6 +2748,10 @@ export const storyData: Record<string, Section> = {
     "text": "Les répugnantes créatures brandissent leurs lances et vous attaquent. Il vous faut les combattre en les considérant comme un seul et même ennemi. GLOKS HABILETÉ: 15 ENDURANCE: 13 Si vous êtes vainqueur, vous pourrez aller vous réfugier dans la ferme en vous rendant au 148. Vous pouvez également, toujours en cas de victoire, retourner dans la forêt. Rendez-vous alors au 320.",
     "choices": [
       {
+        "text": "GLOKS HABILETÉ: 15 ENDURANCE: 13 Si vous êtes vainqueur, vous pourrez aller vous réfugier dans la ferme en vous rendant au 148.",
+        "targetId": "148"
+      },
+      {
         "text": "Rendez-vous alors au 320.",
         "targetId": "320"
       }
@@ -2690,6 +2779,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez lui emboîter le pas, rendez-vous au 332.",
         "targetId": "332"
+      },
+      {
+        "text": "Si cet homme ne vous inspire pas entièrement confiance, vous pouvez quitter les lieux et retourner au-dehors en vous rendant au 37.",
+        "targetId": "37"
       }
     ]
   },
@@ -2801,6 +2894,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 20 Si vous êtes vainqueur, rendez-vous au 24.",
         "targetId": "24"
+      },
+      {
+        "text": "Si vous souhaitez prendre la fuite au cours du combat, vous pouvez sauter de la roulotte en vous rendant au 234.",
+        "targetId": "234"
       }
     ],
     "combat": {
@@ -2958,6 +3055,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si, après quatre assauts, il est toujours vivant, rendez-vous au 203.",
         "targetId": "203"
+      },
+      {
+        "text": "Vous filerez alors par la porte de la boutique et vous courrez jusqu'à la grand-rue en vous rendant au 7.",
+        "targetId": "7"
       }
     ],
     "combat": {
@@ -3027,6 +3128,10 @@ export const storyData: Record<string, Section> = {
     "id": "237",
     "text": "Déployant pleinement vos talents de Seigneur Kaï en matière de Camouflage, vous vous enfouissez dans le sol meuble du flanc de la colline. Puis vous vous couvrez de votre cape et vous disposez quelques branches d'arbre sur cet abri improvisé pour mieux le dissimuler aux regards. Utilisez à présent la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, personne ne vous découvre et vous vous rendez au 265. Si en revanche vous tirez un chiffre entre 5 et 9, vous avez encore des progrès à faire dans la Discipline Kaï du Camouflage, car l'un de vos ennemis a tôt fait de vous trouver et de vous attaquer. Rendez-vous alors au 72 pour voir à qui vous avez affaire.",
     "choices": [
+      {
+        "text": "Si vous tirez un chiffre entre 0 et 4, personne ne vous découvre et vous vous rendez au 265.",
+        "targetId": "265"
+      },
       {
         "text": "Rendez-vous alors au 72 pour voir à qui vous avez affaire.",
         "targetId": "72"
@@ -3098,7 +3203,12 @@ export const storyData: Record<string, Section> = {
   "243": {
     "id": "243",
     "text": "En courant dans la forêt, vous trébuchez bientôt contre une racine et vous dévalez une pente escarpée en roulant sur vous- même. Vous atterrissez sur un petit chemin caché sous les arbres et vous y découvrez un cadavre étendu parmi les broussailles. C'est celui d'un Glok, une de ces créatures monstrueuses et répugnantes que les Maîtres des Ténèbres emploient à leurs services. Il y a bien longtemps, les ancêtres des Gloks servaient d'esclaves aux Maîtres des Ténèbres et ceux-ci leur firent bâtir la ville infernale d'Helgedad située dans les déserts volcaniques qui s'étendent au-delà des monts Durncrag. La construction de cette cité représenta un long et douloureux cauchemar pour ces créatures, dont seules les plus fortes survécurent à la terrible épreuve. La chaleur et les vapeurs empoisonnées qui se dégageaient des terrains alentour se révélaient, en effet, mortelles pour la plupart d'entre elles. Le monstre mort qui gît à vos pieds est, comme tous ses congénères, un descendant de ces anciens esclaves Gloks. Il a été tué par un coup d'épée en pleine tête et une Masse d'Armes est posée à côté de lui. Vous pouvez prendre cette arme si vous le souhaitez en n'oubliant pas de l'inscrire sur votre Feuille d'Aventure. Vous poursuivrez ensuite votre chemin le long du sentier en vous rendant au 97.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous poursuivrez ensuite votre chemin le long du sentier en vous rendant au 97.",
+        "targetId": "97"
+      }
+    ]
   },
   "244": {
     "id": "244",
@@ -3354,6 +3464,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous souhaitez le combattre, rendez-vous au 191.",
         "targetId": "191"
+      },
+      {
+        "text": "Si vous préférez éviter l'affrontement, vous pouvez sauter en marche de la roulotte en vous rendant au 234.",
+        "targetId": "234"
       }
     ]
   },
@@ -3361,6 +3475,10 @@ export const storyData: Record<string, Section> = {
     "id": "263",
     "text": "Vous suivez prudemment le cours d'eau qui coule vers l'est puis soudain, vous vous immobilisez : vous venez, en effet, d'apercevoir la silhouette d'un Kraan mort qui gît dans l'eau tel un grand barrage noir. En restant à l'abri du feuillage, vous avancez avec précaution vers le cadavre de la créature : trois flèches sont profondément enfoncées dans son poitrail. Un autre corps est coincé sous le Kraan mort: c'est celui d'un Glok qui le chevauchait. Les Gloks sont des êtres méprisables et malfaisants entièrement dévoués à la cause des Maîtres des Ténèbres. Il y a bien longtemps, les ancêtres des Gloks servaient d'esclaves aux Maîtres des Ténèbres et ceux-ci leur firent bâtir la ville infernale d'Helgedad, située dans les déserts volcaniques qui s'étendent au-delà des monts Durncrag. La construction de cette cité représenta un long et douloureux cauchemar pour ces créatures, dont seules les plus fortes survécurent à la terrible épreuve. La chaleur et les vapeurs empoisonnées qui se dégageaient des terrains alentour se révélaient, en effet, mortelles pour la plupart d'entre eux. Le monstre mort qui repose dans le lit du cours d'eau est l'un des descendants de ces anciens esclaves. Apparemment, il s'est noyé. Dans une bourse accrochée à sa ceinture, vous trouvez 3 Pièces d'Or que vous pouvez prendre si vous le souhaitez. Vous pourrez ensuite continuer votre chemin le long du cours d'eau en vous rendant au 70. Mais vous pouvez également quitter sa berge et prendre la direction du sud ; rendez-vous pour cela au 157.",
     "choices": [
+      {
+        "text": "Vous pourrez ensuite continuer votre chemin le long du cours d'eau en vous rendant au 70.",
+        "targetId": "70"
+      },
       {
         "text": "Mais vous pouvez également quitter sa berge et prendre la direction du sud ; rendez-vous pour cela au 157.",
         "targetId": "157"
@@ -3505,7 +3623,12 @@ export const storyData: Record<string, Section> = {
   "276": {
     "id": "276",
     "text": "Vous empoignez votre Hache et vous vous frayez un chemin dans l'enchevêtrement de racines et de branches noueuses qui obstrue le chemin. Bientôt, votre cape est déchirée en plusieurs endroits et votre jambe droite douloureusement meurtrie, juste au-dessus du genou. Vous perdez 1 point d'ENDURANCE avant de vous rendre au 213.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous perdez 1 point d'ENDURANCE avant de vous rendre au 213.",
+        "targetId": "213"
+      }
+    ]
   },
   "277": {
     "id": "277",
@@ -3771,12 +3894,22 @@ export const storyData: Record<string, Section> = {
   "300": {
     "id": "300",
     "text": "Vous avez marché pendant plus d'une heure en surveillant le ciel de peur de voir apparaître des Kraans. Par deux fois, vous avez aperçu leurs silhouettes caractéristiques qui se dessinaient au loin, mais la promptitude de vos réflexes vous a gardé d'être repéré. Cette longue marche vous a affamé cependant et il vous faut prendre un Repas, sinon vous perdrez 3 points d'ENDURANCE. Vous poursuivrez ensuite votre chemin en vous rendant au 13.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous poursuivrez ensuite votre chemin en vous rendant au 13.",
+        "targetId": "13"
+      }
+    ]
   },
   "301": {
     "id": "301",
     "text": "Votre Sens de l'Orientation vous indique que le sentier orienté à l'ouest aboutit à un cul-de-sac. Vous choisissez donc d'emprunter le chemin menant au sud et vous vous rendez pour cela au 27.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous choisissez donc d'emprunter le chemin menant au sud et vous vous rendez pour cela au 27.",
+        "targetId": "27"
+      }
+    ]
   },
   "302": {
     "id": "302",
@@ -3848,6 +3981,10 @@ export const storyData: Record<string, Section> = {
       {
         "text": "Si vous maîtrisez la Discipline Kaï de la Communication Animale et que vous souhaitez en faire usage, rendez-vous au 122.",
         "targetId": "122"
+      },
+      {
+        "text": "Sinon, vous vous lancerez à la poursuite du cheval en vous rendant au 233.",
+        "targetId": "233"
       }
     ]
   },
@@ -4158,7 +4295,12 @@ export const storyData: Record<string, Section> = {
   "336": {
     "id": "336",
     "text": "Vous vous ruez dans la clairière en prenant les Gloks au dépourvu. Sans la moindre seconde d'hésitation, vous frappez celui qui se trouve le plus proche de vous et vous le tuez avant même que son corps se soit écroulé sur le sol. Les autres Gloks dégainent leurs épées à la lame recourbée et vous attaquent, il vous faut les combattre un par un. HABILETÉ ENDURANCE Premier GLOK 14 11 Deuxième GLOK 13 11 Si vous êtes vainqueur, vous libérez le soldat et vous vous rendez au 117.",
-    "choices": [],
+    "choices": [
+      {
+        "text": "HABILETÉ ENDURANCE Premier GLOK 14 11 Deuxième GLOK 13 11 Si vous êtes vainqueur, vous libérez le soldat et vous vous rendez au 117.",
+        "targetId": "117"
+      }
+    ],
     "combat": [
       {
         "name": "Premier GLOK",
@@ -4270,7 +4412,12 @@ export const storyData: Record<string, Section> = {
   "343": {
     "id": "343",
     "text": "Vous êtes prisonnier des branches et des racines, mais vous parvenez finalement à dégager votre main droite, à empoigner votre Hache et à vous tailler un chemin à travers l'épaisse végétation. Un peu plus loin, la forêt s'éclaircit et vous avancez dans cette direction. Votre cape est déchirée en plusieurs endroits et votre bras gauche écorché au-dessus du coude. Vous perdez 2 points d'ENDURANCE avant de vous rendre au 213.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous perdez 2 points d'ENDURANCE avant de vous rendre au 213.",
+        "targetId": "213"
+      }
+    ]
   },
   "344": {
     "id": "344",
@@ -4286,6 +4433,10 @@ export const storyData: Record<string, Section> = {
     "id": "345",
     "text": "Vous rabattez sur votre tête le capuchon de votre cape de Seigneur Kaï et vous retenez votre souffle tandis que le Kraan tournoie au-dessus de vous. Quelques minutes plus tard, vous entendez les Gloks pousser des jurons furieux et les battements d'ailes des Kraans s'évanouissent bientôt: ils sont partis vers l'ouest. La promptitude de vos réflexes vous a sauvé d'une capture certaine et d'une mort probable. Vous pouvez à présent revenir sur le sentier en vous rendant au 272. Mais vous pouvez également choisir de poursuivre votre chemin parmi les arbres de la forêt. Rendez-vous pour cela au 19.",
     "choices": [
+      {
+        "text": "Vous pouvez à présent revenir sur le sentier en vous rendant au 272.",
+        "targetId": "272"
+      },
       {
         "text": "Rendez-vous pour cela au 19.",
         "targetId": "19"
@@ -4315,7 +4466,12 @@ export const storyData: Record<string, Section> = {
   "348": {
     "id": "348",
     "text": "D'un coup de pied, vous jetez au loin le corps du serpent et vous êtes alors saisi d'une terreur rétrospective, car cette Vipère des Marais était une vipère rouge et aucun remède n'existe contre la puissance de son venin ! Vous estimez qu'il serait suicidaire de continuer plus avant dans cette direction et vous revenez donc sur vos pas jusqu'à ce que vous retrouviez un terrain plus ferme. Vous poursuivez ensuite votre chemin en vous rendant au 95.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous poursuivez ensuite votre chemin en vous rendant au 95.",
+        "targetId": "95"
+      }
+    ]
   },
   "349": {
     "id": "349",
