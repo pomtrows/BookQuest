@@ -13,6 +13,7 @@ type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
   const [showInventory, setShowInventory] = useState(false);
+  const [showDropdownMenu, setShowDropdownMenu] = useState(false);
   const { character } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
@@ -84,17 +85,46 @@ function App() {
 
       {appState === 'GAME' && (
         <div className="flex flex-col h-screen relative">
-          <div className="flex justify-between items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10">
-            <h1 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Book Quest</h1>
-            <div className="flex gap-3 items-center">
-              <button onClick={(e) => { e.stopPropagation(); toggleMute(); }} className="text-gray-400 hover:text-[#d4af37] transition-colors p-1" title={isMuted ? "Activer le son" : "Couper le son"}>
-                {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+          <div className="flex items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10 relative">
+            <div className="relative z-50">
+              <button 
+                onClick={() => setShowDropdownMenu(!showDropdownMenu)} 
+                className="text-gray-400 hover:text-[#d4af37] bg-[#333] hover:bg-[#444] p-2 rounded transition-colors flex items-center justify-center"
+              >
+                <Menu size={24} />
               </button>
-              <button onClick={() => handleStateChange('MENU')} className="choice-btn !mt-0 !py-1 !px-3 text-sm">Menu</button>
-              <button onClick={() => setShowInventory(!showInventory)} className="primary-btn !py-1 !px-3 text-sm flex items-center gap-2">
-                <Menu size={16} /> Feuille d'Aventure
-              </button>
+              
+              {showDropdownMenu && (
+                <>
+                  <div className="fixed inset-0 z-40" onClick={() => setShowDropdownMenu(false)}></div>
+                  <div className="absolute top-12 left-0 bg-[#1e1e1e] border border-[#333333] rounded-md shadow-2xl py-2 w-56 z-50 animate-fade-in">
+                    <button 
+                      onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
+                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
+                    >
+                      Feuille d'Aventure
+                    </button>
+                    <button 
+                      onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
+                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors border-b border-gray-800"
+                    >
+                      Menu Principal
+                    </button>
+                    <button 
+                      onClick={(e) => { e.stopPropagation(); toggleMute(); setShowDropdownMenu(false); }} 
+                      className="w-full text-left px-4 py-3 text-sm text-gray-300 hover:bg-[#333] hover:text-[#d4af37] transition-colors flex items-center gap-3"
+                    >
+                      {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />} 
+                      {isMuted ? "Activer le son" : "Couper le son"}
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
+            
+            <h1 className="text-2xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2" style={{ fontFamily: 'Cinzel, serif' }}>
+              Book Quest
+            </h1>
           </div>
           
           <div className="flex-1 overflow-y-auto p-4 md:p-8">
