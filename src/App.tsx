@@ -48,7 +48,7 @@ function App() {
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
           <div className="relative z-10 text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', marginTop: '-120px', display: 'block' }}>Book Quest</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Book Quest</h1>
             <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Loup Solitaire: Les Maîtres des Ténèbres</h2>
           </div>
 
@@ -71,7 +71,7 @@ function App() {
             <button 
               onClick={() => handleStateChange('RULES')}
               className="choice-btn text-center text-xl transition-all"
-              style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95 }}
+              style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95, textAlign: 'center' }}
             >
               Règles du Jeu
             </button>
