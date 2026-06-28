@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, BookOpen, Axe, Backpack, Coins, Map as MapIcon, Sword, Hammer, FlaskConical } from 'lucide-react';
+import { ArrowLeft, BookOpen, Backpack, Coins, Map as MapIcon, FlaskConical } from 'lucide-react';
 import { rulesData } from '../data/rules';
 
 interface RulesProps {
@@ -123,14 +123,14 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         type: "Arme",
                         desc: "Votre arme de corps à corps principale. Indispensable pour mener des assauts au combat.",
                         effect: "Permet de combattre normalement.",
-                        icon: <Axe className="w-10 h-10 text-[#d4af37]" />
+                        image: "/images/equipment/hache.png"
                       },
                       {
                         name: "Sac à Dos",
                         type: "Conteneur",
                         desc: "Permet de ranger vos repas, potions et autres objets trouvés.",
                         effect: "Capacité maximale de 8 objets.",
-                        icon: <Backpack className="w-10 h-10 text-[#c69c6d]" />
+                        icon: <Backpack className="w-10 h-10 text-gray-800" />
                       },
                       {
                         name: "Repas",
@@ -138,7 +138,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         desc: "Des rations de voyage indispensables pour ne pas mourir de faim.",
                         effect: "Consommé quand l'aventure l'exige. Omission : -3 PE.",
                         icon: (
-                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-[#f3a152]" fill="currentColor">
+                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-gray-800" fill="currentColor">
                             <path d="M50 15c-15 0-25 12-25 25 0 20 25 45 25 45s25-25 25-45c0-13-10-25-25-25zm0 15c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"/>
                           </svg>
                         )
@@ -148,24 +148,28 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         type: "Bourse",
                         desc: "Contient vos Couronnes d'Or récupérées au fil de l'aventure.",
                         effect: "Contient 0 à 9 Couronnes au départ. Maximum 50.",
-                        icon: <Coins className="w-10 h-10 text-[#e5c158]" />
+                        icon: <Coins className="w-10 h-10 text-gray-800" />
                       },
                       {
                         name: "Carte Géographique",
                         type: "Objet Spécial",
                         desc: "Une carte détaillée des Terres du Nord du Magnamund.",
                         effect: "Nécessaire pour s'orienter durant le voyage.",
-                        icon: <MapIcon className="w-10 h-10 text-[#4a90e2]" />
+                        icon: <MapIcon className="w-10 h-10 text-gray-800" />
                       }
                     ].map((item, i) => (
-                      <div key={i} className="flex gap-4 p-4 rounded bg-black/40 border border-gray-800 hover:border-[#d4af37]/35 transition-colors">
-                        <div className="flex items-center justify-center bg-[#1e1e1e] border border-[#d4af37]/20 w-16 h-16 rounded shrink-0 shadow-inner">
-                          {item.icon}
+                      <div key={i} className="flex gap-4 p-4 rounded border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)]" style={{ backgroundColor: '#fcf8ed' }}>
+                        <div className="flex items-center justify-center bg-white border-2 border-black w-20 h-20 rounded shrink-0 p-1 shadow-inner overflow-hidden">
+                          {item.image ? (
+                            <img src={item.image} alt={item.name} className="w-full h-full object-contain" style={{ imageRendering: 'pixelated' }} />
+                          ) : (
+                            item.icon
+                          )}
                         </div>
-                        <div>
-                          <h4 className="font-bold text-[#d4af37] text-base mb-1" style={{ fontFamily: 'Cinzel, serif' }}>{item.name} <span className="text-xs text-gray-500 font-sans font-normal ml-2">({item.type})</span></h4>
-                          <p className="text-xs text-gray-400 mb-1 leading-snug">{item.desc}</p>
-                          <p className="text-xs text-[#e5c158]/90 font-bold">{item.effect}</p>
+                        <div className="flex flex-col justify-center">
+                          <h4 className="font-bold text-gray-900 text-base mb-1" style={{ fontFamily: 'Cinzel, serif' }}>{item.name} <span className="text-xs text-gray-500 font-sans font-normal ml-2">({item.type})</span></h4>
+                          <p className="text-xs text-gray-700 mb-1 leading-snug">{item.desc}</p>
+                          <p className="text-xs text-red-800 font-bold">{item.effect}</p>
                         </div>
                       </div>
                     ))}
@@ -183,7 +187,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         type: "Arme",
                         desc: "Une épée en acier classique, équilibrée et tranchante.",
                         effect: "Arme de corps à corps standard.",
-                        icon: <Sword className="w-10 h-10 text-[#a5b1c2]" />
+                        image: "/images/equipment/epee.png"
                       },
                       {
                         name: "Casque",
@@ -191,7 +195,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         desc: "Un heaume métallique robuste protégeant la tête.",
                         effect: "+2 points d'Endurance maximum.",
                         icon: (
-                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-[#778ca3]" fill="none" stroke="currentColor" strokeWidth="6">
+                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-gray-800" fill="none" stroke="currentColor" strokeWidth="6">
                             <path d="M50 15 C25 15, 20 40, 20 70 L50 90 L80 70 C80 40, 75 15, 50 15 Z" fill="currentColor" fillOpacity="0.1"/>
                             <path d="M50 15 L50 90 M20 50 L80 50"/>
                           </svg>
@@ -203,7 +207,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         desc: "Une armure faite d'anneaux de fer entrelacés.",
                         effect: "+4 points d'Endurance maximum.",
                         icon: (
-                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-[#57606f]" fill="none" stroke="currentColor" strokeWidth="6">
+                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-gray-800" fill="none" stroke="currentColor" strokeWidth="6">
                             <path d="M30 20 L50 10 L70 20 L85 30 L80 85 L20 85 L15 30 Z" fill="currentColor" fillOpacity="0.1"/>
                             <circle cx="35" cy="40" r="6" strokeWidth="4"/>
                             <circle cx="50" cy="40" r="6" strokeWidth="4"/>
@@ -218,55 +222,49 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
                         type: "Arme",
                         desc: "Une arme lourde munie d'une tête de fer cloutée.",
                         effect: "Arme de corps à corps contondante.",
-                        icon: <Hammer className="w-10 h-10 text-[#747d8c]" />
+                        image: "/images/equipment/masse.png"
                       },
                       {
                         name: "Potion de Guérison",
                         type: "Potion",
                         desc: "Un élixir curatif préparé à base d'herbes médicinales.",
                         effect: "Restaure 4 points d'Endurance (utilisable hors combat).",
-                        icon: <FlaskConical className="w-10 h-10 text-[#26de81]" />
+                        icon: <FlaskConical className="w-10 h-10 text-gray-800" />
                       },
                       {
                         name: "Bâton",
                         type: "Arme",
                         desc: "Un long bâton de marche robuste en bois de chêne.",
                         effect: "Arme de combat à deux mains légère.",
-                        icon: (
-                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-[#c69c6d]" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round">
-                            <line x1="85" y1="15" x2="15" y2="85" />
-                            <circle cx="85" cy="15" r="4" fill="currentColor"/>
-                          </svg>
-                        )
+                        image: "/images/equipment/baton.png"
                       },
                       {
                         name: "Lance",
                         type: "Arme",
                         desc: "Une longue hampe de bois surmontée d'une pointe de fer.",
                         effect: "Arme d'hast efficace.",
-                        icon: (
-                          <svg viewBox="0 0 100 100" className="w-10 h-10 text-[#a5b1c2]" fill="none" stroke="currentColor" strokeWidth="6">
-                            <line x1="85" y1="15" x2="25" y2="75" strokeWidth="4"/>
-                            <polygon points="85,15 70,12 65,30" fill="currentColor"/>
-                          </svg>
-                        )
+                        image: "/images/equipment/lance.png"
                       },
                       {
                         name: "Glaive",
                         type: "Arme",
                         desc: "Une épée courte à double tranchant, agile et rapide.",
                         effect: "Arme de combat rapproché.",
-                        icon: <Sword className="w-10 h-10 text-[#a5b1c2] rotate-45" />
+                        image: "/images/equipment/glaive.png"
                       }
                     ].map((item, i) => (
-                      <div key={i} className="flex gap-4 p-4 rounded bg-black/40 border border-gray-800 hover:border-[#d4af37]/35 transition-colors">
-                        <div className="flex items-center justify-center bg-[#1e1e1e] border border-[#d4af37]/20 w-16 h-16 rounded shrink-0 shadow-inner">
-                          {item.icon}
+                      <div key={i} className="flex gap-4 p-4 rounded border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)]" style={{ backgroundColor: '#fcf8ed' }}>
+                        <div className="flex items-center justify-center bg-white border-2 border-black w-20 h-20 rounded shrink-0 p-1 shadow-inner overflow-hidden">
+                          {item.image ? (
+                            <img src={item.image} alt={item.name} className="w-full h-full object-contain" />
+                          ) : (
+                            item.icon
+                          )}
                         </div>
-                        <div>
-                          <h4 className="font-bold text-[#d4af37] text-base mb-1" style={{ fontFamily: 'Cinzel, serif' }}>{item.name} <span className="text-xs text-gray-500 font-sans font-normal ml-2">({item.type})</span></h4>
-                          <p className="text-xs text-gray-400 mb-1 leading-snug">{item.desc}</p>
-                          <p className="text-xs text-[#e5c158]/90 font-bold">{item.effect}</p>
+                        <div className="flex flex-col justify-center">
+                          <h4 className="font-bold text-gray-900 text-base mb-1" style={{ fontFamily: 'Cinzel, serif' }}>{item.name} <span className="text-xs text-gray-500 font-sans font-normal ml-2">({item.type})</span></h4>
+                          <p className="text-xs text-gray-700 mb-1 leading-snug">{item.desc}</p>
+                          <p className="text-xs text-red-800 font-bold">{item.effect}</p>
                         </div>
                       </div>
                     ))}
