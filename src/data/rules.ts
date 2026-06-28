@@ -115,6 +115,8 @@ De plus, vous avez découvert une Carte Géographique des Terres du Nord et l'un
 4. Les dégâts sont soustraits de l'Endurance.
 5. S'il s'agit d'un combat à mort, les assauts s'enchaînent jusqu'à ce que l'Endurance de l'un des deux combattants atteigne 0.
 
-Il est parfois possible de fuir un combat si le texte vous y autorise, mais vous subirez souvent les dégâts d'un premier assaut avant de vous échapper.`
+Il est parfois possible de fuir un combat si le texte vous y autorise, mais vous subirez souvent les dégâts d'un premier assaut avant de vous échapper.
+
+[COMBAT_TABLE]`
   }
 ];
