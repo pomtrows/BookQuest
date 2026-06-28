@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #121212;
+    --foreground: #e4d5b7;
+    --primary: #d4af37;
+    --primary-hover: #b38f22;
+    --panel-bg: #1e1e1e;
+    --panel-border: #333333;
+    --accent: #8b0000;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.book-panel {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: #121212;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.primary-btn:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.choice-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: var(--primary);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.choice-btn:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+  border-color: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif; /* Or any serif font if Cinzel is not loaded */
+  color: var(--primary);
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
