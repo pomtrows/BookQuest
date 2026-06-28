@@ -3,16 +3,8 @@ import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 
 
-const getHealthColor = (pct: number) => {
-  if (pct > 50) return 'bg-green-500';
-  if (pct > 25) return 'bg-yellow-400';
-  if (pct > 10) return 'bg-orange-500';
-  return 'bg-red-600';
-};
-
 const HealthBar = ({ current, max }: { current: number, max: number }) => {
   const pct = Math.max(0, (current / max) * 100);
-  const colorClass = getHealthColor(pct);
 
   return (
     <div className="flex items-center w-full my-2 relative">
@@ -23,10 +15,10 @@ const HealthBar = ({ current, max }: { current: number, max: number }) => {
           <rect x="3" y="3" width="1" height="1" fill="#FFFFFF"/>
         </svg>
       </div>
-      <div className="flex-1 h-5 bg-gray-900 border-2 border-black rounded-r-md overflow-hidden relative shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
+      <div className="flex-1 h-5 bg-white border-2 border-black rounded-r-md overflow-hidden relative shadow-inner">
         <div 
-          className={`h-full ${colorClass} transition-all duration-500 ease-out`}
-          style={{ width: `${pct}%`, boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.3)' }}
+          className="h-full bg-red-600 transition-all duration-500 ease-out"
+          style={{ width: `${pct}%`, boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.2), inset 0 3px 0 rgba(255,255,255,0.3)' }}
         ></div>
       </div>
     </div>
