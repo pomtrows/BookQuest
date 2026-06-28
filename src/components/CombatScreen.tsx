@@ -16,17 +16,17 @@ const HealthBar = ({ current, max }: { current: number, max: number }) => {
 
   return (
     <div className="flex items-center w-full my-2 relative">
-      <svg viewBox="0 0 11 11" className="w-10 h-10 drop-shadow-md z-10 -mr-3 relative" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ imageRendering: 'pixelated' }}>
-        <path d="M2 1h2v1h1v1h1V2h2V1h2v3h1v2h-1v2h-1v1h-1v1h-1v1H5v-1H4v-1H3V8H2V6H1V4h1V1z" fill="#000"/>
-        <path d="M3 2h1v1h2V2h1v2h1v2h-1v1h-1v1H5V7H4V6H3V4H2V2h1z" fill="#FF0000"/>
-        <rect x="3" y="3" width="1" height="1" fill="#FFFFFF"/>
-      </svg>
-      <div className="flex-1 h-6 bg-black border-2 border-black rounded-r-xl overflow-hidden relative">
-        <div className="absolute inset-0 bg-white opacity-20"></div>
-        <div className="absolute inset-0 bg-black"></div>
+      <div style={{ width: '28px', height: '28px', flexShrink: 0, zIndex: 10, marginRight: '-6px' }}>
+        <svg viewBox="0 0 11 11" style={{ width: '100%', height: '100%', imageRendering: 'pixelated', filter: 'drop-shadow(2px 2px 0px rgba(0,0,0,0.5))' }} fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 1h2v1h1v1h1V2h2V1h2v3h1v2h-1v2h-1v1h-1v1h-1v1H5v-1H4v-1H3V8H2V6H1V4h1V1z" fill="#000"/>
+          <path d="M3 2h1v1h2V2h1v2h1v2h-1v1h-1v1H5V7H4V6H3V4H2V2h1z" fill="#FF0000"/>
+          <rect x="3" y="3" width="1" height="1" fill="#FFFFFF"/>
+        </svg>
+      </div>
+      <div className="flex-1 h-5 bg-gray-900 border-2 border-black rounded-r-md overflow-hidden relative shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
         <div 
-          className={`h-full ${colorClass} transition-all duration-500 ease-out border-t-2 border-white/40 border-b-2 border-black/40`}
-          style={{ width: `${pct}%` }}
+          className={`h-full ${colorClass} transition-all duration-500 ease-out`}
+          style={{ width: `${pct}%`, boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.3)' }}
         ></div>
       </div>
     </div>
