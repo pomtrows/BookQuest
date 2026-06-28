@@ -48,11 +48,12 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
+        position: 'relative'
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0, 0, 0, 0.85)', zIndex: 1 }}></div>
       
-      <div className="relative z-10 w-full max-w-6xl flex flex-col h-[90vh]">
+      <div className="relative w-full max-w-6xl flex flex-col h-[90vh]" style={{ zIndex: 10 }}>
         {/* Header */}
         <div className="flex items-center justify-between mb-8 border-b border-[#d4af37]/30 pb-4">
           <div className="flex items-center gap-4">
@@ -63,7 +64,8 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
           </div>
           <button 
             onClick={onBack}
-            className="flex items-center gap-2 px-4 py-2 bg-black/50 hover:bg-[#d4af37]/20 border border-[#d4af37]/50 rounded text-[#d4af37] transition-all"
+            className="flex items-center gap-2 px-4 py-2 hover:bg-[#d4af37]/20 border rounded transition-all"
+            style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderColor: '#d4af37', color: '#d4af37' }}
           >
             <ArrowLeft size={20} />
             <span className="hidden md:inline">Retour</span>
@@ -78,11 +80,12 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className={`text-left px-4 py-3 rounded border transition-all ${
-                  activeSection === section.id 
-                    ? 'bg-[#d4af37]/20 border-[#d4af37] text-[#d4af37] shadow-[0_0_10px_rgba(212,175,55,0.2)]' 
-                    : 'bg-black/40 border-gray-700 text-gray-400 hover:bg-black/60 hover:border-gray-500'
-                }`}
+                className="text-left px-4 py-3 rounded border transition-all"
+                style={{
+                  backgroundColor: activeSection === section.id ? 'rgba(212, 175, 55, 0.2)' : 'rgba(0, 0, 0, 0.6)',
+                  borderColor: activeSection === section.id ? '#d4af37' : '#444',
+                  color: activeSection === section.id ? '#d4af37' : '#ccc',
+                }}
               >
                 <span className="font-semibold text-lg">{section.title}</span>
               </button>
@@ -90,7 +93,12 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
           </div>
 
           {/* Text Area */}
-          <div className="w-full md:w-2/3 bg-black/60 backdrop-blur-sm border border-[#d4af37]/20 rounded-lg p-6 md:p-8 overflow-y-auto custom-scrollbar shadow-2xl">
+          <div className="w-full md:w-2/3 border rounded-lg p-6 md:p-8 overflow-y-auto custom-scrollbar shadow-2xl"
+            style={{
+              backgroundColor: 'rgba(10, 10, 10, 0.95)',
+              borderColor: 'rgba(212, 175, 55, 0.3)'
+            }}
+          >
             <h2 className="text-2xl md:text-3xl font-bold text-[#d4af37] mb-6 border-b border-gray-700 pb-2" style={{ fontFamily: 'Cinzel, serif' }}>
               {activeData.title}
             </h2>
