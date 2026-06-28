@@ -204,6 +204,38 @@ export function CombatScreen() {
 
       </div>
 
+      {combatRounds.length > 0 && (
+        <div className="mt-8 border-t border-gray-800 pt-6 relative z-10 animate-fade-in">
+          <h4 className="text-[#d4af37] text-lg mb-4 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Historique du Combat</h4>
+          <div className="bg-black/50 rounded-lg p-4 max-h-48 overflow-y-auto border border-gray-800 shadow-inner">
+            <table className="w-full text-sm text-left">
+              <thead className="text-gray-400 border-b border-gray-800">
+                <tr>
+                  <th className="pb-2 font-normal">Assaut</th>
+                  <th className="pb-2 font-normal text-center">Tirage</th>
+                  <th className="pb-2 font-normal text-right text-red-400">Dégâts subis (Vous)</th>
+                  <th className="pb-2 font-normal text-right text-red-600">Dégâts subis ({enemy.name})</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-800/50">
+                {[...combatRounds].reverse().map((round) => (
+                  <tr key={round.round} className="text-gray-300">
+                    <td className="py-2 text-[#d4af37]">#{round.round}</td>
+                    <td className="py-2 text-center font-bold text-white text-lg">{round.randomNum}</td>
+                    <td className="py-2 text-right">
+                      {round.playerDamage === 0 ? <span className="text-gray-500">Esquive</span> : <span className="text-red-400 font-bold">-{round.playerDamage}</span>}
+                    </td>
+                    <td className="py-2 text-right">
+                      {round.enemyDamage === 0 ? <span className="text-gray-500">Esquive</span> : <span className="text-red-600 font-bold">{round.enemyDamage >= 100 ? 'MORT' : `-${round.enemyDamage}`}</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes shake {
           0% { transform: translate(1px, 1px) rotate(0deg); }
