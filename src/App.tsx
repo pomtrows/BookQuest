@@ -114,7 +114,7 @@ function App() {
                     <div className="flex-1 px-4 py-6 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
                       <button 
                         onClick={() => { setShowInventory(true); setShowDropdownMenu(false); }} 
-                        className="w-full bg-transparent text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
+                        className="sidebar-btn group"
                       >
                         <ScrollText size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                         <span className="font-medium text-[15px] tracking-wide">Feuille d'Aventure</span>
@@ -122,7 +122,7 @@ function App() {
                       
                       <button 
                         onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
-                        className="w-full bg-transparent text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
+                        className="sidebar-btn group"
                       >
                         <BookOpen size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                         <span className="font-medium text-[15px] tracking-wide">Règles du jeu</span>
@@ -130,7 +130,7 @@ function App() {
                       
                       <button 
                         onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
-                        className="w-full bg-transparent text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-[#d4af37] hover:bg-gradient-to-r hover:from-[#d4af37]/10 hover:to-transparent border-l-4 border-transparent hover:border-[#d4af37] rounded-r-2xl transition-all duration-300 group"
+                        className="sidebar-btn group"
                       >
                         <Home size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                         <span className="font-medium text-[15px] tracking-wide">Menu Principal</span>
@@ -141,7 +141,8 @@ function App() {
                     <div className="p-4 border-t border-gray-800/60 bg-[#0d0d10] mt-auto">
                       <button 
                         onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
-                        className="w-full bg-transparent text-left px-4 py-3.5 flex items-center gap-4 text-gray-400 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-300"
+                        className="sidebar-btn group rounded-xl border-l-0 hover:border-l-0 hover:bg-white/5"
+                        style={{ borderRadius: '0.75rem' }}
                       >
                         {isMuted ? <VolumeX size={20} strokeWidth={1.5} /> : <Volume2 size={20} strokeWidth={1.5} />} 
                         <span className="font-medium text-[15px] tracking-wide">{isMuted ? "Activer le son" : "Couper le son"}</span>

@@ -72,6 +72,28 @@ body {
   border-color: var(--primary);
 }
 
+.sidebar-btn {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  color: #9ca3af;
+  padding: 0.875rem 1rem;
+  border: none;
+  border-left: 4px solid transparent;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-btn:hover {
+  color: var(--primary);
+  background: linear-gradient(to right, rgba(212, 175, 55, 0.1), transparent);
+  border-left-color: var(--primary);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif; /* Or any serif font if Cinzel is not loaded */
   color: var(--primary);
