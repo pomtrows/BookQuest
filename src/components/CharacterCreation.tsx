@@ -22,6 +22,9 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
   
   const [selectedDisciplines, setSelectedDisciplines] = useState<Discipline[]>([]);
   const [weaponskillChoice, setWeaponskillChoice] = useState<Weapon | null>(null);
+  
+  const [characterName, setCharacterName] = useState<string>('');
+  const [selectedAvatar, setSelectedAvatar] = useState<string>('avatar_1.png');
 
   const rollStats = () => {
     setCombatSkill(10 + Math.floor(Math.random() * 10));
@@ -72,6 +75,8 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
     }
 
     startNewGame({
+      name: characterName.trim() || 'Loup Solitaire',
+      avatar: `/images/avatars/${selectedAvatar}`,
       combatSkill,
       endurance: finalEndurance,
       maxEndurance: finalEndurance,
@@ -90,6 +95,42 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
     <div className="max-w-3xl mx-auto p-6 pb-20">
       <h2 className="text-3xl font-bold mb-6 text-center text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Création de Personnage</h2>
       
+
+      <div className="book-panel p-6 mb-6">
+        <h3 className="text-xl mb-4">0. Identité</h3>
+        
+        <div className="mb-6">
+          <label className="block text-[#d4af37] mb-2 font-semibold">Nom de votre Héros :</label>
+          <input 
+            type="text" 
+            value={characterName}
+            onChange={(e) => setCharacterName(e.target.value)}
+            placeholder="Ex: Loup Solitaire, Aragorn..."
+            className="w-full bg-[#121212] border border-[#d4af37]/50 rounded p-3 text-[#e4d5b7] placeholder-gray-600 focus:outline-none focus:border-[#d4af37]"
+          />
+        </div>
+
+        <div>
+          <label className="block text-[#d4af37] mb-2 font-semibold">Choisissez votre Portrait :</label>
+          <div className="grid grid-cols-5 gap-3">
+            {Array.from({length: 10}).map((_, i) => {
+              const avatarFile = `avatar_${i+1}.png`;
+              const isSelected = selectedAvatar === avatarFile;
+              return (
+                <img 
+                  key={avatarFile}
+                  src={`/images/avatars/${avatarFile}`}
+                  alt={`Avatar ${i+1}`}
+                  onClick={() => setSelectedAvatar(avatarFile)}
+                  className={`w-full aspect-square object-cover rounded cursor-pointer transition-all ${
+                    isSelected ? 'ring-2 ring-[#d4af37] scale-105 shadow-[0_0_15px_rgba(212,175,55,0.5)]' : 'opacity-60 hover:opacity-100 hover:ring-1 hover:ring-gray-500'
+                  }`}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
       <div className="book-panel p-6 mb-6">
         <h3 className="text-xl mb-4">1. Statistiques</h3>
         {!combatSkill ? (

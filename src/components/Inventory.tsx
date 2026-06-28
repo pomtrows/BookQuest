@@ -14,6 +14,15 @@ export function Inventory() {
 
   return (
     <div className="p-4 flex flex-col gap-6">
+      <div className="flex flex-col items-center mb-2">
+        <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#d4af37] mb-3 shadow-[0_0_10px_rgba(212,175,55,0.3)]">
+          <img src={character.avatar || '/images/avatars/avatar_1.png'} alt={character.name || 'Héros'} className="w-full h-full object-cover" />
+        </div>
+        <h2 className="text-xl font-bold text-[#d4af37] text-center" style={{ fontFamily: 'Cinzel, serif' }}>
+          {character.name || 'Loup Solitaire'}
+        </h2>
+      </div>
+
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
         <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Statistiques</h3>
         <div className="flex justify-between">

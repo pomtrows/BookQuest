@@ -22,6 +22,8 @@ export type Weapon =
   | 'Bâton';
 
 export interface CharacterState {
+  name: string;
+  avatar: string;
   combatSkill: number;
   endurance: number;
   maxEndurance: number;
