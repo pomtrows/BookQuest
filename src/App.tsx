@@ -126,7 +126,7 @@ function App() {
             <>
               <div 
                 className="fixed top-0 left-0 w-full h-full z-[100]" 
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }}
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)' }}
                 onClick={() => setShowDropdownMenu(false)}
               ></div>
               <div className="fixed top-0 left-0 h-full w-72 bg-[#0a0a0c] border-r border-gray-800 shadow-[10px_0_30px_rgba(0,0,0,0.9)] z-[110] flex flex-col animate-slide-in-left">
