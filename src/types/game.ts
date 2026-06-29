@@ -66,6 +66,7 @@ export interface Section {
     weapons?: Weapon[];
     meals?: number;
   };
+  requiresMeal?: boolean;
   image?: string;
   damage?: number;
   heal?: number;

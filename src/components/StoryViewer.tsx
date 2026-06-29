@@ -1,8 +1,8 @@
 import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
-import { useEffect } from 'react';
-import { RotateCcw } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { RotateCcw, Utensils, AlertTriangle } from 'lucide-react';
 
 export function StoryViewer() {
   const { 
@@ -15,14 +15,17 @@ export function StoryViewer() {
     heal,
     settings,
     history,
-    goBackInHistory
+    goBackInHistory,
+    updateMeals,
+    takeDamage,
+    addNotification
   } = useGameStore();
 
   const section = storyData[currentSectionId];
-  // Play random background music or ambient sound logic could go here
+  const [mealResolved, setMealResolved] = useState(!section?.requiresMeal);
+
   useEffect(() => {
-    // E.g., if section.id === '1', play forest theme
-    // We would have an audio element ref here
+    setMealResolved(!storyData[currentSectionId]?.requiresMeal);
   }, [currentSectionId]);
 
   if (!section) {
@@ -107,7 +110,53 @@ export function StoryViewer() {
 
 
 
-      {(!section.combat || combatVictory) && (
+      {(!section.combat || combatVictory) && !mealResolved && (
+        <div className="book-panel p-6 mb-8 border-yellow-900 bg-[#2a2010]">
+          <h3 className="text-xl font-bold text-yellow-500 mb-2 flex items-center gap-2">
+            <Utensils size={24} /> Repas Requis
+          </h3>
+          <p className="mb-4 text-gray-300">Vous devez prendre un repas avant de poursuivre.</p>
+          <div className="flex flex-col gap-3">
+            {character?.disciplines.includes('Chasse') && (
+              <button 
+                onClick={() => {
+                  setMealResolved(true);
+                  addNotification('Votre Maîtrise de la Chasse vous permet de vous nourrir.', 'success');
+                }}
+                className="choice-btn !border-green-600 !text-green-500 hover:!bg-green-900/30"
+              >
+                Utiliser Maîtrise de la Chasse
+              </button>
+            )}
+            
+            {(character?.meals ?? 0) > 0 && (
+              <button 
+                onClick={() => {
+                  updateMeals(-1);
+                  setMealResolved(true);
+                  addNotification('Vous avez consommé un Repas.', 'success');
+                }}
+                className="choice-btn hover:!bg-yellow-900/20"
+              >
+                Consommer un Repas (En stock : {character?.meals})
+              </button>
+            )}
+            
+            <button 
+              onClick={() => {
+                takeDamage(3);
+                setMealResolved(true);
+                addNotification("Vous avez perdu 3 points d'Endurance à cause de la faim.", 'danger');
+              }}
+              className="choice-btn !border-red-800 !text-red-500 hover:!bg-red-900/30 flex items-center gap-2"
+            >
+              <AlertTriangle size={18} /> Ne pas manger (-3 Endurance)
+            </button>
+          </div>
+        </div>
+      )}
+
+      {(!section.combat || combatVictory) && mealResolved && (
         <div className="flex flex-col gap-3">
           {section.choices.map((choice, idx) => {
             // Optional : evaluate choice.condition here

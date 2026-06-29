@@ -1891,6 +1891,7 @@ export const storyData: Record<string, Section> = {
   "130": {
     "id": "130",
     "location": "forest",
+    "requiresMeal": true,
     "text": "Vous parvenez bientôt à une petite clairière. En son centre, vous trouvez un banc taillé dans le tronc d'un arbre. Vous avez faim, et il vous faut prendre un Repas, sinon, vous perdrez 3 points d'ENDURANCE. Lorsque vous avez fini de manger, vous pourrez quitter la clairière par le sud en vous rendant au 28. Mais si vous préférez emprunter le sentier plus étroit qui mène vers l'est en s'enfonçant dans la forêt, rendez- vous au 201.",
     "image": "/images/sections/sect130.png",
     "choices": [
