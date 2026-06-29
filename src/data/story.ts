@@ -11,6 +11,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez prendre le sentier de droite, rendez-vous au 85.",
       "Si vous préférez suivre celui de gauche, rendez-vous au 275. Enfin, si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous au 141."
     ],
+    "image": "/images/sections/sect1.png",
     "choices": [
       {
         "text": "Si vous souhaitez prendre le sentier de droite, rendez-vous au 85.",
@@ -6312,6 +6313,7 @@ export const storyData: Record<string, Section> = {
       "Avec une infinie douleur, vous levez alors votre visage vers le ciel, à nouveau clair, et vous faites le serment de venger la mort des Moines et des Seigneurs Kaï. Vous ferez payer leur crime aux Maîtres des Ténèbres ! Votre tâche d'ailleurs commence à l'instant même : il vous faut, en effet, gagner la capitale du royaume pour prévenir le Roi en personne de l'effroyable péril qui menace le pays ; car maintenant, l'ennemi est en marche, et si vous n'agissez pas à temps, votre patrie tombera sous son joug.",
       "Vous êtes le dernier des Seigneurs Kaï et le sort de votre peuple repose désormais entre vos seules mains : le Loup Silencieux est devenu Loup Solitaire et les envahisseurs feront tout pour vous empêcher d'atteindre le Palais du Roi..."
     ],
+    "image": "/images/sections/sectprologue.png",
     "choices": [
       {
         "text": "Commencer l'aventure (Chapitre 1)",
