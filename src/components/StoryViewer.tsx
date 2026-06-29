@@ -150,9 +150,8 @@ export function StoryViewer() {
 
       {(!section.combat || combatVictory) && mealResolved && (
         <div className="flex flex-col gap-3">
-          {section.choices.map((choice, idx) => {
-            // Optional : evaluate choice.condition here
-            return (
+          {section.choices && section.choices.length > 0 ? (
+            section.choices.map((choice, idx) => (
               <button 
                 key={idx}
                 onClick={() => handleChoice(choice.targetId, !section.combat)}
@@ -160,8 +159,24 @@ export function StoryViewer() {
               >
                 {choice.text}
               </button>
-            );
-          })}
+            ))
+          ) : (
+            <div className="mt-8 text-center animate-fade-in flex flex-col items-center gap-4">
+              <div className="border-t border-[#d4af37]/30 w-full mb-4"></div>
+              <h3 className="text-3xl font-bold text-[#d4af37] mb-2" style={{ fontFamily: 'Cinzel, serif' }}>
+                Fin de l'Aventure
+              </h3>
+              <button 
+                onClick={() => {
+                  useGameStore.getState().saveAndResetGame();
+                  window.location.reload();
+                }}
+                className="primary-btn px-8 py-3 w-full sm:w-auto mt-4"
+              >
+                Retour au Menu Principal
+              </button>
+            </div>
+          )}
         </div>
       )}
 
