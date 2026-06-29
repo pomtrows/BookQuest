@@ -9,6 +9,7 @@ import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
 import { Notifications } from './components/Notifications';
 import { PreviousAdventure } from './components/PreviousAdventure';
+import { InstallPrompt } from './components/InstallPrompt';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY';
 
@@ -225,6 +226,8 @@ function App() {
       {appState === 'RULES' && (
         <Rules onBack={() => handleStateChange('MENU')} />
       )}
+      
+      <InstallPrompt />
     </div>
   );
 }
