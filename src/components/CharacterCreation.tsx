@@ -199,12 +199,19 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
         </div>
       </div>
 
-      <div className="flex justify-between mt-8 items-stretch gap-4">
-        <button onClick={onCancel} className="choice-btn max-w-[200px] text-center text-xl !m-0 flex items-center justify-center">Annuler</button>
+      <div className="flex justify-between mt-8 gap-4">
+        <button 
+          onClick={onCancel} 
+          className="choice-btn max-w-[200px] text-center text-xl"
+          style={{ height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0 }}
+        >
+          Annuler
+        </button>
         <button 
           onClick={handleStart} 
           disabled={!combatSkill || selectedDisciplines.length < 5 || (selectedDisciplines.includes('Maîtrise des armes') && !weaponskillChoice)}
-          className="primary-btn text-xl px-8 !m-0 flex items-center justify-center"
+          className="primary-btn text-xl px-8"
+          style={{ height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0 }}
         >
           Commencer l'Aventure
         </button>
