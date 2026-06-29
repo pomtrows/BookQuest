@@ -176,7 +176,7 @@ export function CombatScreen() {
             <div className="text-center mt-4 animate-fade-in flex flex-col items-center justify-center gap-3 w-full">
               <div className="text-red-600 font-bold text-3xl mb-4" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Vous êtes mort...</div>
               
-              {settings.allowCombatRestart && (
+              {settings?.allowCombatRestart && (
                 <button 
                   onClick={restartCombat}
                   className="primary-btn w-full px-6 py-3 text-lg border-2 border-green-500 text-green-400 hover:text-white shadow-[0_0_15px_rgba(34,197,94,0.4)]"

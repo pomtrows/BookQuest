@@ -6,10 +6,11 @@ interface SettingsModalProps {
 }
 
 export function SettingsModal({ onClose }: SettingsModalProps) {
-  const { settings, updateSettings } = useGameStore();
+  const { settings: rawSettings, updateSettings } = useGameStore();
+  const settings = rawSettings || { fontSize: 'large', allowCombatRestart: false, allowGoBack: false };
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[100] backdrop-blur-sm p-4">
+    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] backdrop-blur-sm p-4">
       <div className="book-panel w-full max-w-lg p-6 relative flex flex-col max-h-[90vh]">
         <button 
           onClick={onClose}

@@ -51,11 +51,11 @@ export function StoryViewer() {
     medium: 'text-base',
     large: 'text-lg',
     xlarge: 'text-xl'
-  }[settings.fontSize] || 'text-lg';
+  }[settings?.fontSize || 'large'] || 'text-lg';
 
   return (
     <div className="max-w-2xl mx-auto pb-20 relative">
-      {settings.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
+      {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
         <button 
           onClick={goBackInHistory}
           className="absolute right-0 top-0 mt-2 text-gray-400 hover:text-[#d4af37] flex items-center gap-2 transition-colors border border-gray-800 hover:border-[#d4af37] px-3 py-1.5 rounded-full text-sm bg-[#121212]"
