@@ -23,7 +23,6 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
   const [selectedDisciplines, setSelectedDisciplines] = useState<Discipline[]>([]);
   const [weaponskillChoice, setWeaponskillChoice] = useState<Weapon | null>(null);
   
-  const [characterName, setCharacterName] = useState<string>('');
   const [selectedAvatar, setSelectedAvatar] = useState<string>('avatar_1.png');
 
   const rollStats = () => {
@@ -75,7 +74,7 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
     }
 
     startNewGame({
-      name: characterName.trim() || 'Loup Solitaire',
+      name: 'Loup Solitaire',
       avatar: `/images/avatars/${selectedAvatar}`,
       combatSkill,
       endurance: finalEndurance,
@@ -99,16 +98,7 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
       <div className="book-panel p-6 mb-6">
         <h3 className="text-xl mb-4">0. Identité</h3>
         
-        <div className="mb-6">
-          <label className="block text-[#d4af37] mb-2 font-semibold">Nom de votre Héros :</label>
-          <input 
-            type="text" 
-            value={characterName}
-            onChange={(e) => setCharacterName(e.target.value)}
-            placeholder="Ex: Loup Solitaire, Aragorn..."
-            className="w-full bg-[#121212] border border-[#d4af37]/50 rounded p-3 text-[#e4d5b7] placeholder-gray-600 focus:outline-none focus:border-[#d4af37]"
-          />
-        </div>
+        {/* Nom du héros fixé à Loup Solitaire */}
 
         <div>
           <label className="block text-[#d4af37] mb-2 font-semibold">Choisissez votre Portrait :</label>
