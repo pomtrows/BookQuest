@@ -59,18 +59,19 @@ export function StoryViewer() {
 
   return (
     <div className="max-w-2xl mx-auto pb-20 relative">
-      {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
-        <button 
-          onClick={goBackInHistory}
-          className="absolute right-0 top-0 mt-2 text-gray-400 hover:text-[#d4af37] flex items-center gap-2 transition-colors border border-gray-800 hover:border-[#d4af37] px-3 py-1.5 rounded-full text-sm bg-[#121212]"
-        >
-          <RotateCcw size={16} /> Revenir en arrière
-        </button>
-      )}
-
-      <h2 className="text-3xl font-bold mb-8 border-b border-[#333333] pb-2 text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
-        Section {section.id}
-      </h2>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 border-b border-[#333333] pb-2 gap-4">
+        <h2 className="text-3xl font-bold text-[#d4af37] m-0" style={{ fontFamily: 'Cinzel, serif' }}>
+          Section {section.id}
+        </h2>
+        {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
+          <button 
+            onClick={goBackInHistory}
+            className="text-gray-400 hover:text-[#d4af37] flex items-center gap-2 transition-colors border border-gray-800 hover:border-[#d4af37] px-4 py-2 rounded-full text-sm bg-[#1e1e1e] self-start sm:self-auto"
+          >
+            <RotateCcw size={16} /> Revenir en arrière
+          </button>
+        )}
+      </div>
 
       {section.image && (
         <div className="w-full mb-8 rounded-md overflow-hidden border border-[#333333]">
