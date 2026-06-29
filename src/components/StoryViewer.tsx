@@ -66,7 +66,7 @@ export function StoryViewer() {
         {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
           <button 
             onClick={goBackInHistory}
-            className="text-gray-400 hover:text-[#d4af37] flex items-center gap-2 transition-colors border border-gray-800 hover:border-[#d4af37] px-4 py-2 rounded-full text-sm bg-[#1e1e1e] self-start sm:self-auto"
+            className="flex items-center gap-2 transition-colors border border-gray-600 hover:border-[#d4af37] px-4 py-2 rounded-full text-sm bg-black/40 text-gray-300 hover:text-[#d4af37] self-start sm:self-auto"
           >
             <RotateCcw size={16} /> Revenir en arrière
           </button>
