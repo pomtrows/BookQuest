@@ -32,7 +32,7 @@ export const useAudio = (appState: AppState) => {
     let shouldLoop = true;
 
     if (appState === 'MENU' || appState === 'RULES' || appState === 'CREATION') {
-      newSrc = '/audio/jost/01 - Opening.ogg';
+      newSrc = '/audio/title.wav';
     } else if (appState === 'GAME') {
       if (character && character.endurance <= 0) {
         newSrc = '/audio/jost/20 - Game Over.ogg';
@@ -41,20 +41,48 @@ export const useAudio = (appState: AppState) => {
         newSrc = '/audio/jost/17 - Victory.ogg';
         shouldLoop = false;
       } else if (isCombatActive) {
-        newSrc = '/audio/jost/13 - Danger.ogg';
+        newSrc = '/audio/combat.wav';
       } else {
         const section = storyData[currentSectionId];
         const biome = section?.location || 'forest';
-        const biomeMusicMap: Record<string, string> = {
-          'forest': '/audio/jost/04 - Sanctuary.ogg',
-          'road': '/audio/jost/08 - Overworld.ogg',
-          'city': '/audio/jost/07 - Town.ogg',
-          'mountains': '/audio/jost/12 - Timeworn Pagoda.ogg',
-          'ruins': '/audio/jost/15 - Dungeon.ogg',
-          'cemetery': '/audio/jost/15 - Dungeon.ogg',
-          'river': '/audio/jost/23 - Inn.ogg'
+        const biomeMusicMap: Record<string, string[]> = {
+          'forest': [
+            '/audio/jost/04 - Sanctuary.ogg',
+            '/audio/jost/02 - BWV 1007 - Prelude.ogg',
+            '/audio/jost/05 - Reunion.ogg'
+          ],
+          'road': [
+            '/audio/jost/08 - Overworld.ogg',
+            '/audio/jost/11 - Ostrich!.ogg',
+            '/audio/jost/22 - A New Comrade.ogg'
+          ],
+          'city': [
+            '/audio/jost/07 - Town.ogg',
+            '/audio/jost/19 - Courtesan.ogg',
+            '/audio/jost/09 - Z 339 - Here the Deities approve.ogg'
+          ],
+          'mountains': [
+            '/audio/jost/12 - Timeworn Pagoda.ogg',
+            '/audio/jost/06 - Rebels Be.ogg'
+          ],
+          'ruins': [
+            '/audio/jost/15 - Dungeon.ogg',
+            '/audio/jost/24 - RV 610 - Fecit potentiam.ogg',
+            '/audio/jost/10 - The Empire.ogg'
+          ],
+          'cemetery': [
+            '/audio/jost/15 - Dungeon.ogg',
+            '/audio/jost/18 - Nighttide Waltz.ogg',
+            '/audio/jost/03 - HWV 56 - Why do the nations so furiously rage together.ogg'
+          ],
+          'river': [
+            '/audio/jost/23 - Inn.ogg',
+            '/audio/jost/25 - Finale.ogg'
+          ]
         };
-        newSrc = biomeMusicMap[biome] || '/audio/jost/08 - Overworld.ogg';
+        const tracks = biomeMusicMap[biome] || biomeMusicMap['road'];
+        const sectionNum = parseInt(currentSectionId) || 1;
+        newSrc = tracks[sectionNum % tracks.length];
       }
     }
 
