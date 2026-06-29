@@ -32,29 +32,29 @@ export const useAudio = (appState: AppState) => {
     let shouldLoop = true;
 
     if (appState === 'MENU' || appState === 'RULES' || appState === 'CREATION') {
-      newSrc = '/audio/title.wav';
+      newSrc = '/audio/jost/01 - Opening.ogg';
     } else if (appState === 'GAME') {
       if (character && character.endurance <= 0) {
-        newSrc = '/audio/death.wav';
+        newSrc = '/audio/jost/20 - Game Over.ogg';
         shouldLoop = false;
       } else if (combatVictory) {
-        newSrc = '/audio/victory.wav';
+        newSrc = '/audio/jost/17 - Victory.ogg';
         shouldLoop = false;
       } else if (isCombatActive) {
-        newSrc = '/audio/combat.wav';
+        newSrc = '/audio/jost/13 - Danger.ogg';
       } else {
         const section = storyData[currentSectionId];
         const biome = section?.location || 'forest';
         const biomeMusicMap: Record<string, string> = {
-          'forest': '/audio/jrpg_exploration/Exploration1 - Grasslands.ogg',
-          'road': '/audio/jrpg_exploration/Exploration4 - Prairie Nights.ogg',
-          'city': '/audio/jrpg_exploration/Exploration2 - Military Base.ogg',
-          'mountains': "/audio/jrpg_exploration/Exploration3 - Tha'el Mines.ogg",
-          'ruins': '/audio/jrpg_exploration/Exploration5 - Sneaking Around.ogg',
-          'cemetery': '/audio/jrpg_exploration/Exploration5 - Sneaking Around.ogg',
-          'river': '/audio/jrpg_exploration/Exploration6 - Tropical Island.ogg'
+          'forest': '/audio/jost/04 - Sanctuary.ogg',
+          'road': '/audio/jost/08 - Overworld.ogg',
+          'city': '/audio/jost/07 - Town.ogg',
+          'mountains': '/audio/jost/12 - Timeworn Pagoda.ogg',
+          'ruins': '/audio/jost/15 - Dungeon.ogg',
+          'cemetery': '/audio/jost/15 - Dungeon.ogg',
+          'river': '/audio/jost/23 - Inn.ogg'
         };
-        newSrc = biomeMusicMap[biome] || `/audio/${biome}.wav`;
+        newSrc = biomeMusicMap[biome] || '/audio/jost/08 - Overworld.ogg';
       }
     }
 
