@@ -1,5 +1,6 @@
-import { useEffect, useState, useCallback, useRef } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useGameStore } from '../store/gameStore';
+import { storyData } from '../data/story';
 
 // Attach to window to survive Vite HMR (Hot Module Replacement)
 // This strictly guarantees only one audio object ever exists even if the file is recompiled.
@@ -23,8 +24,7 @@ type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
-  const { isCombatActive, combatVictory, character } = useGameStore();
-  const currentExplorationTrack = useRef(`/audio/exploration${Math.floor(Math.random() * 3) + 1}.wav`);
+  const { isCombatActive, combatVictory, character, currentSectionId } = useGameStore();
 
   // 1. Handle source changes based on game state
   useEffect(() => {
@@ -43,7 +43,9 @@ export const useAudio = (appState: AppState) => {
       } else if (isCombatActive) {
         newSrc = '/audio/combat.wav';
       } else {
-        newSrc = currentExplorationTrack.current;
+        const section = storyData[currentSectionId];
+        const biome = section?.location || 'forest';
+        newSrc = `/audio/${biome}.wav`;
       }
     }
 

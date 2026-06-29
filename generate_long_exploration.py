@@ -161,16 +161,39 @@ def generate_track(filename, bpm, scales, pad_chords, loops=18):
 
     save_wav(f'public/audio/{filename}', s.render())
 
-scales1 = [['D', 'E', 'F', 'G', 'A', 'A#', 'C'], ['D', 'F', 'A', 'C']]
-chords1 = [['D', 'C'], ['D', 'A#'], ['F', 'C']]
-generate_track('exploration1.wav', 75, scales1, chords1, loops=16)
+# Biome 1: ruins (Mystique, tendu)
+scales_ruins = [['D', 'E', 'F', 'G#', 'A', 'A#', 'C#'], ['D', 'F', 'A', 'C#']]
+chords_ruins = [['D', 'A#'], ['D', 'C#'], ['A#', 'F']]
+generate_track('ruins.wav', 65, scales_ruins, chords_ruins, loops=15)
 
-scales2 = [['E', 'F#', 'G', 'A', 'B', 'C', 'D'], ['E', 'G', 'B', 'D']]
-chords2 = [['E', 'D'], ['E', 'C'], ['G', 'D']]
-generate_track('exploration2.wav', 80, scales2, chords2, loops=16)
+# Biome 2: forest (Sombre, régulier)
+scales_forest = [['E', 'F#', 'G', 'A', 'B', 'C', 'D'], ['E', 'G', 'B', 'D']]
+chords_forest = [['E', 'D'], ['E', 'C'], ['G', 'D']]
+generate_track('forest.wav', 75, scales_forest, chords_forest, loops=15)
 
-scales3 = [['A', 'B', 'C', 'D', 'E', 'F', 'G'], ['A', 'C', 'E', 'G']]
-chords3 = [['A', 'G'], ['A', 'F'], ['C', 'G']]
-generate_track('exploration3.wav', 70, scales3, chords3, loops=16)
+# Biome 3: mountains (Échos lointains)
+scales_mountains = [['A', 'B', 'C#', 'D', 'E', 'F#', 'G#'], ['A', 'C#', 'E']]
+chords_mountains = [['A', 'E'], ['F#', 'C#'], ['D', 'A']]
+generate_track('mountains.wav', 60, scales_mountains, chords_mountains, loops=14)
 
-print("Musiques d'exploration longues générées avec succès.")
+# Biome 4: river (Fluide, rapide)
+scales_river = [['C', 'D', 'E', 'F', 'G', 'A', 'B'], ['C', 'E', 'G', 'B']]
+chords_river = [['C', 'F'], ['G', 'C'], ['A', 'E']]
+generate_track('river.wav', 90, scales_river, chords_river, loops=18)
+
+# Biome 5: road (Rythmé, marche)
+scales_road = [['G', 'A', 'B', 'C', 'D', 'E', 'F#'], ['G', 'B', 'D']]
+chords_road = [['G', 'D'], ['C', 'G'], ['E', 'B']]
+generate_track('road.wav', 85, scales_road, chords_road, loops=17)
+
+# Biome 6: cemetery (Lugubre, basses profondes)
+scales_cemetery = [['C', 'C#', 'D#', 'F', 'G', 'G#', 'A#'], ['C', 'D#', 'G']]
+chords_cemetery = [['C', 'G#'], ['C', 'C#'], ['F', 'C']]
+generate_track('cemetery.wav', 55, scales_cemetery, chords_cemetery, loops=13)
+
+# Biome 7: city (Animé, accords riches)
+scales_city = [['F', 'G', 'A', 'A#', 'C', 'D', 'E'], ['F', 'A', 'C', 'E']]
+chords_city = [['F', 'A#'], ['C', 'F'], ['D', 'A']]
+generate_track('city.wav', 95, scales_city, chords_city, loops=19)
+
+print("Musiques de biomes générées avec succès.")

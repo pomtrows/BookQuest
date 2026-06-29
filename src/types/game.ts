@@ -52,11 +52,14 @@ export interface Choice {
   };
 }
 
+export type LocationType = 'ruins' | 'forest' | 'mountains' | 'river' | 'road' | 'cemetery' | 'city';
+
 export interface Section {
   id: string;
   text: string | string[];
   choices: Choice[];
   combat?: Enemy | Enemy[];
+  location?: LocationType;
   loot?: {
     gold?: number;
     items?: string[];
