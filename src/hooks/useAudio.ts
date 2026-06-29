@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { useGameStore } from '../store/gameStore';
 
 // Attach to window to survive Vite HMR (Hot Module Replacement)
@@ -24,6 +24,7 @@ type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
   const { isCombatActive, combatVictory, character } = useGameStore();
+  const currentExplorationTrack = useRef(`/audio/exploration${Math.floor(Math.random() * 3) + 1}.wav`);
 
   // 1. Handle source changes based on game state
   useEffect(() => {
@@ -42,7 +43,7 @@ export const useAudio = (appState: AppState) => {
       } else if (isCombatActive) {
         newSrc = '/audio/combat.wav';
       } else {
-        newSrc = '/audio/exploration.wav';
+        newSrc = currentExplorationTrack.current;
       }
     }
 
