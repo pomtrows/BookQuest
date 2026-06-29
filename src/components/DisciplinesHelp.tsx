@@ -43,9 +43,9 @@ export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
         
         {/* Header */}
         <div className="flex items-center justify-between mb-8 border-b border-[#333333] pb-4">
-          <div className="flex items-center gap-3">
-            <BookOpen size={28} className="text-[#d4af37]" />
-            <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
+          <div className="flex items-center gap-6">
+            <BookOpen size={28} className="text-[#d4af37] mr-2" />
+            <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37] ml-2" style={{ fontFamily: 'Cinzel, serif' }}>
               Les Disciplines Kaï
             </h1>
           </div>
