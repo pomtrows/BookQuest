@@ -6307,6 +6307,7 @@ export const storyData: Record<string, Section> = {
       "[IMG]/images/sections/sectprologue2.png",
       "Vashna, le plus puissant parmi les Maîtres des Ténèbres, périt d'un coup mortel que le roi Ulnar lui porta de sa puissante épée, l'Épée du Soleil, que l'on désigne généralement sous le nom de « Glaive de Sommer ». Depuis ce temps, les Maîtres des Ténèbres ont juré de prendre leur revanche sur le royaume du Sommerlund et la Maison d'Ulnar.",
       "Lorsque l'aube se lève sur le premier jour de votre aventure, tous les Seigneurs Kaï sont présents au monastère : on doit, en effet, célébrer aujourd'hui même la grande fête de Fehmarn et l'on se prépare tôt le matin aux réjouissances.",
+      "[IMG]/images/sections/sectprologue.png",
       "Mais soudain, un immense nuage noir s'élève au ciel d'occident : d'énormes créatures aux ailes sombres emplissent les nues en si grand nombre que le soleil semble s'éteindre. Cette invasion porte la marque des Maîtres des Ténèbres. Les ennemis jurés du Royaume du Sommerlund passent une nouvelle fois à l'attaque : la guerre a recommencé.",
       "[IMG]/images/sections/sectprologue3.png",
       "En ce matin fatal, Loup Silencieux (c'est le nom qui vous a été donné par les Moines Kaï) est allé chercher du bois dans la forêt : c'est la corvée qu'on vous a assignée pour vous punir de votre inattention en classe. Or, sur le chemin du retour, vous apercevez tout à coup ce gigantesque nuage de créatures noires qui fond sur le monastère et semble l'engloutir aussitôt.",
@@ -6316,7 +6317,6 @@ export const storyData: Record<string, Section> = {
       "Avec une infinie douleur, vous levez alors votre visage vers le ciel, à nouveau clair, et vous faites le serment de venger la mort des Moines et des Seigneurs Kaï. Vous ferez payer leur crime aux Maîtres des Ténèbres ! Votre tâche d'ailleurs commence à l'instant même : il vous faut, en effet, gagner la capitale du royaume pour prévenir le Roi en personne de l'effroyable péril qui menace le pays ; car maintenant, l'ennemi est en marche, et si vous n'agissez pas à temps, votre patrie tombera sous son joug.",
       "Vous êtes le dernier des Seigneurs Kaï et le sort de votre peuple repose désormais entre vos seules mains : le Loup Silencieux est devenu Loup Solitaire et les envahisseurs feront tout pour vous empêcher d'atteindre le Palais du Roi..."
     ],
-    "image": "/images/sections/sectprologue.png",
     "choices": [
       {
         "text": "Commencer l'aventure (Chapitre 1)",
