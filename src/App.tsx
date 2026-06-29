@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
+import { SettingsModal } from './components/SettingsModal';
 import { useGameStore } from './store/gameStore';
-import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
 import { Notifications } from './components/Notifications';
@@ -14,6 +15,7 @@ function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
   const [showInventory, setShowInventory] = useState(false);
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const { character } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
@@ -172,6 +174,14 @@ function App() {
                     <Home size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                     <span className="font-medium text-[15px] tracking-wide">Menu Principal</span>
                   </button>
+
+                  <button 
+                    onClick={() => { setShowSettingsModal(true); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <Settings size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Paramètres</span>
+                  </button>
                 </div>
 
                 {/* Bottom Settings */}
@@ -193,6 +203,10 @@ function App() {
 
       {appState === 'RULES' && (
         <Rules onBack={() => handleStateChange('MENU')} />
+      )}
+
+      {showSettingsModal && (
+        <SettingsModal onClose={() => setShowSettingsModal(false)} />
       )}
     </div>
   );

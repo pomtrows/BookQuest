@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { GameState, CharacterState, Enemy } from '../types/game';
+import type { GameState, CharacterState, Enemy, Settings } from '../types/game';
 import { getCombatResult, K } from '../data/combatTable';
 import { storyData } from '../data/story';
 
@@ -15,16 +15,21 @@ interface GameStore extends GameState {
   addNotification: (message: string, type?: Notification['type']) => void;
   removeNotification: (id: string) => void;
   
+  // Settings Actions
+  updateSettings: (newSettings: Partial<Settings>) => void;
+
   // Actions
   startNewGame: (character: CharacterState) => void;
   loadGame: () => void;
   goToSection: (sectionId: string) => void;
+  goBackInHistory: () => void;
   
   // Combat Actions
   startCombat: (enemy: Enemy | Enemy[]) => void;
   playCombatRound: (randomNum: number) => void;
   fleeCombat: (damageTaken: number, targetSectionId: string) => void;
   endCombat: () => void;
+  restartCombat: () => void;
   
   // Inventory Actions
   addWeapon: (weapon: any) => void;
@@ -49,15 +54,27 @@ const initialState = {
   currentEnemies: [],
   currentEnemyIndex: 0,
   enemyCurrentEndurance: 0,
+  preCombatEndurance: 0,
   combatRounds: [],
   combatVictory: false,
   notifications: [],
+  settings: {
+    fontSize: 'large' as const,
+    allowCombatRestart: false,
+    allowGoBack: false
+  }
 };
 
 export const useGameStore = create<GameStore>()(
   persist(
     (set, get) => ({
       ...initialState,
+
+      updateSettings: (newSettings) => {
+        set((state) => ({
+          settings: { ...state.settings, ...newSettings }
+        }));
+      },
 
       addNotification: (message, type = 'info') => {
         const id = Math.random().toString(36).substring(2, 9);
@@ -76,7 +93,13 @@ export const useGameStore = create<GameStore>()(
       },
 
       startNewGame: (character) => {
-        set({ ...initialState, character, currentSectionId: 'prologue' });
+        // Keep settings, reset the rest
+        set((state) => ({ 
+          ...initialState, 
+          character, 
+          currentSectionId: 'prologue',
+          settings: state.settings 
+        }));
       },
 
       loadGame: () => {},
@@ -133,15 +156,46 @@ export const useGameStore = create<GameStore>()(
         notificationsToAdd.forEach(n => get().addNotification(n.msg, n.type));
       },
 
+      goBackInHistory: () => {
+        set((state) => {
+          if (state.history.length === 0) return state;
+          const newHistory = [...state.history];
+          const previousSection = newHistory.pop()!;
+          return {
+            currentSectionId: previousSection,
+            history: newHistory,
+            isCombatActive: false,
+            combatVictory: false,
+            combatRounds: []
+          };
+        });
+      },
+
       startCombat: (enemy) => {
+        const state = get();
         const enemiesArray = Array.isArray(enemy) ? enemy : [enemy];
         set({
           isCombatActive: true,
           currentEnemies: enemiesArray,
           currentEnemyIndex: 0,
           enemyCurrentEndurance: enemiesArray[0].endurance,
+          preCombatEndurance: state.character?.endurance || 0,
           combatRounds: [],
           combatVictory: false
+        });
+      },
+
+      restartCombat: () => {
+        set((state) => {
+          if (!state.character || state.currentEnemies.length === 0) return state;
+          const initialEnemy = state.currentEnemies[0];
+          return {
+            character: { ...state.character, endurance: state.preCombatEndurance },
+            currentEnemyIndex: 0,
+            enemyCurrentEndurance: initialEnemy.endurance,
+            combatRounds: [],
+            combatVictory: false
+          };
         });
       },
 

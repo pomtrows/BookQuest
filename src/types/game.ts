@@ -72,6 +72,12 @@ export interface Section {
   gameOver?: boolean;
 }
 
+export interface Settings {
+  fontSize: 'small' | 'medium' | 'large' | 'xlarge';
+  allowCombatRestart: boolean;
+  allowGoBack: boolean;
+}
+
 export interface GameState {
   character: CharacterState | null;
   currentSectionId: string;
@@ -80,6 +86,7 @@ export interface GameState {
   currentEnemies: Enemy[];
   currentEnemyIndex: number;
   enemyCurrentEndurance: number;
+  preCombatEndurance: number;
   combatRounds: {
     round: number;
     randomNum: number;
@@ -90,4 +97,5 @@ export interface GameState {
     playerEndurance: number;
   }[];
   combatVictory: boolean;
+  settings: Settings;
 }

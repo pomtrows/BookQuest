@@ -46,7 +46,9 @@ export function CombatScreen() {
     enemyCurrentEndurance, 
     combatRounds, 
     playCombatRound,
-    combatVictory
+    combatVictory,
+    settings,
+    restartCombat
   } = useGameStore();
 
   const section = storyData[currentSectionId];
@@ -171,14 +173,25 @@ export function CombatScreen() {
           <D10Icon number={currentFace} rolling={diceRolling} />
 
           {isPlayerDead && (
-            <div className="text-center mt-4 animate-fade-in">
+            <div className="text-center mt-4 animate-fade-in flex flex-col items-center justify-center gap-3 w-full">
               <div className="text-red-600 font-bold text-3xl mb-4" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Vous êtes mort...</div>
+              
+              {settings.allowCombatRestart && (
+                <button 
+                  onClick={restartCombat}
+                  className="primary-btn w-full px-6 py-3 text-lg border-2 border-green-500 text-green-400 hover:text-white shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+                  style={{ backgroundColor: 'rgba(20, 60, 20, 0.8)' }}
+                >
+                  Relancer le combat
+                </button>
+              )}
+
               <button 
                 onClick={() => {
                   localStorage.removeItem('book-quest-storage');
                   window.location.reload();
                 }}
-                className="primary-btn px-6 py-3 text-lg bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
+                className="primary-btn w-full px-6 py-3 text-lg bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
               >
                 Recommencer l'Aventure
               </button>

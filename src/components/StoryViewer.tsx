@@ -2,6 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
 import { useEffect } from 'react';
+import { RotateCcw } from 'lucide-react';
 
 export function StoryViewer() {
   const { 
@@ -11,7 +12,10 @@ export function StoryViewer() {
     startCombat, 
     combatVictory,
     character,
-    heal
+    heal,
+    settings,
+    history,
+    goBackInHistory
   } = useGameStore();
 
   const section = storyData[currentSectionId];
@@ -42,8 +46,24 @@ export function StoryViewer() {
     );
   }
 
+  const fontSizeClass = {
+    small: 'text-sm',
+    medium: 'text-base',
+    large: 'text-lg',
+    xlarge: 'text-xl'
+  }[settings.fontSize] || 'text-lg';
+
   return (
-    <div className="max-w-2xl mx-auto pb-20">
+    <div className="max-w-2xl mx-auto pb-20 relative">
+      {settings.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
+        <button 
+          onClick={goBackInHistory}
+          className="absolute right-0 top-0 mt-2 text-gray-400 hover:text-[#d4af37] flex items-center gap-2 transition-colors border border-gray-800 hover:border-[#d4af37] px-3 py-1.5 rounded-full text-sm bg-[#121212]"
+        >
+          <RotateCcw size={16} /> Revenir en arrière
+        </button>
+      )}
+
       <h2 className="text-3xl font-bold mb-8 border-b border-[#333333] pb-2 text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
         Section {section.id}
       </h2>
@@ -58,7 +78,7 @@ export function StoryViewer() {
         </div>
       )}
 
-      <div className="book-panel p-6 mb-8 text-lg">
+      <div className={`book-panel p-6 mb-8 ${fontSizeClass}`}>
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => (
               <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>
