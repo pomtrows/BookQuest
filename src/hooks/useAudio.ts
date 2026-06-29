@@ -41,7 +41,9 @@ export const useAudio = (appState: AppState) => {
         newSrc = '/audio/jost/17 - Victory.ogg';
         shouldLoop = false;
       } else if (isCombatActive) {
-        newSrc = '/audio/combat.wav';
+        const combatTracks = ['/audio/combat.wav', '/audio/jost/13 - Danger.ogg'];
+        const sectionNum = parseInt(currentSectionId) || 1;
+        newSrc = combatTracks[sectionNum % combatTracks.length];
       } else {
         const section = storyData[currentSectionId];
         const biome = section?.location || 'forest';
