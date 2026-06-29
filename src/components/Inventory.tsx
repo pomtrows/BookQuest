@@ -62,7 +62,7 @@ export function Inventory() {
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
         <div className="flex justify-between items-center mb-2">
           <h3 className="text-sm text-gray-400 uppercase tracking-wider">Sac à Dos (Max 8)</h3>
-          <span className="text-xs">{character.backpack.length + character.meals}/8</span>
+          <span className="text-xs">{character.backpack.filter(i => i !== 'Repas').length + character.meals}/8</span>
         </div>
         <ul className="text-sm mb-2 list-none pl-0">
           {character.backpack.filter(i => i !== 'Repas').map((item, idx) => (

@@ -292,7 +292,7 @@ export const useGameStore = create<GameStore>()(
       addBackpackItem: (item) => {
         set((state) => {
           if (!state.character) return state;
-          const totalItems = state.character.backpack.length + state.character.meals;
+          const totalItems = state.character.backpack.filter(i => i !== 'Repas').length + state.character.meals;
           if (totalItems >= 8) {
             get().addNotification("Votre sac à dos est plein (8 objets max).", "warning");
             return state;
@@ -340,7 +340,7 @@ export const useGameStore = create<GameStore>()(
       updateMeals: (amount) => {
         set((state) => {
           if (!state.character) return state;
-          const totalItems = state.character.backpack.length + state.character.meals;
+          const totalItems = state.character.backpack.filter(i => i !== 'Repas').length + state.character.meals;
           if (amount > 0 && totalItems >= 8) {
              get().addNotification("Votre sac à dos est plein.", "warning");
              return state;
