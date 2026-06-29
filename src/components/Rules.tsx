@@ -20,7 +20,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
       const lines = paragraph.split('\n');
       
       return (
-        <div key={idx} className="mb-6 pb-4 border-b border-[#333]/50 last:border-0 text-gray-300 text-lg leading-relaxed">
+        <div key={idx} style={{ marginBottom: '2rem', paddingBottom: '1rem', borderBottom: idx === normalizedContent.split(/\n\n+/).length - 1 ? 'none' : '1px solid rgba(255,255,255,0.2)' }} className="text-gray-300 text-lg leading-relaxed">
           {lines.map((line, lineIdx) => {
             if (line.trim() === '[COMBAT_TABLE]') {
               return <CombatTable key={lineIdx} />;

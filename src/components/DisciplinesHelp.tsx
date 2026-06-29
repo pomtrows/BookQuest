@@ -13,7 +13,7 @@ export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
     return normalizedContent.split(/\n\n+/).map((paragraph, idx) => {
       const lines = paragraph.split('\n');
       return (
-        <div key={idx} className="mb-6 pb-4 border-b border-[#333]/50 last:border-0 text-gray-300 text-lg leading-relaxed text-left">
+        <div key={idx} style={{ marginBottom: '2rem', paddingBottom: '1rem', borderBottom: idx === normalizedContent.split(/\n\n+/).length - 1 ? 'none' : '1px solid rgba(255,255,255,0.2)' }} className="text-gray-300 text-lg leading-relaxed text-left">
           {lines.map((line, lineIdx) => {
             const parts = line.split(/(\*\*.*?\*\*)/g);
             return (
@@ -46,7 +46,7 @@ export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
           <div className="flex items-center gap-3">
             <BookOpen size={28} className="text-[#d4af37]" />
             <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
-              Les Disciplines Kaï
+              Les Disciplines Kaï (Aide)
             </h1>
           </div>
           <button 
