@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { HelpCircle, X } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 import { useGameStore } from '../store/gameStore';
-import { rulesData } from '../data/rules';
 import type { Discipline, Weapon } from '../types/game';
+import { DisciplinesHelp } from './DisciplinesHelp';
 
 const ALL_DISCIPLINES: Discipline[] = [
   'Camouflage', 'Chasse', 'Sixième Sens', 'Orientation', 'Guérison', 
@@ -15,7 +15,12 @@ const WEAPONS: Weapon[] = [
   'Épée', 'Hache', 'Épée', 'Bâton', 'Glaive'
 ];
 
-export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => void, onCancel: () => void }) {
+interface CharacterCreationProps {
+  onComplete: () => void;
+  onCancel: () => void;
+}
+
+export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete, onCancel }) => {
   const { startNewGame } = useGameStore();
   const [combatSkill, setCombatSkill] = useState<number | null>(null);
   const [endurance, setEndurance] = useState<number | null>(null);
@@ -28,31 +33,9 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
   const [selectedAvatar, setSelectedAvatar] = useState<string>('avatar_1.png');
   const [showDisciplinesHelp, setShowDisciplinesHelp] = useState(false);
 
-  const renderHelpContent = (content: string) => {
-    return content.split('\n\n').map((paragraph, idx) => {
-      const lines = paragraph.split('\n');
-      return (
-        <div key={idx} className="mb-4 text-gray-300 text-base leading-relaxed text-left">
-          {lines.map((line, lineIdx) => {
-            const parts = line.split(/(\*\*.*?\*\*)/g);
-            return (
-              <React.Fragment key={lineIdx}>
-                <span className={line.trim().startsWith('-') ? "ml-4 block" : ""}>
-                  {parts.map((part, pIdx) => {
-                    if (part.startsWith('**') && part.endsWith('**')) {
-                      return <strong key={pIdx} className="text-[#d4af37] font-semibold">{part.slice(2, -2)}</strong>;
-                    }
-                    return <span key={pIdx}>{part}</span>;
-                  })}
-                </span>
-                {lineIdx < lines.length - 1 && <br />}
-              </React.Fragment>
-            );
-          })}
-        </div>
-      );
-    });
-  };
+  if (showDisciplinesHelp) {
+    return <DisciplinesHelp onBack={() => setShowDisciplinesHelp(false)} />;
+  }
 
   const rollStats = () => {
     setCombatSkill(10 + Math.floor(Math.random() * 10));
@@ -226,36 +209,6 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
           Commencer l'Aventure
         </button>
       </div>
-      {showDisciplinesHelp && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999] p-4" onClick={(e) => e.stopPropagation()}>
-          <div className="bg-[#1a1a1a] border-2 border-[#d4af37] rounded-xl p-6 md:p-8 max-w-4xl w-full max-h-[85vh] flex flex-col relative shadow-[0_0_40px_rgba(212,175,55,0.3)]">
-            <button 
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowDisciplinesHelp(false);
-              }}
-              className="absolute top-4 right-4 text-gray-400 hover:text-white bg-black/50 rounded-full p-1"
-            >
-              <X size={28} />
-            </button>
-            <h2 className="text-3xl font-bold text-[#d4af37] mb-6 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Les disciplines Kaï</h2>
-            <div className="overflow-y-auto pr-4 custom-scrollbar">
-              {renderHelpContent(rulesData.find(r => r.id === 'disciplines')?.content || '')}
-            </div>
-            <div className="mt-6 text-center pt-4 border-t border-[#333]">
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setShowDisciplinesHelp(false);
-                }}
-                className="primary-btn px-8 py-3 text-lg"
-              >
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
