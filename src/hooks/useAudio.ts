@@ -20,7 +20,7 @@ const getGlobalAudio = (): HTMLAudioElement => {
 
 const globalAudio = getGlobalAudio();
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY';
 
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
