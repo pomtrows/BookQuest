@@ -2517,6 +2517,7 @@ export const storyData: Record<string, Section> = {
   "187": {
     "id": "187",
     "text": "Deux têtes au pelage ras apparaissent derrière le tronc. Les deux créatures jettent un coup d'œil à votre arme et poussent un cri d'effroi. Elles bondissent alors loin du tronc et s'enfuient dans la forêt. Si vous souhaitez vous lancer à leur poursuite, rendez-vous au 186. Si vous préférez les laisser partir et continuer votre chemin, rendez-vous au 228.",
+    "image": "/images/sections/sect187.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous lancer à leur poursuite, rendez-vous au 186.",
@@ -2551,6 +2552,7 @@ export const storyData: Record<string, Section> = {
   "190": {
     "id": "190",
     "text": "Vous parcourez cinq kilomètres le long de la rivière et vous découvrez alors une épave de péniche. Il semble que quelqu'un y ait élu domicile car vous apercevez, au travers d'un trou dans le pont, un lit et des ustensiles de cuisine. Si vous voulez fouiller cette péniche, rendez-vous au 20. Si vous préférez poursuivre votre chemin, rendez-vous au 273.",
+    "image": "/images/sections/sect190.png",
     "choices": [
       {
         "text": "Si vous voulez fouiller cette péniche, rendez-vous au 20.",
@@ -2688,6 +2690,7 @@ export const storyData: Record<string, Section> = {
   "200": {
     "id": "200",
     "text": "La nuit tombe et les ombres de la forêt s'étirent. Vous vous apprêtez à faire halte pour vous reposer lorsque vous apercevez à travers les arbres une foule qui avance sur une large route orientée au sud. En vous approchant, vous distinguez une roulotte tirée par six grands chevaux ; le véhicule occupe le milieu de la chaussée et se déplace à grande vitesse parmi les piétons et les autres voitures à chevaux. C'est peut-être là votre chance d'atteindre la capitale plus vite que prévu. Si vous souhaitez sauter sur la roulotte, rendez-vous au 78. Si vous maîtrisez la Discipline Kaï du Camouflage, vous pourrez vous accrocher à la roulotte et vous dissimuler parmi les bagages attachés sur le toit en vous rendant au 168.",
+    "image": "/images/sections/sect200.png",
     "choices": [
       {
         "text": "Si vous souhaitez sauter sur la roulotte, rendez-vous au 78.",
@@ -2849,6 +2852,7 @@ export const storyData: Record<string, Section> = {
   "212": {
     "id": "212",
     "text": "Lorsque vous vous réveillez, la douleur n'est plus qu'un mauvais souvenir et vous récupérez tous les points d'ENDURANCE dont vous disposiez au départ de votre mission. Un homme de haute taille, vêtu d'une toge blanche, se tient debout devant vous, une coupe remplie d'herbes entre les mains. Il verse les herbes dans l'eau bouillante d'un chaudron puis se tourne vers vous. « Vous avez vu la mort de près, Seigneur Kaï, mais ce n'est pas encore aujourd'hui que vous irez rejoindre le troupeau des bienheureux. Votre corps est entièrement guéri en effet, pourtant, il me semble que votre âme est blessée. Quelle est donc la raison de votre tourment 1 » Vous reconnaissez en cet homme l'un des grands médecins du Roi: il porte, en effet, brodée sur sa manche, la colombe blanche, symbole de sa vocation. Vous racontez alors au vénérable savant les tristes événements qui vous ont amené jusqu'ici. Lorsque vous avez terminé votre récit, le vieil homme vous prend doucement le bras et vous fait lever de votre lit en vous demandant de le suivre. C'est à cet instant seulement que vous remarquez la magnificence des lieux : vous vous trouvez en effet dans une pièce richement décorée à laquelle on accède par un long couloir aux murs couverts de somptueuses tapisseries. Vous comprenez alors peu à peu que vous êtes enfin parvenu au bout de vos peines car cette fastueuse demeure n'est autre que le Palais du Roi : vous êtes à l'intérieur de la citadelle de Holmgard, et dans quelques instants vous apparaîtrez devant votre souverain. Rendez-vous au 350.",
+    "image": "/images/sections/sect212.png",
     "choices": [
       {
         "text": "Rendez-vous au 350.",
@@ -3141,6 +3145,7 @@ export const storyData: Record<string, Section> = {
   "235": {
     "id": "235",
     "text": "Le cheval du Prince est un magnifique animal, rapide et au pied sûr. Il galope le long du sentier sinueux comme s'il s'agissait d'une route large et droite et, bientôt, les échos de la bataille se dissipent derrière vous. Vous avez faim, et il vous faut prendre un Repas tandis que vous chevauchez l'étalon blanc, sinon, vous perdrez 3 points d'ENDURANCE. Quelques kilomètres plus loin, le sentier aboutit à un croisement en forme de T. Il y a là un panneau indicateur, mais il est illisible. Si vous voulez prendre à gauche, rendez-vous au 32. Si vous préférez tourner à droite, rendez-vous au 146. Enfin, si vous maîtrisez la Discipline Kaï de l'Orientation, rendez-vous au 254.",
+    "image": "/images/sections/sect235.png",
     "choices": [
       {
         "text": "Si vous voulez prendre à gauche, rendez-vous au 32.",
@@ -3255,6 +3260,7 @@ export const storyData: Record<string, Section> = {
   "244": {
     "id": "244",
     "text": "Votre Sixième Sens vous révèle que vous n'êtes pas seul et que vous courez un très grand danger. Il vous faut donc revenir à l'air libre le plus vite possible. Rendez-vous au 93.",
+    "image": "/images/sections/sect244.png",
     "choices": [
       {
         "text": "Rendez-vous au 93.",
@@ -3342,6 +3348,7 @@ export const storyData: Record<string, Section> = {
   "251": {
     "id": "251",
     "text": "Vous avez de la chance : ils ne semblent pas vous avoir repéré. Ils avancent avec lenteur et finissent par disparaître à l'autre bout de la corniche. Vous reprenez alors votre course. Rendez-vous au 10.",
+    "image": "/images/sections/sect251.png",
     "choices": [
       {
         "text": "Rendez-vous au 10.",
@@ -3530,6 +3537,7 @@ export const storyData: Record<string, Section> = {
   "264": {
     "id": "264",
     "text": "Après avoir parcouru quelques centaines de mètres, vous entendez les échos d'une bataille qui fait rage un peu plus loin vers l'ouest. Si vous souhaitez vous approcher de ce champ de bataille, rendez-vous au 97. Si vous préférez poursuivre votre chemin en direction du sud, rendez-vous au 6.",
+    "image": "/images/sections/sect264.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous approcher de ce champ de bataille, rendez-vous au 97.",
@@ -3574,6 +3582,7 @@ export const storyData: Record<string, Section> = {
   "268": {
     "id": "268",
     "text": "Quelques minutes plus tard, vous reprenez vos esprits tandis que l'on vous fait boire une rasade d'eau-de-vie. Epuisé mais heureux d'être toujours vivant, vous avancez d'un pas chancelant, soutenu par les soldats du Roi, en direction du camp fortifié. Rendez-vous au 288.",
+    "image": "/images/sections/sect268.png",
     "choices": [
       {
         "text": "Rendez-vous au 288.",
@@ -3641,6 +3650,7 @@ export const storyData: Record<string, Section> = {
   "274": {
     "id": "274",
     "text": "Dans votre hâte de fuir l'ennemi, vous vous prenez le pied dans la racine d'un arbre et vous tombez tête la première en soulevant un nuage de poussière et de feuilles. Vous vous relevez aussitôt et vous courez vous réfugier dans la forêt, au pied de la colline. Au bout de dix minutes de cette fuite éperdue, vous vous apercevez que vous avez perdu vos Armes lors de votre chute. C'est fâcheux, mais au moins, vous êtes vivant et vous avez toujours votre Sac à Dos. Faisant contre mauvaise fortune bon cœur, vous poursuivez votre chemin en vous enfonçant plus avant parmi les arbres. Rendez-vous au 331.",
+    "image": "/images/sections/sect274.png",
     "choices": [
       {
         "text": "Rendez-vous au 331.",
@@ -3709,6 +3719,7 @@ export const storyData: Record<string, Section> = {
   "280": {
     "id": "280",
     "text": "Alors que vous commencez votre ascension, vous entendez des battements d'ailes qui s'approchent de vous en provenance de l'ouest. Ce sont des Kraans ! D'après le bruit qu'ils font, vous estimez leur nombre à dix au moins, peut-être davantage. Vous maudissez alors votre malchance, car le flanc de la colline n'offre aucun abri, et, si on vous attaque au cours de cette escalade difficile, vous ne pourrez pratiquement pas vous défendre: il est en effet impossible de rester debout sur cette pente escarpée. Si vous choisissez de dégainer votre arme et de rester complètement immobile en espérant que les Kraans ne vous verront pas, rendez-vous au 327. Si vous préférez vous hâter de redescendre la colline pour vous mettre à l'abri dans le tunnel, rendez-vous au 170.",
+    "image": "/images/sections/sect280.png",
     "choices": [
       {
         "text": "Si vous choisissez de dégainer votre arme et de rester complètement immobile en espérant que les Kraans ne vous verront pas, rendez-vous au 327.",
@@ -3772,6 +3783,7 @@ export const storyData: Record<string, Section> = {
   "285": {
     "id": "285",
     "text": "Avec un craquement sinistre, la pierre que vous avez lancée fracasse la tête du Glok. La créature s'affaisse, puis tombe à terre, au bas de la colonne. Enchanté d'avoir réussi votre coup, vous vous précipitez en avant pour porter secours au jeune sorcier. Rendez-vous au 325.",
+    "image": "/images/sections/sect285.png",
     "choices": [
       {
         "text": "Rendez-vous au 325.",
@@ -3856,6 +3868,7 @@ export const storyData: Record<string, Section> = {
   "294": {
     "id": "294",
     "text": "Après être resté sous l'eau aussi longtemps que vous le permettait votre capacité respiratoire, vous refaites enfin surface et vous constatez que les Gloks se trouvent loin derrière vous. Vous avez perdu Arme(s) et Sac à Dos, mais au moins, vous êtes vivant. Vous sortez alors de cette eau boueuse et vous poursuivez votre chemin à l'abri des arbres qui bordent la rive droite du cours d'eau. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 2, rendez-vous au 230. Entre 3 et 6, rendez-vous au 190. Entre 7 et 9, rendez-vous au 321.",
+    "image": "/images/sections/sect294.png",
     "choices": [
       {
         "text": "Si vous tirez un chiffre entre 0 et 2, rendez-vous au 230.",
@@ -3936,6 +3949,7 @@ export const storyData: Record<string, Section> = {
   "300": {
     "id": "300",
     "text": "Vous avez marché pendant plus d'une heure en surveillant le ciel de peur de voir apparaître des Kraans. Par deux fois, vous avez aperçu leurs silhouettes caractéristiques qui se dessinaient au loin, mais la promptitude de vos réflexes vous a gardé d'être repéré. Cette longue marche vous a affamé cependant et il vous faut prendre un Repas, sinon vous perdrez 3 points d'ENDURANCE. Vous poursuivrez ensuite votre chemin en vous rendant au 13.",
+    "image": "/images/sections/sect300.png",
     "choices": [
       {
         "text": "Vous poursuivrez ensuite votre chemin en vous rendant au 13.",
@@ -4009,6 +4023,7 @@ export const storyData: Record<string, Section> = {
   "307": {
     "id": "307",
     "text": "Vous n'avez aucune difficulté à atteindre la cabane et, tandis que vous escaladez l'arbre, des souvenirs d'enfance vous reviennent en mémoire : vous vous rappelez le temps où, tout jeune garçon, vous montiez également aux arbres, non loin de la ville de Toran, pour aller cueillir des fruits ou admirer la campagne environnante. Vous ouvrez la porte de la cabane et vous tombez nez à nez avec un vieil ermite recroquevillé dans un coin de la pièce. Une expression d'intense soulagement apparaît sur son visage lorsqu'il reconnaît votre cape de Seigneur Kaï. Il vous raconte alors que toute la région est envahie par des Gloks et qu'il a dénombré plus de quarante Kraans volant au-dessus de sa maison dans les trois heures qui ont précédé. Ils se dirigeaient tous vers l'est. Il s'approche ensuite d'un buffet et vous apporte une assiette de fruits. Vous le remerciez et vous rangez les fruits dans votre Sac à Dos. Ils représentent l'équivalent d'un Repas, notez-le sur votre Feuille d'Aventure. L'ermite vous montre également un magnifique Marteau de Guerre qu'il pose sur une table, près de la porte. « Vous en avez plus besoin que moi, Seigneur Kaï, dit-il. Prenez ce Marteau si vous le désirez, c'est une Arme à laquelle vous pourrez vous fier. » Vous n'aurez le droit de prendre ce Marteau de Guerre qu'à la condition de l'échanger contre une autre Arme que vous possédez déjà, car vous ne pouvez laisser l'ermite sans aucune défense contre l'ennemi. Faites, le cas échéant, les ajustements nécessaires sur votre Feuille d'Aventure. Vous remerciez alors le vieil homme et vous redescendez de l'arbre pour continuer votre route. Rendez- vous au 213.",
+    "image": "/images/sections/sect307.png",
     "choices": [
       {
         "text": "Rendez- vous au 213.",
@@ -4100,6 +4115,7 @@ export const storyData: Record<string, Section> = {
   "315": {
     "id": "315",
     "text": "Enveloppé dans des vêtements de femme, vous trouvez un petit Sac de Velours qui contient 6 Pièces d'Or et un morceau de Savon Parfumé. Vous pouvez prendre le Savon et l'Or en les inscrivant sur votre Feuille d'Aventure et vous poursuivrez ensuite votre chemin. Rendez-vous au 213.",
+    "image": "/images/sections/sect315.png",
     "choices": [
       {
         "text": "Rendez-vous au 213.",
@@ -4170,6 +4186,7 @@ export const storyData: Record<string, Section> = {
   "322": {
     "id": "322",
     "text": "Au bout de ce qui vous semble une éternité, vous parvenez enfin au sommet de la colline escarpée. Derrière vous, les ruines du monastère sont encore visibles. Au nord, une colonne de fumée d'un noir de jais s'élève haut dans le ciel et de petites flammes orange dansent à sa base : c'est le port de Toran qui est en feu, et ce spectacle vous déchire le cœur. Soudain, un cri perçant au- dessus de votre tête vous avertit qu'un Kraan se prépare à vous attaquer. Il est à une trentaine de mètres de distance et il fond sur vous, prêt à tuer. Si vous souhaitez l'attendre pour le combattre, rendez-vous au 17. Si vous préférez prendre la fuite en vous précipitant au bas de la colline, sur le flanc opposé, rendez-vous au 89.",
+    "image": "/images/sections/sect322.png",
     "choices": [
       {
         "text": "Si vous souhaitez l'attendre pour le combattre, rendez-vous au 17.",

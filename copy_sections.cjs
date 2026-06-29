@@ -7,7 +7,7 @@ const destDir = 'public\\images\\sections';
 const files = fs.readdirSync(srcDir);
 
 // we have generated images for:
-const successfulSections = ['63', '72', '77', '82', '93', '97', '106', '114', '122', '130', '131', '144', '152', '158', '160', '170', '177'];
+const successfulSections = ['187', '190', '200', '212', '235', '244', '251', '264', '268', '274', '280', '285', '294', '300', '307', '315', '322'];
 
 files.forEach(file => {
   for (const s of successfulSections) {
