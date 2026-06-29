@@ -176,7 +176,12 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
         <div className="flex items-center gap-3 mb-2">
           <h3 className="text-xl">2. Disciplines Kaï (Choisissez-en 5)</h3>
           <button 
-            onClick={() => setShowDisciplinesHelp(true)}
+            type="button"
+            onClick={(e) => { 
+              e.preventDefault();
+              e.stopPropagation();
+              setShowDisciplinesHelp(true); 
+            }}
             className="text-[#d4af37] hover:text-white transition-colors bg-black p-1.5 rounded-full border border-[#d4af37]/50 hover:border-[#d4af37] hover:bg-[#d4af37]/20 shadow-md flex items-center justify-center cursor-pointer"
             title="Voir les descriptions des disciplines"
           >
