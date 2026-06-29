@@ -64,7 +64,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
         <div className="flex items-center justify-between mb-8 border-b border-[#d4af37]/30 pb-4">
           <div className="flex items-center gap-4">
             <BookOpen size={32} className="text-[#d4af37]" />
-            <h1 className="text-3xl md:text-5xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(212,175,55,0.3)' }}>
+            <h1 className="text-3xl md:text-5xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(212,175,55,0.3)', marginLeft: '24px' }}>
               Règles du Jeu
             </h1>
           </div>
