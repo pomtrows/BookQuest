@@ -80,9 +80,9 @@ function App() {
             </button>
             {previousAdventurePath && previousAdventurePath.length > 0 && (
               <button 
-                onClick={() => setShowPreviousAdventureModal(true)}
-                className="choice-btn text-center text-lg transition-all"
-                style={{ backgroundColor: '#1a1a1a', borderColor: '#666', color: '#888', opacity: 0.9, textAlign: 'center', marginTop: '1rem' }}
+                onClick={(e) => { e.stopPropagation(); setShowPreviousAdventureModal(true); }}
+                className="choice-btn text-center text-xl transition-all"
+                style={{ backgroundColor: '#121212', borderColor: '#9ca3af', color: '#9ca3af', opacity: 0.95, textAlign: 'center' }}
               >
                 Ancienne Aventure
               </button>
