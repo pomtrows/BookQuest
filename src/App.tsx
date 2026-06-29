@@ -115,7 +115,7 @@ function App() {
               </div>
             </div>
             
-            <h1 className="text-lg sm:text-xl font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
+            <h1 className="text-base sm:text-lg font-bold text-[#d4af37] absolute left-1/2 -translate-x-1/2 whitespace-nowrap" style={{ fontFamily: 'Cinzel, serif' }}>
               Loup Solitaire
             </h1>
           </div>
