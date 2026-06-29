@@ -14,7 +14,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
 
   // Function to render text with paragraphs and bolding for standard markdown-like asterisks
   const renderContent = (content: string) => {
-    return content.split('\n\n').map((paragraph, idx) => {
+    return content.split(/\n\s*\n/).map((paragraph, idx) => {
       // Split by newline inside the paragraph for lists
       const lines = paragraph.split('\n');
       

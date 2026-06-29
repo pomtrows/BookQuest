@@ -8,7 +8,7 @@ interface DisciplinesHelpProps {
 
 export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
   const renderHelpContent = (content: string) => {
-    return content.split('\n\n').map((paragraph, idx) => {
+    return content.split(/\n\s*\n/).map((paragraph, idx) => {
       const lines = paragraph.split('\n');
       return (
         <div key={idx} className="mb-4 text-gray-300 text-lg leading-relaxed text-left">
