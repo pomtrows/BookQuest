@@ -113,8 +113,8 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
         {/* Nom du héros fixé à Loup Solitaire */}
 
         <div>
-          <label className="block text-[#d4af37] mb-8 font-semibold">Choisissez votre Portrait :</label>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 pt-2">
+          <label className="block text-[#d4af37] font-semibold" style={{ marginBottom: '2rem' }}>Choisissez votre Portrait :</label>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4" style={{ paddingTop: '1rem' }}>
             {Array.from({length: 10}).map((_, i) => {
               const avatarFile = `avatar_${i+1}.png`;
               const isSelected = selectedAvatar === avatarFile;
