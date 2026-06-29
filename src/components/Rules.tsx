@@ -59,7 +59,7 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
     >
       <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0, 0, 0, 0.85)', zIndex: 1 }}></div>
       
-      <div className="relative w-full max-w-6xl flex flex-col h-[95vh] pt-2 md:pt-0" style={{ zIndex: 10 }}>
+      <div className="relative w-full max-w-6xl flex flex-col flex-1 h-full pt-2 md:pt-0" style={{ zIndex: 10 }}>
         {/* Header */}
         <div className="flex items-center justify-between mb-4 border-b border-[#d4af37]/30 pb-2">
           <div className="flex items-center gap-4">
@@ -81,12 +81,12 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
         {/* Content Area */}
         <div className="flex flex-col md:flex-row flex-1 overflow-hidden gap-6">
           {/* Navigation Sidebar */}
-          <div className="w-full md:w-1/3 flex flex-col gap-1 overflow-y-auto pr-2 custom-scrollbar">
+          <div className="w-full md:w-1/3 flex flex-col overflow-y-auto pr-2 custom-scrollbar">
             {rulesData.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className="text-left px-4 py-2 rounded border transition-all"
+                className="text-left px-4 py-1.5 mb-1 text-sm md:text-base rounded border transition-all"
                 style={{
                   backgroundColor: activeSection === section.id ? 'rgba(212, 175, 55, 0.2)' : 'rgba(0, 0, 0, 0.6)',
                   borderColor: activeSection === section.id ? '#d4af37' : '#444',
