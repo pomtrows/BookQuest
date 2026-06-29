@@ -81,12 +81,12 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
         {/* Content Area */}
         <div className="flex flex-col md:flex-row flex-1 overflow-hidden gap-6">
           {/* Navigation Sidebar */}
-          <div className="w-full md:w-1/3 flex flex-col gap-2 overflow-y-auto pr-2 custom-scrollbar">
+          <div className="w-full md:w-1/3 flex flex-col gap-1 overflow-y-auto pr-2 custom-scrollbar">
             {rulesData.map((section) => (
               <button
                 key={section.id}
                 onClick={() => setActiveSection(section.id)}
-                className="text-left px-4 py-3 rounded border transition-all"
+                className="text-left px-4 py-2 rounded border transition-all"
                 style={{
                   backgroundColor: activeSection === section.id ? 'rgba(212, 175, 55, 0.2)' : 'rgba(0, 0, 0, 0.6)',
                   borderColor: activeSection === section.id ? '#d4af37' : '#444',
