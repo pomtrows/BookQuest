@@ -1,18 +1,32 @@
 import { useState, useEffect } from 'react';
-import { Download, X } from 'lucide-react';
+import { Download, X, Info } from 'lucide-react';
 
 export function InstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showPrompt, setShowPrompt] = useState(false);
+  const [showInstructions, setShowInstructions] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
+    // Check if already installed / standalone
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || (window.navigator as any).standalone;
+    
+    if (isStandalone) {
+      setShowPrompt(false);
+      return;
+    }
+
+    // Detect iOS
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    const ios = /iphone|ipad|ipod/.test(userAgent);
+    setIsIOS(ios);
+
+    // Show the banner if not standalone
+    setShowPrompt(true);
+
     const handler = (e: Event) => {
-      // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
-      // Stash the event so it can be triggered later.
       setDeferredPrompt(e);
-      // Update UI notify the user they can install the PWA
-      setShowPrompt(true);
     };
 
     window.addEventListener('beforeinstallprompt', handler as EventListener);
@@ -21,23 +35,17 @@ export function InstallPrompt() {
   }, []);
 
   const handleInstallClick = async () => {
-    if (!deferredPrompt) return;
-    
-    // Show the install prompt
-    deferredPrompt.prompt();
-    
-    // Wait for the user to respond to the prompt
-    const { outcome } = await deferredPrompt.userChoice;
-    
-    if (outcome === 'accepted') {
-      console.log('User accepted the install prompt');
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        setDeferredPrompt(null);
+        setShowPrompt(false);
+      }
     } else {
-      console.log('User dismissed the install prompt');
+      // Show manual instructions if browser hasn't fired beforeinstallprompt
+      setShowInstructions(true);
     }
-    
-    // We've used the prompt, and can't use it again, throw it away
-    setDeferredPrompt(null);
-    setShowPrompt(false);
   };
 
   if (!showPrompt) return null;
@@ -46,12 +54,12 @@ export function InstallPrompt() {
     <div className="fixed bottom-4 left-4 right-4 md:bottom-8 md:left-auto md:right-8 md:w-96 bg-[#1a1a1a] border border-[#d4af37] p-4 rounded-xl shadow-2xl flex flex-col gap-3 z-[100]">
       <div className="flex justify-between items-start">
         <div className="flex items-center gap-3">
-          <div className="bg-[#d4af37]/20 p-2 rounded-lg">
+          <div className="bg-[#d4af37]/20 p-2 rounded-lg shrink-0">
             <Download className="text-[#d4af37]" size={24} />
           </div>
           <div>
-            <h3 className="text-[#d4af37] font-bold text-lg" style={{ fontFamily: 'Cinzel, serif' }}>Installer le Jeu</h3>
-            <p className="text-sm text-[#e4d5b7]/80">Jouez hors-ligne et recevez les mises à jour automatiquement !</p>
+            <h3 className="text-[#d4af37] font-bold text-lg leading-tight" style={{ fontFamily: 'Cinzel, serif' }}>Installer le Jeu</h3>
+            <p className="text-xs text-[#e4d5b7]/80 mt-1">Jouez hors-ligne et profitez des mises à jour automatiques !</p>
           </div>
         </div>
         <button 
@@ -61,12 +69,26 @@ export function InstallPrompt() {
           <X size={20} />
         </button>
       </div>
-      <button 
-        onClick={handleInstallClick}
-        className="w-full bg-[#d4af37] text-black font-bold py-2 rounded shadow hover:bg-[#b5952f] transition-colors mt-2 cursor-pointer"
-      >
-        Installer maintenant
-      </button>
+
+      {showInstructions ? (
+        <div className="bg-[#242424] border border-[#d4af37]/30 p-3 rounded-lg text-xs text-[#e4d5b7]/90 flex gap-2">
+          <Info size={16} className="text-[#d4af37] shrink-0 mt-0.5" />
+          <div>
+            {isIOS ? (
+              <p>Sur iOS : Appuyez sur le bouton de <strong>Partage</strong> en bas de Safari, puis faites défiler et sélectionnez <strong>"Sur l'écran d'accueil"</strong>.</p>
+            ) : (
+              <p>Sur Chrome/Firefox : Appuyez sur les <strong>trois points verticaux</strong> en haut à droite, puis sélectionnez <strong>"Installer l'application"</strong> ou <strong>"Ajouter à l'écran d'accueil"</strong>.</p>
+            )}
+          </div>
+        </div>
+      ) : (
+        <button 
+          onClick={handleInstallClick}
+          className="w-full bg-[#d4af37] text-black font-bold py-2 rounded shadow hover:bg-[#b5952f] transition-colors cursor-pointer text-sm"
+        >
+          Installer maintenant
+        </button>
+      )}
     </div>
   );
 }
