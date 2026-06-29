@@ -3,7 +3,6 @@ import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
-import { ErrorBoundary } from './components/ErrorBoundary';
 import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
@@ -199,17 +198,15 @@ function App() {
               </div>
             </>
           )}
+
+          {showSettingsModal && (
+            <SettingsModal onClose={() => setShowSettingsModal(false)} />
+          )}
         </div>
       )}
 
       {appState === 'RULES' && (
         <Rules onBack={() => handleStateChange('MENU')} />
-      )}
-
-      {showSettingsModal && (
-        <ErrorBoundary>
-          <SettingsModal onClose={() => setShowSettingsModal(false)} />
-        </ErrorBoundary>
       )}
     </div>
   );

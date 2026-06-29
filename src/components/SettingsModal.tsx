@@ -1,4 +1,4 @@
-import { X, Check } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useGameStore } from '../store/gameStore';
 
 interface SettingsModalProps {
@@ -10,102 +10,54 @@ export function SettingsModal({ onClose }: SettingsModalProps) {
   const settings = rawSettings || { fontSize: 'large', allowCombatRestart: false, allowGoBack: false };
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] backdrop-blur-sm p-4">
-      <div className="book-panel w-full max-w-lg p-6 relative flex flex-col max-h-[90vh]">
+    <div 
+      className="fixed inset-0 flex items-center justify-center p-4" 
+      style={{ zIndex: 999999, backgroundColor: 'rgba(0, 0, 0, 0.9)' }}
+    >
+      <div className="book-panel w-full max-w-lg p-8 relative flex flex-col items-center">
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-[#d4af37] transition-colors"
+          className="absolute top-4 right-4 text-gray-400 hover:text-white"
         >
-          <X size={24} />
+          <X size={32} />
         </button>
 
-        <h2 className="text-3xl font-bold text-center text-[#d4af37] mb-8" style={{ fontFamily: 'Cinzel, serif' }}>
+        <h2 className="text-3xl font-bold text-[#d4af37] mb-8" style={{ fontFamily: 'Cinzel, serif' }}>
           Paramètres
         </h2>
 
-        <div className="flex-1 overflow-y-auto space-y-8 pr-2">
-          
-          {/* Font Size */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold border-b border-[#333333] pb-2 text-gray-300">
-              Taille du texte (Récit)
-            </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-              {[
-                { id: 'small', label: 'Petit', class: 'text-sm' },
-                { id: 'medium', label: 'Moyen', class: 'text-base' },
-                { id: 'large', label: 'Grand', class: 'text-lg' },
-                { id: 'xlarge', label: 'Très Grand', class: 'text-xl' }
-              ].map((size) => (
-                <button
-                  key={size.id}
-                  onClick={() => updateSettings({ fontSize: size.id as any })}
-                  className={`p-3 border rounded transition-all flex flex-col items-center justify-center gap-2
-                    ${settings.fontSize === size.id 
-                      ? 'border-[#d4af37] bg-[#d4af37]/10 text-[#d4af37]' 
-                      : 'border-[#333333] hover:border-gray-500 text-gray-400 hover:text-gray-200'}`}
+        <div className="w-full space-y-6">
+          <div className="p-4 border border-gray-700 rounded bg-black/50">
+            <h3 className="text-xl text-white mb-2">Taille du texte</h3>
+            <div className="flex gap-2">
+              {['small', 'medium', 'large', 'xlarge'].map(size => (
+                <button 
+                  key={size}
+                  onClick={() => updateSettings({ fontSize: size as any })}
+                  className={`px-4 py-2 border rounded ${settings.fontSize === size ? 'border-yellow-500 text-yellow-500' : 'border-gray-500 text-white'}`}
                 >
-                  <span className={size.class}>Aa</span>
-                  <span className="text-xs uppercase tracking-wider">{size.label}</span>
+                  {size}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Combat Restart */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold border-b border-[#333333] pb-2 text-gray-300">
-              Relancer le combat
-            </h3>
-            <p className="text-sm text-gray-400 mb-2">
-              Permet de recommencer un combat perdu (restaure vos points de vie d'avant combat).
-            </p>
-            <div className="flex gap-4">
-              <button
-                onClick={() => updateSettings({ allowCombatRestart: true })}
-                className={`flex-1 py-2 rounded border flex justify-center items-center gap-2 transition-colors
-                  ${settings.allowCombatRestart ? 'border-green-500 bg-green-500/10 text-green-400' : 'border-[#333333] text-gray-500 hover:border-gray-500'}`}
-              >
-                {settings.allowCombatRestart && <Check size={18} />} OUI
-              </button>
-              <button
-                onClick={() => updateSettings({ allowCombatRestart: false })}
-                className={`flex-1 py-2 rounded border flex justify-center items-center gap-2 transition-colors
-                  ${!settings.allowCombatRestart ? 'border-red-500 bg-red-500/10 text-red-400' : 'border-[#333333] text-gray-500 hover:border-gray-500'}`}
-              >
-                {!settings.allowCombatRestart && <Check size={18} />} NON
-              </button>
+          <div className="p-4 border border-gray-700 rounded bg-black/50">
+            <h3 className="text-xl text-white mb-2">Relancer le combat</h3>
+            <div className="flex gap-2">
+              <button onClick={() => updateSettings({ allowCombatRestart: true })} className={`px-4 py-2 border rounded ${settings.allowCombatRestart ? 'border-green-500 text-green-500' : 'border-gray-500 text-white'}`}>OUI</button>
+              <button onClick={() => updateSettings({ allowCombatRestart: false })} className={`px-4 py-2 border rounded ${!settings.allowCombatRestart ? 'border-red-500 text-red-500' : 'border-gray-500 text-white'}`}>NON</button>
             </div>
           </div>
 
-          {/* Go Back */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold border-b border-[#333333] pb-2 text-gray-300">
-              Revenir en arrière
-            </h3>
-            <p className="text-sm text-gray-400 mb-2">
-              Affiche un bouton pour annuler votre dernier choix et revenir à la section précédente.
-            </p>
-            <div className="flex gap-4">
-              <button
-                onClick={() => updateSettings({ allowGoBack: true })}
-                className={`flex-1 py-2 rounded border flex justify-center items-center gap-2 transition-colors
-                  ${settings.allowGoBack ? 'border-green-500 bg-green-500/10 text-green-400' : 'border-[#333333] text-gray-500 hover:border-gray-500'}`}
-              >
-                {settings.allowGoBack && <Check size={18} />} OUI
-              </button>
-              <button
-                onClick={() => updateSettings({ allowGoBack: false })}
-                className={`flex-1 py-2 rounded border flex justify-center items-center gap-2 transition-colors
-                  ${!settings.allowGoBack ? 'border-red-500 bg-red-500/10 text-red-400' : 'border-[#333333] text-gray-500 hover:border-gray-500'}`}
-              >
-                {!settings.allowGoBack && <Check size={18} />} NON
-              </button>
+          <div className="p-4 border border-gray-700 rounded bg-black/50">
+            <h3 className="text-xl text-white mb-2">Revenir en arrière</h3>
+            <div className="flex gap-2">
+              <button onClick={() => updateSettings({ allowGoBack: true })} className={`px-4 py-2 border rounded ${settings.allowGoBack ? 'border-green-500 text-green-500' : 'border-gray-500 text-white'}`}>OUI</button>
+              <button onClick={() => updateSettings({ allowGoBack: false })} className={`px-4 py-2 border rounded ${!settings.allowGoBack ? 'border-red-500 text-red-500' : 'border-gray-500 text-white'}`}>NON</button>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   );
