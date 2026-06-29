@@ -101,8 +101,8 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
         {/* Nom du héros fixé à Loup Solitaire */}
 
         <div>
-          <label className="block text-[#d4af37] mb-2 font-semibold">Choisissez votre Portrait :</label>
-          <div className="grid grid-cols-5 gap-3">
+          <label className="block text-[#d4af37] mb-4 font-semibold">Choisissez votre Portrait :</label>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4">
             {Array.from({length: 10}).map((_, i) => {
               const avatarFile = `avatar_${i+1}.png`;
               const isSelected = selectedAvatar === avatarFile;
