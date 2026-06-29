@@ -871,6 +871,7 @@ export const storyData: Record<string, Section> = {
   "63": {
     "id": "63",
     "text": "Le vieil homme vous insulte à grands cris. Il vous rend responsable de la guerre en maudissant les Seigneurs Kaï qui sont, selon lui, les agents des Maîtres des Ténèbres. Impossible de lui faire entendre raison, il va falloir le combattre. VIEIL HOMME FOU HABILETÉ : 11 ENDURANCE : 10 Si vous êtes vainqueur, rendez-vous au 269.",
+    "image": "/images/sections/sect63.png",
     "choices": [
       {
         "text": "VIEIL HOMME FOU HABILETÉ : 11 ENDURANCE : 10 Si vous êtes vainqueur, rendez-vous au 269.",
@@ -990,6 +991,7 @@ export const storyData: Record<string, Section> = {
   "72": {
     "id": "72",
     "text": "Il vous faut affronter un Glok grimaçant chevauchant sa monture à la gueule hérissée de dents pointues. Vous devez les combattre tous deux en les considérant comme un seul et même adversaire. GLOK+ LOUP MAUDIT HABILETÉ : 15 ENDURANCE : 24 Si vous êtes vainqueur, rendez-vous au 265.",
+    "image": "/images/sections/sect72.png",
     "choices": [
       {
         "text": "GLOK+ LOUP MAUDIT HABILETÉ : 15 ENDURANCE : 24 Si vous êtes vainqueur, rendez-vous au 265.",
@@ -1053,6 +1055,7 @@ export const storyData: Record<string, Section> = {
   "77": {
     "id": "77",
     "text": "Les Gloks sont des créatures des montagnes peu habituées à poursuivre leurs proies dans les forêts, et vous parvenez bientôt à les distancer. Leurs grognements et leurs jurons s'évanouissent au lointain : ils ont abandonné la course. Vous faites alors une courte halte pour reprendre votre souffle et vérifier votre équipement. Puis vous vous remettez en route après avoir soigneusement rangé les quelques objets que vous avez réussi à arracher aux décombres du monastère. L'image de ses ruines fumantes vous revient en mémoire, et vous serrez les dents tandis que la forêt s'épaissit autour de vous. Rendez-vous au 19.",
+    "image": "/images/sections/sect77.png",
     "choices": [
       {
         "text": "Rendez-vous au 19.",
@@ -1115,6 +1118,7 @@ export const storyData: Record<string, Section> = {
   "82": {
     "id": "82",
     "text": "Le Gourgaz Géant est étendu à vos pieds ; ses compagnons sifflent de rage en vous lançant des regards furieux, puis ils sautent du pont. Les tirs de flèches reprennent de plus belle tandis que les soldats du Prince forment autour de vous et de leur chef agonisant un mur de protection à l'aide de leurs boucliers. Le Prince moribond vous regarde alors dans les yeux et prononce ces derniers mots : « Seigneur Kaï, il vous faut transmettre un message au Roi, mon père. L'ennemi est trop puissant, nous ne pouvons le contenir. C'est à Durenor que se trouve notre salut; Sa Majesté doit envoyer chercher ce qui peut nous épargner la défaite. Mon père comprendra ce que je veux dire. Prenez mon cheval et gagnez la capitale. Puissent les Dieux vous accompagner au long de votre voyage ! » Le cœur plein de tristesse, vous dites alors adieu au Prince, puis vous enfourchez son étalon blanc que vous lancez au galop en direction du sud, le long du chemin forestier. Derrière vous, l'ennemi repart à l'assaut du pont et les échos d'une féroce bataille retentissent encore longtemps à vos oreilles. Rendez-vous au 235.",
+    "image": "/images/sections/sect82.png",
     "choices": [
       {
         "text": "Rendez-vous au 235.",
@@ -1273,6 +1277,7 @@ export const storyData: Record<string, Section> = {
   "93": {
     "id": "93",
     "text": "Vous faites volte-face et vous vous ruez vers l'escalier. Une fraction de seconde plus tard, un énorme bloc de pierre s'écrase sur le sol, juste dans votre dos. L'entrée de la pièce que vous venez de quitter est, à présent, entièrement obstruée et, tandis que vous vous précipitez au-dehors, vous apercevez derrière vous la silhouette voûtée d'un vieux druide qui lève sa crosse. Un instant plus tard, un éclair explose à vos pieds ; vous parvenez cependant à l'éviter et vous descendez en courant le flanc de la colline, furieux d'avoir perdu du temps, mais en remerciant votre Sixième Sens de vous avoir sauvé la vie. Rendez-vous au 106.",
+    "image": "/images/sections/sect93.png",
     "choices": [
       {
         "text": "Rendez-vous au 106.",
@@ -1321,6 +1326,7 @@ export const storyData: Record<string, Section> = {
   "97": {
     "id": "97",
     "text": "Un peu plus loin devant vous, une terrible bataille a lieu sur un pont de pierre. Le fracas des armes, les cris des combattants et les hennissements des chevaux retentissent en écho dans la forêt. Une silhouette familière se dessine alors au beau milieu du pont, là où les corps à corps sont les plus violents : vous reconnaissez aussitôt le Prince Pellagayo, le fils du Roi. Il est en train de se battre avec un énorme Gourgaz qui brandit une Hache Noire au- dessus de sa tête couverte d'écaillés grisâtres. Or, un instant plus tard, le Prince tombe de son cheval et s'écroule sur le pont, atteint par une flèche qui lui a percé le flanc. Si vous souhaitez vous porter au secours du Prince Pellagayo, rendez-vous au 255. Si vous préférez vous enfuir dans la forêt, rendez-vous au 306.",
+    "image": "/images/sections/sect97.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous porter au secours du Prince Pellagayo, rendez-vous au 255.",
@@ -1435,6 +1441,7 @@ export const storyData: Record<string, Section> = {
   "106": {
     "id": "106",
     "text": "Vous arrivez un peu plus tard au bord d'un ruisseau aux eaux glacées, agitées d'un fort courant. Son eau blanche d'écume court parmi les rocs moussus et disparaît au loin, en direction de l'est. Si vous désirez longer ce ruisseau vers l'est, rendez-vous au 263. Si vous préférez en remonter le cours, rendez-vous au 334.",
+    "image": "/images/sections/sect106.png",
     "choices": [
       {
         "text": "Si vous désirez longer ce ruisseau vers l'est, rendez-vous au 263.",
@@ -1542,6 +1549,7 @@ export const storyData: Record<string, Section> = {
   "114": {
     "id": "114",
     "text": "Vous amenez votre cheval à se coucher et vous le recouvrez, ainsi que vous-même, de branches et de feuilles mortes. Vous entendez les battements d'ailes du Kraan lorsqu'il passe au- dessus des arbres : il se met à tournoyer au-dessus de vous, mais repart bientôt en direction du lac qu'il traverse dans l'autre sens. Vous décidez alors de partir au plus vite de peur qu'il ne revienne avec quelques-uns de ses compagnons. Rendez-vous au 239.",
+    "image": "/images/sections/sect114.png",
     "choices": [
       {
         "text": "Rendez-vous au 239.",
@@ -1650,6 +1658,7 @@ export const storyData: Record<string, Section> = {
   "122": {
     "id": "122",
     "text": "Dès que le cheval sent que vous communiquez directement avec lui, il se calme. Vous vous approchez alors de ce magnifique étalon et vous lui caressez la tête d'un geste rassurant. Vous sentez à présent qu'il ne sait plus très bien s'il doit avoir peur ou pas. Vous montez ensuite sur son dos et vous le lancez sur le chemin, en prenant cette fois encore la direction du sud. Rendez- vous au 206.",
+    "image": "/images/sections/sect122.png",
     "choices": [
       {
         "text": "Rendez- vous au 206.",
@@ -1753,6 +1762,7 @@ export const storyData: Record<string, Section> = {
   "130": {
     "id": "130",
     "text": "Vous parvenez bientôt à une petite clairière. En son centre, vous trouvez un banc taillé dans le tronc d'un arbre. Vous avez faim, et il vous faut prendre un Repas, sinon, vous perdrez 3 points d'ENDURANCE. Lorsque vous avez fini de manger, vous pourrez quitter la clairière par le sud en vous rendant au 28. Mais si vous préférez emprunter le sentier plus étroit qui mène vers l'est en s'enfonçant dans la forêt, rendez- vous au 201.",
+    "image": "/images/sections/sect130.png",
     "choices": [
       {
         "text": "Lorsque vous avez fini de manger, vous pourrez quitter la clairière par le sud en vous rendant au 28.",
@@ -1767,6 +1777,7 @@ export const storyData: Record<string, Section> = {
   "131": {
     "id": "131",
     "text": "Vous avez parcouru environ cinq cents mètres lorsque vous entendez des cris et des bruits semblables au fracas du tonnerre. En vous approchant, vous apercevez bientôt une clairière que vous connaissez déjà. C'est là que s'élèvent les ruines de Raumas, un ancien temple de la forêt. Une troupe de Gloks dont vous évaluez le nombre à vingt-cinq ou trente sont en train d'attaquer les ruines qu'ils encerclent. D'autres Gloks, plus nombreux encore, sont étendus raides morts ou agonisent parmi les vestiges de marbre du temple. L'assaut des Gloks survivants ne faiblit pas pour autant et ils continuent de mener l'attaque contre les ruines. Qui s'y cache ? Vous l'ignorez. Or, soudain, un éclair jaillit et vient frapper le premier rang des Gloks. Les monstres revêtus de leurs armures sont alors projetés en tous sens, trébuchant et roulant sur eux- mêmes. L'un d'eux, plus grand que les autres et couvert de la tête aux pieds d'une grosse cotte de mailles noire, lance des jurons à ses congénères et les incite à repartir à l'attaque en les frappant à grands coups d'un fouet aux lanières de fer barbelé. Vous dégainez votre arme et vous vous approchez de la clairière en restant à l'abri du feuillage. Vous essayez de voir qui défend ainsi les ruines du temple et, à votre grand étonnement, vous vous apercevez bientôt que c'est un jeune homme seul, guère plus âgé que vous, qui tient ainsi tête aux créatures déchaînées. Vous reconnaissez aussitôt sa toge bleu ciel brodée d'étoiles : c'est un jeune Théurgiste de la Guilde des Magiciens de Toran, un apprenti en magie blanche. Cinq Gloks, la lance brandie, chargent le jeune homme qui bat rapidement en retraite à l'intérieur des ruines. Vous le voyez alors se tourner et lever la main gauche : au même instant, un éclair bleu jaillit du bout de ses doigts et vient frapper les Gloks hurlants. Non loin de l'endroit où vous êtes caché, un autre Glok contourne les ruines en courant et grimpe au sommet d'une des colonnes du temple. Il serre entre ses dents un long poignard à la lame recourbée et s'apprête à sauter sur le jeune sorcier qui se tient debout juste au-dessous de lui. Si vous souhaitez crier pour avertir le sorcier du danger qui le menace, rendez-vous au 241. Si vous voulez vous précipiter en avant pour attaquer le Glok au moment où il bondira, rendez-vous au 55. Si vous préférez ramasser une pierre dans les ruines et la jeter à la tête du Glok, rendez-vous au 302. Enfin, si vous estimez plus judicieux de quitter ce champ de bataille et de poursuivre votre chemin en retournant dans la forêt, rendez-vous au 101.",
+    "image": "/images/sections/sect131.png",
     "choices": [
       {
         "text": "Si vous souhaitez crier pour avertir le sorcier du danger qui le menace, rendez-vous au 241.",
@@ -1970,6 +1981,7 @@ export const storyData: Record<string, Section> = {
   "144": {
     "id": "144",
     "text": "Vous vous frayez un chemin à coups de coude dans la foule qui se presse sur la grand-rue. Vous apercevez un peu plus loin la silhouette massive de la citadelle qui abrite le Palais du Roi. Les habitants de Holmgard, saisis de panique, courent en tous sens, tandis que retentissent les cris des Kraans qui tournoient dans le ciel de la ville. Dans la bousculade, quelqu'un vous vole l'un des objets contenus dans votre Sac à Dos. Si vous n'avez plus de Sac à Dos, c'est une arme qu'on vous dérobe. Rayez l'objet ou l'arme perdue de votre Feuille d'Aventure (c'est vous qui choisissez ce qu'on vous a volé). Un cheval emballé, qui tire une charrette, passe devant vous à toute allure et vous heurte en vous projetant contre une porte cochère. Vous êtes à moitié assommé et vous perdez 2 points D'ENDURANCE. Vous vous relevez en titubant, mais, au même moment, la porte s'ouvre à la volée et un vieil homme décrépit se précipite sur vous en brandissant un couteau à viande. Il est fou à lier et il vous faut le combattre ou tenter de fuir. Si vous choisissez de le combattre, rendez-vous au 63. Si vous préférez essayer d'éviter l'affrontement, rendez-vous au 217.",
+    "image": "/images/sections/sect144.png",
     "choices": [
       {
         "text": "Si vous choisissez de le combattre, rendez-vous au 63.",
@@ -2066,6 +2078,7 @@ export const storyData: Record<string, Section> = {
   "152": {
     "id": "152",
     "text": "L'herboriste vous offre tout un choix de potions : certaines d'entre elles accroissent votre force, d'autres vous rendent invisible, d'autres encore vous donnent la faculté de vous faufiler partout, et il en est même qui vous permettent de prendre une forme gazeuse. Ensuite, l'homme ouvre un tiroir au bas de son comptoir et vous montre une magnifique Baguette Magique. D'après lui, il s'agit là d'une arme puissante qui vous permettra de combattre efficacement toute créature malfaisante en vous rendant vous-même invulnérable aux coups de vos adversaires. Pour mieux vous en convaincre, il vous invite à lire une inscription magique gravée sur la baguette. Si vous souhaitez vous pencher par-dessus le comptoir pour lire l'étrange inscription, rendez-vous au 49. Si vous vous intéressez davantage aux potions, rendez-vous au 231.",
+    "image": "/images/sections/sect152.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous pencher par-dessus le comptoir pour lire l'étrange inscription, rendez-vous au 49.",
@@ -2141,6 +2154,7 @@ export const storyData: Record<string, Section> = {
   "158": {
     "id": "158",
     "text": "La clé s'adapte parfaitement à la serrure que vous n'avez aucun mal à ouvrir. Vous faites pivoter la porte sur ses gonds et vous vous retrouvez face à face avec un vieillard étrange qui porte un bâton à la main droite. Soudain, un éclair jaillit du bâton et vous frappe en pleine poitrine. Vous perdez 6 points d'ENDURANCE. Haletant de douleur, vous avez malgré tout (si vous n'êtes pas mort sur le coup) la force de bousculer le vieil homme d'un coup d'épaule et de monter quatre à quatre un escalier plutôt raide qui mène à la lumière du jour. Vous avez grimpé la moitié des marches lorsque le vieillard fait jaillir un nouvel éclair de son bâton. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez entre 0 et 5, l'éclair vous rate et vient exploser contre le mur. Si vous tirez entre 6 et 9, l'éclair vous frappe dans le dos et vous perdez 4 points d'ENDURANCE supplémentaires. Si vous index avez survécu, vous émergez à la lumière du jour en maudissant votre mauvaise fortune. Vous avez découvert, par malchance, le temple secret d'une secte de druides malfaisants et vous auriez pu tout aussi bien y laisser votre peau. Vous vous hâtez à présent de rejoindre le sentier qui redescend de l'autre côté de la colline. Rendez-vous au 106.",
+    "image": "/images/sections/sect158.png",
     "choices": [
       {
         "text": "Rendez-vous au 106.",
@@ -2165,6 +2179,7 @@ export const storyData: Record<string, Section> = {
   "160": {
     "id": "160",
     "text": "Utilisez la Table de Hasard pour obtenir un chiffre : Si vous tirez entre 0 et 4, vous avez été repéré. Rendez-vous alors au 286. Si vous tirez entre 5 et 9, ils ne vous ont pas vu et poursuivent leur chemin en s'éloignant de vous. Rendez-vous dans ce cas au 10.",
+    "image": "/images/sections/sect160.png",
     "choices": [
       {
         "text": "Rendez-vous alors au 286.",
@@ -2290,6 +2305,7 @@ export const storyData: Record<string, Section> = {
   "170": {
     "id": "170",
     "text": "Le tunnel est sombre et il y fait beaucoup plus froid qu'au- dehors. Vous avancez prudemment en tâtonnant la paroi et au bout de trois minutes passées dans une obscurité totale, vous sentez soudain une odeur répugnante de viande pourrie. Si vous disposez d'une Torche et d'un Briquet d'Amadou, vous pourrez vous en servir pour vous éclairer. Soudain, une lourde masse tombe du plafond du tunnel et atterrit sur votre dos. Sous le choc, vos jambes fléchissent et vous vous retrouvez à genoux. C'est un Gluâtre des Profondeurs qui vient de vous attaquer en essayant de vous étrangler de ses longs tentacules visqueux. GLUÂTRE DES PROFONDEURS HABILETÉ : 17 ENDURANCE : 7 Si vous n'avez pas de Torche pour vous éclairer, vous devrez réduire de 3 points votre total d'HABILETÉ pendant toute la durée du combat. Le Gluâtre est insensible aux Disciplines Kaï de la Puissance Psychique et de la Communication Animale. Si vous êtes vainqueur, rendez-vous au 319.",
+    "image": "/images/sections/sect170.png",
     "choices": [
       {
         "text": "Si vous êtes vainqueur, rendez-vous au 319.",
@@ -2389,6 +2405,7 @@ export const storyData: Record<string, Section> = {
   "177": {
     "id": "177",
     "text": "Vous fouillez tous les placards de la maisonnette, mais vous ne trouvez rien qui puisse vous être de quelque utilité. Vous estimez alors que vous avez perdu suffisamment de temps et vous décidez de vous remettre en chemin au plus vite. Rendez-vous au 83.",
+    "image": "/images/sections/sect177.png",
     "choices": [
       {
         "text": "Rendez-vous au 83.",
