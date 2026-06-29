@@ -46,12 +46,16 @@ export function StoryViewer() {
     );
   }
 
-  const fontSizeClass = {
-    small: 'text-sm',
-    medium: 'text-base',
-    large: 'text-lg',
-    xlarge: 'text-xl'
-  }[settings?.fontSize || 'large'] || 'text-lg';
+  const getFontSize = () => {
+    switch(settings?.fontSize) {
+      case 'small': return '14px';
+      case 'medium': return '16px';
+      case 'large': return '20px';
+      case 'xlarge': return '26px';
+      default: return '20px';
+    }
+  };
+  const fontSizeStyle = { fontSize: getFontSize() };
 
   return (
     <div className="max-w-2xl mx-auto pb-20 relative">
@@ -78,7 +82,7 @@ export function StoryViewer() {
         </div>
       )}
 
-      <div className={`book-panel p-6 mb-8 ${fontSizeClass}`}>
+      <div className="book-panel p-6 mb-8" style={fontSizeStyle}>
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => (
               <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>
