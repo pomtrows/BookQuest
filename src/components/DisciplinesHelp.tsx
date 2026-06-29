@@ -46,7 +46,7 @@ export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
           <div className="flex items-center gap-3">
             <BookOpen size={28} className="text-[#d4af37]" />
             <h1 className="text-3xl md:text-4xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
-              Les Disciplines Kaï (Aide)
+              Les Disciplines Kaï
             </h1>
           </div>
           <button 
