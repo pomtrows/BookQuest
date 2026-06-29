@@ -179,7 +179,7 @@ export function CombatScreen() {
               {settings?.allowCombatRestart && (
                 <button 
                   onClick={restartCombat}
-                  className="primary-btn w-full px-6 py-3 text-lg border-2 border-green-500 text-green-400 hover:text-white shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+                  className="w-full rounded-md font-bold px-6 py-3 text-lg border-2 border-green-500 !text-green-400 hover:!text-white hover:bg-green-900 transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]"
                   style={{ backgroundColor: 'rgba(20, 60, 20, 0.8)' }}
                 >
                   Relancer le combat
