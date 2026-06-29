@@ -121,11 +121,11 @@ export function StoryViewer() {
               <button 
                 onClick={() => {
                   setMealResolved(true);
-                  addNotification('Votre Maîtrise de la Chasse vous permet de vous nourrir.', 'success');
+                  addNotification('Votre discipline (Chasse) vous permet de vous nourrir.', 'success');
                 }}
                 className="choice-btn !border-green-600 !text-green-500 hover:!bg-green-900/30"
               >
-                Utiliser Maîtrise de la Chasse
+                Utiliser la discipline : Chasse
               </button>
             )}
             
