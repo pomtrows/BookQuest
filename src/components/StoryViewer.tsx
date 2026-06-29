@@ -80,9 +80,16 @@ export function StoryViewer() {
 
       <div className="book-panel p-6 mb-8" style={fontSizeStyle}>
         {Array.isArray(section.text) 
-          ? section.text.map((paragraph, idx) => (
-              <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>
-            ))
+          ? section.text.map((paragraph, idx) => {
+              if (paragraph.startsWith('[IMG]')) {
+                return (
+                  <div key={idx} className="my-6 flex justify-center">
+                    <img src={paragraph.substring(5)} alt="" className="max-w-full h-auto rounded-lg shadow-lg border-2 border-[#d4af37]" />
+                  </div>
+                );
+              }
+              return <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>;
+            })
           : <p className="mb-4 leading-relaxed whitespace-pre-wrap">{section.text}</p>
         }
       </div>
