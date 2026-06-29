@@ -80,9 +80,14 @@ function App() {
             </button>
             {previousAdventurePath && previousAdventurePath.length > 0 && (
               <button 
-                onClick={(e) => { e.stopPropagation(); setShowPreviousAdventureModal(true); }}
-                className="choice-btn text-center text-xl transition-all"
-                style={{ backgroundColor: '#121212', borderColor: '#9ca3af', color: '#9ca3af', opacity: 0.95, textAlign: 'center' }}
+                onClick={(e) => { 
+                  e.preventDefault();
+                  e.stopPropagation(); 
+                  playAudio();
+                  setShowPreviousAdventureModal(true); 
+                }}
+                className="choice-btn text-center text-xl transition-all cursor-pointer"
+                style={{ backgroundColor: '#121212', borderColor: '#9ca3af', color: '#9ca3af', opacity: 1, textAlign: 'center' }}
               >
                 Ancienne Aventure
               </button>
@@ -91,25 +96,33 @@ function App() {
         </div>
       )}
 
-      {showPreviousAdventureModal && previousAdventurePath && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-          <div className="bg-[#121212] border-2 border-[#d4af37] rounded-xl p-6 max-w-2xl w-full max-h-[80vh] flex flex-col relative shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+      {showPreviousAdventureModal && (
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999] p-4" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-[#1a1a1a] border-2 border-[#d4af37] rounded-xl p-6 max-w-2xl w-full max-h-[80vh] flex flex-col relative shadow-[0_0_40px_rgba(212,175,55,0.3)]">
             <button 
-              onClick={() => setShowPreviousAdventureModal(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-white"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowPreviousAdventureModal(false);
+              }}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white bg-black/50 rounded-full p-1"
             >
-              <X size={24} />
+              <X size={28} />
             </button>
             <h2 className="text-3xl font-bold text-[#d4af37] mb-6 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Historique de la Partie Précédente</h2>
             <div className="overflow-y-auto pr-2 custom-scrollbar">
-              <div className="text-gray-300 leading-relaxed text-lg text-center break-words p-4 bg-black/40 rounded border border-[#333333]">
-                {previousAdventurePath.map((id: string) => (id === 'prologue' ? 'P' : id)).join(' → ')}
+              <div className="text-gray-300 leading-relaxed text-lg text-center break-words p-6 bg-black/60 rounded border border-[#444] shadow-inner">
+                {previousAdventurePath && previousAdventurePath.length > 0 
+                  ? previousAdventurePath.map((id: string) => (id === 'prologue' ? 'P' : id)).join(' → ')
+                  : 'Aucun historique'}
               </div>
             </div>
-            <div className="mt-6 text-center">
+            <div className="mt-8 text-center">
               <button 
-                onClick={() => setShowPreviousAdventureModal(false)}
-                className="primary-btn px-8 py-2"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowPreviousAdventureModal(false);
+                }}
+                className="primary-btn px-8 py-3 text-lg"
               >
                 Fermer
               </button>
