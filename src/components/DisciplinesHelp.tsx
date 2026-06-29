@@ -8,10 +8,12 @@ interface DisciplinesHelpProps {
 
 export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
   const renderHelpContent = (content: string) => {
-    return content.split(/\n\s*\n/).map((paragraph, idx) => {
+    // Normalize carriage returns to be safe
+    const normalizedContent = content.replace(/\r/g, '');
+    return normalizedContent.split(/\n\n+/).map((paragraph, idx) => {
       const lines = paragraph.split('\n');
       return (
-        <div key={idx} className="mb-4 text-gray-300 text-lg leading-relaxed text-left">
+        <div key={idx} className="mb-6 pb-4 border-b border-[#333]/50 last:border-0 text-gray-300 text-lg leading-relaxed text-left">
           {lines.map((line, lineIdx) => {
             const parts = line.split(/(\*\*.*?\*\*)/g);
             return (

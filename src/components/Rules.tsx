@@ -14,12 +14,13 @@ export const Rules: React.FC<RulesProps> = ({ onBack }) => {
 
   // Function to render text with paragraphs and bolding for standard markdown-like asterisks
   const renderContent = (content: string) => {
-    return content.split(/\n\s*\n/).map((paragraph, idx) => {
+    const normalizedContent = content.replace(/\r/g, '');
+    return normalizedContent.split(/\n\n+/).map((paragraph, idx) => {
       // Split by newline inside the paragraph for lists
       const lines = paragraph.split('\n');
       
       return (
-        <div key={idx} className="mb-4 text-gray-300 text-lg leading-relaxed">
+        <div key={idx} className="mb-6 pb-4 border-b border-[#333]/50 last:border-0 text-gray-300 text-lg leading-relaxed">
           {lines.map((line, lineIdx) => {
             if (line.trim() === '[COMBAT_TABLE]') {
               return <CombatTable key={lineIdx} />;
