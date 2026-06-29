@@ -88,6 +88,13 @@ export function StoryViewer() {
                   </div>
                 );
               }
+              if (paragraph.startsWith('[TITLE]')) {
+                return (
+                  <h2 key={idx} className="text-2xl md:text-3xl text-center text-[#d4af37] mb-6 mt-4" style={{ fontFamily: 'Cinzel, serif' }}>
+                    {paragraph.substring(7)}
+                  </h2>
+                );
+              }
               return <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>;
             })
           : <p className="mb-4 leading-relaxed whitespace-pre-wrap">{section.text}</p>

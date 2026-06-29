@@ -6299,8 +6299,9 @@ export const storyData: Record<string, Section> = {
   "prologue": {
     "id": "prologue",
     "text": [
-      "Avertir le roi Au nord du royaume du Sommerlund, il est de tradition depuis des siècles d'envoyer les fils des Seigneurs de la Guerre au monastère Kaï. C'est là qu'on leur enseigne l'art et la science de leurs nobles ancêtres. Les Moines Kaï sont de grands maîtres dans l'art qu'ils enseignent.",
-      "Pour transmettre leurs connaissances, ils doivent faire subir à leurs disciples de rudes épreuves au cours de leur apprentissage, mais ces derniers ne s'en plaignent jamais. Ils leur témoignent au contraire amour et respect, sachant très bien qu'ils quitteront un jour le monastère en possédant tous les secrets de la tradition Kaï : ils pourront alors rentrer chez eux, l'esprit et le corps formés aux techniques de la guerre.",
+      "[TITLE]Avertir le roi",
+      "Au nord du royaume du Sommerlund, il est de tradition depuis des siècles d'envoyer les fils des Seigneurs de la Guerre au monastère Kaï. C'est là qu'on leur enseigne l'art et la science de leurs nobles ancêtres.",
+      "Les Moines Kaï sont de grands maîtres dans l'art qu'ils enseignent. Pour transmettre leurs connaissances, ils doivent faire subir à leurs disciples de rudes épreuves au cours de leur apprentissage, mais ces derniers ne s'en plaignent jamais. Ils leur témoignent au contraire amour et respect, sachant très bien qu'ils quitteront un jour le monastère en possédant tous les secrets de la tradition Kaï : ils pourront alors rentrer chez eux, l'esprit et le corps formés aux techniques de la guerre.",
       "Profondément attachés à leur patrie, ils seront ainsi prêts à la défendre contre le danger constant qui la menace : la soif de conquête des Maîtres des Ténèbres venus de l'ouest. Au temps jadis, à l'époque de la Lune Noire, les Maîtres des Ténèbres menèrent une guerre sans merci contre le royaume du Sommerlund.",
       "Ce fut une longue et douloureuse épreuve de force à l'issue de laquelle les guerriers du Sommerlund remportèrent la victoire lors de la grande bataille de Maaken. Le roi Ulnar et ses alliés de Durenor anéantirent l'armée des Maîtres des Ténèbres dans le défilé de Moytura et précipitèrent l'ennemi au fond de la gorge de Maaken.",
       "[IMG]/images/sections/sectprologue2.png",
