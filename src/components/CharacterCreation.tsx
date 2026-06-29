@@ -156,7 +156,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
       </div>
 
       <div className="book-panel p-6 mb-6 relative">
-        <div className="flex items-center gap-3 mb-2">
+        <div className="flex items-center justify-between gap-3 mb-4">
           <h3 className="text-xl">2. Disciplines Kaï (Choisissez-en 5)</h3>
           <button 
             type="button"
