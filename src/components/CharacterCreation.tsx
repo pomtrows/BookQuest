@@ -126,11 +126,19 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
         {!combatSkill ? (
           <button onClick={rollStats} className="primary-btn">Tirer les statistiques</button>
         ) : (
-          <div className="grid grid-cols-2 gap-4 text-lg">
-            <div>Habileté: <span className="text-[#d4af37] font-bold">{combatSkill}</span></div>
-            <div>Endurance: <span className="text-[#d4af37] font-bold">{endurance}</span></div>
-            <div>Couronnes d'or: <span className="text-[#d4af37] font-bold">{gold}</span></div>
-            <div>Objet initial: <span className="text-[#d4af37] font-bold">{initialItem}</span></div>
+          <div className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-lg">
+              <div>Habileté: <span className="text-[#d4af37] font-bold">{combatSkill}</span></div>
+              <div>Endurance: <span className="text-[#d4af37] font-bold">{endurance}</span></div>
+              <div>Couronnes d'or: <span className="text-[#d4af37] font-bold">{gold}</span></div>
+              <div>Objet initial: <span className="text-[#d4af37] font-bold">{initialItem}</span></div>
+            </div>
+            <button 
+              onClick={rollStats} 
+              className="choice-btn px-6 py-2 text-sm whitespace-nowrap"
+            >
+              Relancer les statistiques
+            </button>
           </div>
         )}
       </div>
