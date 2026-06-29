@@ -62,18 +62,10 @@ export function StoryViewer() {
 
   return (
     <div className="max-w-2xl mx-auto pb-20 relative">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 border-b border-[#333333] pb-2 gap-4">
-        <h2 className="text-3xl font-bold text-[#d4af37] m-0" style={{ fontFamily: 'Cinzel, serif' }}>
+      <div className="mb-8 border-b border-[#333333] pb-2">
+        <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
           Section {section.id}
         </h2>
-        {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
-          <button 
-            onClick={goBackInHistory}
-            className="flex items-center gap-2 transition-colors border border-gray-600 hover:border-[#d4af37] px-4 py-2 rounded-full text-sm bg-black/40 text-gray-300 hover:text-[#d4af37] self-start sm:self-auto"
-          >
-            <RotateCcw size={16} /> Revenir en arrière
-          </button>
-        )}
       </div>
 
       {section.image && (
@@ -170,6 +162,17 @@ export function StoryViewer() {
               </button>
             );
           })}
+        </div>
+      )}
+
+      {settings?.allowGoBack && history.length > 0 && currentSectionId !== 'prologue' && (
+        <div className="mt-12 flex justify-center">
+          <button 
+            onClick={goBackInHistory}
+            className="flex items-center gap-2 transition-colors border border-gray-600 hover:border-[#d4af37] px-6 py-3 rounded-full text-sm bg-black/40 text-gray-300 hover:text-[#d4af37]"
+          >
+            <RotateCcw size={18} /> Revenir en arrière
+          </button>
         </div>
       )}
     </div>
