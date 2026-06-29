@@ -177,10 +177,10 @@ export function CharacterCreation({ onComplete, onCancel }: { onComplete: () => 
           <h3 className="text-xl">2. Disciplines Kaï (Choisissez-en 5)</h3>
           <button 
             onClick={() => setShowDisciplinesHelp(true)}
-            className="text-gray-400 hover:text-[#d4af37] transition-colors bg-[#1a1a1a] p-1 rounded-full border border-gray-600 hover:border-[#d4af37]"
+            className="text-[#d4af37] hover:text-white transition-colors bg-black p-1.5 rounded-full border border-[#d4af37]/50 hover:border-[#d4af37] hover:bg-[#d4af37]/20 shadow-md flex items-center justify-center cursor-pointer"
             title="Voir les descriptions des disciplines"
           >
-            <HelpCircle size={20} />
+            <HelpCircle size={22} />
           </button>
         </div>
         <p className="mb-4 text-sm text-gray-400">Sélectionné: {selectedDisciplines.length} / 5</p>
