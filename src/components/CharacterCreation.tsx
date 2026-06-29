@@ -199,7 +199,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
         </div>
       </div>
 
-      <div className="flex justify-between mt-8 gap-4">
+      <div className="flex justify-between gap-4" style={{ marginTop: '3rem', paddingBottom: '2rem' }}>
         <button 
           onClick={onCancel} 
           className="choice-btn max-w-[200px] text-center text-lg"
