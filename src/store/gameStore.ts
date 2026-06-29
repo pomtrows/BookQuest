@@ -19,6 +19,7 @@ interface GameStore extends GameState {
 
   // Actions
   startNewGame: (character: CharacterState) => void;
+  saveAndResetGame: () => void;
   loadGame: () => void;
   goToSection: (sectionId: string) => void;
   goBackInHistory: () => void;
@@ -49,6 +50,7 @@ const initialState = {
   character: null,
   currentSectionId: 'prologue',
   history: [],
+  previousAdventurePath: undefined,
   isCombatActive: false,
   currentEnemies: [],
   currentEnemyIndex: 0,
@@ -92,13 +94,32 @@ export const useGameStore = create<GameStore>()(
       },
 
       startNewGame: (character) => {
-        // Keep settings, reset the rest
-        set((state) => ({ 
-          ...initialState, 
-          character, 
-          currentSectionId: 'prologue',
-          settings: state.settings 
-        }));
+        set((state) => {
+          let prevPath = state.previousAdventurePath;
+          if (state.character && state.history.length > 0) {
+            prevPath = [...state.history, state.currentSectionId];
+          }
+          return {
+            ...initialState,
+            character,
+            previousAdventurePath: prevPath,
+            settings: state.settings
+          };
+        });
+      },
+
+      saveAndResetGame: () => {
+        set((state) => {
+          let prevPath = state.previousAdventurePath;
+          if (state.character && state.history.length > 0) {
+            prevPath = [...state.history, state.currentSectionId];
+          }
+          return {
+            ...initialState,
+            previousAdventurePath: prevPath,
+            settings: state.settings
+          };
+        });
       },
 
       loadGame: () => {},

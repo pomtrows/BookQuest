@@ -16,7 +16,8 @@ function App() {
   const [showInventory, setShowInventory] = useState(false);
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
-  const { character } = useGameStore();
+  const [showPreviousAdventureModal, setShowPreviousAdventureModal] = useState(false);
+  const { character, previousAdventurePath } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
   // Helper to ensure audio starts on user interaction
@@ -77,6 +78,42 @@ function App() {
             >
               Règles du Jeu
             </button>
+            {previousAdventurePath && previousAdventurePath.length > 0 && (
+              <button 
+                onClick={() => setShowPreviousAdventureModal(true)}
+                className="choice-btn text-center text-lg transition-all"
+                style={{ backgroundColor: '#1a1a1a', borderColor: '#666', color: '#888', opacity: 0.9, textAlign: 'center', marginTop: '1rem' }}
+              >
+                Ancienne Aventure
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {showPreviousAdventureModal && previousAdventurePath && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <div className="bg-[#121212] border-2 border-[#d4af37] rounded-xl p-6 max-w-2xl w-full max-h-[80vh] flex flex-col relative shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+            <button 
+              onClick={() => setShowPreviousAdventureModal(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white"
+            >
+              <X size={24} />
+            </button>
+            <h2 className="text-3xl font-bold text-[#d4af37] mb-6 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Historique de la Partie Précédente</h2>
+            <div className="overflow-y-auto pr-2 custom-scrollbar">
+              <div className="text-gray-300 leading-relaxed text-lg text-center break-words p-4 bg-black/40 rounded border border-[#333333]">
+                {previousAdventurePath.map((id: string) => (id === 'prologue' ? 'P' : id)).join(' → ')}
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <button 
+                onClick={() => setShowPreviousAdventureModal(false)}
+                className="primary-btn px-8 py-2"
+              >
+                Fermer
+              </button>
+            </div>
           </div>
         </div>
       )}

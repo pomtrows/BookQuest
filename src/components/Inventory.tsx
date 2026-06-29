@@ -1,7 +1,7 @@
 import { useGameStore } from '../store/gameStore';
 
 export function Inventory() {
-  const { character, updateMeals, heal } = useGameStore();
+  const { character, updateMeals, heal, history, currentSectionId } = useGameStore();
 
   if (!character) return null;
 
@@ -91,6 +91,17 @@ export function Inventory() {
             <li key={idx} className="mb-1 text-[#00ffcc]">• {item}</li>
           ))}
         </ul>
+      </div>
+
+      <div className="bg-[#121212] p-3 rounded border border-[#333333] mt-4">
+        <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Chemin Parcouru</h3>
+        <div className="text-xs text-gray-500 max-h-32 overflow-y-auto break-words leading-relaxed p-2 bg-black/40 rounded border border-[#222222]">
+          {history.length > 0 ? (
+            [...history, currentSectionId].map(id => (id === 'prologue' ? 'P' : id)).join(' → ')
+          ) : (
+            'P'
+          )}
+        </div>
       </div>
     </div>
   );

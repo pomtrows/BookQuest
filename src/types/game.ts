@@ -83,6 +83,7 @@ export interface GameState {
   character: CharacterState | null;
   currentSectionId: string;
   history: string[];
+  previousAdventurePath?: string[];
   isCombatActive: boolean;
   currentEnemies: Enemy[];
   currentEnemyIndex: number;

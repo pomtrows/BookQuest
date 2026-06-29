@@ -188,7 +188,7 @@ export function CombatScreen() {
 
               <button 
                 onClick={() => {
-                  localStorage.removeItem('book-quest-storage');
+                  useGameStore.getState().saveAndResetGame();
                   window.location.reload();
                 }}
                 className="primary-btn w-full px-6 py-3 text-lg bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
