@@ -2677,6 +2677,7 @@ export const storyData: Record<string, Section> = {
       "Si vous pensez avoir plus de chance d'atteindre la capitale par la rivière, rendez- vous au 135.",
       "Enfin, si vous êtes suffisamment courageux pour vous risquer dans le Cimetière des Anciens, rendez-vous au 102."
     ],
+    "image": "/images/sections/sect153.png",
     "choices": [
       {
         "text": "Si vous voulez tenter votre chance en empruntant la grand-route, rendez-vous au 58.",
@@ -2873,6 +2874,7 @@ export const storyData: Record<string, Section> = {
       "Si vous pensez que vous pourrez plus facilement atteindre la capitale par la rivière, rendez-vous au 135.",
       "Si, enfin, vous vous sentez suffisamment courageux pour affronter les terribles périls du Cimetière des Anciens, rendez-vous au 329."
     ],
+    "image": "/images/sections/sect153.png",
     "choices": [
       {
         "text": "Si vous souhaitez tenter votre chance en empruntant la grand-route, rendez-vous au 202.",
@@ -2908,6 +2910,7 @@ export const storyData: Record<string, Section> = {
       "En dépit de la vaillance dont ils ont fait preuve, les soldats du Roi ont ainsi dû s'incliner. Vous essayez de rassurer de votre mieux ces malheureux réfugiés en affirmant que le Sommerlund ne tombera jamais aux mains des envahisseurs.",
       "Puis vous leur souhaitez bonne chance au long de leur exode et vous reprenez vous-même votre chemin. Rendez- vous au 70."
     ],
+    "image": "/images/sections/sect155.png",
     "choices": [
       {
         "text": "Rendez- vous au 70.",
@@ -4848,6 +4851,7 @@ export const storyData: Record<string, Section> = {
       "Le monstre mort qui repose dans le lit du cours d'eau est l'un des descendants de ces anciens esclaves. Apparemment, il s'est noyé. Dans une bourse accrochée à sa ceinture, vous trouvez 3 Pièces d'Or que vous pouvez prendre si vous le souhaitez. Vous pourrez ensuite continuer votre chemin le long du cours d'eau en vous rendant au 70.",
       "Mais vous pouvez également quitter sa berge et prendre la direction du sud ; rendez-vous pour cela au 157."
     ],
+    "image": "/images/sections/sect263.png",
     "choices": [
       {
         "text": "Vous pourrez ensuite continuer votre chemin le long du cours d'eau en vous rendant au 70.",
@@ -6276,6 +6280,7 @@ export const storyData: Record<string, Section> = {
       "Banedon ensuite vous dit adieu. « Il nous faut quitter ces lieux, assure-t-il, de peur que les Gloks ne reviennent accompagnés de renforts. Ces répugnantes créatures auraient alors raison de nous. Je dois à présent retourner à la Guilde. Au revoir, mon frère, que la chance des Dieux vous accompagne.",
       "» Rendez-vous au 293."
     ],
+    "image": "/images/sections/sect349.png",
     "choices": [
       {
         "text": "» Rendez-vous au 293.",
