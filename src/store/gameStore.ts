@@ -2,7 +2,6 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { GameState, CharacterState, Enemy, Settings } from '../types/game';
 import { getCombatResult, K } from '../data/combatTable';
-import { storyData } from '../data/story';
 
 export interface Notification {
   id: string;
@@ -120,25 +119,7 @@ export const useGameStore = create<GameStore>()(
           }
         }
 
-        // Check Meals requirement
-        const sectionData = storyData[sectionId];
-        if (sectionData) {
-          const textStr = Array.isArray(sectionData.text) ? sectionData.text.join(' ') : sectionData.text;
-          const mealTriggers = [
-            'prendre un Repas', 'prendre rapidement un Repas', 'faire un Repas', 'faire un somptueux repas'
-          ];
-          if (mealTriggers.some(t => textStr.includes(t))) {
-            if (state.character.disciplines.includes('Chasse')) {
-              notificationsToAdd.push({msg: "Chasse : Vous trouvez de quoi vous nourrir.", type: 'success'});
-            } else if (newMeals > 0) {
-              newMeals -= 1;
-              notificationsToAdd.push({msg: "Repas consommé.", type: 'info'});
-            } else {
-              newEndurance = Math.max(0, newEndurance - 3);
-              notificationsToAdd.push({msg: "Faim ! Vous perdez 3 points d'Endurance.", type: 'danger'});
-            }
-          }
-        }
+        // The manual meal check is handled in StoryViewer using requiresMeal property
 
         set((state) => ({
           character: {
