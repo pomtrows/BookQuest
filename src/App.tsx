@@ -3,6 +3,7 @@ import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
@@ -176,7 +177,7 @@ function App() {
                   </button>
 
                   <button 
-                    onClick={() => { setShowSettingsModal(true); setShowDropdownMenu(false); }} 
+                    onClick={(e) => { e.stopPropagation(); setShowSettingsModal(true); setShowDropdownMenu(false); }} 
                     className="sidebar-btn group"
                   >
                     <Settings size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
@@ -206,7 +207,9 @@ function App() {
       )}
 
       {showSettingsModal && (
-        <SettingsModal onClose={() => setShowSettingsModal(false)} />
+        <ErrorBoundary>
+          <SettingsModal onClose={() => setShowSettingsModal(false)} />
+        </ErrorBoundary>
       )}
     </div>
   );
