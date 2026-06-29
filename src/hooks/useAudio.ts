@@ -45,7 +45,16 @@ export const useAudio = (appState: AppState) => {
       } else {
         const section = storyData[currentSectionId];
         const biome = section?.location || 'forest';
-        newSrc = `/audio/${biome}.wav`;
+        const biomeMusicMap: Record<string, string> = {
+          'forest': '/audio/jrpg_exploration/Exploration1 - Grasslands.ogg',
+          'road': '/audio/jrpg_exploration/Exploration4 - Prairie Nights.ogg',
+          'city': '/audio/jrpg_exploration/Exploration2 - Military Base.ogg',
+          'mountains': "/audio/jrpg_exploration/Exploration3 - Tha'el Mines.ogg",
+          'ruins': '/audio/jrpg_exploration/Exploration5 - Sneaking Around.ogg',
+          'cemetery': '/audio/jrpg_exploration/Exploration5 - Sneaking Around.ogg',
+          'river': '/audio/jrpg_exploration/Exploration6 - Tropical Island.ogg'
+        };
+        newSrc = biomeMusicMap[biome] || `/audio/${biome}.wav`;
       }
     }
 
