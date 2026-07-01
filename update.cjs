@@ -1,7 +1,7 @@
 const fs = require('fs');
 let content = fs.readFileSync('src/data/story.ts', 'utf-8');
 
-const updates = [12, 13, 14, 15, 16, 17, 18, 19];
+const updates = [20];
 
 for (const id of updates) {
   const regex = new RegExp(`("${id}":\\s*\\{\\s*\\n\\s*)("text")`);
