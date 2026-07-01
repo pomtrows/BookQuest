@@ -4484,6 +4484,7 @@ export const storyData: Record<string, Section> = {
   "243": {
     "id": "243",
     "location": "forest",
+    "image": "/images/sections/sect243.png",
     "text": [
       "En courant dans la forêt, vous trébuchez bientôt contre une racine et vous dévalez une pente escarpée en roulant sur vous- même. Vous atterrissez sur un petit chemin caché sous les arbres et vous y découvrez un cadavre étendu parmi les broussailles. C'est celui d'un Glok, une de ces créatures monstrueuses et répugnantes que les Maîtres des Ténèbres emploient à leurs services.",
       "Il y a bien longtemps, les ancêtres des Gloks servaient d'esclaves aux Maîtres des Ténèbres et ceux-ci leur firent bâtir la ville infernale d'Helgedad située dans les déserts volcaniques qui s'étendent au-delà des monts Durncrag. La construction de cette cité représenta un long et douloureux cauchemar pour ces créatures, dont seules les plus fortes survécurent à la terrible épreuve.",
@@ -5045,6 +5046,7 @@ export const storyData: Record<string, Section> = {
   "275": {
     "id": "275",
     "location": "city",
+    "image": "/images/sections/sect275.png",
     "text": [
       "Vous avez suivi ce sentier sinueux pendant environ dix minutes lorsque vous entendez soudain des battements d'ailes au-dessus de vous. Vous levez les yeux et vous apercevez alors un immense Kraan qui s'approche de l'endroit où vous êtes. La créature vient du nord et, bientôt, ses grandes ailes noires projettent une ombre gigantesque sur le feuillage des arbres.",
       "Deux êtres armés de longues lances chevauchent le monstre : ce sont des Gloks, de petites créatures d'une grande laideur, animées de haine et vouées à la malfaisance. Autrefois, il y a de cela plusieurs siècles, les Gloks servaient d'esclaves aux Maîtres des Ténèbres, et ceux- ci leur firent bâtir la cité infernale d'Helgedad, située dans les déserts volcaniques qui s'étendent au-delà des monts Durncrag.",
@@ -6296,6 +6298,7 @@ export const storyData: Record<string, Section> = {
   },
   "350": {
     "id": "350",
+    "image": "/images/sections/sect350.png",
     "text": [
       "Vous entrez dans la grande Salle du Conseil, une pièce immense magnifiquement décorée de tentures blanc et or. Le Roi et ses plus proches conseillers sont en train d'examiner une grande carte étalée sur une table de marbre, au centre de la salle. Leurs visages expriment l'inquiétude et la concentration.",
       "Lorsque vous faites le récit de la mort de vos compagnons et des périls que vous avez dû affronter pour atteindre la citadelle, tout le monde vous écoute en silence sans jamais vous interrompre. Enfin, quand vous en avez terminé, le Roi s'approche de vous et prend votre main droite dans la sienne.",
