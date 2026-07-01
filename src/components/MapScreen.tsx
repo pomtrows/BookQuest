@@ -74,14 +74,14 @@ export function MapScreen({ onBack }: MapScreenProps) {
         <div className="flex-1 flex flex-col lg:flex-row gap-6 items-stretch">
           
           {/* Map Viewer Panel */}
-          <div className="flex-1 bg-black/60 border border-[#d4af37]/40 rounded-xl p-2 relative flex items-center justify-center overflow-hidden min-h-[350px] md:min-h-[500px]">
-            <div className="relative w-full aspect-[4/3] max-w-[800px]">
+          <div className="flex-1 bg-black/60 border border-[#d4af37]/40 rounded-xl p-4 flex items-center justify-center overflow-auto min-h-[350px]">
+            <div className="relative inline-block mx-auto max-w-[800px]">
               
               {/* Map Background */}
               <img 
                 src="/images/map.png" 
                 alt="Carte du Sommerlund" 
-                className="w-full h-full object-cover rounded-lg border border-[#d4af37]/20 opacity-80"
+                className="max-h-[60vh] w-auto object-contain rounded-lg border border-[#d4af37]/20 opacity-90"
               />
 
               {/* SVG Overlay for Path drawing */}
@@ -99,10 +99,10 @@ export function MapScreen({ onBack }: MapScreenProps) {
                       y1={start.y}
                       x2={end.x}
                       y2={end.y}
-                      stroke="#d4af37"
-                      strokeWidth="1.2"
-                      strokeDasharray="3 3"
-                      className="opacity-75"
+                      stroke="#ef4444"
+                      strokeWidth="2.5"
+                      strokeDasharray="4 3"
+                      className="opacity-90"
                     />
                   );
                 })}
@@ -121,27 +121,27 @@ export function MapScreen({ onBack }: MapScreenProps) {
                   >
                     {/* Pulsing glow for current location */}
                     {isCurrent && (
-                      <div className="absolute inset-0 w-8 h-8 -left-2 -top-2 rounded-full bg-red-600 animate-ping opacity-75"></div>
+                      <div className="absolute inset-0 w-8 h-8 -left-2 -top-2 rounded-full bg-red-500 animate-ping opacity-75"></div>
                     )}
                     
                     {/* Marker pin */}
                     <div 
-                      className={`w-4 h-4 rounded-full border shadow-lg flex items-center justify-center transition-all ${
+                      className={`w-5 h-5 rounded-full border-2 shadow-lg flex items-center justify-center transition-all cursor-help ${
                         isCurrent 
-                          ? 'bg-red-600 border-white scale-125 z-30' 
+                          ? 'bg-red-500 border-white scale-125 z-30' 
                           : isVisited 
-                            ? 'bg-[#d4af37] border-black scale-100 z-20' 
-                            : 'bg-gray-800 border-gray-600 opacity-40 scale-90 hover:opacity-100'
+                            ? 'bg-[#d4af37] border-black scale-105 z-20' 
+                            : 'bg-neutral-800 border-neutral-600 opacity-40 scale-90 hover:opacity-100'
                       }`}
                     >
-                      {isCurrent && <MapPin size={10} className="text-white shrink-0" />}
+                      <div className={`w-1.5 h-1.5 rounded-full ${isCurrent ? 'bg-white' : 'bg-black'}`} />
                     </div>
 
                     {/* Tooltip */}
-                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/90 border border-[#d4af37] px-3 py-1.5 rounded text-center whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 pointer-events-none shadow-2xl">
+                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/95 border border-[#d4af37] px-3 py-1.5 rounded text-center whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 pointer-events-none shadow-2xl">
                       <p className="text-[#d4af37] font-bold text-xs leading-none">{coords.label}</p>
                       <p className="text-[10px] text-[#e4d5b7]/70 mt-1 max-w-[150px] text-wrap">{coords.description}</p>
-                      {isCurrent && <p className="text-[9px] text-red-500 font-semibold mt-1">Vous êtes ici</p>}
+                      {isCurrent && <p className="text-[9px] text-red-400 font-semibold mt-1">Vous êtes ici</p>}
                     </div>
                   </div>
                 );
