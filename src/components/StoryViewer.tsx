@@ -3,6 +3,7 @@ import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
 import { RotateCcw, Utensils, AlertTriangle, Dices, Lock } from 'lucide-react';
+import { playPageTurn, playDiceRoll } from '../utils/audio';
 
 export function StoryViewer() {
   const { 
@@ -43,6 +44,7 @@ export function StoryViewer() {
     let counter = 0;
     const interval = setInterval(() => {
       setRandomRoll(Math.floor(Math.random() * 10));
+      playDiceRoll();
       counter++;
       if (counter > 15) {
         clearInterval(interval);
@@ -106,6 +108,7 @@ export function StoryViewer() {
     // Si on est déjà en train de tourner la page, on ignore les autres clics
     if (turningToSection) return;
     
+    playPageTurn();
     setTurningToSection(targetId);
     setTimeout(() => {
       goToSection(targetId);
