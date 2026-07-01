@@ -2,7 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
-import { RotateCcw, Utensils, AlertTriangle, Dices } from 'lucide-react';
+import { RotateCcw, Utensils, AlertTriangle, Dices, Lock } from 'lucide-react';
 
 export function StoryViewer() {
   const { 
@@ -75,6 +75,24 @@ export function StoryViewer() {
     }
     
     return false;
+  };
+
+  const getRequiredDiscipline = (text: string): string | null => {
+    const lower = text.toLowerCase();
+    if (!lower.includes('discipline kaï') && !lower.includes('maîtrisez la discipline')) return null;
+    
+    if (lower.includes('orientation')) return 'Orientation';
+    if (lower.includes('sixième sens') || lower.includes('sixieme sens')) return 'Sixième Sens';
+    if (lower.includes('camouflage')) return 'Camouflage';
+    if (lower.includes('chasse')) return 'Chasse';
+    if (lower.includes('guérison') || lower.includes('guerison')) return 'Guérison';
+    if (lower.includes('armes') || lower.includes('maîtrise des armes')) return 'Maîtrise des Armes';
+    if (lower.includes('bouclier psychique')) return 'Bouclier Psychique';
+    if (lower.includes('puissance psychique')) return 'Puissance Psychique';
+    if (lower.includes('communication animale')) return 'Communication Animale';
+    if (lower.includes('matière') || lower.includes('matiere')) return 'Maîtrise de la Matière';
+
+    return null;
   };
 
   const handleChoice = (targetId: string, healing?: boolean) => {
@@ -244,17 +262,21 @@ export function StoryViewer() {
           {section.choices && section.choices.length > 0 ? (
             section.choices.map((choice, idx) => {
               const isRandomChoice = /tirez|entre \d+ et \d+|inférieur à/i.test(choice.text);
+              const requiredDiscipline = getRequiredDiscipline(choice.text);
+              const hasRequiredDiscipline = requiredDiscipline ? character?.disciplines.includes(requiredDiscipline) : true;
+              
               let isMatched = false;
               let isLocked = false;
+              
+              if (requiredDiscipline && !hasRequiredDiscipline) {
+                isLocked = true;
+              }
               
               if (hasRandomChoices && isRandomChoice) {
                 if (randomRoll === null || isRolling) {
                   isLocked = true;
                 } else {
                   isMatched = isChoiceMatchingRoll(randomRoll, choice.text);
-                  // If it doesn't match, we lock it. But to prevent soft-locks if regex fails,
-                  // we could keep it unlocked. But the user can just cheat.
-                  // Let's lock it to make it a game!
                   isLocked = !isMatched;
                 }
               }
@@ -264,8 +286,13 @@ export function StoryViewer() {
                   key={idx}
                   onClick={() => handleChoice(choice.targetId, !section.combat)}
                   disabled={isLocked}
-                  className={`choice-btn transition-all duration-300 ${isMatched ? '!border-green-500 !shadow-[0_0_15px_rgba(34,197,94,0.3)]' : ''} ${isLocked ? 'opacity-40 cursor-not-allowed hover:!bg-black/40 hover:!text-[#e4d5b7] hover:!border-[#d4af37]/30' : ''}`}
+                  className={`choice-btn transition-all duration-300 relative ${isMatched ? '!border-green-500 !shadow-[0_0_15px_rgba(34,197,94,0.3)] animate-pulse' : ''} ${isLocked ? 'opacity-40 cursor-not-allowed hover:!bg-black/40 hover:!text-[#e4d5b7] hover:!border-[#d4af37]/30' : ''}`}
                 >
+                  {requiredDiscipline && !hasRequiredDiscipline && (
+                    <div className="absolute top-2 right-2 text-red-500/80 flex items-center gap-1 text-xs font-bold uppercase tracking-wider">
+                      <Lock size={12} /> Discipline Requise
+                    </div>
+                  )}
                   {choice.text}
                 </button>
               );
