@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { storyData } from '../data/story';
 
 
 const HealthBar = ({ current, max }: { current: number, max: number }) => {
@@ -41,7 +40,6 @@ const D10Icon = ({ number, rolling }: { number: number | string, rolling: boolea
 
 export function CombatScreen() {
   const { 
-    currentSectionId, 
     character, 
     enemyCurrentEndurance, 
     combatRounds, 

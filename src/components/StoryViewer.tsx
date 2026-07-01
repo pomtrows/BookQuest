@@ -25,11 +25,13 @@ export function StoryViewer() {
   const [mealResolved, setMealResolved] = useState(!section?.requiresMeal);
   const [randomRoll, setRandomRoll] = useState<number | null>(null);
   const [isRolling, setIsRolling] = useState(false);
+  const [turningToSection, setTurningToSection] = useState<string | null>(null);
 
   useEffect(() => {
     setMealResolved(!storyData[currentSectionId]?.requiresMeal);
     setRandomRoll(null);
     setIsRolling(false);
+    setTurningToSection(null);
   }, [currentSectionId]);
 
   if (!section) {
@@ -98,8 +100,16 @@ export function StoryViewer() {
   const handleChoice = (targetId: string, healing?: boolean) => {
     if (healing && character && character.disciplines.includes('Guérison')) {
       heal(1);
+      addNotification("La Discipline de la Guérison vous a rendu 1 point d'ENDURANCE.", "success");
     }
-    goToSection(targetId);
+    
+    // Si on est déjà en train de tourner la page, on ignore les autres clics
+    if (turningToSection) return;
+    
+    setTurningToSection(targetId);
+    setTimeout(() => {
+      goToSection(targetId);
+    }, 600);
   };
 
 
@@ -130,12 +140,31 @@ export function StoryViewer() {
   ) || false;
 
   return (
-    <div className="max-w-2xl mx-auto pb-20 relative">
-      <div className="mb-8 border-b border-[#333333] pb-2">
-        <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
-          Section {section.id}
-        </h2>
-      </div>
+    <div className="relative w-full h-full perspective-[1200px]">
+      {turningToSection && storyData[turningToSection] && (
+        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none w-full max-w-2xl mx-auto pb-20 mt-4 md:mt-8">
+           <div className="mb-8 border-b border-[#333333] pb-2">
+             <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
+               Section {turningToSection}
+             </h2>
+           </div>
+           {storyData[turningToSection].image && (
+             <div className="w-full mb-8 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
+               <img src={storyData[turningToSection].image} className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale" alt="" />
+             </div>
+           )}
+           <div className="prose prose-invert max-w-none text-[#e4d5b7] text-xl leading-relaxed">
+             <p>{storyData[turningToSection].text[0]}</p>
+           </div>
+        </div>
+      )}
+
+      <div className={`max-w-2xl mx-auto pb-20 relative bg-[#0a0a0c] min-h-full ${turningToSection ? 'animate-page-turn' : 'animate-fade-in z-10'}`}>
+        <div className="mb-8 border-b border-[#333333] pb-2">
+          <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
+            Section {section.id}
+          </h2>
+        </div>
 
       {section.image && (
         <div className="w-full mb-8 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
@@ -263,7 +292,7 @@ export function StoryViewer() {
             section.choices.map((choice, idx) => {
               const isRandomChoice = /tirez|entre \d+ et \d+|inférieur à/i.test(choice.text);
               const requiredDiscipline = getRequiredDiscipline(choice.text);
-              const hasRequiredDiscipline = requiredDiscipline ? character?.disciplines.includes(requiredDiscipline) : true;
+              const hasRequiredDiscipline = requiredDiscipline ? character?.disciplines.includes(requiredDiscipline as any) : true;
               
               let isMatched = false;
               let isLocked = false;
@@ -327,6 +356,7 @@ export function StoryViewer() {
           </button>
         </div>
       )}
+      </div>
     </div>
   );
 }

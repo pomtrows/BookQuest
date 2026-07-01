@@ -1,4 +1,4 @@
-import { ArrowLeft, Compass, MapPin } from 'lucide-react';
+import { ArrowLeft, Compass } from 'lucide-react';
 import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 
