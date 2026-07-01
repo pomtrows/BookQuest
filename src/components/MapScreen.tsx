@@ -102,8 +102,8 @@ export function MapScreen({ onBack }: MapScreenProps) {
                       x2={end.x}
                       y2={end.y}
                       stroke="#ef4444"
-                      strokeWidth="2.5"
-                      strokeDasharray="4 3"
+                      strokeWidth="0.6"
+                      strokeDasharray="1.5 1.5"
                       className="opacity-90"
                     />
                   );
