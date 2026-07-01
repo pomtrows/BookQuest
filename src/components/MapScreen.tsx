@@ -75,7 +75,7 @@ export function MapScreen({ onBack }: MapScreenProps) {
           
           {/* Map Viewer Panel */}
           <div className="flex-1 bg-black/60 border border-[#d4af37]/40 rounded-xl p-4 flex items-center justify-center min-h-[350px]">
-            <div className="relative w-full max-w-[550px] aspect-square mx-auto">
+            <div className="relative w-full max-w-[550px] aspect-square mx-auto" style={{ aspectRatio: '1/1' }}>
               
               {/* Map Background */}
               <img 
@@ -172,7 +172,7 @@ export function MapScreen({ onBack }: MapScreenProps) {
                   const isCurrent = key === currentLocKey;
                   if (!region) return null;
                   return (
-                    <div key={key} className="flex items-center gap-3 text-sm">
+                    <div key={`${key}-${index}`} className="flex items-center gap-3 text-sm">
                       <div className="flex flex-col items-center">
                         <div className={`w-3 h-3 rounded-full ${isCurrent ? 'bg-red-500' : 'bg-[#d4af37]'}`} />
                         {index < visitedKeys.length - 1 && <div className="w-0.5 h-6 bg-[#d4af37]/30" />}
