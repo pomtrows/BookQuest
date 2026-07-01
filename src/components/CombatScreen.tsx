@@ -48,11 +48,14 @@ export function CombatScreen() {
     playCombatRound,
     combatVictory,
     settings,
-    restartCombat
+    restartCombat,
+    currentEnemies,
+    currentEnemyIndex
   } = useGameStore();
 
-  const section = storyData[currentSectionId];
-  const enemy = section?.combat ? (Array.isArray(section.combat) ? section.combat[0] : section.combat) : null;
+  const enemy = currentEnemies && currentEnemies.length > currentEnemyIndex 
+    ? currentEnemies[currentEnemyIndex] 
+    : null;
 
   const [diceRolling, setDiceRolling] = useState(false);
   const [currentFace, setCurrentFace] = useState(0);
