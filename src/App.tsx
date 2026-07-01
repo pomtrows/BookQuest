@@ -4,14 +4,15 @@ import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
 import { useGameStore } from './store/gameStore';
-import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings, Compass } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
 import { Notifications } from './components/Notifications';
 import { PreviousAdventure } from './components/PreviousAdventure';
 import { InstallPrompt } from './components/InstallPrompt';
+import { MapScreen } from './components/MapScreen';
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
@@ -176,6 +177,14 @@ function App() {
                     <ScrollText size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                     <span className="font-medium text-[15px] tracking-wide">Feuille d'Aventure</span>
                   </button>
+
+                  <button 
+                    onClick={() => { handleStateChange('MAP'); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <Compass size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Carte du Sommerlund</span>
+                  </button>
                   
                   <button 
                     onClick={() => { handleStateChange('RULES'); setShowDropdownMenu(false); }} 
@@ -225,6 +234,10 @@ function App() {
 
       {appState === 'RULES' && (
         <Rules onBack={() => handleStateChange('MENU')} />
+      )}
+
+      {appState === 'MAP' && (
+        <MapScreen onBack={() => handleStateChange('GAME')} />
       )}
       
       <InstallPrompt />

@@ -20,7 +20,7 @@ const getGlobalAudio = (): HTMLAudioElement => {
 
 const globalAudio = getGlobalAudio();
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP';
 
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
@@ -33,7 +33,7 @@ export const useAudio = (appState: AppState) => {
 
     if (appState === 'MENU' || appState === 'RULES' || appState === 'CREATION') {
       newSrc = '/audio/title.wav';
-    } else if (appState === 'GAME') {
+    } else if (appState === 'GAME' || appState === 'MAP') {
       if (character && character.endurance <= 0) {
         newSrc = '/audio/jost/20 - Game Over.ogg';
         shouldLoop = false;
