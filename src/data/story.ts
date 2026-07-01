@@ -3217,6 +3217,7 @@ export const storyData: Record<string, Section> = {
   "172": {
     "id": "172",
     "location": "road",
+    "image": "/images/sections/sect172.png",
     "text": [
       "La nuit tombe et l'obscurité bientôt vous engloutit. Il serait vain de poursuivre votre route car vous vous perdriez à coup sûr. Vous attachez donc votre cheval à un arbre, vous vous étendez sur le sol en vous emmitouflant dans votre cape de Seigneur Kaï et vous sombrez dans un sommeil sans rêves.",
       "Au matin vous êtes réveillé par des bruits de galops lointains. De l'autre côté du lac, vous distinguez des silhouettes noires de Drakkarims et une meute de Loups Maudits. Un Kraan apparaît également au-dessus des arbres et se pose sur le toit de la petite cabane.",
@@ -5167,6 +5168,7 @@ export const storyData: Record<string, Section> = {
   "282": {
     "id": "282",
     "location": "city",
+    "image": "/images/sections/sect282.png",
     "text": [
       "En portant votre regard au-delà de la foule, vous remarquez que l'une des boutiques qui font face à la Porte Principale est une officine de médecin. Un plan audacieux germe alors dans votre esprit. Vous vous frayez un chemin parmi la multitude et vous traversez la rue.",
       "Vous vous glissez ensuite dans la boutique du médecin : l'endroit semble désert à l'exception d'un perroquet aux vives couleurs enfermé dans une cage suspendue près de la vitrine. Vous enfilez rapidement une blouse blanche et vous ramassez quelques fioles de potions diverses, puis vous retraversez la rue jusqu'à la Porte Principale.",
@@ -5183,6 +5185,7 @@ export const storyData: Record<string, Section> = {
   "283": {
     "id": "283",
     "location": "river",
+    "image": "/images/sections/sect283.png",
     "text": [
       "Vous êtes à trois mètres environ de l'étranger lorsque son corbeau se met à croasser pour l'avertir de votre approche. L'homme fait aussitôt volte-face et vous vous immobilisez saisi de terreur : car en fait ce n'est pas un homme que vous avez devant vous, mais un Vordak, l'un des plus redoutables lieutenants des Maîtres des Ténèbres.",
       "Cette créature appartient au monde des morts vivants et vous allez devoir la combattre dans un affrontement sans merci. La surprise de votre attaque vous permet d'ajouter 2 points à votre total d'HABILETÉ lors du premier assaut. Dès le deuxième assaut, en revanche, et au cours des suivants, vous devrez réduire de 2 points ce même total d'HABILETÉ à moins que vous ne maîtrisiez la Discipline Kaï du Bouclier Psychique.",
