@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { playDiceRoll, playSwordClash } from '../utils/audio';
+
 
 const HealthBar = ({ current, max }: { current: number, max: number }) => {
   const pct = Math.max(0, (current / max) * 100);
@@ -96,13 +96,11 @@ export function CombatScreen() {
     
     const interval = setInterval(() => {
       setCurrentFace(Math.floor(Math.random() * 10));
-      playDiceRoll();
       rollCount++;
       if (rollCount >= 20) {
         clearInterval(interval);
         setCurrentFace(finalRoll);
         setTimeout(() => {
-          playSwordClash();
           playCombatRound(finalRoll);
           setDiceRolling(false);
         }, 500);
