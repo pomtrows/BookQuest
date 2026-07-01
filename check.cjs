@@ -25,7 +25,10 @@ for (const line of lines) {
 }
 
 const missing = Object.keys(sections).filter(k => !sections[k].hasImage);
-console.log('Missing images for:', missing.slice(0, 30).join(', '));
-for(let i=0; i<8; i++) {
-  console.log(`\nSection ${missing[i]}:\n`, sections[missing[i]].text.substring(0, 300));
+const nextBatch = [12, 13, 14, 15, 16, 17, 18, 19];
+console.log('Next sections:', nextBatch.join(', '));
+for (const id of nextBatch) {
+  if (sections[id]) {
+    console.log(`\nSection ${id}:\n`, sections[id].text.substring(0, 300));
+  }
 }
