@@ -2,7 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
-import { RotateCcw, Utensils, AlertTriangle } from 'lucide-react';
+import { RotateCcw, Utensils, AlertTriangle, Dices } from 'lucide-react';
 
 export function StoryViewer() {
   const { 
@@ -23,14 +23,59 @@ export function StoryViewer() {
 
   const section = storyData[currentSectionId];
   const [mealResolved, setMealResolved] = useState(!section?.requiresMeal);
+  const [randomRoll, setRandomRoll] = useState<number | null>(null);
+  const [isRolling, setIsRolling] = useState(false);
 
   useEffect(() => {
     setMealResolved(!storyData[currentSectionId]?.requiresMeal);
+    setRandomRoll(null);
+    setIsRolling(false);
   }, [currentSectionId]);
 
   if (!section) {
     return <div className="p-8 text-center text-red-500">Section {currentSectionId} introuvable !</div>;
   }
+
+  const handleRoll = () => {
+    setIsRolling(true);
+    let counter = 0;
+    const interval = setInterval(() => {
+      setRandomRoll(Math.floor(Math.random() * 10));
+      counter++;
+      if (counter > 15) {
+        clearInterval(interval);
+        const finalRoll = Math.floor(Math.random() * 10);
+        setRandomRoll(finalRoll);
+        setIsRolling(false);
+      }
+    }, 60);
+  };
+
+  const isChoiceMatchingRoll = (roll: number, text: string): boolean => {
+    const lower = text.toLowerCase();
+    
+    // "entre X et Y"
+    const entreMatch = lower.match(/entre (\d+) et (\d+)/);
+    if (entreMatch && roll >= parseInt(entreMatch[1]) && roll <= parseInt(entreMatch[2])) return true;
+    
+    // "X ou Y"
+    const ouMatch = lower.match(/(\d+) ou (\d+)/);
+    if (ouMatch && (roll === parseInt(ouMatch[1]) || roll === parseInt(ouMatch[2]))) return true;
+    
+    // "le X" or "tirez X"
+    const exactMatch = lower.match(/(?:le|tirez) (\d+)/);
+    if (exactMatch && roll === parseInt(exactMatch[1])) return true;
+    
+    // "inférieur à X"
+    const infMatch = lower.match(/inférieur à (\d+)/);
+    if (infMatch) {
+      const val = parseInt(infMatch[1]);
+      if (lower.includes('égal ou') && roll <= val) return true;
+      if (!lower.includes('égal ou') && roll < val) return true;
+    }
+    
+    return false;
+  };
 
   const handleChoice = (targetId: string, healing?: boolean) => {
     if (healing && character && character.disciplines.includes('Guérison')) {
@@ -59,6 +104,12 @@ export function StoryViewer() {
     }
   };
   const fontSizeStyle = { fontSize: getFontSize() };
+  
+  const hasRandomChoices = section?.choices?.some(c => 
+    /tirez/i.test(c.text) || 
+    /entre \d+ et \d+/i.test(c.text) ||
+    /inférieur à \d+/i.test(c.text)
+  ) || false;
 
   return (
     <div className="max-w-2xl mx-auto pb-20 relative">
@@ -164,16 +215,61 @@ export function StoryViewer() {
 
       {(!section.combat || combatVictory) && mealResolved && (
         <div className="flex flex-col gap-3">
+          {hasRandomChoices && (
+            <div className="book-panel p-6 mb-6 flex flex-col items-center border-[#d4af37]/30 bg-black/40">
+              {randomRoll === null && !isRolling && (
+                <button 
+                  onClick={handleRoll}
+                  className="primary-btn flex items-center gap-3 text-xl px-8 py-4 bg-indigo-900/80 hover:bg-indigo-800 border-indigo-500"
+                >
+                  <Dices size={28} /> Utiliser la Table de Hasard
+                </button>
+              )}
+              {isRolling && (
+                <div className="text-7xl font-bold text-[#d4af37] animate-pulse">
+                  {randomRoll}
+                </div>
+              )}
+              {!isRolling && randomRoll !== null && (
+                <div className="flex flex-col items-center animate-fade-in">
+                  <div className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Vous avez tiré le chiffre</div>
+                  <div className="text-7xl font-bold text-[#d4af37] border-4 border-[#d4af37] rounded-xl w-32 h-32 flex items-center justify-center bg-black/80 shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+                    {randomRoll}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
           {section.choices && section.choices.length > 0 ? (
-            section.choices.map((choice, idx) => (
-              <button 
-                key={idx}
-                onClick={() => handleChoice(choice.targetId, !section.combat)}
-                className="choice-btn"
-              >
-                {choice.text}
-              </button>
-            ))
+            section.choices.map((choice, idx) => {
+              const isRandomChoice = /tirez|entre \d+ et \d+|inférieur à/i.test(choice.text);
+              let isMatched = false;
+              let isLocked = false;
+              
+              if (hasRandomChoices && isRandomChoice) {
+                if (randomRoll === null || isRolling) {
+                  isLocked = true;
+                } else {
+                  isMatched = isChoiceMatchingRoll(randomRoll, choice.text);
+                  // If it doesn't match, we lock it. But to prevent soft-locks if regex fails,
+                  // we could keep it unlocked. But the user can just cheat.
+                  // Let's lock it to make it a game!
+                  isLocked = !isMatched;
+                }
+              }
+
+              return (
+                <button 
+                  key={idx}
+                  onClick={() => handleChoice(choice.targetId, !section.combat)}
+                  disabled={isLocked}
+                  className={`choice-btn transition-all duration-300 ${isMatched ? '!border-green-500 !shadow-[0_0_15px_rgba(34,197,94,0.3)]' : ''} ${isLocked ? 'opacity-40 cursor-not-allowed hover:!bg-black/40 hover:!text-[#e4d5b7] hover:!border-[#d4af37]/30' : ''}`}
+                >
+                  {choice.text}
+                </button>
+              );
+            })
           ) : (
             <div className="mt-8 text-center animate-fade-in flex flex-col items-center gap-4">
               <div className="border-t border-[#d4af37]/30 w-full mb-4"></div>
