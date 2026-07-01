@@ -75,13 +75,13 @@ export function MapScreen({ onBack }: MapScreenProps) {
           
           {/* Map Viewer Panel */}
           <div className="flex-1 bg-black/60 border border-[#d4af37]/40 rounded-xl p-4 flex items-center justify-center min-h-[350px]">
-            <div className="relative w-full max-w-[700px] mx-auto">
+            <div className="relative w-full max-w-[550px] aspect-square mx-auto">
               
               {/* Map Background */}
               <img 
                 src="/images/map.png" 
                 alt="Carte du Sommerlund" 
-                className="w-full h-auto block rounded-lg border border-[#d4af37]/20 opacity-90"
+                className="w-full h-full object-cover rounded-lg border border-[#d4af37]/20 opacity-90"
               />
 
               {/* SVG Overlay for Path drawing */}
