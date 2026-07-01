@@ -69,11 +69,11 @@ export function StoryViewer() {
       </div>
 
       {section.image && (
-        <div className="w-full mb-8 rounded-md overflow-hidden border border-[#333333]">
+        <div className="w-full mb-8 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
           <img 
             src={section.image} 
             alt={`Illustration for section ${section.id}`} 
-            className="w-full h-auto object-cover"
+            className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain"
           />
         </div>
       )}
@@ -84,7 +84,7 @@ export function StoryViewer() {
               if (paragraph.startsWith('[IMG]')) {
                 return (
                   <div key={idx} className="my-6 flex justify-center">
-                    <img src={paragraph.substring(5)} alt="" className="max-w-full h-auto rounded-lg shadow-lg border-2 border-[#d4af37]" />
+                    <img src={paragraph.substring(5)} alt="" className="max-w-full h-auto max-h-[50vh] object-contain rounded-lg shadow-lg border-2 border-[#d4af37]" />
                   </div>
                 );
               }
