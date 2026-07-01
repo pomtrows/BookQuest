@@ -502,6 +502,7 @@ export const storyData: Record<string, Section> = {
   "25": {
     "id": "25",
     "location": "city",
+    "image": "/images/sections/sect25.png",
     "text": [
       "Vous atterrissez si brutalement sur l'autre toit que vous en avez le souffle coupé. La tête vous tourne, et vous restez étendu sur le dos. Au bout d'une minute environ, vous comprenez enfin que vous avez réussi à passer de l'autre côté et que vous êtes indemne.",
       "Lorsque vous êtes vraiment sûr que tout va bien, vous vous relevez d'un bond et vous poussez un cri de victoire pour saluer votre adresse et votre audace.",
@@ -2467,6 +2468,7 @@ export const storyData: Record<string, Section> = {
   "132": {
     "id": "132",
     "location": "city",
+    "image": "/images/sections/sect132.png",
     "text": [
       "Le garde du corps vous observe d'un regard soupçonneux et vous claque la porte au nez. Vous entendez parler à l'intérieur de la roulotte puis, soudain, la porte s'ouvre à nouveau et le visage d'un marchand prospère apparaît. Il reconnaît aussitôt votre cape de Seigneur Kaï et vous demande de bien vouloir excuser la conduite de son serviteur.",
       "Il vous fait entrer dans la roulotte et vous raconte qu'il a été attaqué plusieurs fois depuis qu'il a quitté le port de Toran, notamment par des Kraans et par des brigands. Son garde du corps a tout de suite pensé que vous pouviez être un bandit, ce qui explique son comportement.",
@@ -5833,6 +5835,7 @@ export const storyData: Record<string, Section> = {
   "324": {
     "id": "324",
     "location": "mountains",
+    "image": "/images/sections/sect324.png",
     "text": [
       "Vous rabattez votre capuchon sur votre tête et vous vous laissez tomber derrière les monticules de pierre qui s'entassent devant l'entrée de la grotte. Retenant votre souffle, vous vous roulez en boule en vous recouvrant entièrement de votre cape verte de Seigneur Kaï.",
       "Quelques minutes plus tard, les Gloks grimpent sur l'amas de pierres et scrutent de leurs petits yeux jaunes chaque crevasse qui s'ouvre au flanc de la colline.",
