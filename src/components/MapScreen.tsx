@@ -123,14 +123,14 @@ export function MapScreen({ onBack }: MapScreenProps) {
                   >
                     {/* Pulsing glow for current location */}
                     {isCurrent && (
-                      <div className="absolute inset-0 w-8 h-8 -left-2 -top-2 rounded-full bg-red-500 animate-ping opacity-75"></div>
+                      <div className="absolute inset-0 w-10 h-10 -left-2.5 -top-2.5 rounded-full bg-blue-500 animate-ping opacity-75 z-20"></div>
                     )}
                     
                     {/* Marker pin */}
                     <div 
-                      className={`w-5 h-5 rounded-full border-2 shadow-lg flex items-center justify-center transition-all cursor-help ${
+                      className={`w-5 h-5 rounded-full border-2 shadow-lg flex items-center justify-center transition-all cursor-help relative ${
                         isCurrent 
-                          ? 'bg-red-500 border-white scale-125 z-30' 
+                          ? 'bg-blue-500 border-white scale-150 z-30 animate-pulse' 
                           : isVisited 
                             ? 'bg-[#d4af37] border-black scale-105 z-20' 
                             : 'bg-neutral-800 border-neutral-600 opacity-40 scale-90 hover:opacity-100'
@@ -176,10 +176,10 @@ export function MapScreen({ onBack }: MapScreenProps) {
                   return (
                     <div key={`${key}-${index}`} className="flex items-center gap-3 text-sm">
                       <div className="flex flex-col items-center">
-                        <div className={`w-3 h-3 rounded-full ${isCurrent ? 'bg-red-500' : 'bg-[#d4af37]'}`} />
+                        <div className={`w-3 h-3 rounded-full ${isCurrent ? 'bg-blue-500 animate-pulse' : 'bg-[#d4af37]'}`} />
                         {index < visitedKeys.length - 1 && <div className="w-0.5 h-6 bg-[#d4af37]/30" />}
                       </div>
-                      <span className={isCurrent ? 'text-red-400 font-semibold' : 'text-[#e4d5b7]/70'}>
+                      <span className={isCurrent ? 'text-blue-400 font-semibold' : 'text-[#e4d5b7]/70'}>
                         {region.label} {isCurrent && '(Actuel)'}
                       </span>
                     </div>
