@@ -123,14 +123,14 @@ export function MapScreen({ onBack }: MapScreenProps) {
                   >
                     {/* Pulsing glow for current location */}
                     {isCurrent && (
-                      <div className="absolute inset-0 w-10 h-10 -left-2.5 -top-2.5 rounded-full bg-blue-500 animate-ping opacity-75 z-20"></div>
+                      <div className="absolute inset-0 w-12 h-12 -left-3.5 -top-3.5 rounded-full bg-blue-500 animate-ping opacity-75 z-20"></div>
                     )}
                     
                     {/* Marker pin */}
                     <div 
                       className={`w-5 h-5 rounded-full border-2 shadow-lg flex items-center justify-center transition-all cursor-help relative ${
                         isCurrent 
-                          ? 'bg-blue-500 border-white scale-150 z-30 animate-pulse' 
+                          ? 'bg-blue-500 border-white scale-200 z-30 animate-pulse' 
                           : isVisited 
                             ? 'bg-[#d4af37] border-black scale-105 z-20' 
                             : 'bg-neutral-800 border-neutral-600 opacity-40 scale-90 hover:opacity-100'
