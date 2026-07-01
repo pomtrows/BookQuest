@@ -75,7 +75,7 @@ export function MapScreen({ onBack }: MapScreenProps) {
           
           {/* Map Viewer Panel */}
           <div className="flex-1 bg-black/60 border border-[#d4af37]/40 rounded-xl p-4 flex items-center justify-center min-h-[350px]">
-            <div className="relative w-full max-w-[550px] aspect-square mx-auto" style={{ aspectRatio: '1/1' }}>
+            <div className="relative w-full max-w-[550px] aspect-square mx-auto" style={{ position: 'relative', aspectRatio: '1/1' }}>
               
               {/* Map Background */}
               <img 
