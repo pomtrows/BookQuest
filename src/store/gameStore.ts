@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { GameState, CharacterState, Enemy, Settings } from '../types/game';
+import { storyData } from '../data/story';
 import { getCombatResult, K } from '../data/combatTable';
 
 export interface Notification {
@@ -137,6 +138,22 @@ export const useGameStore = create<GameStore>()(
           if (newEndurance < state.character.maxEndurance) {
             newEndurance += 1;
             notificationsToAdd.push({msg: "Guérison : +1 Endurance", type: 'success'});
+          }
+        }
+
+        // Apply automatic damage or heal from section
+        const section = storyData[sectionId];
+        if (section) {
+          if (section.damage) {
+            newEndurance = Math.max(0, newEndurance - section.damage);
+            notificationsToAdd.push({msg: `Vous avez perdu ${section.damage} point(s) d'Endurance.`, type: 'danger'});
+          }
+          if (section.heal) {
+            const actualHeal = Math.min(state.character.maxEndurance - newEndurance, section.heal);
+            if (actualHeal > 0) {
+              newEndurance += actualHeal;
+              notificationsToAdd.push({msg: `Vous avez récupéré ${actualHeal} point(s) d'Endurance.`, type: 'success'});
+            }
           }
         }
 

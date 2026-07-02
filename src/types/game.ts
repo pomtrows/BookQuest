@@ -68,10 +68,11 @@ export interface Section {
     meals?: number;
   };
   requiresMeal?: boolean;
-  image?: string;
+  autoDamage?: number;
   damage?: number;
   heal?: number;
   gameOver?: boolean;
+  image?: string;
 }
 
 export interface Settings {
