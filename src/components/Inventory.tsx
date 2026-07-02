@@ -1,7 +1,8 @@
 import { useGameStore } from '../store/gameStore';
+import { Trash2 } from 'lucide-react';
 
 export function Inventory() {
-  const { character, updateMeals, heal, history, currentSectionId } = useGameStore();
+  const { character, updateMeals, heal, history, currentSectionId, removeWeapon, removeBackpackItem, removeSpecialItem } = useGameStore();
 
   if (!character) return null;
 
@@ -54,7 +55,12 @@ export function Inventory() {
         <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Armes (Max 2)</h3>
         <ul className="text-sm list-none pl-0">
           {character.weapons.map((w, idx) => (
-            <li key={idx} className="mb-1">• {w}</li>
+            <li key={idx} className="mb-1 flex justify-between items-center group">
+              <span>• {w}</span>
+              <button onClick={() => removeWeapon(w)} className="text-red-500/50 hover:text-red-500 p-1 transition-opacity" title="Jeter">
+                <Trash2 size={14} />
+              </button>
+            </li>
           ))}
         </ul>
       </div>
@@ -66,29 +72,45 @@ export function Inventory() {
         </div>
         <ul className="text-sm mb-2 list-none pl-0">
           {character.backpack.filter(i => i !== 'Repas').map((item, idx) => (
-            <li key={idx} className="mb-1 flex justify-between">
+            <li key={idx} className="mb-1 flex justify-between items-center group">
               <span>• {item}</span>
+              <button onClick={() => removeBackpackItem(item)} className="text-red-500/50 hover:text-red-500 p-1 transition-opacity" title="Jeter">
+                <Trash2 size={14} />
+              </button>
             </li>
           ))}
         </ul>
         {character.meals > 0 && (
-          <div className="flex justify-between items-center bg-[#1e1e1e] p-2 rounded">
+          <div className="flex justify-between items-center bg-[#1e1e1e] p-2 rounded group">
             <span>Repas (x{character.meals})</span>
-            <button 
-              onClick={handleEat}
-              className="text-xs bg-[#d4af37] text-black px-2 py-1 rounded hover:bg-[#b38f22]"
-            >
-              Manger (+3 END)
-            </button>
+            <div className="flex gap-2">
+              <button 
+                onClick={() => updateMeals(-1)}
+                className="text-red-500/50 hover:text-red-500 p-1 transition-opacity" title="Jeter un Repas"
+              >
+                <Trash2 size={14} />
+              </button>
+              <button 
+                onClick={handleEat}
+                className="text-xs bg-[#d4af37] text-black px-2 py-1 rounded hover:bg-[#b38f22]"
+              >
+                Manger (+3 END)
+              </button>
+            </div>
           </div>
         )}
       </div>
 
       <div className="bg-[#121212] p-3 rounded border border-[#333333]">
-        <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Objets Spéciaux</h3>
+        <h3 className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Objets Spéciaux (Max 12)</h3>
         <ul className="text-sm list-none pl-0">
           {character.specialItems.map((item, idx) => (
-            <li key={idx} className="mb-1 text-[#00ffcc]">• {item}</li>
+            <li key={idx} className="mb-1 text-[#00ffcc] flex justify-between items-center group">
+              <span>• {item}</span>
+              <button onClick={() => removeSpecialItem(item)} className="text-red-500/50 hover:text-red-500 p-1 transition-opacity" title="Jeter">
+                <Trash2 size={14} />
+              </button>
+            </li>
           ))}
         </ul>
       </div>

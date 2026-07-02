@@ -306,7 +306,11 @@ export const useGameStore = create<GameStore>()(
       removeWeapon: (weapon) => {
         set((state) => {
           if (!state.character) return state;
-          return { character: { ...state.character, weapons: state.character.weapons.filter(w => w !== weapon) } };
+          const index = state.character.weapons.indexOf(weapon);
+          if (index === -1) return state;
+          const newWeapons = [...state.character.weapons];
+          newWeapons.splice(index, 1);
+          return { character: { ...state.character, weapons: newWeapons } };
         });
       },
 
@@ -343,7 +347,11 @@ export const useGameStore = create<GameStore>()(
       removeSpecialItem: (item) => {
         set((state) => {
           if (!state.character) return state;
-          return { character: { ...state.character, specialItems: state.character.specialItems.filter(i => i !== item) } };
+          const index = state.character.specialItems.indexOf(item);
+          if (index === -1) return state;
+          const newSpecialItems = [...state.character.specialItems];
+          newSpecialItems.splice(index, 1);
+          return { character: { ...state.character, specialItems: newSpecialItems } };
         });
       },
 
