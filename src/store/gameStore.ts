@@ -57,6 +57,7 @@ const initialState = {
   currentEnemyIndex: 0,
   enemyCurrentEndurance: 0,
   preCombatEndurance: 0,
+  combatRoundNumber: 1,
   combatRounds: [],
   combatVictory: false,
   notifications: [],
@@ -159,10 +160,28 @@ export const useGameStore = create<GameStore>()(
 
         // The manual meal check is handled in StoryViewer using requiresMeal property
 
+        let newMaxCS = state.character.combatSkill;
+        let newWeapons = state.character.weapons;
+
+        if (section) {
+          if (section.permanentCsLoss) {
+            newMaxCS -= section.permanentCsLoss;
+            notificationsToAdd.push({msg: `Vous avez définitivement perdu ${section.permanentCsLoss} point(s) d'Habileté.`, type: 'danger'});
+          }
+          if (section.loseAllWeapons) {
+            if (newWeapons.length > 0) {
+               newWeapons = [];
+               notificationsToAdd.push({msg: `Vous avez perdu toutes vos Armes.`, type: 'warning'});
+            }
+          }
+        }
+
         set((state) => ({
           character: {
             ...state.character!,
             endurance: newEndurance,
+            combatSkill: newMaxCS,
+            weapons: newWeapons,
             meals: newMeals
           },
           currentSectionId: sectionId,
@@ -199,6 +218,7 @@ export const useGameStore = create<GameStore>()(
           currentEnemyIndex: 0,
           enemyCurrentEndurance: enemiesArray[0].endurance,
           preCombatEndurance: state.character?.endurance || 0,
+          combatRoundNumber: 1,
           combatRounds: [],
           combatVictory: false
         });
@@ -252,6 +272,14 @@ export const useGameStore = create<GameStore>()(
               playerCS -= 3;
             }
           }
+
+          // Section specific Combat Skill Modifiers
+          if (currentEnemy.csModifier) {
+            playerCS += currentEnemy.csModifier;
+          }
+          if (currentEnemy.firstRoundCsModifier && state.combatRoundNumber === 1) {
+            playerCS += currentEnemy.firstRoundCsModifier;
+          }
           
           const enemyCS = currentEnemy.combatSkill;
           const combatRatio = playerCS - enemyCS;
@@ -286,6 +314,7 @@ export const useGameStore = create<GameStore>()(
           return {
             enemyCurrentEndurance: nextEnemyEndurance,
             currentEnemyIndex: newEnemyIndex,
+            combatRoundNumber: state.combatRoundNumber + 1,
             character: {
               ...state.character,
               endurance: newPlayerEndurance
@@ -302,6 +331,16 @@ export const useGameStore = create<GameStore>()(
             combatVictory: isVictory
           };
         });
+
+        // Handle maxRounds reached after state is updated
+        const updatedState = get();
+        const currentEnemy = updatedState.currentEnemies[updatedState.currentEnemyIndex];
+        if (currentEnemy && currentEnemy.maxRounds && updatedState.combatRoundNumber > currentEnemy.maxRounds && !updatedState.combatVictory && updatedState.character!.endurance > 0) {
+          if (currentEnemy.maxRoundsTargetId) {
+            get().addNotification(`Le combat s'interrompt après ${currentEnemy.maxRounds} assauts !`, "info");
+            get().goToSection(currentEnemy.maxRoundsTargetId);
+          }
+        }
       },
 
       fleeCombat: (damageTaken, targetSectionId) => {

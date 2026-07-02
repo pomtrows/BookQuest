@@ -11,6 +11,7 @@ export function StoryViewer() {
     isCombatActive, 
     startCombat, 
     combatVictory,
+    combatRoundNumber,
     character,
     settings,
     history,
@@ -354,6 +355,14 @@ export function StoryViewer() {
                 } else {
                   isMatched = isChoiceMatchingRoll(randomRoll, choice.text);
                   isLocked = !isMatched;
+                }
+              }
+
+              if (choice.isFlee && isCombatActive) {
+                const combatEnemy = Array.isArray(section.combat) ? section.combat[0] : section.combat;
+                const escapeRound = combatEnemy?.escapeRound || 0;
+                if (combatRoundNumber <= escapeRound) {
+                  isLocked = true;
                 }
               }
 

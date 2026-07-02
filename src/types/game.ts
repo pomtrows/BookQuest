@@ -43,6 +43,11 @@ export interface Enemy {
   mindblastImmune?: boolean;
   hasMindblast?: boolean;
   darknessPenalty?: boolean;
+  csModifier?: number;
+  firstRoundCsModifier?: number;
+  maxRounds?: number;
+  maxRoundsTargetId?: string;
+  escapeRound?: number;
 }
 
 export interface Choice {
@@ -52,6 +57,8 @@ export interface Choice {
     type: 'has_item' | 'has_discipline' | 'has_weapon';
     value: string;
   };
+  requiredDiscipline?: Discipline;
+  isFlee?: boolean;
 }
 
 export type LocationType = 'ruins' | 'forest' | 'mountains' | 'river' | 'road' | 'cemetery' | 'city';
@@ -73,6 +80,8 @@ export interface Section {
   autoDamage?: number;
   damage?: number;
   heal?: number;
+  permanentCsLoss?: number;
+  loseAllWeapons?: boolean;
   gameOver?: boolean;
   image?: string;
 }
@@ -93,6 +102,7 @@ export interface GameState {
   currentEnemyIndex: number;
   enemyCurrentEndurance: number;
   preCombatEndurance: number;
+  combatRoundNumber: number;
   combatRounds: {
     round: number;
     randomNum: number;

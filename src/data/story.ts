@@ -356,7 +356,8 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "KRAAN",
       "combatSkill": 16,
-      "endurance": 24
+      "endurance": 24,
+      "csModifier": -1
     }
   },
   "18": {
@@ -2545,7 +2546,8 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "SERPENT AILÉ",
       "combatSkill": 16,
-      "endurance": 18
+      "endurance": 18,
+      "mindblastImmune": true
     }
   },
   "134": {
@@ -3230,7 +3232,8 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "MONSTRES DES CRYPTES",
       "combatSkill": 16,
-      "endurance": 16
+      "endurance": 16,
+      "escapeRound": 1
     }
   },
   "170": {
@@ -4782,7 +4785,8 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "GOURGAZ",
       "combatSkill": 20,
-      "endurance": 30
+      "endurance": 30,
+      "mindblastImmune": true
     }
   },
   "256": {
@@ -5095,6 +5099,7 @@ export const storyData: Record<string, Section> = {
   "274": {
     "id": "274",
     "location": "forest",
+    "loseAllWeapons": true,
     "text": [
       "Dans votre hâte de fuir l'ennemi, vous vous prenez le pied dans la racine d'un arbre et vous tombez tête la première en soulevant un nuage de poussière et de feuilles. Vous vous relevez aussitôt et vous courez vous réfugier dans la forêt, au pied de la colline.",
       "Au bout de dix minutes de cette fuite éperdue, vous vous apercevez que vous avez perdu vos Armes lors de votre chute. C'est fâcheux, mais au moins, vous êtes vivant et vous avez toujours votre Sac à Dos. Faisant contre mauvaise fortune bon cœur, vous poursuivez votre chemin en vous enfonçant plus avant parmi les arbres.",
