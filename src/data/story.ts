@@ -410,6 +410,10 @@ export const storyData: Record<string, Section> = {
   "20": {
     "id": "20",
     "location": "city",
+    "loot": {
+      "meals": 2,
+      "weapons": ["Poignard"]
+    },
     "text": [
       "Il semble que le ou les occupants de la péniche soient partis en toute hâte il y a peu de temps. Les restes d'un repas à moitié mangé traînent sur la table ainsi qu'une tasse de Jala encore chaud. En fouillant un coffre et un petit placard, vous trouvez un Sac à Dos, de la Nourriture (l'équivalent de 2 Repas) et un Poignard.",
       "Si vous souhaitez emporter l'un ou l'autre de ces objets (ou tous les trois), n'oubliez pas de les inscrire sur votre Feuille d'Aventure.",
@@ -6308,6 +6312,9 @@ export const storyData: Record<string, Section> = {
   "349": {
     "id": "349",
     "location": "city",
+    "loot": {
+      "specialItems": ["Étoile de Cristal"]
+    },
     "text": [
       "C'est un jeune homme aux cheveux blonds et au regard pénétrant. Son visage est marqué par la fatigue et souillé par la poussière des combats. Ses amples vêtements bleu ciel, déchirés par endroits, montrent à l'évidence que le magicien a passé de longs jours dans la forêt.",
       "Il vous serre la main et s'incline. « Soyez assuré de mon éternelle gratitude, Seigneur Kaï, dit-il, mes pouvoirs magiques étaient presque épuisés et, si vous n'étiez pas venu à mon secours, je crois bien que j'aurais fini mes jours au bout de la lance d'un Glok.",

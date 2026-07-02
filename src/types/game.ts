@@ -63,6 +63,7 @@ export interface Section {
   loot?: {
     gold?: number;
     items?: string[];
+    specialItems?: string[];
     weapons?: Weapon[];
     meals?: number;
   };

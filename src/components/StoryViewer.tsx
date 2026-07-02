@@ -18,7 +18,11 @@ export function StoryViewer() {
     goBackInHistory,
     updateMeals,
     takeDamage,
-    addNotification
+    addNotification,
+    addSpecialItem,
+    addBackpackItem,
+    addWeapon,
+    updateGold
   } = useGameStore();
 
   const section = storyData[currentSectionId];
@@ -26,12 +30,14 @@ export function StoryViewer() {
   const [randomRoll, setRandomRoll] = useState<number | null>(null);
   const [isRolling, setIsRolling] = useState(false);
   const [turningToSection, setTurningToSection] = useState<string | null>(null);
+  const [looted, setLooted] = useState(false);
 
   useEffect(() => {
     setMealResolved(!storyData[currentSectionId]?.requiresMeal);
     setRandomRoll(null);
     setIsRolling(false);
     setTurningToSection(null);
+    setLooted(false);
   }, [currentSectionId]);
 
   if (!section) {
@@ -139,10 +145,35 @@ export function StoryViewer() {
     /inférieur à \d+/i.test(c.text)
   ) || false;
 
+  const handleLoot = () => {
+    if (!section.loot || looted) return;
+    
+    if (section.loot.gold) {
+      updateGold(section.loot.gold);
+    }
+    if (section.loot.meals) {
+      updateMeals(section.loot.meals);
+    }
+    if (section.loot.specialItems) {
+      section.loot.specialItems.forEach(item => addSpecialItem(item));
+    }
+    if (section.loot.items) {
+      section.loot.items.forEach(item => addBackpackItem(item));
+    }
+    if (section.loot.weapons) {
+      section.loot.weapons.forEach(weapon => addWeapon(weapon));
+    }
+    setLooted(true);
+    addNotification("Vous avez récupéré les objets.", "success");
+  };
+
+  const hasUnlootedItems = section.loot && !looted;
+
   return (
-    <div className="relative w-full h-full perspective-[1200px]">
+    <div className={`story-container min-h-screen ${turningToSection ? 'perspective-[1200px]' : ''}`}>
+      {/* 3D turning page element */}
       {turningToSection && storyData[turningToSection] && (
-        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none w-full max-w-2xl mx-auto pb-20 mt-4 md:mt-8">
+        <div className="absolute inset-0 max-w-2xl mx-auto bg-[#0a0a0c] z-0 px-4 py-8 border-r-2 border-[#d4af37]/30 shadow-2xl origin-left animate-page-turn-under">
            <div className="mb-8 border-b border-[#333333] pb-2">
              <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
                Section {turningToSection}
@@ -198,6 +229,27 @@ export function StoryViewer() {
           : <p className="mb-4 leading-relaxed whitespace-pre-wrap">{section.text}</p>
         }
       </div>
+
+      {hasUnlootedItems && (
+        <div className="book-panel p-6 mb-8 border-[#d4af37]/50 bg-[#1a1505]">
+          <h3 className="text-xl font-bold text-[#d4af37] mb-2 flex items-center gap-2">
+            Objets trouvés
+          </h3>
+          <ul className="list-disc list-inside text-[#e4d5b7] mb-4">
+            {section.loot!.gold && <li>{section.loot!.gold} Couronnes d'Or</li>}
+            {section.loot!.meals && <li>{section.loot!.meals} Repas</li>}
+            {section.loot!.specialItems?.map((item, idx) => <li key={`special-${idx}`}>{item} (Objet Spécial)</li>)}
+            {section.loot!.items?.map((item, idx) => <li key={`item-${idx}`}>{item}</li>)}
+            {section.loot!.weapons?.map((weapon, idx) => <li key={`weapon-${idx}`}>{weapon}</li>)}
+          </ul>
+          <button 
+            onClick={handleLoot}
+            className="primary-btn mt-2"
+          >
+            Prendre les objets
+          </button>
+        </div>
+      )}
 
       {section.combat && !isCombatActive && !combatVictory && (
         <div className="book-panel p-6 mb-8 border-red-900 bg-[#2a1010]">
