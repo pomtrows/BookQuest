@@ -12,7 +12,6 @@ export function StoryViewer() {
     startCombat, 
     combatVictory,
     character,
-    heal,
     settings,
     history,
     goBackInHistory,
@@ -103,11 +102,7 @@ export function StoryViewer() {
     return null;
   };
 
-  const handleChoice = (targetId: string, healing?: boolean) => {
-    if (healing && character && character.disciplines.includes('Guérison')) {
-      heal(1);
-      addNotification("La Discipline de la Guérison vous a rendu 1 point d'ENDURANCE.", "success");
-    }
+  const handleChoice = (targetId: string) => {
     
     // Si on est déjà en train de tourner la page, on ignore les autres clics
     if (turningToSection) return;
@@ -365,7 +360,7 @@ export function StoryViewer() {
               return (
                 <button 
                   key={idx}
-                  onClick={() => handleChoice(choice.targetId, !section.combat)}
+                  onClick={() => handleChoice(choice.targetId)}
                   disabled={isLocked}
                   className={`choice-btn transition-all duration-300 relative ${isMatched ? '!border-green-500 !shadow-[0_0_15px_rgba(34,197,94,0.3)] animate-pulse' : ''} ${isLocked ? 'opacity-40 cursor-not-allowed hover:!bg-black/40 hover:!text-[#e4d5b7] hover:!border-[#d4af37]/30' : ''}`}
                 >

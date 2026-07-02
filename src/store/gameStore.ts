@@ -416,6 +416,14 @@ export const useGameStore = create<GameStore>()(
     }),
     {
       name: 'book-quest-storage',
+      partialize: (state) => Object.fromEntries(
+        Object.entries(state).filter(([key]) => key !== 'notifications')
+      ),
+      merge: (persistedState: any, currentState) => ({
+        ...currentState,
+        ...persistedState,
+        notifications: [], // Toujours vider les notifications au chargement
+      })
     }
   )
 );
