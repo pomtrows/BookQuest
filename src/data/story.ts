@@ -56,6 +56,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez suivre cet homme, rendez-vous au 196.",
       "Si vous préférez décliner son offre et retourner dans les rues populeuses, rendez-vous au 144."
     ],
+    "image": "/images/sections/sect3.png",
     "choices": [
       {
         "text": "Si vous souhaitez suivre cet homme, rendez-vous au 196.",
@@ -77,6 +78,7 @@ export const storyData: Record<string, Section> = {
       "Si vous préférez au contraire attirer l'attention des cavaliers, rendez-vous au 175.",
       "Si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous au 218."
     ],
+    "image": "/images/sections/sect4.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous cacher au fond du canoë, rendez-vous au 75.",
@@ -99,6 +101,7 @@ export const storyData: Record<string, Section> = {
       "Vous avez marché pendant environ une heure lorsque le sentier s'oriente peu à peu vers l'est. Vous atteignez bientôt un gué qui traverse un ruisseau coulant vers le sud. Le courant en est rapide et le lit, rocheux et escarpé. Au-delà du gué, le sentier que vous suivez croise un chemin plus large, orienté nord-sud.",
       "En allant vers le nord, vous vous éloigneriez de la capitale et vous décidez donc de prendre à droite, en direction du sud. Rendez-vous au 111."
     ],
+    "image": "/images/sections/sect5.png",
     "choices": [
       {
         "text": "Rendez-vous au 111.",
@@ -115,6 +118,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez les appeler, rendez-vous au 183.",
       "Si vous préférez les laisser passer et poursuivre votre chemin à travers la forêt, rendez-vous au 200."
     ],
+    "image": "/images/sections/sect6.png",
     "choices": [
       {
         "text": "Si vous souhaitez les appeler, rendez-vous au 183.",
@@ -158,6 +162,7 @@ export const storyData: Record<string, Section> = {
       "Votre Sixième Sens vous avertit qu'une terrible bataille fait rage dans le sud.",
       "Mais votre simple bon sens vous rappelle également que le chemin le plus court pour rejoindre la capitale passe précisément par le sud. Rendez-vous au 70 pour établir votre itinéraire."
     ],
+    "image": "/images/sections/sect8.png",
     "choices": [
       {
         "text": "Rendez-vous au 70 pour établir votre itinéraire.",
@@ -173,6 +178,7 @@ export const storyData: Record<string, Section> = {
       "Puis une lueur rougeâtre s'allume dans les orbites vides du roi mort et le bourdonnement augmente d'intensité jusqu'à devenir assourdissant. Vous êtes en présence d'une force maléfique plus ancienne et plus puissante encore que celle des Maîtres des Ténèbres.",
       "Si vous possédez une Pierre de Vordak, rendez-vous au 236. Sinon, rendez-vous au 292."
     ],
+    "image": "/images/sections/sect9.png",
     "choices": [
       {
         "text": "Si vous possédez une Pierre de Vordak, rendez-vous au 236.",
@@ -192,6 +198,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez entrer dans l'une de ces maisonnettes pour y prendre quelque repos, rendez-vous au 115.",
       "Si vous préférez poursuivre votre chemin, rendez-vous au 83."
     ],
+    "image": "/images/sections/sect10.png",
     "choices": [
       {
         "text": "Si vous souhaitez entrer dans l'une de ces maisonnettes pour y prendre quelque repos, rendez-vous au 115.",
@@ -210,6 +217,7 @@ export const storyData: Record<string, Section> = {
       "Vous vous dissimulez dans l'entrée d'une écurie et vous cachez votre blouse de médecin dans la paille. Il est en effet préférable d'apparaître comme un Seigneur Kaï que comme un charlatan.",
       "Puis, sans perdre une seconde, vous vous dirigez vers l'Entrée Principale, située de l'autre côté de la cour. Rendez-vous au 139."
     ],
+    "image": "/images/sections/sect11.png",
     "choices": [
       {
         "text": "Rendez-vous au 139.",
@@ -225,6 +233,7 @@ export const storyData: Record<string, Section> = {
       "Si vous avez ces 10 Couronnes et que vous désirez les lui donner, rendez- vous au 262.",
       "Si vous n'avez pas cette somme, ou si vous ne souhaitez pas la lui payer, rendez-vous au 247."
     ],
+    "image": "/images/sections/sect12.png",
     "choices": [
       {
         "text": "Si vous avez ces 10 Couronnes et que vous désirez les lui donner, rendez- vous au 262.",
@@ -244,6 +253,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez escalader cet arbre pour inspecter la maison, rendez-vous au 307.",
       "Si vous préférez poursuivre votre chemin, rendez-vous au 213."
     ],
+    "image": "/images/sections/sect13.png",
     "choices": [
       {
         "text": "Si vous souhaitez escalader cet arbre pour inspecter la maison, rendez-vous au 307.",
@@ -264,6 +274,7 @@ export const storyData: Record<string, Section> = {
       "Si vous voulez dégainer votre arme et vous préparer à combattre, rendez-vous au 43.",
       "Si vous préférez prendre la fuite en courant le plus vite possible au bas de la colline, rendez-vous au 106."
     ],
+    "image": "/images/sections/sect14.png",
     "choices": [
       {
         "text": "Si vous voulez dégainer votre arme et vous préparer à combattre, rendez-vous au 43.",
@@ -283,6 +294,7 @@ export const storyData: Record<string, Section> = {
       "Un mot manuscrit est attaché à la garde de l'épée, mais il est écrit dans une langue qui vous est étrangère. Vous pouvez prendre cette épée si vous le désirez en n'oubliant pas de l'inscrire sur votre Feuille d'Aventure. Trois chemins permettent de quitter la clairière : si vous voulez aller à l'est, rendez-vous au 207.",
       "A l'ouest, rendez-vous au 201. Au sud, rendez-vous au 35."
     ],
+    "image": "/images/sections/sect15.png",
     "choices": [
       {
         "text": "Trois chemins permettent de quitter la clairière : si vous voulez aller à l'est, rendez-vous au 207.",
@@ -305,6 +317,7 @@ export const storyData: Record<string, Section> = {
       "Vous parvenez à détacher l'un des chevaux de la roulotte. L'odeur des Loups Maudits et les cris des Gloks qui les chevauchent semblent l'effrayer, mais vous arrivez malgré tout à le lancer au galop en direction des monstrueuses créatures qui s'approchent de vous.",
       "Les Gloks et leurs montures sataniques ne sont plus qu'à une cinquantaine de mètres, la lance pointée en avant. Face à face à présent, vous foncez les uns vers les autres. Rendez-vous au 192."
     ],
+    "image": "/images/sections/sect16.png",
     "choices": [
       {
         "text": "Rendez-vous au 192.",
@@ -324,6 +337,7 @@ export const storyData: Record<string, Section> = {
       "Si vous tirez 1 ou 2, rendez-vous au 274.",
       "Si vous tirez entre 3 et 9, rendez-vous au 331."
     ],
+    "image": "/images/sections/sect17.png",
     "choices": [
       {
         "text": "Si vous tirez le 0, rendez-vous au 53.",
@@ -354,6 +368,7 @@ export const storyData: Record<string, Section> = {
       "Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-vous au 114.",
       "Si vous préférez combattre la créature, rendez-vous au 29."
     ],
+    "image": "/images/sections/sect18.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous enfoncer plus profondément dans la forêt, rendez-vous au 239.",
@@ -376,6 +391,7 @@ export const storyData: Record<string, Section> = {
       "Un peu plus loin, à travers les arbres, vous apercevez des buissons de couleur rouge. Ce sont des Brosses à Potence dont les épines écarlates et pointues sont communément appelées des Dents de Sommeil : elles ont en effet la propriété, lorsqu'on s'y pique, de provoquer faiblesse et engourdissement.",
       "Vous pouvez éviter les Dents de Sommeil en revenant sur le sentier. Rendez- vous alors au 272. Vous pouvez au contraire essayer de vous frayer un chemin parmi ces buissons pour pénétrer plus profondément dans la forêt. Rendez-vous dans ce cas au 119. Enfin, si vous maîtrisez la Discipline Kaï de l'Orientation, rendez- vous au 69."
     ],
+    "image": "/images/sections/sect19.png",
     "choices": [
       {
         "text": "Rendez- vous alors au 272.",
@@ -399,6 +415,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez emporter l'un ou l'autre de ces objets (ou tous les trois), n'oubliez pas de les inscrire sur votre Feuille d'Aventure.",
       "Rendez-vous ensuite au 272."
     ],
+    "image": "/images/sections/sect20.png",
     "choices": [
       {
         "text": "Rendez-vous ensuite au 272.",
@@ -421,6 +438,7 @@ export const storyData: Record<string, Section> = {
       "Si vous obtenez tout autre chiffre que le 9, le marécage vous engloutit définitivement et votre mission s'achève ici, en même temps que votre vie.",
       "Si en revanche vous tirez un 9, rendez-vous au 312."
     ],
+    "image": "/images/sections/sect21.png",
     "choices": [
       {
         "text": "Si le chiffre obtenu est égal ou supérieur à 5, vous parvenez à vous éloigner de ce bourbier et vous vous rendez au 189.",
@@ -464,6 +482,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez retirer la broche, rendez-vous au 337.",
       "Si vous possédez la Discipline Kaï de la Maîtrise Psychique de la Matière, rendez-vous au 151. Enfin, si vous avez une Clé d'Or, rendez-vous au 326."
     ],
+    "image": "/images/sections/sect23.png",
     "choices": [
       {
         "text": "Si vous souhaitez retirer la broche, rendez-vous au 337.",
@@ -488,6 +507,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez sauter à votre tour de la roulotte, rendez-vous au 234.",
       "Si vous préférez essayer d'attraper les rênes des chevaux pour prendre le contrôle de l'attelage, rendez-vous au 184."
     ],
+    "image": "/images/sections/sect24.png",
     "choices": [
       {
         "text": "Si vous souhaitez sauter à votre tour de la roulotte, rendez-vous au 234.",
@@ -525,6 +545,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez continuer dans cette direction, rendez-vous au 249.",
       "Si vous préférez rebrousser chemin et prendre le couloir orienté au sud, rendez-vous au 100."
     ],
+    "image": "/images/sections/sect26.png",
     "choices": [
       {
         "text": "Si vous souhaitez continuer dans cette direction, rendez-vous au 249.",
@@ -544,6 +565,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez passer à l'attaque, rendez-vous au 250.",
       "Si vous préférez écouter ce que disent ces voix, rendez-vous au 52."
     ],
+    "image": "/images/sections/sect27.png",
     "choices": [
       {
         "text": "Si vous souhaitez passer à l'attaque, rendez-vous au 250.",
@@ -563,6 +585,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez prendre la direction du nord, rendez-vous au 130.",
       "Si vous préférez aller au sud, rendez-vous au 147."
     ],
+    "image": "/images/sections/sect28.png",
     "choices": [
       {
         "text": "Si vous souhaitez prendre la direction du nord, rendez-vous au 130.",
@@ -584,6 +607,7 @@ export const storyData: Record<string, Section> = {
       "VORDAK HABILETÉ: 17 ENDURANCE: 25",
       "Si vous êtes vainqueur, rendez-vous au 270."
     ],
+    "image": "/images/sections/sect29.png",
     "choices": [
       {
         "text": "VORDAK HABILETÉ: 17 ENDURANCE: 25 Si vous êtes vainqueur, rendez-vous au 270.",
@@ -621,6 +645,7 @@ export const storyData: Record<string, Section> = {
   "31": {
     "id": "31",
     "location": "river",
+    "image": "/images/sections/sect31.png",
     "text": "Vous essayez de réconforter de votre mieux l'homme blessé, mais ses plaies sont profondes et il perd à nouveau connaissance. Vous le couvrez alors de sa cape et vous poursuivez votre chemin en vous enfonçant plus profondément dans la forêt. Rendez-vous au 264.",
     "choices": [
       {
@@ -638,6 +663,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez vous cacher dans les sous-bois et le laisser passer, rendez-vous au 176.",
       "Si vous préférez le combattre, rendez-vous au 340."
     ],
+    "image": "/images/sections/sect32.png",
     "choices": [
       {
         "text": "Si vous souhaitez vous cacher dans les sous-bois et le laisser passer, rendez-vous au 176.",
@@ -656,6 +682,7 @@ export const storyData: Record<string, Section> = {
       "Le sol de la grotte est sec et poussiéreux. Vous vous enfoncez un peu plus profondément dans la pénombre et vous détectez alors une odeur de viande en putréfaction. Des os, des peaux et des dents de petits animaux sont entassés dans une crevasse. Vous trouvez parmi ces restes un petit sac qui contient 3 Pièces d'Or.",
       "Vous les empochez et vous quittez cet endroit où quelque bête sauvage a probablement établi sa tanière, puis vous descendez le flanc de la colline. Rendez-vous au 248."
     ],
+    "image": "/images/sections/sect33.png",
     "choices": [
       {
         "text": "Rendez-vous au 248.",
@@ -693,6 +720,7 @@ export const storyData: Record<string, Section> = {
       "La forêt devient de plus en plus dense, et un enchevêtrement de buissons d'épines recouvre le chemin en s'épaississant à mesure que vous avancez. Bien qu'il soit presque entièrement caché par ces broussailles, vous découvrez un autre sentier orienté vers l'est.",
       "Celui que vous suivez semble aboutir à un cul-de-sac de buissons inextricables, et vous décidez donc d'emprunter ce nouveau chemin en prenant la direction de l'est. Rendez-vous au 207."
     ],
+    "image": "/images/sections/sect35.png",
     "choices": [
       {
         "text": "Rendez-vous au 207.",
@@ -709,6 +737,7 @@ export const storyData: Record<string, Section> = {
       "Si vous tirez un chiffre égal ou inférieur à 4, vous tombez.",
       "Vous perdez donc 2 points d'ENDURANCE et vous vous rendez au 140. Si ce chiffre est supérieur à 4, vous ne tombez pas et vous vous rendez au 323."
     ],
+    "image": "/images/sections/sect36.png",
     "choices": [
       {
         "text": "Vous perdez donc 2 points d'ENDURANCE et vous vous rendez au 140.",
@@ -728,6 +757,7 @@ export const storyData: Record<string, Section> = {
       "Si vous voulez vous approcher d'eux et leur raconter votre histoire, rendez-vous au 289.",
       "Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-vous au 282."
     ],
+    "image": "/images/sections/sect37.png",
     "choices": [
       {
         "text": "Si vous voulez vous approcher d'eux et leur raconter votre histoire, rendez-vous au 289.",
@@ -798,6 +828,7 @@ export const storyData: Record<string, Section> = {
       "Si vous voulez essayer de vous enfuir en pagayant le plus vite possible le long de la rivière, rendez-vous au 174.",
       "Si vous préférez gagner la rive opposée et tenter de vous cacher à l'abri des arbres, rendez-vous au 116."
     ],
+    "image": "/images/sections/sect41.png",
     "choices": [
       {
         "text": "Si vous voulez essayer de vous enfuir en pagayant le plus vite possible le long de la rivière, rendez-vous au 174.",
@@ -819,6 +850,7 @@ export const storyData: Record<string, Section> = {
       "Si vous choisissez de vous aventurer au sud, rendez-vous au 157.",
       "Enfin, s'il vous semble plus judicieux de prendre la direction de l'ouest, rendez-vous au 147."
     ],
+    "image": "/images/sections/sect42.png",
     "choices": [
       {
         "text": "Si vous souhaitez continuer vers l'est, rendez-vous au 86.",
@@ -848,6 +880,7 @@ export const storyData: Record<string, Section> = {
       "Au bout du troisième assaut, vous avez réussi à vous placer de telle sorte qu'il vous est possible de vous enfuir en courant au bas de la colline.",
       "Si vous souhaitez vous échapper après avoir livré ces trois assauts obligatoires, rendez-vous au 106."
     ],
+    "image": "/images/sections/sect43.png",
     "choices": [
       {
         "text": "OURS NOIR HABILETÉ : 16 ENDURANCE : 10 Si vous êtes vainqueur, rendez-vous au 195.",

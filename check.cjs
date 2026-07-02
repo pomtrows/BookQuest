@@ -25,7 +25,7 @@ for (const line of lines) {
 }
 
 const missing = Object.keys(sections).filter(k => !sections[k].hasImage);
-const nextBatch = [20, 21, 23, 24, 26, 27, 28, 29];
+const nextBatch = [43, 44, 45, 46, 47, 48, 49, 51];
 console.log('Next sections:', nextBatch.join(', '));
 for (const id of nextBatch) {
   if (sections[id]) {
