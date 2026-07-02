@@ -2,7 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { storyData } from '../data/story';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
-import { RotateCcw, Utensils, AlertTriangle, Dices, Lock } from 'lucide-react';
+import { RotateCcw, Utensils, AlertTriangle, Dices } from 'lucide-react';
 
 export function StoryViewer() {
   const { 
@@ -369,11 +369,6 @@ export function StoryViewer() {
                   disabled={isLocked}
                   className={`choice-btn transition-all duration-300 relative ${isMatched ? '!border-green-500 !shadow-[0_0_15px_rgba(34,197,94,0.3)] animate-pulse' : ''} ${isLocked ? 'opacity-40 cursor-not-allowed hover:!bg-black/40 hover:!text-[#e4d5b7] hover:!border-[#d4af37]/30' : ''}`}
                 >
-                  {requiredDiscipline && !hasRequiredDiscipline && (
-                    <div className="absolute top-2 right-2 text-red-500/80 flex items-center gap-1 text-xs font-bold uppercase tracking-wider">
-                      <Lock size={12} /> Discipline Requise
-                    </div>
-                  )}
                   {choice.text}
                 </button>
               );
