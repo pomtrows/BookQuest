@@ -2757,6 +2757,7 @@ export const storyData: Record<string, Section> = {
   "144": {
     "id": "144",
     "location": "city",
+    "damage": 2,
     "text": [
       "Vous vous frayez un chemin à coups de coude dans la foule qui se presse sur la grand-rue. Vous apercevez un peu plus loin la silhouette massive de la citadelle qui abrite le Palais du Roi. Les habitants de Holmgard, saisis de panique, courent en tous sens, tandis que retentissent les cris des Kraans qui tournoient dans le ciel de la ville.",
       "Dans la bousculade, quelqu'un vous vole l'un des objets contenus dans votre Sac à Dos.",
@@ -2792,6 +2793,7 @@ export const storyData: Record<string, Section> = {
   "146": {
     "id": "146",
     "location": "road",
+    "damage": 3,
     "text": [
       "Vous avez parcouru deux kilomètres à cheval lorsque vous êtes soudain jeté à bas de votre monture par une flèche qui vient de vous écorcher le front. Vous perdez 3 points d'ENDURANCE. Tandis que vous vous relevez, vous voyez surgir de la forêt, des deux côtés de la route, une bande de Drakkarims qui vous ont tendu une embuscade.",
       "Il vous faut prendre la fuite au plus vite en courant vous cacher parmi les arbres. Rendez-vous au 154."
@@ -3011,6 +3013,7 @@ export const storyData: Record<string, Section> = {
   "158": {
     "id": "158",
     "location": "city",
+    "damage": 6,
     "text": [
       "La clé s'adapte parfaitement à la serrure que vous n'avez aucun mal à ouvrir. Vous faites pivoter la porte sur ses gonds et vous vous retrouvez face à face avec un vieillard étrange qui porte un bâton à la main droite.",
       "Soudain, un éclair jaillit du bâton et vous frappe en pleine poitrine. Vous perdez 6 points d'ENDURANCE. Haletant de douleur, vous avez malgré tout (si vous n'êtes pas mort sur le coup) la force de bousculer le vieil homme d'un coup d'épaule et de monter quatre à quatre un escalier plutôt raide qui mène à la lumière du jour.",
@@ -3153,6 +3156,7 @@ export const storyData: Record<string, Section> = {
   "166": {
     "id": "166",
     "location": "forest",
+    "damage": 4,
     "text": [
       "Vous êtes en présence d'une force hautement maléfique. Un être puissant et invisible essaie de soumettre votre esprit, et il vous faut rassembler toute votre énergie pour vous défendre. Cette lutte intense vous met en grand danger de perdre la raison.",
       "Vous traversez une longue et pénible épreuve au cours de laquelle toutes sortes d'apparitions terrifiantes, surnaturelles, fantasmagoriques essaient de vous attirer dans leur monde de folie. La tentation et l'horreur se mélangent dans votre tête et ce n'est qu'à grand-peine que vous parvenez à sortir vainqueur de ce véritable calvaire.",
@@ -3835,6 +3839,7 @@ export const storyData: Record<string, Section> = {
   "203": {
     "id": "203",
     "location": "cemetery",
+    "damage": 10,
     "text": [
       "Une douleur fulgurante vous traverse la poitrine alors que quelque chose vient d'exploser tout contre vous dans une gerbe d'étincelles rouges. Vous perdez 10 points d'ENDURANCE et, si vous n'êtes pas déjà mort, vous voyez à travers la fumée le Sage s'apprêter à vous lancer une nouvelle charge explosive.",
       "S'il vous reste 10 points d'ENDURANCE ou plus, rendez-vous au 80. S'il vous reste moins de 10 points d'endurance, rendez-vous au 344."
@@ -6263,6 +6268,7 @@ export const storyData: Record<string, Section> = {
   "343": {
     "id": "343",
     "location": "forest",
+    "damage": 2,
     "text": [
       "Vous êtes prisonnier des branches et des racines, mais vous parvenez finalement à dégager votre main droite, à empoigner votre Hache et à vous tailler un chemin à travers l'épaisse végétation. Un peu plus loin, la forêt s'éclaircit et vous avancez dans cette direction.",
       "Votre cape est déchirée en plusieurs endroits et votre bras gauche écorché au-dessus du coude. Vous perdez 2 points d'ENDURANCE avant de vous rendre au 213."
