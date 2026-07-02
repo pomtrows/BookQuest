@@ -243,6 +243,15 @@ export const useGameStore = create<GameStore>()(
           if (currentEnemy.hasMindblast && !state.character.disciplines.includes('Bouclier psychique')) {
             playerCS -= 2;
           }
+
+          // Darkness Penalty
+          if (currentEnemy.darknessPenalty) {
+            const hasTorch = state.character.backpack.some(item => item.toLowerCase().includes('torche'));
+            const hasTinderbox = state.character.backpack.some(item => item.toLowerCase().includes('briquet'));
+            if (!(hasTorch && hasTinderbox)) {
+              playerCS -= 3;
+            }
+          }
           
           const enemyCS = currentEnemy.combatSkill;
           const combatRatio = playerCS - enemyCS;

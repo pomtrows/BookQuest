@@ -42,6 +42,7 @@ export interface Enemy {
   endurance: number;
   mindblastImmune?: boolean;
   hasMindblast?: boolean;
+  darknessPenalty?: boolean;
 }
 
 export interface Choice {

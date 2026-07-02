@@ -3255,7 +3255,9 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "GLUÂTRE DES PROFONDEURS",
       "combatSkill": 17,
-      "endurance": 7
+      "endurance": 7,
+      "mindblastImmune": true,
+      "darknessPenalty": true
     }
   },
   "171": {
@@ -6324,6 +6326,10 @@ export const storyData: Record<string, Section> = {
   "347": {
     "id": "347",
     "location": "forest",
+    "loot": {
+      "weapons": ["Sabre"],
+      "items": ["Torche", "Briquet à amadou"]
+    },
     "text": [
       "La forêt s'éclaircit bientôt et vous apercevez un peu plus loin une vieille cabane en rondins, construite sous un chêne. La cabane semble avoir été abandonnée et il n'y reste apparemment rien de très intéressant. En ouvrant un petit coffre posé près de la porte, vous découvrez des fagots de branches liées ensemble avec de la ficelle.",
       "Les fagots ont été enduits de poix à l'une de leurs extrémités : ils peuvent ainsi faire office de Torches. Près du coffre, vous trouvez également un Sabre et un Briquet à Amadou. Vous pouvez les prendre ainsi qu'une des Torches, à condition, bien entendu, de modifier en conséquence votre Feuille d'Aventure.",
