@@ -622,7 +622,9 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "VORDAK",
       "combatSkill": 17,
-      "endurance": 25
+      "endurance": 25,
+      "mindblastImmune": true,
+      "hasMindblast": true
     }
   },
   "30": {
@@ -716,7 +718,9 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "VORDAK",
       "combatSkill": 17,
-      "endurance": 25
+      "endurance": 25,
+      "mindblastImmune": true,
+      "hasMindblast": true
     }
   },
   "35": {
@@ -5260,7 +5264,9 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "VORDAK",
       "combatSkill": 17,
-      "endurance": 25
+      "endurance": 25,
+      "mindblastImmune": true,
+      "hasMindblast": true
     }
   },
   "284": {
@@ -6249,7 +6255,9 @@ export const storyData: Record<string, Section> = {
     "combat": {
       "name": "VORDAK",
       "combatSkill": 18,
-      "endurance": 26
+      "endurance": 26,
+      "mindblastImmune": true,
+      "hasMindblast": true
     }
   },
   "343": {

@@ -41,6 +41,7 @@ export interface Enemy {
   combatSkill: number;
   endurance: number;
   mindblastImmune?: boolean;
+  hasMindblast?: boolean;
 }
 
 export interface Choice {

@@ -238,6 +238,11 @@ export const useGameStore = create<GameStore>()(
           if (state.character.disciplines.includes('Puissance psychique') && !currentEnemy.mindblastImmune) {
             playerCS += 2; // Puissance psychique
           }
+
+          // Enemy Mindblast Penalty
+          if (currentEnemy.hasMindblast && !state.character.disciplines.includes('Bouclier psychique')) {
+            playerCS -= 2;
+          }
           
           const enemyCS = currentEnemy.combatSkill;
           const combatRatio = playerCS - enemyCS;
