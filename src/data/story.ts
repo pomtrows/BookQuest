@@ -289,6 +289,7 @@ export const storyData: Record<string, Section> = {
   "15": {
     "id": "15",
     "location": "forest",
+    "loot": { "weapons": ["Épée"] },
     "text": [
       "Vous longez un long tunnel sombre formé par des branches d'arbres qui s'entrecroisent au-dessus de votre tête et vous arrivez enfin dans une vaste clairière. En son centre se dresse un socle de pierre sur lequel est posée une épée, rangée dans un fourreau de cuir noir.",
       "Un mot manuscrit est attaché à la garde de l'épée, mais il est écrit dans une langue qui vous est étrangère. Vous pouvez prendre cette épée si vous le désirez en n'oubliant pas de l'inscrire sur votre Feuille d'Aventure. Trois chemins permettent de quitter la clairière : si vous voulez aller à l'est, rendez-vous au 207.",
@@ -682,6 +683,7 @@ export const storyData: Record<string, Section> = {
   "33": {
     "id": "33",
     "location": "mountains",
+    "loot": { "gold": 3 },
     "text": [
       "Le sol de la grotte est sec et poussiéreux. Vous vous enfoncez un peu plus profondément dans la pénombre et vous détectez alors une odeur de viande en putréfaction. Des os, des peaux et des dents de petits animaux sont entassés dans une crevasse. Vous trouvez parmi ces restes un petit sac qui contient 3 Pièces d'Or.",
       "Vous les empochez et vous quittez cet endroit où quelque bête sauvage a probablement établi sa tanière, puis vous descendez le flanc de la colline. Rendez-vous au 248."
@@ -1213,6 +1215,7 @@ export const storyData: Record<string, Section> = {
   "62": {
     "id": "62",
     "location": "city",
+    "loot": { "gold": 28, "meals": 3, "weapons": ["Épée"] },
     "text": [
       "Les « soldats » sont étendus raides morts à vos pieds. C'étaient des brigands qui détroussaient les réfugiés de Toran et pillaient les maisons et les fermes abandonnées de la région. En fouillant leurs cadavres, vous trouvez 28 Pièces d'Or et deux Sacs à Dos qui contiennent des provisions équivalant à trois Repas.",
       "Ils étaient armés d'une Arbalète et de Trois Epées. L'Arbalète a été endommagée au cours du combat, mais les trois Epées sont intactes, et vous pouvez en emporter une si vous le souhaitez. Vous modifiez, en conséquence, votre Feuille d'Aventure, vous rangez soigneusement vos nouvelles acquisitions et vous jetez un coup d'œil en direction de l'ouest pour voir si la voie est libre.",
@@ -1796,6 +1799,7 @@ export const storyData: Record<string, Section> = {
   "94": {
     "id": "94",
     "location": "city",
+    "loot": { "gold": 16 },
     "text": [
       "Voyant que vous avez tué son fils, le Sage fait volte-face et s'enfuit de la boutique par la porte de derrière. Vous trouvez 12 Pièces d'Or dans la bourse du Voleur et 4 autres dans une boîte en bois, rangée sous le comptoir. Vous examinez ensuite les potions et la baguette magique, et vous vous apercevez qu'il s'agit de simples imitations sans aucune valeur.",
       "Il n'y a rien dans la boutique qui mérite votre attention et vous quittez les lieux pour rejoindre la grand-rue. Rendez-vous au 7."
@@ -2336,6 +2340,7 @@ export const storyData: Record<string, Section> = {
   "124": {
     "id": "124",
     "location": "mountains",
+    "loot": { "gold": 15, "specialItems": ["Clé d'Argent"] },
     "text": [
       "Dans la boîte, vous trouvez 15 Pièces d'Or et une Clé d'Argent.",
       "Si vous souhaitez conserver la Clé, inscrivez-la sur votre Feuille d'Aventure dans la case Objets Spéciaux.",
@@ -2606,6 +2611,7 @@ export const storyData: Record<string, Section> = {
   "137": {
     "id": "137",
     "location": "cemetery",
+    "loot": { "items": ["20 Pierres Précieuses"] },
     "text": [
       "Lorsque la dernière de ces répugnantes créatures meurt enfin, la lumière verdâtre commence à diminuer. Vous constatez alors que dans chacun des crânes fracassés se trouve une Pierre Précieuse. Vous ramassez ces vingt Pierres juste avant que la lueur s'éteigne, plongeant la chambre mortuaire dans une totale obscurité.",
       "N'oubliez pas d'inscrire ces Pierres Précieuses sur votre Feuille d'Aventure. Elles prennent place dans votre bourse. Vous vous hâtez de quitter la Crypte et vous poursuivez votre chemin. Rendez-vous au 23."
@@ -3107,6 +3113,7 @@ export const storyData: Record<string, Section> = {
   "164": {
     "id": "164",
     "location": "forest",
+    "loot": { "specialItems": ["Essence d'Alether"] },
     "text": [
       "Vous débouchez prudemment chacune des bouteilles et vous reniflez son contenu. Il semble s'agir là de différentes sortes de vin.",
       "Mais soudain, une autre bouteille, plus petite, coincée parmi les autres, attire votre attention. Elle est remplie d'un liquide de couleur orange dont l'odeur vous est familière : c'est de l'Essence d'Alether, une puissante potion qui a la propriété d'accroître votre force.",
@@ -3480,6 +3487,7 @@ export const storyData: Record<string, Section> = {
   "184": {
     "id": "184",
     "location": "road",
+    "loot": { "gold": 40, "meals": 4, "weapons": ["Épée"] },
     "text": [
       "La roulotte a échappé à tout contrôle et cahote dangereusement sur le bas-côté de la route, parmi les pierres et les nids-de-poule. Vous parvenez cependant, au prix de bien des efforts, à ramener sur la chaussée les chevaux saisis de panique et à arrêter l'attelage.",
       "En fouillant rapidement le véhicule, vous découvrez 40 Pièces d'Or, une Epée et une quantité de nourriture équivalant à 4 Repas.",
@@ -4521,6 +4529,7 @@ export const storyData: Record<string, Section> = {
   "243": {
     "id": "243",
     "location": "forest",
+    "loot": { "weapons": ["Masse d'armes"] },
     "image": "/images/sections/sect243.png",
     "text": [
       "En courant dans la forêt, vous trébuchez bientôt contre une racine et vous dévalez une pente escarpée en roulant sur vous- même. Vous atterrissez sur un petit chemin caché sous les arbres et vous y découvrez un cadavre étendu parmi les broussailles. C'est celui d'un Glok, une de ces créatures monstrueuses et répugnantes que les Maîtres des Ténèbres emploient à leurs services.",
@@ -4885,6 +4894,7 @@ export const storyData: Record<string, Section> = {
   "263": {
     "id": "263",
     "location": "river",
+    "loot": { "gold": 3 },
     "text": [
       "Vous suivez prudemment le cours d'eau qui coule vers l'est puis soudain, vous vous immobilisez : vous venez, en effet, d'apercevoir la silhouette d'un Kraan mort qui gît dans l'eau tel un grand barrage noir. En restant à l'abri du feuillage, vous avancez avec précaution vers le cadavre de la créature : trois flèches sont profondément enfoncées dans son poitrail.",
       "Un autre corps est coincé sous le Kraan mort: c'est celui d'un Glok qui le chevauchait. Les Gloks sont des êtres méprisables et malfaisants entièrement dévoués à la cause des Maîtres des Ténèbres. Il y a bien longtemps, les ancêtres des Gloks servaient d'esclaves aux Maîtres des Ténèbres et ceux-ci leur firent bâtir la ville infernale d'Helgedad, située dans les déserts volcaniques qui s'étendent au-delà des monts Durncrag.",
@@ -4955,6 +4965,7 @@ export const storyData: Record<string, Section> = {
   "267": {
     "id": "267",
     "location": "cemetery",
+    "loot": { "items": ["Message de Kraan"], "weapons": ["Poignard"] },
     "text": [
       "En vous couvrant le nez d'un pan de votre cape, vous vous approchez avec précaution du Kraan mort. L'odeur infecte qui se dégage de son sang noir vous retourne l'estomac, mais vous êtes décidé malgré tout à examiner son cadavre. Vous remarquez alors un sac attaché au corps du monstre par une sangle.",
       "A l'intérieur du sac, vous trouvez un Message écrit sur une peau d'animal. Tout au fond du sac, il y a également un Poignard. Vous pouvez conserver ce Message et ce Poignard si vous le désirez. Vous abandonnez ensuite le cadavre du monstre et vous poursuivez votre chemin en direction de l'est.",
@@ -5336,6 +5347,7 @@ export const storyData: Record<string, Section> = {
   "290": {
     "id": "290",
     "location": "river",
+    "loot": { "weapons": ["Bâton"] },
     "text": [
       "A l'intérieur de la longue boîte, vous trouvez un Bâton enveloppé de cuir. Vous pouvez le prendre si vous le désirez. Vous refermez ensuite la boîte et vous redescendez l'échelle en prenant soin de ne poser les pieds que sur les barreaux encore solides.",
       "Inscrivez, le cas échéant, votre nouvelle Arme sur votre Feuille d'Aventure et rendez-vous au 140."
@@ -5350,6 +5362,7 @@ export const storyData: Record<string, Section> = {
   "291": {
     "id": "291",
     "location": "road",
+    "loot": { "gold": 6, "weapons": ["Poignard", "Lance"] },
     "text": [
       "Les cadavres recroquevillés des deux Gloks reposent à vos pieds. Vous les fouillez rapidement et vous découvrez dans leurs vêtements 6 Couronnes, 2 Lances et 1 Poignard. Vous pouvez garder l'Or et prendre au choix le Poignard ou l'une des Lances. Inscrivez dans ce cas votre nouvelle acquisition sur votre Feuille d'Aventure.",
       "Le Kraan s'est enfui pendant le combat, et le sentier est à présent désert. Vous calez votre Sac à Dos sur vos épaules et vous reprenez votre chemin. Rendez-vous au 272."
@@ -5571,6 +5584,7 @@ export const storyData: Record<string, Section> = {
   "305": {
     "id": "305",
     "location": "city",
+    "loot": { "weapons": ["Lance"] },
     "text": [
       "Par la porte ouverte de la première hutte, vous apercevez le corps d'un homme étendu face contre terre, sur le sol de pierre brute. On l'a assassiné à l'aide d'une lance, sans aucun doute. Tous les meubles et les objets que contenait la hutte ont été détruits : il ne reste plus rien d'intact.",
       "Ce forfait porte la marque des Gloks : leur goût du vandalisme est, en effet, bien connu. En entrant dans les autres huttes, vous contemplez un spectacle semblable de meurtre et de destruction. Dans la dernière hutte, vous découvrez une Lance de Glok, ce qui confirme vos soupçons.",
@@ -5595,6 +5609,7 @@ export const storyData: Record<string, Section> = {
   "307": {
     "id": "307",
     "location": "city",
+    "loot": { "meals": 1, "weapons": ["Marteau de guerre"] },
     "text": [
       "Vous n'avez aucune difficulté à atteindre la cabane et, tandis que vous escaladez l'arbre, des souvenirs d'enfance vous reviennent en mémoire : vous vous rappelez le temps où, tout jeune garçon, vous montiez également aux arbres, non loin de la ville de Toran, pour aller cueillir des fruits ou admirer la campagne environnante.",
       "Vous ouvrez la porte de la cabane et vous tombez nez à nez avec un vieil ermite recroquevillé dans un coin de la pièce. Une expression d'intense soulagement apparaît sur son visage lorsqu'il reconnaît votre cape de Seigneur Kaï. Il vous raconte alors que toute la région est envahie par des Gloks et qu'il a dénombré plus de quarante Kraans volant au-dessus de sa maison dans les trois heures qui ont précédé.",
@@ -5729,6 +5744,7 @@ export const storyData: Record<string, Section> = {
   "315": {
     "id": "315",
     "location": "river",
+    "loot": { "gold": 6, "items": ["Savon Parfumé"] },
     "text": [
       "Enveloppé dans des vêtements de femme, vous trouvez un petit Sac de Velours qui contient 6 Pièces d'Or et un morceau de Savon Parfumé. Vous pouvez prendre le Savon et l'Or en les inscrivant sur votre Feuille d'Aventure et vous poursuivrez ensuite votre chemin.",
       "Rendez-vous au 213."
@@ -5789,6 +5805,7 @@ export const storyData: Record<string, Section> = {
   "319": {
     "id": "319",
     "location": "cemetery",
+    "loot": { "gold": 20, "weapons": ["Poignard"] },
     "text": [
       "La gluante créature laisse échapper un long cri d'agonie et s'écroule sur le sol. Vous êtes proche de la panique et vous vous hâtez de vous relever en arrachant des mâchoires du monstre ce que vous pensez être votre ceinture. Vous apercevez une lumière au loin et vous courez à toutes jambes dans cette direction.",
       "Lorsque, enfin, vous vous retrouvez à l'air libre, vous vous laissez tomber à terre parmi les feuilles mortes et vous essayez de reprendre votre souffle en haletant désespérément. Dès que vous pouvez à nouveau respirer normalement, vous vous asseyez et vous remarquez alors que votre ceinture est toujours nouée autour de votre taille : finalement, vous ne l'aviez pas perdue dans la bagarre.",
