@@ -11,6 +11,7 @@ import { Notifications } from './components/Notifications';
 import { PreviousAdventure } from './components/PreviousAdventure';
 import { InstallPrompt } from './components/InstallPrompt';
 import { MapScreen } from './components/MapScreen';
+import packageJson from '../package.json';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP';
 
@@ -92,6 +93,9 @@ function App() {
                 Ancienne Aventure
               </button>
             )}
+          </div>
+          <div className="absolute bottom-4 text-xs font-mono text-gray-500/70 tracking-widest z-10">
+            v{packageJson.version}
           </div>
         </div>
       )}
