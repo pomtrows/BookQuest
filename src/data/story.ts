@@ -782,6 +782,7 @@ export const storyData: Record<string, Section> = {
   },
   "38": {
     "id": "38",
+    "image": "/images/sections/sect38.png",
     "location": "forest",
     "text": [
       "Pendant plus d'une demi-heure, vous poursuivez votre chemin dans la forêt, parmi les fougères et les feuillages touffus des arbres et des buissons.",
@@ -818,6 +819,7 @@ export const storyData: Record<string, Section> = {
   },
   "40": {
     "id": "40",
+    "image": "/images/sections/sect40.png",
     "location": "forest",
     "text": [
       "Vous contournez la clairière avec précaution en progressant à l'abri des arbres et en surveillant les huttes pour y déceler toute présence éventuelle de l'ennemi.",
@@ -910,6 +912,7 @@ export const storyData: Record<string, Section> = {
   },
   "44": {
     "id": "44",
+    "image": "/images/sections/sect44.png",
     "location": "cemetery",
     "text": [
       "Le sentier aboutit brusquement à une pente en à-pic. Le sol, très instable à cet endroit, se dérobe sous vos pas : vous perdez l'équilibre et vous tombez tête la première au bas de la pente.",
@@ -928,6 +931,7 @@ export const storyData: Record<string, Section> = {
   },
   "45": {
     "id": "45",
+    "image": "/images/sections/sect45.png",
     "location": "city",
     "text": [
       "Ces hommes ne sont pas, en réalité, ce qu'ils semblent être. La tunique de leur chef est authentique, mais elle est tachée de sang autour du col comme si son véritable propriétaire avait été tué. Quant aux armes dont disposent ces prétendus soldats, elles n'appartiennent pas à l'armée ; elles sont, en effet, richement ouvragées comme celles que fabriquent les armuriers du Royaume de Durenor.",
@@ -942,6 +946,7 @@ export const storyData: Record<string, Section> = {
   },
   "46": {
     "id": "46",
+    "image": "/images/sections/sect46.png",
     "location": "river",
     "text": [
       "Vous avez parcouru trois kilomètres environ, et le feuillage des arbres commence à s'éclaircir. Vous apercevez alors, au bord d'un lac, une petite cabane de bois. Un homme vêtu d'une cape s'approche bientôt de vous et vous offre de vous faire traverser le lac sur son bateau, vous et votre cheval, pour la somme de 2 Couronnes.",
@@ -966,6 +971,7 @@ export const storyData: Record<string, Section> = {
   },
   "47": {
     "id": "47",
+    "image": "/images/sections/sect47.png",
     "location": "mountains",
     "text": [
       "A bout de souffle et le visage ruisselant de sueur, vous vous frayez un chemin vers le sommet de la colline.",
@@ -985,6 +991,7 @@ export const storyData: Record<string, Section> = {
   },
   "48": {
     "id": "48",
+    "image": "/images/sections/sect48.png",
     "location": "city",
     "text": [
       "Votre Sixième Sens vous avertit que ces soldats ne sont pas ce qu'ils semblent être. Vous percevez une aura maléfique autour d'eux : ce sont des serviteurs des Maîtres des Ténèbres. Il vous faut prendre aussitôt la fuite avant qu'ils vous aperçoivent.",
@@ -999,6 +1006,7 @@ export const storyData: Record<string, Section> = {
   },
   "49": {
     "id": "49",
+    "image": "/images/sections/sect49.png",
     "location": "forest",
     "text": [
       "Tandis que vous lisez l'inscription, une ombre se dessine derrière le paravent.",
@@ -1037,6 +1045,7 @@ export const storyData: Record<string, Section> = {
   },
   "51": {
     "id": "51",
+    "image": "/images/sections/sect51.png",
     "location": "city",
     "text": [
       "Après avoir escaladé en toute hâte la berge boisée de la rivière, vous apercevez un peu plus loin la palissade en rondins du camp fortifié dressé autour de la capitale. La bataille fait rage à trois kilomètres environ et le mur en rondins s'est écroulé en plusieurs endroits, là où les Maîtres des Ténèbres ont porté leur attaque.",
@@ -1057,6 +1066,7 @@ export const storyData: Record<string, Section> = {
   },
   "52": {
     "id": "52",
+    "image": "/images/sections/sect52.png",
     "location": "forest",
     "text": [
       "A présent que vous vous êtes approché, vous vous apercevez qu'il ne s'agit pas là de voix humaines. On dirait plutôt des grognements et des cris d'animaux.",
@@ -1076,6 +1086,7 @@ export const storyData: Record<string, Section> = {
   },
   "53": {
     "id": "53",
+    "image": "/images/sections/sect53.png",
     "location": "city",
     "text": [
       "Une douleur fulgurante vous déchire soudain la jambe droite : vous venez de vous tordre la cheville et vous trébuchez en tombant tête la première. Entraîné par le poids de votre corps, vous roulez alors sur vous-même le long du flanc de la colline avant d'atterrir enfin dans un fossé où vous perdez connaissance.",
@@ -1086,6 +1097,7 @@ export const storyData: Record<string, Section> = {
   },
   "54": {
     "id": "54",
+    "image": "/images/sections/sect54.png",
     "location": "road",
     "text": [
       "Il semble que le ciel soit resté sourd à vos prières car un instant plus tard, une lance siffle à vos oreilles et vient se planter dans le cou de votre cheval. Celui-ci pousse un hennissement de douleur puis s'abat en avant. Vous roulez tous deux dans la poussière du chemin et vous vous retrouvez coincé sous le cadavre de votre monture.",
@@ -1095,6 +1107,7 @@ export const storyData: Record<string, Section> = {
   },
   "55": {
     "id": "55",
+    "image": "/images/sections/sect55.png",
     "location": "river",
     "text": [
       "Au moment où le Glok bondit, vous vous ruez sur lui et vous le frappez de votre arme, l'empêchant ainsi d'atterrir sur le dos du jeune sorcier. Vous profitez de votre avantage pour frapper à nouveau la créature qui se débat et l'effet de surprise de votre attaque vous permet d'ajouter 4 points à votre total d'HABILETÉ pendant toute la durée de ce combat.",
@@ -1115,6 +1128,7 @@ export const storyData: Record<string, Section> = {
   },
   "56": {
     "id": "56",
+    "image": "/images/sections/sect56.png",
     "location": "forest",
     "text": [
       "Vous entendez un cri au-dessus des arbres : c'est un Kraan, une de ces grandes créatures volantes et sanguinaires qui comptent parmi les plus redoutables serviteurs des Maîtres des Ténèbres. Vous plongez aussitôt dans l'épaisseur des fougères pour vous cacher jusqu'à ce que le cri du monstre se soit évanoui au lointain.",
@@ -1129,6 +1143,7 @@ export const storyData: Record<string, Section> = {
   },
   "57": {
     "id": "57",
+    "image": "/images/sections/sect57.png",
     "location": "forest",
     "text": [
       "La cabane n'a qu'une seule pièce meublée d'une table de bois, de deux bancs et d'un lit fait de bottes de paille attachées ensemble. Un tapis brodé orne le plancher et plusieurs bouteilles contenant des liquides de différentes couleurs sont posées sur la table.",
@@ -1173,6 +1188,7 @@ export const storyData: Record<string, Section> = {
   },
   "59": {
     "id": "59",
+    "image": "/images/sections/sect59.png",
     "location": "mountains",
     "text": [
       "Scrutant l'obscurité, vous distinguez quelques marches taillées grossièrement dans la terre et vous vous apercevez que cette grotte est en fait l'entrée d'un tunnel. Vous descendez prudemment les marches glissantes et vous découvrez au bas de cet escalier de fortune une petite boîte en argent posée sur une étagère.",
@@ -1197,12 +1213,14 @@ export const storyData: Record<string, Section> = {
   },
   "60": {
     "id": "60",
+    "image": "/images/sections/sect60.png",
     "location": "river",
     "text": "Avant que les ténèbres vous engloutissent, vous apercevez l'éclat d'une longue lame de couteau. Votre nom s'ajoutera à la liste des victimes du Sage et de son fils, le Voleur, celui-là même qui vient de vous trancher la gorge. Votre mission est terminée.",
     "choices": []
   },
   "61": {
     "id": "61",
+    "image": "/images/sections/sect61.png",
     "location": "city",
     "text": [
       "Vous atteignez enfin la palissade en rondins du camp fortifié qui a été dressé autour de la ville. Et tandis que vous courez vers le poste de garde, vous entendez les soldats pousser des acclamations enthousiastes : les Dieux en soient loués, ils vous ont reconnu en dépit de vos vêtements déchirés et de votre triste apparence !",
@@ -1255,6 +1273,7 @@ export const storyData: Record<string, Section> = {
   },
   "64": {
     "id": "64",
+    "image": "/images/sections/sect64.png",
     "location": "road",
     "text": [
       "Vous êtes réveillé par les cris d'un Kraan qui tournoie au-dessus de la roulotte. Il est tôt et le ciel est clair. A moins de cinq cents mètres, vous apercevez alors une meute de Loups Maudits qui s'avancent le long de la route, prêts à attaquer. Il va falloir agir vite.",
@@ -1274,6 +1293,7 @@ export const storyData: Record<string, Section> = {
   },
   "65": {
     "id": "65",
+    "image": "/images/sections/sect65.png",
     "location": "city",
     "text": "Tous vos sens vous avertissent que cet endroit est maléfique. Il faut vous en éloigner au plus vite. Rendez-vous au 104.",
     "choices": [
@@ -1285,6 +1305,7 @@ export const storyData: Record<string, Section> = {
   },
   "66": {
     "id": "66",
+    "image": "/images/sections/sect66.png",
     "location": "city",
     "text": [
       "Surpris, vous faites volte-face et vous voyez courir vers vous un robuste sergent accompagné de deux soldats. Tous trois brandissent leurs épées, prêts à frapper. A votre tour, vous dégainez votre arme car, apparemment, ils vont vous attaquer sans prendre la peine de poser des questions.",
@@ -1301,6 +1322,7 @@ export const storyData: Record<string, Section> = {
   },
   "67": {
     "id": "67",
+    "image": "/images/sections/sect67.png",
     "location": "road",
     "text": [
       "Votre Sens de l'Orientation vous permet de découvrir des traces fraîches laissées par les pattes d'un animal. Ces empreintes suivent le chemin orienté au sud. Vous reconnaissez là les traces d'un Ours Noir. C'est un animal connu pour sa férocité et vous estimez préférable d'emprunter le sentier qui mène vers l'est.",
@@ -1334,6 +1356,7 @@ export const storyData: Record<string, Section> = {
   },
   "69": {
     "id": "69",
+    "image": "/images/sections/sect69.png",
     "location": "forest",
     "text": "Vous vous trouvez à proximité d'un village ami. Contournez les Brosses à Potence et rendez-vous au 272.",
     "choices": [
@@ -1345,6 +1368,7 @@ export const storyData: Record<string, Section> = {
   },
   "70": {
     "id": "70",
+    "image": "/images/sections/sect70.png",
     "location": "river",
     "text": [
       "Vous arrivez à un petit pont. Un chemin longe le cours d'eau en direction de l'est, et un autre sentier beaucoup plus étroit s'enfonce dans une forêt touffue menant vers le sud.",
@@ -1368,6 +1392,7 @@ export const storyData: Record<string, Section> = {
   },
   "71": {
     "id": "71",
+    "image": "/images/sections/sect71.png",
     "location": "river",
     "text": [
       "Vous êtes étourdi, mais indemne. Vous avez fait une chute de cinq mètres en passant à travers le plafond d'un caveau souterrain. Les murs en sont parfaitement lisses, et il vous est impossible d'y grimper. Un tunnel voûté part du caveau en direction de l'est.",
@@ -1413,6 +1438,7 @@ export const storyData: Record<string, Section> = {
   },
   "73": {
     "id": "73",
+    "image": "/images/sections/sect73.png",
     "location": "city",
     "text": [
       "Vous ramenez votre cape autour de vos épaules et vous vous fondez dans les rochers et les feuillages.",
@@ -1429,6 +1455,7 @@ export const storyData: Record<string, Section> = {
   },
   "74": {
     "id": "74",
+    "image": "/images/sections/sect74.png",
     "location": "river",
     "text": [
       "Les Kraans et leurs maîtres atterrissent sur le chemin, à trois mètres à peine de l'endroit où vous vous êtes caché. Les Gloks sautent alors de leurs montures volantes à la peau couverte d'écaillés et s'avancent vers vous, la lance levée : ils vous ont vu.",
@@ -1448,6 +1475,7 @@ export const storyData: Record<string, Section> = {
   },
   "75": {
     "id": "75",
+    "image": "/images/sections/sect75.png",
     "location": "city",
     "text": [
       "En jetant un coup d'œil prudent, vous apercevez trois hommes vêtus de vert qui chevauchent le long de la rive. Ce sont des gardes-frontières ; ils appartiennent à un régiment royal chargé de surveiller les frontières ouest du pays. L'un de ces hommes est blessé ; il est affalé sur l'encolure de son cheval.",
@@ -1469,6 +1497,7 @@ export const storyData: Record<string, Section> = {
   },
   "76": {
     "id": "76",
+    "image": "/images/sections/sect76.png",
     "location": "road",
     "text": [
       "La Pierre dégage une intense chaleur et vous brûle la main. Vous perdez 2 points d'ENDURANCE. Vous enveloppez alors la Pierre dans un pan de votre cape et vous la laissez tomber dans une poche de votre tunique. Une Pierre Précieuse de cette taille doit valoir des centaines de Couronnes !",
@@ -1500,6 +1529,7 @@ export const storyData: Record<string, Section> = {
   },
   "78": {
     "id": "78",
+    "image": "/images/sections/sect78.png",
     "location": "city",
     "text": [
       "Au moment où la roulotte passe devant vous, vous faites un bond en avant et vous parvenez à vous y agripper; vous vous retrouvez sur l'échelon inférieur d'un petit escabeau qui permet d'accéder à la porte arrière du véhicule. Vous vous redressez avec précaution en vous efforçant de maintenir votre prise et, soudain, la partie supérieure de la porte qui vous fait face s'ouvre à la volée.",
@@ -1525,6 +1555,7 @@ export const storyData: Record<string, Section> = {
   },
   "79": {
     "id": "79",
+    "image": "/images/sections/sect79.png",
     "location": "river",
     "text": "Vous arrivez à un petit pont qui traverse un ruisseau au cours rapide. De l'autre côté du pont, le chemin s'oriente au sud. Vous décidez de franchir le pont et de suivre le sentier. Rendez-vous au 204.",
     "choices": [
@@ -1536,6 +1567,7 @@ export const storyData: Record<string, Section> = {
   },
   "80": {
     "id": "80",
+    "image": "/images/sections/sect80.png",
     "location": "city",
     "text": [
       "Vous trébuchez en arrière et vous franchissez la porte d'entrée à reculons, les mains crispées sur votre poitrine en feu. De la fumée jaillit de la boutique et il vous faut prendre la fuite avant que le Sage et son Voleur vous attrapent. Vous parvenez à rejoindre la grand-rue et vous vous fondez dans la foule.",
@@ -1550,6 +1582,7 @@ export const storyData: Record<string, Section> = {
   },
   "81": {
     "id": "81",
+    "image": "/images/sections/sect81.png",
     "location": "city",
     "text": [
       "Une heure plus tard environ, les Kraans et leurs terribles cavaliers disparaissent en direction de l'ouest. Les réfugiés, tremblants de peur, sortent alors de la forêt, et vous entendez au même moment des chevaux au galop s'approcher de l'endroit où vous êtes.",
@@ -1587,6 +1620,7 @@ export const storyData: Record<string, Section> = {
   },
   "83": {
     "id": "83",
+    "image": "/images/sections/sect83.png",
     "location": "city",
     "text": [
       "Vous avez couru pendant presque deux kilomètres lorsque trois soldats surgissent de sous un petit pont. Ils vous ordonnent de vous arrêter et de déposer à terre vos armes et tout votre équipement. Leurs uniformes sont tachés de sang et ils ont négligé de se raser.",
@@ -1616,6 +1650,7 @@ export const storyData: Record<string, Section> = {
   },
   "84": {
     "id": "84",
+    "image": "/images/sections/sect84.png",
     "location": "road",
     "text": [
       "Au moment où vous sentez le vent de ses ailes sur votre dos, vous vous laissez tomber de votre cheval et vous roulez sur vous- même en terminant votre course dans la bouc d'un fossé, au bord de la route. Vous êtes indemne et vous vous relevez d'un bond pour courir vous mettre à l'abri des arbres ; mais il vous reste une trentaine de mètres à parcourir et le Kraan se prépare à fondre sur vous une nouvelle fois.",
@@ -1630,6 +1665,7 @@ export const storyData: Record<string, Section> = {
   },
   "85": {
     "id": "85",
+    "image": "/images/sections/sect85.png",
     "location": "forest",
     "text": [
       "Le chemin est large et mène droit à un enchevêtrement de broussailles. Les arbres sont très hauts à cet endroit, et il y règne un silence inhabituel. Vous parcourez plus de deux kilomètres et vous entendez soudain un battement d'ailes au-dessus de vous.",
@@ -1650,6 +1686,7 @@ export const storyData: Record<string, Section> = {
   },
   "86": {
     "id": "86",
+    "image": "/images/sections/sect86.png",
     "location": "river",
     "text": [
       "Vous atteignez bientôt un nouveau croisement.",
@@ -1678,6 +1715,7 @@ export const storyData: Record<string, Section> = {
   },
   "87": {
     "id": "87",
+    "image": "/images/sections/sect87.png",
     "location": "cemetery",
     "text": [
       "Concentrant votre pouvoir de Seigneur Kaï sur la serrure, vous essayez de vous en représenter le mécanisme. Peu à peu son image se forme dans votre esprit et vous constatez qu'il est vieux et usé, mais qu'il fonctionne toujours. L'intensité de votre concentration commence à faiblir dangereusement lorsque vous entendez enfin un faible déclic qui témoigne que vos efforts n'ont pas été vains.",
@@ -1694,6 +1732,7 @@ export const storyData: Record<string, Section> = {
   },
   "88": {
     "id": "88",
+    "image": "/images/sections/sect88.png",
     "location": "city",
     "text": [
       "Vous jetez un regard prudent derrière le rocher et vous apercevez un soldat étendu sur le dos, son épée et son bouclier à ses côtés. Le bouclier porte l'image d'un Pégase blanc : c'est l'emblème du Prince du Sommer-lund. Ce soldat appartient à la garde du Prince ; son uniforme est déchiré et vous constatez qu'il porte au bras une profonde blessure.",
@@ -1714,6 +1753,7 @@ export const storyData: Record<string, Section> = {
   },
   "89": {
     "id": "89",
+    "image": "/images/sections/sect89.png",
     "location": "mountains",
     "text": [
       "Vous dévalez le flanc escarpé de la colline dans un nuage de poussière et de cailloux. Le Kraan continue de tournoyer au- dessus de votre tête comme pour guider les Gloks vers vous.",
@@ -1736,6 +1776,7 @@ export const storyData: Record<string, Section> = {
   },
   "90": {
     "id": "90",
+    "image": "/images/sections/sect90.png",
     "location": "road",
     "text": [
       "La nuit tombe et vous vous retrouvez bientôt dans une obscurité totale. Il ne servirait à rien de poursuivre votre chemin, car vous vous perdriez à coup sûr. Vous attachez donc votre cheval à un arbre, vous vous étendez sur le sol en vous couvrant de votre cape et vous sombrez dans un sommeil agité.",
@@ -1750,6 +1791,7 @@ export const storyData: Record<string, Section> = {
   },
   "91": {
     "id": "91",
+    "image": "/images/sections/sect91.png",
     "location": "city",
     "text": [
       "La petite boutique est sombre et humide. Les murs sont couverts d'étagères, remplies de livres et de bouteilles de toutes les tailles et de toutes les couleurs. Lorsque vous refermez la porte, un petit chien noir se met à aboyer et un homme chauve apparaît en sortant de derrière un grand paravent.",
@@ -1774,6 +1816,7 @@ export const storyData: Record<string, Section> = {
   },
   "92": {
     "id": "92",
+    "image": "/images/sections/sect92.png",
     "location": "city",
     "text": [
       "Vous plongez pour vous mettre à l'abri : il était temps, car une pluie de flèches noires jaillies de la forêt s'abat en sifflant à l'endroit où vous vous trouviez quelques secondes plus tôt. Vous ramenez votre cape sur vos épaules : sa couleur verte vous permet de vous fondre dans la végétation et vous vous mettez à courir dans la forêt pour fuir le plus loin possible de vos assaillants.",
@@ -1819,6 +1862,7 @@ export const storyData: Record<string, Section> = {
   },
   "95": {
     "id": "95",
+    "image": "/images/sections/sect95.png",
     "location": "city",
     "text": [
       "Vous arrivez bientôt sur un chemin forestier orienté nord-sud.",
@@ -1838,6 +1882,7 @@ export const storyData: Record<string, Section> = {
   },
   "96": {
     "id": "96",
+    "image": "/images/sections/sect96.png",
     "location": "mountains",
     "text": [
       "Retenant votre souffle, vous resserrez votre prise et vous vous préparez à frapper. La tension est insupportable. Les Gloks sont si proches que vous pouvez sentir l'odeur immonde de leurs corps malpropres. Vous les entendez pousser des jurons dans leur étrange dialecte, puis quitter les abords de la grotte pour grimper vers le sommet de la colline.",
@@ -1879,6 +1924,7 @@ export const storyData: Record<string, Section> = {
   },
   "98": {
     "id": "98",
+    "image": "/images/sections/sect98.png",
     "location": "city",
     "text": [
       "Les soldats semblent croire votre récit et ils s'inclinent respectueusement, eu égard à votre rang de Seigneur Kaï. L'un d'eux tire sur une grosse corde dissimulée dans le mur et les lourdes portes commencent aussitôt à s'ouvrir. Les gardes vous font alors entrer dans une cour intérieure tandis que les portes se referment derrière vous.",
@@ -1893,6 +1939,7 @@ export const storyData: Record<string, Section> = {
   },
   "99": {
     "id": "99",
+    "image": "/images/sections/sect99.png",
     "location": "forest",
     "text": [
       "Vous plongez dans les broussailles au moment même où le monstre s'apprêtait à vous saisir dans ses serres pointues. Vous entendez son cri lorsqu'il passe au-dessus de votre tête, et vous le voyez virer dans les airs pour se préparer à un nouvel assaut.",
@@ -1907,6 +1954,7 @@ export const storyData: Record<string, Section> = {
   },
   "100": {
     "id": "100",
+    "image": "/images/sections/sect100.png",
     "location": "city",
     "text": [
       "Le couloir glacial tourne brusquement vers l'est et vous apercevez au loin une lueur verdâtre qui diffuse une faible clarté. Vous constatez bientôt que le couloir aboutit à une grande pièce, et que l'étrange lumière provient d'une sorte de coupe, posée sur le haut dossier d'un trône de granité.",
@@ -1932,6 +1980,7 @@ export const storyData: Record<string, Section> = {
   },
   "101": {
     "id": "101",
+    "image": "/images/sections/sect101.png",
     "location": "river",
     "text": [
       "Le tumulte de la bataille se dissipe derrière vous, mais, dans le silence qui lui succède, une voix intérieure vous traite de poltron et vous reproche d'avoir abandonné un homme en danger. Vous essayez alors de faire taire votre conscience en vous disant que votre mission est beaucoup plus importante, car ce n'est pas seulement la vie de ce jeune magicien qui est menacée, mais celle de tous vos compatriotes si vous n'atteignez pas vivant la capitale du royaume.",
@@ -1946,6 +1995,7 @@ export const storyData: Record<string, Section> = {
   },
   "102": {
     "id": "102",
+    "image": "/images/sections/sect102.png",
     "location": "cemetery",
     "text": [
       "Vous descendez le flanc rocheux de la colline en direction du Cimetière des Anciens et vous apercevez au loin l'étrange nuage de brume qui baigne en permanence ces lieux grisâtres et lugubres. Ce brouillard maléfique, qui jamais ne se lève, est si dense qu'il empêche le soleil de briller sur les tombes.",
@@ -1960,6 +2010,7 @@ export const storyData: Record<string, Section> = {
   },
   "103": {
     "id": "103",
+    "image": "/images/sections/sect103.png",
     "location": "road",
     "text": [
       "Le chemin, couvert de broussailles, bifurque bientôt et un autre sentier permet d'aller vers l'est.",
@@ -1979,6 +2030,7 @@ export const storyData: Record<string, Section> = {
   },
   "104": {
     "id": "104",
+    "image": "/images/sections/sect104.png",
     "location": "city",
     "text": [
       "Les parois sont humides et couvertes de moisissure. Il règne ici une odeur de renfermé qui vous étouffe à moitié et des toiles d'araignées vous balaient le visage. Vous sentez la peur vous serrer la gorge tandis que le tunnel s'obscurcit, mais vous continuez cependant d'avancer et vous arrivez bientôt à un croisement : le tunnel aboutit à un couloir orienté nord-sud.",
@@ -1998,6 +2050,7 @@ export const storyData: Record<string, Section> = {
   },
   "105": {
     "id": "105",
+    "image": "/images/sections/sect105.png",
     "location": "river",
     "text": [
       "Un peu plus loin, vous apercevez un Corbeau, d'un noir de jais, perché sur la branche d'un vieux chêne.",
@@ -2036,6 +2089,7 @@ export const storyData: Record<string, Section> = {
   },
   "107": {
     "id": "107",
+    "image": "/images/sections/sect107.png",
     "location": "river",
     "text": [
       "Vous traversez la pièce en courant et vous vous servez de votre arme pour fracasser les crânes qui se brisent en mille morceaux. Chacun des crânes est rempli d'une gelée grise et bouillonnante qui se met à trembler et à changer de forme. A la surface luisante de cette étrange substance apparaissent bientôt des ailes de chauves-souris et des ventouses.",
@@ -2050,6 +2104,7 @@ export const storyData: Record<string, Section> = {
   },
   "108": {
     "id": "108",
+    "image": "/images/sections/sect108.png",
     "location": "city",
     "text": [
       "Tout semble se dérouler au ralenti tandis que vous décrivez dans les airs un grand arc de cercle. Dans la rue au-dessous, vous distinguez la foule qui grouille sur toute la largeur de la chaussée et vous apercevez, sur votre droite, un nid de moineaux, blotti dans une gouttière.",
@@ -2060,6 +2115,7 @@ export const storyData: Record<string, Section> = {
   },
   "109": {
     "id": "109",
+    "image": "/images/sections/sect109.png",
     "location": "forest",
     "text": "Sous le tapis, vous ne trouvez que de la poussière ! Vous pouvez à présent examiner les bouteilles en vous rendant au 164. Vous pouvez également quitter la cabane et inspecter l'écurie ; vous vous rendrez alors au 308.",
     "choices": [
@@ -2075,6 +2131,7 @@ export const storyData: Record<string, Section> = {
   },
   "110": {
     "id": "110",
+    "image": "/images/sections/sect110.png",
     "location": "forest",
     "text": "Vous lancez la pierre de toutes vos forces en visant la tête du Glok, mais la créature se baisse et votre projectile lui siffle aux oreilles sans l'atteindre. Il vous faut agir vite si vous voulez sauver le Sorcier. Rendez-vous au 55.",
     "choices": [
@@ -2086,6 +2143,7 @@ export const storyData: Record<string, Section> = {
   },
   "111": {
     "id": "111",
+    "image": "/images/sections/sect111.png",
     "location": "river",
     "text": [
       "Quelques minutes après avoir quitté le croisement, vous apercevez un peu plus loin une petite cabane en rondins à côté d'une écurie. Vous vous approchez et vous jetez un coup d'oeil dans la cabane à travers le carreau d'une fenêtre. L'endroit semble désert.",
@@ -2105,6 +2163,7 @@ export const storyData: Record<string, Section> = {
   },
   "112": {
     "id": "112",
+    "image": "/images/sections/sect112.png",
     "location": "mountains",
     "text": [
       "Soudain, le gros rocher derrière lequel vous vous êtes caché roule sur lui-même, poussé par deux Gloks hurlants qui vous font face et qui ont visiblement l'intention de vous tuer. L'entrée de la grotte est étroite, et vous ne pouvez combattre qu'un Glok à la fois.",
@@ -2137,6 +2196,7 @@ export const storyData: Record<string, Section> = {
   },
   "113": {
     "id": "113",
+    "image": "/images/sections/sect113.png",
     "location": "road",
     "text": [
       "Vous avez marché pendant plus d'une demi-heure lorsque vous apercevez des fleurs d'un rouge vif qui poussent sur un monticule. Vous reconnaissez aussitôt cette plante : c'est du Laumspur, une herbe rare très recherchée pour ses vertus curatives. Vous cueillez alors une bonne poignée de cette herbe que vous rangez dans votre Sac à Dos.",
@@ -2172,6 +2232,7 @@ export const storyData: Record<string, Section> = {
   },
   "115": {
     "id": "115",
+    "image": "/images/sections/sect115.png",
     "location": "river",
     "text": [
       "Vous entrez d'un pas chancelant dans la première maison et vous vous écroulez sur le sol, complètement épuisé. Vous sentez alors une odeur de viande cuite et vous apercevez une marmite suspendue au-dessus des braises d'un feu mourant. Une grande table de chêne est dressée au centre de la pièce : de toute évidence, le ou les habitants de cette maison l'ont quittée en toute hâte le matin même.",
@@ -2197,6 +2258,7 @@ export const storyData: Record<string, Section> = {
   },
   "116": {
     "id": "116",
+    "image": "/images/sections/sect116.png",
     "location": "river",
     "text": [
       "Des flèches noires s'abattent tout autour de vous lorsque vous vous hissez hors de l'eau boueuse. Vous vous précipitez vers les arbres pour vous mettre à couvert et attendre que les Gloks aient quitté la rive opposée. Vous reprenez ensuite votre chemin en direction de la capitale.",
@@ -2211,6 +2273,7 @@ export const storyData: Record<string, Section> = {
   },
   "117": {
     "id": "117",
+    "image": "/images/sections/sect117.png",
     "location": "river",
     "text": [
       "L'homme est grièvement blessé, et sa mort est proche.",
@@ -2226,6 +2289,7 @@ export const storyData: Record<string, Section> = {
   },
   "118": {
     "id": "118",
+    "image": "/images/sections/sect118.png",
     "location": "road",
     "text": [
       "Vous lancez votre cheval au galop le long du chemin droit. Vous apercevez à l'horizon les contours de Holmgard dont les hautes murailles et les tours scintillent sous les rayons du soleil. Le sentier que vous suivez rejoint bientôt une grande route orientée nord-sud.",
@@ -2240,6 +2304,7 @@ export const storyData: Record<string, Section> = {
   },
   "119": {
     "id": "119",
+    "image": "/images/sections/sect119.png",
     "location": "road",
     "text": [
       "Les Brosses à Potence déchirent votre cape et vous écorchent bras et jambes tandis que vous vous frayez un chemin dans leur enchevêtrement d'épines. Un quart d'heure plus tard, vous sortez enfin des buissons et vous poursuivez votre route d'un pas chancelant, mais parmi les arbres cette fois.",
@@ -2261,6 +2326,7 @@ export const storyData: Record<string, Section> = {
   },
   "120": {
     "id": "120",
+    "image": "/images/sections/sect120.png",
     "location": "city",
     "text": [
       "Vous entendez les Gloks fous et sanguinaires tuer les autres chevaux de la roulotte. Vous jetez alors un coup d'œil par-dessus votre épaule : le Kraan s'est mis à tournoyer dans les airs. A-t-il l'intention de vous attaquer ou s'intéresse-t-il à autre chose ?",
@@ -2286,6 +2352,7 @@ export const storyData: Record<string, Section> = {
   },
   "121": {
     "id": "121",
+    "image": "/images/sections/sect121.png",
     "location": "river",
     "text": [
       "Après quelques minutes de marche, vous apercevez la silhouette d'un homme vêtu de rouge qui se tient debout au milieu du chemin. Il vous tourne le dos, et un capuchon lui couvre la tête. Le corbeau noir que vous avez vu un peu plus tôt est perché sur son bras tendu.",
@@ -2325,6 +2392,7 @@ export const storyData: Record<string, Section> = {
   },
   "123": {
     "id": "123",
+    "image": "/images/sections/sect123.png",
     "location": "road",
     "text": [
       "Lorsque la créature meurt, son corps se dissout en une espèce de liquide verdâtre et répugnant. Vous remarquez alors que les herbes et les plantes sur lesquelles se répand cette substance fumante se ratatinent et meurent aussitôt. Une Pierre Précieuse de bonne taille apparaît parmi les herbes, près du corps en décomposition.",
@@ -2365,6 +2433,7 @@ export const storyData: Record<string, Section> = {
   },
   "125": {
     "id": "125",
+    "image": "/images/sections/sect125.png",
     "location": "road",
     "text": [
       "Le chemin mène à une grande clairière. Vous remarquez aussitôt sur le sol d'étranges empreintes de pattes griffues. De toute évidence, des Kraans se sont posés ici même. A en juger par le nombre d'empreintes et la surface qu'elles couvrent, ce sont au moins cinq de ces répugnantes créatures qui se sont rassemblées là dans les dernières douze heures.",
@@ -2390,6 +2459,7 @@ export const storyData: Record<string, Section> = {
   },
   "126": {
     "id": "126",
+    "image": "/images/sections/sect126.png",
     "location": "road",
     "text": [
       "Vous chevauchez de plus en plus loin dans la forêt et, dans votre for intérieur, vous remerciez le Prince de vous avoir donné un si bon cheval, car bien que le sol soit entièrement recouvert d'un enchevêtrement de buissons et de racines, l'étalon blanc n'a jamais fait le moindre faux pas.",
@@ -2410,6 +2480,7 @@ export const storyData: Record<string, Section> = {
   },
   "127": {
     "id": "127",
+    "image": "/images/sections/sect127.png",
     "location": "road",
     "text": [
       "Après avoir marché pendant une heure, les Drakkarims s'arrêtent soudain tandis qu'une énorme créature couverte d'écaillés grises s'approche sur le chemin. Lorsque la bête répugnante se trouve tout près de vous, son haleine fétide vous fait grimacer. Le monstre pousse un rugissement et vous saisit la tête entre ses pattes palmées.",
@@ -2419,6 +2490,7 @@ export const storyData: Record<string, Section> = {
   },
   "128": {
     "id": "128",
+    "image": "/images/sections/sect128.png",
     "location": "city",
     "text": [
       "Vous écartez prudemment le feuillage, et une vision d'horreur s'offre aussitôt à vous : un peu plus loin, dans une petite clairière, trois Gloks ont attaché un homme à un poteau et sont en train de mettre le feu à un tas de broussailles disposé à ses pieds.",
@@ -2439,6 +2511,7 @@ export const storyData: Record<string, Section> = {
   },
   "129": {
     "id": "129",
+    "image": "/images/sections/sect129.png",
     "location": "city",
     "text": [
       "Vous parvenez devant la porte principale de la ville et vous contemplez avec révérence les murs gigantesques qui se dressent devant vous. Hautes de soixante mètres, les murailles de Holmgard ont résisté tout à la fois au Temps et aux Maîtres des Ténèbres.",
@@ -2532,6 +2605,7 @@ export const storyData: Record<string, Section> = {
   },
   "133": {
     "id": "133",
+    "image": "/images/sections/sect133.png",
     "location": "river",
     "text": [
       "Quand vous vous approchez de la statue, celle-ci commence à se craqueler et, soudain, elle explose devant vous tandis qu'un véritable serpent ailé, débarrassé de son manteau de pierre vous attaque férocement. Il vous faut combattre la créature. SERPENT AILÉ HABILETÉ : 16 ENDURANCE : 18 Votre adversaire est insensible à la Discipline Kaï de la Puissance Psychique.",
@@ -2552,6 +2626,7 @@ export const storyData: Record<string, Section> = {
   },
   "134": {
     "id": "134",
+    "image": "/images/sections/sect134.png",
     "location": "city",
     "text": [
       "Vos talents de Seigneur Kaï vous permettent de déceler des traces de Gloks tout autour de la clairière. Les empreintes sont fraîches, et il ne fait aucun doute que ces cruels serviteurs des Maîtres des Ténèbres se trouvaient là il y a moins de deux heures.",
@@ -2571,6 +2646,7 @@ export const storyData: Record<string, Section> = {
   },
   "135": {
     "id": "135",
+    "image": "/images/sections/sect135.png",
     "location": "river",
     "text": [
       "Parvenu au bord de l'escarpement de la berge, vous jetez un coup d'œil en contrebas et vous apercevez un enchevêtrement de débris de bois portés là par le courant. Un gros tronc d'arbre, notamment, s'est échoué sur la rive, à côté d'un petit canoë.",
@@ -2590,6 +2666,7 @@ export const storyData: Record<string, Section> = {
   },
   "136": {
     "id": "136",
+    "image": "/images/sections/sect136.png",
     "location": "forest",
     "text": [
       "Les Gloks se rapprochent puis s'accroupissent, prêts à bondir. Vous apercevez les pointes dentelées de leurs lances et vous entendez les sons gutturaux qu'ils produisent en parlant. « Rob Gaye Oring Ahrr oho key ! Pamark élbhûtt ! » s'écrie la plus grande des deux créatures qui vous attaque aussitôt.",
@@ -2632,6 +2709,7 @@ export const storyData: Record<string, Section> = {
   },
   "138": {
     "id": "138",
+    "image": "/images/sections/sect138.png",
     "location": "city",
     "text": [
       "Vous dégainez votre arme et vous vous portez à la rencontre de l'ennemi. Ce sont deux Gloks que vous devrez combattre à tour de rôle. HABILETÉ ENDURANCE Premier GLOK 13 10 Deuxième GLOK 12 10",
@@ -2658,6 +2736,7 @@ export const storyData: Record<string, Section> = {
   },
   "139": {
     "id": "139",
+    "image": "/images/sections/sect139.png",
     "location": "city",
     "text": [
       "Il règne dans la cour une intense activité. Des éclaireurs de la cavalerie attendent à côté de leurs chevaux que leurs commandants d'unité, rassemblés au Quartier Général, leur confient des messages à porter. A chaque instant, l'un de ces hommes quitte la cour au galop, porteur d'une dépêche destinée aux officiers en poste dans le camp fortifié.",
@@ -2672,6 +2751,7 @@ export const storyData: Record<string, Section> = {
   },
   "140": {
     "id": "140",
+    "image": "/images/sections/sect140.png",
     "location": "forest",
     "text": [
       "Vous vous trouvez dans une clairière au centre de laquelle on a élevé une tour branlante à l'aide de troncs d'arbres grossièrement taillés. Au pied de la tour, trois sentiers partent dans différentes directions.",
@@ -2700,6 +2780,7 @@ export const storyData: Record<string, Section> = {
   },
   "141": {
     "id": "141",
+    "image": "/images/sections/sect141.png",
     "location": "road",
     "text": [
       "Votre Sixième Sens vous avertit que quelques-unes des créatures qui ont attaqué le monastère sont restées dans les environs et inspectent les deux chemins, en quête d'éventuels survivants à massacrer. Vous pouvez cependant éviter ces deux sentiers en coupant par les sous-bois de la forêt.",
@@ -2747,6 +2828,7 @@ export const storyData: Record<string, Section> = {
   },
   "143": {
     "id": "143",
+    "image": "/images/sections/sect143.png",
     "location": "city",
     "text": "Vous sortez bientôt de la forêt pour arriver sur une grande route : c'est celle qui relie le port de Toran à la capitale. Vous lancez votre cheval au galop : si tout va bien vous devriez avoir atteint Holmgard dans la matinée. Rendez-vous au 149.",
     "choices": [
@@ -2783,6 +2865,7 @@ export const storyData: Record<string, Section> = {
   },
   "145": {
     "id": "145",
+    "image": "/images/sections/sect145.png",
     "location": "road",
     "text": "Vous avez l'impression d'avoir été renversé par un chariot. Vous tombez en avant et vous perdez connaissance en ressentant une terrible douleur dans le dos, et avec un goût désagréable dans la bouche : celui de la poussière qui recouvre la route. Rendez-vous au 165.",
     "choices": [
@@ -2794,6 +2877,7 @@ export const storyData: Record<string, Section> = {
   },
   "146": {
     "id": "146",
+    "image": "/images/sections/sect146.png",
     "location": "road",
     "damage": 3,
     "text": [
@@ -2809,6 +2893,7 @@ export const storyData: Record<string, Section> = {
   },
   "147": {
     "id": "147",
+    "image": "/images/sections/sect147.png",
     "location": "road",
     "text": [
       "Après avoir marché pendant quelques minutes, vous passez devant une petite hutte couverte de mousse qui a été bâtie à l'écart du chemin. Vous avez faim et il vous faut prendre un Repas, sinon, vous perdez 3 points d'ENDURANCE. Vous constatez bientôt que le chemin tourne vers l'est.",
@@ -2828,6 +2913,7 @@ export const storyData: Record<string, Section> = {
   },
   "148": {
     "id": "148",
+    "image": "/images/sections/sect148.png",
     "location": "city",
     "text": [
       "Vous ouvrez la porte d'un coup de pied et vous vous ruez à l'intérieur de la ferme. Un Kraan s'élève dans les airs en poussant un cri de victoire : il tient une victime dans ses serres pointues. Vous reprenez votre équilibre et vous jetez un coup d'œil autour de vous : l'endroit est désert.",
@@ -2853,6 +2939,7 @@ export const storyData: Record<string, Section> = {
   },
   "149": {
     "id": "149",
+    "image": "/images/sections/sect149.png",
     "location": "road",
     "text": [
       "Tandis que vous parcourez la grand-route à cheval, la lumière du jour diminue de plus en plus ; bientôt, il fera complètement nuit et vous ne pourrez plus voir les ennerrus qui vous attendent dans l'ombre. Vous décidez donc de vous arrêter en lisière de la forêt et de vous cacher là jusqu'au matin.",
@@ -2867,6 +2954,7 @@ export const storyData: Record<string, Section> = {
   },
   "150": {
     "id": "150",
+    "image": "/images/sections/sect150.png",
     "location": "river",
     "text": [
       "Bien qu'elle soit un peu trop cuite, cette nourriture a un goût délicieux (il n'y en a pas assez cependant pour constituer un repas complet) et l'eau claire étanche votre soif. Vous avez passé environ une demi-heure dans cette maison lorsque vous vous rendez soudain compte que vous êtes en train de prendre du retard.",
@@ -2881,6 +2969,7 @@ export const storyData: Record<string, Section> = {
   },
   "151": {
     "id": "151",
+    "image": "/images/sections/sect151.png",
     "location": "forest",
     "damage": 2,
     "text": [
@@ -2948,6 +3037,7 @@ export const storyData: Record<string, Section> = {
   },
   "154": {
     "id": "154",
+    "image": "/images/sections/sect154.png",
     "location": "cemetery",
     "text": [
       "Votre blessure vous donne le tournis et vous titubez parmi les arbres comme un aveugle.",
@@ -2976,6 +3066,7 @@ export const storyData: Record<string, Section> = {
   },
   "156": {
     "id": "156",
+    "image": "/images/sections/sect156.png",
     "location": "river",
     "text": [
       "Des flèches noires se fichent dans la boue tout autour de vous. D'autres Gloks ont fait leur apparition sur la berge escarpée de la rivière et vous tirent dessus. De ce côté du cours d'eau, il n'y a pas d'arbres pour vous mettre à l'abri.",
@@ -2995,6 +3086,7 @@ export const storyData: Record<string, Section> = {
   },
   "157": {
     "id": "157",
+    "image": "/images/sections/sect157.png",
     "location": "forest",
     "text": [
       "La forêt s'éclaircit et vous apercevez bientôt une route un peu plus loin. Une véritable foule occupe toute la largeur de la chaussée et des hommes et des femmes tirent des carrioles remplies d'objets, de meubles ou de vêtements. Ce sont des réfugiés qui fuient le nord du royaume.",
@@ -3037,6 +3129,7 @@ export const storyData: Record<string, Section> = {
   },
   "159": {
     "id": "159",
+    "image": "/images/sections/sect159.png",
     "location": "river",
     "text": [
       "Le marchand refuse votre offre : il ne vous laissera pas monter dans la roulotte. Et, soudain, il claque des doigts à l'adresse d'un de ses gardes du corps qui empoigne aussitôt le pommeau de son arme.",
@@ -3075,6 +3168,7 @@ export const storyData: Record<string, Section> = {
   },
   "161": {
     "id": "161",
+    "image": "/images/sections/sect161.png",
     "location": "river",
     "text": [
       "Au moment où vous vous asseyez, le Serpent de Pierre se met à bouger. Une sueur froide perle à votre front et vous empoignez votre arme d'une main tremblante, prêt à vous défendre contre une attaque éventuelle. Une langue rouge et fourchue jaillit alors de la tête de cette étrange statue et vient plonger dans la coupe de lumière verte posée sur le dossier du trône, au-dessus de vous.",
@@ -3090,6 +3184,7 @@ export const storyData: Record<string, Section> = {
   },
   "162": {
     "id": "162",
+    "image": "/images/sections/sect162.png",
     "location": "city",
     "text": [
       "Vous vous approchez de ces hommes et vous les appelez.",
@@ -3110,6 +3205,7 @@ export const storyData: Record<string, Section> = {
   },
   "163": {
     "id": "163",
+    "image": "/images/sections/sect163.png",
     "location": "river",
     "text": [
       "Au bout d'une demi-heure environ, vous sentez que le courant devient plus fort. Un peu plus loin, le cours de la rivière forme un méandre et ses eaux s'agitent en un puissant tourbillon qui vous emportera au fond si vous vous laissez entraîner. Vous décidez donc de nager vers la rive droite et de poursuivre votre chemin à pied.",
@@ -3141,6 +3237,7 @@ export const storyData: Record<string, Section> = {
   },
   "165": {
     "id": "165",
+    "image": "/images/sections/sect165.png",
     "location": "river",
     "damage": 6,
     "text": [
@@ -3157,6 +3254,7 @@ export const storyData: Record<string, Section> = {
   },
   "166": {
     "id": "166",
+    "image": "/images/sections/sect166.png",
     "location": "forest",
     "damage": 4,
     "text": [
@@ -3173,6 +3271,7 @@ export const storyData: Record<string, Section> = {
   },
   "167": {
     "id": "167",
+    "image": "/images/sections/sect167.png",
     "location": "city",
     "text": [
       "Vous avez parcouru environ deux kilomètres lorsque vous apercevez deux jambes qui dépassent de derrière un gros rocher.",
@@ -3197,6 +3296,7 @@ export const storyData: Record<string, Section> = {
   },
   "168": {
     "id": "168",
+    "image": "/images/sections/sect168.png",
     "location": "cemetery",
     "text": [
       "Vous vous hissez au sommet de la luxueuse roulotte et vous vous installez au milieu des malles et des valises. La nuit bientôt tombera sur la grand-route. Un vent frais souffle de l'ouest, qui vous oblige à bien serrer votre cape autour de vous pour n'avoir pas trop froid.",
@@ -3212,6 +3312,7 @@ export const storyData: Record<string, Section> = {
   },
   "169": {
     "id": "169",
+    "image": "/images/sections/sect169.png",
     "location": "cemetery",
     "text": [
       "Lorsque vous passez devant les crânes, chacun d'eux pivote lentement sur lui-même comme pour suivre le moindre de vos mouvements. Vous vous trouvez à présent au milieu de cette chambre mortuaire et, soudain, vous entendez un bruit d'os qui se brise. Des formes monstrueuses éclosent alors des crânes en déployant des ailes semblables à celles des chauves-souris.",
@@ -3265,6 +3366,7 @@ export const storyData: Record<string, Section> = {
   },
   "171": {
     "id": "171",
+    "image": "/images/sections/sect171.png",
     "location": "forest",
     "text": [
       "Vous avez atteint la lisière du bois lorsque votre cheval se cabre soudain en poussant un hennissement de douleur. Le Kraan a enfoncé ses serres pointues dans les pattes arrière de votre monture et tente de vous désarçonner à grands coups d'aile. Pendant ce temps, le Glok diabolique lance de petits cris triomphants en brandissant sa lance.",
@@ -3307,6 +3409,7 @@ export const storyData: Record<string, Section> = {
   },
   "173": {
     "id": "173",
+    "image": "/images/sections/sect173.png",
     "location": "city",
     "text": [
       "Lorsque vous atteignez la porte, un énorme bloc de pierre tombant du plafond s'écrase au sol, juste derrière vous. Vous faites volte-face et vous constatez que la sortie est à présent entièrement obstruée.",
@@ -3326,6 +3429,7 @@ export const storyData: Record<string, Section> = {
   },
   "174": {
     "id": "174",
+    "image": "/images/sections/sect174.png",
     "location": "river",
     "text": [
       "Après vous être laissé dériver pendant environ une heure, vous remarquez que le courant devient plus fort. Vous apercevez alors à quelque distance un tourbillon que forment les eaux de la rivière à hauteur d'un méandre. Les flots vous entraînent vers ce puissant remous qui pourrait bien signifier pour vous la noyade pure et simple.",
@@ -3341,6 +3445,7 @@ export const storyData: Record<string, Section> = {
   },
   "175": {
     "id": "175",
+    "image": "/images/sections/sect175.png",
     "location": "river",
     "text": [
       "De la main, vous faites signe aux cavaliers en qui vous reconnaissez des Gardes-Frontières de l'armée du Roi. Ils font partie du régiment chargé de surveiller les frontières occidentales du Royaume, souvent menacées.",
@@ -3366,6 +3471,7 @@ export const storyData: Record<string, Section> = {
   },
   "176": {
     "id": "176",
+    "image": "/images/sections/sect176.png",
     "location": "road",
     "text": [
       "Vous vous cachez derrière d'épais buissons en espérant que le Loup Maudit et son cavalier ne verront pas votre cheval blanc. Par chance, votre ruse réussit et les malfaisantes créatures passent devant vous sans vous remarquer, puis s'éloignent le long du sentier que vous venez de quitter.",
@@ -3397,6 +3503,7 @@ export const storyData: Record<string, Section> = {
   },
   "178": {
     "id": "178",
+    "image": "/images/sections/sect178.png",
     "location": "city",
     "text": [
       "Votre Sixième Sens vous permet de reconnaître à distance les bottes et les guêtres d'un soldat de l'armée royale. Vous sentez également que cet homme est blessé et qu'il a besoin d'aide.",
@@ -3416,6 +3523,7 @@ export const storyData: Record<string, Section> = {
   },
   "179": {
     "id": "179",
+    "image": "/images/sections/sect179.png",
     "location": "city",
     "text": [
       "Vous avez été repéré par les gardes qui vous mettent en joue avec leurs arbalètes.",
@@ -3435,6 +3543,7 @@ export const storyData: Record<string, Section> = {
   },
   "180": {
     "id": "180",
+    "image": "/images/sections/sect180.png",
     "location": "city",
     "text": [
       "Ils vous voient lever votre arme et vous attaquent aussitôt.",
@@ -3456,6 +3565,7 @@ export const storyData: Record<string, Section> = {
   },
   "181": {
     "id": "181",
+    "image": "/images/sections/sect181.png",
     "location": "river",
     "text": [
       "Instinctivement, vous plongez en avant pour éviter le carreau de l'arbalète. Le brigand tire et vous sentez la manche de votre tunique se déchirer tandis que le projectile vous écorche le bras gauche. Vous remerciez les Dieux de vous avoir protégé et vous prenez vos jambes à votre cou.",
@@ -3471,6 +3581,7 @@ export const storyData: Record<string, Section> = {
   },
   "182": {
     "id": "182",
+    "image": "/images/sections/sect182.png",
     "location": "city",
     "text": [
       "Trois Gardes-Frontières de l'armée royale galopent le long de la rive, suivis de près par des Gloks chevauchant leurs terribles montures, des Loups Maudits. Votre science du Camouflage vous a cependant évité d'être vu et les Gloks diaboliques continuent leur poursuite sans même jeter un coup d'œil du côté de la rivière.",
@@ -3485,6 +3596,7 @@ export const storyData: Record<string, Section> = {
   },
   "183": {
     "id": "183",
+    "image": "/images/sections/sect183.png",
     "location": "ruins",
     "text": [
       "L'officier ordonne à ses hommes de s'arrêter et vous demande ce que vous voulez. Vous lui expliquez qui vous êtes et vous lui faites le récit de la destruction du Monastère. Consterné par la nouvelle qu'il vient d'apprendre, il vous donne un cheval et vous demande de le suivre auprès du Prince Pellagayo, le fils du Roi.",
@@ -3522,6 +3634,7 @@ export const storyData: Record<string, Section> = {
   },
   "185": {
     "id": "185",
+    "image": "/images/sections/sect185.png",
     "location": "city",
     "text": [
       "Vous plissez les yeux et vous scrutez le feuillage des arbres pour voir s'il ne s'y cache pas un archer. Votre attente ne dure guère car, quelques instants plus tard, une douleur fulgurante vous déchire la poitrine et vous êtes projeté en arrière sous le choc de trois flèches qui vous transpercent le corps.",
@@ -3532,6 +3645,7 @@ export const storyData: Record<string, Section> = {
   },
   "186": {
     "id": "186",
+    "image": "/images/sections/sect186.png",
     "location": "river",
     "text": [
       "Les Kakarmis disparaissent bientôt dans l'épaisseur des sous- bois et vous vous retrouvez seul, perdu de surcroît. Vous avez marché pendant près de deux heures lorsque vous entendez soudain le bruit d'une eau qui court. Vous décidez d'aller dans la direction d'où provient ce bruit.",
@@ -3566,6 +3680,7 @@ export const storyData: Record<string, Section> = {
   },
   "188": {
     "id": "188",
+    "image": "/images/sections/sect188.png",
     "location": "forest",
     "text": [
       "L'ombre du Kraan grandit tout autour de vous et, soudain, le monstre vous frappe dans le dos en vous jetant à terre sous la force de son attaque.",
@@ -3582,6 +3697,7 @@ export const storyData: Record<string, Section> = {
   },
   "189": {
     "id": "189",
+    "image": "/images/sections/sect189.png",
     "location": "road",
     "text": [
       "Grâce à votre entraînement de Seigneur Kaï et à la promptitude de vos réflexes, vous avez échappé à ce marécage qui aurait pu se révéler tout aussi meurtrier qu'un Kraan ou un Drakkarim. Vous êtes contrarié d'avoir perdu du temps et vous vous hâtez de poursuivre votre chemin parmi les arbres, en direction du sud.",
@@ -3616,6 +3732,7 @@ export const storyData: Record<string, Section> = {
   },
   "191": {
     "id": "191",
+    "image": "/images/sections/sect191.png",
     "location": "city",
     "text": [
       "Le garde du corps dégaine un long cimeterre et s'apprête à vous attaquer. GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 21",
@@ -3640,6 +3757,7 @@ export const storyData: Record<string, Section> = {
   },
   "192": {
     "id": "192",
+    "image": "/images/sections/sect192.png",
     "location": "city",
     "text": [
       "Vous distinguez la gueule hérissée de dents pointues d'un Loup Maudit et vous entendez les cris monstrueux des Gloks. Deux d'entre eux viennent droit sur vous, mais votre cheval vous sauve d'une mort certaine en sautant sur les Loups Maudits qu'il projette à terre à grands coups de sabot.",
@@ -3660,6 +3778,7 @@ export const storyData: Record<string, Section> = {
   },
   "193": {
     "id": "193",
+    "image": "/images/sections/sect193.png",
     "location": "road",
     "text": [
       "La bête sauvage et son cavalier sont étendus raides morts à vos pieds. Vous remarquez alors un rouleau de Parchemin glissé dans la ceinture du Glok. Vous pouvez le prendre et le noter sur votre Feuille d'Aventure dans la case Objets Spéciaux. Les autres Loups Maudits se précipitent dans votre direction, le long du sentier.",
@@ -3679,6 +3798,7 @@ export const storyData: Record<string, Section> = {
   },
   "194": {
     "id": "194",
+    "image": "/images/sections/sect194.png",
     "location": "city",
     "text": [
       "Vous courez à toutes jambes en direction du chariot. La panique s'est répandue parmi la foule, tandis que les Kraan attaquent et emportent leurs malheureuses victimes dans un ciel obscurci par leurs immenses ailes noires. Un Kraan, plus grand encore que les autres, vole au-dessus du chariot et trois Gloks hurlants sautent de son dos pour atterrir à califourchon sur les chevaux de l'attelage.",
@@ -3699,6 +3819,7 @@ export const storyData: Record<string, Section> = {
   },
   "195": {
     "id": "195",
+    "image": "/images/sections/sect195.png",
     "location": "mountains",
     "text": [
       "Vous essuyez votre arme qui ruisselle du sang de l'ours et vous remarquez l'entrée d'une grotte cachée derrière les rochers d'où a surgi la bête sauvage.",
@@ -3718,6 +3839,7 @@ export const storyData: Record<string, Section> = {
   },
   "196": {
     "id": "196",
+    "image": "/images/sections/sect196.png",
     "location": "city",
     "text": [
       "Vous suivez l'homme dans une petite bibliothèque contiguë. Il pousse alors l'un des nombreux livres alignés sur les étagères et vous entendez un déclic. Aussitôt, tout un pan d'étagères glisse sur lui-même, découvrant un passage secret.",
@@ -3737,6 +3859,7 @@ export const storyData: Record<string, Section> = {
   },
   "197": {
     "id": "197",
+    "image": "/images/sections/sect197.png",
     "location": "river",
     "text": [
       "Le Drakkarim est étendu raide mort au fond de l'embarcation. Il est porteur d'un sabre et de 6 Pièces d'Or que vous pouvez vous approprier si tel est votre désir. Vous jetez ensuite le corps de votre adversaire dans l'eau du lac et vous le regardez disparaître dans ses profondeurs glacées.",
@@ -3751,6 +3874,7 @@ export const storyData: Record<string, Section> = {
   },
   "198": {
     "id": "198",
+    "image": "/images/sections/sect198.png",
     "location": "city",
     "text": [
       "Vous sentez qu'il y a quelqu'un d'autre derrière le paravent et que toute cette boutique baigne dans une aura maléfique. Soyez sur vos gardes, il se passe ici quelque chose de louche.",
@@ -3770,6 +3894,7 @@ export const storyData: Record<string, Section> = {
   },
   "199": {
     "id": "199",
+    "image": "/images/sections/sect199.png",
     "location": "city",
     "text": [
       "La plupart des placards et des tiroirs sont vides. Les habitants de cette maison ont presque tout emporté avec eux ; vous parvenez cependant à trouver dans la cave suffisamment de fruits pour vous faire un Repas. Notez-le sur votre Feuille d'Aventure.",
@@ -3805,6 +3930,7 @@ export const storyData: Record<string, Section> = {
   },
   "201": {
     "id": "201",
+    "image": "/images/sections/sect201.png",
     "location": "road",
     "text": [
       "Vous suivez le sentier pendant une heure environ, puis vous découvrez un autre chemin plus large qui part en direction du sud.",
@@ -3829,6 +3955,7 @@ export const storyData: Record<string, Section> = {
   },
   "202": {
     "id": "202",
+    "image": "/images/sections/sect202.png",
     "location": "road",
     "text": [
       "Vous galopez le long de la grand-route qui mène à la capitale lorsque votre cheval ralentit soudain l'allure, se met à boiter, puis s'arrête. Vous mettez pied à terre pour examiner sa jambe avant droite qu'il tient levée : il a perdu un fer et s'est blessé au sabot.",
@@ -3843,6 +3970,7 @@ export const storyData: Record<string, Section> = {
   },
   "203": {
     "id": "203",
+    "image": "/images/sections/sect203.png",
     "location": "cemetery",
     "damage": 10,
     "text": [
@@ -3862,6 +3990,7 @@ export const storyData: Record<string, Section> = {
   },
   "204": {
     "id": "204",
+    "image": "/images/sections/sect204.png",
     "location": "road",
     "text": [
       "Après avoir marché pendant une heure, vous arrivez à une bifurcation. Le sentier que vous suivez continue vers le sud et un autre chemin sur votre droite part vers l'ouest. Le sentier orienté à l'ouest vous ramènerait droit au marécage et vous décidez donc de poursuivre en direction du sud.",
@@ -3876,6 +4005,7 @@ export const storyData: Record<string, Section> = {
   },
   "205": {
     "id": "205",
+    "image": "/images/sections/sect205.png",
     "location": "city",
     "text": [
       "Leur chef ramasse votre Équipement et vous fait signe d'avancer le long du chemin. Les deux autres ont alors un sourire mauvais et vous vous rendez soudain compte qu'il ne s'agit pas du tout de soldats : ce sont des brigands déguisés. Vous prenez aussitôt la fuite en courant à toutes jambes vers la capitale.",
@@ -3895,6 +4025,7 @@ export const storyData: Record<string, Section> = {
   },
   "206": {
     "id": "206",
+    "image": "/images/sections/sect206.png",
     "location": "city",
     "damage": 10,
     "text": "Le sentier débouche bientôt sur une grande route où un poteau de signalisation indique Toran au nord et Holmgard au sud. Vous prenez la direction du sud, vers la capitale. Rendez-vous au 224.",
@@ -3907,6 +4038,7 @@ export const storyData: Record<string, Section> = {
   },
   "207": {
     "id": "207",
+    "image": "/images/sections/sect207.png",
     "location": "city",
     "text": [
       "Le sentier aboutit bientôt à une route qui traverse le cours d'eau par un pont de pierre. Un panneau de signalisation indique Toran au nord et Holmgard au sud. La route est encombrée d'une foule de gens qui marchent vers le sud en poussant des carrioles remplies d'objets divers.",
@@ -3921,6 +4053,7 @@ export const storyData: Record<string, Section> = {
   },
   "208": {
     "id": "208",
+    "image": "/images/sections/sect208.png",
     "location": "forest",
     "text": [
       "Les répugnantes créatures brandissent leurs lances et vous attaquent. Il vous faut les combattre en les considérant comme un seul et même ennemi. GLOKS HABILETÉ: 15 ENDURANCE: 13",
@@ -3945,6 +4078,7 @@ export const storyData: Record<string, Section> = {
   },
   "209": {
     "id": "209",
+    "image": "/images/sections/sect209.png",
     "location": "city",
     "text": "Devant vous un couloir monte en pente douce. Lorsque vous arrivez au bout de cette pente, une porte de pierre glisse dans le mur, découvrant un autre passage. Vous franchissez la porte qui se referme aussitôt derrière vous avec un grincement. Rendez- vous au 23.",
     "choices": [
@@ -3956,6 +4090,7 @@ export const storyData: Record<string, Section> = {
   },
   "210": {
     "id": "210",
+    "image": "/images/sections/sect210.png",
     "location": "river",
     "text": [
       "A peine avez-vous franchi la porte qu'un compagnon de la Guilde vous barre le passage et vous demande ce que vous voulez. Vous lui expliquez alors la nature de votre mission et il s'empresse aussitôt de vous mener dans les appartements des Maîtres de la Guilde.",
@@ -3978,6 +4113,7 @@ export const storyData: Record<string, Section> = {
   },
   "211": {
     "id": "211",
+    "image": "/images/sections/sect211.png",
     "location": "city",
     "text": [
       "Vous marchez le long d'un couloir plongé dans la pénombre et vous arrivez bientôt dans une grande pièce carrée. Une porte de chêne est aménagée dans le mur d'en face.",
@@ -4021,6 +4157,7 @@ export const storyData: Record<string, Section> = {
   },
   "213": {
     "id": "213",
+    "image": "/images/sections/sect213.png",
     "location": "forest",
     "text": [
       "Il y a bien deux heures à présent que vous vous frayez un chemin dans la forêt et votre crainte de vous être perdu semble bel et bien justifiée. Vous n'avez décelé aucune trace témoignant de la présence de l'ennemi dans cette partie de la forêt ; seul le cri d'un Kraan au lointain est venu parfois troubler la quiétude qui règne alentour.",
@@ -4035,6 +4172,7 @@ export const storyData: Record<string, Section> = {
   },
   "214": {
     "id": "214",
+    "image": "/images/sections/sect214.png",
     "location": "road",
     "text": "Le sentier se rétrécit peu à peu, puis disparaît bientôt dans une végétation inextricable. Impossible de poursuivre dans cette direction, il vous faut retourner à la clairière. Rendez-vous au 125 pour prendre le chemin orienté au sud.",
     "choices": [
@@ -4046,6 +4184,7 @@ export const storyData: Record<string, Section> = {
   },
   "215": {
     "id": "215",
+    "image": "/images/sections/sect215.png",
     "location": "road",
     "text": [
       "Vous arrivez dans une petite clairière au centre de laquelle reposent les os blanchis d'un énorme animal. Un sentier étroit part de la clairière en direction du sud.",
@@ -4065,6 +4204,7 @@ export const storyData: Record<string, Section> = {
   },
   "216": {
     "id": "216",
+    "image": "/images/sections/sect216.png",
     "location": "river",
     "text": [
       "Vous posez une main sur son front et l'autre sur la plaie de son bras. Vous sentez alors la chaleur de votre Pouvoir de Guérison quitter votre corps et se répandre dans celui de l'homme blessé. Des forces lui reviennent ; il parle et vous dit s'appeler Trimis.",
@@ -4080,6 +4220,7 @@ export const storyData: Record<string, Section> = {
   },
   "217": {
     "id": "217",
+    "image": "/images/sections/sect217.png",
     "location": "city",
     "text": [
       "Vous vous hâtez de fuir le vieux fou et vous disparaissez dans une ruelle obscure, bordée de petites maisons serrées les unes contre les autres. Au bout de la ruelle, une enseigne accrochée au- dessus d'une porte verte indique : KOLANIS Herboriste et Sage",
@@ -4099,6 +4240,7 @@ export const storyData: Record<string, Section> = {
   },
   "218": {
     "id": "218",
+    "image": "/images/sections/sect218.png",
     "location": "forest",
     "text": [
       "Votre Sixième Sens vous indique que ce ne sont pas seulement des chevaux qui galopent dans votre direction. Vous percevez également la cavalcade d'une meute de Loups Maudits et des cris de guerre poussés par des Gloks. D'après l'intensité de ces hurlements, vous jugez qu'il doit y avoir là plus d'une douzaine de Gloks et il est donc préférable de ne pas manifester votre présence, pour l'instant tout au moins.",
@@ -4113,12 +4255,14 @@ export const storyData: Record<string, Section> = {
   },
   "219": {
     "id": "219",
+    "image": "/images/sections/sect219.png",
     "location": "forest",
     "text": "Ce qui reste de vous se trouve encastré dans l'escalier, à une profondeur de deux mètres, sous la masse d'un énorme bloc de granité. Votre mission s'achève ici, en même temps que votre vie.",
     "choices": []
   },
   "220": {
     "id": "220",
+    "image": "/images/sections/sect220.png",
     "location": "city",
     "text": [
       "Le Garde du Corps dégaine un long cimeterre et s'apprête à vous en enfoncer la lame dans la poitrine. GARDE DU CORPS HABILETÉ : 11 ENDURANCE : 20",
@@ -4143,6 +4287,7 @@ export const storyData: Record<string, Section> = {
   },
   "221": {
     "id": "221",
+    "image": "/images/sections/sect221.png",
     "location": "city",
     "text": [
       "Vous vous approchez prudemment de la palissade. Les rondins qui la constituent ont été grossièrement taillés et offrent de nombreuses prises qui vous permettent de l'escalader.",
@@ -4158,6 +4303,7 @@ export const storyData: Record<string, Section> = {
   },
   "222": {
     "id": "222",
+    "image": "/images/sections/sect222.png",
     "location": "road",
     "text": [
       "Vous arrivez bientôt sur un chemin forestier qui bifurque à cet endroit.",
@@ -4181,6 +4327,7 @@ export const storyData: Record<string, Section> = {
   },
   "223": {
     "id": "223",
+    "image": "/images/sections/sect223.png",
     "location": "river",
     "text": [
       "Après bien des efforts, vous parvenez à dégager le tronc de tous les débris qui l'entourent. Vous attachez ensuite toutes vos affaires en un paquet bien serré que vous coincez dans un creux du tronc d'arbre, puis vous vous y installez vous-même à califourchon.",
@@ -4196,6 +4343,7 @@ export const storyData: Record<string, Section> = {
   },
   "224": {
     "id": "224",
+    "image": "/images/sections/sect224.png",
     "location": "road",
     "text": [
       "Vous avez parcouru plusieurs kilomètres à cheval sans trouver trace de réfugiés ou d'ennemis. Vous vous dirigez alors vers un chemin qui s'élève un peu plus loin à flanc de colline. Sur cette hauteur, vous devriez apercevoir la capitale. En arrivant là-haut, vous contemplez en effet un spectacle qui vous remplit d'espoir, mais qui vous fait frémir également : vous n'êtes décidément pas au bout de vos peines...",
@@ -4210,6 +4358,7 @@ export const storyData: Record<string, Section> = {
   },
   "225": {
     "id": "225",
+    "image": "/images/sections/sect225.png",
     "location": "forest",
     "text": [
       "Ce langage est celui des Kakarmis, une race d'animaux forestiers, doués d'intelligence, qui habitent les forêts du Sommerlund. Vous n'avez rien à redouter de ces créatures timides et paisibles et votre Sens de la Communication Animale vous permet de leur parler dans leur étrange dialecte.",
@@ -4228,6 +4377,7 @@ export const storyData: Record<string, Section> = {
   },
   "226": {
     "id": "226",
+    "image": "/images/sections/sect226.png",
     "location": "forest",
     "text": [
       "Tout d'abord, la descente vous paraît facile mais, bientôt, votre vue se brouille et vous sentez vos jambes faiblir. Les Dents de Sommeil commencent à produire leur effet et, soudain, vous trébuchez et vous perdez connaissance en tombant tête la première.",
@@ -4247,6 +4397,7 @@ export const storyData: Record<string, Section> = {
   },
   "227": {
     "id": "227",
+    "image": "/images/sections/sect227.png",
     "location": "forest",
     "text": [
       "Vous avez maintenant de la vase jusqu'à la ceinture, l'air est lourd et de petits insectes vous piquent le visage et vous bouchent le nez.",
@@ -4272,6 +4423,7 @@ export const storyData: Record<string, Section> = {
   },
   "228": {
     "id": "228",
+    "image": "/images/sections/sect228.png",
     "location": "forest",
     "text": [
       "Le sentier continue vers l'est puis disparaît bientôt sous d'épaisses broussailles.",
@@ -4291,6 +4443,7 @@ export const storyData: Record<string, Section> = {
   },
   "229": {
     "id": "229",
+    "image": "/images/sections/sect229.png",
     "location": "road",
     "text": [
       "Le Kraan vole au-dessus de votre tête en soulevant des nuages de poussière par le seul battement de ses ailes immenses.",
@@ -4319,6 +4472,7 @@ export const storyData: Record<string, Section> = {
   },
   "230": {
     "id": "230",
+    "image": "/images/sections/sect230.png",
     "location": "river",
     "text": [
       "Vous distinguez au loin une rangée de péniches alignées en travers de la rivière. Des soldats se tiennent debout, arme au poing, sur le pont des embarcations et vous entendez les grognements des Loups Maudits qui rebroussent chemin sur la rive opposée.",
@@ -4333,6 +4487,7 @@ export const storyData: Record<string, Section> = {
   },
   "231": {
     "id": "231",
+    "image": "/images/sections/sect231.png",
     "location": "city",
     "text": [
       "Au moment où vous allez demander le prix des potions, un jeune homme bondit sur vous en renversant le paravent. Votre assaillant tient dans sa main un poignard à la longue lame recourbée. Il vous faut le combattre. VOLEUR AU POIGNARD HABILETÉ : 13 ENDURANCE : 20",
@@ -4361,6 +4516,7 @@ export const storyData: Record<string, Section> = {
   },
   "232": {
     "id": "232",
+    "image": "/images/sections/sect232.png",
     "location": "forest",
     "text": [
       "Leur chef, à l'allure patibulaire, s'approche de vous et vous déclare ceci : « Ce que nous voulons ? C'est très simple, cher monsieur : votre bourse ou votre vie ! »",
@@ -4380,6 +4536,7 @@ export const storyData: Record<string, Section> = {
   },
   "233": {
     "id": "233",
+    "image": "/images/sections/sect233.png",
     "location": "road",
     "text": [
       "Il vous faut presque une heure pour rattraper le cheval et parvenir à le calmer. Vous vous êtes éloigné de la cabane en direction du nord mais vous êtes sûr de pouvoir retrouver votre chemin. Vous montez sur le dos du cheval et vous retournez jusqu'à la cabane, puis vous poursuivez votre route en direction du sud.",
@@ -4394,6 +4551,7 @@ export const storyData: Record<string, Section> = {
   },
   "234": {
     "id": "234",
+    "image": "/images/sections/sect234.png",
     "location": "city",
     "text": [
       "Vous sautez de la roulotte qui file à bonne allure, mais vous vous recevez mal et vous vous brisez la cheville en tombant. La douleur est insupportable : elle vous fait perdre connaissance. Hélas ! vous ne vous réveillerez jamais. Peut-être, cependant, serez-vous intéressé d'apprendre que votre tête orne désormais la selle d'un Kraan ?",
@@ -4428,6 +4586,7 @@ export const storyData: Record<string, Section> = {
   },
   "236": {
     "id": "236",
+    "image": "/images/sections/sect236.png",
     "location": "cemetery",
     "text": [
       "La Pierre Précieuse reste suspendue au-dessus de la bouche du squelette en diffusant une lueur rouge vif.",
@@ -4444,6 +4603,7 @@ export const storyData: Record<string, Section> = {
   },
   "237": {
     "id": "237",
+    "image": "/images/sections/sect237.png",
     "location": "forest",
     "text": [
       "Déployant pleinement vos talents de Seigneur Kaï en matière de Camouflage, vous vous enfouissez dans le sol meuble du flanc de la colline.",
@@ -4465,6 +4625,7 @@ export const storyData: Record<string, Section> = {
   },
   "238": {
     "id": "238",
+    "image": "/images/sections/sect238.png",
     "location": "road",
     "text": [
       "Le sentier contourne plusieurs tertres et collines aux flancs boisés, puis aboutit enfin à une petite cabane en rondins incendiée. Il semble qu'elle ait brûlé tout récemment car les cendres sont encore chaudes, et il s'en élève un filet de fumée. Il se peut que cet endroit soit dangereux.",
@@ -4484,6 +4645,7 @@ export const storyData: Record<string, Section> = {
   },
   "239": {
     "id": "239",
+    "image": "/images/sections/sect239.png",
     "location": "forest",
     "text": [
       "Tandis que vous vous enfoncez dans la forêt, vous entendez battre les ailes du Kraan qui passe en volant au-dessus des arbres avant de disparaître en direction du nord. Vous chevauchez pendant environ une heure, puis vous arrivez à une clairière. De l'autre côté, face à vous, un sentier mène vers le sud.",
@@ -4503,6 +4665,7 @@ export const storyData: Record<string, Section> = {
   },
   "240": {
     "id": "240",
+    "image": "/images/sections/sect240.png",
     "location": "mountains",
     "text": "Le chemin longe une chaîne de petites collines, puis s'oriente vers l'est. Rendez-vous au 79.",
     "choices": [
@@ -4514,6 +4677,7 @@ export const storyData: Record<string, Section> = {
   },
   "241": {
     "id": "241",
+    "image": "/images/sections/sect241.png",
     "location": "ruins",
     "text": [
       "Le sorcier entend votre cri et fait aussitôt volte-face, juste à temps pour projeter un nouvel éclair en direction du Glok. La tête de la créature explose aussitôt en une gerbe de flammes et son corps s'écrase en un petit tas au pied de la colonne. Le chef des Gloks vous voit et se met à hurler : « Groh gaï oh !",
@@ -4529,6 +4693,7 @@ export const storyData: Record<string, Section> = {
   },
   "242": {
     "id": "242",
+    "image": "/images/sections/sect242.png",
     "location": "city",
     "text": [
       "Le couvercle du sarcophage glisse à terre avec un bruit sourd. Vous contemplez alors les restes d'un ancien roi qui repose parmi ses richesses. Une couronne ciselée coiffe son crâne et les mâchoires grandes ouvertes de son squelette ressemblent à l'orifice d'un puits sans fond.",
@@ -4578,6 +4743,7 @@ export const storyData: Record<string, Section> = {
   },
   "245": {
     "id": "245",
+    "image": "/images/sections/sect245.png",
     "location": "river",
     "text": [
       "Des flèches viennent frapper la surface de la rivière sans vous faire le moindre mal : vous nagez sous l'eau, en effet, et il est impossible de vous atteindre. Vous touchez bientôt la rive opposée et vous vous hissez sur la terre ferme avant de courir vous mettre à l'abri dans la forêt.",
@@ -4592,6 +4758,7 @@ export const storyData: Record<string, Section> = {
   },
   "246": {
     "id": "246",
+    "image": "/images/sections/sect246.png",
     "location": "river",
     "text": [
       "Lorsque l'embarcation se trouve au beau milieu du lac, l'homme ramène soudain sa perche et s'avance vers vous en éclatant d'un rire sinistre. Il rejette alors le capuchon qui lui couvre la tête et vous vous apercevez qu'il s'agit là d'un terrible Drakkarim.",
@@ -4611,6 +4778,7 @@ export const storyData: Record<string, Section> = {
   },
   "247": {
     "id": "247",
+    "image": "/images/sections/sect247.png",
     "location": "city",
     "text": [
       "Le marchand a l'air furieux. Il appelle son garde du corps et il vous faut prendre une décision rapide.",
@@ -4630,6 +4798,7 @@ export const storyData: Record<string, Section> = {
   },
   "248": {
     "id": "248",
+    "image": "/images/sections/sect248.png",
     "location": "city",
     "text": [
       "Vous parvenez au pied de la colline et vous vous hâtez de courir dans la forêt. Quelques minutes plus tard, vous découvrez un ancien sentier forestier qui forme ici une courbe à angle droit.",
@@ -4649,6 +4818,7 @@ export const storyData: Record<string, Section> = {
   },
   "249": {
     "id": "249",
+    "image": "/images/sections/sect249.png",
     "location": "cemetery",
     "text": [
       "Vous descendez une volée de marches qui mène à une vaste crypte où vous attend un spectacle peu réjouissant. L'étrange lumière verte est, en effet, produite par deux rangées de crânes dont chacun repose sur un socle de pierre. Ces crânes se font face de part et d'autre de la pièce, formant ainsi une allée macabre.",
@@ -4669,6 +4839,7 @@ export const storyData: Record<string, Section> = {
   },
   "250": {
     "id": "250",
+    "image": "/images/sections/sect250.png",
     "location": "forest",
     "text": [
       "Deux petites créatures au pelage ras se cachent derrière le tronc. Ce sont des Kakarmis, une race d'animaux doués d'intelligence qui habitent les forêts du Sommerlund. Vous avez sauté du tronc juste en face d'eux et avant que vous ayez eu le temps de vous expliquer, les deux Kakarmis, affolés par votre apparition soudaine, s'enfuient dans la forêt.",
@@ -4695,6 +4866,7 @@ export const storyData: Record<string, Section> = {
   },
   "252": {
     "id": "252",
+    "image": "/images/sections/sect252.png",
     "location": "city",
     "text": [
       "Au milieu d'une clairière, trois hommes, une femme et deux enfants parlent avec vivacité en faisant de grands gestes. Ils portent en bandoulière des sacs remplis d'objets et de vêtements. Leurs habits semblent de bonne coupe, mais ils sont sales et déchirés.",
@@ -4714,6 +4886,7 @@ export const storyData: Record<string, Section> = {
   },
   "253": {
     "id": "253",
+    "image": "/images/sections/sect253.png",
     "location": "city",
     "text": [
       "Les Loups Maudits sont bientôt sur vous et il vous faut les combattre un par un. HABILETÉ ENDURANCE Premier LOUP MAUDIT 13 24 Deuxième LOUP MAUDIT 14 23 Troisième LOUP MAUDIT 14 22 Quatrième LOUP MAUDIT 15 21",
