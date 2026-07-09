@@ -93,9 +93,10 @@ function App() {
                 Ancienne Aventure
               </button>
             )}
-          </div>
-          <div className="absolute bottom-2 left-0 w-full text-center text-xs font-mono text-gray-500/70 tracking-widest z-10">
-            v{packageJson.version}
+            
+            <div className="text-center text-xs font-mono text-gray-500/70 tracking-widest mt-4 pt-4 border-t border-[#d4af37]/10">
+              v{packageJson.version}
+            </div>
           </div>
         </div>
       )}
