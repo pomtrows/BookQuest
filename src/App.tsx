@@ -94,7 +94,7 @@ function App() {
               </button>
             )}
           </div>
-          <div className="absolute bottom-4 text-xs font-mono text-gray-500/70 tracking-widest z-10">
+          <div className="absolute bottom-2 left-0 w-full text-center text-xs font-mono text-gray-500/70 tracking-widest z-10">
             v{packageJson.version}
           </div>
         </div>
