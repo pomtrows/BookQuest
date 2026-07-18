@@ -27,7 +27,7 @@ function App() {
   const [showCloudSaveModal, setShowCloudSaveModal] = useState(false);
   const [session, setSession] = useState<any>(null);
   const [authChecked, setAuthChecked] = useState(false);
-  const { character, previousAdventurePath } = useGameStore();
+  const { previousAdventurePath } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
   useEffect(() => {
