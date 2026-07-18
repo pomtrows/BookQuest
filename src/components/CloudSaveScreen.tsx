@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { useGameStore } from '../store/gameStore';
-import { X, Cloud, Save, Download, LogOut, Loader2, RefreshCw } from 'lucide-react';
+import { ArrowLeft, Cloud, Save, Download, LogOut, Loader2, RefreshCw } from 'lucide-react';
 
-interface CloudSaveModalProps {
-  onClose: () => void;
+interface CloudSaveScreenProps {
+  onBack: () => void;
   onLoadComplete?: () => void;
 }
 
-export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadComplete }) => {
+export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoadComplete }) => {
   const [session, setSession] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null);
@@ -61,7 +61,6 @@ export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadC
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    // After signout, App.tsx will automatically detect the session change and render AuthScreen
   };
 
   const saveToSlot = async (slotIndex: number) => {
@@ -117,7 +116,6 @@ export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadC
         if (onLoadComplete) {
           onLoadComplete();
         }
-        onClose();
       }, 1500);
       addNotification(`Sauvegarde Cloud #${slotIndex + 1} chargée.`, 'success');
     }
@@ -125,29 +123,45 @@ export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadC
   };
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm" style={{ zIndex: 99998 }}>
-      <div className="bg-[#1a1a1a] border border-[#d4af37]/30 rounded-xl max-w-md w-full shadow-[0_0_30px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col max-h-[90vh]">
-        
+    <div className="min-h-screen bg-[#121212] flex flex-col items-center p-4 md:p-8"
+      style={{
+        backgroundImage: "url('/images/title_bg.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        position: 'relative'
+      }}
+    >
+      <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0, 0, 0, 0.85)', zIndex: 1 }}></div>
+      
+      <div className="relative w-full max-w-4xl flex flex-col flex-1 h-full pt-2 md:pt-0" style={{ zIndex: 10 }}>
         {/* Header */}
-        <div className="p-4 border-b border-[#333] flex justify-between items-center bg-[#121212] relative">
-          <div className="flex items-center gap-2">
-            <Cloud className="text-[#d4af37]" size={20} />
-            <h2 className="text-xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
+        <div className="flex items-center justify-between mb-8 border-b border-[#d4af37]/30 pb-4">
+          <div className="flex items-center gap-4">
+            <Cloud size={32} className="text-[#d4af37]" />
+            <h1 className="text-3xl md:text-5xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(212,175,55,0.3)', marginLeft: '24px' }}>
               Sauvegardes Cloud
-            </h2>
+            </h1>
           </div>
           <button 
-            onClick={onClose}
-            className="text-gray-400 hover:text-white hover:bg-white/10 p-1.5 rounded transition-colors"
+            onClick={onBack}
+            className="flex items-center gap-2 px-4 py-2 hover:bg-[#d4af37]/20 border rounded transition-all"
+            style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderColor: '#d4af37', color: '#d4af37' }}
           >
-            <X size={20} />
+            <ArrowLeft size={20} />
+            <span className="hidden md:inline">Retour</span>
           </button>
         </div>
 
-        {/* Content */}
-        <div className="p-6 overflow-y-auto">
+        {/* Content Area */}
+        <div className="flex flex-col flex-1 overflow-y-auto custom-scrollbar p-6 rounded-lg shadow-2xl border"
+          style={{
+            backgroundColor: 'rgba(10, 10, 10, 0.95)',
+            borderColor: 'rgba(212, 175, 55, 0.3)'
+          }}
+        >
           {message && (
-            <div className={`p-3 rounded mb-6 text-sm border ${
+            <div className={`p-4 rounded mb-6 text-lg border ${
               message.type === 'success' ? 'bg-green-900/30 border-green-500/50 text-green-300' :
               message.type === 'error' ? 'bg-red-900/30 border-red-500/50 text-red-300' :
               'bg-blue-900/30 border-blue-500/50 text-blue-300'
@@ -157,58 +171,62 @@ export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadC
           )}
 
           {loading && !session && (
-            <div className="flex justify-center p-8">
-              <Loader2 className="animate-spin text-[#d4af37]" size={32} />
+            <div className="flex justify-center p-12">
+              <Loader2 className="animate-spin text-[#d4af37]" size={48} />
             </div>
           )}
 
           {session && (
-            <div className="space-y-6">
-              <div className="flex justify-between items-center bg-[#121212] p-3 rounded border border-[#333]">
-                <div className="text-sm truncate pr-2 text-gray-400">
-                  Connecté : <span className="text-white">{session.user.email}</span>
+            <div className="space-y-8">
+              <div className="flex justify-between items-center bg-[#121212] p-4 rounded-lg border border-[#333]">
+                <div className="text-lg text-gray-400">
+                  Connecté en tant que : <span className="text-white font-semibold">{session.user.email}</span>
                 </div>
                 <button 
                   onClick={handleLogout}
-                  className="text-gray-500 hover:text-red-400 p-1"
+                  className="flex items-center gap-2 text-gray-500 hover:text-red-400 p-2 transition-colors"
                   title="Se déconnecter"
                 >
-                  <LogOut size={18} />
+                  <LogOut size={20} />
+                  <span>Déconnexion</span>
                 </button>
               </div>
 
-              <div className="space-y-3">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-sm uppercase tracking-wider text-[#d4af37] font-semibold">Emplacements</h3>
-                  {loading && <RefreshCw size={14} className="animate-spin text-gray-500" />}
+              <div className="space-y-4">
+                <div className="flex justify-between items-center mb-4 border-b border-gray-800 pb-2">
+                  <h3 className="text-xl uppercase tracking-wider text-[#d4af37] font-semibold">Vos emplacements</h3>
+                  {loading && <RefreshCw size={20} className="animate-spin text-gray-500" />}
                 </div>
                 
                 {saves.map((save, index) => (
-                  <div key={index} className="flex justify-between items-center bg-[#1e1e1e] border border-[#333] p-3 rounded hover:border-[#444] transition-colors">
+                  <div key={index} className="flex justify-between items-center bg-[#1e1e1e] border border-[#333] p-5 rounded-lg hover:border-[#555] transition-colors shadow-inner">
                     <div className="flex-1">
-                      <div className="font-medium text-gray-200">Slot {index + 1}</div>
-                      <div className="text-xs text-gray-500">
-                        {save ? new Date(save.updated_at).toLocaleString('fr-FR') : 'Vide'}
+                      <div className="font-bold text-xl text-gray-200 mb-1">Emplacement {index + 1}</div>
+                      <div className="text-sm text-gray-500">
+                        {save ? `Dernière sauvegarde : ${new Date(save.updated_at).toLocaleString('fr-FR')}` : 'Vide'}
                       </div>
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex gap-4">
+                      {/* Note: we omit the save button if we are just loading, but for completeness we keep both */}
                       <button 
                         onClick={() => saveToSlot(index)}
                         disabled={loading}
-                        className="p-2 bg-[#222] border border-[#555] hover:border-[#d4af37] transition-colors"
-                        style={{ color: '#d4af37', borderRadius: '4px' }}
-                        title="Sauvegarder la partie courante ici"
+                        className="p-3 bg-[#222] border border-[#555] hover:border-[#d4af37] transition-colors rounded-lg flex items-center gap-2"
+                        style={{ color: '#d4af37' }}
+                        title="Écraser cette sauvegarde avec la partie courante"
                       >
-                        <Save size={16} />
+                        <Save size={20} />
+                        <span className="hidden sm:inline font-semibold">Sauvegarder</span>
                       </button>
                       <button 
                         onClick={() => loadFromSlot(index)}
                         disabled={loading || !save}
-                        className={`p-2 bg-[#222] border border-[#555] transition-colors ${save ? 'hover:border-blue-400' : 'opacity-30 cursor-not-allowed'}`}
-                        style={{ color: save ? '#3b82f6' : '#555555', borderRadius: '4px' }}
+                        className={`p-3 bg-[#222] border border-[#555] transition-colors rounded-lg flex items-center gap-2 ${save ? 'hover:border-blue-400' : 'opacity-30 cursor-not-allowed'}`}
+                        style={{ color: save ? '#3b82f6' : '#555555' }}
                         title="Charger cette partie"
                       >
-                        <Download size={16} />
+                        <Download size={20} />
+                        <span className="hidden sm:inline font-semibold">Charger</span>
                       </button>
                     </div>
                   </div>
@@ -218,6 +236,22 @@ export const CloudSaveModal: React.FC<CloudSaveModalProps> = ({ onClose, onLoadC
           )}
         </div>
       </div>
+      <style dangerouslySetInnerHTML={{__html: `
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: rgba(0, 0, 0, 0.3);
+          border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(212, 175, 55, 0.3);
+          border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(212, 175, 55, 0.5);
+        }
+      `}} />
     </div>
   );
 };

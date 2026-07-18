@@ -151,3 +151,13 @@ h1, h2, h3, h4, h5, h6 {
 .animate-damage-shake {
   animation: damage-shake 0.3s ease-in-out;
 }
+
+/* Fix browser autofill styling for inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #121212 inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

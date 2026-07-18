@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CharacterCreation } from './components/CharacterCreation';
+import { AuthScreen } from './components/AuthScreen';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
 import { CloudSaveModal } from './components/CloudSaveModal';
+import { CloudSaveScreen } from './components/CloudSaveScreen';
 import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings, Compass, Cloud } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
@@ -12,9 +14,10 @@ import { Notifications } from './components/Notifications';
 import { PreviousAdventure } from './components/PreviousAdventure';
 import { InstallPrompt } from './components/InstallPrompt';
 import { MapScreen } from './components/MapScreen';
+import { supabase } from './lib/supabase';
 import packageJson from '../package.json';
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE';
 
 function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
@@ -22,14 +25,39 @@ function App() {
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showCloudSaveModal, setShowCloudSaveModal] = useState(false);
+  const [session, setSession] = useState<any>(null);
+  const [authChecked, setAuthChecked] = useState(false);
   const { character, previousAdventurePath } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setAuthChecked(true);
+    });
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   // Helper to ensure audio starts on user interaction
   const handleStateChange = (newState: AppState) => {
     playAudio();
     setAppState(newState);
   };
+
+  if (!authChecked) {
+    return <div className="min-h-screen bg-[#121212] flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#d4af37]"></div></div>;
+  }
+
+  if (!session) {
+    return <AuthScreen />;
+  }
 
   return (
     <div className="min-h-screen bg-[#121212] text-[#e4d5b7] font-sans" onClick={playAudio}>
@@ -67,15 +95,16 @@ function App() {
             >
               Nouvelle Partie
             </button>
-            {character && (
-              <button 
-                onClick={() => handleStateChange('GAME')}
-                className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
-                style={{ backgroundColor: 'rgba(30, 30, 30, 0.8)', color: '#d4af37', borderColor: '#d4af37' }}
-              >
-                Continuer l'Aventure
-              </button>
-            )}
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                handleStateChange('CLOUD_SAVE');
+              }}
+              className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+              style={{ backgroundColor: 'rgba(30, 30, 30, 0.8)', color: '#d4af37', borderColor: '#d4af37' }}
+            >
+              Continuer l'Aventure
+            </button>
             <button 
               onClick={() => handleStateChange('RULES')}
               className="choice-btn text-center text-xl transition-all"
@@ -95,6 +124,17 @@ function App() {
                 Ancienne Aventure
               </button>
             )}
+            
+            <button 
+              onClick={async (e) => { 
+                e.stopPropagation();
+                await supabase.auth.signOut();
+              }}
+              className="choice-btn text-center text-base transition-all mt-4"
+              style={{ backgroundColor: '#121212', borderColor: '#ef4444', color: '#ef4444', opacity: 0.8, textAlign: 'center' }}
+            >
+              Se déconnecter
+            </button>
             
             <div className="text-center text-xs font-mono text-gray-500/70 tracking-widest mt-4 pt-4 border-t border-[#d4af37]/10">
               v{packageJson.version}
@@ -241,15 +281,13 @@ function App() {
             </>
           )}
 
-          {showSettingsModal && (
-            <SettingsModal onClose={() => setShowSettingsModal(false)} />
-          )}
-
-          {showCloudSaveModal && (
-            <CloudSaveModal onClose={() => setShowCloudSaveModal(false)} />
-          )}
         </div>
       )}
+
+      {showSettingsModal && (
+        <SettingsModal onClose={() => setShowSettingsModal(false)} />
+      )}
+
 
       {appState === 'RULES' && (
         <Rules onBack={() => handleStateChange('MENU')} />
@@ -258,10 +296,24 @@ function App() {
       {appState === 'MAP' && (
         <MapScreen onBack={() => handleStateChange('GAME')} />
       )}
+
+      {appState === 'CLOUD_SAVE' && (
+        <CloudSaveScreen 
+          onBack={() => handleStateChange('MENU')}
+          onLoadComplete={() => handleStateChange('GAME')}
+        />
+      )}
+
+      {showCloudSaveModal && (
+        <CloudSaveModal 
+          onClose={() => setShowCloudSaveModal(false)} 
+          onLoadComplete={() => handleStateChange('GAME')}
+        />
+      )}
       
       <InstallPrompt />
     </div>
   );
-}
+};
 
 export default App;
