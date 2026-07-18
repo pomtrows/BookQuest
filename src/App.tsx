@@ -3,8 +3,9 @@ import { CharacterCreation } from './components/CharacterCreation';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
+import { CloudSaveModal } from './components/CloudSaveModal';
 import { useGameStore } from './store/gameStore';
-import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings, Compass } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings, Compass, Cloud } from 'lucide-react';
 import { useAudio } from './hooks/useAudio';
 import { Rules } from './components/Rules';
 import { Notifications } from './components/Notifications';
@@ -20,6 +21,7 @@ function App() {
   const [showInventory, setShowInventory] = useState(false);
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [showCloudSaveModal, setShowCloudSaveModal] = useState(false);
   const { character, previousAdventurePath } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
@@ -198,6 +200,14 @@ function App() {
                     <BookOpen size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
                     <span className="font-medium text-[15px] tracking-wide">Règles du jeu</span>
                   </button>
+
+                  <button 
+                    onClick={() => { setShowCloudSaveModal(true); setShowDropdownMenu(false); }} 
+                    className="sidebar-btn group"
+                  >
+                    <Cloud size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                    <span className="font-medium text-[15px] tracking-wide">Sauvegarde Cloud</span>
+                  </button>
                   
                   <button 
                     onClick={() => { handleStateChange('MENU'); setShowDropdownMenu(false); }} 
@@ -233,6 +243,10 @@ function App() {
 
           {showSettingsModal && (
             <SettingsModal onClose={() => setShowSettingsModal(false)} />
+          )}
+
+          {showCloudSaveModal && (
+            <CloudSaveModal onClose={() => setShowCloudSaveModal(false)} />
           )}
         </div>
       )}
