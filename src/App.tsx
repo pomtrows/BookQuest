@@ -4,7 +4,6 @@ import { AuthScreen } from './components/AuthScreen';
 import { StoryViewer } from './components/StoryViewer';
 import { Inventory } from './components/Inventory';
 import { SettingsModal } from './components/SettingsModal';
-import { CloudSaveModal } from './components/CloudSaveModal';
 import { CloudSaveScreen } from './components/CloudSaveScreen';
 import { useGameStore } from './store/gameStore';
 import { Menu, X, Volume2, VolumeX, Home, BookOpen, ScrollText, Settings, Compass, Cloud } from 'lucide-react';
@@ -24,7 +23,7 @@ function App() {
   const [showInventory, setShowInventory] = useState(false);
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
-  const [showCloudSaveModal, setShowCloudSaveModal] = useState(false);
+  const [cloudSaveReturnState, setCloudSaveReturnState] = useState<AppState>('MENU');
   const [session, setSession] = useState<any>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const { previousAdventurePath } = useGameStore();
@@ -98,6 +97,7 @@ function App() {
             <button 
               onClick={(e) => {
                 e.stopPropagation();
+                setCloudSaveReturnState('MENU');
                 handleStateChange('CLOUD_SAVE');
               }}
               className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
@@ -242,7 +242,11 @@ function App() {
                   </button>
 
                   <button 
-                    onClick={() => { setShowCloudSaveModal(true); setShowDropdownMenu(false); }} 
+                    onClick={() => { 
+                      setCloudSaveReturnState('GAME');
+                      handleStateChange('CLOUD_SAVE'); 
+                      setShowDropdownMenu(false); 
+                    }} 
                     className="sidebar-btn group"
                   >
                     <Cloud size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
@@ -299,14 +303,7 @@ function App() {
 
       {appState === 'CLOUD_SAVE' && (
         <CloudSaveScreen 
-          onBack={() => handleStateChange('MENU')}
-          onLoadComplete={() => handleStateChange('GAME')}
-        />
-      )}
-
-      {showCloudSaveModal && (
-        <CloudSaveModal 
-          onClose={() => setShowCloudSaveModal(false)} 
+          onBack={() => handleStateChange(cloudSaveReturnState)}
           onLoadComplete={() => handleStateChange('GAME')}
         />
       )}
