@@ -36,6 +36,19 @@ const ARSENAL_ITEMS: ArsenalItemDef[] = [
   { id: 'bouclier', name: 'Bouclier', type: 'special', effect: '+2 HAB' }
 ];
 
+const DISCIPLINE_DESCRIPTIONS: Record<string, string> = {
+  'Camouflage': 'Permet de se fondre dans le décor et de passer inaperçu, très utile pour échapper à des ennemis ou pour se cacher.',
+  'Chasse': 'Permet de trouver de la nourriture en milieu sauvage. Vous n\'avez pas besoin de consommer de Repas quand on vous le demande en milieu naturel.',
+  'Sixième Sens': 'Permet de pressentir un danger imminent, de deviner la véritable nature d\'un inconnu ou de détecter des ennemis cachés.',
+  'Orientation': 'Assure au Seigneur Kaï de toujours retrouver son chemin, de s\'orienter dans les ténèbres ou de suivre des pistes invisibles.',
+  'Guérison': 'Permet de récupérer 1 point d\'Endurance pour chaque paragraphe de l\'aventure franchi sans combattre, jusqu\'à retrouver son score maximum.',
+  'Maîtrise des armes': 'Permet de devenir expert dans le maniement d\'une arme spécifique. L\'utilisation de cette arme au combat octroie un bonus de +2 en Habileté.',
+  'Bouclier psychique': 'Protège l\'esprit contre les attaques mentales. Sans cette discipline, une attaque mentale vous fera perdre des points d\'Endurance.',
+  'Puissance psychique': 'Permet d\'attaquer l\'esprit de votre ennemi pendant un combat, ajoutant +2 à votre Quotient d\'Attaque (sauf si l\'ennemi est immunisé).',
+  'Communication Animale': 'Permet de comprendre et de parler avec la plupart des animaux, ou de deviner leurs intentions.',
+  'Maîtrise Psychique de la Matière': 'Permet de déplacer de petits objets par la simple force de la pensée (télékinésie).'
+};
+
 interface CharacterCreationProps {
   onComplete: () => void;
   onCancel: () => void;
@@ -56,6 +69,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
   
   const [selectedAvatar, setSelectedAvatar] = useState<string>(importedCharacter ? importedCharacter.avatar.replace('/images/avatars/', '') : 'avatar_1.png');
   const [showDisciplinesHelp, setShowDisciplinesHelp] = useState(false);
+  const [activeHelp, setActiveHelp] = useState<string | null>(null);
 
   // Inventaire interactif pour le Livre 2
   const [book2Weapons, setBook2Weapons] = useState<Weapon[]>(importedCharacter?.weapons || (bookId === 2 ? ['Hache'] : []));
@@ -252,14 +266,14 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 pb-20">
+    <div className="max-w-4xl mx-auto p-3 sm:p-6 pb-20">
       <h2 className="text-3xl font-bold mb-6 text-center text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>Création de Personnage</h2>
       
-      <div className="book-panel p-6 mb-6">
+      <div className="book-panel p-4 sm:p-6 mb-6">
         <h3 className="text-xl mb-4">0. Identité</h3>
         <div>
           <label className="block text-[#d4af37] font-semibold" style={{ marginBottom: '1rem' }}>Choisissez votre Portrait :</label>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4" style={{ paddingTop: '0.5rem' }}>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4" style={{ paddingTop: '0.5rem' }}>
             {Array.from({length: 10}).map((_, i) => {
               const avatarFile = `avatar_${i+1}.png`;
               const isSelected = selectedAvatar === avatarFile;
@@ -278,7 +292,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
           </div>
         </div>
       </div>
-      <div className="book-panel p-6 mb-6">
+      <div className="book-panel p-4 sm:p-6 mb-6">
         <h3 className="text-xl mb-4">1. Statistiques</h3>
         {!combatSkill && !importedCharacter ? (
           <button onClick={rollStats} className="primary-btn">Tirer les statistiques</button>
@@ -302,7 +316,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
         )}
       </div>
 
-      <div className="book-panel p-6 mb-6 relative">
+      <div className="book-panel p-4 sm:p-6 mb-6 relative">
         <div className="flex items-center justify-between gap-3 mb-4">
           <h3 className="text-xl">2. Disciplines Kaï ({importedCharacter ? 'Choisissez 1 nouvelle discipline' : (bookId === 2 ? 'Choisissez-en 6' : 'Choisissez-en 5')})</h3>
           <button 
@@ -321,22 +335,40 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
         <p className="mb-4 text-sm text-gray-400">
           {importedCharacter ? `Sélectionné: ${newDiscipline ? 1 : 0} / 1` : `Sélectionné: ${selectedDisciplines.length} / ${bookId === 2 ? 6 : 5}`}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {ALL_DISCIPLINES.map(d => {
             const isAlreadyKnown = importedCharacter?.disciplines.includes(d);
             const isSelected = importedCharacter ? newDiscipline === d : selectedDisciplines.includes(d);
             return (
-              <div key={d}>
-                <button 
-                  onClick={() => toggleDiscipline(d)}
-                  disabled={isAlreadyKnown}
-                  className={`w-full text-left p-3 rounded border transition-colors ${
-                    isAlreadyKnown ? 'bg-gray-800 text-gray-500 border-gray-700 opacity-50 cursor-not-allowed' :
-                    isSelected ? 'bg-[#d4af37] text-black border-[#d4af37]' : 'bg-[#121212] text-[#e4d5b7] border-[#333333] hover:border-[#d4af37]'
-                  }`}
-                >
-                  {d} {isAlreadyKnown && '(Déjà acquise)'}
-                </button>
+              <div key={d} className="flex flex-col">
+                <div className="flex gap-1.5">
+                  <button 
+                    onClick={() => toggleDiscipline(d)}
+                    disabled={isAlreadyKnown}
+                    className={`flex-1 text-left py-2 px-3 rounded border transition-colors ${
+                      isAlreadyKnown ? 'bg-gray-800 text-gray-500 border-gray-700 opacity-50 cursor-not-allowed' :
+                      isSelected ? 'bg-[#d4af37] text-black border-[#d4af37]' : 'bg-[#121212] text-[#e4d5b7] border-[#333333] hover:border-[#d4af37]'
+                    }`}
+                  >
+                    {d} {isAlreadyKnown && '(Déjà acquise)'}
+                  </button>
+                  <button
+                    onClick={(e) => { 
+                      e.preventDefault(); 
+                      e.stopPropagation(); 
+                      setActiveHelp(activeHelp === d ? null : d); 
+                    }}
+                    className="p-2 px-3 border border-[#333333] bg-[#121212] text-gray-400 hover:text-[#d4af37] hover:border-[#d4af37] rounded flex items-center justify-center transition-colors"
+                    title="Voir l'explication"
+                  >
+                    <HelpCircle size={20} />
+                  </button>
+                </div>
+                {activeHelp === d && (
+                  <div className="mt-2 p-3 bg-[#1a1a1a] border border-[#333333] rounded text-sm text-gray-300 shadow-inner animate-fade-in-down">
+                    {DISCIPLINE_DESCRIPTIONS[d]}
+                  </div>
+                )}
                 {d === 'Maîtrise des armes' && isSelected && !importedCharacter?.weaponMastery && (
                   <div className="mt-2 pl-4">
                     <label className="text-sm">Choisissez votre arme de prédilection:</label>
@@ -357,7 +389,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
       </div>
 
       {bookId === 2 && (combatSkill || importedCharacter) && (
-        <div className="book-panel p-6 mb-6">
+        <div className="book-panel p-4 sm:p-6 mb-6">
           <h3 className="text-xl mb-4">3. L'Arsenal (Choisissez 2 objets)</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
