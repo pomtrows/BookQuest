@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useGameStore } from '../store/gameStore';
-import { storyData } from '../data/story';
+import { getStoryData } from '../data/books';
 
 // Attach to window to survive Vite HMR (Hot Module Replacement)
 // This strictly guarantees only one audio object ever exists even if the file is recompiled.
@@ -20,11 +20,12 @@ const getGlobalAudio = (): HTMLAudioElement => {
 
 const globalAudio = getGlobalAudio();
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT';
 
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
-  const { isCombatActive, combatVictory, character, currentSectionId } = useGameStore();
+  const { isCombatActive, combatVictory, character, currentSectionId, currentBookId } = useGameStore();
+  const storyData = getStoryData(currentBookId);
 
   // 1. Handle source changes based on game state
   useEffect(() => {
@@ -92,7 +93,7 @@ export const useAudio = (appState: AppState) => {
       globalAudio.src = newSrc;
       globalAudio.loop = shouldLoop;
       globalAudio.muted = isMuted;
-      globalAudio.volume = isMuted ? 0 : 1;
+      globalAudio.volume = isMuted ? 0 : 0.15;
       
       if (!isMuted) {
         globalAudio.play().catch(() => {
@@ -105,7 +106,7 @@ export const useAudio = (appState: AppState) => {
   // 2. Handle muting specifically
   useEffect(() => {
     globalAudio.muted = isMuted;
-    globalAudio.volume = isMuted ? 0 : 1;
+    globalAudio.volume = isMuted ? 0 : 0.15;
     
     if (isMuted) {
       globalAudio.pause();

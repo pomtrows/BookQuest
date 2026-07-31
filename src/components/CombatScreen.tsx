@@ -25,14 +25,14 @@ const HealthBar = ({ current, max }: { current: number, max: number }) => {
 };
 
 const D10Icon = ({ number, rolling }: { number: number | string, rolling: boolean }) => (
-  <div className={`relative mb-8 flex items-center justify-center ${rolling ? 'animate-dice-tumble' : ''}`} style={{ width: '128px', height: '128px', ...(rolling ? { transformStyle: 'preserve-3d' } : {}) }}>
+  <div className={`relative mb-4 sm:mb-8 flex items-center justify-center ${rolling ? 'animate-dice-tumble' : ''} w-20 h-20 sm:w-32 sm:h-32`} style={rolling ? { transformStyle: 'preserve-3d' } : {}}>
     <svg viewBox="0 0 100 100" className={`absolute inset-0 w-full h-full text-[#d4af37] ${rolling ? '' : 'drop-shadow-2xl'}`} style={!rolling ? { filter: 'drop-shadow(0 10px 15px rgba(0,0,0,0.5))' } : {}}>
       <polygon points="50,5 95,40 50,95 5,40" stroke="currentColor" strokeWidth="4" fill="#1e1e1e" />
       <polygon points="50,5 50,95 95,40" stroke="currentColor" strokeWidth="2" fill="rgba(255,255,255,0.05)"/>
       <polygon points="50,5 5,40 50,95" stroke="currentColor" strokeWidth="2" fill="rgba(0,0,0,0.2)"/>
       <polygon points="50,5 75,35 50,85 25,35" stroke="currentColor" strokeWidth="3" fill="#2a2a2a" />
     </svg>
-    <span className="relative z-10 text-6xl font-bold text-white mt-2" style={{ fontFamily: 'Cinzel, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+    <span className="relative z-10 text-3xl sm:text-5xl font-bold text-white mt-1 sm:mt-2" style={{ fontFamily: 'Cinzel, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
       {number}
     </span>
   </div>
@@ -136,54 +136,76 @@ export function CombatScreen() {
   const isPlayerDead = character.endurance <= 0;
 
   return (
-    <div className="book-panel p-6 mb-8 relative overflow-hidden bg-[#1a0a0a] border border-red-900 rounded-lg shadow-2xl">
+    <div className="book-panel p-2 sm:p-6 mb-8 relative overflow-hidden bg-[#1a0a0a] border border-red-900 rounded-lg shadow-2xl">
       <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: "url('/images/title_bg.png')", backgroundSize: 'cover' }}></div>
       
-      <h3 className="text-2xl font-bold text-center text-red-500 mb-6" style={{ fontFamily: 'Cinzel, serif' }}>COMBAT !</h3>
-
-      <div className="flex justify-between items-end relative z-10">
+      <h3 className="text-xl sm:text-2xl font-bold text-center text-red-500 mb-2 sm:mb-6" style={{ fontFamily: 'Cinzel, serif' }}>COMBAT !</h3>
+      <div className="grid grid-cols-[1fr_auto_1fr] gap-x-1 sm:gap-x-4 gap-y-2 relative z-10 items-start">
         
-        {/* Player Side */}
-        <div className="w-1/3 flex flex-col items-center">
+        {/* ROW 1: Avatars & VS */}
+        <div className="flex justify-center items-start">
           <div className="relative">
-            <div className={`w-32 h-32 rounded border-2 border-[#d4af37] overflow-hidden mb-4 shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-all ${playerShake ? 'animate-damage-shake' : ''}`}>
+            <div className={`w-32 h-32 sm:w-48 sm:h-48 rounded border-2 border-[#d4af37] mx-auto overflow-hidden shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-all ${playerShake ? 'animate-damage-shake' : ''}`}>
               <img src={character.avatar || '/images/avatars/avatar_1.png'} alt="Player" className="w-full h-full object-cover" />
             </div>
             {showDamage && latestRound && latestRound.playerDamage > 0 && (
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-red-500 drop-shadow-md animate-float-up">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl sm:text-4xl font-bold text-red-500 drop-shadow-md animate-float-up z-20">
                 -{latestRound.playerDamage}
               </div>
             )}
             {showDamage && latestRound && latestRound.playerDamage === 0 && (
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-gray-400 drop-shadow-md animate-float-up">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl font-bold text-gray-400 drop-shadow-md animate-float-up z-20">
                 Esquive
               </div>
             )}
           </div>
-          <h4 className="font-bold text-[#d4af37] text-xl" style={{ fontFamily: 'Cinzel, serif' }}>{character.name || 'Loup Solitaire'}</h4>
-          <p className="text-sm text-gray-400 mb-2">Habileté: {character.combatSkill}</p>
-          
-          <HealthBar current={character.endurance} max={character.maxEndurance} />
-          <p className="text-xs mt-1 font-bold">{character.endurance} / {character.maxEndurance} PE</p>
         </div>
 
-        {/* Center / Dice */}
-        <div className="w-1/3 flex flex-col items-center justify-start pt-4">
-          <div className="text-4xl font-bold text-red-600 mb-6" style={{ fontFamily: 'Cinzel, serif' }}>VS</div>
+        <div className="flex flex-col justify-end items-center h-full pb-2">
+          <div className="text-xl sm:text-3xl font-bold text-gray-300" style={{ fontFamily: 'Cinzel, serif' }}>VS</div>
+        </div>
+
+        <div className="flex justify-center items-start">
+          <div className="relative">
+            <div className={`w-32 h-32 sm:w-48 sm:h-48 rounded border-2 border-red-700 mx-auto overflow-hidden shadow-[0_0_15px_rgba(220,38,38,0.4)] transition-all ${enemyShake ? 'animate-damage-shake' : ''}`}>
+              <img src={`/images/enemies/${enemySprite}`} alt={enemy.name} className="w-full h-full object-cover rendering-pixelated" style={{ imageRendering: 'pixelated', backgroundColor: 'white' }} />
+            </div>
+            {showDamage && latestRound && latestRound.enemyDamage > 0 && (
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl sm:text-4xl font-bold text-red-500 drop-shadow-md animate-float-up z-20">
+                {latestRound.enemyDamage >= 100 ? 'MORT' : `-${latestRound.enemyDamage}`}
+              </div>
+            )}
+             {showDamage && latestRound && latestRound.enemyDamage === 0 && (
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl font-bold text-gray-400 drop-shadow-md animate-float-up z-20">
+                Esquive
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ROW 2: Stats & Dice */}
+        <div className="flex flex-col items-center pt-2">
+          <h4 className="font-bold text-[#d4af37] text-sm sm:text-xl text-center leading-tight sm:leading-normal mb-2" style={{ fontFamily: 'Cinzel, serif' }}>{character.name || 'Loup Solitaire'}</h4>
+          <p className="text-sm sm:text-base text-gray-300 mb-3">Habileté: {character.combatSkill}</p>
           
+          <HealthBar current={character.endurance} max={character.maxEndurance} />
+          <p className="text-xs sm:text-sm mt-1 text-gray-300">{character.endurance} / {character.maxEndurance} PE</p>
+        </div>
+
+        <div className="flex flex-col items-center justify-start relative -top-4 sm:-top-8">
           <D10Icon number={currentFace} rolling={diceRolling} />
 
           {isPlayerDead && (
-            <div className="text-center mt-4 animate-fade-in flex flex-col items-center justify-center gap-3 w-full">
-              <div className="text-red-600 font-bold text-3xl mb-4" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Vous êtes mort...</div>
+            <div className="text-center mt-2 animate-fade-in flex flex-col items-center justify-center gap-2 w-full absolute top-[120%] z-30">
+              <div className="text-red-600 font-bold text-xl mb-2" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Mort...</div>
               
               {settings?.allowCombatRestart && (
                 <button 
                   onClick={restartCombat}
-                  className="w-full rounded-md font-bold px-6 py-3 text-lg border-2 border-green-500 hover:bg-green-900 transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+                  className="w-full whitespace-nowrap rounded-md font-bold px-4 py-2 text-sm border-2 border-green-500 hover:bg-green-900 transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]"
                   style={{ backgroundColor: 'rgba(20, 60, 20, 0.8)', color: '#4ade80' }}
                 >
-                  Relancer le combat
+                  Relancer
                 </button>
               )}
 
@@ -192,9 +214,9 @@ export function CombatScreen() {
                   useGameStore.getState().saveAndResetGame();
                   window.location.reload();
                 }}
-                className="primary-btn w-full px-6 py-3 text-lg bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
+                className="primary-btn w-full whitespace-nowrap px-4 py-2 text-sm bg-red-900 text-white hover:bg-red-800 border-2 border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.4)]"
               >
-                Recommencer l'Aventure
+                Recommencer
               </button>
             </div>
           )}
@@ -203,65 +225,49 @@ export function CombatScreen() {
             <button 
               onClick={handleRoll}
               disabled={diceRolling}
-              className={`primary-btn px-8 py-3 text-lg mt-4 ${diceRolling ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'} transition-transform`}
+              className={`primary-btn px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-lg mt-0 ${diceRolling ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'} transition-transform relative z-30`}
             >
               {diceRolling ? 'Tirage...' : 'Assaut'}
             </button>
           )}
 
           {combatVictory && (
-            <div className="text-green-500 font-bold text-xl mt-4 animate-pulse">Victoire !</div>
+            <div className="text-green-500 font-bold text-lg mt-2 animate-pulse absolute top-[120%] z-30">Victoire !</div>
           )}
         </div>
 
-        {/* Enemy Side */}
-        <div className="w-1/3 flex flex-col items-center">
-          <div className="relative">
-            <div className={`w-32 h-32 rounded border-2 border-red-700 overflow-hidden mb-4 shadow-[0_0_15px_rgba(220,38,38,0.4)] transition-all ${enemyShake ? 'animate-damage-shake' : ''}`}>
-              <img src={`/images/enemies/${enemySprite}`} alt={enemy.name} className="w-full h-full object-cover rendering-pixelated" style={{ imageRendering: 'pixelated' }} />
-            </div>
-            {showDamage && latestRound && latestRound.enemyDamage > 0 && (
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-red-500 drop-shadow-md animate-float-up">
-                {latestRound.enemyDamage >= 100 ? 'MORT' : `-${latestRound.enemyDamage}`}
-              </div>
-            )}
-             {showDamage && latestRound && latestRound.enemyDamage === 0 && (
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-gray-400 drop-shadow-md animate-float-up">
-                Esquive
-              </div>
-            )}
-          </div>
-          <h4 className="font-bold text-red-500 text-xl" style={{ fontFamily: 'Cinzel, serif' }}>{enemy.name}</h4>
-          <p className="text-sm text-gray-400 mb-2">Habileté: {enemy.combatSkill}</p>
+        <div className="flex flex-col items-center pt-2">
+          <h4 className="font-bold text-[#d4af37] text-sm sm:text-xl text-center leading-tight sm:leading-normal mb-2 uppercase" style={{ fontFamily: 'Cinzel, serif' }}>{enemy.name}</h4>
+          <p className="text-sm sm:text-base text-gray-300 mb-3">Habileté: {enemy.combatSkill}</p>
 
           <HealthBar current={enemyCurrentEndurance} max={enemyMaxEndurance} />
-          <p className="text-xs mt-1 font-bold text-red-400">{enemyCurrentEndurance} PE</p>
+          <p className="text-xs sm:text-sm mt-1 text-gray-300">{enemyCurrentEndurance} PE</p>
         </div>
 
       </div>
 
       {combatRounds.length > 0 && (
-        <div className="mt-8 border-t border-gray-800 pt-6 relative z-10 animate-fade-in">
-          <h4 className="text-[#d4af37] text-lg mb-4 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Historique du Combat</h4>
+        <div className="mt-4 border-t border-gray-800 pt-3 relative z-10 animate-fade-in">
+          <h4 className="text-[#d4af37] text-lg mb-2 text-center" style={{ fontFamily: 'Cinzel, serif' }}>Historique du Combat</h4>
           <div className="bg-black/50 rounded-lg p-4 max-h-48 overflow-y-auto border border-gray-800 shadow-inner">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-xs sm:text-sm text-left">
               <thead className="text-gray-400 border-b border-gray-800">
                 <tr>
-                  <th className="pb-2 font-normal">Assaut</th>
-                  <th className="pb-2 font-normal text-center">Tirage</th>
-                  <th className="pb-2 font-normal text-right text-red-400">Dégâts subis (Vous)</th>
-                  <th className="pb-2 font-normal text-right text-red-600">Dégâts subis ({enemy.name})</th>
+                  <th className="pb-2 px-1 sm:px-2 font-normal">Assaut</th>
+                  <th className="pb-2 px-1 sm:px-2 font-normal text-center">Tirage</th>
+                  <th className="pb-2 px-1 sm:px-2 font-normal text-center text-red-400 leading-tight">Dégâts<br className="block sm:hidden" /> subis<br className="block sm:hidden" /> (Vous)</th>
+                  <th className="pb-2 px-1 sm:px-2 font-normal text-center text-red-600 leading-tight">Dégâts<br className="block sm:hidden" /> subis<br className="block sm:hidden" /> ({enemy.name})</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-800/50">
                 {[...combatRounds].reverse().map((round) => (
                   <tr key={round.round} className="text-gray-300">
-                    <td className="py-2 text-[#d4af37]">#{round.round}</td>
-                    <td className="py-2 text-center font-bold text-white text-lg">{round.randomNum}</td>
-                    <td className="py-2 text-right">
+                    <td className="py-2 px-1 sm:px-2 text-[#d4af37]">#{round.round}</td>
+                    <td className="py-2 px-1 sm:px-2 text-center font-bold text-white text-base sm:text-lg">{round.randomNum}</td>
+                    <td className="py-2 px-1 sm:px-2 text-center">
                       {round.playerDamage === 0 ? <span className="text-gray-500">Esquive</span> : <span className="text-red-400 font-bold">-{round.playerDamage}</span>}
                     </td>
-                    <td className="py-2 text-right">
+                    <td className="py-2 px-1 sm:px-2 text-center">
                       {round.enemyDamage === 0 ? <span className="text-gray-500">Esquive</span> : <span className="text-red-600 font-bold">{round.enemyDamage >= 100 ? 'MORT' : `-${round.enemyDamage}`}</span>}
                     </td>
                   </tr>

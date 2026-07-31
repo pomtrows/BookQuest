@@ -16,7 +16,12 @@ import { MapScreen } from './components/MapScreen';
 import { supabase } from './lib/supabase';
 import packageJson from '../package.json';
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT';
+
+const BOOK_TITLES: Record<number, string> = {
+  1: "Les Maîtres des Ténèbres",
+  2: "La Traversée Infernale"
+};
 
 function App() {
   const [appState, setAppState] = useState<AppState>('MENU');
@@ -26,6 +31,8 @@ function App() {
   const [cloudSaveReturnState, setCloudSaveReturnState] = useState<AppState>('MENU');
   const [session, setSession] = useState<any>(null);
   const [authChecked, setAuthChecked] = useState(false);
+  const [selectedBook, setSelectedBook] = useState<number>(1);
+  const [importedCharacter, setImportedCharacter] = useState<any>(null);
   const { previousAdventurePath } = useGameStore();
   const { playAudio, isMuted, toggleMute } = useAudio(appState);
 
@@ -66,13 +73,13 @@ function App() {
         <div 
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
           style={{
-            backgroundImage: "url('/images/title_bg.png')",
+            backgroundImage: `url('${selectedBook === 1 ? "/images/sections/book2_intro3.jpg" : "/images/sections/book2_intro1.jpg"}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
           {/* Overlay gradient to darken the background and make text readable */}
-          <div className="absolute inset-0 bg-black bg-opacity-60 bg-gradient-to-t from-black via-transparent to-black"></div>
+          <div className="absolute inset-0 bg-black/10 bg-gradient-to-t from-black via-transparent to-black/50"></div>
           
           <button 
             onClick={(e) => { e.stopPropagation(); toggleMute(); }} 
@@ -82,18 +89,64 @@ function App() {
           >
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
-          <div className="relative z-10 text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-180px)', display: 'block' }}>Loup Solitaire</h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>Les Maîtres des Ténèbres</h2>
+          <div className="relative z-10 text-center mb-8">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-80px)', display: 'block' }}>Loup Solitaire</h1>
+            <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl mb-6" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
+              {BOOK_TITLES[selectedBook]}
+            </h2>
+            
+            <div className="inline-block relative">
+              <select 
+                value={selectedBook}
+                onChange={(e) => setSelectedBook(Number(e.target.value))}
+                className="appearance-none bg-black/80 border-2 border-[#d4af37] text-[#d4af37] font-bold text-xl py-3 px-6 pr-12 rounded-lg outline-none focus:ring-2 focus:ring-[#d4af37]/50 cursor-pointer hover:bg-black transition-colors shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                style={{ fontFamily: 'Cinzel, serif' }}
+              >
+                <option value={1}>Livre 1 : {BOOK_TITLES[1]}</option>
+                <option value={2}>Livre 2 : {BOOK_TITLES[2]}</option>
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#d4af37]">
+                <svg className="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+            </div>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-4 w-full max-w-md backdrop-blur-sm bg-black/30 p-8 rounded-xl border border-[#d4af37]/30 shadow-2xl">
-            <button 
-              onClick={() => handleStateChange('CREATION')}
-              className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
-            >
-              Nouvelle Partie
-            </button>
+          <div className="relative z-10 flex flex-col gap-4 w-full max-w-xs mx-auto backdrop-blur-sm bg-black/50 p-6 rounded-2xl border border-[#d4af37]/40 shadow-2xl">
+            {selectedBook === 1 ? (
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setImportedCharacter(null);
+                  handleStateChange('CREATION');
+                }}
+                className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+              >
+                Nouvelle Partie
+              </button>
+            ) : (
+              <div className="flex flex-col gap-3">
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleStateChange('CLOUD_SAVE_IMPORT');
+                  }}
+                  className="primary-btn text-lg py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                >
+                  Importer un Personnage
+                </button>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setImportedCharacter(null);
+                    handleStateChange('CREATION');
+                  }}
+                  className="primary-btn text-lg py-3 shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                  style={{ backgroundColor: 'rgba(30, 30, 30, 0.9)', color: '#d4af37', border: '1px solid #d4af37' }}
+                >
+                  Créer un Personnage
+                </button>
+              </div>
+            )}
             <button 
               onClick={(e) => {
                 e.stopPropagation();
@@ -148,16 +201,21 @@ function App() {
       )}
 
       {appState === 'CREATION' && (
-        <CharacterCreation onComplete={() => handleStateChange('GAME')} onCancel={() => handleStateChange('MENU')} />
+        <CharacterCreation 
+          onComplete={() => handleStateChange('GAME')} 
+          onCancel={() => handleStateChange('MENU')} 
+          importedCharacter={importedCharacter}
+          bookId={selectedBook}
+        />
       )}
 
       {appState === 'GAME' && (
         <div className="flex flex-col h-screen relative">
-          <div className="flex items-center bg-[#1e1e1e] p-4 border-b border-[#333333] shadow-md z-10 relative">
+          <div className="flex items-center bg-[#1e1e1e] py-2 px-4 border-b border-[#333333] shadow-md z-10 relative">
             <div className="relative z-50">
               <div 
                 onClick={() => setShowDropdownMenu(!showDropdownMenu)} 
-                className="text-[#d4af37] hover:text-white hover:bg-black/30 p-2 rounded transition-all flex items-center justify-center border border-transparent hover:border-[#d4af37]/30 cursor-pointer"
+                className="text-[#d4af37] hover:text-white hover:bg-black/30 p-1 rounded transition-all flex items-center justify-center border border-transparent hover:border-[#d4af37]/30 cursor-pointer"
                 role="button"
               >
                 <Menu size={24} />
@@ -169,7 +227,7 @@ function App() {
             </h1>
           </div>
           
-          <div className="flex-1 overflow-y-auto p-4 md:p-8">
+          <div className="flex-1 overflow-y-auto px-1 py-4 sm:p-4 md:p-8">
             <StoryViewer />
           </div>
 
@@ -294,7 +352,7 @@ function App() {
 
 
       {appState === 'RULES' && (
-        <Rules onBack={() => handleStateChange('MENU')} />
+        <Rules bookId={selectedBook} onBack={() => handleStateChange('MENU')} />
       )}
 
       {appState === 'MAP' && (
@@ -303,8 +361,22 @@ function App() {
 
       {appState === 'CLOUD_SAVE' && (
         <CloudSaveScreen 
+          mode="full"
+          targetBookId={cloudSaveReturnState === 'MENU' ? selectedBook : undefined}
           onBack={() => handleStateChange(cloudSaveReturnState)}
           onLoadComplete={() => handleStateChange('GAME')}
+        />
+      )}
+
+      {appState === 'CLOUD_SAVE_IMPORT' && (
+        <CloudSaveScreen 
+          mode="import"
+          targetBookId={Math.max(1, selectedBook - 1)}
+          onBack={() => handleStateChange('MENU')}
+          onCharacterLoaded={(character) => {
+            setImportedCharacter(character);
+            handleStateChange('CREATION');
+          }}
         />
       )}
       

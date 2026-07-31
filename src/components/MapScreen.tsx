@@ -1,6 +1,6 @@
 import { ArrowLeft, Compass } from 'lucide-react';
 import { useGameStore } from '../store/gameStore';
-import { storyData } from '../data/story';
+import { getStoryData } from "../data/books";
 
 interface MapScreenProps {
   onBack: () => void;
@@ -17,7 +17,8 @@ const REGION_COORDINATES: Record<string, { x: number; y: number; label: string; 
 };
 
 export function MapScreen({ onBack }: MapScreenProps) {
-  const { currentSectionId, history } = useGameStore();
+  const { currentSectionId, history, currentBookId } = useGameStore();
+  const storyData = getStoryData(currentBookId);
 
   // Helper to get location key for a section ID
   const getLocationKey = (id: string): string => {

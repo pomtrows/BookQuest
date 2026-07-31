@@ -1,8 +1,9 @@
 import { useGameStore } from '../store/gameStore';
-import { storyData } from '../data/story';
+import { getStoryData } from '../data/books';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
 import { RotateCcw, Utensils, AlertTriangle, Dices } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 export function StoryViewer() {
   const { 
@@ -13,6 +14,7 @@ export function StoryViewer() {
     combatVictory,
     combatRoundNumber,
     character,
+    currentBookId,
     settings,
     history,
     goBackInHistory,
@@ -25,7 +27,8 @@ export function StoryViewer() {
     updateGold
   } = useGameStore();
 
-  const section = storyData[currentSectionId];
+  const storyDataObj = getStoryData(currentBookId);
+  const section = storyDataObj[currentSectionId];
   const [mealResolved, setMealResolved] = useState(!section?.requiresMeal);
   const [randomRoll, setRandomRoll] = useState<number | null>(null);
   const [isRolling, setIsRolling] = useState(false);
@@ -33,11 +36,34 @@ export function StoryViewer() {
   const [looted, setLooted] = useState(false);
 
   useEffect(() => {
-    setMealResolved(!storyData[currentSectionId]?.requiresMeal);
+    setMealResolved(!storyDataObj[currentSectionId]?.requiresMeal);
     setRandomRoll(null);
     setIsRolling(false);
     setTurningToSection(null);
     setLooted(false);
+
+    // Sauvegarde Automatique
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session) {
+        const state = useGameStore.getState();
+        const stateToSave = JSON.parse(JSON.stringify(state)); // Clone pur
+        supabase.from('game_saves').upsert(
+          {
+            user_id: session.user.id,
+            book_id: currentBookId,
+            slot_index: 0,
+            state: stateToSave,
+            updated_at: new Date().toISOString()
+          },
+          { onConflict: 'user_id, book_id, slot_index' }
+        ).then(({ error }) => {
+          if (error) {
+            console.error('Erreur autosave:', error);
+            useGameStore.getState().addNotification('Erreur Autosave: ' + error.message, 'danger');
+          }
+        });
+      }
+    });
   }, [currentSectionId]);
 
   if (!section) {
@@ -111,6 +137,12 @@ export function StoryViewer() {
     setTurningToSection(targetId);
     setTimeout(() => {
       goToSection(targetId);
+      const scrollContainer = document.querySelector('.overflow-y-auto');
+      if (scrollContainer) {
+        scrollContainer.scrollTop = 0;
+      } else {
+        window.scrollTo(0, 0);
+      }
     }, 600);
   };
 
@@ -118,7 +150,7 @@ export function StoryViewer() {
 
   if (isCombatActive && !combatVictory) {
     return (
-      <div className="max-w-4xl mx-auto pt-8 pb-20">
+      <div className="max-w-4xl mx-auto pt-0 pb-20">
         <CombatScreen />
       </div>
     );
@@ -168,33 +200,33 @@ export function StoryViewer() {
   return (
     <div className={`story-container min-h-screen ${turningToSection ? 'perspective-[1200px]' : ''}`}>
       {/* 3D turning page element */}
-      {turningToSection && storyData[turningToSection] && (
+      {turningToSection && storyDataObj[turningToSection] && (
         <div className="absolute inset-0 max-w-2xl mx-auto bg-[#0a0a0c] z-0 px-4 py-8 border-r-2 border-[#d4af37]/30 shadow-2xl origin-left animate-page-turn-under">
-           <div className="mb-8 border-b border-[#333333] pb-2">
+           <div className="mb-2 border-b border-[#333333] pb-1">
              <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
                Section {turningToSection}
              </h2>
            </div>
-           {storyData[turningToSection].image && (
-             <div className="w-full mb-8 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
-               <img src={storyData[turningToSection].image} className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale" alt="" />
+           {storyDataObj[turningToSection].image && (
+             <div className="w-full mb-2 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
+               <img src={storyDataObj[turningToSection].image} className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale" alt="" />
              </div>
            )}
-           <div className="prose prose-invert max-w-none text-[#e4d5b7] text-xl leading-relaxed">
-             <p>{storyData[turningToSection].text[0]}</p>
+           <div className="prose prose-invert max-w-none text-[#e4d5b7] text-xl leading-tight">
+             <p>{storyDataObj[turningToSection].text[0]}</p>
            </div>
         </div>
       )}
 
       <div className={`max-w-2xl mx-auto pb-20 relative bg-[#0a0a0c] min-h-full ${turningToSection ? 'animate-page-turn' : 'animate-fade-in z-10'}`}>
-        <div className="mb-8 border-b border-[#333333] pb-2">
+        <div className="mb-2 border-b border-[#333333] pb-1">
           <h2 className="text-3xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif' }}>
             Section {section.id}
           </h2>
         </div>
 
       {section.image && (
-        <div className="w-full mb-8 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
+        <div className="w-full mb-2 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
           <img 
             src={section.image} 
             alt={`Illustration for section ${section.id}`} 
@@ -203,7 +235,7 @@ export function StoryViewer() {
         </div>
       )}
 
-      <div className="book-panel p-6 mb-8" style={fontSizeStyle}>
+      <div className="book-panel p-3 md:p-4 mb-4" style={fontSizeStyle}>
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => {
               if (paragraph.startsWith('[IMG]')) {
@@ -215,14 +247,14 @@ export function StoryViewer() {
               }
               if (paragraph.startsWith('[TITLE]')) {
                 return (
-                  <h2 key={idx} className="text-2xl md:text-3xl text-center text-[#d4af37] mb-6 mt-4" style={{ fontFamily: 'Cinzel, serif' }}>
+                  <h2 key={idx} className="text-2xl md:text-3xl text-center text-[#d4af37] mb-3 mt-1" style={{ fontFamily: 'Cinzel, serif' }}>
                     {paragraph.substring(7)}
                   </h2>
                 );
               }
-              return <p key={idx} className="mb-4 leading-relaxed">{paragraph}</p>;
+              return <p key={idx} className="mb-2 leading-tight">{paragraph}</p>;
             })
-          : <p className="mb-4 leading-relaxed whitespace-pre-wrap">{section.text}</p>
+          : <p className="mb-2 leading-tight whitespace-pre-wrap">{section.text}</p>
         }
       </div>
 

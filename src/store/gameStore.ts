@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { GameState, CharacterState, Enemy, Settings } from '../types/game';
-import { storyData } from '../data/story';
+import { getStoryData } from '../data/books';
 import { getCombatResult, K } from '../data/combatTable';
 
 export interface Notification {
@@ -19,7 +19,7 @@ interface GameStore extends GameState {
   updateSettings: (newSettings: Partial<Settings>) => void;
 
   // Actions
-  startNewGame: (character: CharacterState) => void;
+  startNewGame: (character: CharacterState, bookId?: number) => void;
   saveAndResetGame: () => void;
   loadGame: () => void;
   goToSection: (sectionId: string) => void;
@@ -48,6 +48,7 @@ interface GameStore extends GameState {
 }
 
 const initialState = {
+  currentBookId: 1,
   character: null,
   currentSectionId: 'prologue',
   history: [],
@@ -95,7 +96,7 @@ export const useGameStore = create<GameStore>()(
         }));
       },
 
-      startNewGame: (character) => {
+      startNewGame: (character, bookId = 1) => {
         set((state) => {
           let prevPath = state.previousAdventurePath;
           if (state.character && state.history.length > 0) {
@@ -103,6 +104,8 @@ export const useGameStore = create<GameStore>()(
           }
           return {
             ...initialState,
+            currentSectionId: bookId === 1 ? 'prologue' : 'intro',
+            currentBookId: bookId,
             character,
             previousAdventurePath: prevPath,
             settings: state.settings
@@ -143,6 +146,7 @@ export const useGameStore = create<GameStore>()(
         }
 
         // Apply automatic damage or heal from section
+        const storyData = getStoryData(state.currentBookId);
         const section = storyData[sectionId];
         if (section) {
           if (section.damage) {

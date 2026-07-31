@@ -4,7 +4,7 @@ export interface RuleSection {
   content: string;
 }
 
-export const rulesData: RuleSection[] = [
+export const rulesDataBook1: RuleSection[] = [
   {
     id: 'generale',
     title: 'Générale',
@@ -120,3 +120,16 @@ Il est parfois possible de fuir un combat si le texte vous y autorise, mais vous
 [COMBAT_TABLE]`
   }
 ];
+
+export const getRulesData = (bookId: number): RuleSection[] => {
+  // Pour le moment, les règles du Livre 1 et du Livre 2 sont identiques, mais 
+  // on pourra retourner un tableau spécifique selon le livre plus tard.
+  switch (bookId) {
+    case 1:
+      return rulesDataBook1;
+    case 2:
+      return rulesDataBook1; // TODO: Remettre des règles spécifiques au livre 2 quand on les aura
+    default:
+      return rulesDataBook1;
+  }
+};

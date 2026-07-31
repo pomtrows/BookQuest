@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { ArrowLeft, BookOpen } from 'lucide-react';
-import { rulesData } from '../data/rules';
+import { getRulesData } from '../data/rules';
 import { CombatTable } from './CombatTable';
 
 interface RulesProps {
+  bookId: number;
   onBack: () => void;
 }
 
-export const Rules: React.FC<RulesProps> = ({ onBack }) => {
+export const Rules: React.FC<RulesProps> = ({ bookId, onBack }) => {
+  const rulesData = getRulesData(bookId);
   const [activeSection, setActiveSection] = useState<string>(rulesData[0].id);
 
   const activeData = rulesData.find(r => r.id === activeSection) || rulesData[0];

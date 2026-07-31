@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowLeft, BookOpen } from 'lucide-react';
-import { rulesData } from '../data/rules';
+import { getRulesData } from '../data/rules';
 
 interface DisciplinesHelpProps {
   onBack: () => void;
@@ -35,6 +35,7 @@ export function DisciplinesHelp({ onBack }: DisciplinesHelpProps) {
     });
   };
 
+  const rulesData = getRulesData(1);
   const disciplinesContent = rulesData.find(r => r.id === 'disciplines')?.content || '';
 
   return (

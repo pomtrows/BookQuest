@@ -4,16 +4,19 @@ import { useGameStore } from '../store/gameStore';
 import { ArrowLeft, Cloud, Save, Download, LogOut, Loader2, RefreshCw } from 'lucide-react';
 
 interface CloudSaveScreenProps {
+  mode?: 'full' | 'import';
+  targetBookId?: number;
   onBack: () => void;
   onLoadComplete?: () => void;
+  onCharacterLoaded?: (character: any) => void;
 }
 
-export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoadComplete }) => {
+export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ mode = 'full', targetBookId, onBack, onLoadComplete, onCharacterLoaded }) => {
   const [session, setSession] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null);
   
-  const [saves, setSaves] = useState<any[]>(Array(5).fill(null));
+  const [saves, setSaves] = useState<any[]>(Array(6).fill(null));
   
   const { addNotification } = useGameStore.getState();
 
@@ -31,28 +34,34 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoad
       if (session) {
         fetchSaves(session.user.id);
       } else {
-        setSaves(Array(5).fill(null));
+        setSaves(Array(6).fill(null));
       }
     });
 
     return () => subscription.unsubscribe();
   }, []);
 
+  const getBookId = () => targetBookId ?? useGameStore.getState().currentBookId ?? 1;
+
   const fetchSaves = async (userId: string) => {
     setLoading(true);
+    const bookId = getBookId();
     const { data, error } = await supabase
       .from('game_saves')
-      .select('slot_index, updated_at')
+      .select('slot_index, updated_at, state')
       .eq('user_id', userId)
+      .eq('book_id', bookId)
       .order('slot_index', { ascending: true });
 
     if (error) {
       console.error('Error fetching saves:', error);
       setMessage({ text: "Erreur lors de la récupération des sauvegardes.", type: 'error' });
     } else {
-      const newSaves = Array(5).fill(null);
+      const newSaves = Array(6).fill(null);
       data?.forEach((save) => {
-        newSaves[save.slot_index - 1] = save;
+        if (save.slot_index >= 0 && save.slot_index <= 5) {
+          newSaves[save.slot_index] = save;
+        }
       });
       setSaves(newSaves);
     }
@@ -67,26 +76,27 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoad
     if (!session) return;
     setLoading(true);
     
-    // Get full zustand state minus functions
     const state = useGameStore.getState();
     const stateToSave = JSON.parse(JSON.stringify(state)); // Remove functions/proxies
+    const bookId = getBookId();
 
     const { error } = await supabase.from('game_saves').upsert(
       {
         user_id: session.user.id,
-        slot_index: slotIndex + 1,
+        book_id: bookId,
+        slot_index: slotIndex,
         state: stateToSave,
         updated_at: new Date().toISOString()
       },
-      { onConflict: 'user_id, slot_index' }
+      { onConflict: 'user_id, book_id, slot_index' }
     );
 
     if (error) {
       console.error('Error saving:', error);
       setMessage({ text: "Erreur lors de la sauvegarde.", type: 'error' });
     } else {
-      setMessage({ text: `Partie sauvegardée sur l'emplacement ${slotIndex + 1}.`, type: 'success' });
-      addNotification(`Sauvegarde Cloud #${slotIndex + 1} réussie.`, 'success');
+      setMessage({ text: `Partie sauvegardée sur l'emplacement ${slotIndex}.`, type: 'success' });
+      addNotification(`Sauvegarde Cloud #${slotIndex} réussie.`, 'success');
       await fetchSaves(session.user.id);
     }
     setLoading(false);
@@ -95,29 +105,48 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoad
   const loadFromSlot = async (slotIndex: number) => {
     if (!session) return;
     setLoading(true);
+    const bookId = getBookId();
     
     const { data, error } = await supabase
       .from('game_saves')
       .select('state')
       .eq('user_id', session.user.id)
-      .eq('slot_index', slotIndex + 1)
+      .eq('book_id', bookId)
+      .eq('slot_index', slotIndex)
       .single();
 
     if (error || !data) {
       console.error('Error loading:', error);
       setMessage({ text: "Erreur lors du chargement.", type: 'error' });
     } else {
-      // Replace state
-      useGameStore.setState(data.state);
-      
-      setMessage({ text: `Partie chargée depuis l'emplacement ${slotIndex + 1}.`, type: 'success' });
-      setTimeout(() => {
-        setMessage(null);
-        if (onLoadComplete) {
-          onLoadComplete();
+      if (mode === 'import' && onCharacterLoaded) {
+        if (!data.state?.character) {
+          setMessage({ text: "Cette sauvegarde ne contient pas de personnage valide.", type: 'error' });
+        } else {
+          setMessage({ text: `Personnage importé depuis ${slotIndex === 0 ? "la Sauvegarde Automatique" : "l'emplacement " + slotIndex}.`, type: 'success' });
+          setTimeout(() => {
+            setMessage(null);
+            onCharacterLoaded(data.state.character);
+          }, 1500);
+          addNotification(`Personnage importé avec succès.`, 'success');
         }
-      }, 1500);
-      addNotification(`Sauvegarde Cloud #${slotIndex + 1} chargée.`, 'success');
+      } else {
+        // Replace full state, ensuring currentBookId is correctly set
+        // to the bookId we loaded from (especially important for older saves)
+        useGameStore.setState({
+          ...data.state,
+          currentBookId: bookId
+        });
+        
+        setMessage({ text: `Partie chargée depuis ${slotIndex === 0 ? "la Sauvegarde Automatique" : "l'emplacement " + slotIndex}.`, type: 'success' });
+        setTimeout(() => {
+          setMessage(null);
+          if (onLoadComplete) {
+            onLoadComplete();
+          }
+        }, 1500);
+        addNotification(slotIndex === 0 ? "Sauvegarde Automatique chargée." : `Sauvegarde Cloud #${slotIndex} chargée.`, 'success');
+      }
     }
     setLoading(false);
   };
@@ -139,9 +168,14 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoad
         <div className="flex items-center justify-between mb-8 border-b border-[#d4af37]/30 pb-4">
           <div className="flex items-center gap-4">
             <Cloud size={32} className="text-[#d4af37]" />
-            <h1 className="text-3xl md:text-5xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(212,175,55,0.3)', marginLeft: '24px' }}>
-              Sauvegardes Cloud
-            </h1>
+            <div className="ml-6">
+              <h1 className="text-3xl md:text-5xl font-bold text-[#d4af37]" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(212,175,55,0.3)' }}>
+                {mode === 'import' ? 'Importer Personnage' : 'Sauvegardes Cloud'}
+              </h1>
+              <div className="text-gray-400 mt-2 font-semibold">
+                Livre {getBookId()}
+              </div>
+            </div>
           </div>
           <button 
             onClick={onBack}
@@ -201,32 +235,40 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ onBack, onLoad
                 {saves.map((save, index) => (
                   <div key={index} className="flex justify-between items-center bg-[#1e1e1e] border border-[#333] p-5 rounded-lg hover:border-[#555] transition-colors shadow-inner">
                     <div className="flex-1">
-                      <div className="font-bold text-xl text-gray-200 mb-1">Emplacement {index + 1}</div>
+                      <div className="font-bold text-xl text-gray-200 mb-1">
+                        {index === 0 ? "Sauvegarde Automatique" : `Emplacement ${index}`}
+                      </div>
                       <div className="text-sm text-gray-500">
-                        {save ? `Dernière sauvegarde : ${new Date(save.updated_at).toLocaleString('fr-FR')}` : 'Vide'}
+                        {save ? (
+                          <>
+                            <span className="text-[#d4af37] font-medium mr-2">Section {save.state?.currentSectionId}</span>
+                            • &nbsp;Dernière sauvegarde : {new Date(save.updated_at).toLocaleString('fr-FR')}
+                          </>
+                        ) : 'Vide'}
                       </div>
                     </div>
                     <div className="flex gap-4">
-                      {/* Note: we omit the save button if we are just loading, but for completeness we keep both */}
-                      <button 
-                        onClick={() => saveToSlot(index)}
-                        disabled={loading}
-                        className="p-3 bg-[#222] border border-[#555] hover:border-[#d4af37] transition-colors rounded-lg flex items-center gap-2"
-                        style={{ color: '#d4af37' }}
-                        title="Écraser cette sauvegarde avec la partie courante"
-                      >
-                        <Save size={20} />
-                        <span className="hidden sm:inline font-semibold">Sauvegarder</span>
-                      </button>
+                      {mode === 'full' && index > 0 && (
+                        <button 
+                          onClick={() => saveToSlot(index)}
+                          disabled={loading}
+                          className="p-3 bg-[#222] border border-[#555] hover:border-[#d4af37] transition-colors rounded-lg flex items-center gap-2"
+                          style={{ color: '#d4af37' }}
+                          title="Écraser cette sauvegarde avec la partie courante"
+                        >
+                          <Save size={20} />
+                          <span className="hidden sm:inline font-semibold">Sauvegarder</span>
+                        </button>
+                      )}
                       <button 
                         onClick={() => loadFromSlot(index)}
                         disabled={loading || !save}
                         className={`p-3 bg-[#222] border border-[#555] transition-colors rounded-lg flex items-center gap-2 ${save ? 'hover:border-blue-400' : 'opacity-30 cursor-not-allowed'}`}
                         style={{ color: save ? '#3b82f6' : '#555555' }}
-                        title="Charger cette partie"
+                        title={mode === 'import' ? "Importer le personnage" : "Charger cette partie"}
                       >
                         <Download size={20} />
-                        <span className="hidden sm:inline font-semibold">Charger</span>
+                        <span className="hidden sm:inline font-semibold">{mode === 'import' ? 'Importer' : 'Charger'}</span>
                       </button>
                     </div>
                   </div>

@@ -93,6 +93,7 @@ export interface Settings {
 }
 
 export interface GameState {
+  currentBookId: number;
   character: CharacterState | null;
   currentSectionId: string;
   history: string[];
