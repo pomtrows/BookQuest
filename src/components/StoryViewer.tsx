@@ -47,6 +47,7 @@ export function StoryViewer() {
       if (session) {
         const state = useGameStore.getState();
         const stateToSave = JSON.parse(JSON.stringify(state)); // Clone pur
+        delete stateToSave.notifications; // Do not save notifications state to the cloud
         supabase.from('game_saves').upsert(
           {
             user_id: session.user.id,

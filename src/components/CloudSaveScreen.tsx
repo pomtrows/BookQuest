@@ -78,6 +78,7 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ mode = 'full',
     
     const state = useGameStore.getState();
     const stateToSave = JSON.parse(JSON.stringify(state)); // Remove functions/proxies
+    delete stateToSave.notifications; // Do not save notifications state to the cloud
     const bookId = getBookId();
 
     const { error } = await supabase.from('game_saves').upsert(
@@ -129,14 +130,16 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ mode = 'full',
             onCharacterLoaded(data.state.character);
           }, 1500);
           addNotification(`Personnage importé avec succès.`, 'success');
+          return; // Keep loading true during transition
         }
       } else {
         // Replace full state, ensuring currentBookId is correctly set
         // to the bookId we loaded from (especially important for older saves)
-        useGameStore.setState({
+        useGameStore.setState((state) => ({
           ...data.state,
-          currentBookId: bookId
-        });
+          currentBookId: bookId,
+          notifications: state.notifications // Keep current notifications, don't load old ones that would be stuck
+        }));
         
         setMessage({ text: `Partie chargée depuis ${slotIndex === 0 ? "la Sauvegarde Automatique" : "l'emplacement " + slotIndex}.`, type: 'success' });
         setTimeout(() => {
@@ -146,6 +149,7 @@ export const CloudSaveScreen: React.FC<CloudSaveScreenProps> = ({ mode = 'full',
           }
         }, 1500);
         addNotification(slotIndex === 0 ? "Sauvegarde Automatique chargée." : `Sauvegarde Cloud #${slotIndex} chargée.`, 'success');
+        return; // Keep loading true during transition
       }
     }
     setLoading(false);
