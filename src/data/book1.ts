@@ -1497,6 +1497,7 @@ export const storyData: Record<string, Section> = {
   },
   "76": {
     "id": "76",
+    "damage": 2,
     "image": "/images/sections/sect76.png",
     "location": "road",
     "text": [
@@ -5829,6 +5830,7 @@ export const storyData: Record<string, Section> = {
   },
   "308": {
     "id": "308",
+    "damage": 1,
     "location": "city",
     "text": [
       "La porte de l'écurie est ouverte et vous entendez à l'intérieur la respiration d'un cheval. Or, soudain, le cheval sent votre présence et, pris de peur, se précipite au-dehors en vous projetant à terre au passage. Vous perdez 1 point d'ENDURANCE.",
@@ -5912,6 +5914,7 @@ export const storyData: Record<string, Section> = {
   },
   "313": {
     "id": "313",
+    "damage": 2,
     "location": "cemetery",
     "text": [
       "Vous essuyez votre Arme du sang fétide qui la souille et vous vous hâtez de descendre le flanc de la colline avant que le Kraan aperçoive les cadavres de ses cavaliers. A plusieurs reprises, vous perdez l'équilibre, dégringolant de plusieurs mètres à la fois.",

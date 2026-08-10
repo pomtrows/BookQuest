@@ -287,6 +287,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "17": {
     "id": "17",
+    "damage": 5,
     "image": "/images/sections/book2_sect17.jpg",
     "text": [
       "Vous avez réussi à vous hisser à mi-corps lorsque la porte de la cale, au-dessous de vous, s'ouvre à la volée. Un MONSTRE D'ENFER se précipite alors et vous blesse aux jambes d'un coup de son épée noire avant même que vous ayez pu tenter de vous enfuir.",
@@ -510,6 +511,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "29": {
     "id": "29",
+    "damage": 2,
     "image": "/images/sections/book2_sect29.jpg",
     "text": [
       "Vous soulevez le loquet et vous faites glisser le panneau de l'écoutille. L'ouverture provoque un brusque appel d'air et des flammes jaillissent aussitôt de la cale. Vous reculez en titubant et en tenant à deux mains votre visage brûlé par le feu.",
@@ -1298,6 +1300,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "72": {
     "id": "72",
+    "heal": 1,
     "image": "/images/sections/book2_sect72.jpg",
     "text": [
       "L'aubergiste prend votre Pièce d'Or et pose devant vous une chope de bière mousseuse. C'est une bière forte et revigorante qui vous redonne un point d'ENDURANCE. Si vous souhaitez parler à l'aubergiste, rendez-vous au 226.",
@@ -1406,6 +1409,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "78": {
     "id": "78",
+    "damage": 2,
     "image": "/images/sections/book2_sect78.jpg",
     "text": [
       "Vous faites un bond en arrière, juste à temps pour éviter d'être écrasé par le mât qui s'abat sur le pont en passant au travers. Vous vous relevez en chancelant et vous examinez les débris de bois. Le corps sans vie du capitaine Kelman est coincé sous le mât brisé.",
@@ -2491,6 +2495,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "141": {
     "id": "141",
+    "damage": 2,
     "text": [
       "Le mât s'écrase sur le pont et un débris de bois vous frappe à la tête en vous jetant par-dessus bord. Vous vous débattez dans les vagues pour refaire surface puis vous vous agrippez à un panneau d'écoutille qui flotte à portée de main.",
       "A moitié assommé, vous perdez 2 points d'ENDURANCE. Vous vous hissez ensuite sur ce radeau de fortune en vous y cramponnant de toutes vos forces : si vous portez une cotte de mailles, il faut vous en débarrasser immédiatement, sinon, vous êtes sûr de périr noyé.",
@@ -2731,6 +2736,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "154": {
     "id": "154",
+    "damage": 2,
     "text": [
       "Dans leur poste d'équipage, les hommes du Sceptre Vert sont entassés les uns sur les autres; il règne là une atmosphère étouffante, surchauffée. Mais, en dépit du manque d'espace et de la frugalité du repas (une frugalité telle qu'elle vous coûte 2 points d'ENDURANCE), les marins sont contents que vous ayez accepté leur invitation et ils vous traitent comme un hôte d'honneur. Après dîner, ils vous invitent à jouer avec eux aux",
       "« Hublots ». Il s'agit d'un jeu de dés où l'on mise un peu d'or. Si vous voulez tenter votre chance, rendez-vous au 308. Si vous préférez décliner leur offre et leur souhaiter bonne nuit avant de regagner votre cabine, rendez-vous au 197."
@@ -3319,6 +3325,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "189": {
     "id": "189",
+    "damage": 2,
     "text": [
       "« Vous êtes un imposteur ! » s'écrie-t-il en dégainant son arme. Avant que vous n'ayez pu réagir, la lame de son épée vous écorche le bras et vous perdez 2 points d'ENDURANCE. L'homme s'est précipité sur vous ; sous le choc, vous franchissez la porte ouverte à reculons, vous trébuchez et vous tombez tous deux tête la première au bas des escaliers, dans un échange de jurons retentissants.",
       "Vous vous relevez ensuite en titubant mais le chevalier, lui, est déjà debout et a ramassé son épée. Si vous souhaitez le combattre, rendez-vous au 162. Si vous préférez vous enfuir dans la forêt en abandonnant votre cheval, rendez- vous au 244."
@@ -3486,6 +3493,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "198": {
     "id": "198",
+    "damage": 1,
     "text": [
       "Vous avez à peine parcouru une vingtaine de mètres lorsque votre cheval se cabre soudain et s'emballe. Vous êtes projeté à terre et vous perdez 1 point d'ENDURANCE. Vous vous relevez en époussetant votre cape et vous lancez un juron à votre monture qui disparaît au loin.",
       "Il ne vous reste plus qu'à poursuivre votre chemin à pied. Rendez-vous au 138."
@@ -4497,6 +4505,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "258": {
     "id": "258",
+    "damage": 1,
     "text": [
       "La puanteur que dégage le navire vous étouffe à demi. Vous perdez 1 point d'ENDURANCE et il vous faut à tout prix vous échapper de cette cale répugnante où vous finirez par succomber à la pestilence. Si vous voulez essayer de vous hisser sur le pont, rendez-vous au 17.",
       "Si vous préférez quitter la cale par la porte aménagée dans la cloison opposée, rendez-vous au 5. Enfin, si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous au 272."
@@ -5385,6 +5394,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "313": {
     "id": "313",
+    "damage": 4,
     "text": [
       "Les cris terrifiants des Monstres d'Enfer s'évanouissent enfin derrière vous et vous pouvez vous arrêter quelques instants pour reprendre votre souffle. Vous grimacez alors de douleur, car les doigts de l'épouvantable créature vous ont brûlé la gorge, vous infligeant des blessures cuisantes qui vous coûtent 4 points d'ENDURANCE.",
       "Vous déchirez un pan de votre tunique pour en faire un bandage, puis vous poursuivez votre route le long du tunnel de Tarnalin. Rendez-vous au 349."
@@ -5527,6 +5537,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "321": {
     "id": "321",
+    "damage": 2,
     "text": [
       "Le repas frugal est composé de restes de la veille qui n'ont rien d'appétissant. A la fin de ce piètre souper, le capitaine vous fait quelques confidences qui confirment vos craintes. « Je dois vous avouer quelque chose, Seigneur Kaï, dit-il : le feu a détruit tous nos vivres et il ne restait plus dans la cambuse que de quoi préparer ce maigre repas. D'ici à Port Bax, il faudra nous contenter du poisson que nous pourrons pêcher... »",
       "A moins qu'il ne vous reste de quoi manger dans votre Sac à Dos, ce détestable dîner vous laisse sur votre faim et vous perdez 2 points d'ENDURANCE. Plus tard dans la soirée, le capitaine vous propose une partie de Samor ; c'est un jeu semblable aux échecs qui demande beaucoup d'ingéniosité et d'audace.",
@@ -5698,6 +5709,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "330": {
     "id": "330",
+    "damage": 5,
     "text": [
       "Quelques secondes plus tard, vous vous sentez très mal et vous sombrez dans l'inconscience. Il s'est écoulé presque une heure lorsque vous vous réveillez. Vous êtes encore terriblement malade, mais vous avez survécu aux effets du poison.",
       "Vous perdez 5 points d'ENDURANCE, cependant. Puis, tandis que vos forces reviennent peu à peu, la fureur vous envahit : vous ramassez vos affaires et vous quittez aussitôt la chambre d'un pas chancelant, bien décidé à démasquer celui ou celle qui a tenté de vous assassiner.",
@@ -5849,6 +5861,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "338": {
     "id": "338",
+    "damage": 2,
     "text": [
       "Vous empoignez la lance et vous la levez au-dessus de votre tête en visant le Monstre d'Enfer qui se met à hurler de terreur : il sait en effet que le fer de votre lance lui sera fatal. Sous le choc, vous tombez tous deux sur la chaussée en contrebas.",
       "La chute est rude et vous coûte 2 points d'ENDURANCE. Quant au Monstre d'Enfer, il s'écrase sur la lance plantée dans sa poitrine et le fer lui transperce instantanément le cœur. Si vous souhaitez arracher votre lance du corps de la créature, rendez-vous au 269.",
