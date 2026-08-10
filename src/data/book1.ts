@@ -2307,6 +2307,7 @@ export const storyData: Record<string, Section> = {
     "id": "119",
     "image": "/images/sections/sect119.png",
     "location": "road",
+    "damage": 2,
     "text": [
       "Les Brosses à Potence déchirent votre cape et vous écorchent bras et jambes tandis que vous vous frayez un chemin dans leur enchevêtrement d'épines. Un quart d'heure plus tard, vous sortez enfin des buissons et vous poursuivez votre route d'un pas chancelant, mais parmi les arbres cette fois.",
       "Les plaies occasionnées par les Brosses à Potence vous coûtent 2 points d'ENDURANCE, à déduire de votre total actuel. Alors que vous continuez d'avancer, vous vous sentez pris de vertiges et vos paupières vous semblent lourdes.",
