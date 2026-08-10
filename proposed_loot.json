@@ -1,0 +1,51 @@
+const fs = require('fs');
+
+const missingData = {
+    // Book 1
+    "book1": {
+        // Checking the 7 sections of book 1:
+        // 50: False positive
+        // 130: False positive ("prendre un Repas")
+        // 148: False positive
+        // 183: False positive
+        // 257: False positive
+        // 318: False positive
+        // 332: False positive
+    },
+    // Book 2
+    "book2": {
+        "10": { items: ["Billet"] },
+        "91": { 
+            // "Le marchand vous offre 2 objets que vous devrez choisir dans la liste suivante : Bâton, Couverture,..."
+            // Actually this is a choice, not a direct loot drop. But we can present all items and let the user pick 2 (inventory logic might not support picking "only 2", but we can just drop them on the ground and let the player pick 2). Wait, BookQuest might not support "choose 2". If not, just drop them all.
+            // Items: Bâton, Couverture, Épée, Lance, 10 Pièces d'Or, Repas
+            items: ["Couverture", "10 Pièces d'Or", "Repas"], weapons: ["Bâton", "Épée", "Lance"] 
+        },
+        "103": { items: ["Dose de Laumspur"] },
+        "106": { weapons: ["Lance Magique"] },
+        "124": { gold: 42, weapons: ["Sabre", "Poignard"] },
+        "181": {
+            // Boutique... players buy things here. It's not a free loot drop!
+            // We should NOT add this to loot unless the game supports buying.
+            // But let's skip 181 for loot.
+        },
+        "187": { gold: 6, weapons: ["Lance", "Lance", "Epée", "Epée"] },
+        "220": { items: ["Potion de Gallowbrush", "Parchemin en langue Glok"] },
+        "231": { gold: 5, weapons: ["Poignard"], items: ["Sceau d'Hammardal"] },
+        "262": { gold: 6, weapons: ["Épée", "Masse d'Armes", "Bâton"], items: ["Repas complet", "Fiole de liquide orange"] },
+        "274": { gold: 6, weapons: ["Épée", "Masse d'Armes"] },
+        "301": { gold: 3, weapons: ["Poignard", "Poignard", "Poignard", "Sabre"] },
+        "302": { gold: 12, weapons: ["Masse d'Armes", "Glaive", "Bâton"], items: ["Potion de Guérison", "Repas", "Repas", "Repas", "Sac à Dos"] },
+        "315": {
+            // "vous découvrez un petit levier... un petit coffret à la serrure de cuivre"
+            // Wait, this is just finding a chest.
+        },
+        "320": {
+            // "Parchemin en peau humaine", "Poignard à la lame noire", "Bloc d'obsidienne"
+            items: ["Parchemin Glok", "Bloc d'obsidienne"], weapons: ["Poignard de la Nuit"] // Using approximate names
+        },
+        "331": { gold: 3, weapons: ["Epée", "Poignard"] }
+    }
+};
+
+fs.writeFileSync('proposed_loot.json', JSON.stringify(missingData, null, 2));
