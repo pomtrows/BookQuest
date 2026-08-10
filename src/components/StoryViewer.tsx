@@ -33,14 +33,14 @@ export function StoryViewer() {
   const [randomRoll, setRandomRoll] = useState<number | null>(null);
   const [isRolling, setIsRolling] = useState(false);
   const [turningToSection, setTurningToSection] = useState<string | null>(null);
-  const [looted, setLooted] = useState(false);
+  const [lootedItems, setLootedItems] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     setMealResolved(!storyDataObj[currentSectionId]?.requiresMeal);
     setRandomRoll(null);
     setIsRolling(false);
     setTurningToSection(null);
-    setLooted(false);
+    setLootedItems({});
 
     // Sauvegarde Automatique
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -174,29 +174,28 @@ export function StoryViewer() {
     /inférieur à \d+/i.test(c.text)
   ) || false;
 
-  const handleLoot = () => {
-    if (!section.loot || looted) return;
+  const handleLootItem = (type: 'gold' | 'meal' | 'special' | 'item' | 'weapon', value: any, id: string) => {
+    if (type === 'gold') updateGold(value as number);
+    if (type === 'meal') updateMeals(value as number);
+    if (type === 'special') addSpecialItem(value as string);
+    if (type === 'item') addBackpackItem(value as string);
+    if (type === 'weapon') addWeapon(value as any);
     
-    if (section.loot.gold) {
-      updateGold(section.loot.gold);
-    }
-    if (section.loot.meals) {
-      updateMeals(section.loot.meals);
-    }
-    if (section.loot.specialItems) {
-      section.loot.specialItems.forEach(item => addSpecialItem(item));
-    }
-    if (section.loot.items) {
-      section.loot.items.forEach(item => addBackpackItem(item));
-    }
-    if (section.loot.weapons) {
-      section.loot.weapons.forEach(weapon => addWeapon(weapon));
-    }
-    setLooted(true);
-    addNotification("Vous avez récupéré les objets.", "success");
+    setLootedItems(prev => ({ ...prev, [id]: true }));
+    addNotification("Objet récupéré", "success");
   };
 
-  const hasUnlootedItems = section.loot && !looted;
+  const hasUnlootedItems = () => {
+    if (!section.loot) return false;
+    
+    const allGold = !section.loot.gold || lootedItems['gold'];
+    const allMeals = !section.loot.meals || lootedItems['meals'];
+    const allSpecial = !section.loot.specialItems || section.loot.specialItems.every((_, i) => lootedItems[`special-${i}`]);
+    const allItems = !section.loot.items || section.loot.items.every((_, i) => lootedItems[`item-${i}`]);
+    const allWeapons = !section.loot.weapons || section.loot.weapons.every((_, i) => lootedItems[`weapon-${i}`]);
+    
+    return !(allGold && allMeals && allSpecial && allItems && allWeapons);
+  };
 
   return (
     <div className={`story-container min-h-screen ${turningToSection ? 'perspective-[1200px]' : ''}`}>
@@ -259,24 +258,43 @@ export function StoryViewer() {
         }
       </div>
 
-      {hasUnlootedItems && (
+      {hasUnlootedItems() && (
         <div className="book-panel p-6 mb-8 border-[#d4af37]/50 bg-[#1a1505]">
           <h3 className="text-xl font-bold text-[#d4af37] mb-2 flex items-center gap-2">
             Objets trouvés
           </h3>
-          <ul className="list-disc list-inside text-[#e4d5b7] mb-4">
-            {section.loot!.gold && <li>{section.loot!.gold} Couronnes d'Or</li>}
-            {section.loot!.meals && <li>{section.loot!.meals} Repas</li>}
-            {section.loot!.specialItems?.map((item, idx) => <li key={`special-${idx}`}>{item} (Objet Spécial)</li>)}
-            {section.loot!.items?.map((item, idx) => <li key={`item-${idx}`}>{item}</li>)}
-            {section.loot!.weapons?.map((weapon, idx) => <li key={`weapon-${idx}`}>{weapon}</li>)}
+          <ul className="space-y-3 text-[#e4d5b7]">
+            {section.loot!.gold && !lootedItems['gold'] && (
+              <li className="flex justify-between items-center bg-[#2a220a] p-2 rounded border border-[#d4af37]/30">
+                <span>{section.loot!.gold} Couronnes d'Or</span>
+                <button onClick={() => handleLootItem('gold', section.loot!.gold, 'gold')} className="px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] border border-[#d4af37] rounded hover:bg-[#d4af37]/40 transition-colors text-sm font-bold">Prendre</button>
+              </li>
+            )}
+            {section.loot!.meals && !lootedItems['meals'] && (
+              <li className="flex justify-between items-center bg-[#2a220a] p-2 rounded border border-[#d4af37]/30">
+                <span>{section.loot!.meals} Repas</span>
+                <button onClick={() => handleLootItem('meal', section.loot!.meals, 'meals')} className="px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] border border-[#d4af37] rounded hover:bg-[#d4af37]/40 transition-colors text-sm font-bold">Prendre</button>
+              </li>
+            )}
+            {section.loot!.specialItems?.map((item, idx) => !lootedItems[`special-${idx}`] && (
+              <li key={`special-${idx}`} className="flex justify-between items-center bg-[#2a220a] p-2 rounded border border-[#d4af37]/30">
+                <span>{item} (Objet Spécial)</span>
+                <button onClick={() => handleLootItem('special', item, `special-${idx}`)} className="px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] border border-[#d4af37] rounded hover:bg-[#d4af37]/40 transition-colors text-sm font-bold">Prendre</button>
+              </li>
+            ))}
+            {section.loot!.items?.map((item, idx) => !lootedItems[`item-${idx}`] && (
+              <li key={`item-${idx}`} className="flex justify-between items-center bg-[#2a220a] p-2 rounded border border-[#d4af37]/30">
+                <span>{item}</span>
+                <button onClick={() => handleLootItem('item', item, `item-${idx}`)} className="px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] border border-[#d4af37] rounded hover:bg-[#d4af37]/40 transition-colors text-sm font-bold">Prendre</button>
+              </li>
+            ))}
+            {section.loot!.weapons?.map((weapon, idx) => !lootedItems[`weapon-${idx}`] && (
+              <li key={`weapon-${idx}`} className="flex justify-between items-center bg-[#2a220a] p-2 rounded border border-[#d4af37]/30">
+                <span>{weapon}</span>
+                <button onClick={() => handleLootItem('weapon', weapon, `weapon-${idx}`)} className="px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] border border-[#d4af37] rounded hover:bg-[#d4af37]/40 transition-colors text-sm font-bold">Prendre</button>
+              </li>
+            ))}
           </ul>
-          <button 
-            onClick={handleLoot}
-            className="primary-btn mt-2"
-          >
-            Prendre les objets
-          </button>
         </div>
       )}
 

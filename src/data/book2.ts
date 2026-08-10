@@ -1906,7 +1906,7 @@ export const storyDataBook2: Record<string, Section> = {
       "MONSTRE D'ENFER HABILETÉ: 22 ENDURANCE:30 Il vous est impossible de prendre la fuite et vous devrez poursuivre ce combat jusqu'à la mort de l'un des deux adversaires. Si vous êtes vainqueur, vous aurez le droit de conserver la lance.",
       "Inscrivez-la dans ce cas sur votre Feuille d'Aventure dans la case Lance Magique de la section Objets Spéciaux. Rendez-vous ensuite au 320."
     ],
-    "loot": {"weapons":["Lance Magique"]},
+    "loot": {"specialItems":["Lance Magique"]},
     "choices": [
       {
         "text": "Rendez-vous ensuite au 320.",
@@ -3302,7 +3302,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous précipitez ensuite les corps des soldats dans les eaux du chenal et vous vous hâtez de franchir le pont, de peur que quelqu'un n'ait été témoin de la scène. Une fois parvenu de l'autre côté, vous marchez pendant une heure sur un chemin forestier et vous calez confortablement votre Sac à Dos sur vos épaules et vous prenez la direction de l'est.",
       "Rendez-vous au 265."
     ],
-    "loot": {"gold":6,"weapons":["Lance","Lance","Epée","Epée"]},
+    "loot": {"gold":6,"weapons":["Lance","Lance","Épée","Épée"]},
     "choices": [
       {
         "text": "Rendez-vous au 265.",
@@ -4578,7 +4578,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Si l'un ou l'autre de ces objets vous intéresse, il vous suffit de les inscrire sur votre Feuille d'Aventure pour qu'ils vous appartiennent désormais. Lorsque vous quittez la pièce, vous vous heurtez à un autre garde ; le choc est plutôt rude et vous tombez tous deux au bas de l'escalier ; mais avant que le garde ait pu retrouver ses esprits, vous avez déjà pris la fuite en courant dans la nuit.",
       "Rendez-vous au 65."
     ],
-    "loot": {"gold":6,"weapons":["Épée","Masse d'Armes","Bâton"],"items":["Repas complet","Fiole de liquide orange"]},
+    "loot": {"gold":6,"weapons":["Épée","Masse d'armes","Bâton"],"items":["Repas complet","Fiole de liquide orange"]},
     "choices": [
       {
         "text": "Rendez-vous au 65.",
@@ -4782,7 +4782,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Avant que vous ayez eu le temps de sortir par la porte de devant, d'autres villageois furieux ont réussi à pénétrer dans la boutique et vous devez à présent vous enfuir par la fenêtre du premier étage.",
       "Rendez- vous au 132."
     ],
-    "loot": {"gold":6,"weapons":["Épée","Masse d'Armes"]},
+    "loot": {"gold":6,"weapons":["Épée","Masse d'armes"]},
     "choices": [
       {
         "text": "Rendez- vous au 132.",
@@ -5226,7 +5226,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Prenez ce dont vous avez besoin, modifiez en conséquence votre Feuille d'Aventure et hâtez-vous de quitter la tour de peur que quelqu'un ne découvre votre présence. La forêt qu'il vous faut traverser est très dense et vous allez devoir abandonner votre cheval pour continuer votre chemin à pied.",
       "Rendez-vous au 244."
     ],
-    "loot": {"gold":12,"weapons":["Masse d'Armes","Glaive","Bâton"],"items":["Potion de Guérison","Repas","Repas","Repas","Sac à Dos"]},
+    "loot": {"gold":12,"weapons":["Masse d'armes","Glaive","Bâton"],"items":["Potion de Guérison","Repas","Repas","Repas","Sac à Dos"]},
     "choices": [
       {
         "text": "Rendez-vous au 244.",
@@ -5527,7 +5527,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous jetez le sac à terre comme s'il s'agissait d'un charbon ardent et vous vous hâtez de rejoindre votre cheval. Hélas, le malheur veut qu'il ait disparu: sans doute les Squalls l'ont-ils volé. Vous poussez alors un soupir de découragement et vous vous résignez à poursuivre votre route à pied.",
       "Rendez-vous au 138."
     ],
-    "loot": {"items":["Parchemin Glok","Bloc d'obsidienne"],"weapons":["Poignard de la Nuit"]},
+    "loot": {"items":["Parchemin Glok","Bloc d'obsidienne"],"weapons":["Poignard"]},
     "choices": [
       {
         "text": "Rendez-vous au 138.",
@@ -5729,7 +5729,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous levez alors la tête et vous apercevez un autre soldat à l'étage au-dessus. Vous vous précipitez aussitôt hors de la tour et vous prenez vos jambes à votre cou, tandis que le soldat vous abreuve d'injures.",
       "Rendez-vous au 65."
     ],
-    "loot": {"gold":3,"weapons":["Epée","Poignard"]},
+    "loot": {"gold":3,"weapons":["Épée","Poignard"]},
     "choices": [
       {
         "text": "Rendez-vous au 65.",
