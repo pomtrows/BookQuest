@@ -796,6 +796,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "43": {
     "id": "43",
+    "image": "/images/sections/book2_sect43.jpg",
     "text": [
       "Vous faites tournoyer le Glaive de Sommer d'un geste vigoureux et vous fauchez d'un coup quatre zombies, mais à peine leurs cadavres se sont-ils écroulés sur le pont que d'autres morts vivants viennent prendre leur place.",
       "Vous ne parviendrez jamais à les tuer tous et vous succomberez sous le nombre. Ils agrippent votre cape qu'ils commencent à déchirer et vous n'avez plus qu'à sauter par-dessus bord pour échapper à une mort certaine.",
@@ -810,6 +811,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "44": {
     "id": "44",
+    "image": "/images/sections/book2_sect44.jpg",
     "text": [
       "Le venin se répand dans votre sang, vos membres s'engourdissent et vous vous mettez à transpirer. Le clapotis des vagues et le cri des vautours au-dessus de votre tête sont les derniers bruits qui vous parviennent.",
       "Votre quête s'achève ici en même temps que votre vie."
@@ -818,6 +820,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "45": {
     "id": "45",
+    "image": "/images/sections/book2_sect45.jpg",
     "text": [
       "Vous galopez le long du chemin forestier en direction des cavaliers vêtus de capes ; soudain, l'un d'eux lève un épieu de couleur noire au- dessus de sa tête. A l'extrémité de l'épieu est fixé un cône d'acier, noir également, d'où s'échappe une flamme bleue étince-lante.",
       "Vous vous apprêtez à porter votre premier coup lorsqu'un éclair aveuglant jaillit du bâton maléfique et explose juste à côté de vous. La force de la déflagration est telle que vous êtes projeté à terre dans les broussailles.",
@@ -836,6 +839,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "46": {
     "id": "46",
+    "image": "/images/sections/book2_sect46.jpg",
     "text": [
       "Vous vous efforcez de vous rappeler la signification de cette porte orange, mais sans succès. Si vous décidez d'entrer dans la boutique, rendez-vous au 214. Si vous préférez poursuivre votre chemin, rendez- vous au 230."
     ],
@@ -852,6 +856,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "47": {
     "id": "47",
+    "image": "/images/sections/book2_sect47.jpg",
     "text": [
       "Les soldats se hâtent de descendre du toit et empoignent leurs lances ; puis ils s'avancent vers vous. « Le mot de passe, étranger ! » crie l'un d'eux. Si vous connaissez le mot de passe qui permet de franchir le pont, rendez-vous au 111.",
       "Sinon, rendez-vous au 307."
@@ -869,6 +874,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "48": {
     "id": "48",
+    "image": "/images/sections/book2_sect48.jpg",
     "text": [
       "Vous désignez du doigt une chope de bière posée sur le bar et vous demandez au marin de l'observer attentivement. Vous fermez alors les yeux et vous vous concentrez jusqu'à ce que l'image de la chope se forme dans votre esprit.",
       "Sous l'effet de votre volonté, la chope s'élève bientôt dans les airs sous le regard médusé de votre interlocuteur. Rendez-vous au 268."
@@ -882,6 +888,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "49": {
     "id": "49",
+    "image": "/images/sections/book2_sect49.jpg",
     "text": [
       "Pendant trois jours et trois nuits, les navires de la flotte de Durenor font voile en direction du golfe de Holm. La traversée est rapide mais chacun des bateaux est malheureusement frappé par la malchance.",
       "Des voiles se déchirent, des cordages se dénouent mystérieusement et des voies d'eau se forment dans les coques. Les hommes entassés à bord se laissent gagner par l'énervement, des querelles éclatent, puis des bagarres, qui souvent se terminent par la mort d'un des adversaires.",
@@ -899,6 +906,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "50": {
     "id": "50",
+    "image": "/images/sections/book2_sect50.jpg",
     "text": [
       "Le moine se penche soudain en avant et dépose une autre Couronne d'Or sur l'assiette ; la diligence est alors autorisée à poursuivre sa route. « Peut-être pourrez-vous rendre la pareille un jour, mon fils », dit le moine en reprenant place sur la banquette avant que vous ayez pu dire un mot.",
       "Vous remarquez alors que le capuchon de sa robe de bure maintient constamment son visage dans l'ombre : voilà qui est étrange... Bientôt, la diligence traverse la rivière en crue et le voyage se poursuit.",
@@ -913,6 +921,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "51": {
     "id": "51",
+    "image": "/images/sections/book2_sect51.jpg",
     "text": [
       "Environ une heure plus tard, la diligence s'arrête devant le sanctuaire de Kalanane. On dit que le sanctuaire a été édifié sur la tombe du roi Alin, le premier souverain de Durenor et que, tout autour, pousse de l'herbe de Laumspur.",
       "Si vous souhaitez cueillir un peu de cette herbe, rendez- vous au 103. Sinon, retournez dans la diligence en vous rendant au 249."
@@ -930,6 +939,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "52": {
     "id": "52",
+    "image": "/images/sections/book2_sect52.jpg",
     "text": [
       "Soudain un cri à vous glacer le sang retentit dans l'obscurité, au-dessus de vous. Vous levez la tête et vous apercevez deux lueurs rougeâtres : ce sont les yeux d'un Monstre d'Enfer qui descend les marches quatre à quatre pour se jeter sur vous.",
       "Vous hurlez de terreur en cherchant frénétiquement une arme pour vous défendre. Si vous possédez une Lance Magique, rendez-vous au 338. Sinon, rendez-vous au 234."
@@ -947,6 +957,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "53": {
     "id": "53",
+    "image": "/images/sections/book2_sect53.jpg",
     "text": [
       "Vous entendez des murmures parmi l'équipage ; de temps à autre, vous percevez distinctement certains mots : les hommes parlent de",
       "« vaisseaux fantômes » et de",
@@ -969,6 +980,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "54": {
     "id": "54",
+    "image": "/images/sections/book2_sect54.jpg",
     "text": [
       "Au moment où vous franchissez la porte en courant, une lance s'enfonce dans votre poitrine avec une telle force que vous en êtes soulevé de terre. Le clair de lune s'estompe et la dernière vision que vous emporterez de ce monde n'a rien de réconfortant: les visages grimaçants de villageois réunis en cercle se penchent sur vous et des dizaines de mains vous poignardent à mort.",
       "Votre quête s'achève ici en même temps que votre vie."
@@ -977,6 +989,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "55": {
     "id": "55",
+    "image": "/images/sections/book2_sect55.jpg",
     "text": [
       "Un homme de haute taille vêtu d'un tablier de cuir est en train d'aiguiser un glaive de belle apparence. L'homme est assis devant une meule qui projette des gerbes d'étincelles chaque fois que la lame de l'épée entre en contact avec la pierre.",
       "Le forgeron vous souhaite le bonsoir et vous offre le glaive. « Cest une belle lame, dit-il, forgée dans un pur acier de Durenor. Pour douze Couronnes, elle est à vous. »",
@@ -996,6 +1009,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "56": {
     "id": "56",
+    "image": "/images/sections/book2_sect56.jpg",
     "text": [
       "L'aubergiste vous tend une clé. « Chambre 4, deuxième porte à gauche en haut de l'escalier», annonce-t-il. Il faudra libérer les lieux une heure après le lever du soleil. Votre chambre n'est meublée que d'un lit, d'une chaise et d'une petite table.",
       "Avant d'aller vous coucher, vous verrouillez la porte et vous coincez la chaise contre le panneau par mesure de sécurité. Dès demain, vous établirez un nouvel itinéraire pour rejoindre le royaume de Durenor.",
@@ -1010,6 +1024,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "57": {
     "id": "57",
+    "image": "/images/sections/book2_sect57.jpg",
     "text": [
       "Du dos de sa main gantée, l'un des gardes fait sauter de votre paume l'or que vous lui offrez et les pièces tombent dans les eaux sombres du chenal de Ryner. Utilisez la Table de Hasard pour savoir combien de pièces vous avez perdues, en remplaçant le zéro par un 10. «Nous n'allons pas vendre la sécurité de notre royaume à si vil prix, dit le garde, seul un brigand ou un imbécile songerait à corrompre un soldat de Durenor et j'ai bien l'impression que vous êtes les deux à la fois. »",
       "Vous avez eu le tort de porter atteinte à leur honneur et ils sont en train de vous donner une rude leçon. Rendez-vous au 282."
@@ -1023,6 +1038,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "58": {
     "id": "58",
+    "image": "/images/sections/book2_sect58.jpg",
     "text": [
       "« Pas de chance, Loup Solitaire, votre stratégie ne manquait pas d'audace, mais je crois bien que j'ai gagné à présent », déclare bientôt votre adversaire. Le capitaine avance alors une de ses pièces sculptées sur le damier et vous vous rendez compte que vous avez perdu.",
       "Vous le félicitez pour sa maîtrise du jeu de Samor et vous lui donnez 10 Pièces d'Or. « Peut-être voudrez-vous engager une autre partie demain soir ? demande-t-il, je suis homme à vous offrir une deuxième chance. »",
@@ -1037,6 +1053,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "59": {
     "id": "59",
+    "image": "/images/sections/book2_sect59.jpg",
     "text": [
       "A coups d'éperons, vous lancez votre cheval en direction d'un Monstre d'Enfer qui s'apprête à frapper un soldat sans défense. Cette créature est insensible à la Discipline Kaï de la Puissance Psychique et ne peut être blessée que par une arme magique.",
       "Si vous possédez une Lance Magique, rendez-vous au 332. Dans le cas contraire, il vous faut prendre la fuite en plongeant dans les broussailles pour vous y cacher ; rendez-vous alors au 311."
@@ -1054,6 +1071,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "60": {
     "id": "60",
+    "image": "/images/sections/book2_sect60.jpg",
     "text": [
       "HALVORC vous contemple d'un air stupéfait et incrédule. HALVORC HABILETÉ: 8 ENDURANCE: 11 Il est incapable de se défendre au cours des deux premiers assauts en raison de l'effet de surprise de votre attaque.",
       "Vous ne perdrez donc aucun point d'ENDURANCE lors de ces deux assauts. Si votre adversaire est toujours en vie au moment du troisième assaut, il s'élancera sur vous armé d'un Poignard. Si vous sortez vainqueur du combat, rendez-vous au 76."
@@ -1072,6 +1090,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "61": {
     "id": "61",
+    "image": "/images/sections/book2_sect61.jpg",
     "text": [
       "La pluie tombe si dru qu'il vous est difficile de voir distinctement ; vous apercevez cependant les silhouettes sombres de gardes en patrouille qui s'avancent dans votre direction. S'ils vous arrêtaient pour vous demander ce que vous êtes venu faire à Ragadorn, vous pourriez bien finir dans l'une des nombreuses geôles de Lachelan le Suzerain.",
       "Il vaut mieux ne pas courir ce risque et vous décidez donc de battre en retraite le long de la rue du Chevalier Noir et de bifurquer le plus vite possible dans la rue du Sage ; votre tactique réussit et les gardes passent sans vous voir.",
@@ -1086,6 +1105,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "62": {
     "id": "62",
+    "image": "/images/sections/book2_sect62.jpg",
     "text": [
       "Vous entrez dans une vaste pièce remplie de classeurs et de livres de comptes. Face à vous, un homme revêtu d'un uniforme d'officier des forces navales de Durenor est assis à un grand bureau. Il tient devant lui un énorme livre posé debout sur le bureau.",
       "A votre entrée, l'homme lève les yeux de son livre et vous jette un regard inquisiteur. « Vous devez avoir des affaires bien urgentes à mener pour solliciter un laissez-passer rouge à une heure aussi tardive. Je voudrais voir votre permis d'entrée et l'autorisation de votre officier commandant. »",
@@ -1109,6 +1129,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "63": {
     "id": "63",
+    "image": "/images/sections/book2_sect63.jpg",
     "text": [
       "Vous êtes réveillé au milieu de la nuit par un poids qui pèse soudain sur votre poitrine. Vous écartez lentement les pans de votre cape et vous découvrez avec horreur qu'un Serpent des Sables s'est niché dessous.",
       "Si vous voulez essayer d'attraper ce serpent au venin mortel juste derrière la tête et le jeter au loin, rendez-vous au 188. Si vous préférez vous lever d'un bond en essayant de faire tomber le serpent sur le sol, rendez-vous au 201.",
@@ -1131,6 +1152,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "64": {
     "id": "64",
+    "image": "/images/sections/book2_sect64.jpg",
     "text": [
       "Un peu plus loin, vous apercevrez une diligence semblable à celles qui transportent les voyageurs le long des côtes menant à Ragadorn. Les chevaux ont été dételés et le véhicule semble abandonné. Vous remarquez alors les corps de trois soldats étendus entre les roues.",
       "Leurs uniformes sont tachés de sang. Si vous souhaitez fouiller la diligence en espérant y trouver de la nourriture ou quelque objet utile, rendez-vous au 134. Si vous préférez poursuivre votre chemin sans vous attarder, rendez-vous au 208.",
@@ -1153,6 +1175,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "65": {
     "id": "65",
+    "image": "/images/sections/book2_sect65.jpg",
     "text": [
       "Tandis que vous courez le long de la rue de la Tour de Guet, vous entendez derrière vous la voix du garde qui pousse des jurons. La voix s'évanouit bientôt et vous arrivez sur la place du Tombeau. Devant vous, dans la rue du même nom, quatre soldats marchent dans votre direction.",
       "Vous les évitez en courant vers le sud pendant dix minutes environ, le long d'une rue couverte de gros pavés. Enfin, vous apercevez une grande écurie et un relais de diligence dont les contours se dessinent dans l'obscurité, à quelque distance.",
@@ -1167,6 +1190,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "66": {
     "id": "66",
+    "image": "/images/sections/book2_sect66.jpg",
     "text": [
       "Lorsque vous levez la lame étincelante de votre glaive le CAPITAINE ZOMBIE tire de sa veste en lambeaux un poignard menaçant. Il vous faut le combattre jusqu'à la mort de l'un de vous deux. CAPITAINE ZOMBIE HABILETÉ : 15 ENDURANCE : 15 La puissance du Glaive de Sommer vous permet de multiplier par 2 tous les points d'ENDURANCE que le capitaine perdra au cours de l'affrontement, mais votre adversaire est insensible à la Discipline Kaï de la Puissance Psychique.",
       "Si vous êtes vainqueur, rendez-vous au 218."
@@ -1185,6 +1209,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "67": {
     "id": "67",
+    "image": "/images/sections/book2_sect67.jpg",
     "text": [
       "Vous arrivez très vite à la conclusion que l'imposteur a dû s'enfuir par l'entrée principale de la taverne ; s'il est resté dans les environs, il doit probablement se trouver sur la place principale ou à proximité.",
       "Vous fouillez les ruelles et les maisons autour de la place, mais vous ne découvrez pas la moindre trace du fuyard. Plutôt que de perdre votre temps en vaines recherches, vous décidez alors de revenir sur le quai.",
@@ -1200,6 +1225,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "68": {
     "id": "68",
+    "image": "/images/sections/book2_sect68.jpg",
     "text": [
       "Le garde vous jette un regard méprisant. « Je suis un soldat de Durenor, dit-il, et votre or ne vous sera d'aucun secours avec moi. »",
       "Vous avez eu le tort de porter atteinte à son honneur et il vous donne une rude leçon. Rendez-vous au 306."
@@ -1213,6 +1239,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "69": {
     "id": "69",
+    "image": "/images/sections/book2_sect69.jpg",
     "text": [
       "L'un des étrangers sort de sous sa cape un épieu noir qu'il tend devant lui. D'un cône d'acier fixé à l'extrémité de l'épieu s'échappe soudain une flamme bleuâtre et un éclair jaillit dans votre direction.",
       "Un fracas assourdissant retentit lorsque l'éclair vient frapper le bouclier de Rhygar. « Pas de quartiers ! » crie alors le Lieutenant Général en se précipitant sur l'étranger à la lance de feu. L'épée de votre compagnon transperce la cape de son adversaire mais ce dernier reste indemne.",
@@ -1229,6 +1256,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "70": {
     "id": "70",
+    "image": "/images/sections/book2_sect70.jpg",
     "text": [
       "Vous haletez de douleur lorsque le serpent plonge ses crochets dans votre bras. Vous saisissez le reptile juste derrière sa tête repoussante, vous l'arrachez à votre bras et vous le jetez dans l'herbe.",
       "Mais le serpent a eu le temps de vous infliger une profonde morsure et son venin commence à faire de l'effet. Si vous possédez le Pendentif à l'Étoile de Cristal, rendez-vous au 219. Dans le cas contraire, rendez-vous au 44."
@@ -1246,6 +1274,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "71": {
     "id": "71",
+    "image": "/images/sections/book2_sect71.jpg",
     "text": [
       "Vous claquez la porte derrière vous et vous poussez le verrou. La boutique est sombre, mais vous parvenez cependant à distinguer un escalier à votre droite, une trappe au milieu du plancher et une porte dans le mur du fond.",
       "Soudain, vous entendez le fracas d'une hache qui vient de briser un panneau de la porte d'entrée. On vous a vu entrer dans la boutique et la populace est en train de défoncer la porte. Si vous souhaitez ouvrir la trappe et vous cacher dans la cave, rendez-vous au 11.",
@@ -1268,6 +1297,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "72": {
     "id": "72",
+    "image": "/images/sections/book2_sect72.jpg",
     "text": [
       "L'aubergiste prend votre Pièce d'Or et pose devant vous une chope de bière mousseuse. C'est une bière forte et revigorante qui vous redonne un point d'ENDURANCE. Si vous souhaitez parler à l'aubergiste, rendez-vous au 226.",
       "Si vous désirez prendre une chambre pour la nuit, il vous en coûtera 2 Pièces d'Or et vous vous rendrez au 56. Si enfin vous souhaitez engager une partie de bras de fer, rendez-vous au 276."
@@ -1289,6 +1319,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "73": {
     "id": "73",
+    "image": "/images/sections/book2_sect73.jpg",
     "text": [
       "L'escalade se révèle malaisée car vous n'avez qu'une seule main libre, l'autre tenant le pommeau du Glaive de Sommer. Finalement, vous parvenez quand même au sommet de la tour et vous vous hâtez d'enjamber le muret qui tient lieu de garde-fou. Vous vous apprêtez à sauter à l'intérieur de la tour et à passer à l'attaque lorsqu'une petite voix vous fige sur place :",
       "« Votre mort sera pour moi un spectacle tout à fait délectable, Loup Solitaire. »",
@@ -1304,6 +1335,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "74": {
     "id": "74",
+    "image": "/images/sections/book2_sect74.jpg",
     "text": [
       "Vous posez vos mains sur sa poitrine et vous essayez de refermer sa blessure. Il a perdu beaucoup de sang et bien qu'il transpire abondamment, il a la peau froide. Ses yeux s'ouvrent alors et il prononce quelques mots à peine audibles.",
       "« Les pirates... Les pirates de Lakuri... Attention aux voiles rouges... Repoussez les pirates... »",
@@ -1321,6 +1353,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "75": {
     "id": "75",
+    "image": "/images/sections/book2_sect75.jpg",
     "text": [
       "Vous pénétrez dans un bureau aux odeurs de moisi. Deux hommes y sont assis, penchés sur leurs tables qui ploient sous des piles de livres et de papiers. « Bonsoir, monsieur», dit l'un des hommes. Sa longue moustache soigneusement cirée tressaute quand il parle.",
       "« Monsieur désire-t-il un laissez-passer de marchand ? » demande-t-il. Avant même que vous ayez pu répondre, l'homme vous tend une poignée de formulaires incompréhensibles. « Si Monsieur veut bien se donner la peine de signer ici, je me ferai un plaisir de donner immédiatement à Monsieur son laissez-passer. Il en coûtera 10 Couronnes à Monsieur. »",
@@ -1339,6 +1372,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "76": {
     "id": "76",
+    "image": "/images/sections/book2_sect76.jpg",
     "text": [
       "En fouillant ses longs vêtements tachés de sang, vous vous rendez compte avec un sentiment de malaise qu'aucune preuve ne permet d'affirmer que cet homme était bien celui qui cherchait à vous tuer. Vous ne trouvez sur lui qu'un Poignard et 2 Pièces d'Or que vous pouvez vous approprier si vous le désirez.",
       "Rendez-vous au 33."
@@ -1352,6 +1386,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "77": {
     "id": "77",
+    "image": "/images/sections/book2_sect77.jpg",
     "text": [
       "Au cours de votre entraînement au monastère Kaï, vos maîtres vous ont enseigné de nombreux langues et dialectes en usage dans les régions septentrionales de Magnamund. L'un de ces dialectes est le squall.",
       "Or, il se trouve précisément que les créatures rassemblées dans cette clairière sont des Squalls. A grands cris, ils vous expliquent que l'homme blessé n'a en réalité rien d'humain. C'est un Monstre d'Enfer, affirment-ils, un de ces êtres maléfiques qui ont le pouvoir de changer de forme à leur guise et qui comptent parmi les plus fidèles serviteurs des Maîtres des Ténèbres.",
@@ -1370,6 +1405,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "78": {
     "id": "78",
+    "image": "/images/sections/book2_sect78.jpg",
     "text": [
       "Vous faites un bond en arrière, juste à temps pour éviter d'être écrasé par le mât qui s'abat sur le pont en passant au travers. Vous vous relevez en chancelant et vous examinez les débris de bois. Le corps sans vie du capitaine Kelman est coincé sous le mât brisé.",
       "Vous contemplez ce spectacle d'un regard horrifié lorsque soudain la tempête ouvre une large brèche dans la coque déjà endommagée du Sceptre Vert. Et tandis que le navire se disloque, vous êtes projeté par-dessus le bastingage et vous tombez dans les flots déchaînés.",
@@ -1392,6 +1428,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "79": {
     "id": "79",
+    "image": "/images/sections/book2_sect79.jpg",
     "text": [
       "Une puissante énergie se répand dans votre corps avec une telle force que vous en oubliez tout ce qui vous entoure. Instinctivement, vous levez le Glaive au-dessus de votre tête ; un rayon de soleil vient alors frapper l'extrémité de sa lame et une lumière blanche, aveuglante, jaillit aussitôt dans toute la pièce.",
       "C'est à ce moment précis que le véritable pouvoir du Glaive de Sommer se révèle à vous dans toute son ampleur. Cette arme a été forgée bien avant que les Sommerlundois, les Durenorais et les Maîtres des Ténèbres se soient installés sur les territoires des Fins de Terre.",
@@ -1412,6 +1449,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "80": {
     "id": "80",
+    "image": "/images/sections/book2_sect80.jpg",
     "text": [
       "Le chevalier remet son épée au fourreau et vous conduit à l'intérieur de la tour. Vous le suivez le long d'un escalier de pierre qui mène à une vaste salle ; un feu de bois brûle dans une cheminée en répandant une agréable chaleur.",
       "« Si vous êtes vraiment celui que vous prétendez être, vous devez avoir en votre possession le Sceau d'Hammardal. Dans ce cas, montrez-le-moi », ordonne le chevalier. Si vous acceptez de lui montrer le Sceau, rendez-vous au 15.",
@@ -1430,6 +1468,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "81": {
     "id": "81",
+    "image": "/images/sections/book2_sect81.jpg",
     "text": [
       "Le lendemain matin, vous êtes réveillé par la vigie postée dans le nid- de-pie :",
       "« Canot de sauvetage sur bâbord avant», annonce l'homme à grands cris. Vous montez sur le pont en affrontant la fraîcheur de la brise et vous y rencontrez le capitaine. A une cinquantaine de mètres sur bâbord avant, un canot endommagé dérive, ballotté par une forte houle.",
@@ -1449,6 +1488,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "82": {
     "id": "82",
+    "image": "/images/sections/book2_sect82.jpg",
     "text": [
       "Lorsque vous êtes assuré que la populace s'est bel et bien éloignée, vous sautez de la meule et vous courez le long de la rue en vous dissimulant dans l'ombre et en prenant bien garde à ne pas faire de bruit.",
       "Bientôt, vous apercevez sur votre gauche une boutique qui porte cette enseigne : La vitrine de la boutique est éclairée et la porte ouverte. Si vous voulez entrer dans les lieux, rendez-vous au 55. Si vous préférez continuer à courir le long de la rue, rendez-vous au 347."
@@ -1466,6 +1506,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "83": {
     "id": "83",
+    "image": "/images/sections/book2_sect83.jpg",
     "text": [
       "Au bout de la rue de la Bernicle, vous arrivez à un croisement. Il fait déjà nuit à présent et il va bientôt falloir vous trouver un abri. Si vous souhaitez tourner à gauche, dans la rue du Tonnelier, rendez-vous au 227.",
       "Si vous préférez prendre à droite la rue de la Licorne, rendez-vous au 297."
@@ -1483,6 +1524,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "84": {
     "id": "84",
+    "image": "/images/sections/book2_sect84.jpg",
     "text": [
       "Dans l'entrée principale, un vieil homme est assis ; il arbore une longue barbe et semble fort aimable. Penché sur un lutrin, il est en train d'étudier un énorme livre à la reliure de cuir. Sa lecture l'absorbe tant qu'il n'a pas remarqué votre présence dans l'enceinte de l'hôtel de ville.",
       "Si vous souhaitez lui demander le chemin du consulat du Sommerlund, rendez-vous au 211. Si vous préférez repartir et trouver vous-même votre chemin, rendez-vous au 191."
@@ -1500,6 +1542,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "85": {
     "id": "85",
+    "image": "/images/sections/book2_sect85.jpg",
     "text": [
       "VIVEKA renverse la table d'un coup de pied. Elle est rapide comme l'éclair et votre effet de surprise est complètement raté. Elle a déjà dégainé son épée et se jette sur vous. VIVEKA HABILETÉ : 24 ENDURANCE : 27 Si vous remportez la victoire, rendez-vous au 124."
     ],
@@ -1517,6 +1560,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "86": {
     "id": "86",
+    "image": "/images/sections/book2_sect86.jpg",
     "text": [
       "De ce côté du port, de nombreux navires sont amarrés ; il y a là des bateaux de toutes sortes qui battent pavillon de tous pays. Le fleuve Dom qui traverse la ville de Ragadorn connaît toujours une très grande activité : c'est la voie navigable la plus importante de la région.",
       "Vous êtes sur le point d'abandonner vos recherches lorsque vous repérez enfin le bateau de pêche de vos malandrins. Il n'y a personne à bord, mais une fouille en règle vous permet de découvrir une Masse d'Armes et trois Pièces d'Or dissimulées dans un hamac soigneusement plié.",
@@ -1540,6 +1584,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "87": {
     "id": "87",
+    "image": "/images/sections/book2_sect87.jpg",
     "text": [
       "Lorsque vous levez votre arme pour en frapper le chevalier, vous vous rendez compte trop tard que vous avez commis une erreur fatale, car l'homme est un escrimeur de toute première force et les soldats appartiennent au régiment d'élite de la garde du roi Alin IV.",
       "Pensant que vous êtes un Monstre d'Enfer, ils vous encerclent et vous taillent en pièces. Votre mission s'achève tragiquement en même temps que votre vie, ici, à Tarnalin."
@@ -1548,6 +1593,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "88": {
     "id": "88",
+    "image": "/images/sections/book2_sect88.jpg",
     "text": [
       "Bien que la nuit soit tombée, la pleine lune projette une brillante clarté sur tout le village. Derrière la taverne, vous apercevez la petite boutique d'un charron ; deux chevaux sont attelés à une charrette à foin stationnée juste devant la porte.",
       "Si vous souhaitez prendre l'un des chevaux pour vous enfuir au galop, rendez-vous au 150. Si vous préférez vous cacher dans la boutique du charron, rendez-vous au 71. Si enfin vous maîtrisez la Discipline Kaï du Camouflage, rendez-vous au 179."
@@ -1569,6 +1615,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "89": {
     "id": "89",
+    "image": "/images/sections/book2_sect89.jpg",
     "text": [
       "Au moment où vous sautez, le conducteur vous aperçoit et arrête aussitôt la diligence. Puis il se tourne vers vous, une épée à la main. Si vous souhaitez lui payer le prix d'un billet, rendez-vous au 233.",
       "Si vous préférez l'attaquer, rendez-vous au 212."
@@ -1586,6 +1633,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "90": {
     "id": "90",
+    "image": "/images/sections/book2_sect90.jpg",
     "text": [
       "Deux SQUALLS et trois VILLAGEOIS en colère montent les marches quatre à quatre, bien décidés à vous faire un mauvais sort. Il vous faut les combattre un par un. HABILETÉ ENDURANCE 1er VILLAGEOIS 10 16 1er SQUALL 6 9 2e VILLAGEOIS 11 14 2e SQUALL 5 8 3e VILLAGEOIS 11 17 Vous pouvez à tout moment prendre la fuite en sautant par une fenêtre.",
       "Dans ce cas, rendez-vous au 132. Si vous parvenez à vaincre tous ces adversaires, rendez-vous au 274."
