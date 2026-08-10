@@ -176,6 +176,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous constatez avec soulagement que le siège est très confortable ; c'est un avantage que vous appréciez car il vous faudra voyager sept jours durant pour atteindre Port Bax. Vous rangez votre équipement sous la banquette, vous vous adossez confortablement et vous vous laissez gagner par le sommeil.",
       "Lorsque vous vous éveillez, cinq autres passagers ont pris place dans la diligence qui fait route en direction de Durenor. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez 0,1, 2 ou 3, rendez-vous au 51. 4, 5 ou 6, rendez-vous au 195. 7, 8 ou 9, rendez-vous au 339."
     ],
+    "loot": {"items":["Billet"]},
     "choices": [
       {
         "text": "Si vous tirez 0,1, 2 ou 3, rendez-vous au 51.",
@@ -1656,6 +1657,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Faites votre choix (deux objets à votre convenance) et inscrivez vos nouvelles acquisitions sur votre Feuille d'Aventure dans la case Sac à Dos. Vous remerciez ensuite le marchand et vous sortez par une porte latérale.",
       "Rendez-vous au 245."
     ],
+    "loot": {"items":["Couverture","10 Pièces d'Or","Repas"],"weapons":["Bâton","Épée","Lance"]},
     "choices": [
       {
         "text": "Rendez-vous au 245.",
@@ -1847,6 +1849,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Le Laumspur est une herbe délicieuse très recherchée d'un bout à l'autre des Fins de Terre en raison de ses vertus curatives. Vous en avez ramassé l'équivalent d'un Repas et ce Repas vous rendra 3 points d'ENDURANCE lorsque vous le prendrez (inscrivez sur votre Feuille d'Aventure votre moisson de Laumspur).",
       "Vous enveloppez soigneusement l'herbe que vous venez de ramasser et vous retournez dans la diligence en compagnie des autres voyageurs. Rendez-vous au 249."
     ],
+    "loot": {"items":["Dose de Laumspur"]},
     "choices": [
       {
         "text": "Rendez-vous au 249.",
@@ -1899,6 +1902,7 @@ export const storyDataBook2: Record<string, Section> = {
       "MONSTRE D'ENFER HABILETÉ: 22 ENDURANCE:30 Il vous est impossible de prendre la fuite et vous devrez poursuivre ce combat jusqu'à la mort de l'un des deux adversaires. Si vous êtes vainqueur, vous aurez le droit de conserver la lance.",
       "Inscrivez-la dans ce cas sur votre Feuille d'Aventure dans la case Lance Magique de la section Objets Spéciaux. Rendez-vous ensuite au 320."
     ],
+    "loot": {"weapons":["Lance Magique"]},
     "choices": [
       {
         "text": "Rendez-vous ensuite au 320.",
@@ -2223,6 +2227,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous la fouillez mais vous ne découvrez aucune preuve qu'elle était bien celle qui voulait vous assassiner. Vous trouvez sur elle 42 Pièces d'Or, un Sabre et un Poignard. Prenez ce que vous voulez parmi ces objets si le cœur vous en dit et le cas échéant, inscrivez-les sur votre Feuille d'Aventure.",
       "Rendez-vous ensuite au 33."
     ],
+    "loot": {"gold":42,"weapons":["Sabre","Poignard"]},
     "choices": [
       {
         "text": "Rendez-vous ensuite au 33.",
@@ -3291,6 +3296,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous précipitez ensuite les corps des soldats dans les eaux du chenal et vous vous hâtez de franchir le pont, de peur que quelqu'un n'ait été témoin de la scène. Une fois parvenu de l'autre côté, vous marchez pendant une heure sur un chemin forestier et vous calez confortablement votre Sac à Dos sur vos épaules et vous prenez la direction de l'est.",
       "Rendez-vous au 265."
     ],
+    "loot": {"gold":6,"weapons":["Lance","Lance","Epée","Epée"]},
     "choices": [
       {
         "text": "Rendez-vous au 265.",
@@ -3818,6 +3824,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Mais la preuve irréfutable de son identité, vous la découvrez sur son poignet gauche : c'est un tatouage qui représente un serpent. Les brigands qui avaient essayé de vous tuer avant même que vous quittiez Holmgard portaient exactement la même marque.",
       "La bourse du moine contient 23 Pièces d'Or que vous pouvez conserver sans oublier de les inscrire sur votre Feuille d'Aventure. Rendez-vous ensuite au 33."
     ],
+    "loot": {"items":["Potion de Gallowbrush","Parchemin en langue Glok"]},
     "choices": [
       {
         "text": "Rendez-vous ensuite au 33.",
@@ -4009,6 +4016,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Si vous souhaitez à présent retourner dans la taverne, rendez-vous au 177. Si vous préférez examiner la sépulture, rendez-vous au 24. S'il vous semble plus judicieux de suivre la rue du Tombeau en direction de l'ouest, rendez- vous au 253.",
       "Vous pouvez également aller vers l'est en empruntant la rue de la Tour de Guet ; rendez-vous pour cela au 319. Enfin, si vous maîtrisez la Discipline Kaï de l'Orientation, rendez-vous au 182."
     ],
+    "loot": {"gold":5,"weapons":["Poignard"],"items":["Sceau d'Hammardal"]},
     "choices": [
       {
         "text": "Si vous souhaitez à présent retourner dans la taverne, rendez-vous au 177.",
@@ -4561,6 +4569,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Si l'un ou l'autre de ces objets vous intéresse, il vous suffit de les inscrire sur votre Feuille d'Aventure pour qu'ils vous appartiennent désormais. Lorsque vous quittez la pièce, vous vous heurtez à un autre garde ; le choc est plutôt rude et vous tombez tous deux au bas de l'escalier ; mais avant que le garde ait pu retrouver ses esprits, vous avez déjà pris la fuite en courant dans la nuit.",
       "Rendez-vous au 65."
     ],
+    "loot": {"gold":6,"weapons":["Épée","Masse d'Armes","Bâton"],"items":["Repas complet","Fiole de liquide orange"]},
     "choices": [
       {
         "text": "Rendez-vous au 65.",
@@ -4764,6 +4773,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Avant que vous ayez eu le temps de sortir par la porte de devant, d'autres villageois furieux ont réussi à pénétrer dans la boutique et vous devez à présent vous enfuir par la fenêtre du premier étage.",
       "Rendez- vous au 132."
     ],
+    "loot": {"gold":6,"weapons":["Épée","Masse d'Armes"]},
     "choices": [
       {
         "text": "Rendez- vous au 132.",
@@ -5192,6 +5202,7 @@ export const storyDataBook2: Record<string, Section> = {
     "text": [
       "En fouillant les cadavres, vous trouvez 3 Pièces d'Or, 3 Poignards et 1 Sabre. Si vous souhaitez emporter l'un ou l'autre de ces objets, modifiez en conséquence votre Feuille d'Aventure. Rendez-vous ensuite au 20."
     ],
+    "loot": {"gold":3,"weapons":["Poignard","Poignard","Poignard","Sabre"]},
     "choices": [
       {
         "text": "Rendez-vous ensuite au 20.",
@@ -5206,6 +5217,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Prenez ce dont vous avez besoin, modifiez en conséquence votre Feuille d'Aventure et hâtez-vous de quitter la tour de peur que quelqu'un ne découvre votre présence. La forêt qu'il vous faut traverser est très dense et vous allez devoir abandonner votre cheval pour continuer votre chemin à pied.",
       "Rendez-vous au 244."
     ],
+    "loot": {"gold":12,"weapons":["Masse d'Armes","Glaive","Bâton"],"items":["Potion de Guérison","Repas","Repas","Repas","Sac à Dos"]},
     "choices": [
       {
         "text": "Rendez-vous au 244.",
@@ -5505,6 +5517,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous jetez le sac à terre comme s'il s'agissait d'un charbon ardent et vous vous hâtez de rejoindre votre cheval. Hélas, le malheur veut qu'il ait disparu: sans doute les Squalls l'ont-ils volé. Vous poussez alors un soupir de découragement et vous vous résignez à poursuivre votre route à pied.",
       "Rendez-vous au 138."
     ],
+    "loot": {"items":["Parchemin Glok","Bloc d'obsidienne"],"weapons":["Poignard de la Nuit"]},
     "choices": [
       {
         "text": "Rendez-vous au 138.",
@@ -5704,6 +5717,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous levez alors la tête et vous apercevez un autre soldat à l'étage au-dessus. Vous vous précipitez aussitôt hors de la tour et vous prenez vos jambes à votre cou, tandis que le soldat vous abreuve d'injures.",
       "Rendez-vous au 65."
     ],
+    "loot": {"gold":3,"weapons":["Epée","Poignard"]},
     "choices": [
       {
         "text": "Rendez-vous au 65.",
