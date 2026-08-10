@@ -175,6 +175,21 @@ export function StoryViewer() {
   ) || false;
 
   const handleLootItem = (type: 'gold' | 'meal' | 'special' | 'item' | 'weapon', value: any, id: string) => {
+    if (!character) return;
+
+    if (type === 'weapon' && character.weapons.length >= 2) {
+      addNotification("Vous ne pouvez pas porter plus de 2 armes.", "warning");
+      return;
+    }
+
+    if (type === 'item') {
+      const totalItems = character.backpack.filter(i => i !== 'Repas').length + character.meals;
+      if (totalItems >= 8) {
+        addNotification("Votre sac à dos est plein (8 objets max).", "warning");
+        return;
+      }
+    }
+
     if (type === 'gold') updateGold(value as number);
     if (type === 'meal') updateMeals(value as number);
     if (type === 'special') addSpecialItem(value as string);
