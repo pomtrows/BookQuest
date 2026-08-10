@@ -2204,6 +2204,7 @@ export const storyData: Record<string, Section> = {
       "Si vous souhaitez vous diriger vers le nord-est, rendez-vous au 347.",
       "Si vous préférez aller à l'est, rendez-vous au 295."
     ],
+    "loot": { "items": ["Dose de Laumspur", "Dose de Laumspur"] },
     "choices": [
       {
         "text": "Si vous souhaitez vous diriger vers le nord-est, rendez-vous au 347.",

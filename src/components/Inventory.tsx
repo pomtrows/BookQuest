@@ -13,9 +13,13 @@ export function Inventory() {
     }
   };
 
-  const handleDrinkPotion = (item: string) => {
+  const handleConsumeItem = (item: string) => {
     if (character && character.endurance < character.maxEndurance) {
-      heal(4);
+      if (item.toLowerCase().includes('laumspur')) {
+        heal(3);
+      } else {
+        heal(4);
+      }
       removeBackpackItem(item);
     }
   };
@@ -82,12 +86,12 @@ export function Inventory() {
             <li key={idx} className="mb-1 flex justify-between items-center group">
               <span>• {item}</span>
               <div className="flex gap-2 items-center">
-                {item.toLowerCase().includes('potion') && (
+                {(item.toLowerCase().includes('potion') || item.toLowerCase().includes('laumspur')) && (
                   <button 
-                    onClick={() => handleDrinkPotion(item)}
+                    onClick={() => handleConsumeItem(item)}
                     className="text-xs bg-[#d4af37] text-black px-2 py-1 rounded hover:bg-[#b38f22] whitespace-nowrap"
                   >
-                    Boire (+4 END)
+                    Consommer (+{item.toLowerCase().includes('laumspur') ? '3' : '4'} END)
                   </button>
                 )}
                 <button onClick={() => removeBackpackItem(item)} className="text-red-500/50 hover:text-red-500 p-1 transition-opacity" title="Jeter">
