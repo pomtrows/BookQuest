@@ -80,6 +80,7 @@ export interface Section {
   autoDamage?: number;
   damage?: number;
   heal?: number;
+  loseAllGold?: boolean;
   permanentCsLoss?: number;
   loseAllWeapons?: boolean;
   gameOver?: boolean;

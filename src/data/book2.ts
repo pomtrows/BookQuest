@@ -2560,6 +2560,10 @@ export const storyDataBook2: Record<string, Section> = {
       "Les Noudics se sont montrés fort serviables et vous leur en êtes très reconnaissant jusqu'au moment où vous vous apercevez qu'il ne vous reste plus une seule Pièce d'Or ! Ils vous ont tout dérobé et vous n'avez plus qu'à modifier votre Feuille d'Aventure en conséquence.",
       "Vous vous trouvez toujours dans le tunnel de Tarnelin que vous continuez à suivre en vous rendant au 349."
     ],
+    "loot": {
+      "meals": 2
+    },
+    "loseAllGold": true,
     "choices": [
       {
         "text": "Vous vous trouvez toujours dans le tunnel de Tarnelin que vous continuez à suivre en vous rendant au 349.",

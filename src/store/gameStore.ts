@@ -178,6 +178,11 @@ export const useGameStore = create<GameStore>()(
                notificationsToAdd.push({msg: `Vous avez perdu toutes vos Armes.`, type: 'warning'});
             }
           }
+          if (section.loseAllGold) {
+            if (state.character.goldCrowns > 0) {
+              notificationsToAdd.push({msg: `Vous avez perdu ${state.character.goldCrowns} Pièce(s) d'Or.`, type: 'warning'});
+            }
+          }
         }
 
         set((state) => ({
@@ -186,7 +191,8 @@ export const useGameStore = create<GameStore>()(
             endurance: newEndurance,
             combatSkill: newMaxCS,
             weapons: newWeapons,
-            meals: newMeals
+            meals: newMeals,
+            goldCrowns: section?.loseAllGold ? 0 : state.character!.goldCrowns
           },
           currentSectionId: sectionId,
           history: [...state.history, state.currentSectionId],
