@@ -3903,6 +3903,9 @@ export const storyData: Record<string, Section> = {
       "La plupart des placards et des tiroirs sont vides. Les habitants de cette maison ont presque tout emporté avec eux ; vous parvenez cependant à trouver dans la cave suffisamment de fruits pour vous faire un Repas. Notez-le sur votre Feuille d'Aventure.",
       "Rendez-vous ensuite au 81."
     ],
+    "loot": {
+      "meals": 1
+    },
     "choices": [
       {
         "text": "Rendez-vous ensuite au 81.",
