@@ -169,7 +169,7 @@ export function StoryViewer() {
   const fontSizeStyle = { fontSize: getFontSize() };
   
   const hasRandomChoices = section?.choices?.some(c => 
-    /tirez/i.test(c.text) || 
+    /\btirez\b/i.test(c.text) || 
     /entre \d+ et \d+/i.test(c.text) ||
     /inférieur à \d+/i.test(c.text)
   ) || false;
@@ -404,7 +404,7 @@ export function StoryViewer() {
 
           {section.choices && section.choices.length > 0 ? (
             section.choices.map((choice, idx) => {
-              const isRandomChoice = /tirez|entre \d+ et \d+|inférieur à/i.test(choice.text);
+              const isRandomChoice = /\btirez\b|entre \d+ et \d+|inférieur à/i.test(choice.text);
               const requiredDiscipline = getRequiredDiscipline(choice.text);
               const hasRequiredDiscipline = requiredDiscipline ? character?.disciplines.includes(requiredDiscipline as any) : true;
               
