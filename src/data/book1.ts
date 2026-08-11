@@ -3868,6 +3868,10 @@ export const storyData: Record<string, Section> = {
       "Le Drakkarim est étendu raide mort au fond de l'embarcation. Il est porteur d'un sabre et de 6 Pièces d'Or que vous pouvez vous approprier si tel est votre désir. Vous jetez ensuite le corps de votre adversaire dans l'eau du lac et vous le regardez disparaître dans ses profondeurs glacées.",
       "Vous ramassez ensuite la perche et vous poussez le bateau sur l'autre rive où vous l'abandonnez. Rendez-vous au 172."
     ],
+    "loot": {
+      "gold": 6,
+      "weapons": ["Sabre"]
+    },
     "choices": [
       {
         "text": "Rendez-vous au 172.",
