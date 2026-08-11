@@ -3385,7 +3385,6 @@ export const storyData: Record<string, Section> = {
   "172": {
     "id": "172",
     "location": "road",
-    "damage": 4,
     "image": "/images/sections/sect172.png",
     "text": [
       "La nuit tombe et l'obscurité bientôt vous engloutit. Il serait vain de poursuivre votre route car vous vous perdriez à coup sûr. Vous attachez donc votre cheval à un arbre, vous vous étendez sur le sol en vous emmitouflant dans votre cape de Seigneur Kaï et vous sombrez dans un sommeil sans rêves.",
