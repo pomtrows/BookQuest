@@ -5206,6 +5206,9 @@ export const storyData: Record<string, Section> = {
       "Si vous acceptez son offre, rendez-vous au 314.",
       "Si vous préférez ne compter que sur vous- même pour rejoindre la citadelle, rendez-vous au 7."
     ],
+    "loot": {
+      "gold": 10
+    },
     "choices": [
       {
         "text": "Si vous acceptez son offre, rendez-vous au 314.",

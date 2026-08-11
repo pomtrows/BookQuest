@@ -1381,6 +1381,10 @@ export const storyDataBook2: Record<string, Section> = {
       "En fouillant ses longs vêtements tachés de sang, vous vous rendez compte avec un sentiment de malaise qu'aucune preuve ne permet d'affirmer que cet homme était bien celui qui cherchait à vous tuer. Vous ne trouvez sur lui qu'un Poignard et 2 Pièces d'Or que vous pouvez vous approprier si vous le désirez.",
       "Rendez-vous au 33."
     ],
+    "loot": {
+      "gold": 2,
+      "weapons": ["Poignard"]
+    },
     "choices": [
       {
         "text": "Rendez-vous au 33.",
