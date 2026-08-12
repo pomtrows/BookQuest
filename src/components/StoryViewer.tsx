@@ -34,6 +34,7 @@ export function StoryViewer() {
   const [isRolling, setIsRolling] = useState(false);
   const [turningToSection, setTurningToSection] = useState<string | null>(null);
   const [lootedItems, setLootedItems] = useState<Record<string, boolean>>({});
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
 
   useEffect(() => {
     setMealResolved(!storyDataObj[currentSectionId]?.requiresMeal);
@@ -224,7 +225,12 @@ export function StoryViewer() {
            </div>
            {storyDataObj[turningToSection].image && (
              <div className="w-full mb-2 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
-               <img src={storyDataObj[turningToSection].image} className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale" alt="" />
+               <img 
+                 src={storyDataObj[turningToSection].image} 
+                 className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale cursor-pointer" 
+                 alt="" 
+                 onClick={() => setFullscreenImage(storyDataObj[turningToSection!].image || null)}
+               />
              </div>
            )}
            <div className="prose prose-invert max-w-none text-[#e4d5b7] text-xl leading-tight">
@@ -245,7 +251,8 @@ export function StoryViewer() {
           <img 
             src={section.image} 
             alt={`Illustration for section ${section.id}`} 
-            className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain"
+            className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain cursor-pointer"
+            onClick={() => setFullscreenImage(section.image || null)}
           />
         </div>
       )}
@@ -254,9 +261,15 @@ export function StoryViewer() {
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => {
               if (paragraph.startsWith('[IMG]')) {
+                const imgSrc = paragraph.substring(5);
                 return (
                   <div key={idx} className="my-6 flex justify-center">
-                    <img src={paragraph.substring(5)} alt="" className="max-w-full h-auto max-h-[50vh] object-contain rounded-lg shadow-lg border-2 border-[#d4af37]" />
+                    <img 
+                      src={imgSrc} 
+                      alt="" 
+                      className="max-w-full h-auto max-h-[50vh] object-contain rounded-lg shadow-lg border-2 border-[#d4af37] cursor-pointer" 
+                      onClick={() => setFullscreenImage(imgSrc)}
+                    />
                   </div>
                 );
               }
@@ -474,6 +487,19 @@ export function StoryViewer() {
         </div>
       )}
       </div>
+      
+      {fullscreenImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 cursor-pointer"
+          onClick={() => setFullscreenImage(null)}
+        >
+          <img 
+            src={fullscreenImage} 
+            alt="Fullscreen View" 
+            className="max-w-full max-h-full object-contain shadow-2xl rounded"
+          />
+        </div>
+      )}
     </div>
   );
 }
