@@ -122,11 +122,11 @@ export function StoryViewer() {
     if (lower.includes('camouflage')) return 'Camouflage';
     if (lower.includes('chasse')) return 'Chasse';
     if (lower.includes('guérison') || lower.includes('guerison')) return 'Guérison';
-    if (lower.includes('armes') || lower.includes('maîtrise des armes')) return 'Maîtrise des Armes';
-    if (lower.includes('bouclier psychique')) return 'Bouclier Psychique';
-    if (lower.includes('puissance psychique')) return 'Puissance Psychique';
+    if (lower.includes('armes') || lower.includes('maîtrise des armes')) return 'Maîtrise des armes';
+    if (lower.includes('bouclier psychique')) return 'Bouclier psychique';
+    if (lower.includes('puissance psychique')) return 'Puissance psychique';
     if (lower.includes('communication animale')) return 'Communication Animale';
-    if (lower.includes('matière') || lower.includes('matiere')) return 'Maîtrise de la Matière';
+    if (lower.includes('matière') || lower.includes('matiere')) return 'Maîtrise Psychique de la Matière';
 
     return null;
   };
