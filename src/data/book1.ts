@@ -1514,7 +1514,6 @@ export const storyData: Record<string, Section> = {
   "77": {
     "id": "77",
     "location": "ruins",
-    "damage": 2,
     "text": [
       "Les Gloks sont des créatures des montagnes peu habituées à poursuivre leurs proies dans les forêts, et vous parvenez bientôt à les distancer. Leurs grognements et leurs jurons s'évanouissent au lointain : ils ont abandonné la course. Vous faites alors une courte halte pour reprendre votre souffle et vérifier votre équipement.",
       "Puis vous vous remettez en route après avoir soigneusement rangé les quelques objets que vous avez réussi à arracher aux décombres du monastère. L'image de ses ruines fumantes vous revient en mémoire, et vous serrez les dents tandis que la forêt s'épaissit autour de vous.",
@@ -2974,7 +2973,6 @@ export const storyData: Record<string, Section> = {
     "id": "151",
     "image": "/images/sections/sect151.png",
     "location": "forest",
-    "damage": 2,
     "text": [
       "En vous concentrant sur le trou de la serrure, vous pourrez peut- être actionner le mécanisme interne et repousser le pêne par votre seule force mentale. Vous ferez ensuite léviter la broche pour la libérer de ses attaches. En opérant ainsi à distance, vous resterez hors d'atteinte des pièges éventuels qui pourraient se déclencher lors de l'ouverture de la serrure.",
       "Pour savoir si votre Maîtrise Psychique de la Matière se révélera efficace dans le cas présent, rendez-vous au 87."
@@ -3011,7 +3009,6 @@ export const storyData: Record<string, Section> = {
   "153": {
     "id": "153",
     "location": "river",
-    "damage": 3,
     "text": [
       "Au loin se dressent les hautes murailles blanches et les tours scintillantes de Holmgard dont les étendards flottent au vent frais du matin. S'étirant vers l'ouest, le fleuve Eledil jaillit des monts Durncrag et se jette dans le golfe de Holm. Or, soudain, vous distinguez au pied des montagnes une immense armée aux uniformes noirs qui s'avance inexorablement vers la capitale.",
       "A votre droite, la grand-route mène à Holmgard à travers les plaines. En vous lançant au galop, vous pourriez atteindre en moins d'une heure le camp fortifié qui entoure la ville, mais vous seriez la plupart du temps à découvert, offrant aux Kraans une proie facile.",
@@ -3242,7 +3239,6 @@ export const storyData: Record<string, Section> = {
     "id": "165",
     "image": "/images/sections/sect165.png",
     "location": "river",
-    "damage": 6,
     "text": [
       "Vous vous réveillez tremblant de fièvre. Des images floues défilent devant vos yeux puis s'effacent. Votre dos vous fait terriblement mal et vous hurlez de douleur. Quelques instants plus tard, vous sentez sur votre front le contact frais d'un linge humide et vous apercevez à travers la brume de votre cerveau le visage inquiet d'une jeune femme.",
       "Un vieillard lui murmure quelque chose à l'oreille, puis disparaît de votre champ de vision. La jeune fille s'agenouille alors près de vous et vous chuchote quelques mots de réconfort, mais bientôt, la lumière s'évanouit à nouveau et vous replongez dans les ténèbres.",
@@ -4036,7 +4032,6 @@ export const storyData: Record<string, Section> = {
     "id": "206",
     "image": "/images/sections/sect206.png",
     "location": "city",
-    "damage": 10,
     "text": "Le sentier débouche bientôt sur une grande route où un poteau de signalisation indique Toran au nord et Holmgard au sud. Vous prenez la direction du sud, vers la capitale. Rendez-vous au 224.",
     "choices": [
       {
@@ -5860,7 +5855,6 @@ export const storyData: Record<string, Section> = {
   "309": {
     "id": "309",
     "location": "river",
-    "damage": 1,
     "text": [
       "Vous avez à peine fait dix pas lorsque le corbeau se met à croasser pour avertir l'étranger de votre présence. Le personnage fait alors volte-face et lance un cri perçant qui vous glace le sang et vous noue l'estomac sous l'effet d'une peur panique. Car c'est un Vordak que vous avez devant vous, un des plus cruels lieutenants des Maîtres des Ténèbres.",
       "C'est également une créature qui appartient au monde des morts vivants. En quelques secondes, une horde de Gloks apparaissent à ses côtés et vous attaquent. Vous vous défendez vaillamment, mais vous succombez sous le nombre. Et bientôt, les doigts squelettiques du Vordak se referment inexorablement sur votre gorge : c'est la dernière sensation que vous emporterez de ce monde.",
@@ -6412,7 +6406,6 @@ export const storyData: Record<string, Section> = {
   "341": {
     "id": "341",
     "location": "city",
-    "damage": 2,
     "text": [
       "Les soldats ne croient pas votre histoire et refusent de vous laisser entrer. L'homme qui vous escortait disparaît alors dans la foule, et vous vous retrouvez seul dans la ville. Démoralisé par cet échec, vous vous laissez emporter par la foule qui envahit les rues et vous arrivez bientôt devant l'entrée du Temple de la Guilde.",
       "Le bâtiment s'élève à l'une des extrémités du Pont de la Guilde qui traverse le fleuve Eledil, près de son embouchure où il se jette dans le golfe de Holm.",
