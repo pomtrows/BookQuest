@@ -182,7 +182,11 @@ export const storyData: Record<string, Section> = {
     "choices": [
       {
         "text": "Si vous possédez une Pierre de Vordak, rendez-vous au 236.",
-        "targetId": "236"
+        "targetId": "236",
+        "condition": {
+          "type": "has_item",
+          "value": "Pierre de Vordak"
+        }
       },
       {
         "text": "Sinon, rendez-vous au 292.",
@@ -500,7 +504,11 @@ export const storyData: Record<string, Section> = {
       },
       {
         "text": "Enfin, si vous avez une Clé d'Or, rendez-vous au 326.",
-        "targetId": "326"
+        "targetId": "326",
+        "condition": {
+          "type": "has_item",
+          "value": "Clé d'Or"
+        }
       }
     ]
   },
@@ -3420,7 +3428,11 @@ export const storyData: Record<string, Section> = {
     "choices": [
       {
         "text": "Rendez- vous pour cela au 158.",
-        "targetId": "158"
+        "targetId": "158",
+        "condition": {
+          "type": "has_item",
+          "value": "Clé d'Argent"
+        }
       },
       {
         "text": "Si vous n'avez pas cette Clé, rendez-vous au 259.",

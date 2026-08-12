@@ -427,6 +427,26 @@ export function StoryViewer() {
               if (requiredDiscipline && !hasRequiredDiscipline) {
                 isLocked = true;
               }
+
+              if (choice.condition) {
+                if (choice.condition.type === 'has_item') {
+                  const hasItem = character?.backpack.some(i => i.toLowerCase() === choice.condition!.value.toLowerCase()) || 
+                                  character?.specialItems.some(i => i.toLowerCase() === choice.condition!.value.toLowerCase());
+                  if (!hasItem) {
+                    isLocked = true;
+                  }
+                } else if (choice.condition.type === 'has_discipline') {
+                  const hasDisc = character?.disciplines.some(d => d.toLowerCase() === choice.condition!.value.toLowerCase());
+                  if (!hasDisc) {
+                    isLocked = true;
+                  }
+                } else if (choice.condition.type === 'has_weapon') {
+                  const hasWeapon = character?.weapons.some(w => w.toLowerCase() === choice.condition!.value.toLowerCase());
+                  if (!hasWeapon) {
+                    isLocked = true;
+                  }
+                }
+              }
               
               if (hasRandomChoices && isRandomChoice) {
                 if (randomRoll === null || isRolling) {
