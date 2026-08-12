@@ -81,6 +81,7 @@ export interface Section {
   damage?: number;
   heal?: number;
   loseAllGold?: boolean;
+  lostItems?: string[];
   permanentCsLoss?: number;
   loseAllWeapons?: boolean;
   gameOver?: boolean;

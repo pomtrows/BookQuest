@@ -4595,6 +4595,9 @@ export const storyData: Record<string, Section> = {
     "id": "236",
     "image": "/images/sections/sect236.png",
     "location": "cemetery",
+    "damage": 6,
+    "permanentCsLoss": 1,
+    "lostItems": ["Pierre de Vordak"],
     "text": [
       "La Pierre Précieuse reste suspendue au-dessus de la bouche du squelette en diffusant une lueur rouge vif.",
       "Puis soudain, en une violente explosion, des flammes écarlates jaillissent du sarcophage, détruisant complètement la Pierre de Vordak. Vous êtes projeté contre le mur et assommé par le choc. Lorsque vous reprenez connaissance, la chambre mortuaire est complètement vide : le sarcophage et le squelette du roi ont tous deux disparu.",

@@ -166,6 +166,8 @@ export const useGameStore = create<GameStore>()(
 
         let newMaxCS = state.character.combatSkill;
         let newWeapons = state.character.weapons;
+        let newBackpack = [...state.character.backpack];
+        let newSpecialItems = [...state.character.specialItems];
 
         if (section) {
           if (section.permanentCsLoss) {
@@ -183,6 +185,23 @@ export const useGameStore = create<GameStore>()(
               notificationsToAdd.push({msg: `Vous avez perdu ${state.character.goldCrowns} Pièce(s) d'Or.`, type: 'warning'});
             }
           }
+          if (section.lostItems) {
+            section.lostItems.forEach(itemToLose => {
+              // Check special items
+              const specialIndex = newSpecialItems.findIndex(i => i.toLowerCase() === itemToLose.toLowerCase());
+              if (specialIndex !== -1) {
+                newSpecialItems.splice(specialIndex, 1);
+                notificationsToAdd.push({msg: `Vous avez perdu l'objet spécial: ${itemToLose}.`, type: 'warning'});
+              } else {
+                // Check backpack
+                const backpackIndex = newBackpack.findIndex(i => i.toLowerCase() === itemToLose.toLowerCase());
+                if (backpackIndex !== -1) {
+                  newBackpack.splice(backpackIndex, 1);
+                  notificationsToAdd.push({msg: `Vous avez perdu: ${itemToLose}.`, type: 'warning'});
+                }
+              }
+            });
+          }
         }
 
         set((state) => ({
@@ -191,6 +210,8 @@ export const useGameStore = create<GameStore>()(
             endurance: newEndurance,
             combatSkill: newMaxCS,
             weapons: newWeapons,
+            backpack: newBackpack,
+            specialItems: newSpecialItems,
             meals: newMeals,
             goldCrowns: section?.loseAllGold ? 0 : state.character!.goldCrowns
           },
