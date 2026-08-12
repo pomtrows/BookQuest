@@ -1500,6 +1500,9 @@ export const storyData: Record<string, Section> = {
     "damage": 2,
     "image": "/images/sections/sect76.png",
     "location": "road",
+    "loot": {
+      "specialItems": ["Pierre de Vordak"]
+    },
     "text": [
       "La Pierre dégage une intense chaleur et vous brûle la main. Vous perdez 2 points d'ENDURANCE. Vous enveloppez alors la Pierre dans un pan de votre cape et vous la laissez tomber dans une poche de votre tunique. Une Pierre Précieuse de cette taille doit valoir des centaines de Couronnes !",
       "Vous vous réjouissez de votre bonne fortune et vous remontez sur votre cheval que vous lancez au galop sur le chemin orienté au sud. Rendez-vous au 118."
