@@ -1751,6 +1751,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "97": {
     "id": "97",
+    "image": "/images/sections/book2_sect97.jpg",
     "text": [
       "Vous avez remarqué qu'au cours de vos exercices d'entraînement au maniement du Glaive de Sommer, votre maîtrise de la Discipline Kaï du Sixième Sens s'est accrue : vous êtes à présent plus sensible que jamais et vous saviez déjà, bien avant qu'il ait parlé, quelle triste nouvelle Madin Rendalim allait vous annoncer.",
       "Sans nul doute, cette acuité exceptionnelle de votre Sixième Sens vous sera d'un grand secours lors de votre voyage de retour à Holmgard. Rendez-vous au 152."
