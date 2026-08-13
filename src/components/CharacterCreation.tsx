@@ -189,8 +189,12 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
       if (bookId === 2) {
         if (projectedSpecial.includes('Casque') || projectedSpecial.includes('Casque (+2 ENDURANCE)')) finalEndurance += 2;
         let addedEndurance = 0;
+        let addedCS = 0;
         if (projectedSpecial.includes('Cotte de mailles')) {
            if (!importedCharacter.specialItems.includes('Cotte de mailles')) addedEndurance += 4;
+        }
+        if (projectedSpecial.includes('Bouclier')) {
+           if (!importedCharacter.specialItems.includes('Bouclier')) addedCS += 2;
         }
         startState = {
            ...startState,
@@ -201,6 +205,7 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
            goldCrowns: gold || 0,
            maxEndurance: importedCharacter.maxEndurance + addedEndurance,
            endurance: importedCharacter.endurance + addedEndurance,
+           combatSkill: importedCharacter.combatSkill + addedCS,
         };
       }
       
@@ -218,6 +223,8 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
     const specialItems = bookId === 2 ? [...projectedSpecial] : ['Carte Géographique'];
     let meals = bookId === 2 ? projectedMeals : 1;
     
+    let finalCS = combatSkill;
+
     if (bookId === 1) {
       if (initialItem === '12 Couronnes') {
         finalGold += 12;
@@ -236,12 +243,13 @@ export const CharacterCreation: React.FC<CharacterCreationProps> = ({ onComplete
       }
     } else {
       if (projectedSpecial.includes('Cotte de mailles')) finalEndurance += 4;
+      if (projectedSpecial.includes('Bouclier')) finalCS += 2;
     }
 
     startNewGame({
       name: 'Loup Solitaire',
       avatar: `/images/avatars/${selectedAvatar}`,
-      combatSkill,
+      combatSkill: finalCS,
       endurance: finalEndurance,
       maxEndurance: finalEndurance,
       disciplines: selectedDisciplines,
