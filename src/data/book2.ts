@@ -1449,6 +1449,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Vous rangez le Glaive dans son fourreau incrusté de pierreries et vous suivez Lord Axim qui sort de la chambre du roi. Apportez les modifications nécessaires à votre total d'HABILETÉ, en fonction des indications qui viennent de vous être données, et notez les pouvoirs que vous confère le glaive dans la case Objets Spéciaux de votre Feuille d'Aventure.",
       "Rendez-vous ensuite au 40."
     ],
+    "loot": { "specialItems": ["Glaive de Sommer"] },
     "choices": [
       {
         "text": "Rendez-vous ensuite au 40.",
@@ -2222,6 +2223,7 @@ export const storyDataBook2: Record<string, Section> = {
       "Un instant plus tard, cependant, la lumière s'évanouit et vous sentez peser sur votre épaule la main de Lord Axim. « Venez, Loup Solitaire, dit-il, il y a encore beaucoup à faire pour préparer votre retour au Royaume du Sommerlund. »",
       "Vous rengainez le glaive dans son fourreau incrusté de pierreries et vous suivez Lord Axim qui vous entraîne hors de la chambre du roi. Rendez-vous au 40."
     ],
+    "loot": { "specialItems": ["Glaive de Sommer"] },
     "choices": [
       {
         "text": "Rendez-vous au 40.",

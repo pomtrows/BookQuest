@@ -278,12 +278,25 @@ export const useGameStore = create<GameStore>()(
           let playerCS = state.character.combatSkill;
           
           // Apply Unarmed Penalty or Mastery Bonus
-          if (state.character.weapons.length === 0) {
-            playerCS -= 4; // Mains nues
+          let weaponBonus = 0;
+          let unarmedPenalty = 0;
+          let hasWeapon = state.character.weapons.length > 0;
+          const hasGlaive = state.character.specialItems.includes('Glaive de Sommer');
+          
+          if (hasGlaive) {
+            hasWeapon = true;
+            weaponBonus = state.character.weaponMastery === 'Épée' ? 10 : 8;
+          } else if (hasWeapon) {
+            if (state.character.weaponMastery && state.character.weapons.includes(state.character.weaponMastery)) {
+              weaponBonus = 2; // Maîtrise des armes
+            }
+          } else {
+            unarmedPenalty = -4; // Mains nues
             get().addNotification("Combat à mains nues (-4 Habileté)", "warning");
-          } else if (state.character.weaponMastery && state.character.weapons.includes(state.character.weaponMastery)) {
-            playerCS += 2; // Maîtrise des armes
           }
+          
+          playerCS += weaponBonus;
+          playerCS += unarmedPenalty;
           
           // Mindblast Bonus
           if (state.character.disciplines.includes('Puissance psychique') && !currentEnemy.mindblastImmune) {
@@ -319,6 +332,10 @@ export const useGameStore = create<GameStore>()(
           
           let actualEnemyDamage = eDmg;
           let actualPlayerDamage = pDmg;
+          
+          if (hasGlaive && currentEnemy.undead && typeof actualEnemyDamage === 'number') {
+            actualEnemyDamage = actualEnemyDamage * 2;
+          }
           
           let newEnemyEndurance = state.enemyCurrentEndurance;
           if (actualEnemyDamage === K) newEnemyEndurance = 0;

@@ -48,6 +48,7 @@ export interface Enemy {
   maxRounds?: number;
   maxRoundsTargetId?: string;
   escapeRound?: number;
+  undead?: boolean;
 }
 
 export interface Choice {
