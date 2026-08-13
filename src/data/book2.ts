@@ -1691,6 +1691,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "93": {
     "id": "93",
+    "image": "/images/sections/book2_sect93.jpg",
     "text": [
       "Déduisez de votre Feuille d'Aventure le nombre de Pièces d'Or que vous voulez donner aux mendiants. Ils vous remercient, mais d'autres mendiants apparaissent aussitôt en demandant que vous leur fassiez également l'aumône.",
       "Finalement, vous parvenez à vous frayer un chemin dans la foule et vous poursuivez votre route. Rendez-vous au 137."
