@@ -1345,6 +1345,7 @@ export const storyData: Record<string, Section> = {
   },
   "68": {
     "id": "68",
+    "image": "/images/sections/book1_sect68.jpg",
     "location": "city",
     "text": [
       "Bientôt, le chemin que vous suivez en croise un autre orienté est- ouest.",
