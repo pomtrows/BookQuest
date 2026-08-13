@@ -1825,6 +1825,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "101": {
     "id": "101",
+    "image": "/images/sections/book2_sect101.jpg",
     "text": [
       "Vous vous précipitez à l'intérieur de la cabine du capitaine ; celui-ci lève les yeux de la carte qu'il était en train d'étudier et vous regarde d'un air surpris. « Le feu a pris dans la cale ! »",
       "Vous avez parlé d'une voix haletante, le souffle coupé d'avoir tant couru. Un instant plus tard, le capitaine est sorti de sa cabine et donne l'ordre à ses hommes de remplir des seaux d'eau et de rassembler des couvertures pour étouffer l'incendie.",
