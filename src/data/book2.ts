@@ -1719,6 +1719,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "95": {
     "id": "95",
+    "image": "/images/sections/book2_sect95.jpg",
     "text": [
       "Vous lancez votre cheval à grands coups d'éperons parmi les arbres enchevêtrés et vous arrivez bientôt dans une petite clairière. Là, six Squalls surexcités sont en train de sautiller autour du corps convulsé d'un homme étendu sur le sol.",
       "Une lance à la hampe sculptée de motifs étranges est enfoncée dans sa poitrine et le cadavre d'un Chevalier de la Montagne Blanche repose à côté de lui. Les Squalls échangent des cris perçants et semblent tout à fait indifférents au sort de l'homme blessé qui visiblement agonise sous leurs yeux.",
