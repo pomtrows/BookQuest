@@ -13,10 +13,11 @@ import { Notifications } from './components/Notifications';
 import { PreviousAdventure } from './components/PreviousAdventure';
 import { InstallPrompt } from './components/InstallPrompt';
 import { MapScreen } from './components/MapScreen';
+import { GalleryScreen } from './components/GalleryScreen';
 import { supabase } from './lib/supabase';
 import packageJson from '../package.json';
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT' | 'GALLERY';
 
 const BOOK_TITLES: Record<number, string> = {
   1: "Les Maîtres des Ténèbres",
@@ -164,6 +165,13 @@ function App() {
               style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95, textAlign: 'center' }}
             >
               Règles du Jeu
+            </button>
+            <button 
+              onClick={() => handleStateChange('GALLERY')}
+              className="choice-btn text-center text-xl transition-all mt-2"
+              style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95, textAlign: 'center' }}
+            >
+              Galerie d'Illustrations
             </button>
             {previousAdventurePath && previousAdventurePath.length > 0 && (
               <button 
@@ -378,6 +386,10 @@ function App() {
             handleStateChange('CREATION');
           }}
         />
+      )}
+
+      {appState === 'GALLERY' && (
+        <GalleryScreen bookId={selectedBook} onBack={() => handleStateChange('MENU')} />
       )}
       
       <InstallPrompt />

@@ -2,8 +2,9 @@ import { useGameStore } from '../store/gameStore';
 import { getStoryData } from '../data/books';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
-import { RotateCcw, Utensils, AlertTriangle, Dices } from 'lucide-react';
+import { Dices, AlertTriangle, Utensils, RotateCcw } from 'lucide-react';
 import { supabase } from '../lib/supabase';
+import { useGalleryStore } from '../store/galleryStore';
 
 export function StoryViewer() {
   const { 
@@ -29,6 +30,7 @@ export function StoryViewer() {
 
   const storyDataObj = getStoryData(currentBookId);
   const section = storyDataObj[currentSectionId];
+  const { unlockIllustration } = useGalleryStore();
   const [mealResolved, setMealResolved] = useState(!section?.requiresMeal);
   const [randomRoll, setRandomRoll] = useState<number | null>(null);
   const [isRolling, setIsRolling] = useState(false);
@@ -64,9 +66,14 @@ export function StoryViewer() {
             useGameStore.getState().addNotification('Erreur Autosave: ' + error.message, 'danger');
           }
         });
+
+        // Débloquer l'illustration si elle existe
+        if (storyDataObj[currentSectionId]?.image) {
+          unlockIllustration(session.user.id, currentBookId, currentSectionId);
+        }
       }
     });
-  }, [currentSectionId]);
+  }, [currentSectionId, currentBookId, storyDataObj, unlockIllustration]);
 
   if (!section) {
     return <div className="p-8 text-center text-red-500">Section {currentSectionId} introuvable !</div>;

@@ -20,7 +20,7 @@ const getGlobalAudio = (): HTMLAudioElement => {
 
 const globalAudio = getGlobalAudio();
 
-type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT';
+type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT' | 'GALLERY';
 
 export const useAudio = (appState: AppState) => {
   const [isMuted, setIsMuted] = useState(false);
@@ -32,7 +32,7 @@ export const useAudio = (appState: AppState) => {
     let newSrc = '';
     let shouldLoop = true;
 
-    if (appState === 'MENU' || appState === 'RULES' || appState === 'CREATION' || appState === 'CLOUD_SAVE') {
+    if (appState === 'MENU' || appState === 'RULES' || appState === 'CREATION' || appState === 'CLOUD_SAVE' || appState === 'GALLERY') {
       newSrc = '/audio/title.wav';
     } else if (appState === 'GAME' || appState === 'MAP') {
       if (character && character.endurance <= 0) {
