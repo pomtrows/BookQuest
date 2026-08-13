@@ -1802,6 +1802,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "100": {
     "id": "100",
+    "image": "/images/sections/book2_sect100.jpg",
     "text": [
       "Un voile de brume s'est répandu sur la mer calme. Il vient des îles Kirlundin, un archipel rocheux situé au nord-est du Sommerlund. Des formes étranges et sombres apparaissent bientôt dans le brouillard ; elles grandissent peu à peu et quelques minutes plus tard, on parvient à en distinguer plus nettement les contours : ce sont des navires.",
       "« Branle-bas de combat ! » crie aussitôt l'amiral et son ordre est répété comme en écho sur tous les navires de la flotte de Durenor. « Tout le monde sur le pont ! »",
