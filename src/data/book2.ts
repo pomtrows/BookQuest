@@ -1705,6 +1705,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "94": {
     "id": "94",
+    "image": "/images/sections/book2_sect94.jpg",
     "text": [
       "Vous insistez auprès du capitaine pour qu'on aille voir ce qui se passe à bord du bateau, mais il ignore votre demande et ordonne à ses hommes de poursuivre leurs tâches habituelles. Vous contemplez le navire marchand qui bientôt disparaît à l'horizon en vous demandant pourquoi le capitaine a refusé de faire quoi que ce soit, puis vous descendez dans la coursive et vous vous enfermez dans votre cabine en prenant bien soin de verrouiller la porte.",
       "Rendez-vous au 240."
