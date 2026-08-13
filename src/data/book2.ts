@@ -1661,6 +1661,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "91": {
     "id": "91",
+    "image": "/images/sections/book2_sect91.jpg",
     "text": [
       "Le garçon est expulsé du magasin par deux gardes vêtus d'un uniforme noir. Le marchand vous remercie et vous offre 2 objets que vous devrez choisir dans la liste suivante : Bâton, Couverture, 2 Repas, Sac à Dos, Poignard, 100 mètres de Corde.",
       "Faites votre choix (deux objets à votre convenance) et inscrivez vos nouvelles acquisitions sur votre Feuille d'Aventure dans la case Sac à Dos. Vous remerciez ensuite le marchand et vous sortez par une porte latérale.",
@@ -1676,6 +1677,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "92": {
     "id": "92",
+    "image": "/images/sections/book2_sect92.jpg",
     "text": [
       "L'épouvantable créature pousse un dernier cri en s'écroulant à vos pieds. Vous faites un pas en arrière pour échapper à l'odeur putride qui se dégage de son corps en décomposition et vous voyez alors trois autres Monstres d'Enfer s'avancer vers vous.",
       "Rester ici relèverait du suicide et vous décidez de prendre la fuite en direction du bois après avoir prévenu Rhygar à grands cris du danger qui menace. Rendez-vous au 183."
