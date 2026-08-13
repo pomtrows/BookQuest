@@ -1765,6 +1765,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "98": {
     "id": "98",
+    "image": "/images/sections/book2_sect98.jpg",
     "text": [
       "Votre Sens de l'Orientation vous indique qu'il n'y a aucun sentier dans cette partie de la forêt de Durenor mais il vous permet de savoir quelle direction il convient de prendre. La forêt qui s'étend devant vous est si dense cependant qu'il vous sera impossible de la traverser à cheval.",
       "Vous allez donc être contraint d'abandonner votre monture devant la tour de guet, avant de poursuivre votre chemin. Si vous souhaitez vous mettre en route en direction de Port Bax, rendez-vous au 244. Si vous préférez entrer dans la tour de guet, rendez-vous au 115."
