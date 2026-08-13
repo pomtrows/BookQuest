@@ -1738,6 +1738,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "96": {
     "id": "96",
+    "image": "/images/sections/book2_sect96.jpg",
     "text": [
       "Votre Sixième Sens vous indique que cet endroit est maléfique. Vous vous tenez devant la porte orange lorsque quelque chose soudain vous revient en mémoire. Rendez-vous au 112."
     ],
