@@ -1246,6 +1246,7 @@ export const storyData: Record<string, Section> = {
   "62": {
     "id": "62",
     "location": "city",
+    "image": "/images/sections/sect62.jpg",
     "loot": { "gold": 28, "meals": 3, "weapons": ["Épée"] },
     "text": [
       "Les « soldats » sont étendus raides morts à vos pieds. C'étaient des brigands qui détroussaient les réfugiés de Toran et pillaient les maisons et les fermes abandonnées de la région. En fouillant leurs cadavres, vous trouvez 28 Pièces d'Or et deux Sacs à Dos qui contiennent des provisions équivalant à trois Repas.",
@@ -1860,6 +1861,7 @@ export const storyData: Record<string, Section> = {
   "94": {
     "id": "94",
     "location": "city",
+    "image": "/images/sections/sect94.jpg",
     "loot": { "gold": 16 },
     "text": [
       "Voyant que vous avez tué son fils, le Sage fait volte-face et s'enfuit de la boutique par la porte de derrière. Vous trouvez 12 Pièces d'Or dans la bourse du Voleur et 4 autres dans une boîte en bois, rangée sous le comptoir. Vous examinez ensuite les potions et la baguette magique, et vous vous apercevez qu'il s'agit de simples imitations sans aucune valeur.",
@@ -2428,6 +2430,7 @@ export const storyData: Record<string, Section> = {
   "124": {
     "id": "124",
     "location": "mountains",
+    "image": "/images/sections/sect124.jpg",
     "loot": { "gold": 15, "specialItems": ["Clé d'Argent"] },
     "text": [
       "Dans la boîte, vous trouvez 15 Pièces d'Or et une Clé d'Argent.",
@@ -2709,6 +2712,7 @@ export const storyData: Record<string, Section> = {
   "137": {
     "id": "137",
     "location": "cemetery",
+    "image": "/images/sections/sect137.jpg",
     "loot": { "items": ["20 Pierres Précieuses"] },
     "text": [
       "Lorsque la dernière de ces répugnantes créatures meurt enfin, la lumière verdâtre commence à diminuer. Vous constatez alors que dans chacun des crânes fracassés se trouve une Pierre Précieuse. Vous ramassez ces vingt Pierres juste avant que la lueur s'éteigne, plongeant la chambre mortuaire dans une totale obscurité.",
