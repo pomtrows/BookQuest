@@ -3163,17 +3163,16 @@ export const storyData: Record<string, Section> = {
     "id": "160",
     "location": "road",
     "text": [
-      "Utilisez la Table de Hasard pour obtenir un chiffre : Si vous tirez entre 0 et 4, vous avez été repéré. Rendez-vous alors au 286.",
-      "Si vous tirez entre 5 et 9, ils ne vous ont pas vu et poursuivent leur chemin en s'éloignant de vous. Rendez-vous dans ce cas au 10."
+      "Utilisez la Table de Hasard pour obtenir un chiffre :"
     ],
     "image": "/images/sections/sect160.png",
     "choices": [
       {
-        "text": "Rendez-vous alors au 286.",
+        "text": "Si vous tirez entre 0 et 4, vous avez été repéré. Rendez-vous alors au 286.",
         "targetId": "286"
       },
       {
-        "text": "Rendez-vous dans ce cas au 10.",
+        "text": "Si vous tirez entre 5 et 9, ils ne vous ont pas vu et poursuivent leur chemin en s'éloignant de vous. Rendez-vous dans ce cas au 10.",
         "targetId": "10"
       }
     ]
