@@ -183,7 +183,7 @@ export function StoryViewer() {
       return;
     }
 
-    if (type === 'item') {
+    if (type === 'item' || type === 'meal') {
       const totalItems = character.backpack.filter(i => i !== 'Repas').length + character.meals;
       if (totalItems >= 8) {
         addNotification("Votre sac à dos est plein (8 objets max).", "warning");
