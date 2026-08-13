@@ -1783,6 +1783,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "99": {
     "id": "99",
+    "image": "/images/sections/book2_sect99.jpg",
     "text": [
       "Le lendemain matin, vous êtes réveillé par la vigie postée dans le nid- de-pie. « Navire par bâbord avant ! » annonce l'homme à grands cris. Vous grimpez une échelle étroite et vous rejoignez le capitaine qui se tient à la proue. « Vos yeux sont plus jeunes que les miens, dit-il en vous tendant une longue-vue ciselée, essayez de voir quel est ce bateau. »",
       "Vous distinguez alors à l'horizon les voiles rouges et le pavillon noir d'un navire de guerre mené par des pirates Lakuri. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-vous au 326.",
