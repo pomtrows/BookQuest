@@ -1842,6 +1842,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "102": {
     "id": "102",
+    "image": "/images/sections/book2_sect102.jpg",
     "text": [
       "Le tunnel de Tarnalin est une véritable merveille. Il fait plus de 30 mètres de hauteur et de largeur et traverse les montagnes de la chaîne d'Hammardal en donnant accès à la capitale. D'ordinaire, chariots et piétons s'y pressent, car c'est la voie obligée entre Port Bax et Hammardal.",
       "Mais lorsque vous y pénétrez, vous avez la surprise de constater qu'il est désert ; vous n'y découvrez qu'une carriole de fruits renversée sur la chaussée. La route qui s'enfonce dans les profondeurs du tunnel éclairé par des torches est vide et silencieuse.",
@@ -1865,6 +1866,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "103": {
     "id": "103",
+    "image": "/images/sections/book2_sect103.jpg",
     "text": [
       "Le Laumspur est une herbe délicieuse très recherchée d'un bout à l'autre des Fins de Terre en raison de ses vertus curatives. Vous en avez ramassé l'équivalent d'un Repas et ce Repas vous rendra 3 points d'ENDURANCE lorsque vous le prendrez (inscrivez sur votre Feuille d'Aventure votre moisson de Laumspur).",
       "Vous enveloppez soigneusement l'herbe que vous venez de ramasser et vous retournez dans la diligence en compagnie des autres voyageurs. Rendez-vous au 249."
@@ -1879,6 +1881,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "104": {
     "id": "104",
+    "image": "/images/sections/book2_sect104.jpg",
     "text": [
       "Les pêcheurs vous regardent bouche bée comme si vous étiez revenu d'entre les morts. Puis soudain l'un d'eux renverse la table d'un coup de pied et s'enfuit avec les autres de la taverne par la porte de derrière.",
       "D'un bond, vous sautez par-dessus la table pour vous lancer à leur poursuite dans l'obscurité de la nuit. Si vous souhaitez continuer à les poursuivre, rendez-vous au 231. Si vous préférez les laisser partir, rendez-vous au 177."
