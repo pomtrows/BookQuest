@@ -2019,6 +2019,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "111": {
     "id": "111",
+    "image": "/images/sections/book2_sect111.jpg",
     "text": [
       "A contrecœur, les gardes baissent les armes et vous autorisent à franchir le pont. Au moment où vous passez devant eux, ils vous fixent du regard puis se chuchotent quelques mots à l'oreille. Dès que vous avez franchi le chenal de Ryner, vous vous hâtez de poursuivre votre chemin, de peur qu'ils ne changent d'avis et vous arrêtent.",
       "Au bout d'une heure de marche sur la route qui traverse la forêt, vous arrivez à un croisement où un poteau de signalisation indique la direction de l'est : PORT BAX 5 km. Vous souriez et vous suivez la flèche : dans une heure tout au plus, vous devriez être arrivé à destination.",
@@ -2033,6 +2034,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "112": {
     "id": "112",
+    "image": "/images/sections/book2_sect112.jpg",
     "text": [
       "Vous vous rappelez soudain ce qu'il vous a dit au sujet de la boutique à la porte orange. C'est le Quartier Général de la Fraternité du Silence, la célèbre police secrète de Lachelan. Entrer dans cette boutique serait plus dangereux encore que de pénétrer dans une pièce remplie de Drakkarim !",
       "Vous vous détournez aussitôt de la porte orange et vous vous hâtez en direction du nord. Rendez-vous au 230."
@@ -2046,6 +2048,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "113": {
     "id": "113",
+    "image": "/images/sections/book2_sect113.jpg",
     "text": [
       "Lorsque Banedon vous a donné le Pendentif à l'Etoile de Cristal, il vous a parlé de cet homme : c'est Vonotar le Traître - un sorcier renégat de la Guilde des Magiciens de Toran. Il est passé maître dans l'art de la magie noire et les Maîtres des Ténèbres en personne l'ont investi d'un grand pouvoir.",
       "Ce sont ses agents qui ont essayé de vous tuer au cours de votre mission et c'est lui qui commande la flotte des vaisseaux fantômes. Si vous anéantissez Vonotar, vous anéantirez par là même la force maléfique qui donne son pouvoir à la flotte des bateaux fantômes et à son équipage.",
