@@ -2067,6 +2067,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "114": {
     "id": "114",
+    "image": "/images/sections/book2_sect114.jpg",
     "text": [
       "Vous avez marché pendant trois heures sur cette route déserte qui longe la côte lorsque la nuit commence à tomber. Les terres alentour sont plates et désolées et vous n'avez pas vu signe de vie depuis que vous vous êtes mis en chemin.",
       "Vous décidez alors de prendre quelque repos à l'abri des branches d'un grand arbre qui s'élève au bord de la route. Vous posez votre tête sur votre Sac à Dos en guise d'oreiller, vous vous couvrez de votre cape de Seigneur Kaï et vous vous laissez emporter dans un profond sommeil.",
@@ -2089,6 +2090,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "115": {
     "id": "115",
+    "image": "/images/sections/book2_sect115.jpg",
     "text": [
       "Devant la porte de la tour de guet, la végétation a été arrachée et le sol bien tassé par de nombreux passages. Vous êtes en train de chercher un trou de serrure sur cette porte à l'armature de fer lorsqu'elle s'ouvre soudain.",
       "Un Chevalier de la Montagne Blanche se tient devant vous, son épée levée face à son visage. « Exposez le but de votre visite et parlez sans détour. Si vous mentez, je vous répondrai par le glaive. »",
@@ -2111,6 +2113,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "116": {
     "id": "116",
+    "image": "/images/sections/book2_sect116.jpg",
     "text": [
       "Grâce à la Discipline Kaï, vous n'avez aucune difficulté à découvrir sous quelle tasse la bille est cachée, car pour vous l'argile est aussi transparente que le verre. Utilisez la Table de Hasard pour obtenir un chiffre et ajoutez-y 5.",
       "Vous saurez ainsi combien de Pièces d'Or vous avez gagnées avant que le fripon vous soupçonne et mette fin au jeu. Votre bourse est à nouveau remplie et vous retournez au bar où vous payez le prix d'une chambre, soit une Pièce d'Or.",
