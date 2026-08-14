@@ -3236,6 +3236,7 @@ export const storyData: Record<string, Section> = {
   "164": {
     "id": "164",
     "location": "forest",
+    "image": "/images/sections/sect164.jpg",
     "loot": { "specialItems": ["Essence d'Alether"] },
     "text": [
       "Vous débouchez prudemment chacune des bouteilles et vous reniflez son contenu. Il semble s'agir là de différentes sortes de vin.",
@@ -3634,6 +3635,7 @@ export const storyData: Record<string, Section> = {
   "184": {
     "id": "184",
     "location": "road",
+    "image": "/images/sections/sect184.jpg",
     "loot": { "gold": 40, "meals": 4, "weapons": ["Épée"] },
     "text": [
       "La roulotte a échappé à tout contrôle et cahote dangereusement sur le bas-côté de la route, parmi les pierres et les nids-de-poule. Vous parvenez cependant, au prix de bien des efforts, à ramener sur la chaussée les chevaux saisis de panique et à arrêter l'attelage.",
@@ -4950,6 +4952,7 @@ export const storyData: Record<string, Section> = {
   "254": {
     "id": "254",
     "location": "city",
+    "image": "/images/sections/sect254.jpg",
     "text": [
       "Votre Sens Kaï de l'Orientation vous permet de distinguer plusieurs séries de traces qui partent du chemin de droite en direction du chemin de gauche. Ces traces ont été laissées par des Loups de grande taille. Ces animaux sont utilisés comme éclaireurs par les armées des Maîtres des Ténèbres.",
       "Ce sont des créatures malfaisantes et cruelles, souvent chevauchées par des Gloks. Le chemin de gauche mène vers Holmgard, celui de droite vers les monts Durncrag. Quelle direction souhaitez vous prendre ?",
@@ -4970,6 +4973,7 @@ export const storyData: Record<string, Section> = {
   "255": {
     "id": "255",
     "location": "cemetery",
+    "image": "/images/sections/sect255.jpg",
     "text": [
       "La créature qui vous fait face à présent est un Gourgaz, un de ces reptiles monstrueux qui infestent les profondeurs des marais de Maakenmire. Leur nourriture préférée est la chair humaine... L'épée du Prince repose à vos pieds. Vous pouvez la ramasser et vous en servir pour combattre si vous le désirez.",
       "Le Gourgaz s'apprête à vous frapper. Il vous faut l'affronter jusqu'à la mort de l'un d'entre vous. GOURGAZ HABILETÉ: 20 ENDURANCE:30 Ce monstre est insensible à la Discipline Kaï de la Puissance Psychique.",
