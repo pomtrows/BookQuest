@@ -1899,6 +1899,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "105": {
     "id": "105",
+    "image": "/images/sections/book2_sect105.jpg",
     "text": [
       "Malheureusement pour vous, la corde a été presque coupée en deux par un coup d'épée et il faut craindre qu'elle ne casse sous votre poids. Utilisez la Table de Hasard pour obtenir un chiffre qui vous indiquera si la corde a tenu bon ou pas.",
       "Si vous tirez un chiffre entre 0 et 4, rendez-vous au 286. De 5 à 9, rendez-vous au 120."
@@ -1916,6 +1917,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "106": {
     "id": "106",
+    "image": "/images/sections/book2_sect106.jpg",
     "text": [
       "La lance sculptée est en métal et pourtant elle est aussi légère que si elle avait été taillée dans du bois. Vous remarquez que la hampe est gravée de caractères runiques et de symboles magiques. Vous la retirez avec précaution de la poitrine de l'homme blessé qui pousse un long soupir de soulagement.",
       "Vous vous apprêtez ensuite à examiner sa blessure lorsqu'une subite douleur vous déchire la tête. Vous avez si mal que vous vous écroulez sur le sol en perdant 2 points d'ENDURANCE. Vous êtes alors stupéfait de voir l'homme se relever d'un bond, mais votre surprise se change en horreur quand soudain il se métamorphose devant vos yeux.",
@@ -1940,6 +1942,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "107": {
     "id": "107",
+    "image": "/images/sections/book2_sect107.jpg",
     "text": [
       "Le capitaine donne l'ordre d'aborder le navire marchand et une vision d'horreur s'offre alors à vous : des cadavres de marins jonchent le pont, nombre d'entre eux ont le corps percé de flèches et il semble qu'ils ont dû livrer un combat désespéré pour sauver leur cargaison; les cales du navire sont vides, cependant, tout a été emporté.",
       "En descendant sur le pont inférieur, vous découvrez le capitaine dans sa cabine ; il est grièvement blessé et sa fin est proche. Si vous maîtrisez la Discipline Kaï de la Guérison, rendez-vous au 74. Sinon, rendez-vous au 294."
@@ -1957,6 +1960,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "108": {
     "id": "108",
+    "image": "/images/sections/book2_sect108.jpg",
     "text": [
       "L'une des roues se coince dans une ornière et trois de ses gros rayons de bois se brisent sous le choc. Il vous faut interrompre votre voyage et remplacer la roue avant de pouvoir repartir vers Port Bax.",
       "Vous vous proposez d'aider le conducteur en soulevant la diligence à l'aide d'un levier, puis en plaçant un petit tronc d'arbre sous l'essieu afin qu'on puisse glisser la nouvelle roue sur son axe. Vous pesez de tout votre poids sur la grosse branche qui fait office de levier lorsque les chevaux se cabrent soudain puis s'élancent en avant.",
@@ -1976,6 +1980,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "109": {
     "id": "109",
+    "image": "/images/sections/book2_sect109.jpg",
     "text": [
       "Vous battez des paupières pour chasser l'eau de vos yeux et vous constatez alors que le vaisseau amiral de la flotte fantôme est en flammes. Une fumée noire s'échappe de ses ponts et des langues de feu orange et jaunes jaillissent de sa coque moisie.",
       "Hélas, vous n'avez guère le loisir de contempler ce spectacle réconfortant ; soudain, en effet, vous entendez un battement d'ailes au-dessus de votre tête : c'est un Kraan qui fond sur vous en essayant de vous saisir entre ses serres pointues.",
@@ -1991,6 +1996,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "110": {
     "id": "110",
+    "image": "/images/sections/book2_sect110.jpg",
     "text": [
       "Le GARDE ne vous croit pas et se rue sur vous, son épée à la main. GARDE DE LA TOUR HABILETÉ: 15 ENDURANCE: 22 Si vous ne possédez pas d'arme, retranchez 4 points de votre total d'habileté pendant toute la durée du combat.",
       "Vous pouvez prendre la fuite à tout moment en vous rendant au 65. Si vous décidez de vous battre et que vous êtes vainqueur, rendez-vous au 331."
