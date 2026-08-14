@@ -87,7 +87,7 @@ export function GalleryScreen({ bookId, onBack }: GalleryScreenProps) {
                       <img 
                         src={item.image} 
                         alt={`Section ${item.id}`} 
-                        className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
+                        className="w-full h-full object-cover transition-all duration-700"
                       />
                     ) : (
                       <div className="w-full h-full flex flex-col items-center justify-center text-[#333333]">
