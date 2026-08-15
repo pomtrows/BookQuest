@@ -2227,6 +2227,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "122": {
     "id": "122",
+    "image": "/images/sections/book2_sect122.jpg",
     "text": [
       "Cette rue longe les murs de la ville en direction du nord. Sur votre droite, vous remarquez une boutique dont la porte est de couleur orange. A la différence des autres boutiques de la rue, celle-ci ne porte aucune enseigne.",
       "C'est alors que vous revient en mémoire le récit qu'un Seigneur Kaï vous avait fait il y a environ un an à son retour d'un voyage dans la ville de Ragadorn. Il vous avait parlé de cette porte orange à plusieurs reprises.",
@@ -2249,6 +2250,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "123": {
     "id": "123",
+    "image": "/images/sections/book2_sect123.jpg",
     "text": [
       "Une étrange énergie anime votre corps. Instinctivement, vous levez le glaive au-dessus de votre tête et un rayon de soleil vient frapper l'extrémité de la lame d'où jaillit aussitôt une lumière blanche aveuglante.",
       "Un instant plus tard, cependant, la lumière s'évanouit et vous sentez peser sur votre épaule la main de Lord Axim. « Venez, Loup Solitaire, dit-il, il y a encore beaucoup à faire pour préparer votre retour au Royaume du Sommerlund. »",
@@ -2264,6 +2266,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "124": {
     "id": "124",
+    "image": "/images/sections/book2_sect124.jpg",
     "text": [
       "Vous la fouillez mais vous ne découvrez aucune preuve qu'elle était bien celle qui voulait vous assassiner. Vous trouvez sur elle 42 Pièces d'Or, un Sabre et un Poignard. Prenez ce que vous voulez parmi ces objets si le cœur vous en dit et le cas échéant, inscrivez-les sur votre Feuille d'Aventure.",
       "Rendez-vous ensuite au 33."
@@ -2278,6 +2281,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "125": {
     "id": "125",
+    "image": "/images/sections/book2_sect125.jpg",
     "text": [
       "Vous vous précipitez par la porte latérale de la taverne et vous courez tout au long d'une ruelle qui aboutit à la place principale. Vous apercevez, au-delà de la foule qui se presse en tous sens, de nombreux bateaux amarrés aux quais.",
       "Les brigands vous suivent de près et il vous faut agir vite, sinon ils vous tueront comme ils ont sans doute tué Ronan. Vous défaites alors l'amarre d'un canot puis vous sautez du quai et vous atterrissez lourdement dans l'embarcation, en fracassant dans votre chute le petit siège de bois aménagé au milieu.",
@@ -2292,6 +2296,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "126": {
     "id": "126",
+    "image": "/images/sections/book2_sect126.jpg",
     "text": [
       "L'homme tire sur la corde d'une clochette dissimulée aux regards et, soudain, quatre gardes armés font irruption dans la pièce. « Ces documents sont des faux. Vous êtes sans aucun doute un espion, peut- être même pire.",
       "Quoi qu'il en soit, vous n'allez pas tarder à apprendre ce que nous faisons des criminels dans votre genre, à Port Bax. Emmenez-le ! »",
