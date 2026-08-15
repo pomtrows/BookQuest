@@ -2308,6 +2308,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "127": {
     "id": "127",
+    "image": "/images/sections/book2_sect127.jpg",
     "text": [
       "Vous vous éveillez à l'aube, au son de la pluie qui tombe à verse sur les pavés de la rue. Il y a maintenant six jours que vous avez quitté Holmgard et il vous faut prendre un repas, sinon vous perdrez 3 points d'ENDURANCE.",
       "Vous rassemblez ensuite vos affaires et vous quittez la pièce. Tandis que vous descendez l'escalier branlant, vous apercevez l'aubergiste qui est en train de nettoyer le carrelage à l'aide d'une serpillière.",
@@ -2326,6 +2327,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "128": {
     "id": "128",
+    "image": "/images/sections/book2_sect128.jpg",
     "text": [
       "Une lueur dorée parcourt la lame du Glaive lorsque vous le levez au- dessus de votre tête pour faire face à l'ennemi. Vous êtes attaqué par six ZOMBIES terrifiants que vous devez combattre en les considérant comme un seul et même adversaire.",
       "LES ZOMBIES HABILETÉ : 13 ENDURANCE : 19 Ce sont des morts vivants et la puissance du Glaive de Sommer vous permet donc de multiplier par deux tous les point d'ENDURANCE qu'ils perdront au cours du combat.",
