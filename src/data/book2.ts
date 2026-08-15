@@ -2128,6 +2128,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "117": {
     "id": "117",
+    "image": "/images/sections/book2_sect117.jpg",
     "text": [
       "C'est une de ces grosses diligences, semblables à celles qui transportent les voyageurs de grand chemin au royaume du Sommerlund. Le cocher tire les rênes et arrête ses chevaux en vous observant de sous le large bord de son chapeau.",
       "Vous lui demandez où il va. « Nous allons à Ragadorn, répond-il ; nous arriverons là-bas vers midi. Il vous en coûtera 3 Couronnes pour un billet mais vous pouvez voyager sur le toit pour une Couronne seulement. »",
@@ -2150,6 +2151,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "118": {
     "id": "118",
+    "image": "/images/sections/book2_sect118.jpg",
     "text": [
       "Vous dites adieu à Rhygar et vous entrez dans le tunnel de Tarnalin. D'une largeur et d'une hauteur de 30 mètres environ, le tunnel traverse les montagnes de la chaîne d'Hammardal et permet d'accéder à la capitale.",
       "Des torches l'éclairent sur toute sa longueur et les marchands sont nombreux à l'emprunter car c'est la seule voie qui relie Port Bax à Hammardal. D'ordinaire, la circulation y est intense mais vous constatez avec surprise qu'il est désert au moment où vous y pénétrez ; vous n'y trouvez qu'une carriole de fruits renversée sur la chaussée.",
@@ -2175,6 +2177,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "119": {
     "id": "119",
+    "image": "/images/sections/book2_sect119.jpg",
     "text": [
       "Des débris de bois, des planches, des madriers et des voiles déchirées flottent sur les vagues parsemées d'écume. C'est là tout ce qui reste d'un navire marchand. Mais soudain, vous apercevez un homme cramponné à un panneau d'écoutille.",
       "Une échelle de corde lui est aussitôt jetée et le malheureux est ramené à bord. « Les pirates ! » dit-il simplement avant de s'écrouler sur le pont, à bout de force. Après qu'on l'a enveloppé dans une couverture, l'homme est emmené dans une cabine.",
@@ -2191,6 +2194,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "120": {
     "id": "120",
+    "image": "/images/sections/book2_sect120.jpg",
     "text": [
       "La chance est avec vous ; vous atterrissez en effet sans dommage sur le pont du Kalkarm, un vaisseau de guerre de la flotte de Durenor. Les marins y ont livré un rude combat dont ils sont sortis vainqueurs et ils sont occupés pour le moment à détacher les grappins que leur avait lancés l'un des bateaux fantômes.",
       "Emergeant d'un nuage de fumée, Lord Axim apparaît ; son visage est ensanglanté et son bouclier porte la trace de coups violents. « Dieu merci, vous êtes vivant, Loup Solitaire. La bataille a été sans merci et nos pertes sont élevées, mais de vous voir debout devant moi me met quelque baume au cœur », dit-il en vous prenant par le bras pour vous emmener près du bastingage. « Regardez là-bas, poursuit-il, leur vaisseau amiral est en feu. »",
@@ -2208,6 +2212,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "121": {
     "id": "121",
+    "image": "/images/sections/book2_sect121.jpg",
     "text": [
       "Vous courez le long de la rue de la Vigie et vous atteignez bientôt le quai, là où le fleuve Dorn sépare les parties Est et Ouest de la ville. A votre gauche, vous apercevez le pont de Ragadorn, un ouvrage d'une grande laideur dont le fer a rouillé et qui constitue le seul point de passage entre les deux moitiés de Ragadorn.",
       "Les cris des voleurs retentissent encore à vos oreilles tandis que vous vous frayez un chemin parmi la foule qui encombre le pont. Mais, lorsque vous êtes parvenu de l'autre côté, les voleurs ont abandonné la poursuite et vous vous engagez dans une large avenue qui porte le nom de boulevard du Commerce, section Est.",
