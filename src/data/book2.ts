@@ -2828,6 +2828,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "155": {
     "id": "155",
+    "image": "/images/sections/book2_sect155.jpg",
     "text": [
       "Vous avez parcouru un kilomètre et demi sur le chemin de gauche lorsque vous arrivez à un long pont de pierre. Le fleuve qu'il enjambe semble être en crue &lt; i menace de déborder de son lit. Vous vous etes rendu compte alors qu'il s'agit du chenal de Rynn Il fait 3 kilomètres dans sa plus grande lat i .cin &gt;i pin . le 1500 mètres de profondeur sur presque toute sa longueur.",
       "Il a été formé à la suite d'un glissement de terrain qui a séparé le royaume de Durenor du reste des terres de Magnamund. A l'entrée du pont, un poteau indicateur précise : Vous poussez un soupir de soulagement en constatant que vous êtes sur le bon chemin : dans moins d'une heure, vous aurez atteint la ville.",
@@ -2842,6 +2843,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "156": {
     "id": "156",
+    "image": "/images/sections/book2_sect156.jpg",
     "text": [
       "Le cocher se met en colère. « C'est une longue marche qui t'attend, étranger», lance-t-il en vous claquant la portière au nez. Vous n'avez pas les moyens de louer une chambre pour la nuit et vous décidez donc d'aller coucher avec les chevaux dans l'écurie.",
       "Rendez-vous au 213."
@@ -2855,6 +2857,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "157": {
     "id": "157",
+    "image": "/images/sections/book2_sect157.jpg",
     "text": [
       "Le GARDE est furieux et il se précipite sur vous en dévalant l'escalier, son épée levée au-dessus de sa tête. Si vous ne possédez pas d'arme, réduisez de 4 points votre total d'HABILETÉ et battez-vous à mains nues.",
       "GARDE HABILETÉ: 15 ENDURANCE 22 Vous avez le droit de prendre la fuite à tout moment en vous rendant au 65. Si vous êtes vainqueur, rendez-vous au 331."
@@ -2877,6 +2880,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "158": {
     "id": "158",
+    "image": "/images/sections/book2_sect158.jpg",
     "text": [
       "Le MOINE ne semble pas surpris par votre attaque et il tire lui-même une épée noire de sous sa robe de bure. MOINE HABILETÉ: 16 ENDURANCE: 23 Si vous êtes vainqueur, rendez-vous au 220."
     ],
@@ -2894,6 +2898,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "159": {
     "id": "159",
+    "image": "/images/sections/book2_sect159.jpg",
     "text": [
       "Vous vous arrêtez enfin au pied d'un immense pin et vous essayez de vous maintenir debout, mais vous avez si mal aux jambes et au côté que vous tombez par terre en perdant connaissance. Ce sommeil vous épargne d'être pourfendu par le Monstre d'Enfer, mais il ne vous sauvera pas de la mort car plus jamais vous ne vous réveillerez.",
       "Votre quête s'achève ici en même temps que votre vie."
@@ -2902,6 +2907,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "160": {
     "id": "160",
+    "image": "/images/sections/book2_sect160.jpg",
     "text": [
       "« Pardonnez-moi, my lord, je ne voulais pas vous faire peur. »",
       "L'homme semble inquiet et la main ouverte qu'il tend vers vous ne cesse de trembler. Sans vous départir de votre prudence, vous acceptez son geste amical et quelques instants plus tard vous vous asseyez avec lui à l'une des tables de l'auberge dans laquelle vous êtes entré par une porte latérale.",
@@ -2917,6 +2923,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "161": {
     "id": "161",
+    "image": "/images/sections/book2_sect161.jpg",
     "text": [
       "La boutique est déserte. Vous attendez en examinant pendant cinq minutes les articles exposés, mais personne ne vient. Vous vous apprêtez à repartir lorsque vous remarquez une carte accrochée derrière la porte.",
       "C'est un plan du port de Ragadorn. Les écuries et le relais de la diligence sont clairement indiqués à proximité de la porte Est de la ville. C'est là que vous trouverez un moyen de transport qui vous permettra d'atteindre Port Bax.",
@@ -2933,6 +2940,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "162": {
     "id": "162",
+    "image": "/images/sections/book2_sect162.jpg",
     "text": [
       "Il lance son cri de guerre et se rue sur vous. CHEVALIER DELA MONTAGNE BLANCHE HABILETÉ: 20 ENDURANCE: 27 Vous pouvez prendre la fuite à tout moment en vous réfugiant dans les bois ; rendez-vous pour cela au 244.",
       "Si vous sortez vainqueur du combat, rendez-vous au 302."
@@ -2955,6 +2963,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "163": {
     "id": "163",
+    "image": "/images/sections/book2_sect163.jpg",
     "text": [
       "« Nous avons le vaisseau le plus rapide de toutes les mers du Nord, il n'est pas de navire qui puisse rattraper le Sceptre Vert », affirme le capitaine. Il a raison en effet, car bientôt le bateau pirate disparaît à l'horizon. « Depuis vingt-cinq ans que je navigue, je n'ai jamais vu les pirates Lakuri s'aventurer si loin au nord, dit le capitaine en se caressant la barbe d'un air songeur, ils doivent être sur la piste d'un bien riche butin pour s'éloigner ainsi de leurs îles tropicales. »",
       "Et tandis que le capitaine descend dans sa cabine, vous pensez avec inquiétude que ce",
@@ -2969,6 +2978,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "164": {
     "id": "164",
+    "image": "/images/sections/book2_sect164.jpg",
     "text": [
       "Vous marchez depuis une heure dans ce tunnel désert lorsque vous apercevez à votre gauche plusieurs marches taillées dans la paroi rocheuse. Elles mènent à une plateforme qui permet d'atteindre les torches éclairant le tunnel.",
       "Si vous souhaitez monter ces marches pour explorer la plate-forme, rendez-vous au 52. Si vous préférez continuer votre chemin sans vous occuper des marches, rendez-vous au 256. Si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous au 172."
@@ -2990,6 +3000,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "165": {
     "id": "165",
+    "image": "/images/sections/book2_sect165.jpg",
     "text": [
       "Vous rangez l'or dans votre bourse, puis vous ôtez l'Anneau de votre doigt et vous le lui tendez. Elle vous le prend des mains et l'examine attentivement. Vous quittez ensuite la boutique mais au moment où vous franchissez la porte, vous l'entendez ricaner sous cape et vous vous demandez alors si vous avez bien fait d'agir ainsi.",
       "Rendez-vous au 186."
@@ -3003,6 +3014,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "166": {
     "id": "166",
+    "image": "/images/sections/book2_sect166.jpg",
     "text": [
       "Vous montez un escalier et vous vous retrouvez sur le pont du navire ; la bataille fait rage tandis que les vaisseaux fantômes encerclent la flotte de Durenor. Soudain, un éclair de feu jaillit d'une tour dressée à l'arrière du bateau fantôme sur lequel vous vous trouvez, et vient frapper dans une gigantesque explosion le flanc d'un navire de la flotte durnoraise, à moins de 50 mètres de distance.",
       "Vous voyez alors avec horreur les soldats alliés sauter du pont, leurs vêtements et leurs cheveux en flammes. Si vous souhaitez explorer cette tour, rendez-vous au 328. Si vous préférez vous enfuir en sautant par-dessus bord, rendez- vous au 267."
@@ -3020,6 +3032,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "167": {
     "id": "167",
+    "image": "/images/sections/book2_sect167.jpg",
     "text": [
       "«Votre stratégie ne manque pas d'audace, Loup Solitaire, mais je crois bien que je vais vous battre à présent », lance soudain votre adversaire. Le capitaine Kelman déplace alors une de ses pièces d'ivoire sculpté de votre côté du damier en arborant un sourire triomphant.",
       "Mais son sourire s'efface et une expression de contrariété apparaît sur son visage lorsque vous contre-attaquez d'une manière tout à fait inattendue. «Échec et mat», répliquez-vous d'une voix calme. Le capitaine contemple le damier d'un air incrédule.",
