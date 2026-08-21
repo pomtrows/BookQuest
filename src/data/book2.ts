@@ -2573,6 +2573,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "142": {
     "id": "142",
+    "image": "/images/sections/book2_sect142.jpg",
     "text": [
       "L'homme prend votre argent et vous tend un laissez-passer valable sept jours. Vous le remerciez puis vous quittez les lieux. Au-dehors, vous prenez à gauche et vous vous approchez des gardes qui se tiennent en faction au bout de la rue.",
       "Rendez-vous au 246."
@@ -2586,6 +2587,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "143": {
     "id": "143",
+    "image": "/images/sections/book2_sect143.jpg",
     "text": [
       "Vous marchez en direction du sud en suivant le quai et bientôt vous arrivez à un croisement où une rue mène vers l'est. Toutes les boutiques de cette rue sont fermées, sauf une, située à votre droite. Une enseigne est accrochée au-dessus de la porte : JINELDA KOOP ALCHIMISTE Achat et vente de potions magiques Si vous souhaitez entrer dans cette boutique, rendez-vous au 289.",
       "Si vous préférez poursuivre votre chemin, rendez-vous au 186."
@@ -2603,6 +2605,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "144": {
     "id": "144",
+    "image": "/images/sections/book2_sect144.jpg",
     "text": [
       "Un grand Noudic vêtu d'une cape de soie en patchwork aux couleurs vives ordonne à quelques-uns de ses congénères de prendre leurs armes et de vous reconduire au-dehors. Vous leur parlez alors dans leur propre langue et un murmure de stupeur parcourt aussitôt la caverne.",
       "Jamais encore ils n'ont rencontré d'être humain qui sache parler leur dialecte. Certains d'entre eux en sont abasourdis au point de vous contempler bouche bée, les yeux ronds et les pattes ballantes. Le grand Noudic s'adresse alors à vous en se présentant comme le chef de la colonie.",
@@ -2630,6 +2633,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "145": {
     "id": "145",
+    "image": "/images/sections/book2_sect145.jpg",
     "text": [
       "Vous vous sentez de plus en plus faible. Au prix d'un effort surhumain, vous cherchez l'herbe de Laumspur que vous finissez par trouver ; il vous semble qu'il s'est écoulé une éternité de douleur lorsque vous parvenez enfin à glisser dans votre bouche quelques feuilles sèches que vous vous forcez à avaler.",
       "Quelques secondes plus tard de violents malaises convulsent votre corps, puis la douleur s'apaise et vous sombrez dans un sommeil agité. Il s'écoule presque une heure avant votre réveil et vous vous sentez encore très mal, si mal que vous perdez aussitôt 5 points d'ENDURANCE.",
@@ -2645,6 +2649,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "146": {
     "id": "146",
+    "image": "/images/sections/book2_sect146.jpg",
     "text": [
       "Vous aviez raison. Ce nuage est formé par une nuée d'énormes Bêtalzans et de Kraans, une espèce plus petite, mais tout aussi mortelle. Pendant sous leur ventre noir, ils tiennent dans leurs serres d'immenses filets dans lesquels s'entassent des GLOKS.",
       "Les Bêtalzans fondent alors sur le Sceptre Vert et un filet rempli de Gloks hurlants s'écrase sur le pont. Certains n'ont pas survécu à la chute mais la plupart sont indemnes et vous attaquent sans tarder.",
@@ -2664,6 +2669,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "147": {
     "id": "147",
+    "image": "/images/sections/book2_sect147.jpg",
     "text": [
       "La mise en pratique de votre Discipline Kaï vous indique que le chemin aboutit à un cul-de-sac. Seul le pont peut vous permettre de franchir le chenal de Ryner et d'atteindre Port Bax. Rendez-vous au 47."
     ],
@@ -2676,6 +2682,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "148": {
     "id": "148",
+    "image": "/images/sections/book2_sect148.jpg",
     "text": [
       "Vous vous enveloppez dans votre cape de Seigneur Kaï et vous en relevez le capuchon. Le cocher lance un cri puis fouette ses chevaux et bientôt la diligence file sur la route bordée d'arbres qui longe la côte en direction de Ragadorn.",
       "Au cours du trajet, vous bavardez avec le cocher qui vous donne des renseignements fort utiles concernant le port de Ragadorn. Depuis la mort de Killean le Suzerain, trois ans auparavant, la ville est dirigée (et fort mal, d'après votre interlocuteur) par son fils Lachelan.",
@@ -2702,6 +2709,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "149": {
     "id": "149",
+    "image": "/images/sections/book2_sect149.jpg",
     "text": [
       "Votre Sixième Sens vous indique que ce garde est un soldat loyal du royaume de Durenor. Si vous vous mêliez de vouloir le corrompre, il se sentirait gravement insulté et vous attaquerait aussitôt. Si vous souhaitez lui montrer le Sceau d'Hammardal, rendez-vous au 223.",
       "Peut- être préférez-vous cependant ne pas lui montrer l'anneau ; peut-être même n'est-il plus en votre possession ; dans ce cas vous pouvez essayer de vous faire passer pour un marchand se rendant à Port Bax en allant au 250."
@@ -2719,6 +2727,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "150": {
     "id": "150",
+    "image": "/images/sections/book2_sect150.jpg",
     "text": [
       "Vous lancez votre cheval dans les rues sinueuses du village, puis vous traversez un pont de bois ; vous montez ensuite un sentier escarpé qui conduit au sommet d'une crique. A la clarté de la lune, vous apercevez un poteau indicateur orienté vers l'est.",
       "Vous chevauchez toute la nuit sans prendre le temps de dormir et lorsque l'aube se lève enfin, le paysage s'est métamorphosé d'une manière surprenante. Les terres arides du Pays Sauvage ont fait place à des landes et à des marécages, et, aussi loin que porte le regard, une ombre noire s'étend à l'horizon en direction de l'est.",
@@ -2739,6 +2748,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "151": {
     "id": "151",
+    "image": "/images/sections/book2_sect151.jpg",
     "text": [
       "Vous utilisez votre technique du camouflage pour imiter l'accent rocailleux des habitants de Ragadorn et vous essayez de faire croire au soldat qu'une bagarre a éclaté dans la rue du Tombeau. Vous affirmez que les gardes de la ville ont été submergés par le noinlue ri qu'il doit immédiatement courir à leur secours.",
       "Vous saurez si votre mensonge a réussi en utilisant la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-vous au 262. Si vous tirez un chiffre entre 5 et 9, rendez-vous au 110."
@@ -2756,6 +2766,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "152": {
     "id": "152",
+    "image": "/images/sections/book2_sect152.jpg",
     "text": [
       "L'aube vient de se lever sur le 33e jour de votre quête lorsque vous entrez à cheval dans Port Bax en compagnie de Lord Axim. Les préparatifs de guerre sont achevés ; les vaisseaux de la flotte de Durenor mouillent dans le port, attendant l'ordre de mettre les voiles en direction du Sommerlund.",
       "A bord des navires, une puissante armée de soldats courageux et bien entraînés attend avec impatience d'affronter au combat les Maîtres des Ténèbres. Chacun de ces hommes a juré de libérer ses alliés assiégés par l'ennemi ou de mourir sur le champ de bataille.",
@@ -2780,6 +2791,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "153": {
     "id": "153",
+    "image": "/images/sections/book2_sect153.jpg",
     "text": [
       "Vous laissez le fripon à ses tasses et à sa bille, et vous vous approchez d'un groupe d'hommes qui jouent aux cartes près de l'escalier de la taverne. Au bout d'un moment, vous vous apercevez que l'un des joueurs est en train de tricher.",
       "Si vous voulez défier cet homme, rendez- vous au 241. Si vous préférez ne pas vous en mêler, rendez-vous au 130."
@@ -2798,6 +2810,7 @@ export const storyDataBook2: Record<string, Section> = {
   "154": {
     "id": "154",
     "damage": 2,
+    "image": "/images/sections/book2_sect154.jpg",
     "text": [
       "Dans leur poste d'équipage, les hommes du Sceptre Vert sont entassés les uns sur les autres; il règne là une atmosphère étouffante, surchauffée. Mais, en dépit du manque d'espace et de la frugalité du repas (une frugalité telle qu'elle vous coûte 2 points d'ENDURANCE), les marins sont contents que vous ayez accepté leur invitation et ils vous traitent comme un hôte d'honneur. Après dîner, ils vous invitent à jouer avec eux aux",
       "« Hublots ». Il s'agit d'un jeu de dés où l'on mise un peu d'or. Si vous voulez tenter votre chance, rendez-vous au 308. Si vous préférez décliner leur offre et leur souhaiter bonne nuit avant de regagner votre cabine, rendez-vous au 197."
