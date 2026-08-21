@@ -2462,6 +2462,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "136": {
     "id": "136",
+    "image": "/images/sections/book2_sect136.jpg",
     "text": [
       "« Il vous en coûtera 20 Couronnes pour vous rendre à Port Bax », lance le cocher qui s'exprime avec un fort accent de Ragadorn. Si vous possédez ces 20 Couronnes et que vous souhaitez acheter un billet, rendez-vous au 10.",
       "Si vous n'avez pas assez d'argent, rendez-vous au 238."
@@ -2479,6 +2480,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "137": {
     "id": "137",
+    "image": "/images/sections/book2_sect137.jpg",
     "text": [
       "Vous arrivez à un croisement ; la rue du Mendiant tourne en direction du sud et aboutit à la rue du Chevalier Noir. Quelques mètres plus loin, une autre voie, la rue de l'Ancre, mène en direction de l'est.",
       "La pluie tombe de plus en plus dru, à présent. Si vous souhaitez aller vers le sud le long de la rue du Chevalier Noir, rendez-vous au 259. Si vous préférez suivre la rue de l'Ancre en direction de l'est, rendez-vous au 20."
@@ -2496,6 +2498,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "138": {
     "id": "138",
+    "image": "/images/sections/book2_sect138.jpg",
     "text": [
       "Au bout d'une heure de marche, vous atteignez le sommet d'une colline. Devant vous s'étend la forêt de Durenor. La route s'oriente vers l'est et s'enfonce sous les arbres à proximité d'une grande tour de bois.",
       "Vous apercevez devant la tour un soldat en faction. Si vous voulez poursuivre votre chemin en direction de la tour, rendez-vous au 232. Si vous préférez éviter le garde, faites un large détour et pénétrez dans la forêt plus loin au sud en vous rendant au 244."
