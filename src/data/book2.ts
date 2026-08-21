@@ -2516,6 +2516,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "139": {
     "id": "139",
+    "image": "/images/sections/book2_sect139.jpg",
     "text": [
       "L'entraînement que vous avez suivi dans l'art de la chasse vous permet de reconnaître les fruits comestibles ou vénéneux qui poussent dans les régions septentrionales de Magnamund. Ces fruits violets sont des Larnumes.",
       "C'est là un mets de choix, sucré et nourrissant. Vous en mangez à satiété et vous en faites provision pour l'équivalent de 2 repas. Conservez-les dans votre Sac à Dos. Au-delà des larnumiers, les arbres qui portent ces fruits, vous distinguez une large route qui suit la côte en menant, au choix, vers l'est ou vers l'ouest.",
@@ -2534,6 +2535,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "140": {
     "id": "140",
+    "image": "/images/sections/book2_sect140.jpg",
     "text": [
       "Les deux gardes contemplent le Sceau avec une stupeur mêlée de respect. Tous les habitants de Durenor connaissent bien la légende du Sceau d'Hammardal et l'on dit que, de tous les trésors perdus du royaume, le Sceau d'Hammardal est celui dont personne ne souhaite le retour.",
       "L'inquiétude qu'exprime le visage des deux gardes montre qu'ils savent parfaitement ce que l'anneau signifie. L'un des soldats vous accompagne sur l'autre rive du chenal de Ryner et le long d'une route forestière qui aboutit à un croisement.",
@@ -2550,6 +2552,7 @@ export const storyDataBook2: Record<string, Section> = {
   "141": {
     "id": "141",
     "damage": 2,
+    "image": "/images/sections/book2_sect141.jpg",
     "text": [
       "Le mât s'écrase sur le pont et un débris de bois vous frappe à la tête en vous jetant par-dessus bord. Vous vous débattez dans les vagues pour refaire surface puis vous vous agrippez à un panneau d'écoutille qui flotte à portée de main.",
       "A moitié assommé, vous perdez 2 points d'ENDURANCE. Vous vous hissez ensuite sur ce radeau de fortune en vous y cramponnant de toutes vos forces : si vous portez une cotte de mailles, il faut vous en débarrasser immédiatement, sinon, vous êtes sûr de périr noyé.",
