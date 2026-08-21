@@ -2347,6 +2347,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "129": {
     "id": "129",
+    "image": "/images/sections/book2_sect129.jpg",
     "text": [
       "Vous passez devant plusieurs entrepôts alignés sur le quai et vous arrivez au mur d'enceinte du port. Là, le chemin que vous suivez tourne brusquement à droite pour aboutir dans la rue du Tombeau. Quatre gardes en armes marchent au milieu de la rue.",
       "Vous ne voulez pas prendre le risque d'être interpellé et arrêté par ces soldats et vous vous réfugiez dans une ruelle en cul-de-sac, à votre droite. Mais soudain les gardes s'immobilisent à l'entrée de la ruelle.",
@@ -2362,6 +2363,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "130": {
     "id": "130",
+    "image": "/images/sections/book2_sect130.jpg",
     "text": [
       "Le moine qui voyageait en votre compagnie dans la diligence s'est approché de vous. « Vous avez besoin de vous reposer, comme nous tous, dit-il, je comprends votre embarras, mon fils; aussi permettez-moi de mettre en pratique ce que je m'efforce de prêcher. »",
       "Il vous conduit alors au bar puis dépose une Pièce d'Or dans la main de l'aubergiste. « Veuillez donner une chambre à mon ami », dit-il avec un sourire. Rendez-vous au 314."
@@ -2375,6 +2377,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "131": {
     "id": "131",
+    "image": "/images/sections/book2_sect131.jpg",
     "text": [
       "Vous leur demandez ce qu'ils vous veulent. Pour toute réponse, ils tirent tous trois d'une poche de leur veste de longs poignards à la lame recourbée. Leur chef fait alors un pas en avant et vous ordonne de lui donner votre or. Comme vous hésitez, il crie :",
       "« A l'attaque ! » et les trois VOLEURS bondissent aussitôt sur vous. Si vous ne disposez d'aucune arme, retranchez 4 points de votre total d'HABILETÉ et combattez-les à mains nues. Il vous faut les affronter un par un.",
@@ -2393,6 +2396,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "132": {
     "id": "132",
+    "image": "/images/sections/book2_sect132.jpg",
     "text": [
       "Vous atterrissez dans la rue boueuse au milieu d'une pluie de verre brisé. La chute vous a quelque peu secoué mais vous êtes indemne. Un villageois furieux, armé d'une matraque, essaie de vous fracasser le crâne, mais vous roulez sur vous-même et vous vous relevez d'un bond ; avant qu'il ait eu le temps de vous atteindre, vous êtes déjà en train de courir le long de la rue sinueuse ; vous n'êtes pas au bout de vos peines cependant, car un Squall à cheval se précipite sur vous, sa lance levée.",
       "Il s'apprête à vous frapper lorsque vous faites un pas de côté qui vous permet d'éviter le coup. Vous saisissez alors la hampe de son arme et vous déséquilibrez le Squall qui glisse de sa selle. Si vous souhaitez frapper le Squall à l'aide de sa propre lance, rendez-vous au 317.",
@@ -2411,6 +2415,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "133": {
     "id": "133",
+    "image": "/images/sections/book2_sect133.jpg",
     "text": [
       "Vous regardez le marin droit dans les yeux et vous concentrez votre Puissance Psychique sur sa main ouverte. Soudain, l'homme tombe de sa chaise en se tenant la main et en hurlant comme s'il venait de saisir des charbons ardents.",
       "Lorsque vous lui expliquez que seul votre pouvoir a provoqué cette douleur, il vous contemple d'un air stupéfait. Rendez-vous au 268."
@@ -2424,6 +2429,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "134": {
     "id": "134",
+    "image": "/images/sections/book2_sect134.jpg",
     "text": [
       "Un cri à vous glacer le sang jaillit tout à coup de l'obscurité et vous vous retrouvez face à un Monstre d'Enfer aux yeux étincelants. Ses mains vous attrapent à la gorge et il essaie de vous étrangler; dans un hurlement de terreur, vous tombez à terre : l'immonde créature déchire alors votre tunique de ses doigts noirs aux griffes crochues.",
       "Si vous possédez une Lance Magique, rendez-vous au 38. Sinon, rendez-vous au 304."
@@ -2441,6 +2447,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "135": {
     "id": "135",
+    "image": "/images/sections/book2_sect135.jpg",
     "text": [
       "«Voici votre abri», dit le chevalier d'un ton bourru en montrant du doigt les bois qui s'étendent derrière vous. Avant que vous ayez pu répondre quoi que ce soit, il fait un pas en arrière et ferme à clé la lourde porte de la tour.",
       "La forêt qu'il vous a montrée est très dense; des herbes et des buissons d'épines s'enchevêtrent dans les sous-bois et il faut renoncer à y pénétrer à cheval. Il ne vous reste donc plus qu'à abandonner votre monture et à poursuivre votre route à pied.",
