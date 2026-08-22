@@ -196,7 +196,7 @@ export function CombatScreen() {
           <D10Icon number={currentFace} rolling={diceRolling} />
 
           {isPlayerDead && (
-            <div className="text-center mt-2 animate-fade-in flex flex-col items-center justify-center gap-2 w-full absolute top-[120%] z-30">
+            <div className="text-center mt-2 animate-fade-in flex flex-col items-center justify-center gap-2 w-full relative z-30">
               <div className="text-red-600 font-bold text-xl mb-2" style={{ fontFamily: 'Cinzel, serif', textShadow: '0 0 10px rgba(220, 38, 38, 0.8)' }}>Mort...</div>
               
               {settings?.allowCombatRestart && (
@@ -232,7 +232,7 @@ export function CombatScreen() {
           )}
 
           {combatVictory && (
-            <div className="text-green-500 font-bold text-lg mt-2 animate-pulse absolute top-[120%] z-30">Victoire !</div>
+            <div className="text-green-500 font-bold text-lg mt-2 animate-pulse relative z-30">Victoire !</div>
           )}
         </div>
 

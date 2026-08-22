@@ -90,9 +90,9 @@ function App() {
           >
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>
-          <div className="relative z-10 text-center mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)', transform: 'translateY(-80px)', display: 'block' }}>Loup Solitaire</h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300 drop-shadow-xl mb-6" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
+          <div className="relative z-10 text-center mb-4 md:mb-8 mt-12 md:mt-0">
+            <h1 className="text-5xl md:text-7xl font-bold mb-2 md:mb-4 drop-shadow-2xl" style={{ fontFamily: 'Cinzel, serif', color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.5)' }}>Loup Solitaire</h1>
+            <h2 className="text-xl md:text-3xl text-gray-300 drop-shadow-xl mb-4 md:mb-6" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>
               {BOOK_TITLES[selectedBook]}
             </h2>
             
@@ -112,7 +112,7 @@ function App() {
             </div>
           </div>
 
-          <div className="relative z-10 flex flex-col gap-4 w-full max-w-xs mx-auto backdrop-blur-sm bg-black/50 p-6 rounded-2xl border border-[#d4af37]/40 shadow-2xl">
+          <div className="relative z-10 flex flex-col gap-3 md:gap-4 w-full max-w-xs mx-auto backdrop-blur-sm bg-black/50 p-4 md:p-6 rounded-2xl border border-[#d4af37]/40 shadow-2xl">
             {selectedBook === 1 ? (
               <button 
                 onClick={(e) => {
@@ -120,18 +120,18 @@ function App() {
                   setImportedCharacter(null);
                   handleStateChange('CREATION');
                 }}
-                className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                className="primary-btn text-lg md:text-xl py-2 md:py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
               >
                 Nouvelle Partie
               </button>
             ) : (
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2 md:gap-3">
                 <button 
                   onClick={(e) => {
                     e.stopPropagation();
                     handleStateChange('CLOUD_SAVE_IMPORT');
                   }}
-                  className="primary-btn text-lg py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                  className="primary-btn text-base md:text-lg py-2 md:py-3 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
                 >
                   Importer un Personnage
                 </button>
@@ -141,7 +141,7 @@ function App() {
                     setImportedCharacter(null);
                     handleStateChange('CREATION');
                   }}
-                  className="primary-btn text-lg py-3 shadow-[0_0_15px_rgba(212,175,55,0.1)]"
+                  className="primary-btn text-base md:text-lg py-2 md:py-3 shadow-[0_0_15px_rgba(212,175,55,0.1)]"
                   style={{ backgroundColor: 'rgba(30, 30, 30, 0.9)', color: '#d4af37', border: '1px solid #d4af37' }}
                 >
                   Créer un Personnage
@@ -154,21 +154,21 @@ function App() {
                 setCloudSaveReturnState('MENU');
                 handleStateChange('CLOUD_SAVE');
               }}
-              className="primary-btn text-xl py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+              className="primary-btn text-lg md:text-xl py-2 md:py-3 shadow-[0_0_15px_rgba(212,175,55,0.2)]"
               style={{ backgroundColor: 'rgba(30, 30, 30, 0.8)', color: '#d4af37', borderColor: '#d4af37' }}
             >
               Continuer l'Aventure
             </button>
             <button 
               onClick={() => handleStateChange('RULES')}
-              className="choice-btn text-center text-xl transition-all"
+              className="choice-btn text-center text-lg md:text-xl py-2 md:py-3 transition-all"
               style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95, textAlign: 'center' }}
             >
               Règles du Jeu
             </button>
             <button 
               onClick={() => handleStateChange('GALLERY')}
-              className="choice-btn text-center text-xl transition-all mt-2"
+              className="choice-btn text-center text-lg md:text-xl py-2 md:py-3 transition-all mt-1 md:mt-2"
               style={{ backgroundColor: '#121212', borderColor: '#d4af37', color: '#d4af37', opacity: 0.95, textAlign: 'center' }}
             >
               Galerie d'Illustrations
@@ -179,7 +179,7 @@ function App() {
                   e.stopPropagation();
                   handleStateChange('HISTORY');
                 }}
-                className="choice-btn text-center text-xl transition-all cursor-pointer"
+                className="choice-btn text-center text-lg md:text-xl py-2 md:py-3 transition-all cursor-pointer"
                 style={{ backgroundColor: '#121212', borderColor: '#9ca3af', color: '#9ca3af', opacity: 1, textAlign: 'center' }}
               >
                 Ancienne Aventure
@@ -191,7 +191,7 @@ function App() {
                 e.stopPropagation();
                 await supabase.auth.signOut();
               }}
-              className="choice-btn text-center text-base transition-all mt-4"
+              className="choice-btn text-center text-sm md:text-base py-2 transition-all mt-2 md:mt-4"
               style={{ backgroundColor: '#121212', borderColor: '#ef4444', color: '#ef4444', opacity: 0.8, textAlign: 'center' }}
             >
               Se déconnecter
