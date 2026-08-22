@@ -3048,6 +3048,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "168": {
     "id": "168",
+    "image": "/images/sections/book2_sect168.jpg",
     "text": [
       "Un par un, les autres voyageurs s'approchent et contemplent avec horreur le corps du cocher de la diligence. « Il faut l'enterrer », dit le moine. Vous hochez la tête en signe d'approbation et vous creusez une tombe pour y déposer le corps.",
       "Lorsque le malheureux est enterré, tous les voyageurs et vous-même revenez près de la diligence pour décider de ce qu'il convient de faire. «Je connais la route de Port Bax, je peux remplacer le cocher», propose Halvore.",
@@ -3071,6 +3072,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "169": {
     "id": "169",
+    "image": "/images/sections/book2_sect169.jpg",
     "text": [
       "Découragé, vous quittez la maison de jeu et vous retournez au relais de diligence ; au loin, vous apercevez la porte Est de la ville. La diligence de Durenor attend juste à côté. Or, il vous faut à tout prix gagner Port Bax, l'avenir du Sommerlund en dépend.",
       "Vous vous arrangez donc pour passer derrière le garde qui surveille la diligence et vous montez dans le véhicule sans qu'il vous ait vu. A mesure que l'heure du départ approche, cinq autres passagers montent à leur tour et s'assoient autour de vous.",
@@ -3094,6 +3096,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "170": {
     "id": "170",
+    "image": "/images/sections/book2_sect170.jpg",
     "text": [
       "Le garde jette un coup d'œil à votre carte de couleur blanche et renifle avec mépris. « C'est un laissez-passer de marchand, dit-il, il ne vous sera d'aucune utilité ici. Il vous faut un laissez-passer rouge pour avoir accès à la base navale. »",
       "Il vous rend votre carte et retourne à son poste de garde. Rendez-vous au 327."
@@ -3107,6 +3110,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "171": {
     "id": "171",
+    "image": "/images/sections/book2_sect171.jpg",
     "text": [
       "Vous apercevez derrière les arbres une large route qui longe la côte d'est en ouest. Si vous voulez aller vers l'est, rendez-vous au 27. Si vous préférez vous diriger vers l'ouest, rendez-vous au 114."
     ],
@@ -3123,6 +3127,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "172": {
     "id": "172",
+    "image": "/images/sections/book2_sect172.jpg",
     "text": [
       "Grâce à votre Sixième Sens, vous devinez qu'un péril vous menace dans l'ombre de cette plate-forme. Si vous souhaitez malgré tout monter les marches et affronter ce danger, rendez-vous au 52. Si vous préférez vous éloigner rapidement de ces marches et de cette plate-forme, rendez-vous au 256.",
       "Enfin, si vous choisissez de revenir en courant jusqu'au croisement pour prendre le tunnel de gauche, rendez-vous au 64."
@@ -3144,6 +3149,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "173": {
     "id": "173",
+    "image": "/images/sections/book2_sect173.jpg",
     "text": [
       "Vous pénétrez dans un somptueux magasin où sont exposées les marchandises les plus raffinées qu'on puisse trouver au nord de Magnamund. Même à cette heure tardive, l'endroit est animé : des capitaines et de riches commerçants marchandent en effet l'achat ou l'échange de leurs denrées.",
       "Le propriétaire du magasin est un jeune guerrier qui préside aux enchères du haut d'un fauteuil de bois sculpté suspendu par quatre chaînes. Ces hommes sont tous vêtus d'armures noires et leurs boucliers portent pour emblème l'image d'un vaisseau noir surmonté d'une crête rouge.",
@@ -3167,6 +3173,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "174": {
     "id": "174",
+    "image": "/images/sections/book2_sect174.jpg",
     "text": [
       "«Je n'ai encore jamais rencontré un paysan qui ait les moyens de s'acheter un cheval, dit le chevalier en s'avançant vers vous, vous n'êtes d'ailleurs sûrement pas un paysan, j'ai plutôt l'impression que vous êtes un voleur. »",
       "Puis, d'un coup de son épée, il vous désarçonne et vous tombez lourdement sur le sol. Instinctivement, vous tirez votre épée dans un geste de défense tandis que le chevalier vous attaque. Rendez- LDVELH - Loup Solitaire 02 - La Traversee Infernale vous au 162."
@@ -3175,6 +3182,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "175": {
     "id": "175",
+    "image": "/images/sections/book2_sect175.jpg",
     "text": [
       "« Il semble que l'oiseau se soit envolé », dit le capitaine. Il vous montre alors un canot qui file à bonne allure en direction d'un autre navire. « Regardez bien ce vaisseau, il n'a pas de pavillon et sa forme me paraît bien étrange. Je n'en ai encore jamais vu de semblable. »",
       "Vous observez le canot qui rejoint en quelques instants le mystérieux navire. Et soudain, comme par magie, un brouillard venu d'on ne sait où se lève sur la mer et enveloppe le vaisseau. Moins d'une minute plus tard, le navire et le brouillard ont tous deux disparu.",
@@ -3193,6 +3201,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "176": {
     "id": "176",
+    "image": "/images/sections/book2_sect176.jpg",
     "text": [
       "Vous avez chevauché pendant trois jours et trois nuits le long du grand chemin qui remonte la vallée du Durenon. Au loin, vous apercevez le sommet des monts d'Hammardal, l'une des plus hautes chaînes de montagnes de Magnamund.",
       "La capitale du royaume de Durenor est nichée au creux de ces montagnes. L'aube vient de se lever sur le quatorzième jour de votre quête. Vous avez établi votre camp près d'une chute d'eau ; à cet endroit, les flots du fleuve Durenon plongent au bas d'un à-pic de 40 mètres de hauteur.",
@@ -3218,6 +3227,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "177": {
     "id": "177",
+    "image": "/images/sections/book2_sect177.jpg",
     "text": [
       "Lorsque vous entrez à nouveau dans la taverne, vous voyez les marins rassemblés autour d'une table où se déroule une partie de bras de fer. Si vous souhaitez vous aussi engager une partie de bras de fer, rendez- vous au 276.",
       "Si vous préférez parler à l'aubergiste, rendez-vous au 342."
@@ -3235,6 +3245,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "178": {
     "id": "178",
+    "image": "/images/sections/book2_sect178.jpg",
     "text": [
       "Bien que la délicieuse odeur de cette nourriture vous fasse saliver, vous soupçonnez quelque chose de louche et vous posez le plateau à terre, près de la porte. Vous êtes fatigué à force d'avoir faim et vous décidez de faire un somme avant d'aller rejoindre les autres au bar.",
       "Lorsque vous vous réveillez, vous apercevez les cadavres de deux rats étendus près du plateau : ils sont morts empoisonnés. Vous êtes alors saisi de fureur, car c'est à vous que cette nourriture était destinée.",
@@ -3249,6 +3260,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "179": {
     "id": "179",
+    "image": "/images/sections/book2_sect179.jpg",
     "text": [
       "Votre maîtrise du Camouflage vous permet de vous dissimuler dans la charrette à foin en étant sûr de n'être pas découvert. Lorsque, enfin, tout danger est écarté, vous sortez de votre cachette. Si pour plus de sûreté, vous souhaitez rester caché un peu plus longtemps, vous pouvez vous réfugier au sommet d'une autre meule de foin entassée à quelque distance, rendez-vous alors au 82.",
       "Si vous préférez prendre un cheval et quitter le village, rendez-vous au 150. Si enfin vous choisissez d'entrer dans la boutique du charron, rendez-vous au 71."
