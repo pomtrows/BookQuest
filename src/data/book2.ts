@@ -3282,6 +3282,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "180": {
     "id": "180",
+    "image": "/images/sections/book2_sect180.jpg",
     "text": [
       "Vous arrivez à la conclusion que les marins du bateau sont aveugles ou qu'ils n'ont pas la moindre intention de vous porter secours. En effet, le bateau de pêche poursuit sa course et disparaît bientôt à l'horizon sans s'occuper de vous.",
       "En désespoir de cause, vous arrachez une planche du panneau d'écoutille et vous vous en servez comme d'une rame pour pagayer en direction de la côte. Rendez-vous au 337."
@@ -3295,6 +3296,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "181": {
     "id": "181",
+    "image": "/images/sections/book2_sect181.jpg",
     "text": [
       "Cette rue est encore plus sale et nauséabonde que celle que vous venez de quitter. Bientôt, cependant, la vitrine en désordre d'une boutique attire votre attention; vous y découvrez en effet plusieurs objets qui pourraient vous être fort utiles ; chacun de ces objets porte une étiquette qui indique son prix.",
       "Epée 4 Couronnes Poignard 2 Couronnes Sabre 3 Couronnes Marteau de guerre 6 Couronnes Lance 5 Couronnes Masse d'Armes 4 Couronnes Couverture de fourrure 3 Couronnes Sac à Dos 1 Couronne Vous pouvez entrer dans cette boutique et acheter ce qui vous plaira.",
@@ -3311,6 +3313,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "182": {
     "id": "182",
+    "image": "/images/sections/book2_sect182.jpg",
     "text": [
       "Il vous faut trouver un refuge pour la nuit, sinon vous risquez d'être arrêté par les gardes de la ville. Votre Discipline Kaï vous indique clairement qu'il vous faut retourner à la taverne pour y demander une chambre.",
       "En y passant une bonne nuit, vous serez d'attaque demain matin pour établir un plan qui vous permettra d'atteindre au plus vite le royaume de Durenor. Rendez-vous au 177."
@@ -3324,6 +3327,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "183": {
     "id": "183",
+    "image": "/images/sections/book2_sect183.jpg",
     "text": [
       "Au bord du terrain où vous avez établi votre camp, la forêt descend en pente raide ; dans votre hâte, vous trébuchez et vous tombez tête la première parmi les arbres. Utilisez la Table de Hasard pour obtenir un chiffre.",
       "Si vous tirez un chiffre entre 0 et 8, rendez-vous au 311. Si le chiffre obtenu est un 9, rendez-vous au 159."
@@ -3341,6 +3345,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "184": {
     "id": "184",
+    "image": "/images/sections/book2_sect184.jpg",
     "text": [
       "Le Drakkarim rend l'âme à vos pieds et les pirates saisis de panique s'enfuient à bord de leur bateau en train de sombrer ; voir un aussi puissant guerrier ainsi terrassé leur a fait perdre tout courage.",
       "Le capitaine Kelman rassemble aussitôt ses hommes et les lance à la poursuite de l'ennemi en déroute. Les pirates sont jetés par-dessus bord par les marins déchaînés. Le Sceptre Vert s'éloigne ensuite du vaisseau pirate qui donne de la bande sur tribord.",
@@ -3357,6 +3362,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "185": {
     "id": "185",
+    "image": "/images/sections/book2_sect185.jpg",
     "text": [
       "Tandis que vous courez sur le pont jonché de cadavres, deux guerriers DRAKKARIM apparaissent soudain et vous attaquent par surprise. Il vous faut les combattre l'un après l'autre. 1er DRAKKARIM HABILETÉ : 17 ENDURANCE : 25 2e DRAKKARIM HABILETÉ: 16 ENDURANCE: 26 Vous pouvez prendre la fuite à tout moment en plongeant par-dessus bord ; rendez-vous pour cela au 286.",
       "Si vous tuez vos deux adversaires au cours du combat, vous pourrez ensuite sauter sur le pont d'un navire de Durenor qui passe à proximité. Rendez-vous alors au 120."
@@ -3379,6 +3385,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "186": {
     "id": "186",
+    "image": "/images/sections/book2_sect186.jpg",
     "text": [
       "Vous arrivez bientôt devant un grand bâtiment qui porte cette inscription sur sa façade : ÉCURIES DE RAGADORN RELAIS DE DILIGENCE Un cocher vêtu d'un uniforme vert est assis près d'un tableau d'affichage qui indique : Port Bax Durée du voyage : 7 jours.",
       "Si vous souhaitez demander au cocher un billet pour Port Bax, rendez-vous au 136. Si vous n'avez pas d'argent, rendez-vous au 238."
