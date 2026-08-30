@@ -3,13 +3,14 @@ name: illustrateur
 description: >-
   Automatise la détection, la génération et l'intégration des illustrations de sections
   pour n'importe quel livre-jeu du projet Book Quest (Livre 1, Livre 2 et futurs livres 3, 4, etc.).
-  Utiliser dès que l'utilisateur demande d'illustrer un livre, de compléter les images manquantes,
+  Déclenché dès que l'utilisateur tape "/illustrateur", demande d'illustrer un livre, de compléter les images manquantes,
   ou de lancer un batch d'illustrations.
 ---
 
 # Skill : Illustrateur de Sections (Book Quest)
 
 Ce skill guide l'agent pour automatiser l'illustration complète des sections de n'importe quel livre de jeu présent dans `src/data/book<N>.ts`.
+Il est activé dès que l'utilisateur invoque la commande `/illustrateur` ou demande d'illustrer un livre.
 
 ---
 
