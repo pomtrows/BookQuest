@@ -100,7 +100,13 @@ function App() {
         <div 
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
           style={{
-            backgroundImage: `url('${selectedBook === 1 ? "/images/title_bg.png" : getImageUrl("/images/sections/book2_intro1.jpg")}')`,
+            backgroundImage: `url('${
+              selectedBook === 1 
+                ? "/images/title_bg.png" 
+                : selectedBook === 2 
+                  ? getImageUrl("/images/sections/book2_intro1.jpg") 
+                  : getImageUrl(`/images/sections/book${selectedBook}_cover.webp`)
+            }')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
