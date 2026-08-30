@@ -121,15 +121,62 @@ Il est parfois possible de fuir un combat si le texte vous y autorise, mais vous
   }
 ];
 
+export const rulesDataBook3: RuleSection[] = [
+  {
+    id: 'generale',
+    title: 'Générale',
+    content: `Au cours de vos deux précédentes aventures, vous avez acquis une solide expérience. Vos points d'HABILETÉ et d'ENDURANCE restent ceux définis au début de votre initiation, augmentés des bonus gagnés.
+
+Dans **Les Grottes de Kalte**, vous affrontez un climat polaire impitoyable. Le froid extrême et les créatures des glaces mettront vos talents de Seigneur Kaï à rude épreuve. Si votre ENDURANCE tombe à zéro, vous mourez et votre quête s'achève.`
+  },
+  {
+    id: 'disciplines',
+    title: 'Les disciplines Kaï',
+    content: `À ce stade de votre entraînement (Initié Supérieur / Maître Kaï), vous maîtrisez désormais **7 Disciplines Kaï** parmi les dix existantes (5 au départ + 1 pour chaque livre terminé avec succès).
+
+- **Le Camouflage** : Se fondre dans le décor enneigé et les étendues de glace.
+- **La Chasse** : Trouver du gibier. *Attention : cette discipline est inopérante dans certaines régions désolées des glaces ou à l'intérieur de la Forteresse d'Ikaya.*
+- **Le Sixième Sens** : Détecter les embuscades et les dangers mortels dans le blizzard.
+- **L'Orientation** : Vous repérer sur la banquise et dans les dédales de cavernes.
+- **La Guérison** : Récupérer 1 point d'Endurance par section franchie sans combat.
+- **La Maîtrise des Armes** : +2 en Habileté avec l'arme choisie.
+- **Le Bouclier Psychique** : Protection mentale contre les attaques psychiques des créatures magiques.
+- **La Puissance Psychique** : Attaque mentale infligeant +2 à votre Quotient d'Attaque (sauf ennemis immunisés).
+- **La Communication Animale** : Dialoguer avec les animaux polaires et comprendre les bêtes sauvages.
+- **La Maîtrise Psychique de la Matière** : Télékinésie pour manipuler de petits objets à distance.`
+  },
+  {
+    id: 'equipement',
+    title: 'Équipement & Climat Polaire',
+    content: `Vous pouvez conserver l'équipement acquis à la fin du Livre 2 (dans la limite de 2 Armes et 8 Objets dans votre Sac à Dos).
+
+**Règles spéciales du Grand Nord (Kalte)** :
+- **Vêtements Chauds / Parka** : Indispensables pour résister au froid polaire. Sans protection thermique adéquate, vous subirez des pertes continues d'Endurance.
+- **Rations de Nourriture** : Transportez toujours des Repas dans votre sac, car les tempêtes de neige peuvent vous immobiliser plusieurs jours sans possibilité de chasser.`
+  },
+  {
+    id: 'combat',
+    title: 'Règles de combat',
+    content: `Le système de combat reste fidèle aux règles fondamentales :
+
+1. Calculez votre **Quotient d'Attaque** : *(Votre Habileté + Bonus) - (Habileté de l'adversaire)*.
+2. Chaque assaut tire un chiffre (0 à 9) sur la Table de Hasard.
+3. Les dégâts croisés réduisent l'Endurance des combattants jusqu'à la mort ou la fuite.
+
+[COMBAT_TABLE]`
+  }
+];
+
 export const getRulesData = (bookId: number): RuleSection[] => {
-  // Pour le moment, les règles du Livre 1 et du Livre 2 sont identiques, mais 
-  // on pourra retourner un tableau spécifique selon le livre plus tard.
   switch (bookId) {
     case 1:
       return rulesDataBook1;
     case 2:
-      return rulesDataBook1; // TODO: Remettre des règles spécifiques au livre 2 quand on les aura
+      return rulesDataBook1;
+    case 3:
+      return rulesDataBook3;
     default:
       return rulesDataBook1;
   }
 };
+
