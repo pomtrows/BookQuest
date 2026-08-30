@@ -19,9 +19,35 @@ import packageJson from '../package.json';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT' | 'GALLERY';
 
-const BOOK_TITLES: Record<number, string> = {
+export const BOOK_TITLES: Record<number, string> = {
   1: "Les Maîtres des Ténèbres",
-  2: "La Traversée Infernale"
+  2: "La Traversée Infernale",
+  3: "Les Grottes de Kalte",
+  4: "Le Gouffre Maudit",
+  5: "Le Tyran du Désert",
+  6: "La Pierre de la Sagesse",
+  7: "La Forteresse Maudite",
+  8: "Dans l'Enfer de la Jungle",
+  9: "La Métropole de la Peur",
+  10: "Dans les Entrailles de Torgar",
+  11: "Les Prisonniers du Temps",
+  12: "Le Crépuscule des Maîtres",
+  13: "Les Druides de Cener",
+  14: "Le Captif du Roi-Sorcier",
+  15: "La Croisade du Désespoir",
+  16: "L'Héritage de Vashna",
+  17: "La Tour de Cristal",
+  18: "La Porte d'Ombre",
+  19: "Le Combat des Loups",
+  20: "La Malédiction de Naar",
+  21: "Le Voyage de la Pierre de Lune",
+  22: "Les Pirates de Shadaki",
+  23: "Le Héros de Mynuit",
+  24: "La Guerre des Runes",
+  25: "Sur la Piste du Loup",
+  26: "Le Démon des Profondeurs",
+  27: "La Griffe du Vampire",
+  28: "La Cité de l'Empereur"
 };
 
 function App() {
@@ -100,11 +126,12 @@ function App() {
               <select 
                 value={selectedBook}
                 onChange={(e) => setSelectedBook(Number(e.target.value))}
-                className="appearance-none bg-black/80 border-2 border-[#d4af37] text-[#d4af37] font-bold text-xl py-3 px-6 pr-12 rounded-lg outline-none focus:ring-2 focus:ring-[#d4af37]/50 cursor-pointer hover:bg-black transition-colors shadow-[0_0_15px_rgba(212,175,55,0.2)]"
+                className="appearance-none bg-black/80 border-2 border-[#d4af37] text-[#d4af37] font-bold text-xl py-3 px-6 pr-12 rounded-lg outline-none focus:ring-2 focus:ring-[#d4af37]/50 cursor-pointer hover:bg-black transition-colors shadow-[0_0_15px_rgba(212,175,55,0.2)] max-w-[90vw] truncate"
                 style={{ fontFamily: 'Cinzel, serif' }}
               >
-                <option value={1}>Livre 1 : {BOOK_TITLES[1]}</option>
-                <option value={2}>Livre 2 : {BOOK_TITLES[2]}</option>
+                {Object.entries(BOOK_TITLES).map(([num, title]) => (
+                  <option key={num} value={num}>Livre {num} : {title}</option>
+                ))}
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#d4af37]">
                 <svg className="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>

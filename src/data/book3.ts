@@ -226,7 +226,8 @@ export const storyDataBook3: Record<string, Section> = {
       },
       {
         "text": "Si vous préférez laisser cet homme où il est et poursuivre votre exploration du couloir principal, rendez-vous au 254.",
-        "targetId": "254"
+        "targetId": "254",
+        "requiredDiscipline": "Exploration"
       }
     ]
   },
@@ -1866,7 +1867,8 @@ export const storyDataBook3: Record<string, Section> = {
       },
       {
         "text": "Si vous préférez refermer la porte secrète et poursuivre votre exploration du passage obscur, rendez-vous au 336.",
-        "targetId": "336"
+        "targetId": "336",
+        "requiredDiscipline": "Exploration"
       }
     ]
   },
@@ -3874,7 +3876,8 @@ export const storyDataBook3: Record<string, Section> = {
       },
       {
         "text": "Si vous préférez laisser ces Bracelets là où ils sont et poursuivre votre exploration d'Ikaya, rendez-vous au 63.",
-        "targetId": "63"
+        "targetId": "63",
+        "requiredDiscipline": "Exploration"
       }
     ]
   },
