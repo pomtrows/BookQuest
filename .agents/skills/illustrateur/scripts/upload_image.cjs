@@ -9,22 +9,22 @@ const BUCKET = 'loupsolitaire';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-async function uploadSingleImage(localFilePath) {
+async function uploadSingleImage(localFilePath, targetName) {
   if (!fs.existsSync(localFilePath)) {
     console.error(`❌ Fichier introuvable : ${localFilePath}`);
     process.exit(1);
   }
 
-  const fileName = path.basename(localFilePath);
-  const ext = path.extname(fileName).toLowerCase();
-  const baseName = path.basename(fileName, ext);
+  const finalName = targetName || path.basename(localFilePath);
+  const ext = path.extname(finalName).toLowerCase();
+  const baseName = path.basename(finalName, ext);
   const buffer = fs.readFileSync(localFilePath);
   const mimeType = ext === '.png' ? 'image/png' : (ext === '.webp' ? 'image/webp' : 'image/jpeg');
 
-  console.log(`📤 Upload de ${fileName} (${(buffer.length / 1024).toFixed(1)} Ko)...`);
+  console.log(`📤 Upload de ${finalName} (${(buffer.length / 1024).toFixed(1)} Ko)...`);
 
   // 1. Upload Full
-  const { error: errFull } = await supabase.storage.from(BUCKET).upload(`full/${fileName}`, buffer, {
+  const { error: errFull } = await supabase.storage.from(BUCKET).upload(`full/${finalName}`, buffer, {
     contentType: mimeType,
     upsert: true
   });
@@ -42,16 +42,18 @@ async function uploadSingleImage(localFilePath) {
   });
   if (errComp) throw new Error(`Erreur compressed: ${errComp.message}`);
 
-  console.log(`✅ Upload réussi : full/${fileName} et compressed/${baseName}.webp (${(compressedBuffer.length / 1024).toFixed(1)} Ko - gain : -${(100 - (compressedBuffer.length / buffer.length) * 100).toFixed(1)}%)`);
+  console.log(`✅ Upload réussi dans Supabase : full/${finalName} et compressed/${baseName}.webp (${(compressedBuffer.length / 1024).toFixed(1)} Ko - gain : -${(100 - (compressedBuffer.length / buffer.length) * 100).toFixed(1)}%)`);
 }
 
 const fileArg = process.argv[2];
+const targetNameArg = process.argv[3];
+
 if (!fileArg) {
-  console.log('Usage: node upload_image.cjs <chemin_vers_image>');
+  console.log('Usage: node upload_image.cjs <chemin_vers_image> [nom_cible_final]');
   process.exit(1);
 }
 
-uploadSingleImage(path.resolve(fileArg)).catch(err => {
+uploadSingleImage(path.resolve(fileArg), targetNameArg).catch(err => {
   console.error('❌ Erreur :', err);
   process.exit(1);
 });
