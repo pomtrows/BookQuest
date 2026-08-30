@@ -7,6 +7,9 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        maximumFileSizeToCacheInBytes: 25 * 1024 * 1024 // 25 MiB
+      },
       devOptions: {
         enabled: true
       },

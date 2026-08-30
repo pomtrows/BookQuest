@@ -1,14 +1,30 @@
 export type Discipline = 
+  // Disciplines de base (Livre 1 à 5)
   | 'Camouflage' 
   | 'Chasse' 
   | 'Sixième Sens' 
   | 'Orientation' 
   | 'Guérison' 
   | 'Maîtrise des armes' 
+  | 'Maîtrise des Armes'
   | 'Bouclier psychique' 
+  | 'Bouclier Psychique'
   | 'Puissance psychique' 
+  | 'Puissance Psychique'
   | 'Communication Animale' 
-  | 'Maîtrise Psychique de la Matière';
+  | 'Maîtrise Psychique de la Matière'
+  // Disciplines Magnakaï / Grand Maître (Livre 6 à 28)
+  | 'Invisibilité'
+  | 'Art de la Chasse'
+  | 'Pistage'
+  | 'Flegme'
+  | 'Magie Kaï'
+  | 'Intuition'
+  | 'Télépathie'
+  | 'Survie'
+  | 'Exploration'
+  | 'Science des Armes'
+  | string;
 
 export type Weapon = 
   | 'Poignard' 
