@@ -3403,6 +3403,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "187": {
     "id": "187",
+    "image": "/images/sections/book2_sect187.jpg",
     "text": [
       "En fouillant rapidement leurs cadavres, vous découvrez les objets suivants : 2 Lances, 2 Epées, 6 Pièces d'Or. Si vous décidez d'emporter l'un ou l'autre de ces objets, n'oubliez pas de modifier votre Feuille d'Aventure en conséquence.",
       "Vous précipitez ensuite les corps des soldats dans les eaux du chenal et vous vous hâtez de franchir le pont, de peur que quelqu'un n'ait été témoin de la scène. Une fois parvenu de l'autre côté, vous marchez pendant une heure sur un chemin forestier et vous calez confortablement votre Sac à Dos sur vos épaules et vous prenez la direction de l'est.",
@@ -3418,6 +3419,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "188": {
     "id": "188",
+    "image": "/images/sections/book2_sect188.jpg",
     "text": [
       "Votre présence d'esprit et votre adresse vous ont épargné une morsure fatale. Et tandis que le serpent disparaît dans les hautes herbes de l'autre côté de la route, vous ramassez vos affaires et vous grimpez à l'arbre dans le feuillage duquel vous passerez la nuit en toute sécurité.",
       "Rendez- vous au 312."
@@ -3431,6 +3433,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "189": {
     "id": "189",
+    "image": "/images/sections/book2_sect189.jpg",
     "damage": 2,
     "text": [
       "« Vous êtes un imposteur ! » s'écrie-t-il en dégainant son arme. Avant que vous n'ayez pu réagir, la lame de son épée vous écorche le bras et vous perdez 2 points d'ENDURANCE. L'homme s'est précipité sur vous ; sous le choc, vous franchissez la porte ouverte à reculons, vous trébuchez et vous tombez tous deux tête la première au bas des escaliers, dans un échange de jurons retentissants.",
@@ -3449,6 +3452,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "190": {
     "id": "190",
+    "image": "/images/sections/book2_sect190.jpg",
     "text": [
       "Vous vous servez d'une règle de fer comme d'un levier pour forcer la serrure et vous ressentez soudain une douleur cuisante dans la poitrine. Le coffret comportait un piège : une petite aiguille enduite de poison qui vient de se planter dans votre chair tandis que vous tentiez de faire sauter la serrure.",
       "Cette minuscule fléchette vous est fatale et vous mourez sur le coup. Votre mission s'achève ici, en même temps que votre vie."
@@ -3457,6 +3461,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "191": {
     "id": "191",
+    "image": "/images/sections/book2_sect191.jpg",
     "text": [
       "Un peu plus loin, la rue pavée tourne brusquement vers la droite. Vous vous trouvez alors devant un bâtiment de pierre blanche qui porte cette plaque fixée au-dessus de la porte : La rue pavée aboutit à un haut mur de pierre dans lequel est aménagée une grande porte rouge gardée par deux soldats.",
       "Au-delà de cette porte, on distingue les mâts des navires ancrés dans le port. Si vous souhaitez entrer dans la tour de guet, rendez-vous au 318. Si vous préférez vous approcher de la porte rouge, rendez-vous au 246."
@@ -3474,6 +3479,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "192": {
     "id": "192",
+    "image": "/images/sections/book2_sect192.jpg",
     "text": [
       "Les marins ivres poussent des grognements satisfaits, et l'argent change de mains tandis qu'on prend les paris. Vous remarquez alors que votre adversaire adresse un clin d'œil à deux de ses compagnons qui s'avancent aussitôt vers vous.",
       "Sans hésiter une seconde, vous vous levez d'un bond et vous frappez le marin d'un coup de poing au visage. Le choc est si rude qu'il est projeté en arrière et s'écroule dans les bras de ses deux complices, les entraînant dans sa chute.",
@@ -3491,6 +3497,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "193": {
     "id": "193",
+    "image": "/images/sections/book2_sect193.jpg",
     "text": [
       "Le voyage de retour au royaume du Sommerlund se déroule sous de mauvais auspices. De gros nuages noirs s'amoncellent à l'horizon et un vent violent agite la mer sans relâche. A la nuit tombée, de grands éclairs aveuglants déchirent l'obscurité, suivis par des roulements de tonnerre si fracassants que le navire amiral en est tout ébranlé depuis l'extrémité de sa quille jusqu'à la pointe de ses mâts.",
       "La plupart des soldats qui voyagent à bord de la flotte sont des montagnards qui n'ont aucune expérience de la mer et au bout du troisième jour, une bonne moitié d'entre eux sont cloués au lit, incapables de se lever.",
@@ -3507,6 +3514,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "194": {
     "id": "194",
+    "image": "/images/sections/book2_sect194.jpg",
     "text": [
       "Lorsque vous vous réveillez, vous avez la désagréable surprise de vous retrouver étendu sous une jetée en bois, dans une puanteur insupportable qui monte des eaux environnantes. Vous vous relevez avec une douleur lancinante dans la tête, comme si on vous avait assommé.",
       "C'est d'ailleurs très exactement ce qui vous est arrivé ; mais, plus grave encore, les pêcheurs vous ont tout volé : Or, Sac à Dos, Armes, ainsi que tous vos Objets Spéciaux, y compris, hélas, le Sceau d'Hammardal.",
@@ -3536,6 +3544,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "195": {
     "id": "195",
+    "image": "/images/sections/book2_sect195.jpg",
     "text": [
       "Au bout d'une heure de voyage, le cocher annonce •",
       "« Pont à péage, une Couronne par personne. »",
