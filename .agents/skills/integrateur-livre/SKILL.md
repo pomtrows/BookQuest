@@ -5,6 +5,7 @@ description: >-
   dans src/data/book<N>.ts. Découpe n'importe quel nombre de sections (sans limite à 350),
   aère le texte avec des paragraphes fluides, extrait les choix interactifs,
   et enregistre le livre dans src/data/books.ts.
+  Déclenche ensuite automatiquement 'interpreteur-regles', puis 'regles-mecaniques'.
 ---
 
 # Skill : Intégrateur Livre (Book Quest)
@@ -54,13 +55,11 @@ Ce skill guide l'agent pour intégrer proprement n'importe quel nouveau livre-je
 
 ---
 
-## 3. Workflow d'Intégration d'un Nouveau Livre
+## 3. Chaîne d'Exécution & Enchaînement des Skills
 
-1. **Création du fichier** : Créer `src/data/book<N>.ts` avec typage `Section`.
-2. **Formatage et aération** : Remplir toutes les sections avec le texte aéré en paragraphes.
-3. **Mise à jour de `src/data/books.ts`** :
-   ```typescript
-   import { storyDataBook<N> } from './book<N>';
-   // Ajouter dans booksData: <N>: storyDataBook<N>
-   ```
-4. **Passage au skill suivant** : Invoquer `regles-mecaniques` pour enrichir les combats, loots et dégâts, puis `testeur-livre` pour valider l'intégrité du graphe.
+Dès que le texte du livre est intégré dans `src/data/book<N>.ts` et référencé dans `src/data/books.ts`, la chaîne suivante s'exécute dans l'ordre strict :
+
+1. **`interpreteur-regles`** : Analyse des règles du livre, mise à jour du menu "Règles du jeu" (`src/data/rules.ts`) et ajustement éventuel des types / moteurs de combat.
+2. **`regles-mecaniques`** : Enrichissement section par section (combats, loots, dégâts/soins, conditions de choix).
+3. **`testeur-livre`** : Audit de cohérence globale, vérification zéro lien mort et accessibilité du graphe.
+4. **`illustrateur`** : Génération des visuels, compression WebP et stockage sur le bucket Supabase `loupsolitaire`.
