@@ -43,11 +43,11 @@ Pour chaque section à illustrer, appeler l'outil `generate_image` en respectant
 
 ---
 
-## 3. Pipeline Technique d'Intégration
+## 3. Pipeline Technique d'Intégration & Supabase Storage
 
 Pour chaque image générée avec succès :
 
-1. **Copie du fichier d'image** :
+1. **Copie locale du fichier d'image** :
    - Depuis l'artefact généré (dossier temporaire) vers :
      - Pour le Livre 1 : `public/images/sections/sect<ID>.jpg`
      - Pour le Livre N ($N \ge 2$) : `public/images/sections/book<N>_sect<ID>.jpg`
@@ -56,13 +56,19 @@ Pour chaque image générée avec succès :
      Copy-Item "C:\Users\Pomito\.gemini\antigravity\brain\<conv_id>\book<N>_sect<ID>_*.jpg" -Destination "C:\PROJET\Book Quest\public\images\sections\book<N>_sect<ID>.jpg"
      ```
 
-2. **Mise à jour du fichier source TypeScript (`src/data/book<N>.ts`)** :
+2. **Upload automatique vers le bucket Supabase `loupsolitaire`** (version originale dans `full/` + version WebP optimisée dans `compressed/`) :
+   ```powershell
+   node .agents/skills/illustrateur/scripts/upload_image.cjs "public/images/sections/book<N>_sect<ID>.jpg"
+   ```
+
+3. **Mise à jour du fichier source TypeScript (`src/data/book<N>.ts`)** :
    - Ajouter le champ d'image dans la section correspondante :
      - Livre 1 : `"image": "/images/sections/sect<ID>.jpg",`
      - Livre N : `"image": "/images/sections/book<N>_sect<ID>.jpg",`
    - Placer cette ligne juste sous `"id": "<ID>",`.
+   *(L'application résout automatiquement les URLs vers `loupsolitaire/compressed/...webp` via `getImageUrl()`)*.
 
-3. **Sauvegarde Git par lot (toutes les 3 à 5 images)** :
+4. **Sauvegarde Git par lot (toutes les 3 à 5 images)** :
    ```powershell
    git add "src/data/book<N>.ts" "public/images/sections/"
    git commit -m "feat(book<N>): add images for sections <debut>-<fin>"
@@ -74,7 +80,7 @@ Pour chaque image générée avec succès :
 ## 4. Gestion des Quotas API (Erreur 429)
 
 Si l'outil `generate_image` renvoie une erreur `429 Too Many Requests` (`RESOURCE_EXHAUSTED`) :
-1. Sauvegarder immédiatement les images déjà produites (mise à jour TS, commit & push).
+1. Sauvegarder immédiatement les images déjà produites (upload Supabase, mise à jour TS, commit & push).
 2. Extraire le délai d'attente indiqué dans la réponse d'erreur (`quotaResetDelay` ou `quotaResetTimeStamp`).
 3. Informer clairement l'utilisateur du nombre d'images générées et de l'heure exacte à laquelle le quota sera rechargé.
 4. Si l'utilisateur a demandé une reprise automatique, programmer ou réactiver le déclencheur planifié.

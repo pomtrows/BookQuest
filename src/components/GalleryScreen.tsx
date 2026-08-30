@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowLeft, HelpCircle } from 'lucide-react';
 import { useGalleryStore } from '../store/galleryStore';
-import { supabase } from '../lib/supabase';
+import { supabase, getImageUrl } from '../lib/supabase';
 import { getStoryData } from '../data/books';
 
 interface GalleryScreenProps {
@@ -81,11 +81,11 @@ export function GalleryScreen({ bookId, onBack }: GalleryScreenProps) {
                       ${unlocked 
                         ? 'border-[#d4af37]/50 hover:border-[#d4af37] cursor-pointer hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:scale-105' 
                         : 'border-[#333333] bg-[#0a0a0c] opacity-80'}`}
-                    onClick={() => unlocked && setFullscreenImage(item.image)}
+                    onClick={() => unlocked && setFullscreenImage(getImageUrl(item.image, 'full'))}
                   >
                     {unlocked ? (
                       <img 
-                        src={item.image} 
+                        src={getImageUrl(item.image)} 
                         alt={`Section ${item.id}`} 
                         className="w-full h-full object-cover transition-all duration-700"
                       />
@@ -108,13 +108,13 @@ export function GalleryScreen({ bookId, onBack }: GalleryScreenProps) {
       {/* Fullscreen Image Modal */}
       {fullscreenImage && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 cursor-pointer backdrop-blur-sm transition-opacity duration-300"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-pointer animate-fade-in"
           onClick={() => setFullscreenImage(null)}
         >
           <img 
             src={fullscreenImage} 
-            alt="Fullscreen illustration" 
-            className="max-w-[95vw] max-h-[95vh] object-contain border border-[#d4af37]/30 shadow-[0_0_50px_rgba(212,175,55,0.15)] rounded-md animate-fade-in"
+            alt="Fullscreen view" 
+            className="max-w-full max-h-[90vh] object-contain rounded-lg border border-[#d4af37]/50 shadow-2xl"
           />
         </div>
       )}

@@ -14,7 +14,7 @@ import { PreviousAdventure } from './components/PreviousAdventure';
 import { InstallPrompt } from './components/InstallPrompt';
 import { MapScreen } from './components/MapScreen';
 import { GalleryScreen } from './components/GalleryScreen';
-import { supabase } from './lib/supabase';
+import { supabase, getImageUrl } from './lib/supabase';
 import packageJson from '../package.json';
 
 type AppState = 'MENU' | 'CREATION' | 'GAME' | 'RULES' | 'HISTORY' | 'MAP' | 'CLOUD_SAVE' | 'CLOUD_SAVE_IMPORT' | 'GALLERY';
@@ -74,7 +74,7 @@ function App() {
         <div 
           className="flex flex-col items-center justify-center min-h-screen p-4 relative"
           style={{
-            backgroundImage: `url('${selectedBook === 1 ? "/images/title_bg.png" : "/images/sections/book2_intro1.jpg"}')`,
+            backgroundImage: `url('${selectedBook === 1 ? "/images/title_bg.png" : getImageUrl("/images/sections/book2_intro1.jpg")}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

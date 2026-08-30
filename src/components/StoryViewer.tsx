@@ -3,7 +3,7 @@ import { getStoryData } from '../data/books';
 import { CombatScreen } from './CombatScreen';
 import { useEffect, useState } from 'react';
 import { Dices, AlertTriangle, Utensils, RotateCcw } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { supabase, getImageUrl } from '../lib/supabase';
 import { useGalleryStore } from '../store/galleryStore';
 
 export function StoryViewer() {
@@ -233,10 +233,10 @@ export function StoryViewer() {
            {storyDataObj[turningToSection].image && (
              <div className="w-full mb-2 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
                <img 
-                 src={storyDataObj[turningToSection].image} 
+                 src={getImageUrl(storyDataObj[turningToSection].image)} 
                  className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain filter grayscale cursor-pointer" 
                  alt="" 
-                 onClick={() => setFullscreenImage(storyDataObj[turningToSection!].image || null)}
+                 onClick={() => setFullscreenImage(getImageUrl(storyDataObj[turningToSection!].image, 'full') || null)}
                />
              </div>
            )}
@@ -256,10 +256,10 @@ export function StoryViewer() {
       {section.image && (
         <div className="w-full mb-2 flex justify-center bg-black/20 rounded-md overflow-hidden border border-[#333333]">
           <img 
-            src={section.image} 
+            src={getImageUrl(section.image)} 
             alt={`Illustration for section ${section.id}`} 
             className="w-full h-auto max-h-[40vh] md:max-h-[50vh] object-contain cursor-pointer"
-            onClick={() => setFullscreenImage(section.image || null)}
+            onClick={() => setFullscreenImage(getImageUrl(section.image, 'full') || null)}
           />
         </div>
       )}
@@ -268,14 +268,15 @@ export function StoryViewer() {
         {Array.isArray(section.text) 
           ? section.text.map((paragraph, idx) => {
               if (paragraph.startsWith('[IMG]')) {
-                const imgSrc = paragraph.substring(5);
+                const rawSrc = paragraph.substring(5);
+                const imgSrc = getImageUrl(rawSrc);
                 return (
                   <div key={idx} className="my-6 flex justify-center">
                     <img 
                       src={imgSrc} 
                       alt="" 
                       className="max-w-full h-auto max-h-[50vh] object-contain rounded-lg shadow-lg border-2 border-[#d4af37] cursor-pointer" 
-                      onClick={() => setFullscreenImage(imgSrc)}
+                      onClick={() => setFullscreenImage(getImageUrl(rawSrc, 'full'))}
                     />
                   </div>
                 );
