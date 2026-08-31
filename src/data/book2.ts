@@ -3860,6 +3860,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "213": {
     "id": "213",
+    "image": "/images/sections/book2_sect213.jpg",
     "text": [
       "Vous grimpez au sommet d'une meule de foin et vous vous emmitouflez dans votre cape de Seigneur Kaï pour vous protéger du vent frisquet. Vous vous endormez alors sans vous douter le moins du monde que vous ne vous réveillerez plus jamais.",
       "En effet, l'un de vos compagnons de voyage est un agent des Maîtres des Ténèbres et, dans la fraîcheur de la nuit, il vient silencieusement vous assassiner sans même que vous vous en rendiez compte. Votre quête s'achève donc ici en même temps que votre vie."
@@ -3868,6 +3869,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "214": {
     "id": "214",
+    "image": "/images/sections/book2_sect214.jpg",
     "text": [
       "Dès que vous êtes entré, vous vous apercevez qu'il ne s'agit pas du tout d'une boutique. Vous vous trouvez dans une pièce nue et froide qui ne comporte pour seul ameublement qu'une grande table placée en son centre.",
       "Aux quatre coins de l'endroit, pendent des paires de menottes dont l'aspect sinistre vous glace le sang. Vous venez en fait de pénétrer dans le Quartier Général de la Fraternité du Silence, la célèbre police secrète de Lachelan.",
@@ -3880,6 +3882,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "215": {
     "id": "215",
+    "image": "/images/sections/book2_sect215.jpg",
     "text": [
       "Une trentaine de mètres plus loin, du côté gauche de la rue, des cris joyeux et des chants filtrent à travers la façade d'une grande bâtisse délabrée. Une enseigne rouillée grince au-dessus de la porte.",
       "Si vous voulez entrer dans la taverne, rendez-vous au 4. Si vous préférez continuer de marcher le long de la rue de la Bernicle, rendez- vous au 83"
@@ -3893,6 +3896,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "216": {
     "id": "216",
+    "image": "/images/sections/book2_sect216.jpg",
     "text": [
       "Pendant trois jours et trois nuits, la puissante flotte du royaume de Durenor file à bonne allure en direction du golfe de Holm ; un fort vent gonfle les voiles des vaisseaux et il se pourrait bien que le voyage soit plus court que prévu.",
       "Pourtant, le moral des soldats n'est pas au plus haut ; il semble que leur confiance en eux-mêmes et leur hâte de combattre se soient peu à peu évanouies, comme si quelque vampire invisible les avait mystérieusement vidés de leur force.",
@@ -3908,6 +3912,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "217": {
     "id": "217",
+    "image": "/images/sections/book2_sect217.jpg",
     "text": [
       "L'homme vous regarde et vous répond d'une voix bourrue:",
       "«La diligente... il faut prendre la diligence qui part cet après-midi pour Port Bax. Si vous me donnez 1 Couronne, je vous dirai comment vous rendre au relais. »",
@@ -3926,6 +3931,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "218": {
     "id": "218",
+    "image": "/images/sections/book2_sect218.jpg",
     "text": [
       "Le capitaine Zombie est mort, mais vous vous trouvez encerclé par les visages macabres des membres de l'équipage ; ils sont au nombre de vingt, armés de coutelas et de haches. Si vous voulez les combattre, rendez-vous au 43.",
       "Si vous préférez vous enfuir en saisissant une corde qui pend à proximité et en l'utilisant pour vous élancer sur le pont d'un navire de Durenor, rendez-vous au 105."
@@ -3943,6 +3949,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "219": {
     "id": "219",
+    "image": "/images/sections/book2_sect219.jpg",
     "text": [
       "Le venin commence à faire son effet. Votre bras mordu s'engourdit et une sueur froide perle à votre front. Vous ôtez aussitôt de votre cou le pendentif que Banedon vous a donné dans les Ruines de Raumas et à l'aide d'une des pointes de l'étoile de cristal, vous incisez la peau de votre bras à l'endroit de la morsure.",
       "Vous posez ensuite vos lèvres sur la plaie et vous aspirez le venin. Le porte-bonheur se révèle efficace et la chance est avec vous, car vous survivez à la morsure, bien que vous perdiez 3 points d'ENDURANCE.",
@@ -3957,6 +3964,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "220": {
     "id": "220",
+    "image": "/images/sections/book2_sect220.jpg",
     "text": [
       "En fouillant son cadavre, vous découvrez des preuves accablantes : aucun doute, c'est bien lui qui a tenté de vous tuer. Dans l'une de ses poches, vous trouvez une fiole à moitié vide de sève de gandurn, le poison mortel qu'il avait versé dans vos aliments.",
       "Vous tombez ensuite sur un parchemin écrit en langue Glok et dans lequel sont indiqués tous les détails de votre voyage à Port Bax. C'est à Ragadorn qu'il a dû vous repérer et c'est là également qu'il a élaboré ses plans pour vous tuer.",
@@ -3974,6 +3982,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "221": {
     "id": "221",
+    "image": "/images/sections/book2_sect221.jpg",
     "text": [
       "Le sol de la taverne est couvert de sang et jonché des cadavres de vos adversaires. Dehors, de la grande rue, vous parviennent les clameurs d'une foule. Les habitants du lieu sont persuadés que vous êtes un tueur fou et ils ont la très ferme intention de vous écharper.",
       "Vous vous enfuyez en toute hâte par la porte de derrière tandis que les hurlements de la populace se rapprochent. Rendez-vous au 88."
