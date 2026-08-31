@@ -3566,6 +3566,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "196": {
     "id": "196",
+    "image": "/images/sections/book2_sect196.jpg",
     "text": [
       "Le roi Alin IV est assis, seul, dans sa tour surmontée d'un dôme et contemple les montagnes à travers une haute fenêtre aux vitres de couleur. Un huissier vous annonce, Lord Axim et vous-même, puis vous pénétrez dans la Chambre Royale en vous inclinant respectueusement devant Sa Majesté.",
       "Lord Axim retire alors le Sceau d'Hammardal de votre doigt et s'approche du roi. Tous deux s'entretiennent pendant presque une heure, leur visage soucieux exprimant toute la gravité de la situation. Enfin, après un bref silence, le roi Alin se lève soudain de son trône et, pour la première fois, vous adresse la parole.",
@@ -3586,6 +3587,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "197": {
     "id": "197",
+    "image": "/images/sections/book2_sect197.jpg",
     "text": [
       "Lorsque l'aube paraît, une terrible tempête se lève sur h mer et vous êtes réveillé par le violent roulis du navire. Le plancher de votre cabine est inondé cm li s hurlements du vent laissent à peine percevoir de temps à autre les cris de l'équipage.",
       "Vous vous habillez en hâte, vous rassemblez vos affaires et vous montez sur le pont. Le capitaine vous rejoint bientôt ; il vous prend par le bras et vous donne l'ordre de retourner dans votre cabine. Vous revenez donc sur vos pas, mais soudain un craquement effroyable retentit ; vous levez la tête : la partie supérieure du grand mât vient de se rompre dans la tourmente et tombe droit sur vous.",
@@ -3608,6 +3610,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "198": {
     "id": "198",
+    "image": "/images/sections/book2_sect198.jpg",
     "damage": 1,
     "text": [
       "Vous avez à peine parcouru une vingtaine de mètres lorsque votre cheval se cabre soudain et s'emballe. Vous êtes projeté à terre et vous perdez 1 point d'ENDURANCE. Vous vous relevez en époussetant votre cape et vous lancez un juron à votre monture qui disparaît au loin.",
@@ -3622,6 +3625,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "199": {
     "id": "199",
+    "image": "/images/sections/book2_sect199.jpg",
     "text": [
       "« C'est très simple, dit alors l'aubergiste d'une voix moqueuse en empochant la Pièce d'Or, il vous suffit de mettre un pied devant l'autre. Comme ça ! » ajoute-t-il avec un rire sonore en se dirigeant vers la cuisine dans laquelle il disparaît bientôt.",
       "Vous maudissez la canaille et vous quittez aussitôt l'auberge en prenant le temps toutefois de renverser d'un coup de pied le seau d'eau sale. Rendez-vous au 143."
