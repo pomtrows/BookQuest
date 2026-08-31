@@ -3639,6 +3639,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "200": {
     "id": "200",
+    "image": "/images/sections/book2_sect200.jpg",
     "text": [
       "Lorsque vous arrivez au bar, tous les autres sont déjà assis à une grande table et vous attendent. Vous vous approchez d'eux et, soudain, la vérité vous apparaît clairement : vous savez à présent qui a tenté de vous assassiner et vous décidez d'attaquer cet ennemi par surprise, sans le laisser soupçonner que vous avez vu clair dans son jeu.",
       "Pendant quelques instants, vous examinez attentivement le visage de vos compagnons de voyage et vous avez alors la certitude d'avoir deviné juste. Il ne vous reste plus qu'à passer à l'attaque. Mais qui est donc, selon vous, cet assassin présumé sur lequel vous allez vous précipiter à la seconde même ?",
@@ -3670,6 +3671,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "201": {
     "id": "201",
+    "image": "/images/sections/book2_sect201.jpg",
     "text": [
       "Lorsque vous bondissez sur vos pieds, le serpent siffle et tente de vous mordre au bras. Vous faites un pas de côté pour l'éviter mais avez-vous été suffisamment rapide pour échapper à ses crochets mortels ?",
       "Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-vous au 285. Entre 5 et 9, rendez-vous au 70."
@@ -3687,6 +3689,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "202": {
     "id": "202",
+    "image": "/images/sections/book2_sect202.jpg",
     "text": [
       "Le soldat vous salue et vous laisse franchir la porte rouge. Vous arrivez alors sur une place éclairée par les lumières du port. A votre grand soulagement, vous apercevez un drapeau familier qui flotte au vent frais de la nuit : un soleil surmonté d'une couronne; c'est l'étendard du Sommerlund, et ces colonnes de marbre qui se dressent devant vous marquent l'entrée du consulat.",
       "Lorsque vous montez les marches de pierre qui mènent à la porte du bâtiment, les gardes sommerlundois en faction vous reconnaissent aussitôt. Ils disparaissent à l'intérieur et reviennent peu après en compagnie d'un homme de haute taille, aux cheveux grisonnants : c'est un fonctionnaire du consulat.",
@@ -3702,6 +3705,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "203": {
     "id": "203",
+    "image": "/images/sections/book2_sect203.jpg",
     "text": [
       "« Vous avez faim ! Voulez-vous un peu de fromage ? »",
       "Vous avez posé cette question au marin après avoir jeté un coup d'œil aux deux souris qui s'affairent à l'autre bout de la salle. Utilisant alors la Discipline Kaï de la Communication Animale, vous ordonnez aux deux rongeurs de vous apporter leur fromage et, un instant plus tard, l'homme constate avec stupéfaction que les souris viennent effectivement déposer le fromage à vos pieds avant de disparaître en toute hâte.",
@@ -3716,6 +3720,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "204": {
     "id": "204",
+    "image": "/images/sections/book2_sect204.jpg",
     "text": [
       "L'exceptionnelle acuité visuelle que vous avez acquise au cours de votre entraînement à la Discipline de l'Orientation vous permet de distinguer nettement le talisman fixé à l'extrémité du bâton noir. C'est l'emblème de la Guilde des Magiciens de Toran : un croissant et une étoile de cristal.",
       "Cet homme est un renégat qui a trahi tout à la fois la Guilde et votre patrie. Si vous souhaitez monter en haut de cette tour pour attaquer le magicien félon, rendez-vous au 73. Si vous ne voulez pas risquer votre vie en affrontant ce puissant sorcier, sautez par-dessus bord et rendez-vous au 267."
@@ -3733,6 +3738,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "205": {
     "id": "205",
+    "image": "/images/sections/book2_sect205.jpg",
     "text": [
       "L'aubergiste fronce les sourcils et vous montre du doigt une porte latérale. « Si vous ne pouvez pas vous payer une chambre, dit-il, allez donc dormir dans l'écurie. »",
       "En vous dirigeant vers la sortie, vous sentez dans votre dos le regard des autres passagers de la diligence. La porte claque sur vos talons et vous vous retrouvez seul dans la nuit froide, le corps parcouru de frissons.",
@@ -3747,6 +3753,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "206": {
     "id": "206",
+    "image": "/images/sections/book2_sect206.jpg",
     "text": [
       "Au cours de la nuit vous êtes réveillé par des loups qui hurlent au loin. Vous préférez ne pas prendre le risque d'être dévoré pendant votre sommeil et vous montez donc dans l'arbre pour passer le reste de la nuit à l'abri de son feuillage, à bonne distance du sol.",
       "Rendez-vous au 312."
@@ -3760,6 +3767,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "207": {
     "id": "207",
+    "image": "/images/sections/book2_sect207.jpg",
     "text": [
       "Moins de 100 mètres plus loin, le sentier s'arrête au bord d'un précipice. Les eaux du chenal de Ryner coulent au-dessous et il est impossible d'aller plus loin. Il ne vous reste donc plus qu'à rebrousser chemin et à prendre le pont qui traverse le chenal.",
       "Rendez-vous au 47."
@@ -3773,6 +3781,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "208": {
     "id": "208",
+    "image": "/images/sections/book2_sect208.jpg",
     "text": [
       "Vous passez devant le chariot et vous entendez soudain un bruit, juste derrière vous. Vous faites volte-face en observant attentivement les parois du tunnel, mais il fait trop sombre pour distinguer quoi que ce soit.",
       "Rendez-vous au 134."
@@ -3786,6 +3795,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "209": {
     "id": "209",
+    "image": "/images/sections/book2_sect209.jpg",
     "text": [
       "Vous entendez bientôt des murmures parmi les hommes d'équipage. Parfois, quelques mots prononcés distinctement vous parviennent aux oreilles : ils parlent de",
       "« vaisseaux fantômes » et de",
@@ -3806,6 +3816,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "210": {
     "id": "210",
+    "image": "/images/sections/book2_sect210.jpg",
     "text": [
       "Vous posez les deux mains sur votre estomac et vous vous concentrez de toute la force que vous donne la Discipline Kaï pour tenter de vaincre la douleur. Votre pouvoir de guérison vous soulage bientôt, mais le poison est puissant et vous n'êtes pas au bout de vos peines.",
       "Utilisez la Table de Hasard pour obtenir un chiffre. Puisse la clémence des dieux guider votre main, car votre vie dépend désormais du chiffre que vous aurez tiré ! Si la table vous donne entre 0 et 4, rendez-vous au 275.",
@@ -3824,6 +3835,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "211": {
     "id": "211",
+    "image": "/images/sections/book2_sect211.jpg",
     "text": [
       "« Le consulat du Sommerlund ? » demande-t-il d'un air surpris, visiblement déconcerté par votre soudaine apparition. Puis, se reprenant :",
       "« Oh mais bien sûr ! s'exclame-t-il, c'est sur la place Alin, près du port. Prenez à droite en sortant et encore à droite au bout de l'avenue. Vous arriverez alors à la porte Rouge. Il vous faudra un laissez-passer rouge pour entrer, car le consulat se trouve à l'intérieur du quartier maritime et la circulation y est réglementée. »",
@@ -3839,6 +3851,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "212": {
     "id": "212",
+    "image": "/images/sections/book2_sect212.jpg",
     "text": [
       "Le malheur veut que vous n'ayez pas d'armes et qu'il soit lui-même un redoutable bretteur. Le combat est désespéré et fort bref. Il vous transperce d'un coup d'épée et vous jette à bas du chariot d'un simple coup de pied.",
       "Mais rassurez-vous, votre chute ne sera pas trop douloureuse car vous êtes déjà mort lorsque vous arrivez en bas. Votre mission s'achève ici en même temps que votre vie."
