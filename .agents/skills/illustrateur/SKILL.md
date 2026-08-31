@@ -2,9 +2,9 @@
 name: illustrateur
 description: >-
   Automatise la détection, la génération et l'intégration des illustrations de sections
-  pour n'importe quel livre-jeu du projet Book Quest (Livre 1, Livre 2 et futurs livres 3, 4, etc.).
+  pour n'importe quel livre-jeu du projet Book Quest (Livre 1, Livre 2 et futurs livres 3 à 28).
   Déclenché dès que l'utilisateur tape "/illustrateur", demande d'illustrer un livre, de compléter les images manquantes,
-  ou de lancer un batch d'illustrations.
+  ou de lancer un batch d'illustrations. Reprend automatiquement en boucle toutes les 5h30 après épuisement de quota sans intervention utilisateur.
 ---
 
 # Skill : Illustrateur de Sections (Book Quest)
@@ -73,9 +73,15 @@ Pour chaque image générée avec succès :
 
 ---
 
-## 4. Gestion des Quotas API (Erreur 429)
+## 4. Gestion Autonome des Quotas API (Reprise Automatique en Boucle Toutes les 5h30)
 
-Si l'outil `generate_image` renvoie une erreur `429 Too Many Requests` (`RESOURCE_EXHAUSTED`) :
-1. Finaliser l'upload Supabase et la mise à jour de `book<N>.ts` pour les images générées avant l'erreur, puis commit & push le code.
-2. Extraire le délai d'attente indiqué dans la réponse d'erreur (`quotaResetDelay` ou `quotaResetTimeStamp`).
-3. Informer clairement l'utilisateur du nombre d'images générées et de l'heure exacte à laquelle le quota sera rechargé.
+Lorsqu'un lot d'images atteint la limite de quota de l'outil `generate_image` (erreur `429 Too Many Requests` / `RESOURCE_EXHAUSTED`) :
+1. **Sauvegarder immédiatement les progrès** :
+   - Finaliser l'upload Supabase et mettre à jour `src/data/book<N>.ts`.
+   - Effectuer le commit et le `git push`.
+2. **Programmer la reprise automatique** :
+   - Utiliser impérativement l'outil `schedule` avec `DurationSeconds: 19800` (5 heures et 30 minutes, soit 19 800 secondes) ou selon le délai indiqué par l'API pour déclencher un réveil automatique.
+   - Prompt de notification : `"Reprendre automatiquement la génération des illustrations pour le Livre <N> à partir de la section manquante suivante jusqu'à nouvel épuisement du quota."`
+3. **Poursuite autonome** :
+   - Au réveil du timer, reprendre immédiatement la génération d'images pour le livre en cours sans demander de confirmation à l'utilisateur.
+   - Répéter ce cycle en boucle jusqu'à ce que 100% des sections du livre soient illustrées.
