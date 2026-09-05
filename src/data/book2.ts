@@ -5457,6 +5457,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "303": {
     "id": "303",
+    "image": "/images/sections/book2_sect303.jpg",
     "text": [
       "Des amas d'ordures pourrissantes ont été déversés sur cette partie du quai et l'odeur qui s'en dégage est si pestilentielle que vous vous couvrez la bouche et le nez d'un pan de votre cape. Un peu plus loin sur votre gauche, vous apercevez la lueur d'une torche qui filtre par une porte ouverte.",
       "Une enseigne est accrochée au-dessus de la porte et porte cette inscription : Si vous souhaitez entrer dans le magasin, rendez-vous au 173. Si vous préférez poursuivre en direction du sud, rendez-vous au 18."
@@ -5474,6 +5475,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "304": {
     "id": "304",
+    "image": "/images/sections/book2_sect304.jpg",
     "text": [
       "Vous éprouverez peut-être quelque consolation en apprenant que votre mort a été quasiment instantanée. En quelques secondes, les doigts du Monstre d'Enfer vous ont déchiré la gorge et le Sceau d'Hammardal ne tardera pas à parvenir à Helgedad, la ville des Maîtres des Ténèbres.",
       "Votre mission s'achève ici en même temps que votre vie."
@@ -5482,6 +5484,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "305": {
     "id": "305",
+    "image": "/images/sections/book2_sect305.jpg",
     "text": [
       "Un silence pesant s'installe dans la taverne, il en faut davantage cependant pour vous impressionner et c'est avec le plus grand calme que vous ramassez les 5 Pièces d'Or posées sur la table. Vous vous dirigez ensuite vers la porte, mais, au moment où vous allez sortir, un marin d'une laideur repoussante vous bloque le passage en brandissant une épée.",
       "Un instant plus tard, alors que vous vous demandez ce qu'il convient de faire, un coup sourd résonne dans le silence de la salle et l'homme tombe à genoux sur le plancher. Vous avez la surprise de reconnaître, debout derrière lui, la servante qui tient fermement des deux mains une grosse massue de bois.",
@@ -5498,6 +5501,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "306": {
     "id": "306",
+    "image": "/images/sections/book2_sect306.jpg",
     "text": [
       "Le soldat vous donne un coup de lance en visant votre poitrine, mais vous faites un pas de côté et le fer vous écorche à peine le bras. Le GARDE est décidé à se battre ; or, vous ne voulez pas le tuer, simplement essayer de l'assommer.",
       "Menez ce combat à la manière habituelle, mais en multipliant par 2 les points d'ENDURANCE perdus par votre adversaire. Lorsque son total d'ENDURANCE sera descendu à zéro, vous aurez réussi à le mettre hors de combat.",
@@ -5517,6 +5521,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "307": {
     "id": "307",
+    "image": "/images/sections/book2_sect307.jpg",
     "text": [
       "Les soldats se montrent menaçants et prêts à attaquer. Il vous faut prendre une décision rapide. Si vous voulez essayer de les corrompre en leur offrant de l'or, rendez-vous au 57. Si vous préférez leur montrer le Sceau d'Hammardal (en admettant qu'il soit toujours en votre possession), rendez-vous au 140.",
       "Si vous estimez enfin qu'il vaut mieux dégainer votre arme et les combattre, rendez-vous au 282."
@@ -5538,6 +5543,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "308": {
     "id": "308",
+    "image": "/images/sections/book2_sect308.jpg",
     "text": [
       "Un marin du nom de Sprogg s'est assis à côté de vous et vous explique les règles du jeu de",
       "« Hublot». Il vous montre d'abord une paire de dés en forme de diamant, taillés dans du verre rouge. Chaque dé possède dix faces numérotées de 0 à 9 ; les joueurs doivent lancer les deux dés et ajouter les chiffres obtenus. Celui qui tire deux 0 crie",
@@ -5557,6 +5563,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "309": {
     "id": "309",
+    "image": "/images/sections/book2_sect309.jpg",
     "text": [
       "Lorsque vous avancez sur le pont, les hideuses créatures font volte-face et s'enfuient devant la clarté d'or de votre Glaive. Ce vaisseau fantôme vous semble alors étrange, il vous rappelle quelque chose de familier, mais vous ne savez pas quoi exactement.",
       "Puis soudain, une voix sépulcrale retentit derrière vous en vous appelant par votre nom. Vous vous retournez en brandissant le Glaive de Sommer et une vision terrifiante vous glace alors le sang. Rendez-vous au 26."
@@ -5570,6 +5577,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "310": {
     "id": "310",
+    "image": "/images/sections/book2_sect310.jpg",
     "text": [
       "Vous arrivez bientôt au bout de la rue du Col Vert ; une autre rue orientée nord-sud la croise à cet endroit, mais il fait si noir à présent que vous êtes bien incapable de lire le nom qu'elle porte. Il est temps de trouver un abri pour la nuit et vous apercevez alors, un peu plus loin, une enseigne éclairée qui indique : ÉCURIES DE RAGADORN RELAIS DE DILIGENCE Profitant de l'obscurité, vous montez quatre à quatre une échelle extérieure qui vous mène à un grenier : c'est l'endroit idéal pour passer la nuit, blotti parmi des bottes de foin.",
       "Rendez-vous au 32."
@@ -5583,6 +5591,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "311": {
     "id": "311",
+    "image": "/images/sections/book2_sect311.jpg",
     "text": [
       "Vous tombez à plat ventre dans un enchevêtrement d'épaisses fougères tandis que résonnent à vos oreilles le cliquetis des épées et les cris terrifiants des Monstres d'Enfer. Vous êtes à moitié assommé et vous ne pouvez plus faire un geste.",
       "Enfin, une main vous saisit le bras et vous remet debout d'un geste vigoureux. C'est le Lieutenant Général Rhygar, le visage ensanglanté, son armure bosselée et noircie. Il faut fuir ces démons ! s'exclame-t-il, la force de nos épées ne peut rien contre eux. »",
@@ -5598,6 +5607,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "312": {
     "id": "312",
+    "image": "/images/sections/book2_sect312.jpg",
     "text": [
       "Lorsque l'aube se lève, il fait froid et la pluie tombe à verse ; votre cape de Seigneur Kaï et l'abri du feuillage vous ont cependant protégé en vous tenant au chaud et au sec la nuit durant. Vous jetez un coup d'œil à la route qui longe la côte et vous apercevez au loin une diligence qui avance dans votre direction.",
       "Si vous souhaitez descendre de l'arbre et faire signe au conducteur de l'attelage, rendez-vous au 117. Si vous préférez essayer de sauter sur le toit de la diligence lorsqu'elle passera sous les branches de l'arbre, rendez-vous au 89."
