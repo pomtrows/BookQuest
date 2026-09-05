@@ -4403,6 +4403,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "242": {
     "id": "242",
+    "image": "/images/sections/book2_sect242.jpg",
     "text": [
       "Pendant la plus grande partie de votre séjour à Hammardal, vous vous entraînez à manier le Glaive de Sommer. Jour après jour, votre habileté s'accroît et, à mesure que vous progressez, vous en apprenez davantage sur les vertus de cette arme fabuleuse.",
       "Chaque fois que vous utiliserez le glaive dans un combat, votre total d'HABILETÉ sera augmenté de 8 points (de 10 points si vous avez choisi la Discipline Kaï de la Maîtrise des Armes et que le sort vous a donné cette maîtrise à l'épée).",
@@ -4419,6 +4420,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "243": {
     "id": "243",
+    "image": "/images/sections/book2_sect243.jpg",
     "text": [
       "Voyant que leur maître est mort, les Gloks désemparés battent en retraite vers la poupe du navire. Le capitaine Kelman rassemble alors ses hommes et se lance à l'attaque, repoussant les immondes créatures qui, dans un concert de grognements rageurs, sont contraintes de sauter par-dessus bord pour éviter d'être taillées en pièces.",
       "Constatant qu'il ont perdu la bataille, les Kraans s'envolent des mâts et s'enfuient en direction de la côte qu'on aperçoit à l'horizon. « Merci, Seigneur Kaï, dit le capitaine en vous serrant la main, nous sommes fiers et reconnaissants de vous avoir avec nous. »",
@@ -4434,6 +4436,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "244": {
     "id": "244",
+    "image": "/images/sections/book2_sect244.jpg",
     "text": [
       "Vous marchez dans la forêt touffue pendant près de trois heures avant de découvrir un sentier orienté au nord et parallèle au chenal de Ryner dont les flots bouillonnants ont plus de 1500 m de profondeur.",
       "Au loin, vous apercevez un pont qui enjambe les eaux sombres, là où le chenal se rétrécit. Une petite cabane au toit plat se dresse à l'entrée du pont ; deux soldats se tiennent debout au sommet de l'édifice.",
@@ -4457,6 +4460,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "245": {
     "id": "245",
+    "image": "/images/sections/book2_sect245.jpg",
     "text": [
       "Vous prenez la direction de l'est en longeant la rue du Col Vert et vous remarquez bientôt, à votre gauche, une enseigne accrochée au-dessus de la porte d'une petite boutique ; elle porte ces mots : MEKI MAJENOR MAÎTRE ARMURIER Si vous souhaitez entrer dans cette boutique, rendez-vous au 266.",
       "Si vous préférez poursuivre votre chemin vers l'est, rendez-vous au 310."
@@ -4474,6 +4478,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "246": {
     "id": "246",
+    "image": "/images/sections/book2_sect246.jpg",
     "text": [
       "L'un des gardes s'avance vers vous et demande à voir votre laissez- passer. Si vous avez un laissez-passer blanc, rendez-vous au 170. Si votre laissez-passer est rouge, rendez-vous au 202. Si vous n'avez pas de laissez-passer, l'entrée du port vous sera interdite et vous vous rendrez alors au 327."
     ],
@@ -4494,6 +4499,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "247": {
     "id": "247",
+    "image": "/images/sections/book2_sect247.jpg",
     "text": [
       "Vous êtes comme hypnotisé par ce mât qui tombe sur vous et vous n'avez même plus la force de faire un geste. Le capitaine et ses hommes d'équipage, impuissants à vous porter secours, voient avec horreur l'énorme masse de bois s'écraser sur vous.",
       "La mort est instantanée. Votre mission s'achève ici en même temps que votre vie."
@@ -4502,6 +4508,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "248": {
     "id": "248",
+    "image": "/images/sections/book2_sect248.jpg",
     "text": [
       "Lorsque vous posez le Glaive d'Or sur le pont, le capitaine zombie se rue sur vous et vous projette à terre. Il est animé d'une force surnaturelle, impossible d'échapper à son étreinte ; il vous plonge alors un poignard dans la gorge en éclatant d'un rire terrifiant.",
       "Votre quête s'achève ici en même temps que votre vie."
@@ -4510,6 +4517,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "249": {
     "id": "249",
+    "image": "/images/sections/book2_sect249.jpg",
     "text": [
       "Au cours de l'après-midi, vous bavardez avec vos compagnons de voyage tandis que la diligence file bon train. Au bout de quelques heures, vous avez appris beaucoup de choses à leur sujet. Les deux hommes assis face à vous sont frères.",
       "Ils se nomment Ganon et Dorier et ce sont des Chevaliers de l'Ordre de la Montagne Blanche, des guerriers du Royaume de Durenor, qui ont fait serment de protéger leur patrie contre les brigands du Pays Sauvage.",
@@ -4528,6 +4536,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "250": {
     "id": "250",
+    "image": "/images/sections/book2_sect250.jpg",
     "text": [
       "Le soldat vous regarde d'un air incrédule. « Où sont vos marchandises ? s'étonne-t-il, où est votre cheval ? Et votre chariot ? Les marchands ne viennent jamais à Port Bax à pied. Vous, un marchand ? Laissez-moi rire !",
       "J'ai plutôt l'impression que vous êtes un brigand qui essaie de fuir les lieux de quelque inavouable forfait. Retournez donc d'où vous venez, misérable canaille, nous n'avons pas besoin ici du genre de commerce que vous pratiquez. »",
@@ -4551,6 +4560,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "251": {
     "id": "251",
+    "image": "/images/sections/book2_sect251.jpg",
     "text": [
       "Il fait presque nuit lorsque le petit bateau de pêche entre dans le port de Ragadorn. Vous n'avez toujours pas rencontré le moindre survivant au naufrage et le pire est à craindre. Vous remarquez bientôt que trois des pêcheurs ont un comportement suspect.",
       "Ils se parlent à l'oreille et jettent de fréquents regards à votre bourse. Et tandis que le bateau vogue dans l'estuaire du fleuve Dorn, ils vous encerclent soudain et vous ordonnent de leur donner votre or.",
