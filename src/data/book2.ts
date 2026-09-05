@@ -4940,6 +4940,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "272": {
     "id": "272",
+    "image": "/images/sections/book2_sect272.jpg",
     "text": [
       "Quelqu'un ou quelque chose s'approche de la porte de la cale, de l'autre côté du panneau. Si vous essayez de vous hisser sur le pont délabré, vos jambes seront exposées et vous serez vulnérable à toute attaque venant du fond de la cale.",
       "Il n'y a cependant pas d'autre issue. Compte tenu de la situation, la meilleure chose à faire est de dégainer le Glaive de Sommer et de vous préparer à combattre la créature malfaisante et redoutable dont vous percevez la présence.",
@@ -4954,6 +4955,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "273": {
     "id": "273",
+    "image": "/images/sections/book2_sect273.jpg",
     "text": [
       "Vous vous apprêtez à frapper, mais votre adversaire s'écrie:",
       "«Je suis Ronan, my lord, et je ne vous veux aucun mal ! »",
@@ -4968,6 +4970,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "274": {
     "id": "274",
+    "image": "/images/sections/book2_sect274.jpg",
     "text": [
       "En fouillant rapidement les corps, vous trouvez une Épée, 6 Pièces d'Or et une Masse d'Armes. Emportez ce que vous voulez le cas échéant, sans oublier de modifier en conséquence votre Feuille d'Aventure.",
       "Avant que vous ayez eu le temps de sortir par la porte de devant, d'autres villageois furieux ont réussi à pénétrer dans la boutique et vous devez à présent vous enfuir par la fenêtre du premier étage.",
@@ -4983,6 +4986,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "275": {
     "id": "275",
+    "image": "/images/sections/book2_sect275.jpg",
     "text": [
       "Vous vous sentez de plus en plus faible et la mort bientôt vous est un soulagement. Votre assassin a parfaitement rempli sa mission. Quant à la vôtre, elle s'achève ici."
     ],
@@ -4990,6 +4994,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "276": {
     "id": "276",
+    "image": "/images/sections/book2_sect276.jpg",
     "text": [
       "Un MARIN à la mine patibulaire défie quiconque veut l'entendre d'engager avec lui une partie de bras de fer. Il a une telle confiance dans sa force qu'il se déclare prêt à payer 5 Pièces d'Or à celui qui réussira à le vaincre.",
       "Lorsque vous vous approchez de sa table, une servante vous glisse quelques mots à l'oreille. « Méfiez-vous, étranger, dit-elle, cet homme est dangereux, il casse le bras de tous ceux qui perdent contre lui et il tue ceux qui parviennent à le battre. »",
@@ -5019,6 +5024,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "277": {
     "id": "277",
+    "image": "/images/sections/book2_sect277.jpg",
     "text": [
       "Tandis que Rhygar et ses hommes se rapprochent des cavaliers, l'un d'eux tire de sous sa cape un bâton noir. Une flamme bleue étincelante jaillit alors de son extrémité et vient frapper le cheval du Lieutenant Général qui est aussitôt projeté à bas de sa monture et tombe cul par- dessus tête dans l'épaisseur des broussailles.",
       "Les hommes de Rhygar se lancent à l'attaque, leurs épées brandies, et pourfendent les cavaliers aux longues capes. Mais les lames d'acier n'ont aucun effet sur l'ennemi, car ce ne sont pas des hommes que vous avez devant vous, ce sont des Monstres d'Enfer, les féroces serviteurs des Maîtres des Ténèbres.",
@@ -5039,6 +5045,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "278": {
     "id": "278",
+    "image": "/images/sections/book2_sect278.jpg",
     "text": [
       "Vous agitez désespérément votre cape au-dessus de vous jusqu'à ce que vous soyez au bord de l'épuisement. Utilisez la Table de Hasard pour obtenir un chiffre qui vous indiquera si vos efforts ont été couronnés de succès.",
       "Si vous tirez un chiffre entre 0 et 6, rendez-vous au 41. Si vous obtenez 7, 8 ou 9, rendez-vous au 180."
@@ -5056,6 +5063,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "279": {
     "id": "279",
+    "image": "/images/sections/book2_sect279.jpg",
     "text": [
       "Cette créature est un Noudic. Les Noudics sont des êtres doués d'intelligence qui vivent dans un dédale de puits et de couloirs creusés au sein des Monts d'Hammardal. De tempérament malicieux, ils subsistent en volant de la nourriture dans les chariots des marchands qui empruntent le tunnel de Tarnalin.",
       "Les Noudics pourraient peut-être vous renseigner sur la présence éventuelle de Monstres d'Enfer cachés dans le tunnel. Si vous souhaitez suivre cet animal, rendez-vous au 23. Si vous préférez le laisser filer et poursuivre votre chemin, rendez-vous au 340."
@@ -5073,6 +5081,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "280": {
     "id": "280",
+    "image": "/images/sections/book2_sect280.jpg",
     "text": [
       "Vous dormez profond�ment jusqu'� l'aube sans �tre d�rang�. A votre r�veil, vous ramassez vos affaires et vous allez rejoindre les autres � bord de la diligence. Pendant deux jours, la diligence file sur la route qui traverse les �tendues plates et d�sol�es du Pays Sauvage, en ne faisant halte, de temps � autre, que pour permettre au cocher de prendre quelque repos.",
       "Vous �tes arriv� au matin du 9e jour de votre qu�te lorsqu'un malheureux accident se produit. Utilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez- vous au 2.",
@@ -5091,6 +5100,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "281": {
     "id": "281",
+    "image": "/images/sections/book2_sect281.jpg",
     "text": [
       "Vous demandez avec insistance au capitaine de recueillir les malheureux naufrag�s, mais il reste indiff�rent � vos pri�res et ordonne aux hommes d'�quipage de poursuivre leurs t�ches comme si de rien n'�tait.",
       "Vous voyez le canot dispara�tre � l'horizon et vous avez alors la pr�monition qu'un sort semblable vous attend. Troubl� par cette pens�e, vous descendez au pont inf�rieur pour vous retirer dans votre cabine.",
