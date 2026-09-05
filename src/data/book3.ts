@@ -1080,6 +1080,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "61": {
     "id": "61",
+    "image": "/images/sections/book3_sect61.jpg",
     "text": [
       "Vous pénétrez dans une galerie couverte qui entoure une cour intérieure. Soudain, vous entendez le tintement sourd d'une cloche de pierre que l'on sonne dans une tour de guet située au- dessus de la forteresse ; c'est une cloche d'alarme. La galerie et la cour intérieure sont complètement vides ; vous n'apercevez qu'un traîneau à voile rangé près de l'entrée.",
       "Vous décidez alors de prendre le risque d'aller voir et vous descendez l'escalier qui mène dans la cour. Quelques instants plus tard, vous découvrez que le traîneau est chargé de vivres et de matériel en provenance de Liouk. Toute la forteresse est à présent alertée de votre arrivée et il ne vous est donc plus possible d'accomplir votre mission.",
@@ -1089,6 +1090,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "62": {
     "id": "62",
+    "image": "/images/sections/book3_sect62.jpg",
     "text": [
       "Tandis que la lumière du jour décline peu à peu, le blizzard se met à souffler sur la banquise en faisant claquer sans relâche la toile de votre tente. Ce bruit lancinant s'ajoutant à la douleur de vos doigts et de vos orteils vous met les nerfs à vif et vous commencez à souhaiter n'avoir jamais mis les pieds dans cet enfer glacé.",
       "Puis, au beau milieu de la nuit, le vent déchire le bord de la toile et la force de la rafale disperse vos vivres et votre équipement. Vous êtes contraint de passer le reste de la nuit à plat ventre, appuyé sur les coudes, vos doigts gelés crispés sur la toile pour l'empêcher de s'envoler.",
@@ -1105,6 +1107,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "63": {
     "id": "63",
+    "image": "/images/sections/book3_sect63.jpg",
     "text": [
       "Vous suivez le passage qui se prolonge vers le nord puis tourne brusquement vers l'ouest. Un peu plus loin, un escalier de pierre mène à une arcade située à une dizaine de mètres plus haut. De l'autre côté de l'escalier, vous remarquez une autre porte de pierre à côté de laquelle se trouve un levier fixé au mur.",
       "Le levier est relevé et la porte fermée.",
@@ -1120,6 +1123,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "64": {
     "id": "64",
+    "image": "/images/sections/book3_sect64.jpg",
     "text": [
       "Vous avez le sentiment désagréable qu'un danger vous guette dans l'un et l'autre tunnels. Le tunnel orienté au nord est le plus dangereux, vous le sentez, mais vous êtes également convaincu que c'est le plus court chemin pour gagner Ikaya.",
       "Si vous souhaitez entrer dans le tunnel nord, rendez-vous au 235.",
@@ -1138,6 +1142,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "65": {
     "id": "65",
+    "image": "/images/sections/book3_sect65.jpg",
     "text": [
       "Les boutons sont à présent coincés : malgré tous vos efforts, vous ne parvenez pas à les faire bouger. Il ne vous reste donc plus, à présent, qu'à abandonner l'autel et à quitter le temple par l'arcade située au nord.",
       "Rendez-vous au 306."
@@ -1151,6 +1156,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "66": {
     "id": "66",
+    "image": "/images/sections/book3_sect66.jpg",
     "text": [
       "Le crin qui recouvre la langue des Languabarbs contient un puissant venin grâce auquel la créature paralyse ses victimes avant de les dévorer. Le venin agit en quelques secondes ; or, malheureusement pour vous, le poil rêche de la langue du monstre vous a inoculé le poison et vous perdez très vite conscience.",
       "Jamais vous ne vous réveillerez de ce sommeil qui met fin à votre mission en même temps qu'à votre vie."
@@ -1159,6 +1165,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "67": {
     "id": "67",
+    "image": "/images/sections/book3_sect67.jpg",
     "text": [
       "L'homme rejette soudain la tête en arrière comme si on venait de l'éveiller brusquement d'une transe.",
       "« Qui est là ? murmure-t-il en scrutant l'obscurité de ses yeux profondément enfoncés dans leurs orbites. Y a-t-il quelqu'un ici ou est-ce la folie qui me visite ?» Vous tendez alors la main à travers l'ouverture et vous lui faites un signe pour montrer où vous êtes.",
@@ -1173,6 +1180,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "68": {
     "id": "68",
+    "image": "/images/sections/book3_sect68.jpg",
     "text": [
       "Le Barbare des Glaces s'approche et soudain, il pousse un cri à vous figer le sang, puis se précipite sur vous.",
       "BARBARE DES GLACES HABILETÉ : 18 ENDURANCE : 28 Si vous sortez vainqueur de ce combat, rendez-vous au 186."
@@ -1193,6 +1201,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "69": {
     "id": "69",
+    "image": "/images/sections/book3_sect69.jpg",
     "text": [
       "Vous avez parcouru moins d'une vingtaine de mètres lorsque vous voyez soudain apparaître une patrouille de six Barbares des Glaces qui marchent dans votre direction, le long du couloir. Vous remarquez alors, sur votre gauche, un petit escalier qui descend dans une salle obscure.",
       "Si vous souhaitez courir au bas de ces marches pour vous cacher de la patrouille, rendez-vous au 108.",
@@ -1217,6 +1226,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "70": {
     "id": "70",
+    "image": "/images/sections/book3_sect70.jpg",
     "text": [
       "« Vite ! il faut remballer nos affaires et partir immédiatement ! s'écrie Fenor, tandis que le mugissement du vent emporte ses paroles dans la nuit noire. Les Languabarbs ne chassent jamais seuls ; il y en a sûrement d'autres à proximité et ils sentent l'odeur du sang à des kilomètres à la ronde. »",
       "Vous démontez la tente et vous vous hâtez de partir, Dyce ouvrant la marche, vous- même surveillant les arrières. Mais à peine avez-vous parcouru une cinquantaine de mètres qu'une catastrophe survient. Aveuglé à la fois par le vent et l'obscurité, Dyce ne remarque pas que le chemin s'arrête brusquement, tout au bord d'un précipice.",
