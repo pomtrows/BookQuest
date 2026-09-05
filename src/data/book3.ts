@@ -2340,6 +2340,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "131": {
     "id": "131",
+    "image": "/images/sections/book3_sect131.jpg",
     "text": [
       "Vous sentez que ces boutons commandent quelque ancien mécanisme et que, si on appuie dessus dans le bon ordre, une quelconque cachette, coffre ou compartiment secret, sera dévoilée. Mais il se peut aussi qu'en appuyant dessus dans le mauvais ordre ils déclenchent un piège.",
       "Si vous souhaitez appuyer sur ces boutons, rendez-vous au 227.",
@@ -2354,6 +2355,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "132": {
     "id": "132",
+    "image": "/images/sections/book3_sect132.jpg",
     "text": [
       "A moins que vous ne veniez de prendre un Repas, vous perdez 3 points d'ENDURANCE, tant vous êtes affamé. Vous poursuivez votre chemin le long du tunnel pendant encore plus d'un kilomètre, mais bientôt, vous êtes fatigué et vous vous arrêtez pour dormir.",
       "Lorsque vous vous réveillez, vous vous sentez mieux ; vous n'avez cependant aucune idée du temps qu'a duré votre sommeil, car la lumière qui éclaire ces grottes ne change jamais, qu'il fasse jour ou nuit. Vous reprenez votre marche en continuant tout droit pendant des kilomètres.",
@@ -2378,6 +2380,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "133": {
     "id": "133",
+    "image": "/images/sections/book3_sect133.jpg",
     "text": [
       "Une coupe de M'iare est suspendue au plafond, juste au-dessus de la crevasse.",
       "Si vous voulez essayer d'attacher votre Corde à cette coupe pour vous élancer ensuite de l'autre côté, rendez- vous au 201.",
@@ -2387,6 +2390,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "134": {
     "id": "134",
+    "image": "/images/sections/book3_sect134.jpg",
     "text": [
       "Le lendemain à l'aube, lorsque vous vous réveillez, Fenor est en train de préparer le petit déjeuner. Il vous tend alors un bol fumant et vous ne vous faites guère prier pour en avaler le contenu. Vous chargez ensuite le matériel sur les traîneaux avant de reprendre votre chemin.",
       "C'est une belle matinée. Le vent est tombé et l'air est frais et limpide. Les chiens Kanu, débordant d'énergie, sont impatients de repartir. Pendant la plus grande partie de votre trajet, la glace est lisse et vous avancez sans difficulté. A la nuit tombée, vous avez atteint l'île de Syem, un pic de granité qui s'élève à 120 mètres au-dessus de la banquise.",
@@ -2413,6 +2417,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "135": {
     "id": "135",
+    "image": "/images/sections/book3_sect135.jpg",
     "text": [
       "Vous glissez le Disque dans la fente ; il s'y adapte exactement et la porte s'ouvre. Dès que vous l'avez franchie, cependant, elle se referme derrière vous. Vous vous retrouvez dans un petit couloir qui mène à une arcade masquée par des rideaux. Vous les écartez avec précaution et vous découvrez alors une vaste salle.",
       "Vous avez été bien avisé d'être si prudent : à moins de 3 mètres de vous, en effet, se tient Vonotar le Traître. Deux Barbares des Glaces sont debout devant lui et il est en train de leur passer au poignet des bracelets d'or. A présent que la porte s'est refermée dans votre dos, il ne vous reste plus qu'à attaquer Vonotar par surprise pour essayer de le capturer.",
@@ -2428,6 +2433,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "136": {
     "id": "136",
+    "image": "/images/sections/book3_sect136.jpg",
     "text": [
       "Soudain, vous êtes projeté en arrière tandis que le pont de glace commence à se disloquer. Pendant quelques secondes, le traîneau reste en équilibre instable sur le bord, comme une balançoire, et vous entendez les cris d'horreur de vos guides impuissants à vous venir en aide.",
       "C'est d'ailleurs là le dernier son que vous entendrez jamais, car le pont s'effondre et vous précipite dans le gouffre. Vous faites une chute de 600 mètres au terme de laquelle vous êtes, bien entendu, tué sur le coup. Votre mission s'achève donc ici en même temps que votre vie."
@@ -2436,6 +2442,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "137": {
     "id": "137",
+    "image": "/images/sections/book3_sect137.jpg",
     "text": [
       "La porte s'ouvre en grinçant et vous la franchissez, prêt à l'attaque. Vous parvenez à tuer deux des créatures endormies avant que les Barbares des Glaces et le troisième Loup Maudit n'aient eu le temps de réagir. Ils bondissent alors sur vous d'un même élan et il vous faut les combattre en les considérant comme un seul et même adversaire.",
       "Ils sont partiellement insensibles à la Puissance Psychique, et si vous maîtrisez cette Discipline Kaï, vous n'aurez le droit d'ajouter qu'un seul point à votre total d'HABILETÉ pendant toute la durée de ce combat.",
@@ -2457,6 +2464,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "138": {
     "id": "138",
+    "image": "/images/sections/book3_sect138.jpg",
     "text": [
       "Vous avez pris les Languabarbs par surprise et vous parvenez à tuer l'un d'eux avant que les autres n'aient le temps de réagir. Les deux créatures vous attaquent l'une après l'autre en essayant de vous piquer avec les poils rêches qui leur couvrent la langue.",
       "HABILETÉ ENDURANCE Premier LANGUABARB"
@@ -2465,6 +2473,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "139": {
     "id": "139",
+    "image": "/images/sections/book3_sect139.jpg",
     "text": [
       "Vous ressentez soudain une douleur sourde et lancinante au côté. Sous la poche dans laquelle vous avez rangé la Pierre Rayonnante, votre peau est devenue rouge et enflée. Vous êtes pris de vertige et de nausées et vous éprouvez de grandes difficultés à vous maintenir debout.",
       "Si vous possédez une Potion rouge de Laumspur, rendez-vous au 116.",
@@ -2483,6 +2492,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "140": {
     "id": "140",
+    "image": "/images/sections/book3_sect140.jpg",
     "text": [
       "L'enfant saisit soudain un couteau en os qu'il cachait dans sa botte et vous enfonce la lame dans le dos de la main. Vous perdez 2 points d'ENDURANCE et vous lâchez le jeune garçon. Il court aussitôt vers son père qui, à présent, a repris ses esprits et dégaine une épée également en os dont la lame est incrustée de dents redoutables.",
       "Rendez-vous au 68."
