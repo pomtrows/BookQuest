@@ -3749,6 +3749,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "211": {
     "id": "211",
+    "image": "/images/sections/book3_sect211.jpg",
     "text": [
       "Le cyclone est si violent qu'il en déchire presque vos vêtements tout en vous bombardant de pierres et de morceaux de glace. Vous serrez les dents et vous essayez de courir, mais le froid annihile vos forces et vous devez avancer pas à pas en vous cramponnant au mur pour ne pas être aspiré par le tourbillon déchaîné.",
       "Utilisez la Table de Hasard pour obtenir un chiffre. Si votre total actuel d'ENDURANCE est inférieur à 10, ôtez 3 points du chiffre que vous aurez tiré.",
@@ -3768,6 +3769,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "212": {
     "id": "212",
+    "image": "/images/sections/book3_sect212.jpg",
     "text": [
       "Lorsque vous revenez sous la tente, Dyce prépare un délicieux Repas qui vient à point pour vous remplir l'estomac et vous redonner courage. Vous avez parcouru à présent une distance appréciable et, en dépit des épreuves physiques que vous avez dû supporter, vous vous sentez confiant et impatient de continuer.",
       "Irian va chercher les Couvertures de Fourrure dans le traîneau et vous vous préparez tous à passer une bonne nuit de sommeil. La nuit, vous gardez toujours vos vêtements pour vous protéger du froid et vous n'enlevez que vos bottes. Les quelques jours que vous avez passés sur ces terres désolées ont suffi à vous en apprendre long sur les techniques de survie.",
@@ -3784,6 +3786,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "213": {
     "id": "213",
+    "image": "/images/sections/book3_sect213.jpg",
     "text": [
       "Vous dirigez la pointe du Glaive de Sommer vers la baguette de cristal de Vonotar et, un instant plus tard, le cône de givre, détourné de sa trajectoire, vient se fracasser contre la lame d'or. Le Glaive de Sommer vous a une fois encore protégé de la magie destructive de Vonotar et vous entendez le sorcier pousser un juron rageur.",
       "Rendez-vous au 252."
@@ -3797,6 +3800,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "214": {
     "id": "214",
+    "image": "/images/sections/book3_sect214.jpg",
     "text": [
       "Malheureusement, le Languabarb a décelé votre odeur et se précipite vers votre cachette. Il vous donne un coup de son énorme patte et ses griffes déchirent la manche de votre tunique. Vous perdez 2 points d'ENDURANCE. Pour fuir le Languabarb, il ne vous reste plus à présent qu'un seul moyen : traverser le lac en courant.",
       "Si vous souhaitez tenter cette fuite à travers le lac, rendez-vous au 322.",
@@ -3816,6 +3820,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "215": {
     "id": "215",
+    "image": "/images/sections/book3_sect215.jpg",
     "text": [
       "Le couloir forme un angle et vous vous hâtez de tourner le coin. Derrière vous, tout semble silencieux et vous poussez un soupir de soulagement. Vous remarquez alors que le grondement entendu précédemment est devenu plus intense dans ce tunnel. A quelques mètres sur votre gauche, un petit passage mène à une porte de pierre qui est fermée.",
       "Si vous souhaitez examiner cette porte, rendez-vous au 13.",
@@ -3834,6 +3839,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "216": {
     "id": "216",
+    "image": "/images/sections/book3_sect216.jpg",
     "text": [
       "Vous avez parcouru 1,5 kilomètre environ lorsque vous apercevez les premiers éclaireurs Barbares. Ils sont à skis et se trouvent au nord. Tout d'abord vous ne voyez que deux de ces redoutables guerriers, mais trois de leurs camarades les rejoignent bientôt.",
       "Grands, la carrure particulièrement impressionnante, ils portent des vêtements de fourrure. Quelques-uns d'entre eux sont également équipés d'une armure en os. En dépit de leur taille, ils glissent sur la neige avec une grâce et une rapidité presque félines.",
@@ -3857,6 +3863,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "217": {
     "id": "217",
+    "image": "/images/sections/book3_sect217.jpg",
     "text": [
       "Le monolithe explose soudain, projetant en tous sens des centaines d'éclats tranchants comme des rasoirs. Vous êtes criblé par les fragments de pierre et la seule force de l'explosion vous précipite sur le sol. Vous perdez 10 points d'ENDURANCE.",
       "Si vous êtes toujours vivant, rendez-vous au 154."
@@ -3871,6 +3878,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "218": {
     "id": "218",
+    "image": "/images/sections/book3_sect218.jpg",
     "text": [
       "La boîte en os contient un magnifique Diamant. Même dans la pénombre des lieux, ses multiples facettes étincellent. Dans le royaume du Sommerlund, une pierre de cette taille et de cette qualité vaudrait des milliers de Couronnes d'Or.",
       "Si vous souhaitez conserver ce Diamant, glissez-le dans votre poche et inscrivez-le sur votre Feuille d'Aventure dans la case Objets Spéciaux. Vous pouvez à présent examiner la porte de la forteresse en vous rendant au 52."
@@ -3879,6 +3887,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "219": {
     "id": "219",
+    "image": "/images/sections/book3_sect219.jpg",
     "text": [
       "Vous sentez que le sourd grondement qui résonne dans cette partie de la forteresse est beaucoup plus intense dans le couloir orienté à l'ouest que dans celui orienté à l'est. Ce bruit a quelque chose d'insolite qui vous met mal à l'aise. Vous décidez donc d'éviter le couloir de l'ouest et d'emprunter celui de l'est.",
       "Rendez- vous au 349."
@@ -3887,6 +3896,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "220": {
     "id": "220",
+    "image": "/images/sections/book3_sect220.jpg",
     "text": [
       "Le lendemain, il règne un froid polaire. Un fort vent d'ouest souffle sans relâche tandis que vous conduisez votre traîneau en direction de la plaine de Hrod. Vous avez de la neige dans les yeux et vos lèvres gercées saignent. Vers midi cependant, vous atteignez la bordure de la plaine.",
       "Le traîneau de Dyce et d'Irian arrive le premier devant le mur de glace, et ils vous encouragent à les rejoindre le plus vite possible. Mais soudain, sans que rien ne l'ait laissé prévoir, une grande fissure apparaît entre les deux traîneaux, accompagnée d'un craquement terrifiant : quelques instants plus tard, une immense crevasse aux profondeurs obscures s'est formée devant vous.",
