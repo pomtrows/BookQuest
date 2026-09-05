@@ -5115,6 +5115,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "282": {
     "id": "282",
+    "image": "/images/sections/book2_sect282.jpg",
     "text": [
       "De la pointe de leurs lances, les SOLDATS essaient de vous repousser. Et tandis que vous levez votre arme sur l'un d'eux, l'autre vous contourne pour vous attaquer par-derri�re. Il vous est impossible de prendre la fuite et vous allez devoir les combattre � tour de r�le jusqu'� la mort. 1er SOLDAT DU PONT HABILET� : 16 ENDURANCE : 24 2e SOLDAT DU PONT HABILET� : 16 ENDURANCE : 22 Si vous �tes vainqueur, rendez-vous au 187."
     ],
@@ -5132,6 +5133,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "283": {
     "id": "283",
+    "image": "/images/sections/book2_sect283.jpg",
     "text": [
       "Vous �tes impressionn� par l'abondance et la diversit� des marchandises expos�es : il y a l� des soies et des �pices en provenance des bazars de Vassagonia, des pierres pr�cieuses des mines de Bor, les plus belles armes et cuirasses forg�es par les armuriers de Durenor, des fourrures de Kalte, des �toffes de Cloeasia et sur toutes les tables les mets et les boissons les plus vari�s qui s'offrent � l'app�tit des visiteurs.",
       "Au centre du magasin, les prix de toutes les marchandises sont indiqu�s sur de grandes peaux de ch�vre suspendues au plafond. L'une de ces listes attire tout particuli�rement votre attention : en voici le d�tail : EPEES 4 Couronnes pi�ce POIGNARDS 2 Couronnes pi�ce GLAIVES 6 Couronnes pi�ce LANCES 5 Couronnes pi�ce METS D�LICATS 2 Couronnes par Repas ANNEAUX D'OR 8 Couronnes pi�ce COUVERTURES DE FOURRURE 3 Couronnes pi�ce SACS A DOS 1 Couronne pi�ce Si vous avez suffisamment d'argent pour cela, vous pourrez acheter ce qui vous plaira dans la liste ci-dessus.",
@@ -5146,6 +5148,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "284": {
     "id": "284",
+    "image": "/images/sections/book2_sect284.jpg",
     "text": [
       "Les soldats vous encerclent et confisquent votre Sac � Dos et vos armes ; puis le chevalier s'avance vers vous et l�ve la visi�re de son heaume. � Qui �tes-vous ? Que venez vous faire � Tarnalin ? � demande-t-il d'une voix rude.",
       "Vous lui r�pondez que vous �tes un Seigneur Ka� du Sommerlund porteur d'un message urgent destin� au roi Alin. Il ne semble pas tr�s convaincu jusqu'au moment o� vous lui montrez le Sceau d'Hammardal. D�s lors, sans la moindre h�sitation, il ordonne � ses hommes de vous rendre votre bien et il vous fait franchir le barrage de chariots.",
@@ -5164,6 +5167,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "285": {
     "id": "285",
+    "image": "/images/sections/book2_sect285.jpg",
     "text": [
       "Vous sentez les crochets du serpent s'enfoncer dans la manche de votre tunique, mais rien de plus. Vous avez de la chance : seul votre v�tement a souffert de la morsure. Le serpent s'enfuit aussit�t et dispara�t dans l'herbe haute ; vous vous h�tez alors de grimper � l'arbre pour passer le reste de la nuit � l'abri de son feuillage, � bonne distance du sol.",
       "Rendez-vous au 312."
@@ -5177,6 +5181,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "286": {
     "id": "286",
+    "image": "/images/sections/book2_sect286.jpg",
     "text": [
       "Vous tombez � la mer et vous nagez sous l'eau pendant plus d'une minute pour �viter de recevoir sur la t�te les brandons qui jaillissent des navires enflamm�s ou les cadavres qu'on pr�cipite par-dessus bord.",
       "Lorsque le manque d'air vous oblige enfin � refaire surface, la vision qui s'offre � vous fait rena�tre l'espoir d'une issue favorable. Rendez- vous au 109."
@@ -5190,6 +5195,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "287": {
     "id": "287",
+    "image": "/images/sections/book2_sect287.jpg",
     "text": [
       "Vous concentrez toute votre �nergie de Seigneur Ka� sur la petite serrure de cuivre et, quelques instants plus tard, un d�clic � l'int�rieur du coffret vous indique que le p�ne vient de sortir de sa g�che ; vous soulevez alors le couvercle de la bo�te et vous y d�couvrez un parchemin frapp� du Sceau Royal du Sommerlund.",
       "Le document contient des instructions confidentielles concernant votre mission. En remettant ensuite le coffret � sa place, vous vous apercevez qu'un m�canisme secret a �t� am�nag� dans le couvercle pour faire �chec aux espions : sans le secours de votre Discipline Ka�, une aiguille empoisonn�e aurait jailli de la bo�te et se serait enfonc�e dans votre �piderme, provoquant une mort instantan�e.",
@@ -5204,6 +5210,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "288": {
     "id": "288",
+    "image": "/images/sections/book2_sect288.jpg",
     "text": [
       "Sans prononcer un mot, le chevalier vous montre du doigt la for�t qui s'�tend derri�re vous et rentre � l'int�rieur de la tour, dont il referme la porte � cl�. C'est une for�t touffue o� s'enchev�trent parmi les arbres de hautes herbes et des buissons d'�pines.",
       "Il est inutile d'essayer de la traverser � cheval et il ne vous reste donc plus qu'� abandonner votre monture pour continuer votre chemin � pied. Rendez-vous au 244."
@@ -5217,6 +5224,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "289": {
     "id": "289",
+    "image": "/images/sections/book2_sect289.jpg",
     "text": [
       "Vous �tes accueilli par une vieille femme v�tue de blanc des pieds � la t�te. Elle vous sourit et vous offre une tasse de d�licieux Jala. Mais les m�saventures que vous avez v�cues � Ragadorn vous ont rendu m�fiant et vous refusez poliment de boire le liquide sombre contenu dans la tasse qu'elle vous tend.",
       "Vous avez fait un geste de la main pour d�cliner son offre et elle a vu alors le Sceau d'Hammardal pass� � votre doigt. � Quelle bague magnifique ! Est-elle � vendre ? � demande-t-elle le regard brillant de convoitise.",
@@ -5237,6 +5245,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "290": {
     "id": "290",
+    "image": "/images/sections/book2_sect290.jpg",
     "text": [
       "Ce repas sent délicieusement bon et vous vous apprêtez à le dévorer lorsque vous remarquez soudain, sur le bord de l'assiette, trois gouttes d'un liquide clair qui vous semble tout d'abord être de l'eau.",
       "Mais, lorsque vous touchez l'une de ces gouttes du bout des doigts, vous vous apercevez que le liquide est collant et vous reconnaissez aussitôt la consistance de la sève de gandum, un poison mortel, inodore et incolore, qui a la faveur des assassins de tout poil.",
@@ -5251,6 +5260,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "291": {
     "id": "291",
+    "image": "/images/sections/book2_sect291.jpg",
     "text": [
       "C'est une forêt très touffue où s'enchevêtrent parmi les arbres de hautes herbes et des buissons d'épines. Vous longez la lisière du bois pour essayer de découvrir un sentier, mais sans succès ; il vous sera impossible de traverser cette forêt à cheval et vous allez devoir abandonner votre monture pour continuer votre chemin à pied.",
       "Rendez- vous au 244."
