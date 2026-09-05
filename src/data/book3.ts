@@ -177,6 +177,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "11": {
     "id": "11",
+    "image": "/images/sections/book3_sect11.jpg",
     "text": [
       "Si vous souhaitez demander qui est l'actuel chef de Ragadorn, rendez-vous au 141.",
       "Si vous préférez lui demander le nom du fleuve qui partage Ragadorn en deux, rendez-vous au 159.",
@@ -199,6 +200,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "12": {
     "id": "12",
+    "image": "/images/sections/book3_sect12.jpg",
     "text": [
       "Le matériel et les vivres sont rapidement déballés et répartis entre vous. Vous recevez des provisions qui représentent l'équivalent de 3 Repas, des Couvertures en Fourrure et une Corde. Inscrivez tous ces éléments sur votre Feuille d'Aventure en sachant que les Couvertures en Fourrure prennent dans votre Sac à Dos la place de deux objets normaux.",
       "Il vous est impossible d'emmener les chiens Kanu dans les montagnes et vous êtes donc contraint de les abandonner ici, de même que les traîneaux. Vous vous encordez avec vos guides, et vous vous mettez en route en direction d'un étroit passage qui s'enfonce entre les pics sombres et sinistres.",
@@ -223,6 +225,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "13": {
     "id": "13",
+    "image": "/images/sections/book3_sect13.jpg",
     "text": [
       "Il y a un levier dans le mur et un judas au milieu de la porte. En jetant un coup d'œil à travers le judas, vous découvrez un étrange spectacle : un homme vêtu d'une toge sombre est agenouillé au centre d'un pentacle dessiné à la craie sur le sol d'une cellule.",
       "Il a la tête penchée et semble en transe.",
@@ -243,6 +246,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "14": {
     "id": "14",
+    "image": "/images/sections/book3_sect14.jpg",
     "text": [
       "Les deux hommes vous regardent d'un air horrifié et se hâtent de dégainer leur arme. Vous parvenez à tuer l'un d'eux avant que l'autre ne soit prêt à vous attaquer. Ce dernier est désespéré et se jette sur vous avec une intense fureur. Il vous faudra le combattre jusqu'à la mort de l'un de vous deux.",
       "BARBARE DES GLACES HABILETÉ : 15 ENDURANCE : 14 Si vous êtes vainqueur, rendez-vous au 309."
@@ -263,6 +267,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "15": {
     "id": "15",
+    "image": "/images/sections/book3_sect15.jpg",
     "text": [
       "Vous examinez attentivement la serrure pour estimer vos possibilités de la forcer.",
       "Si vous possédez la Discipline Kaï de la Maîtrise Psychique de la Matière, rendez-vous au 185.",
@@ -283,6 +288,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "16": {
     "id": "16",
+    "image": "/images/sections/book3_sect16.jpg",
     "text": [
       "Vous parvenez tout juste à vous faufiler par l'entrebâillement avant que la porte de pierre ne claque derrière vous. Malheureusement, si vous portez un Sac à Dos sur les épaules, la porte, en se fermant, a cassé deux des objets que vous transportiez. Ils vous faut donc les rayer de votre Feuille d'Aventure (choisissez vous-même les objets ainsi perdus).",
       "Vous poursuivrez ensuite votre chemin le long du passage. Rendez- vous au 63."
@@ -291,6 +297,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "17": {
     "id": "17",
+    "image": "/images/sections/book3_sect17.jpg",
     "text": [
       "Vous vous rendez compte que vous souffrez des premiers effets de la cécité des neiges. A moins de réagir immédiatement, d'autres symptômes plus douloureux de ce mal ne vont pas tarder à se manifester.",
       "Si vous souhaitez vous protéger les yeux par un bandeau que vous garderez au moins jusqu'au moment d'établir votre camp, plus tard dans la journée, rendez-vous au 62.",
@@ -309,6 +316,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "18": {
     "id": "18",
+    "image": "/images/sections/book3_sect18.jpg",
     "text": [
       "Lorsque votre épée s'enfonce dans le vent tourbillonnant, une soudaine douleur provoquée par un froid intense vous parcourt le bras. Vous perdez 3 points d'ENDURANCE et vous reculez d'un pas chancelant en tenant votre bras meurtri par le froid contre votre poitrine.",
       "Vous avez perdu votre arme et le cyclone devient de plus en plus puissant, vous forçant à vous réfugier dans un coin du temple.",
@@ -329,6 +337,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "19": {
     "id": "19",
+    "image": "/images/sections/book3_sect19.jpg",
     "text": [
       "Vous courez le long du pont de glace et vous plongez pour attraper la main de Dyce, mais il est trop tard. Une seconde à peine avant que vous ne l'ayez atteint, il lâche prise et tombe en arrière dans le vide béant. Un frisson vous parcourt l'échiné tandis que vous entendez son hurlement disparaître dans les profondeurs obscures.",
       "Vous scrutez le fond du précipice sans pouvoir rien faire, lorsqu'Irian pousse soudain un cri : « Là, là- bas ! s'exclame-t-il, je suis sûr que j'ai vu quelque chose ! » Vous regardez avec attention dans l'espoir de voir quelque chose à votre tour, mais la gorge est aussi noire qu'une nuit sans lune.",
@@ -351,6 +360,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "20": {
     "id": "20",
+    "image": "/images/sections/book3_sect20.jpg",
     "text": [
       "Le corps du Monstre d'Enfer bouillonne et se dissout à vos pieds, un gaz vert et fétide s'échappant de ses vêtements. Tandis que vous contemplez avec dégoût la décomposition du cadavre, vous comprenez soudain que l'immonde créature a probablement été envoyée pour tuer Vonotar; il ne peut y avoir d'autre raison plausible à sa présence ici.",
       "Les Maîtres des Ténèbres de I lelgedad veulent à tout prix la mort de Vonotar pour lui faire payer sa défaite dans la bataille du golfe de L’olm, et sans doute ont-ils appris où il se trouvait à présent. Le mage, après avoir découvert le Monstre de l'Enfer, l'a vraisemblablement enfermé dans un pentacle en attendant de mettre au point un moyen de le détruire à tout jamais.",
