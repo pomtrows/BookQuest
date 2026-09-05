@@ -4576,6 +4576,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "252": {
     "id": "252",
+    "image": "/images/sections/book2_sect252.jpg",
     "text": [
       "Vous essayez de vous rappeler certains récits que vous a faits il y a quelque temps un Maître Kaï surnommé",
       "«Faucon Raisonnable». Pendant des années, il avait occupé un poste de diplomate à Port Bax et il en était arrivé à connaître et à aimer la ville tout autant qu'un natif de l'endroit. Vous vous souvenez de ce qu'il vous avait dit : le consulat du Sommerlund se trouve sur la place Alin, à l'intérieur du quartier maritime.",
@@ -4590,6 +4591,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "253": {
     "id": "253",
+    "image": "/images/sections/book2_sect253.jpg",
     "text": [
       "La rue longe le mur du port en direction du fleuve Dorn ; au bord du fleuve, elle tourne brusquement vers le sud et aboutit à la rue du Butin. Vous passez devant les entrepôts alignés le long du quai et vous reconnaissez un peu plus loin le poteau de pierre planté au milieu de la place.",
       "Si vous souhaitez poursuivre en direction du sud, rendez-vous au 303. Si vous préférez prendre la rue de la Bernicle et retourner à la taverne, rendez-vous au 177."
@@ -4607,6 +4609,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "254": {
     "id": "254",
+    "image": "/images/sections/book2_sect254.jpg",
     "text": [
       "Pendant trois jours et trois nuits, vous avez suivi la route parallèle au fleuve Durenon, en direction de la capitale. La vallée où coule la rivière est une vaste région de riches terres cultivées adossées au flanc des Monts d'Hammardal, l'une des chaînes de montagnes les plus hautes de tout Magnamund.",
       "L'aube s'est levée sur le quatorzième jour de votre quête lorsque six hommes vêtus de capes apparaissent en bordure de votre camp. Le Lieutenant Général Rhygar est le premier à tirer son épée. D'une voix forte, il demande à ces hommes ce qu'ils viennent faire ici.",
@@ -4630,6 +4633,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "255": {
     "id": "255",
+    "image": "/images/sections/book2_sect255.jpg",
     "text": [
       "Vous empoignez votre arme et vous faites une brillante démonstration de vos talents. Vos maîtres Kaï vous ont enseigné la vitesse et le sens de l'équilibre, les deux éléments essentiels de la technique du combat.",
       "Et lorsque vous faites tournoyer et virevolter votre arme autour de votre tête et de votre corps, vos mains bougent avec une telle rapidité qu'on ne parvient plus à distinguer leurs mouvements : elles se déplacent dans une sorte de tourbillon indistinct qui semble presque surnaturel.",
@@ -4645,6 +4649,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "256": {
     "id": "256",
+    "image": "/images/sections/book2_sect256.jpg",
     "text": [
       "Vous passez devant les marches de pierre et vous poursuivez votre chemin. Vous venez de dépasser la plate-forme lorsque vous entendez un bruit au-dessus de votre tête. Vous vous immobilisez et vous levez les yeux, mais vous ne pouvez rien voir dans l'obscurité du tunnel.",
       "Rendez-vous au 134."
@@ -4658,6 +4663,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "257": {
     "id": "257",
+    "image": "/images/sections/book2_sect257.jpg",
     "text": [
       "Cette rue aux pavés jonchés d'ordures est bordée de taudis, de masures aux façades moisies et de boutiques délabrées. Les quelques passants que vous croisez ont la mine sombre, les traits tirés et les yeux hagards.",
       "Ils avancent dans le noir en traînant les pieds, le dos voûté sous la pluie qui tombe à verse et le regard fixé sur le pavé. Vous arrivez bientôt à un croisement ; là, la rue de la Hache s'oriente vers le nord et une autre rue part vers l'est.",
@@ -4676,6 +4682,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "258": {
     "id": "258",
+    "image": "/images/sections/book2_sect258.jpg",
     "damage": 1,
     "text": [
       "La puanteur que dégage le navire vous étouffe à demi. Vous perdez 1 point d'ENDURANCE et il vous faut à tout prix vous échapper de cette cale répugnante où vous finirez par succomber à la pestilence. Si vous voulez essayer de vous hisser sur le pont, rendez-vous au 17.",
@@ -4698,6 +4705,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "259": {
     "id": "259",
+    "image": "/images/sections/book2_sect259.jpg",
     "text": [
       "A travers la pluie qui tombe à verse, vous parvenez à distinguer la silhouette d'un groupe de soldats qui s'avancent dans votre direction. Vous ne voulez pas prendre le risque d'être interpellé et peut-être arrêté, vous décidez donc de vous réfugier dans une boutique proche.",
       "Rendez- vous au 161."
@@ -4711,6 +4719,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "260": {
     "id": "260",
+    "image": "/images/sections/book2_sect260.jpg",
     "text": [
       "Le capitaine ordonne qu'on mette le cap sur les trois hommes et qu'on les hisse à bord. Ce sont des pêcheurs de Tyso, un port du Sommerlund. Leur bateau a été attaqué par des pirates la nuit précédente et ils sont les seuls survivants.",
       "Vous leur donnez à manger et des vêtements chauds ; les trois hommes alors retiennent leurs larmes à grand peine et l'un d'eux vous fait présent d'une magnifique Epée en témoignage de sa reconnaissance.",
@@ -4725,6 +4734,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "261": {
     "id": "261",
+    "image": "/images/sections/book2_sect261.jpg",
     "text": [
       "Sur un bon nombre de kilomètres, la route longe une hauteur verdoyante, où abonde l'herbe grasse, avant de tourner enfin vers le nord, en direction de la côte. Vous arrivez dans un village dont les maisons sont bâties en cercle autour d'un étang et lorsque vous le traversez, un groupe d'enfants squalls se précipite vers vous en hurlant et en vous lançant des pierres.",
       "Vous descendez ensuite dans la profonde vallée qui s'étend au-delà et, peu à peu, la lande laisse place à des terres plus riches qui ont été défrichées et cultivées. La colline qui se dresse de l'autre côté est couverte de forêts ; vous n'êtes plus loin de la côte à présent, et vous apercevez déjà ses hautes falaises et la couleur des rocs qui surplombent la mer.",
