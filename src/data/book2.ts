@@ -4754,6 +4754,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "262": {
     "id": "262",
+    "image": "/images/sections/book2_sect262.jpg",
     "text": [
       "Le garde vous écarte d'une bourrade et se met à courir en direction de la rue du Tombeau. En haut de l'escalier se trouve une petite pièce que vous décidez de fouiller avant le retour du soldat. Vous y découvrez les objets suivants : Épée, Masse d'Armes, Bâton, 1 Repas complet, 6 Pièces d'Or, une fiole d'un liquide orange.",
       "Si l'un ou l'autre de ces objets vous intéresse, il vous suffit de les inscrire sur votre Feuille d'Aventure pour qu'ils vous appartiennent désormais. Lorsque vous quittez la pièce, vous vous heurtez à un autre garde ; le choc est plutôt rude et vous tombez tous deux au bas de l'escalier ; mais avant que le garde ait pu retrouver ses esprits, vous avez déjà pris la fuite en courant dans la nuit.",
@@ -4769,6 +4770,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "263": {
     "id": "263",
+    "image": "/images/sections/book2_sect263.jpg",
     "text": [
       "L'homme contemple le Sceau avec une stupeur mêlée de crainte. Sans dire un mot, il se lève alors de son fauteuil et vous fait signe de le suivre en haut d'un escalier qui mène à une pièce en forme de dôme.",
       "Vous y rencontrez le capitaine de la Tour de Guet qui vous écoute attentivement tandis que vous lui faites le récit des événements qui sont survenus au royaume du Sommerlund. Vous lui révélez également le but de votre mission.",
@@ -4784,6 +4786,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "264": {
     "id": "264",
+    "image": "/images/sections/book2_sect264.jpg",
     "text": [
       "Vous concentrez toute l'énergie de votre pouvoir sur le reptile et vous lui ordonnez de partir à l'instant en quête d'une proie. Lentement, votre puissance de suggestion fait son effet et le serpent s'éloigne enfin, puis disparaît dans les hautes herbes.",
       "Vous poussez un soupir de soulagement et, pour plus de sûreté, vous grimpez à l'arbre où vous passerez le reste de la nuit à l'abri du feuillage et à bonne distance du sol. Rendez-vous au 312."
@@ -4797,6 +4800,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "265": {
     "id": "265",
+    "image": "/images/sections/book2_sect265.jpg",
     "text": [
       "Le soleil se couche sur le dixième jour de votre quête lorsque vous apercevez pour la première fois la magnifique cité de Port Bax. Les tours de la ville luisent dans la pâle clarté d'un croissant de lune comme autant de diamants nichés au creux du rivage.",
       "Au nord se trouve le port lui-même où sont rassemblés les vaisseaux de la puissante flotte de guerre du royaume de Durenor. A l'est, au-delà des murs de la cité couverts de mousse, s'étend la forêt. Enfin, au sommet d'une colline se dresse un château de fière apparence, une haute citadelle qui donne à la ville le plus glorieux fleuron de sa couronne.",
@@ -4821,6 +4825,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "266": {
     "id": "266",
+    "image": "/images/sections/book2_sect266.jpg",
     "text": [
       "A votre entrée, une cloche retentit et un petit homme vêtu d'une veste de cuir matelassée vous souhaite la bienvenue. Il est occupé à frotter une armure rouillée à l'aide d'un tampon de paille de fer. Un petit tableau de bois posé sur le comptoir indique le prix de chacune des armes exposées : ÉPÉES 4 Couronnes pièce POIGNARDS 2 Couronnes pièce GLAIVES 7 Couronnes pièce SABRES 3 Couronnes pièce MARTEAUX DE GUERRE 6 Couronnes pièce LANCES 5 Couronnes pièce MASSES D'ARMES 4 Couronnes pièce HACHES BÂTONS 3 Couronnes pièce Si vous possédez l'argent nécessaire, vous pouvez acheter l'une ou l'autre de ces armes; et si vous souhaitez vendre une arme dont vous voulez vous séparer, l'armurier vous l'achètera au prix indiqué sur son tableau, moins 1 Couronne.",
       "Si vous désirez lui vendre une Masse d'Armes par exemple, il vous en donnera 4-1 = 3 Couronnes. Apportez à votre Feuille d'Aventure toutes les modifications nécessaires en fonction de vos transactions, puis quittez la boutique après avoir souhaité une bonne nuit au petit homme.",
@@ -4836,6 +4841,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "267": {
     "id": "267",
+    "image": "/images/sections/book2_sect267.jpg",
     "text": [
       "Lorsque vous refaites surface, vous constatez que la bataille fait rage tout autour de vous. Nombre de cadavres de soldats tués au combat ou jetés par-dessus bord et noyés flottent sur la mer. Vous parcourez à la nage une trentaine de mètres environ, puis vous vous hissez sur le pont d'un navire de la flotte de Durenor.",
       "Une rude bataille s'y livre car un vaisseau fantôme vient de l'aborder et d'y déverser une armée de Zombies qui massacrent à tour de bras les soldats durenorais frappés de terreur. Si vous estimez opportun de dégainer le Glaive de Sommer et de vous lancer à l'attaque, rendez-vous au 128.",
@@ -4854,6 +4860,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "268": {
     "id": "268",
+    "image": "/images/sections/book2_sect268.jpg",
     "text": [
       "«Vous êtes sans nul doute un Seigneur Kaï», dit l'homme, mais l'expression stupéfaite de son visage se transforme bientôt en un ricanement méprisant. « Ou plutôt, reprend-il d'une voix ironique, vous étiez un Seigneur Kaï ! »",
       "A peine a-t-il prononcé ces mots qu'une porte s'ouvre à la volée juste derrière vous. Vous faites volte-face et vous vous retrouvez face à trois BRIGANDS qui s'avancent dans votre direction. Chacun d'eux est armé d'un cimeterre et vous devez les combattre en les considérant comme un seul et même ennemi.",
@@ -4877,6 +4884,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "269": {
     "id": "269",
+    "image": "/images/sections/book2_sect269.jpg",
     "text": [
       "La vision répugnante de la créature qui se tortille sur le sol vous remplit de dégoût pour les Maîtres des Ténèbres et leurs immondes séides. Lorsque enfin le Monstre d'Enfer s'est entièrement décomposé et que vous êtes sûr de l'avoir anéanti à tout jamais, vous arrachez de ses restes la Lance Magique dont vous essuyez le fer sur l'étoffe fumante de ses vêtements.",
       "Vous avez hâte de quitter cet endroit et vous courez le long du tunnel aussi vite que possible. Rendez-vous au 349."
@@ -4890,6 +4898,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "270": {
     "id": "270",
+    "image": "/images/sections/book2_sect270.jpg",
     "text": [
       "GANON bondit de sa chaise et tire son épée. Un instant plus tard, son frère DORIER est à son côté. Il vous faut les combattre tous deux en les considérant comme un seul et même ennemi. GANON DORIER HABILETÉ: 28 ENDURANCE: 30 La soudaineté de votre attaque vous permet d'ajouter 2 points à votre total d'HABILETÉ, mais lors du premier assaut seulement.",
       "Sachez également qu'en raison de la force exceptionnelle de leur volonté, ils sont insensibles à la Discipline Kaï de la Puissance Psychique. Si vous sortez vainqueur de ce combat, rendez-vous au 33."
@@ -4908,6 +4917,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "271": {
     "id": "271",
+    "image": "/images/sections/book2_sect271.jpg",
     "text": [
       "Vous entrez dans la tour et vous montez un escalier de pierre ; soudain, un garde vêtu d'une armure surgit devant vous. Il est coiffé d'un heaume et il porte un écusson gravé d'un vaisseau noir et d'une crête rouge.",
       "Il s'avance vers vous et tire son épée. « Halte-là ! lance-t-il, donnez le mot de passe ! »",
