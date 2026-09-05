@@ -5274,6 +5274,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "292": {
     "id": "292",
+    "image": "/images/sections/book2_sect292.jpg",
     "text": [
       "Vous marchez sous la pluie depuis trois bonnes heures lorsque vous rencontrez soudain sept hommes à cheval qui vous barrent le passage. Ce sont des mercenaires au service du Suzerain de Ragadorn dont ils arborent l'emblème gravé sur leurs écussons : un vaisseau noir surmonté d'une crête rouge.",
       "Ils vous ordonnent de leur donner tout votre or, sinon, ils vous tueront sur place ; et lorsqu'ils s'aperçoivent que vous n'avez plus la moindre Couronne dans votre bourse, vous avez beau essayer de prendre la fuite, ils ont tôt fait de vous rattraper et de vous tailler en pièces.",
@@ -5284,6 +5285,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "293": {
     "id": "293",
+    "image": "/images/sections/book2_sect293.jpg",
     "text": [
       "Cette route mène à une cabane abandonnée. L'intérieur en est garni de meubles recouverts d'une bonne couche de poussière. De toute évidence, il y a plusieurs mois que personne n'y est entré. La route ne va pas plus loin, c'est un cul-de-sac et vous vous rendez compte à cet instant que vous venez de perdre un temps précieux.",
       "Il ne vous reste plus qu'à rebrousser chemin jusqu'à la bifurcation et à prendre la voie de gauche. Hâtez-vous de vous rendre au 155."
@@ -5313,6 +5315,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "295": {
     "id": "295",
+    "image": "/images/sections/book2_sect295.jpg",
     "text": [
       "L'une des créatures, plus grande que les autres et vêtue d'une magnifique robe de soie en patchwork, crie un ordre dans son étrange dialecte. Tous ses congénères saisissent alors des lances et des épées qui semblent avoir été taillées dans les rayons d'une roue de chariot ou dans des manches à balai. Puis ils se précipitent sur vous en poussant de curieux cris de guerre, quelque chose comme",
       "« Gashiss, Nashiss». Vous n'avez cependant pas le temps de vous intéresser à leur langage, car bientôt vous serez piétiné à mort par une véritable armée de ces petits êtres hargneux, si vous ne prenez pas immédiatement la fuite.",
@@ -5328,6 +5331,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "296": {
     "id": "296",
+    "image": "/images/sections/book2_sect296.jpg",
     "text": [
       "Les clients fuient la taverne lorsque les GARDES passent à l'attaque. HABILETÉ ENDURANCE Sergent de la GARDE 13 22 Caporal de la GARDE 12 20 1er GARDE 11 19 2e GARDE 11 9 3e GARDE 10 18 4e GARDE 10 17 Vous pouvez prendre la fuite à tout moment en sortant par la porte de derrière ; rendez-vous alors au 88.",
       "Si vous parvenez à tuer tous les gardes, rendez-vous au 221."
@@ -5345,6 +5349,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "297": {
     "id": "297",
+    "image": "/images/sections/book2_sect297.jpg",
     "text": [
       "A mi-chemin de la rue, vous apercevez sur la gauche une grande écurie et un relais de diligence. Il fait complètement nuit à présent et vous décidez d'y entrer par une échelle extérieure. Vous allez pouvoir passer la nuit en toute sécurité, caché dans le grenier à foin du relais.",
       "Rendez- vous au 32."
@@ -5358,6 +5363,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "298": {
     "id": "298",
+    "image": "/images/sections/book2_sect298.jpg",
     "text": [
       "Vous entendez derrière vous leurs pas se précipiter et vous faites brusquement volte-face, au moment même où ils dégainent chacun un poignard pour vous attaquer. Si vous n'avez pas d'armes, vous devrez déduire 4 points de votre total d'ENDURANCE et les combattre à mains nues.",
       "Vous les affronterez un par un. HABILETÉ ENDURANCE Chef des VOLEURS 15 23 1er VOLEUR 13 21 2e VOLEUR 13 20 Vous avez le droit de prendre la fuite à tout moment en vous rendant au 121. Si vous parvenez à tuer les trois voleurs, rendez-vous au 301."
@@ -5375,6 +5381,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "299": {
     "id": "299",
+    "image": "/images/sections/book2_sect299.jpg",
     "text": [
       "Vous courez pendant six heures sans vous arrêter. Les Monstres d'Enfer vous attendent sur le grand chemin et il vous faut les éviter en passant par les forêts escarpées qui s'étendent au flanc des collines.",
       "Souvent, vous vous sentez si fatigué, vos jambes vous font si mal que vous avez la tentation de tout abandonner. Mais chaque fois que vous faiblissez, le Lieutenant Général Rhygar parvient à vous redonner courage.",
@@ -5397,6 +5404,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "300": {
     "id": "300",
+    "image": "/images/sections/book2_sect300.jpg",
     "text": [
       "En arrivant à proximité du bateau, vous constatez que l'échelle de coupée a été relevée. Un marin à la mine peu engageante est accoudé au bastingage et vous lance des injures. De toute évidence, il croit que vous êtes un réfugié qui essaie de monter à bord comme passager clandestin.",
       "Mais lorsque vous lui criez que vous êtes le Loup Solitaire et que vous venez d'être trompé par un imposteur, l'échelle est à nouveau baissée. En prenant pied sur le pont, vous êtes accueilli par un homme de haute taille vêtu d'un uniforme passementé d'or.",
@@ -5419,6 +5427,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "301": {
     "id": "301",
+    "image": "/images/sections/book2_sect301.jpg",
     "text": [
       "En fouillant les cadavres, vous trouvez 3 Pièces d'Or, 3 Poignards et 1 Sabre. Si vous souhaitez emporter l'un ou l'autre de ces objets, modifiez en conséquence votre Feuille d'Aventure. Rendez-vous ensuite au 20."
     ],
@@ -5432,6 +5441,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "302": {
     "id": "302",
+    "image": "/images/sections/book2_sect302.jpg",
     "text": [
       "Vous enjambez le corps puis vous montez l'escalier pour fouiller la tour. Au cours d'une perquisition en règle, vous trouvez les objets suivants : Masse d'Armes, Glaive, Bâton, Potion de Guérison (une dose qui vous redonne 3 points d'ENDURANCE si vous la buvez après un combat), une quantité de nourriture équivalant à 3 Repas, un Sac à Dos, 12 Pièces d'Or.",
       "Prenez ce dont vous avez besoin, modifiez en conséquence votre Feuille d'Aventure et hâtez-vous de quitter la tour de peur que quelqu'un ne découvre votre présence. La forêt qu'il vous faut traverser est très dense et vous allez devoir abandonner votre cheval pour continuer votre chemin à pied.",
