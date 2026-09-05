@@ -1593,6 +1593,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "91": {
     "id": "91",
+    "image": "/images/sections/book3_sect91.jpg",
     "text": [
       "Vous retenez votre respiration tandis que vous vous enduisez le torse de cette graisse gluante. A mesure que l'huile imprègne votre peau, cependant, vous sentez une bienfaisante chaleur rayonner dans tout votre corps, comme si vous vous trouviez près d'un feu.",
       "Et plus vous appliquez de graisse, plus vous avez chaud. Vous remarquez également que l'épouvantable odeur s'est dissipée.",
@@ -1609,6 +1610,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "92": {
     "id": "92",
+    "image": "/images/sections/book3_sect92.jpg",
     "text": [
       "Vous suivez le passage pendant quelques minutes jusqu'à ce qu'il tourne vers la gauche ; à votre grande consternation, vous constatez alors qu'au-delà de cette courbe une fissure s'est ouverte, provoquant l'écroulement du sol et des murs. Un large trou noir béant s'ouvre devant vous.",
       "Si vous avez une Corde, rendez-vous au 133.",
@@ -1623,6 +1625,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "93": {
     "id": "93",
+    "image": "/images/sections/book3_sect93.jpg",
     "text": [
       "Vous luttez pendant presque cinq minutes qui vous semblent interminables tant la douleur que vous éprouvez est intense. Peu à peu, toute volonté vous quitte, vous ne pouvez plus résister à la domination psychique de Vonotar et vous vous jetez sur la lame du Glaive de Sommer, ainsi qu'il vous l'ordonne.",
       "Votre mission s'achève ici en même temps que votre vie."
@@ -1631,6 +1634,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "94": {
     "id": "94",
+    "image": "/images/sections/book3_sect94.jpg",
     "text": [
       "Vous avez glissé et vous êtes tombé dans l'eau glacée, vous hurlez de douleur tandis que le froid vous saisit jusqu'à la moelle des os. Vous luttez de toutes vos forces pour essayer de regagner la rive, mais c'est une entreprise désespérée.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -1642,6 +1646,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "95": {
     "id": "95",
+    "image": "/images/sections/book3_sect95.jpg",
     "text": [
       "11' froid intense et les assauts incessants du cyclone épuisent très vite vos réserves d'énergie. Un engourdissement inexorable vous envahit tandis que le Démon de Glace prend possession de votre corps, impatient de commencer une nouvelle existence au cours de laquelle il exercera ses redoutables pouvoirs.",
       "Pour les créatures d'Ikaya et bientôt du pays de Kalte tout entier, l'aube vient de se lever sur un âge de tyrannie, une tyrannie terrifiante et implacable dont vous ne verrez cependant jamais les effets, car votre vie s'achève ici, en même temps, bien entendu, que votre mission."
@@ -1650,6 +1655,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "96": {
     "id": "96",
+    "image": "/images/sections/book3_sect96.jpg",
     "text": [
       "Vous vous enveloppez dans votre cape blanche et vous vous cachez derrière une stalagmite, à quelques mètres de la rive du lac. Retenant votre souffle, le corps parfaitement immobile, vous entendez les pas et les grognements du Languabarb s'approcher de plus en plus près.",
       "Pour savoir si la mise en pratique de votre Discipline Kaï vous a permis de passer inaperçu, utilisez la Table de Hasard.",
@@ -1670,6 +1676,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "97": {
     "id": "97",
+    "image": "/images/sections/book3_sect97.jpg",
     "text": [
       "Tout au long de ce couloir se dressent des pilastres de pierre disposés à intervalles réguliers. Ils ont plusieurs dizaines de centimètres d'épaisseur et vous permettent donc de vous cacher en cas de besoin. A une vingtaine de mètres devant vous, vous apercevez un Barbare des Glaces qui monte la garde au pied d'un large escalier de pierre.",
       "Vous vous dissimulez aussitôt derrière un des piliers, réfléchissant à un moyen de vous débarrasser de ce gêneur. Il n'en existe que deux : distraire son attention, ou le faire taire à tout jamais.",
@@ -1690,6 +1697,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "98": {
     "id": "98",
+    "image": "/images/sections/book3_sect98.jpg",
     "text": [
       "Vous sentez que quelqu'un, homme ou animal, se cache derrière cette fissure, sans pouvoir deviner si l'être en question est animé d'intentions bienveillantes ou au contraire agressives.",
       "Si vous souhaitez examiner la fissure de plus près, rendez-vous au 49.",
@@ -1708,6 +1716,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "99": {
     "id": "99",
+    "image": "/images/sections/book3_sect99.jpg",
     "text": [
       "Lorsque vous tirez de son fourreau le puissant Glaive de Sommer, un flamboiement doré illumine l'obscurité du passage. Le Monstre d'Enfer recule d'un pas en poussant un hurlement, ses yeux rouges brillant de haine et de terreur. Il a reconnu en effet l'arme que vous brandissez et il sait que son pouvoir peut le détruire à jamais.",
       "Dans une tentative désespérée, le Monstre d'Enfer vous attaque en faisant usage de sa terrible Puissance Psychique. A moins que vous ne maîtrisiez la Discipline Kaï du Bouclier Psychique, vous perdrez 2 points d'ENDURANCE supplémentaires à chaque Assaut (si, lors d'un Assaut, la Table des Coups Portés vous indique que vous ne subissez pas de perte d'ENDURANCE, il vous faudra malgré tout retrancher ces 2 points).",
@@ -1730,6 +1739,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "100": {
     "id": "100",
+    "image": "/images/sections/book3_sect100.jpg",
     "text": [
       "Le traître bossu laisse échapper un cri de surprise en vous voyant soudain apparaître devant lui, mais il se reprend bientôt et se précipite vers une porte aménagée dans le mur du fond. Les Barbares des Glaces tirent leur épée ; leurs mouvements, cependant, sont lents et incertains.",
       "Vous parvenez à les repousser avant qu'ils n'aient pu vous porter le moindre coup, et vous vous lancez à la poursuite du mage qui s'enfuit. La porte par laquelle il s'est éclipsé ouvre sur un palier d'où partent deux escaliers. A votre droite, un escalier en colimaçon descend vers des étages inférieurs à votre gauche, une volée de marches monte vers une arcade.",
