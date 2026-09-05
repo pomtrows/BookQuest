@@ -905,6 +905,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "51": {
     "id": "51",
+    "image": "/images/sections/book3_sect51.jpg",
     "text": [
       "Vous sentez que les Loups Maudits sont profondément endormis. Vous avez une chance de pouvoir passer devant eux, de maîtriser le Barbare des Glaces et de refermer la porte de la cellule avant qu'ils ne s'éveillent. Vous savez cependant que vous courez là un grand risque et que vos chances de réussite sont faibles.",
       "Si vous êtes suffisamment courageux pour entrer dans une cellule remplie de Loups Maudits, rendez-vous au 285.",
@@ -920,6 +921,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "52": {
     "id": "52",
+    "image": "/images/sections/book3_sect52.jpg",
     "text": [
       "Tandis que vous escaladez la rampe glissante, un craquement derrière vous vous fait faire volte-face. L'entassement de cristaux, au pied de la rampe, commence à bouger. Les cristaux sont vivants ! D'un air incrédule, vous les voyez se transformer en une masse d'anneaux translucides qui se déploient peu à peu, révélant la forme d'une créature de glace.",
       "Le monstre glisse vers vous en ondulant.",
@@ -939,6 +941,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "53": {
     "id": "53",
+    "image": "/images/sections/book3_sect53.jpg",
     "text": [
       "Malheureusement, vous avez mal calculé votre élan et la porte se referme en vous broyant les jambes. Dans quelques minutes, vous vous serez vidé de votre sang. Votre mission s'achève donc ici, en même temps que votre vie."
     ],
@@ -946,6 +949,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "54": {
     "id": "54",
+    "image": "/images/sections/book3_sect54.jpg",
     "text": [
       "Le verre est très fin et vous avez besoin de toute votre concentration et de toute votre habileté pour éviter de le casser.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -966,6 +970,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "55": {
     "id": "55",
+    "image": "/images/sections/book3_sect55.jpg",
     "text": [
       "Vous êtes à moins de 30 mètres du sommet lorsque vos mains cessent peu à peu de vous faire mal. Bientôt, vous ne sentez plus rien du tout : le gel vous a rendu insensible des avant-bras à l'extrémité des doigts. Dans un dernier effort, vous atteignez un étroit rebord de glace sur lequel vous pouvez vous agenouiller et vous reposer un peu.",
       "Quelques instants plus tard, cependant, vous vous rendez compte qu'il vous est impossible de grimper plus haut. En effet, vous vous trouvez face à des parois de glace abruptes dont la surface lisse n'offre aucune prise. Il vous faut donc redescendre. Vous ne retrouvez la sensibilité de vos mains que plus de quatre heures après, et la morsure du gel vous fait perdre 5 points d'ENDURANCE.",
@@ -981,6 +986,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "56": {
     "id": "56",
+    "image": "/images/sections/book3_sect56.jpg",
     "text": [
       "« Par ma foi ! Un Seigneur Kaï ! s'exclame-t-il, les yeux ronds de stupeur. J'ai tant désiré retrouver ma liberté, tant attendu qu'on vienne me délivrer de cette infernale prison ! Mais, bien que l'espoir ne m'ait jamais quitté, je n'aurais pu penser que mon sauveur serait un personnage aussi illustre ! »",
       "Au plus fort de son exaltation, le vieil homme est soudain pris d'une quinte de toux ; lorsqu'enfin il peut reprendre son souffle, il est pâle, épuisé, et ne peut à nouveau parler que quelques minutes plus tard.",
@@ -1003,6 +1009,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "57": {
     "id": "57",
+    "image": "/images/sections/book3_sect57.jpg",
     "text": [
       "Le lendemain, un froid vif règne alentour et un vent violent venant du nord souffle sans relâche. Le visage fouetté par les rafales, vos lèvres bientôt se dessèchent, gercent et saignent. Votre nez commence à couler mais le mucus gèle instantanément. Le soleil est caché par une neige épaisse qui tombe en flocons serrés et obscurcit la lumière du jour.",
       "Les tas de neige compacte et les trous dans la glace disparaissent sous la poudreuse et souvent un traîneau verse ou s'enlise, obligeant l'expédition à interrompre son avance. Il vous faut sans cesse scruter le sol pour essayer d'apercevoir les obstacles de glace qui peuvent se dresser sur votre chemin, et le scintillement de la neige met vos yeux à rude épreuve ; vers midi, votre vision devient floue.",
@@ -1023,6 +1030,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "58": {
     "id": "58",
+    "image": "/images/sections/book3_sect58.jpg",
     "text": [
       "Le cône de givre s'enfonce dans le feuillage des plantes et les gèle instantanément. Tiges et feuilles deviennent alors cassantes et se brisent sous votre poids. Sans un instant d'hésitation, vous vous précipitez vers l'extrémité du pont végétal et vous parvenez à bondir sur la plate-forme où se tient Vonotar juste avant que les plantes ne se soient complètement désagrégées.",
       "Vous avez réussi à traverser le fossé, mais à présent, vous êtes étendu aux pieds de Vonotar qui se met à ricaner en pointant sa baguette de cristal sur votre tête.",
@@ -1037,6 +1045,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "59": {
     "id": "59",
+    "image": "/images/sections/book3_sect59.jpg",
     "text": [
       "Emporté par son élan, le Languabarb continue de charger sur la mince couche de glace qui cède sous son poids. Sous la surface gelée, une ombre file alors vers la créature qui se débat furieusement dans l'eau glacée et l'emporte soudain dans les profondeurs.",
       "Tout devient aussitôt étrangement immobile, tandis qu'une nappe d'eau rougie s'étale lentement sous la glace. Vous vous hâtez en direction du tunnel dont les contours déchiquetés se dessinent de l'autre côté du lac. Lorsque vous prenez pied sur la glace épaisse de la rive, vous remarquez un objet à terre.",
@@ -1047,6 +1056,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "60": {
     "id": "60",
+    "image": "/images/sections/book3_sect60.jpg",
     "text": [
       "Vous avez à peine monté une douzaine de marches qu'un éclair aveuglant jaillit entre les deux piliers. Vous voyez alors la Statue remuer, comme animée par une soudaine énergie.",
       "Si vous souhaitez attaquer cette créature avant qu'elle ne se dresse sur l'autel, rendez-vous au 150.",
