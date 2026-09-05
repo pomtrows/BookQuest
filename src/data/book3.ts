@@ -2144,6 +2144,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "121": {
     "id": "121",
+    "image": "/images/sections/book3_sect121.jpg",
     "text": [
       "Vous êtes sur le point de perdre votre concentration lorsque enfin la corde enroulée autour de votre pied se relâche et vous libère. Vous sautez alors du traîneau une seconde à peine avant qu'il ne tombe dans la crevasse et vous entendez les hurlements terrifiants des chiens Kanu qui sont précipités dans l'obscurité du gouffre.",
       "Fenor vient aussitôt vous secourir et vous tire en arrière pour vous éloigner du bord instable dont la glace commence à céder sous votre poids. Vous avez perdu vos chiens, votre traîneau et la plus grande partie de vos provisions, mais au moins vous êtes vivant.",
@@ -2161,6 +2162,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "122": {
     "id": "122",
+    "image": "/images/sections/book3_sect122.jpg",
     "text": [
       "Loi-Kymar vous tend quelques lambeaux d'étoffe pour vous boucher les narines. Vous prenez une profonde inspiration, vous saisissez le bol d'herbes fumantes et vous quittez la cuisine. Mettant en pratique la Discipline Kaï du Camouflage, vous vous fondez parmi les ombres du couloir et vous vous approchez de plus en plus près des Barbares qui ne se doutent de rien.",
       "Vous posez alors le bol derrière un pilastre et vous retournez dans la cuisine en attendant que les vapeurs fassent leur effet. Moins d'une minute plus tard, les Barbares des Glaces tombent évanouis et vous vous dirigez vers la salle du Trône du Brumalmarc sans avoir été repéré.",
@@ -2176,6 +2178,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "123": {
     "id": "123",
+    "image": "/images/sections/book3_sect123.jpg",
     "text": [
       "La bête est sur vous, pointant sa langue recouverte d'un poil rêche et venimeux. Il vous faut combattre la créature.",
       "LANGUABARB HABILETÉ: 11 ENDURANCE: 30 Si vous perdez des points d'ENDURANCE au cours d'un Assaut, rendez-vous immédiatement au 66.",
@@ -2197,6 +2200,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "124": {
     "id": "124",
+    "image": "/images/sections/book3_sect124.jpg",
     "text": [
       "Vous sentez une présence de l'autre côté de l'arcade. Vous vous concentrez de toutes vos forces, mais sans parvenir à deviner s'il s'agit d'un être animé de bonnes ou de mauvaises intentions. Vous insistez en déployant toutes les ressources de votre pouvoir mental, mais rien n'y fait, il vous est impossible d'en savoir davantage.",
       "Votre Discipline Kaï vous a au moins averti que quelqu'un se trouvait là et vous franchissez donc avec prudence l'arcade envahie de brume.",
@@ -2211,6 +2215,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "125": {
     "id": "125",
+    "image": "/images/sections/book3_sect125.jpg",
     "text": [
       "Vous avez marché pendant deux heures environ le long du passage qui descend en pente douce et régulière sur toute sa longueur ; d'après vos estimations, vous vous trouvez à présent à peu près 60 mètres plus bas qu'au début de votre exploration et vous atteignez enfin une vaste caverne de glace au centre de laquelle s'étend un lac.",
       "Il est recouvert d'une fine couche de glace, et l'eau au-dessous semble obscure et profonde. Vous vous agenouillez sur la rive pour scruter ces mystérieuses profondeurs et vous distinguez alors une grande forme noire qui glisse près de la surface. Il y a donc un être vivant sous cette couche de glace, et un être d'une taille gigantesque.",
@@ -2237,6 +2242,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "126": {
     "id": "126",
+    "image": "/images/sections/book3_sect126.jpg",
     "text": [
       "Vous remarquez que les murs et le plafond du couloir sont couverts d'étranges sculptures. Elles semblent représenter de petits cyclones ou des tornades qui changent peu à peu de forme pour prendre une apparence presque humaine. Bien que ces hiéroglyphes vous intriguent, vous ne vous attardez pas à les examiner et vous poursuivez votre chemin.",
       "Un peu plus loin, le tunnel tourne brusquement vers la droite. Vous apercevez alors une autre porte de pierre aménagée dans le mur nord. Le levier qui la commande est relevé et la porte fermée. Au bout du couloir, après la porte, un escalier monte vers de mystérieuses ténèbres.",
@@ -2256,6 +2262,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "127": {
     "id": "127",
+    "image": "/images/sections/book3_sect127.jpg",
     "text": [
       "Vous sentez que ce Casque est doté d'un pouvoir magique qui pourrait se révéler utile lors de vos futurs combats. Vous ne décelez aucune onde maléfique provenant de cet objet ni du coffre de pierre dans lequel il est conservé.",
       "Si vous souhaitez prendre ce Casque et vous en coiffer, rendez-vous au 308.",
@@ -2271,6 +2278,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "128": {
     "id": "128",
+    "image": "/images/sections/book3_sect128.jpg",
     "text": [
       "Lorsque la porte de pierre s'ouvre en grinçant, l'homme, dans une réaction de surprise, rejette la tête en arrière.",
       "« Qui est là ?» murmure-t-il d'une voix fluette et étranglée. Ses yeux brillent dans l'ombre de son capuchon en lambeaux. Puis soudain, il semble vous reconnaître et se relève d'un bond.",
@@ -2294,6 +2302,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "129": {
     "id": "129",
+    "image": "/images/sections/book3_sect129.jpg",
     "text": [
       "Les poils rêches qui couvrent la langue du Languabarb sont imprégnés d'un puissant venin grâce auquel la créature paralyse ses victimes avant de les dévorer. En moins de cinq secondes, le poison fait son effet, et vous perdez connaissance avant même que votre tête n'ait heurté la neige.",
       "Lorsque vous reprenez conscience, vous sentez un poids vous peser lourdement sur la poitrine. C'est le cadavre d'Irian. Et tandis que vous essayez tant bien que mal de vous relever, une vision désolante s'offre à vous dans la brume du petit matin. Tous vos guides, en effet, sont morts et ce qui reste de votre équipement est dispersé alentour.",
@@ -2311,6 +2320,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "130": {
     "id": "130",
+    "image": "/images/sections/book3_sect130.jpg",
     "text": [
       "Vous revenez sur vos pas en courant, vous arrivez au croisement et vous prenez le couloir orienté à l'est. Un Barbare des Glaces vous bloque le passage, mais vous vous ruez sur lui. D'un violent coup d'épaule qui vous ébranle de la tête aux pieds, vous le repoussez contre le mur et vous continuez à courir jusqu'à un escalier dont vous montez les marches quatre à quatre.",
       "Vous êtes parvenu à mi-hauteur lorsque vous entendez les hurlements sinistres de vos monstrueux poursuivants. Au sommet de l'escalier, vous découvrez un couloir orienté nord-sud.",
