@@ -722,6 +722,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "41": {
     "id": "41",
+    "image": "/images/sections/book3_sect41.jpg",
     "text": [
       "Vous ôtez le Triangle de Pierre Bleue de votre cou et vous l'appliquez contre le mur de granité : il s'adapte parfaitement au triangle gravé. Aussitôt, vous sentez trembler le rebord sur lequel vous vous tenez et vous entendez le grincement de pierres qui frottent les unes contre les autres.",
       "La porte s'ouvre mais, après s'être entrebâillée d'un mètre environ, elle commence déjà à se refermer. Sans hésiter un instant, vous plongez à l'intérieur de la forteresse et la porte claque derrière vous dans un grand bruit.",
@@ -736,6 +737,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "42": {
     "id": "42",
+    "image": "/images/sections/book3_sect42.jpg",
     "text": [
       "Vous tirez le Glaive magnifique de son fourreau et vous en frappez la porte à coups redoublés. A chaque fois que le Glaive de Sommer ébrèche l'antique pierre, une gerbe d'étincelles illumine la pièce. La lame de l'épée rayonne d'un intense flamboiement d'or tandis que vous l'abattez avec force.",
       "Le Glaive de Sommer parviendra sans nul doute à détruire la pierre, mais il vous faudra plusieurs heures pour pratiquer une ouverture qui vous permette de vous enfuir.",
@@ -751,6 +753,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "43": {
     "id": "43",
+    "image": "/images/sections/book3_sect43.jpg",
     "text": [
       "Vous tirez le Glaive d'Or hors de son fourreau et, d'un geste, vous tranchez les cordes qui vous retiennent. Votre pied est à présent libéré et vous sautez du traîneau quelques secondes avant qu'il ne disparaisse dans le gouffre. Fenor se précipite vers vous et vous tire en arrière, loin du bord instable de la crevasse.",
       "Vous avez perdu vos chiens Kanu, votre traîneau et vos provisions, mais vous êtes en vie. Vous sautez tous deux par-dessus la crevasse, Fenor et vous, puis vous rejoignez les autres. Bien que vous ayez perdu votre équipement, les guides sont d'accord pour continuer la mission, tout en sachant que les épreuves qui vous attendent désormais seront encore plus pénibles qu'auparavant.",
@@ -761,6 +764,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "44": {
     "id": "44",
+    "image": "/images/sections/book3_sect44.jpg",
     "text": [
       "« Suivez-moi, dit Loi-Kymar, j'ai écouté attentivement tous les bruits de la forteresse pendant plus d'un an et je connais à présent toutes les portes dérobées, tous les passages cachés. Du fond de ma cellule, j'en ai appris davantage sur ces couloirs que Vonotar lui-même avec toute sa ruse. »",
       "Vous suivez alors le magicien à travers un réseau de tunnels et de passages secrets, d'escaliers et de salles froides et obscures. Au sommet d'un escalier particulièrement raide, vous arrivez devant une porte de pierre. Une odeur étrange et écœurante filtre à travers un petit judas.",
@@ -783,6 +787,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "45": {
     "id": "45",
+    "image": "/images/sections/book3_sect45.jpg",
     "text": [
       "Le coffre est décoré de têtes de créatures grotesques et grimaçantes. Leur expression obscène et leur aspect monstrueux vous font frissonner de dégoût. Au milieu du couvercle, un gros bloc de pierre sculptée représente un visage hideux dont la bouche est constituée par un trou de serrure.",
       "Si vous possédez une Clé d'Argent, rendez-vous au 303.",
@@ -801,6 +806,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "46": {
     "id": "46",
+    "image": "/images/sections/book3_sect46.jpg",
     "text": [
       "Vous prenez la Sphère de Feu rangée dans votre tunique et vous en séparez aussitôt les deux moitiés que vous posez derrière vous, sur l'étroite corniche. Le Javek siffle avec force, pointant ses deux têtes aux yeux brillants de fureur. Il éprouve de toute évidence l'envie irrésistible de vous attaquer, mais il n'ose pas s'approcher de la Sphère de Feu.",
       "Il essaie alors de contourner les flammes, mais la corniche est très étroite : elle ne fait guère plus d'une trentaine de centimètres de large. Il lui est donc impossible de passer sans se brûler. Finalement, furieux mais impuissant, l'étrange reptile se résigne à abandonner la partie, disparaissant dans une cavité située au bout de la corniche.",
@@ -816,6 +822,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "47": {
     "id": "47",
+    "image": "/images/sections/book3_sect47.jpg",
     "text": [
       "Vous essayez pendant une demi-heure de forcer la serrure, mais vous êtes finalement obligé de renoncer. Vous avez tout essayé sans succès: elle refuse de s'ouvrir. A contrecœur, vous remettez donc votre arme au fourreau et vous quittez la salle pour monter l'escalier.",
       "Rendez-vous au 323."
@@ -829,6 +836,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "48": {
     "id": "48",
+    "image": "/images/sections/book3_sect48.jpg",
     "text": [
       "Le Barbare des Glaces passe à une quinzaine de centimètres de votre cachette. Il s'arrête un instant, puis revient sur ses pas le long du couloir. Vous poussez alors un soupir de soulagement: il ne vous a pas découvert.",
       "Si vous souhaitez vous enfuir sur la pointe des pieds par le couloir orienté au nord, rendez-vous au 215.",
@@ -847,6 +855,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "49": {
     "id": "49",
+    "image": "/images/sections/book3_sect49.jpg",
     "text": [
       "Vous escaladez la paroi rocheuse sur une distance de 5 mètres environ et vous atteignez une corniche de glace mince. De là, vous voyez clairement la fissure. Il vous semble avoir aperçu une silhouette lorsque, soudain, la glace se dérobe sous vos pieds et vous précipite tête la première dans un éboulement de granité et de neige.",
       "Vous vous attendez à faire une chute de quelques mètres, et vous vous préparez à vous recevoir le moins brutalement possible, mais en fait vous tombez droit dans une crevasse cachée sous une couche de neige poudreuse. Vous atterrissez enfin quelque 30 mètres plus bas sur un énorme tas de neige.",
@@ -877,6 +886,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "50": {
     "id": "50",
+    "image": "/images/sections/book3_sect50.jpg",
     "text": [
       "Avez-vous découvert l’Ancien Temple d'Ikaya et emporté avec vous une Pierre Rayonnante ?",
       "Si vous possédez cet Objet Spécial, rendez-vous au 139.",
