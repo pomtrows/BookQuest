@@ -5810,6 +5810,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "323": {
     "id": "323",
+    "image": "/images/sections/book2_sect323.jpg",
     "text": [
       "Vous longez cette rue sordide qui, bientôt, tourne brusquement vers l'est pour aboutir dans la rue de la Vigie. Au loin, vous apercevez les eaux du Fleuve Dorn qui sépare les parties Est et Ouest de Ragadorn.",
       "Vous poursuivez votre chemin sous la pluie battante lorsque trois hommes d'allure louche surgissent soudain d'une ruelle et vous emboîtent le pas. Si vous souhaitez interrompre votre marche et affronter ces trois individus, rendez-vous au 131.",
@@ -5832,6 +5833,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "324": {
     "id": "324",
+    "image": "/images/sections/book2_sect324.jpg",
     "text": [
       "Qu'allez-vous faire ? Dire que vous vous êtes perdu et demander un abri pour la nuit ? Rendez-vous au 135. Vous faire passer pour un paysan qui cherche du travail ? Rendez-vous au 174. Demander votre chemin pour rejoindre Port Bax ?",
       "Rendez-vous au 288."
@@ -5853,6 +5855,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "325": {
     "id": "325",
+    "image": "/images/sections/book2_sect325.jpg",
     "text": [
       "Votre Sens de l'Orientation vous indique que le couloir de gauche est le chemin le plus court pour Hammardal ; vous gagnerez environ 3 kilomètres en l'empruntant. Un peu avant la bifurcation, une grande flaque d'eau s'est formée au milieu de la chaussée et les traces de pas de deux hommes qui ont marché dans la flaque sont visibles sur le sol.",
       "Chacun d'eux a pris un chemin différent ; l'un a suivi le tunnel de gauche, l'autre celui de droite. Les traces sont encore humides et il est probable que les deux hommes sont passés là il y a moins de vingt minutes.",
@@ -5871,6 +5874,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "326": {
     "id": "326",
+    "image": "/images/sections/book2_sect326.jpg",
     "text": [
       "Le capitaine ordonne à l'équipage de hisser toutes les voiles pour essayer d'échapper aux pirates, mais le vaisseau de ces derniers est rapide et ils s'efforcent de couper la route du Sceptre Vert. La collision semble inévitable.",
       "« Attention à l'abordage ! » s'écrie le capitaine, alors que le flanc du navire aux voiles rouges se dresse soudain devant vous. Dans un fracas impres-sionnant, la proue du Sceptre Vert déchire le flanc du bateau pirate.",
@@ -5891,6 +5895,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "327": {
     "id": "327",
+    "image": "/images/sections/book2_sect327.jpg",
     "text": [
       "Vous rebroussez chemin le long de la rue pavée en vous demandant ce qu'il convient de faire lorsqu'un jeune-garçon s'approche de vous. «Je peux vous faire entrer dans le port, dit-il, mais il faudra payer. »",
       "Il vous montre alors une enveloppe remplie de papiers officiels ou qui semblent tels. « Grâce à ces papiers, poursuit-il, vous obtiendrez un laissez-passer rouge au poste de garde du port. Ils sont à vous pour 6 Couronnes seulement. »",
@@ -5910,6 +5915,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "328": {
     "id": "328",
+    "image": "/images/sections/book2_sect328.jpg",
     "text": [
       "Deux Zombies essaient de vous interdire le passage, mais vous leur tranchez le corps à tous deux d'un seul coup du Glaive de Sommer. Vous vous trouvez à présent au pied de la tour et vous apercevez au- dessus de vous la silhouette d'un homme bossu, vêtu d'une robe écarlate et coiffé d'un tokmor, un turban de magicien, sur lequel l'image d'un serpent a été brodée.",
       "L'homme tient un bâton noir dans sa main droite. Si vous possédez un Pendentif avec une Etoile de Cristal, rendez-vous au 113. Si vous maîtrisez la Discipline Kaï de l'Orientation, rendez- vous au 204.",
@@ -5936,6 +5942,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "329": {
     "id": "329",
+    "image": "/images/sections/book2_sect329.jpg",
     "text": [
       "« Félicitations, Loup Solitaire, dit bientôt le capitaine en essuyant la sueur qui perle à son front, vous êtes un joueur de première force et vous avez gagné. »",
       "Il fouille dans une poche de son gilet et vous tend une bourse contenant 10 Pièces d'Or. Vous le remerciez d'avoir joué avec vous et vous lui proposez de prendre sa revanche le lendemain soir. Avec un sourire quelque peu amer, il accepte votre offre et vous souhaite bonne nuit.",
@@ -5950,6 +5957,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "330": {
     "id": "330",
+    "image": "/images/sections/book2_sect330.jpg",
     "damage": 5,
     "text": [
       "Quelques secondes plus tard, vous vous sentez très mal et vous sombrez dans l'inconscience. Il s'est écoulé presque une heure lorsque vous vous réveillez. Vous êtes encore terriblement malade, mais vous avez survécu aux effets du poison.",
@@ -5965,6 +5973,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "331": {
     "id": "331",
+    "image": "/images/sections/book2_sect331.jpg",
     "text": [
       "En fouillant le cadavre du soldat, vous découvrez une Epée, un Poignard et 3 Pièces d'Or. Vous pouvez garder l'une ou l'autre de ces trouvailles en modifiant en conséquence votre Feuille d'Aventure. Puis soudain, vous entendez le bruit de semelles cloutées qui descendent les marches de pierre de l'escalier.",
       "Vous levez alors la tête et vous apercevez un autre soldat à l'étage au-dessus. Vous vous précipitez aussitôt hors de la tour et vous prenez vos jambes à votre cou, tandis que le soldat vous abreuve d'injures.",
@@ -5980,6 +5989,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "332": {
     "id": "332",
+    "image": "/images/sections/book2_sect332.jpg",
     "text": [
       "Il vous faut à présent combattre le MONSTRE D'ENFER. MONSTRE D'ENFER HABILETÉ: 21 ENDURANCE: 30 Il vous attaque en faisant usage de sa Puissance Psychique et si vous ne maîtrisez pas la Discipline Kaï du Bouclier Psychique, vous perdrez 2 points d'ENDURANCE supplémentaire au cours de chaque assaut.",
       "Si vous êtes vainqueur, rendez-vous au 92. Vous pouvez prendre la fuite à tout moment en vous réfugiant dans la forêt ; rendez-vous dans ce cas au 183."
