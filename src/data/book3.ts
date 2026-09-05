@@ -4093,6 +4093,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "231": {
     "id": "231",
+    "image": "/images/sections/book3_sect231.jpg",
     "text": [
       "Vous sentez qu'il y a là quelque chose d'anormal. Les terres de Kalte, en effet, sont dépourvues de mines et, par conséquent, tous les métaux, et pas seulement l'or, y sont considérés comme un bien rare et précieux. Le seul moyen qu'ont les Barbares des Glaces de se procurer du métal, c'est de l'échanger chaque été contre des fourrures sur le marché de Liouk ; mais seul l'acier les intéresse.",
       "Aussi en déduisez-vous que ces Bracelets sont portés par obligation plutôt que par souci de coquetterie.",
@@ -4113,6 +4114,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "232": {
     "id": "232",
+    "image": "/images/sections/book3_sect232.jpg",
     "text": [
       "Après avoir réussi à francnir la crevasse, vous poursuivez votre chemin pendant presque une heure avant d'arriver enfin devant le glacier de Viad. Son ascension est une entreprise redoutable : il présente en effet un mur de glace lisse en à-pic qui s'élève à plus de 30 mètres de hauteur.",
       "Il vous faut décharger les traîneaux puis hisser le matériel au sommet avant de le recharger à nouveau. Les chiens Kanu passent leur temps à se battre entre eux tandis que vous menez à bien cette tâche fastidieuse et épuisante. Lorsque tout le matériel se trouve enfin sur le glacier, vous vous apercevez que vos provisions, singulièrement malmenées par ce transport, ne sont plus qu'une bouillie peu appétissante ; il faut cependant vous en contenter en guise de dîner.",
@@ -4134,6 +4136,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "233": {
     "id": "233",
+    "image": "/images/sections/book3_sect233.jpg",
     "text": [
       "Vous reconnaissez ce liquide : c'est une décoction de Laumspur, une herbe aux propriétés curatives particulièrement efficace. Cette Potion concentrée permet à celui qui la boit de récupérer 5 points d'ENDURANCE.",
       "Si vous souhaitez conserver la fiole, inscrivez-la sur votre Feuille d'Aventure dans la case Objets Spéciaux. Retournez à présent au 10 pour faire un autre choix."
@@ -4142,6 +4145,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "234": {
     "id": "234",
+    "image": "/images/sections/book3_sect234.jpg",
     "text": [
       "L'homme hésite un instant, puis vous donne sa réponse : « C'est l'auberge de l'Ancre Rouillée, bien entendu. »",
       "Si vous souhaitez à présent effacer une partie du pentagramme pour libérer le prisonnier, rendez-vous au 170.",
@@ -4156,6 +4160,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "235": {
     "id": "235",
+    "image": "/images/sections/book3_sect235.jpg",
     "text": [
       "Après avoir parcouru une courte distance, vous arrivez dans une vaste grotte remplie de stalactites et de stalagmites. Le sol est couvert de traces d'animaux et d'ossements, mais l'endroit semble désert et tranquille. Vous remarquez que le mur situé au nord présente une surface lisse constituée de blocs de granité s'élevant jusqu'à un plafond de glace, à plus de 30 mètres de hauteur.",
       "Soudain, vous comprenez que vous êtes en train de contempler les fondations de pierre d'Ikaya : vous avez donc enfin réussi à atteindre la Forteresse de Glace. Vous distinguez alors, à demi cachée par un entassement de cristal, une rampe qui mène à une grande porte de pierre aménagée dans le mur de la forteresse.",
