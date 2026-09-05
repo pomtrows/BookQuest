@@ -3414,6 +3414,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "191": {
     "id": "191",
+    "image": "/images/sections/book3_sect191.jpg",
     "text": [
       "Tremblant de fatigue, vous parvenez enfin au fond du défilé alors que la nuit tombe. Un peu plus loin, vous apercevez une grotte située sous une chute d'eau gelée. Le vent souffle beaucoup plus fort à présent et vous décidez de vous abriter dans cette grotte.",
       "Lorsque vous y pénétrez, vous êtes surpris de distinguer, dans la paroi du fond, un rayon de lumière qui filtre à travers une fissure. Vous vous approchez prudemment de cette étrange lueur mais hélas ! vous ne remarquez pas une crevasse dissimulée par une couche de neige et vous y tombez dans une avalanche de glace brisée.",
@@ -3428,6 +3429,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "192": {
     "id": "192",
+    "image": "/images/sections/book3_sect192.jpg",
     "text": [
       "Si vous possédez une Pierre Rayonnante, rendez-vous au 267.",
       "Sinon, rendez-vous au 44."
@@ -3445,6 +3447,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "193": {
     "id": "193",
+    "image": "/images/sections/book3_sect193.jpg",
     "text": [
       "Vous avez les jambes couvertes d'écorchures et de bleus. Par surcroît, vous vous êtes cogné contre une stalactite et vous saignez du nez. Vous perdez 2 points d'ENDURANCE, mais vous pouvez vous estimer heureux : vous avez en effet échappé de peu à une chute au fond d'une crevasse que vous aviez failli ne pas voir dans l'obscurité.",
       "Mettez à jour votre Feuille d'Aventure, et rendez-vous au 235."
@@ -3459,6 +3462,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "194": {
     "id": "194",
+    "image": "/images/sections/book3_sect194.jpg",
     "text": [
       "Votre habileté et votre patience sont finalement récompensées. Vous entendez en effet un très léger cliquetis qui vous indique que vous avez réussi. Vous ôtez alors votre lame de la serrure et le grand couvercle de pierre se soulève lentement pour laisser voir un magnifique Casque d'Argent.",
       "Si vous souhaitez vous coiffer de ce Casque, rendez-vous au 308.",
@@ -3473,6 +3477,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "195": {
     "id": "195",
+    "image": "/images/sections/book3_sect195.jpg",
     "text": [
       "Au moment où vous bondissez vers l'autre bord, la glace se met à trembler et la crevasse s'élargit soudain. Vous glissez et vous vous cognez la tête contre le bord du gouffre béant dans lequel vous tombez. Le lien qui attache votre ceinture à la corde de sécurité se rompt sous le choc et vous êtes précipité dans les ténèbres.",
       "Rendez-vous au 21."
@@ -3486,6 +3491,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "196": {
     "id": "196",
+    "image": "/images/sections/book3_sect196.jpg",
     "text": [
       "Votre lutte est désespérée, mais c'est précisément dans ce désespoir que vous trouvez la force de survivre. Votre arme (ou vos armes) vous a (ont) été arrachée (s) des mains par le cyclone et le bombardement de glace et de pierres que vous avez dû subir vous fait perdre 2 points d'ENDURANCE.",
       "Faites les modifications nécessaires sur votre Feuille d'Aventure. Vous parvenez cependant à atteindre péniblement l'arcade située au nord. Vous avez perdu votre (vos) arme (s), mais vous êtes vivant.",
@@ -3500,6 +3506,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "197": {
     "id": "197",
+    "image": "/images/sections/book3_sect197.jpg",
     "text": [
       "Vous apercevez un autre passage qui permet de quitter la caverne en prenant la direction du nord.",
       "Si vous souhaitez passer sans bruit devant les créatures endormies pour atteindre ce tunnel, rendez-vous au 125.",
@@ -3514,6 +3521,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "198": {
     "id": "198",
+    "image": "/images/sections/book3_sect198.jpg",
     "text": [
       "Le couloir aboutit à une grande porte de pierre. A la différence des autres, cette porte n'est pas actionnée par un levier; en revanche, vous découvrez, juste à côté, une fente creusée dans le mur. Vous êtes en train d'examiner cette fente lorsque, soudain, une meute hurlante de Barbares des Glaces mutants se précipite sur vous le long du couloir.",
       "Vous vous préparez à vous défendre, mais ils sont trop nombreux et, bien que vous les affrontiez avec courage, ils finissent par avoir raison de vous. Inutile d'attendre d'eux la moindre pitié : quelques instants plus tard, vous mourez sous leurs coups.",
@@ -3523,6 +3531,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "199": {
     "id": "199",
+    "image": "/images/sections/book3_sect199.jpg",
     "text": [
       "Au bout d'un kilomètre et demi environ, le tunnel aux murs de glace aboutit à une grotte magnifique. De la neige fondue coule en cascade sur des rocs argentés, projetant alentour des reflets éblouissants. Sous la cascade s'ouvre une petite grotte qui disparaît dans la paroi rocheuse aux éclats d'argent.",
       "Il ne semble pas qu'il y ait d'autre chemin pour quitter cette caverne.",
@@ -3542,6 +3551,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "200": {
     "id": "200",
+    "image": "/images/sections/book3_sect200.jpg",
     "text": [
       "L'effroyable monstre aux longs tentacules surgit du fossé et vous attaque. Il vous faut le combattre jusqu'à la mort de l'un de vous. AKRANION OR HABILETÉ: 22 ENDURANCE: 50 Au cours du combat, vous apercevez parfois Vonotar qui brandit son bâton noir de magicien en gardant les yeux fixés sur Loi- Kymar.",
       "Il est en train d'attaquer le vieil homme à l'aide de sa puissante Force Mentale. Et si Loi-Kymar succombe, il emportera dans la mort le secret de la Crosse de la Guilde.",
