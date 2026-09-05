@@ -3578,6 +3578,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "201": {
     "id": "201",
+    "image": "/images/sections/book3_sect201.jpg",
     "text": [
       "La coupe grince au bout des chaînes qui la retiennent et des débris de pierre tombent du plafond, tandis que vous vous élancez au-dessus de la crevasse ; vous avez de la chance cependant, car la Corde tient bon et vous parvenez sans encombre de l'autre côté.",
       "D'un bref mouvement du poignet, vous détachez la Corde que vous récupérez et vous poursuivez votre chemin le long du passage. Quelques mètres plus loin, vous apercevez sur votre droite une porte de pierre en arcade sur laquelle ont été sculptés d'étranges motifs.",
@@ -3598,6 +3599,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "202": {
     "id": "202",
+    "image": "/images/sections/book3_sect202.jpg",
     "text": [
       "Soudain, les rugissements des Languabarbs cessent. Ils ont senti l'odeur d'huile de Bakanal dont votre peau est imprégnée et ils se précipitent aussitôt sur vous.",
       "Si vous souhaitez les combattre, rendez-vous au 263.",
@@ -3612,6 +3614,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "203": {
     "id": "203",
+    "image": "/images/sections/book3_sect203.jpg",
     "text": [
       "Un petit judas a été aménagé au centre de la porte. Vous y jetez un coup d'œil prudent et vous apercevez alors le vieil homme vêtu d'une toge bleue que vous aviez déjà vu par l'ouverture pratiquée au-dessus de sa cellule.",
       "Si vous souhaitez ouvrir cette porte, tirez le levier fixé au mur et rendez-vous au 56.",
@@ -3626,6 +3629,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "204": {
     "id": "204",
+    "image": "/images/sections/book3_sect204.jpg",
     "text": [
       "Les Bakanals sont des créatures féroces et dangereuses qui n'ont peur que d'une chose : le feu. Saisissant alors une torche, vous l'allumez et vous sortez de la tente. Le vent souffle beaucoup plus fort qu'au moment où vous avez installé votre camp et la neige poudreuse est soulevée en petits tourbillons qui vous picotent les yeux.",
       "Une ombre mouvante à votre droite trahit la présence du Bakanal qui s'avance vers vous à grands bonds. Mais au moment où il s'apprête à vous sauter dessus, il aperçoit la flamme vacillante de votre torche et pousse un hurlement de terreur. Quelques secondes plus tard, il a disparu dans l'obscurité.",
@@ -3641,6 +3645,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "205": {
     "id": "205",
+    "image": "/images/sections/book3_sect205.jpg",
     "text": [
       "La nuit durant, un violent blizzard fait rage, enterrant votre abri de fortune sous une couche de neige de 3,50 mètres d'épaisseur. Le froid vous engourdit les mains et les pieds et, peu à peu, votre corps se vide de toute son énergie. Vous glissez alors dans un sommeil dont vous ne vous éveillerez jamais: vous étouffez en effet sous les neiges de Kalte.",
       "Votre mission s'achève donc ici en même temps que votre vie."
@@ -3649,6 +3654,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "206": {
     "id": "206",
+    "image": "/images/sections/book3_sect206.jpg",
     "text": [
       "Retenant à la fois votre souffle et votre matériel, vous essayez d'atterrir le plus silencieusement possible sur le sol poussiéreux du couloir. Malheureusement, vous vous tordez la cheville en tombant et vous laissez échapper un cri de douleur. Vous perdez 1 point d'ENDURANCE.",
       "Vous apercevez alors avec horreur un Barbare des Glaces assis à une dizaine de mètres de vous, sur votre gauche. Il tourne lentement la tête dans votre direction mais, en jetant un bref coup d'œil vers la droite, vous découvrez un autre couloir orienté au nord, à moins de 5 mètres de l'endroit où vous êtes agenouillé.",
@@ -3666,6 +3672,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "207": {
     "id": "207",
+    "image": "/images/sections/book3_sect207.jpg",
     "text": [
       "Vous distinguez la sombre silhouette de la créature qui fonce le long du tunnel dans votre direction. Elle est assoiffée de sang et frémissante de rage, prête à vous mettre en pièces. Vous songez alors que, si vous sautez de côté lorsque la créature surgira du tunnel, il se peut qu'elle vous rate et que, emportée par son élan, elle tombe tête la première sur la mince couche de glace qui recouvre le lac.",
       "Si vous souhaitez tenter ce saut de côté lorsque le Languabarb bondira hors du tunnel, rendez-vous au 80.",
@@ -3684,6 +3691,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "208": {
     "id": "208",
+    "image": "/images/sections/book3_sect208.jpg",
     "text": [
       "Le Barbare des Glaces vous voit approcher et tire aussitôt son épée en os, puis il se poste devant l'escalier pour vous empêcher de passer. Il vous faut l'affronter.",
       "BARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 30 Si vous remportez la victoire en 4 Assauts ou moins, rendez-vous au 4.",
@@ -3709,6 +3717,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "209": {
     "id": "209",
+    "image": "/images/sections/book3_sect209.jpg",
     "text": [
       "Vous vous cramponnez à la paroi rocheuse pendant toute la nuit. Le vent glacial vous cingle le visage et vous êtes saisi de tremblements incontrôlables, luttant de toutes vos forces pour ne pas vous évanouir. Vous perdez 2 points d'ENDURANCE. L'huile de Bakanal vous permet cependant de conserver suffisamment de chaleur dans votre corps pour arriver à survivre : sans elle, le froid aurait eu raison de vous.",
       "Rendez-vous à présent au 155."
@@ -3718,6 +3727,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "210": {
     "id": "210",
+    "image": "/images/sections/book3_sect210.jpg",
     "text": [
       "Vous pouvez prendre l'arme du Barbare si vous le souhaitez : il s'agit d'une épée en os incrustée de dents. En examinant son cadavre, vous découvrez un Bracelet d'Or passé à son poignet droit.",
       "Si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous au 316.",
