@@ -3919,6 +3919,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "221": {
     "id": "221",
+    "image": "/images/sections/book3_sect221.jpg",
     "text": [
       "Le couloir dans lequel vous vous trouvez maintenant bénéficie d'une température beaucoup plus clémente que la caverne glacée. Pour la première fois depuis longtemps, vous pouvez abaisser le capuchon de votre cape et enlever vos moufles sans risquer la morsure du gel.",
       "Vous remarquez que ce passage monte vers une sorte de palier où un autre couloir bifurque en direction de l'est. Des coupes de M'iare sont suspendues à la voûte, à intervalles réguliers, éclairant d'une lumière insolite les murs ornés de motifs sculptés.",
@@ -3940,6 +3941,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "222": {
     "id": "222",
+    "image": "/images/sections/book3_sect222.jpg",
     "text": [
       "Mettant en pratique votre Discipline Kaï, vous vous dissimulez dans l'ombre projetée par un pilier. Les Barbares des Glaces passent à 15 centimètres de vous, mais ils ne s'aperçoivent pas de votre présence. Lorsque vous êtes sûr qu'ils se sont suffisamment éloignés, vous sortez de l'ombre et vous poursuivez votre chemin le long du couloir.",
       "Rendez-vous au 330."
@@ -3953,6 +3955,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "223": {
     "id": "223",
+    "image": "/images/sections/book3_sect223.jpg",
     "text": [
       "Le traîneau contient le matériel détaillé ci-dessous. Vous pouvez prendre n'importe lequel de ces objets et le ranger dans votre Sac à Dos, mais n'oubliez pas que vous n'avez pas le droit d'y transporter plus de huit objets: des provisions équivalentes à 5 Repas (chaque Repas compte pour un objet ; vous pouvez en emporter autant que vous le désirez, de 1 à 5, dans la limite bien sûr de la place dont vous disposez) ; une Tente (elle compte pour 3 objets) ; des Couvertures de Fourrure (elles comptent pour 2 objets) ; une Longue Corde (elle compte pour 2 objets).",
       "Dyce se porte volontaire pour retourner avec le traîneau et les chiens à l'endroit où est ancré le vaisseau Cardonal, tandis que vos deux autres guides et vous-même poursuivrez votre chemin en direction d'Ikaya, la Forteresse des Glaces. Ikaya a été taillée dans la chaîne de Hrod en des temps très anciens, par une race de créatures qui a depuis longtemps disparu.",
@@ -3973,6 +3976,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "224": {
     "id": "224",
+    "image": "/images/sections/book3_sect224.jpg",
     "text": [
       "A 6 mètres au-dessous environ, vous apercevez un homme vêtu d'une cape sombre. Il est agenouillé au milieu d'un grand pentagramme dessiné à la craie sur le sol d'une cellule sale et obscure.",
       "Si vous souhaitez appeler cet homme, rendez-vous au 67.",
@@ -3991,6 +3995,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "225": {
     "id": "225",
+    "image": "/images/sections/book3_sect225.jpg",
     "text": [
       "Le bouchon est scellé avec de la cire.",
       "Si vous voulez briser la cire, sachez que vous prenez le risque de casser le verre peu épais de la fiole. Pour essayer de briser la cire qui scelle le bouchon, rendez- vous au 54. Si le contenu de cette fiole ne vous inspire pas confiance et que vous ne souhaitiez pas risquer de la casser, abandonnez-la et retournez au 10 pour faire un nouveau choix."
@@ -3999,6 +4004,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "226": {
     "id": "226",
+    "image": "/images/sections/book3_sect226.jpg",
     "text": [
       "Vous agitez frénétiquement le pied et vous parvenez à vous libérer au moment précis où le traîneau bascule dans la crevasse. Fenor se précipite alors vers vous et vous tire en arrière pour vous éloigner du bord instable. Ensuite, vous sautez tous deux par-dessus l'ouverture béante que vous franchissez sans encombre, et vous rejoignez les autres.",
       "Vous avez perdu votre traîneau, vos chiens et la plus grande partie de vos vivres, mais vous êtes vivant. Bien que cette perte doive inévitablement entraîner des épreuves supplémentaires dans la suite de votre voyage, vos guides acceptent de poursuivre la mission.",
@@ -4015,6 +4021,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "227": {
     "id": "227",
+    "image": "/images/sections/book3_sect227.jpg",
     "text": [
       "Les boutons de pierre dépassent d'environ 2 centimètres de la surface lisse de l'autel. Vous remarquez que d'étranges hiéroglyphes sont tracés tout autour, mais le temps les a presque effacés et il est difficile de les distinguer clairement. Il vous faut à présent décider dans quel ordre vous allez appuyer sur les boutons.",
       "Si vous possédez la Discipline Kaï de la Maîtrise Psychique de la Matière, vous pourrez les enfoncer sans avoir besoin de les toucher.",
@@ -4039,6 +4046,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "228": {
     "id": "228",
+    "image": "/images/sections/book3_sect228.jpg",
     "text": [
       "Vous faites appel à tous vos pouvoirs de concentration pour élever le bol d'herbes fumantes et le faire avancer dans le couloir, suspendu dans les airs. Enfin, vous le posez à distance à l'ombre d'un pilastre et vous observez avec une grande curiosité les effets produits par la mixture.",
       "Moins d'une minute plus tard, les Barbares des Glaces se sont effondrés sur le sol.",
@@ -4054,6 +4062,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "229": {
     "id": "229",
+    "image": "/images/sections/book3_sect229.jpg",
     "text": [
       "Vous reconnaissez ce serpent : c'est un Javek, un serpent des glaces à deux têtes, et au venin mortel. Tandis qu'il ondule vers vous, vous voyez s'ouvrir la gueule de sa seconde tête et vous distinguez nettement ses crochets jaunes à l'extrémité desquels perle une goutte de venin.",
       "La créature se déplace très rapidement et vous avez parfaitement conscience que vous ne pourrez pas la distancer sur cette corniche étroite.",
@@ -4068,6 +4077,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "230": {
     "id": "230",
+    "image": "/images/sections/book3_sect230.jpg",
     "text": [
       "Le Monstre d'Enfer se consume et se décompose à vos pieds, un gaz vert et nauséabond s'échappant de ses vêtements. Tandis que vous contemplez avec horreur sa répugnante dépouille, vous songez que cette créature a dû être envoyée ici pour tuer Vonotar ; les Maîtres des Ténèbres, en effet, voulaient ainsi faire payer au mage félon sa défaite dans la bataille du golfe de Holm.",
       "Vonotar a sans doute découvert la présence du Monstre d'Enfer dans la forteresse et l'a emprisonné dans un pentagramme en attendant de trouver le moyen de s'en débarrasser définitivement. Vous tâtez avec précaution votre gorge blessée en remerciant les dieux d'avoir pu brandir le Glaive de Sommer : son pouvoir, une fois de plus, vous a sauvé la vie.",
