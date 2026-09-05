@@ -2866,6 +2866,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "161": {
     "id": "161",
+    "image": "/images/sections/book3_sect161.jpg",
     "text": [
       "Le Barbare des Glaces s'avance lentement et ses yeux blancs dépourvus de pupilles vous donnent la chair de poule. Dans sa main droite, il tient un cimeterre en os, mais, bien qu'il soit prêt à frapper, ses gestes sont raides et incertains, comme s'il vous attaquait contre sa volonté.",
       "Le Barbare est insensible à la Discipline Kaï de la Puissance Psychique.",
@@ -2887,6 +2888,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "162": {
     "id": "162",
+    "image": "/images/sections/book3_sect162.jpg",
     "text": [
       "Le traîneau est déchargé et le matériel qu'il contenait transporté de l'autre côté de la gorge à raison d'un objet par voyage. Tout se passe comme prévu, et il ne reste plus qu'à franchir une dernière fois le pont avec le traîneau lui-même. C'est Dyce qui le conduit en le maintenant à grand-peine au milieu du pont étroit.",
       "Mais soudain les deux chiens de tête glissent et tombent dans la gorge. Ils restent suspendus par leur harnais et poussent de longs gémissements en se débattant inutilement dans le vide. Dyce tire frénétiquement sur les rênes pour essayer d'empêcher les autres chiens de tomber à leur tour, mais ses efforts restent vains : un par un, en effet, les quatre autres chiens de l'attelage sont attirés dans le précipice par le poids grandissant de ceux qui sont déjà tombés.",
@@ -2908,6 +2910,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "163": {
     "id": "163",
+    "image": "/images/sections/book3_sect163.jpg",
     "text": [
       "Lorsque vous abaissez le levier, une porte de pierre coulisse latéralement et ferme ainsi la pièce encombrée de débris. Lorsque vous soulevez le levier, la porte de pierre s'ouvre à nouveau.",
       "Si vous souhaitez entrer dans cette pièce pour examiner ce qu'elle contient, rendez-vous au 38.",
@@ -2926,6 +2929,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "164": {
     "id": "164",
+    "image": "/images/sections/book3_sect164.jpg",
     "text": [
       "Le monstre aux tentacules se hisse hors du fossé et vous attaque. En même temps, vous remarquez que Vonotar lève sa Crosse noire en fixant les yeux sur Loi-Kymar. Il est en train d'attaquer le magicien à l'aide de sa Puissance Psychique. Vous vous rendez compte alors que si Loi-Kymar est tué, il emportera dans la mort le secret de la Crosse de la Guilde.",
       "Mais avant tout, il vous faut combattre le monstre. Cette créature est un Akranionor qui appartient au monde des morts vivants. Vous pourrez donc multiplier par deux tous les points d'ENDURANCE que votre adversaire perdra au cours du combat, en raison de la puissance du Glaive de Sommer.",
@@ -2947,6 +2951,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "165": {
     "id": "165",
+    "image": "/images/sections/book3_sect165.jpg",
     "text": [
       "Le choc de son attaque vous a projeté à terre. Lorsque vous vous relevez, vous le voyez s'arrêter un peu plus loin et déchausser ses skis.",
       "Rendez-vous au 68."
@@ -2960,6 +2965,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "166": {
     "id": "166",
+    "image": "/images/sections/book3_sect166.jpg",
     "text": [
       "Au pied de l'escalier, vous découvrez un autre tunnel orienté au nord. Vous vous apprêtez à l'emprunter lorsque votre main entre soudain en contact avec un levier qui dépasse du mur, à votre droite. En regardant de plus près, vous constatez l'existence d'une porte secrète.",
       "Si vous souhaitez ouvrir cette porte, rendez- vous au 111.",
@@ -2974,6 +2980,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "167": {
     "id": "167",
+    "image": "/images/sections/book3_sect167.jpg",
     "text": [
       "Le vent tombe peu à peu, l'atmosphère s'éclaircit et le Glacier de Viad se révèle alors dans toute sa splendeur. La surface lisse de la glace ressemble à un tapis de neige étincelante incrustée de pierres de toutes les couleurs : jaunes, violettes, bleues, vertes, orange, cramoisies; et les cristaux de glace brillent d'un tel éclat que le plus somptueux bijou paraîtrait terne par comparaison.",
       "Le mur de glace s'élève à 250 mètres de hauteur et ne présente pas d'obstacle à l'escalade, bien qu'il soit très escarpé. Le temps est beau, mais il vous faut presque une journée entière pour grimper au sommet de la paroi de glace. Tout le matériel a été déchargé et monté là-haut où on l'arrime à nouveau sur les traîneaux.",
@@ -2996,6 +3003,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "168": {
     "id": "168",
+    "image": "/images/sections/book3_sect168.jpg",
     "text": [
       "Lorsque vous marchez sur le quartz, vous sentez une vibration vous parcourir les jambes, de la plante des pieds jusqu'aux genoux. Vous remarquez alors une faible lumière qui brille à l'intérieur de la dalle et vous entendez un bourdonnement en provenance de l'autel.",
       "Le cœur battant, vous vous préparez à une attaque et vous avancez à pas prudents.",
@@ -3010,6 +3018,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "169": {
     "id": "169",
+    "image": "/images/sections/book3_sect169.jpg",
     "text": [
       "Lorsque vous arrivez devant la porte massive, vous essayez désespérément de trouver un moyen de l'ouvrir, mais elle est parfaitement lisse et ne comporte ni poignée, ni serrure, ni trou de serrure. La créature aura bientôt atteint le sommet de la rampe et vous êtes sur le point de pousser un cri de désespoir lorsque vous apercevez un bloc de granité encastré dans le mur.",
       "Un petit triangle est gravé dans la pierre.",
@@ -3029,6 +3038,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "170": {
     "id": "170",
+    "image": "/images/sections/book3_sect170.jpg",
     "text": [
       "A l'aide d'un pan de votre cape, vous effacez une partie du pentagramme, traçant ainsi un chemin suffisamment large pour que l'homme puisse s'en échapper. Vous êtes alors frappé par sa maigreur impressionnante et vous constatez qu'il a du mal à se maintenir debout.",
       "« Soyez remercié, Seigneur Kaï, dit-il, si jamais nous parvenons à nous enfuir d'Ikaya, je m'efforcerai de payer la dette de reconnaissance que j'ai désormais envers vous ; il vaut mieux que vous passiez devant, ajoute-t-il, car j'ai quant à moi trop mal aux yeux pour voir clairement: j'ai été atteint, en effet, de cécité des neiges et j'en subis encore les séquelles. »",
