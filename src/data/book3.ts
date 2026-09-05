@@ -3233,6 +3233,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "181": {
     "id": "181",
+    "image": "/images/sections/book3_sect181.jpg",
     "text": [
       "Les Pièces d'Or tombent sur le sol dans un tintement, mais elles ne produisent pas l'effet escompté. Le Barbare des Glaces, en effet, reste à son poste sans prêter la moindre attention aux Pièces d'Or qui se trouvent à quelques mètres de lui.",
       "Si vous souhaitez faire une nouvelle tentative en lançant d'autres Pièces d'Or, retournez au 152.",
@@ -3248,6 +3249,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "182": {
     "id": "182",
+    "image": "/images/sections/book3_sect182.jpg",
     "text": [
       "Vous découvrez un étroit passage qui mène à une caverne hérissée de stalagmites. Deux tunnels s'ouvrent dans la paroi opposée, tous deux s'enfonçant dans l'obscurité. Des traces étranges et nombreuses sont visibles dans la neige, à l'entrée de chaque tunnel.",
       "Si vous maîtrisez la Discipline Kaï de l'Orientation, rendez-vous au 75.",
@@ -3272,6 +3274,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "183": {
     "id": "183",
+    "image": "/images/sections/book3_sect183.jpg",
     "text": [
       "Vous courez vers le couloir orienté au nord aussi vite que votre cheville tordue vous le permet.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -3287,6 +3290,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "184": {
     "id": "184",
+    "image": "/images/sections/book3_sect184.jpg",
     "text": [
       "Ce tunnel n'est pas très long et vous arrivez bientôt dans une petite caverne. Deux cadavres humains sont étendus sur le sol et, en dépit de la température glaciale qui règne en ces lieux, leur état de décomposition est déjà bien avancé. De toute évidence, il y a très longtemps que ces hommes sont morts.",
       "Tous deux sont vêtus de fourrure et l'un d'eux tient encore à la main un poignard en silex. A en juger par la position des corps, il semblerait que ces deux hommes se soient entre-tués au cours d'un combat particulièrement acharné.",
@@ -3308,6 +3312,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "185": {
     "id": "185",
+    "image": "/images/sections/book3_sect185.jpg",
     "text": [
       "Vous concentrez votre énergie sur la serrure, mais il vous est difficile de vous en représenter le mécanisme interne.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -3324,6 +3329,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "186": {
     "id": "186",
+    "image": "/images/sections/book3_sect186.jpg",
     "text": [
       "Le fils du Barbare mort s'agenouille devant le cadavre de son père et pose sur vous un regard brillant de haine. Pendant ce temps, les autres éclaireurs Barbares s'approchent de vous et il vous faut agir vite si vous voulez leur échapper. Vous décidez alors de prendre l'enfant en otage, mais il se débat comme un animal sauvage : il mord, griffe et donne des coups de pied pour essayer de se dégager.",
       "Rendez-vous au 320."
@@ -3337,6 +3343,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "187": {
     "id": "187",
+    "image": "/images/sections/book3_sect187.jpg",
     "text": [
       "Dès que vous avez refermé le Bracelet autour de votre poignet, une terrible douleur vous déchire la tête. Vous êtes attaqué par une puissante Force Mentale qui essaie d'annihiler en vous toute volonté.",
       "Si vous maîtrisez la Discipline Kaï du Bouclier Psychique, rendez-vous immédiatement au 258. Sinon, rendez- vous au 93."
@@ -3345,6 +3352,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "188": {
     "id": "188",
+    "image": "/images/sections/book3_sect188.jpg",
     "text": [
       "Le lendemain d'épais nuages de neige se sont amoncelés au- dessus de la banquise de Liouk et un faible vent s'est levé. A mesure que vous approchez du bord du glacier de Viad, le terrain devient plus accidenté. Des blocs de glace se dressent çà et là, formant des obstacles difficiles à franchir.",
       "Vous êtes contraint de descendre des traîneaux et de les manœuvrer à la main parmi toutes ces aspérités pour pouvoir atteindre les pentes plus lisses du lointain glacier. Vous avez parcouru environ 800 mètres lorsque vous apercevez soudain devant vous une grande crevasse.",
@@ -3367,6 +3375,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "189": {
     "id": "189",
+    "image": "/images/sections/book3_sect189.jpg",
     "text": [
       "Vous avancez le long du couloir pendant un quart d'heure environ, puis vous arrivez devant une immense porte de pierre haute de 6 mètres. Vous y collez l'oreille et vous remarquez alors qu'elle dégage une douce tiédeur. Vous sentez une vibration parcourir la pierre et vous entendez un faible grondement.",
       "Tout comme les autres portes d'Ikaya, celle-ci est actionnée par un levier fixé au mur.",
@@ -3382,6 +3391,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "190": {
     "id": "190",
+    "image": "/images/sections/book3_sect190.jpg",
     "text": [
       "Vous ne relâchez l'enfant qu'au dernier moment, juste avant d'empoigner les fouets et d'en cingler l'échiné des chiens qui s'élancent aussitôt, de toute la puissance de leurs muscles. Des volées de flèches vous sifflent aux oreilles et plusieurs d'entre elles viennent se ficher avec un bruit mat dans l'armature de bois du traîneau.",
       "Deux éclaireurs Barbares vous donnent la chasse, mais vos chiens ont à présent atteint leur pleine vitesse et vous avez tôt fait de distancer vos poursuivants en restant désormais hors de portée de leurs flèches. A la nuit tombée, vous arrivez au pied des monts de Viad.",
