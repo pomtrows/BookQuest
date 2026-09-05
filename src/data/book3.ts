@@ -2683,6 +2683,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "151": {
     "id": "151",
+    "image": "/images/sections/book3_sect151.jpg",
     "text": [
       "La bête hideuse meurt à vos pieds tandis que Dyce vous crie : « Vite, il faut partir d'ici, les Languabarbs ne chassent jamais seuls et d'autres ne vont pas tarder à arriver. » Vous ramassez alors votre Sac à Dos et vous suivez Dyce et Irian le long d'un chemin escarpé qui grimpe à flanc de montagne.",
       "Mais à peine avez-vous parcouru une cinquantaine de mètres qu'une catastrophe se produit. Aveuglé par l'obscurité et le vent glacial, Dyce ne s'aperçoit pas que le chemin aboutit brusquement à un précipice. Saisi d'horreur, vous entendez vos guides pousser des hurlements qui s'évanouissent peu à peu, au fur et à mesure de leur longue chute dans les ténèbres.",
@@ -2703,6 +2704,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "152": {
     "id": "152",
+    "image": "/images/sections/book3_sect152.jpg",
     "text": [
       "Vous décidez d'essayer de distraire son attention en jetant quelques Pièces d'Or dans un renfoncement du mur situé en face de lui. Tout d'abord, déterminez le nombre de Pièces d'Or que vous allez lancer et notez ce chiffre. Utilisez ensuite la Table de Hasard pour obtenir un autre chiffre (exceptionnellement, vous considérez que 0 = 10).",
       "Si le chiffre que la Table vous donne est égal ou inférieur au nombre de Pièces que vous avez décidé de jeter, rendez-vous au 319.",
@@ -2721,6 +2723,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "153": {
     "id": "153",
+    "image": "/images/sections/book3_sect153.jpg",
     "text": [
       "Vous avez presque réussi à traverser le lac lorsqu'une catastrophe survient. Votre pied droit, en effet, passe à travers la glace et vous êtes coincé à hauteur du genou. Vous essayez désespérément de vous libérer, mais il n'y a rien à faire, vous êtes pris au piège.",
       "Quelques secondes plus tard, la couche de glace qui recouvre le lac se fracasse dans un terrible craquement : le monstre des profondeurs dont vous aviez auparavant aperçu la silhouette vient ainsi de faire son apparition à la surface. Paralysé d'horreur, vous voyez alors la gueule noire et visqueuse de la créature s'ouvrir pour exhiber deux rangées de dents tranchantes comme des rasoirs.",
@@ -2730,6 +2733,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "154": {
     "id": "154",
+    "image": "/images/sections/book3_sect154.jpg",
     "text": [
       "Votre jambe droite est blessée ; la plaie saigne abondamment, et il semble que l'hémorragie ne s'arrêtera pas d'elle-même ; vous posez donc un garrot de fortune autour de votre cuisse, puis vous vous relevez tant bien que mal et vous jetez un coup d'œil alentour.",
       "Ce monolithe, de toute évidence, avait pour fonction d'empêcher les intrus de passer, ou de les prendre au piège. C'est sans doute un mage qui, jadis, l'a ainsi doté d'un puissant pouvoir d'explosion. Vous remarquez alors qu'un panneau s'est ouvert dans le mur nord, découvrant un passage obscur qui permet de quitter cette salle.",
@@ -2745,6 +2749,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "155": {
     "id": "155",
+    "image": "/images/sections/book3_sect155.jpg",
     "text": [
       "Le vent glacé de la montagne à tôt fait de dissiper les brumes de l'aube. Epuisé, transi jusqu'à la moelle et encore sous le choc des récents événements, vous escaladez l'impitoyable paroi de roc jusqu'à ce que vous parveniez enfin sur une large corniche où vous vous sentez plus en sécurité.",
       "Vous êtes affamé, et il vous faut prendre un Repas avant de continuer, sinon, vous perdrez 3 points d'ENDURANCE. N'oubliez pas de rayer ce Repas de votre Feuille d'Aventure. La corniche en rejoint une autre que vous avez beaucoup de mal à parcourir. Lorsque, enfin, vous arrivez au bout, vous vous trouvez au sommet d'une paroi impressionnante.",
@@ -2766,6 +2771,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "156": {
     "id": "156",
+    "image": "/images/sections/book3_sect156.jpg",
     "text": [
       "Vous reconnaissez l'odeur d'un concentré de Brosse à Potences, ou « Dent de Sommeil » comme on l'appelle plus communément au Sommerlund. Il s'agit d'un buisson épineux dont vos Maîtres Kaï se servaient pour endormir les chevaux malades ou blessés, le concentré préparé à l'aide de cette plante constituant une puissante Potion somnifère.",
       "Si vous souhaitez la conserver, inscrivez-la sur votre Feuille d'Aventure, dans la case des objets contenus dans votre Sac à Dos. Retournez à présent au 10 pour faire un nouveau choix."
@@ -2774,6 +2780,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "157": {
     "id": "157",
+    "image": "/images/sections/book3_sect157.jpg",
     "text": [
       "Vous prenez la Potion dans votre Sac à Dos et vous entrebâillez prudemment la porte, juste assez pour pouvoir vider la fiole dans le chaudron bouillonnant. Quelques minutes plus tard, les Barbares des Glaces tombent dans un profond sommeil juste après avoir achevé leur repas.",
       "Vous pouvez à présent inspecter les lieux. La cuisine est petite et elle contient une étonnante provision d'herbes.",
@@ -2785,6 +2792,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "158": {
     "id": "158",
+    "image": "/images/sections/book3_sect158.jpg",
     "text": [
       "L'éclaireur Barbare étant à skis, vous ne pourrez livrer contre lui qu'un seul Assaut ; emporté par son élan, en effet, il passera devant vous sans s'arrêter, en essayant de vous porter un coup. Vous devrez alors tenter de le blesser au moment où il arrivera à votre hauteur.",
       "ÉCLAIREUR BARBARE HABILETÉ: 20 ENDURANCE: 28 Si vous subissez une perte de points d'ENDURANCE supérieure à celle de votre adversaire au cours de cet unique Assaut, rendez- vous au 165.",
@@ -2811,6 +2819,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "159": {
     "id": "159",
+    "image": "/images/sections/book3_sect159.jpg",
     "text": [
       "L'homme vous regarde droit dans les yeux et répond : « Le Ragad. »",
       "Si vous souhaitez à présent effacer le pentagramme afin de le libérer, rendez-vous au 170.",
@@ -2825,6 +2834,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "160": {
     "id": "160",
+    "image": "/images/sections/book3_sect160.jpg",
     "text": [
       "Votre matériel de transport est constitué de deux traîneaux tirés chacun par un attelage de chiens Kanu. Cette race vigoureuse est uniquement élevée à Kalte et on ne trouve pas meilleurs chiens de traîneau. Leur épaisse fourrure fauve, leur poitrail puissant, leur robustesse et leur ardeur qui ne faiblit jamais, même dans les climats les plus froids, les rendent particulièrement aptes à accomplir la tâche qui les attend.",
       "Chaque traîneau contient suffisamment de vivres et de matériel pour mener à bien votre mission. Quant à vos trois guides, Irian, Fenor et Dyce, ce sont des trappeurs expérimentés pour qui les techniques de survie dans les régions polaires n'ont pas de secrets.",
