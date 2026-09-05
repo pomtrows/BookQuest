@@ -1247,6 +1247,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "71": {
     "id": "71",
+    "image": "/images/sections/book3_sect71.jpg",
     "text": [
       "Vous sentez que l'enfant Barbare cache un poignard en os dans l'une de ses bottes. Il essaie de s'en saisir pour vous attaquer. A présent que votre Sixième Sens vous a averti du danger, rendez- vous au 320."
     ],
@@ -1254,6 +1255,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "72": {
     "id": "72",
+    "image": "/images/sections/book3_sect72.jpg",
     "text": [
       "Vous examinez soigneusement l'autel ainsi que les deux piliers noirs qui se dressent à sa surface. Le cyclone continue de mugir mais, tant que vous tiendrez la Sphère de Feu dans vos mains, il ne s'approchera pas de l'autel. Vous remarquez bientôt qu'à l'endroit où reposait la statue deux boutons de pierre sont apparus.",
       "Rendez-vous au 227."
@@ -1267,6 +1269,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "73": {
     "id": "73",
+    "image": "/images/sections/book3_sect73.jpg",
     "text": [
       "Les guides vous regardent comme si vous étiez fou et refusent de vous accompagner. Tout d'abord, les chiens Kanu sont réticents lorsque vous approchez de la gorge, mais en les encourageant à l'aide de quelques bons coups de fouet, vous parvenez à les faire changer d'avis.",
       "Il y a moins de 15 centimètres de glace de chaque côté des patins de votre traîneau et vous avez besoin de toute votre concentration pour vous maintenir au centre de ce pont gelé. Vous êtes parvenu à moins de 5 mètres du bord opposé quand soudain un terrible craquement retentit.",
@@ -1284,6 +1287,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "74": {
     "id": "74",
+    "image": "/images/sections/book3_sect74.jpg",
     "text": [
       "Les murs de pierre du couloir sont couverts d'étranges sculptures qui projettent de grandes ombres. Vous vous servez de ces ombres pour vous y dissimuler avec l'agilité qui vous est coutumière. Le Barbare des Glaces avance lentement dans votre direction, les muscles tendus, la démarche hésitante.",
       "Vous avez alors la chair de poule en remarquant pour la première fois que ses yeux blancs sont dépourvus de pupilles. Retenant votre souffle, vous faites des prières pour qu'il ne vous ait pas vu.",
@@ -1304,6 +1308,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "75": {
     "id": "75",
+    "image": "/images/sections/book3_sect75.jpg",
     "text": [
       "Ces traces ont été laissées par de redoutables créatures carnivores que l'on appelle des Bakanals.",
       "Si vous veniez à les rencontrer dans l'espace étroit et sombre d'un tunnel, vos chances de survie seraient fort minces en vérité. Bien que votre Discipline Kaï vous ait permis d'identifier ces traces, il vous est impossible cependant de deviner dans quel tunnel les Bakanals se trouvent à présent.",
@@ -1323,6 +1328,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "76": {
     "id": "76",
+    "image": "/images/sections/book3_sect76.jpg",
     "text": [
       "Vous continuez à monter des marches jusqu'à ce que vous arriviez devant une étroite porte de pierre. Comme toutes les autres portes que vous avez vues jusqu'à présent, celle-ci est également actionnée par un levier fixé au mur. Un petit judas a été aménagé au milieu de la porte.",
       "Avec prudence, vous collez un œil contre cette minuscule ouverture et vous jetez un regard dans la petite pièce située derrière. Vous apercevez alors trois Loups Maudits endormis sur le sol de cette cellule. La porte d'une autre cellule s'ouvre dans le mur nord et vous apercevez, se découpant dans l'embrasure, la silhouette d'un Barbare des Glaces qui vous tourne le dos.",
@@ -1340,6 +1346,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "77": {
     "id": "77",
+    "image": "/images/sections/book3_sect77.jpg",
     "text": [
       "Vous reconnaissez l'odeur âcre de Ronces des Cimetières que l'on a distillées. C'est là un poison violent et les simples vapeurs qui s'en dégagent sont suffisantes pour vous faire tourner la tête et vous troubler la vue. Vous vous hâtez de vous débarrasser du verre cassé et vous vous couvrez le nez avec la manche de votre tunique.",
       "Les vapeurs empoisonnées vous font perdre 1 point d'ENDURANCE. Retournez au 10 pour faire un autre choix."
@@ -1348,6 +1355,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "78": {
     "id": "78",
+    "image": "/images/sections/book3_sect78.jpg",
     "text": [
       "Vous vous préparez en hâte et vous sortez de la tente. Le vent s'est intensifié et il emporte la neige poudreuse en petits tourbillons qui réduisent considérablement la visibilité. Une ombre sur votre droite trahit la présence du Bakanal qui bondit sur vous.",
       "Vous n'avez plus le temps d'éviter son Assaut, et il vous faut le combattre jusqu'à la mort.",
@@ -1369,6 +1377,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "79": {
     "id": "79",
+    "image": "/images/sections/book3_sect79.jpg",
     "text": [
       "Vous entrouvrez la porte, juste assez pour pouvoir verser la fiole de Ronces des Cimetières dans le gruau bouillonnant. Vous n'avez pas à attendre très longtemps : bientôt, les Barbares des Glaces ont absorbé leur dernier dîner, et dès que leurs cadavres sont étendus sur le sol, vous commencez à inspecter la cuisine en toute tranquillité.",
       "C'est une petite cuisine qui comporte des réserves d'herbes étonnamment abondantes.",
@@ -1382,6 +1391,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "80": {
     "id": "80",
+    "image": "/images/sections/book3_sect80.jpg",
     "text": [
       "Lorsque le Languabarb surexcité surgit du tunnel, vous attendez le dernier moment pour faire un bond de côté.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
