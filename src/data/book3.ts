@@ -1407,6 +1407,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "81": {
     "id": "81",
+    "image": "/images/sections/book3_sect81.jpg",
     "text": [
       "Vous vous apprêtez à cacher le cadavre sous l'escalier lorsque vous entendez soudain d'étranges cris et des hurlements rauques qui viennent du couloir. Un groupe de Barbares des Glaces s'avance vers vous. La vue de ces guerriers vous laisse un instant bouche bée : ce sont en effet de hideux mutants.",
       "Rempli de crainte et de dégoût, vous montez l'escalier quatre à quatre jusqu'à un vaste palier où vous trouvez un couloir orienté nord- sud.",
@@ -1426,6 +1427,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "82": {
     "id": "82",
+    "image": "/images/sections/book3_sect82.jpg",
     "text": [
       "La grotte est sombre et le sol descend en pente raide dans l'obscurité. Vous parcourez une soixantaine de mètres avant de distinguer une lueur un peu plus loin. Lorsque vous vous approchez, vous entendez des bruits, des bruits produits par un animal.",
       "Si vous maîtrisez la Discipline Kaï de la Communication Animale, rendez-vous au 329.",
@@ -1450,6 +1452,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "83": {
     "id": "83",
+    "image": "/images/sections/book3_sect83.jpg",
     "text": [
       "Les Barbares des Glaces mutants semblent contrôlés par une hideuse créature qui se cache dans l'ombre d'une porte, un peu plus loin. Ce monstre est doté d'une grosse tête humaine qui repose sur deux pieds. Il n'a ni torse ni membres, mais il est doté en revanche d'une longue queue de reptile qui lui permet de conserver son équilibre.",
       "Les Barbares des Glaces mutants vous attaquent simultanément et vous devrez les combattre comme s'il s'agissait d'une seule et même créature. Ils sont insensibles à la Puissance Psychique, mais l'être étrange auquel ils obéissent est doué, quant à lui, d'une redoutable Force Mentale qui vous fait perdre 2 points d'ENDURANCE, à moins que vous ne maîtrisiez la Discipline Kaï du Bouclier Psychique.",
@@ -1459,6 +1462,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "84": {
     "id": "84",
+    "image": "/images/sections/book3_sect84.jpg",
     "text": [
       "Vous remarquez que le Languabarb porte au cou un Triangle de Pierre Bleue accroché à une chaînette et vous comprenez tout à coup à quoi sert cette amulette. Vous vous en emparez, vous vous précipitez vers la porte de la forteresse et vous appliquez l'objet sur le triangle gravé dans le mur.",
       "L'amulette s'y encastre exactement. Le rebord sur lequel vous vous tenez se met alors à vibrer et vous entendez le grincement de pierres qui frottent l'une contre l'autre. La porte s'ouvre, mais à peine s'est-elle entrebâillée d'un mètre qu'un craquement retentit : elle commence alors à se refermer.",
@@ -1474,6 +1478,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "85": {
     "id": "85",
+    "image": "/images/sections/book3_sect85.jpg",
     "text": [
       "Pendant trois jours et trois nuits, vous avancez à grand-peine sur le glacier au tracé sinueux. Les chutes, les bleus, les tibias écorchés, les crevasses, les blocs de glace coupants comme des rasoirs et le vent mordant qui souffle sans cesse se conjuguent pour épuiser vos forces.",
       "Vous avez cependant la chance d'échapper à un blizzard et vous parvenez enfin, après une marche harassante, à atteindre l'abri du mont des Brumes au pied duquel vous décidez d'établir votre campement. Cette immense montagne de près de 4 000 mètres d'altitude a la forme d'un gigantesque aileron de requin.",
@@ -1501,6 +1506,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "86": {
     "id": "86",
+    "image": "/images/sections/book3_sect86.jpg",
     "text": [
       "Vous introduisez l'extrémité de votre lame dans le trou de la serrure en essayant d'actionner le mécanisme d'ouverture. La gorge de la serrure est cependant très profonde et il vous est difficile de parvenir à vos fins.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -1521,6 +1527,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "87": {
     "id": "87",
+    "image": "/images/sections/book3_sect87.jpg",
     "text": [
       "Vous vous précipitez vers l'endroit où se trouvait la créature lorsque vous l'avez aperçue, mais vous ne découvrez rien, sinon que le couloir tourne brusquement vers l'ouest. Quelques mètres plus loin, un escalier mène à une arcade plongée dans l'ombre, à une dizaine de mètres au-dessus du sol.",
       "Au-delà de l'escalier, le couloir se prolonge jusqu'à une autre porte de pierre à côté de laquelle un levier est fixé dans le mur. Ce levier a été relevé et la porte est fermée. Il n'y a plus trace de l'étrange créature.",
@@ -1536,6 +1543,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "88": {
     "id": "88",
+    "image": "/images/sections/book3_sect88.jpg",
     "text": [
       "Tandis que le serpent à deux têtes rampe vers vous le long de la corniche, vous le voyez ouvrir les mâchoires de sa seconde tête, laissant apparaître deux crochets jaunes au bout desquels perle une goutte de venin. Vous ôtez aussitôt votre épaisse tunique que vous enroulez autour de votre bras.",
       "Vous pourrez ainsi vous protéger contre l'une des têtes pendant que vous combattrez l'autre. Il est à noter que cette créature est insensible à la Discipline Kaï de la Puissance Psychique. JAVEK HABILETÉ: 15 ENDURANCE: 15 Si vous perdez des points d'ENDURANCE au cours de ce combat, ne les soustrayez pas de votre total.",
@@ -1560,6 +1568,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "89": {
     "id": "89",
+    "image": "/images/sections/book3_sect89.jpg",
     "text": [
       "Le Barbare des Glaces se met à hurler dans votre dos, en prononçant des paroles incompréhensibles. Vous avez été découvert. Maudissant votre malchance, vous dégainez aussitôt votre arme. En vous retournant, vous voyez le Barbare tirer sur un levier fixé au mur du fond.",
       "Trois Loups Maudits apparaissent alors dans l'encadrement d'une porte secrète qui vient de s'ouvrir. Les trois créatures se précipitent sur vous et vous allez devoir les combattre jusqu'à la mort, chacune à son tour. HABILETÉ ENDURANCE Premier LOUP MAUDIT"
@@ -1568,6 +1577,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "90": {
     "id": "90",
+    "image": "/images/sections/book3_sect90.jpg",
     "text": [
       "Après avoir essuyé le bouchon de la fiole, vous le dévissez et vous reniflez avec prudence le liquide rouge.",
       "Si vous maîtrisez la Discipline Kaï de la Guérison, rendez-vous au 233.",
