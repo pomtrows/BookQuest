@@ -5625,6 +5625,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "313": {
     "id": "313",
+    "image": "/images/sections/book2_sect313.jpg",
     "damage": 4,
     "text": [
       "Les cris terrifiants des Monstres d'Enfer s'évanouissent enfin derrière vous et vous pouvez vous arrêter quelques instants pour reprendre votre souffle. Vous grimacez alors de douleur, car les doigts de l'épouvantable créature vous ont brûlé la gorge, vous infligeant des blessures cuisantes qui vous coûtent 4 points d'ENDURANCE.",
@@ -5639,6 +5640,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "314": {
     "id": "314",
+    "image": "/images/sections/book2_sect314.jpg",
     "text": [
       "L'aubergiste est un vieil homme maigre, sec et borgne. Il vous tend une clé et vous désigne du doigt un escalier qui mène à une galerie. « Chambre 2, c'est la porte rouge», dit-il. Les autres voyageurs paient chacun leur Couronne, prennent la clé de leur chambre puis traversent la salle bondée de la taverne en direction de l'escalier.",
       "« Il nous faut établir un programme pour demain, dit alors Dorier. Je suggère que nous nous retrouvions au bar dans une heure pour décider de ce qu'il convient de faire. »",
@@ -5665,6 +5667,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "315": {
     "id": "315",
+    "image": "/images/sections/book2_sect315.jpg",
     "text": [
       "Tout en gardant un œil sur la porte, vous fouillez rapidement les tiroirs et les papiers disposés sur une table ouvragée mais vous ne trouvez rien de suspect. Il n'y a là que des cartes maritimes et des instruments de navigation.",
       "Vous êtes sur le point d'abandonner vos recherches lorsque vous découvrez un petit levier dissimulé sous la table. Vous l'actionnez et un panneau glisse aussitôt, révélant une cachette dans laquelle un petit coffret à la serrure de cuivre a été déposé.",
@@ -5688,6 +5691,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "316": {
     "id": "316",
+    "image": "/images/sections/book2_sect316.jpg",
     "text": [
       "Le lendemain matin, vous êtes réveillé par les cris de la vigie postée dans le nid-de-pie. « Navire en vue par tribord avant ! » annonce-t-il. Vous montez aussitôt sur le pont en affrontant vaillamment la fraîcheur de la brise marine.",
       "A l'horizon, on aperçoit les rivages boisés qui s'étendent à l'est du Sommerlund et à mi-chemin, un navire marchand qui semble sérieusement endommagé. Un seul de ses mâts reste encore intact et il est de toute évidence en train de sombrer.",
@@ -5707,6 +5711,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "317": {
     "id": "317",
+    "image": "/images/sections/book2_sect317.jpg",
     "text": [
       "Au cri de détresse du Squall à l'agonie répond bientôt le vôtre car deux carreaux d'arbalète viennent de se planter dans votre dos. Votre mission s'achève ici, en même temps que votre vie."
     ],
@@ -5714,6 +5719,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "318": {
     "id": "318",
+    "image": "/images/sections/book2_sect318.jpg",
     "text": [
       "Vous vous trouvez dans un vaste hall entièrement désert. Face à vous, vous apercevez deux portes sur lesquelles sont fixées des plaques de cuivre. Si vous voulez franchir la porte dont la plaque indique",
       "« laissez- passer blancs », rendez-vous au 75. Si vous préférez pousser la porte dont la plaque indique",
@@ -5736,6 +5742,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "319": {
     "id": "319",
+    "image": "/images/sections/book2_sect319.jpg",
     "text": [
       "La rue aboutit soudain à une grande tour de guet aux murs de pierre. Si vous souhaitez entrer dans la tour, rendez-vous au 271. Si vous préférez retourner dans la taverne, rendez-vous au 177."
     ],
@@ -5752,6 +5759,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "320": {
     "id": "320",
+    "image": "/images/sections/book2_sect320.jpg",
     "text": [
       "En ouvrant son sac, vous y découvrez avec horreur un parchemin en peau humaine sur lequel un message a été tracé dans une étrange écriture runique. Le seul mot que vous parvenez à reconnaître est",
       "« Kaï ». Vous trouvez également dans le sac un poignard à la lame noire dont la seule vue vous fait frissonner, ainsi qu'un bloc d'obsidienne. Ces objets portent la marque des Maîtres des Ténèbres, et il n'est pas étonnant que vous vous sentiez soudain fort inquiet.",
@@ -5768,6 +5776,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "321": {
     "id": "321",
+    "image": "/images/sections/book2_sect321.jpg",
     "damage": 2,
     "text": [
       "Le repas frugal est composé de restes de la veille qui n'ont rien d'appétissant. A la fin de ce piètre souper, le capitaine vous fait quelques confidences qui confirment vos craintes. « Je dois vous avouer quelque chose, Seigneur Kaï, dit-il : le feu a détruit tous nos vivres et il ne restait plus dans la cambuse que de quoi préparer ce maigre repas. D'ici à Port Bax, il faudra nous contenter du poisson que nous pourrons pêcher... »",
@@ -5787,6 +5796,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "322": {
     "id": "322",
+    "image": "/images/sections/book2_sect322.jpg",
     "text": [
       "Ces cavaliers vêtus de capes sont entourés d'une aura maléfique et votre Sixième Sens vous avertit qu'il serait imprudent de suivre Rhygar et ses hommes. Vous leur criez de revenir immédiatement, mais il est trop tard : leurs propres cris de guerre et le galop de leurs montures couvrent votre voix.",
       "Rendez-vous au 277."
