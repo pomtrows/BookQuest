@@ -3996,6 +3996,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "222": {
     "id": "222",
+    "image": "/images/sections/book2_sect222.jpg",
     "text": [
       "Après avoir soigneusement refermé la porte de sa cabine, le capitaine ouvre son mystérieux paquet et en répand le contenu sur une table. 11 s'agit d'une cruche de faïence noircie et de lambeaux d'étoffe calcinés qui dégagent une étrange odeur d'huile.",
       "« Cet incendie n'est pas un accident, déclare le capitaine Kelman d'une voix solennelle, c'est un acte de sabotage. Cette cruche d'huile et ces chiffons que j'ai trouvés sur le plancher de la cale n'avaient rien à y faire ; quelqu'un à bord de ce navire est prêt à risquer sa vie pour nous empêcher d'atteindre Durenor. »",
@@ -4016,6 +4017,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "223": {
     "id": "223",
+    "image": "/images/sections/book2_sect223.jpg",
     "text": [
       "Le garde contemple avec une stupeur mêlée de respect le magnifique anneau que vous lui montrez. Les habitants de Durenor connaissent bien la légende du Sceau d'Hammardal et l'on dit que de tous les trésors perdus du royaume, le Sceau est celui dont personne ne souhaite le retour.",
       "Le visage inquiet du soldat montre qu'il sait parfaitement ce que signifie le retour du Sceau d'Hammardal : c'est la guerre qu'il annonce. « Je ne peux malheureusement rien faire pour vous aider, dit le garde, si ce n'est vous indiquer la route pour Port Bax.",
@@ -4033,6 +4035,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "224": {
     "id": "224",
+    "image": "/images/sections/book2_sect224.jpg",
     "text": [
       "Le lendemain matin, vous êtes réveillé par les cris des goélands qui tournoient au-dessus du clipper. Un fort vent enfle les voiles. Quelques instants plus tard, vous prenez votre petit déjeuner en compagnie du capitaine Kelman qui semble plus optimiste que la veille.",
       "Il vous annonce que le Sceptre Vert vogue à bonne allure et que vous devriez arriver dans une semaine à Port Bax, le port principal du royaume de Durenor. Puis soudain, un cri retentit dans le nid-de-pie. « Terre par bâbord avant ! hurle la vigie, terre par bâbord ! »",
@@ -4055,6 +4058,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "225": {
     "id": "225",
+    "image": "/images/sections/book2_sect225.jpg",
     "text": [
       "Soixante-dix navires de guerre de la flotte de Durenor avaient quitté Port Bax mais ils ne sont plus que cinquante à entrer dans le golfe de Holm. La bataille a coûté la vie à nombre de vaillants soldats, parmi lesquels l'amiral Calfen en personne qui fut tué à bord du Durenor, le premier navire à avoir sombré au cours des combats.",
       "Mais en dépit des lourdes pertes, une grande victoire a été remportée, une victoire qui a donné aux soldats une vigueur nouvelle. La double épreuve du voyage et de la bataille a été oubliée à présent ; la même détermination, le même optimisme qu'ils avaient manifestés à leur départ de Port Bax les animent à nouveau et tous ont hâte de gagner Holmgard pour défaire l'ennemi.",
@@ -4071,6 +4075,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "226": {
     "id": "226",
+    "image": "/images/sections/book2_sect226.jpg",
     "text": [
       "L'aubergiste s'exprime avec l'accent rocailleux des natifs de Ragadorn. Il vous raconte que la ville est gouvernée par Lachelan, le fils de Killean le Suzerain qui a été emporté trois ans plus tôt par la peste rouge. Votre interlocuteur ne semble pas tenir Lachelan en grande estime, il le surnomme en effet le",
       "« Prince des Voleurs ». « Lui et ses hommes saignent le peuple à blanc en levant de lourds impôts, vous explique-t-il, et si vous avez le malheur de vous en plaindre, vous êtes sûr de finir dans les eaux du port avec un poignard planté entre les deux épaules. »",
@@ -4089,6 +4094,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "227": {
     "id": "227",
+    "image": "/images/sections/book2_sect227.jpg",
     "text": [
       "Quatre gardes de la ville, armés de pied en cap, marchent au milieu de la rue. Vous ne voulez pas courir le risque d'être interpellé et vous vous réfugiez dans une ruelle à votre gauche. Mais les soldats s'immobilisent juste à l'entrée du passage et il suffirait que l'un d'eux tourne la tête pour que vous soyez immédiatement repéré.",
       "Derrière vous, une petite fenêtre ouverte vous permet de distinguer l'intérieur d'une taverne bondée. Sans la moindre hésitation, vous enjambez aussitôt le rebord de la fenêtre et vous entrez à l'intérieur.",
@@ -4103,6 +4109,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "228": {
     "id": "228",
+    "image": "/images/sections/book2_sect228.jpg",
     "text": [
       "Ce sont des Larnumiers, des arbres dont les fruits juteux et sucrés sont très nourrissants. Après avoir avalé quelques-uns de ces fruits, vous vous sentez tout revigoré et vous en cueillez l'équivalent de 2 Repas que vous rangez dans votre Sac à Dos pour les manger plus tard.",
       "Au- delà des arbres, une large route longe la côte en s'étendant des deux côtés de l'horizon, à droite et à gauche. Il n'y a pas de poteau indicateur et vous devez choisir quelle direction prendre. Si vous souhaitez aller à gauche, rendez-vous au 27.",
@@ -4121,6 +4128,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "229": {
     "id": "229",
+    "image": "/images/sections/book2_sect229.jpg",
     "text": [
       "Votre Sixième Sens vous indique que ce chariot dissimule une créature malfaisante. Si vous souhaitez aller voir de quoi il retourne, montez dans le chariot en vous rendant au 134. Si vous préférez prendre vos jambes à votre cou pour vous enfuir le plus vite possible, rendez-vous au 208.",
       "Enfin, si vous choisissez de rebrousser chemin jusqu'à la bifurcation pour prendre cette fois le tunnel de droite, vous pouvez le faire en vous rendant au 164."
@@ -4142,6 +4150,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "230": {
     "id": "230",
+    "image": "/images/sections/book2_sect230.jpg",
     "text": [
       "Vous marchez le long de la voie qui tourne brusquement à l'est pour aboutir à la rue du Mendiant. Cette artère est d'ailleurs bien nommée car des dizaines d'hommes, de femmes et d'enfants, tous vêtus de haillons, s'y rassemblent par groupes, à l'abri des portes cochères, en tendant des sébiles aux passants.",
       "Et tandis que vous suivez l'avenue en direction d'un croisement, vous êtes assailli de tous côtés par des miséreux qui vous demandent de l'or. Si vous souhaitez leur faire l'aumône, rendez-vous au 93. Si vous préférez les repousser et poursuivre votre chemin, rendez-vous au 137."
@@ -4159,6 +4168,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "231": {
     "id": "231",
+    "image": "/images/sections/book2_sect231.jpg",
     "text": [
       "La porte de derrière ouvre sur une petite place au centre de laquelle se dresse une haute sépulture. Les pêcheurs ont disparu dans les rues sombres, sauf un qui est tombé en glissant sur le pavé mouillé et s'est assommé dans sa chute.",
       "Il est étendu dans le caniveau, le visage dans une flaque d'eau. Vous le retournez du bout du pied et vous le fouillez. Dans ses poches, vous trouvez 5 Pièces d'Or et 1 Poignard, mais mieux que tout, vous découvrez, passé à son doigt, le Sceau d'Hammardal; vous poussez un long soupir de soulagement et vous inscrivez sur votre Feuille d'Aventure toutes ces trouvailles.",
