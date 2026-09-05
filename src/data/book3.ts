@@ -552,6 +552,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "31": {
     "id": "31",
+    "image": "/images/sections/book3_sect31.jpg",
     "text": [
       "La statue se dresse lentement sur l'autel et s'avance vers vous. Tandis qu'elle s'approche, vous sentez un froid intense rayonner de sa surface de pierre lisse. Ses mouvements, cependant, sont raides et imprécis ; il ne vous serait pas difficile d'éviter ses bras tendus.",
       "Si vous souhaitez attaquer cette étrange statue, rendez- vous au 150.",
@@ -566,6 +567,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "32": {
     "id": "32",
+    "image": "/images/sections/book3_sect32.jpg",
     "text": [
       "Les créatures surgissent de la chute d'eau et bondissent sur vous ; il vous faut les combattre une par une. HABILETÉ ENDURANCE Premier LANGUABARB"
     ],
@@ -573,6 +575,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "33": {
     "id": "33",
+    "image": "/images/sections/book3_sect33.jpg",
     "text": [
       "Vous jetez le jeune garçon sur le traîneau, vous agrippez votre fouet et vous cinglez l'échiné des chiens Kanu qui se mettent à courir de toutes leurs forces. Les Barbares des Glaces vous donnent immédiatement la chasse, criant quelque chose à l'enfant dans leur étrange langage.",
       "Vous avez parcouru moins d'une centaine de mètres lorsque le garçon saute soudain du traîneau pour atterrir sur un grand tas de neige. Au même instant, une volée de flèches aux pointes d'os vous sifflent aux oreilles et l'une d'elles vous écorche l'épaule, vous faisant perdre 1 point d'ENDURANCE.",
@@ -600,6 +603,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "34": {
     "id": "34",
+    "image": "/images/sections/book3_sect34.jpg",
     "text": [
       "Vous vous souvenez tout à coup que vous possédez une Effigie de cette hideuse créature. Vous la sortez aussitôt de votre poche et vous la tenez devant vous. Elle se met alors à diffuser une étrange lueur qui semble hypnotiser le monstre. Vonotar n'a plus le contrôle de la créature qui, désormais, vous obéit.",
       "Le mage, se rendant compte qu'il a perdu, s'éloigne du fossé. Loi-Kymar vous rejoint peu après. Il essaie de vous dire quelque chose, mais il est hors d'haleine.",
@@ -622,6 +626,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "35": {
     "id": "35",
+    "image": "/images/sections/book3_sect35.jpg",
     "text": [
       "Deuxième LANGUABARB"
     ],
@@ -629,6 +634,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "36": {
     "id": "36",
+    "image": "/images/sections/book3_sect36.jpg",
     "text": [
       "Vous montez plus de cinquante marches avant d'atteindre l'arcade. Tandis que vous reprenez votre souffle, vous remarquez que des volutes de brume virevoltant et serpentant dans les airs dissimulent l'ouverture et ce qui se trouve derrière. Vous vous apercevez également que la température est beaucoup plus fraîche aux environs de cette porte voûtée.",
       "Si vous maîtrisez la Discipline Kaï du Sixième Sens et si vous avez le titre Kaï de Gardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï), rendez-vous au 341.",
@@ -649,6 +655,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "37": {
     "id": "37",
+    "image": "/images/sections/book3_sect37.jpg",
     "text": [
       "Dans l'obscurité, vous n'avez pas vu une étroite et profonde crevasse qui se dissimulait dans le sol de glace. Vous tombez dedans, vous faites une chute de plus de 15 mètres, et vous atterrissez sur des rochers pointus en vous cassant les deux jambes.",
       "Vous êtes immobilisé et il n'y a personne pour venir à votre secours. Votre mission s'achève donc ici en même temps que votre vie."
@@ -657,6 +664,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "38": {
     "id": "38",
+    "image": "/images/sections/book3_sect38.jpg",
     "text": [
       "Au bout de dix minutes passées à fouiller la pièce, vous découvrez un Sac à Dos en fourrure et un long rouleau de Corde. Vous n'avez le droit de prendre le Sac à Dos que si vous n'en avez pas vous-même. La Corde, quant à elle, compte tenu de son volume, occupera la place de deux objets normaux dans votre Sac à Dos, si toutefois vous décidez de l'emporter.",
       "Voyant qu'il n'y a plus rien à trouver dans cette pièce encombrée de bric-à-brac, vous repartez et vous poursuivez votre exploration le long du passage orienté à l'est.",
@@ -671,6 +679,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "39": {
     "id": "39",
+    "image": "/images/sections/book3_sect39.jpg",
     "text": [
       "Jusqu'à présent, tout va bien. Les gardes ne semblent pas vous prêter la moindre attention. Vous faites semblant de renouer les lacets de vos bottes et vous cachez la coupe derrière un pilastre. Vous retournez alors dans la cuisine et vous attendez que les vapeurs fassent leur effet.",
       "Moins d'une minute plus tard, les gardes s'écroulent sur le sol et vous pouvez vous approcher sans encombre de la salle du Trône. Vous êtes enchanté de découvrir que l'une des magnifiques portes incrustées de pierreries n'est pas fermée à clé. Vous préparant à passer à l'attaque, vous entrebâillez doucement la porte et vous entrez dans le repaire de Vonotar.",
@@ -685,6 +694,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "40": {
     "id": "40",
+    "image": "/images/sections/book3_sect40.jpg",
     "text": [
       "Vous avez fait une chute de plus de 15 mètres, mais vous avez atterri sans dommage sur un tas de neige. Essuyant vos yeux couverts de neige glacée, vous restez bouche bée devant le spectacle qui s'offre à vous. Une vaste caverne s'étend aussi loin que porte votre regard; d'immenses stalactites de cristal pendent d'un plafond de glace et la neige fondue qui s'égoutte sans cesse emplit les lieux d'une étrange musique.",
       "Vous êtes en train de contempler un monde inconnu que fort peu de Sommelundois ont jamais vu: ce sont en effet les Grottes de Kalte qui s'ouvrent ainsi devant vous. Cet immense labyrinthe souterrain a été bâti par les Anciens, bien avant que les Sommerlundois, ou même les Maîtres des Ténèbres, ne viennent s'installer sur les terres de Magnamund.",
