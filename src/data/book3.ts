@@ -2507,6 +2507,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "141": {
     "id": "141",
+    "image": "/images/sections/book3_sect141.jpg",
     "text": [
       "L'homme observe un instant de silence, puis il donne sa réponse : « Killean le Suzerain. »",
       "Si vous souhaitez à présent effacer le pentagramme pour le libérer, rendez-vous au 170.",
@@ -2521,6 +2522,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "142": {
     "id": "142",
+    "image": "/images/sections/book3_sect142.jpg",
     "text": [
       "Lorsque vous abattez votre arme sur le rocher, des centaines d'échardes argentées jaillissent sous le coup et le bloc commence à se fissurer, mais les Languabarbs sont déjà sur vous.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -2531,6 +2533,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "143": {
     "id": "143",
+    "image": "/images/sections/book3_sect143.jpg",
     "text": [
       "Le cône de givre s'enfonce dans le feuillage des plantes en les gelant instantanément. Tiges et feuilles deviennent alors cassantes et commencent à céder sous votre poids. Vous essayez de bondir sur la plateforme où se tient Vonotar, mais il est trop tard, le pont s'effondre et vous êtes précipité dans le fossé tête la première.",
       "La dernière vision que vous emporterez de ce monde sera celle d'un Vonotar ricanant qui pointe sur votre tête sa baguette de cristal. Votre mission s'achève ici en même temps que votre vie."
@@ -2539,6 +2542,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "144": {
     "id": "144",
+    "image": "/images/sections/book3_sect144.jpg",
     "text": [
       "Vous êtes précipité dans les ténèbres et vous vous écrasez contre une corniche de glace après une chute de plus de 30 mètres. Votre corps disloqué rebondit pour tomber plus bas encore, mais votre colonne vertébrale a été fracassée sous le choc et vous êtes donc déjà mort lorsque vous atterrissez enfin sur la neige molle qui tapisse le fond de la crevasse.",
       "Votre mission s'achève ici en même temps que votre vie."
@@ -2547,6 +2551,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "145": {
     "id": "145",
+    "image": "/images/sections/book3_sect145.jpg",
     "text": [
       "Ce couloir n'est pas très long et vous arrivez bientôt dans une autre salle aux murs de pierre. Un peu plus loin un escalier mène à une arcade plongée dans l'ombre, à bonne distance au-dessus du sol. Au pied de cet escalier, vous distinguez le squelette d'un ancien gardien de tombes, encore vêtu de son armure et toujours debout.",
       "Ses phalanges nues tiennent une grande épée noire.",
@@ -2566,6 +2571,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "146": {
     "id": "146",
+    "image": "/images/sections/book3_sect146.jpg",
     "text": [
       "Centimètre par centimètre vous vous glissez vers l'arrière du traîneau mais, tout à coup, vous entendez la glace craquer: la crevasse est en train de s'élargir.",
       "« Sautez ! » hurle Fenor tandis que le traîneau bascule dans le vide. Vous vous préparez à bondir, mais votre pied se prend dans les cordes qui maintiennent le matériel.",
@@ -2597,6 +2603,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "147": {
     "id": "147",
+    "image": "/images/sections/book3_sect147.jpg",
     "text": [
       "Vous inspectez chaque centimètre carré de la porte et des murs qui l'encadrent, mais vous ne trouvez strictement rien qui puisse permettre de l'ouvrir. Vous examinez alors la rampe de pierre lorsqu'un rugissement retentit soudain derrière vous avec tant de force que votre sang se glace.",
       "Vous faites volte-face et vous voyez alors une créature bondir sur vous : ses mâchoires grandes ouvertes laissent apercevoir une langue couverte de poils rêches. Il vous est impossible d'échapper à ce Languabarb et il vous faut le combattre jusqu'à la mort de l'un de vous deux.",
@@ -2619,6 +2626,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "148": {
     "id": "148",
+    "image": "/images/sections/book3_sect148.jpg",
     "text": [
       "Vous avez descendu la moitié des marches lorsque vous vous heurtez à une patrouille de Barbares des Glaces. Vous essayez de les repousser pour pouvoir continuer votre chemin, mais ils sont puissamment armés, disposant à la fois d'épées et de lances. Vous vous battez avec fureur et vous en tuez un bon nombre, mais les autres parviennent à vous encercler et à vous porter le coup de grâce.",
       "Votre mission s'achève ici en même temps que votre vie."
@@ -2627,6 +2635,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "149": {
     "id": "149",
+    "image": "/images/sections/book3_sect149.jpg",
     "text": [
       "Vous faites habilement un pas de côté pour essayer d'éviter le coup que le Barbare des Glaces vous porte avec sa lance à la pointe d'os.",
       "Utilisez la Table de Hasard pour obtenir un chiffre qui vous indiquera si vous avez réussi à esquiver.",
@@ -2647,6 +2656,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "150": {
     "id": "150",
+    "image": "/images/sections/book3_sect150.jpg",
     "text": [
       "Le coup que vous assénez fracasse la surface lisse et blanche de la Statue. Aussitôt une rafale de vent glacé s'échappe en sifflant de l'ouverture et, quelques secondes plus tard, tous les murs de la salle sont recouverts d'une couche de glace étincelante.",
       "La chute soudaine de la température vous fait perdre 2 points d'ENDURANCE, à moins que votre peau ne soit protégée par de l'huile de Bakanal. Vous constatez alors avec un sentiment d'horreur que la rafale de vent prend peu à peu la forme d'un petit cyclone qui attire dans son œil tous les morceaux de pierre et de glace traînant alentour.",
