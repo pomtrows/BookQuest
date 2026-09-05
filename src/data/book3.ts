@@ -3,6 +3,7 @@ import type { Section } from '../types/game';
 export const storyDataBook3: Record<string, Section> = {
   "1": {
     "id": "1",
+    "image": "/images/sections/book3_sect1.jpg",
     "text": [
       "Avant même que vous n'ayez accepté la mission de ramener Vonotar devant la justice de votre pays, les préparatifs de votre voyage à Kalte ont été entrepris. Le commandant du vaisseau de guerre Cardonal, de retour d'une patrouille dans la mer de Kalte, a reçu l'ordre d'attendre votre arrivée au port d'Anskaven où le bâtiment est ancré.",
       "Au cours de la nuit, on a amené à bord les vivres, les équipements polaires et les meutes de chiens Kanu- des chiens de traîneau-qui vous seront nécessaires dans votre quête. La nature de votre mission est restée secrète et seuls les officiers supérieurs en ont été informés.",
@@ -32,6 +33,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "2": {
     "id": "2",
+    "image": "/images/sections/book3_sect2.jpg",
     "text": [
       "Vous découvrez à votre droite une porte de pierre habilement dissimulée dans les sculptures contournées qui couvrent le mur. En examinant de près ces sculptures, vous apercevez un levier.",
       "Si vous souhaitez tirer ce levier, rendez-vous au 290. Sinon, vous pouvez continuer à monter l'escalier en vous rendant au 76."
@@ -45,6 +47,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "3": {
     "id": "3",
+    "image": "/images/sections/book3_sect3.jpg",
     "text": [
       "Vous regardez les morceaux fracassés de la créature se dissoudre dans la glace avec un mélange de répulsion et de fascination. Bientôt, il ne reste plus du Serpent de Cristal que les reliefs de nourriture qui n'avaient pas encore été digérés par son estomac.",
       "A votre grand étonnement, vous apercevez, dans cette bouillie fétide de chair et d'os, la tige d'une Clé d'Argent.",
@@ -64,6 +67,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "4": {
     "id": "4",
+    "image": "/images/sections/book3_sect4.jpg",
     "text": [
       "Vous cachez le cadavre sous l'escalier et vous vous hâtez de le fouiller. Vous y découvrez une Épée d'Os et un Disque de Pierre Bleue.",
       "Si vous souhaitez conserver l'un ou l'autre de ces objets (ou les deux), inscrivez-les sur votre Feuille d'Aventure dans la case Objets Spéciaux. Vous abandonnez ensuite le cadavre et vous montez l'escalier quatre à quatre.",
@@ -78,6 +82,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "5": {
     "id": "5",
+    "image": "/images/sections/book3_sect5.jpg",
     "text": [
       "Initié (C'est le rang que vous avez quand vous entreprenez pour la première fois une aventure du Loup Solitaire.)"
     ],
@@ -85,6 +90,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "6": {
     "id": "6",
+    "image": "/images/sections/book3_sect6.jpg",
     "text": [
       "Vous progressez dans l'obscurité en tenant votre arme en avant, au cas où un obstacle se dresserait sur votre chemin. Le couloir se prolonge en direction du nord sur une certaine distance, puis il tourne brusquement vers la droite. A quelques mètres devant vous, vous apercevez à présent une lumière provenant d'une autre ouverture.",
       "Au-delà de cette source de lumière, un peu plus loin dans le tunnel, un escalier s'enfonce dans les ténèbres.",
@@ -104,6 +110,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "7": {
     "id": "7",
+    "image": "/images/sections/book3_sect7.jpg",
     "text": [
       "Soudain, le bloc noir explose en centaines d'éclats de pierre tranchants comme des rasoirs. Vous avez le dos quelque peu écorché, et les oreilles vous tintent mais, en dehors de ces menus désagréments, vous êtes indemne. En vous réfugiant dans le coin de la salle, vous avez échappé à des blessures qui auraient pu être graves.",
       "Il est clair à présent que le monolithe avait pour fonction d'interdire l'entrée aux intrus ou de les prendre au piège. Un ancien mage l'avait sans doute doté de pouvoirs de protection. Tandis que la poussière noire retombe lentement, vous remarquez qu'un panneau s'est ouvert dans le mur du nord, révélant un obscur passage qui permet de quitter la salle.",
@@ -123,6 +130,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "8": {
     "id": "8",
+    "image": "/images/sections/book3_sect8.jpg",
     "text": [
       "Guerrier ou Compagnon"
     ],
@@ -130,6 +138,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "9": {
     "id": "9",
+    "image": "/images/sections/book3_sect9.jpg",
     "text": [
       "Savant 10 Maître Au-delà de ces Dix Disciplines de base s'ouvrent les arcanes des connaissances supérieures : les Disciplines de Magnakaï. En acquérant peu à peu la sagesse du Magnakaï, un Seigneur Kaï tel que vous pourra gravir les échelons qui le conduiront au rang suprême de Grand Maître Kaï !",
       "La sagesse Kaï Votre mission sera infiniment périlleuse, car les terres de Kalte sont glaciales et hostiles, et votre ennemi est passé maitre dans l’art de la fourberie. Servez-vous de la carte qui figure au début de l’ouvrage pour établir votre itinéraire jusqu'à la Forteresse de Glace d'Ikaya.",
@@ -154,6 +163,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "10": {
     "id": "10",
+    "image": "/images/sections/book3_sect10.jpg",
     "text": [
       "Le sac contient quatre fioles de verre ouvragé. Elles sont remplies de liquides rouge, orange, vert et noir. Lequel souhaitez-vous examiner ?",
       "Rouge Rendez-vous au 90 Orange Rendez-vous au 171 Vert Rendez-vous au 289 Noir Rendez-vous au 225 Vous pourrez utiliser ce sac comme Sac à Dos si vous en avez besoin. Vous aurez le droit de quitter les lieux quand vous le souhaiterez et vous poursuivrez alors votre chemin vers le nord, le long du couloir, en vous rendant au 126."
