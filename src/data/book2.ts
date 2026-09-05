@@ -6012,6 +6012,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "333": {
     "id": "333",
+    "image": "/images/sections/book2_sect333.jpg",
     "text": [
       "Le marin qui se faisait passer pour Ronan semble avoir pris la fuite au cours du combat. Vous fouillez rapidement les cadavres des autres brigands, mais vous ne découvrez rien d'intéressant. Vous remarquez cependant que chacun des malfaiteurs porte au poignet gauche un tatouage représentant un serpent.",
       "Il est clair que celui qui leur a donné l'ordre de vous tuer, quel qu'il soit, connaît déjà la nature de votre mission. Vous quittez la taverne par la porte latérale et vous découvrez en passant devant un escalier le cadavre d'un marin dissimulé sous les marches.",
@@ -6031,6 +6032,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "334": {
     "id": "334",
+    "image": "/images/sections/book2_sect334.jpg",
     "text": [
       "Quelques kilomètres plus loin, le sentier est recouvert de broussailles et disparaît complètement sous les herbes et les buissons d'épines. Il devient difficile d'avancer car les marécages et les fondrières abondent sur la lande.",
       "Il vous faut plusieurs heures d'un parcours malaisé pour atteindre enfin la lisière de la forêt de Durenor. Vous distinguez alors la silhouette d'une haute tour dressée parmi les fougères. Des volutes de fumée s'élèvent paresseusement d'une cheminée.",
@@ -6053,6 +6055,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "335": {
     "id": "335",
+    "image": "/images/sections/book2_sect335.jpg",
     "text": [
       "Vous remarquez une enseigne accrochée à la façade d'une petite boutique : Si vous souhaitez entrer dans cette boutique et y demander votre chemin pour Durenor, rendez-vous au 161. Si vous préférez continuer tout droit, rendez-vous au 61."
     ],
@@ -6069,6 +6072,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "336": {
     "id": "336",
+    "image": "/images/sections/book2_sect336.jpg",
     "text": [
       "En une fraction de seconde, l'éclair change de direction, attiré par le Glaive de Sommer qui en absorbe aussitôt l'énergie aussi facilement qu'une éponge absorbe une goutte d'eau. C'est là un des pouvoirs du Glaive, comme vous l'avez appris au cours de votre entraînement : il vous protège de toute magie et vient ainsi de vous épargner une mort certaine.",
       "Le sorcier lance alors un juron, arrache une pierre précieuse de son turban richement orné et la jette à vos pieds. Une flamme en jaillit instantanément et un nuage vert s'élève vers vous : c'est un gaz puissant dont l'odeur acide vous fait suffoquer.",
@@ -6088,6 +6092,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "337": {
     "id": "337",
+    "image": "/images/sections/book2_sect337.jpg",
     "text": [
       "Lorsque vous n'êtes plus qu'à une cinquantaine de mètres du rivage, vous vous laissez glisser dans l'eau et vous nagez vers la terre ferme. Bientôt, vous atteignez enfin la plage ; vous êtes épuisé et vous vous traînez sur le sable jusqu'aux dunes qui s'élèvent un peu plus loin et à l'abri desquelles vous pouvez reprendre haleine.",
       "En plus de la fatigue, la faim vous tenaille mais il vous faut d'abord faire l'inventaire de ce qui vous reste. Vous avez réussi à conserver vos Pièces d'Or, votre Sac à Dos et les Objets Spéciaux dont vous n'avez pas été contraint de vous séparer au cours de la tempête.",
@@ -6112,6 +6117,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "338": {
     "id": "338",
+    "image": "/images/sections/book2_sect338.jpg",
     "damage": 2,
     "text": [
       "Vous empoignez la lance et vous la levez au-dessus de votre tête en visant le Monstre d'Enfer qui se met à hurler de terreur : il sait en effet que le fer de votre lance lui sera fatal. Sous le choc, vous tombez tous deux sur la chaussée en contrebas.",
@@ -6131,6 +6137,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "339": {
     "id": "339",
+    "image": "/images/sections/book2_sect339.jpg",
     "text": [
       "Une demi-heure plus tard, la diligence est arrêtée par des cavaliers en armes. Ils portent l'emblème de Lachelan, le Suzerain de Ragadorn : un vaisseau noir surmonté d'une crête rouge. Ils exigent de l'or en paiement de ce qu'ils appellent une",
       "« taxe de sortie » : il en coûtera 1 Couronne à chaque passager. Vos compagnons de voyage déposent chacun 1 Pièce d'Or sur une assiette qu'ils vous tendent ensuite. Si vous avez les moyens de payer cette taxe, déposez à votre tour 1 Couronne sur l'assiette ; la diligence alors pourra repartir et vous vous rendrez au 249.",
@@ -6149,6 +6156,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "340": {
     "id": "340",
+    "image": "/images/sections/book2_sect340.jpg",
     "text": [
       "Vous continuez de marcher pendant encore une demi-heure le long du tunnel avant d'arriver à une bifurcation. Si vous souhaitez prendre la voie de gauche, rendez-vous au 64. Si vous préférez emprunter la voie de droite, rendez-vous au 164."
     ],
@@ -6165,6 +6173,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "341": {
     "id": "341",
+    "image": "/images/sections/book2_sect341.jpg",
     "text": [
       "Il ne reste plus du malheureux navire qu'une coque fracassée et les lambeaux de voiles. Vous insistez auprès du capitaine pour qu'il fasse rechercher d'éventuels survivants, mais il ignore votre demande et ordonne à ses hommes d'équipage de poursuivre leur tâche.",
       "Alors, tandis que vous vous éloignez de l'épave, un sentiment d'appréhension vous envahit peu à peu : et si un sort semblable vous attendait, vous aussi ? La gorge sèche, vous descendez sur le pont inférieur pour rejoindre votre cabine en prenant bien soin d'en fermer la porte à clé.",
@@ -6179,6 +6188,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "342": {
     "id": "342",
+    "image": "/images/sections/book2_sect342.jpg",
     "text": [
       "C'est une véritable montagne humaine, le crâne complètement chauve et les oreilles ornées de gros anneaux d'or. Il vous regarde d'un air soupçonneux avant de vous adresser enfin la parole :",
       "« Une bière coûte 1 Pièce d'Or, une chambre 2 Pièces. Qu'est-ce que vous choisissez ? »",
