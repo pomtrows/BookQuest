@@ -1965,6 +1965,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "111": {
     "id": "111",
+    "image": "/images/sections/book3_sect111.jpg",
     "text": [
       "La porte glisse latéralement et révèle un large couloir bien éclairé orienté nord-sud. Le sourd grondement que vous aviez perçu auparavant semble plus intense ici que dans l'obscurité du passage situé derrière vous. A votre gauche, vous remarquez une porte et, au loin, un croisement.",
       "Si vous souhaitez vous diriger vers ce croisement, rendez-vous au 254.",
@@ -1984,6 +1985,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "112": {
     "id": "112",
+    "image": "/images/sections/book3_sect112.jpg",
     "text": [
       "Avant que vous ne vous installiez pour la nuit dans la tiédeur de vos Couvertures de Fourrure, Fenor prépare un solide Repas constitué de viande séchée marinée dans du Wanlo, un alcool fort. Bientôt, vous sombrez dans un profond sommeil tandis que la toile de la tente claque sous la puissance du vent.",
       "Votre nuit, cependant, est peuplée de cauchemars dans lesquels Vonotar le Traître vous apparaît en une succession d'images terrifiantes.",
@@ -1998,6 +2000,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "113": {
     "id": "113",
+    "image": "/images/sections/book3_sect113.jpg",
     "text": [
       "La rapidité de vos réflexes vous a évité d'être écrasé par la porte. Vous remettez un peu d'ordre dans votre tenue quelque peu dérangée par votre bond acrobatique et vous poursuivez votre chemin le long du couloir.",
       "Rendez-vous au 63."
@@ -2011,6 +2014,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "114": {
     "id": "114",
+    "image": "/images/sections/book3_sect114.jpg",
     "text": [
       "Après avoir parcouru une cinquantaine de mètres environ, vous arrivez dans une autre caverne. Un Bakanal, féroce créature Carnivore des terres de Kalte, est étendu sur un gros bloc de glace, au beau milieu de cet espace glacial. Il semble profondément endormi, sans doute après avoir fait un copieux repas à en juger par les ossements répandus autour de lui.",
       "Un autre tunnel s'ouvre dans le mur du fond.",
@@ -2036,6 +2040,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "115": {
     "id": "115",
+    "image": "/images/sections/book3_sect115.jpg",
     "text": [
       "Vous vous apercevez qu'un grand nombre de ces os répandus parmi les stalagmites ont appartenu à des squelettes humains. Des crânes fracassés, des phalanges, des morceaux de thorax sont ainsi à demi ensevelis dans la glace. Vous êtes sur le point d'abandonner vos investigations lorsqu'une petite boîte en os gravé attire votre attention.",
       "Si vous souhaitez ouvrir cette boîte, rendez-vous au 218.",
@@ -2050,6 +2055,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "116": {
     "id": "116",
+    "image": "/images/sections/book3_sect116.jpg",
     "text": [
       "Vous versez la potion sur votre peau irritée et meurtrie, et vous ressentez immédiatement les effets bienfaisants du liquide. La douleur disparaît peu à peu et l'enflure se résorbe. La Pierre Rayonnante est une roche maudite qui émet une énergie mortelle à laquelle tous les êtres vivants sont sensibles.",
       "Si vous n'aviez pas eu la Potion de Laumspur en votre possession, la pierre maléfique vous aurait certainement tué. Vous jetez la Pierre Rayonnante ainsi que la fiole à présent vide, puis vous mettez votre Feuille d'Aventure à jour. Vous poursuivrez ensuite votre chemin le long du couloir en vous rendant au 97."
@@ -2058,6 +2064,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "117": {
     "id": "117",
+    "image": "/images/sections/book3_sect117.jpg",
     "text": [
       "Le vent se calme au cours de la nuit et le jour se lève en une aube paisible. Loin au nord, se dessinant à l'horizon, vous apercevez Ikaya, la forteresse de glace. L'immense citadelle aux tours de cristal offre un spectacle fascinant, rendu plus magnifique encore par un étrange phénomène : la forteresse semble en effet avoir été retournée et suspendue dans les airs, au-dessus d'un gros nuage.",
       "« C'est un mirage, comme il y en a parfois dans les terres de Kalte, vous explique Dyce ; ici, l'air est tout à fait pur, sans la moindre poussière et la terre se reflète dans les nuages. C'est bien Ikaya que vous voyez là-bas, mais la forteresse elle-même se trouve au-delà de l'horizon.",
@@ -2085,6 +2092,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "118": {
     "id": "118",
+    "image": "/images/sections/book3_sect118.jpg",
     "text": [
       "Le vieil homme est beaucoup trop faible pour grimper tout seul. Vous lui conseillez alors d'attacher la Corde autour de sa taille pour que vous puissiez ainsi le hisser hors de sa prison. Avec des gestes lents, il suit vos instructions et, lorsqu'il est enfin prêt, vous avez la surprise de constater, en le soulevant, qu'il ne pèse pas plus lourd qu'un enfant.",
       "Quelques minutes plus tard, vous avez réussi à le tirer hors de son cachot et il se retrouve en face de vous, dans le couloir. Il vous faut à présent découvrir qui il est.",
@@ -2099,6 +2107,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "119": {
     "id": "119",
+    "image": "/images/sections/book3_sect119.jpg",
     "text": [
       "De gros morceaux de glace se détachent du pont et une large fissure apparaît. Vous parvenez malgré tout à maintenir le traîneau sur sa trajectoire et vous atteignez le bord opposé de la gorge. Malheureusement, vous avez tôt fait de constater que l'un des patins est cassé et irréparable.",
       "Vous êtes donc contraint d'abandonner le traîneau et de continuer à pied. Il contient toujours, cependant, du matériel fort utile. Vous pouvez emporter une partie de ce matériel en le rangeant dans votre Sac à Dos (mais souvenez-vous que vous n'avez pas le droit de transporter plus de 8 objets).",
@@ -2117,6 +2126,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "120": {
     "id": "120",
+    "image": "/images/sections/book3_sect120.jpg",
     "text": [
       "Le cyclone souffle avec tant de rage qu'il en déchire presque vos vêtements en vous bombardant sans cesse d'éclats de pierre ou de glace, pointus comme des aiguilles. Lorsque vous levez le Glaive de Sommer, un mugissement sonore retentit à vos oreilles.",
       "C'est un hurlement d'horreur et de désespoir. Vous portez alors un coup de votre arme redoutable, fendant le tourbillon, transperçant la substance impalpable du Démon. Un instant plus tard, le cyclone a disparu et les effroyables gémissements se sont tus.",
