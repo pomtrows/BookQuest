@@ -3058,6 +3058,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "171": {
     "id": "171",
+    "image": "/images/sections/book3_sect171.jpg",
     "text": [
       "Le bouchon est coincé dans la fiole et il vous faut l'ôter avec précaution pour ne pas prendre le risque de briser le verre. Peu à peu, le bouchon glisse et vous parvenez enfin à l'enlever ; vous reniflez alors le liquide orange.",
       "Si vous possédez laDiscipline Kaï du Sixième Sens ou celle de la Maîtrise des Armes, rendez-vous au 311.",
@@ -3073,6 +3074,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "172": {
     "id": "172",
+    "image": "/images/sections/book3_sect172.jpg",
     "text": [
       "Vous refusez l'huile de Bakanal que vous propose Irian et vous retournez sous la tente. Les autres, cependant, après vous avoir félicité de votre victoire sur la créature, sortent à leur tour de la tente et vont rejoindre Irian. Stupéfait, vous les voyez alors plonger eux aussi les mains dans la graisse de Bakanal et s'en enduire le corps sous leurs vêtements.",
       "Un peu plus tard dans la soirée, vous finissez par vous endormir, non sans avoir pris la précaution de vous boucher les narines avec du coton. Les autres, pour leur part, ne semblent pas le moins du monde incommodés par l'épouvantable odeur.",
@@ -3087,6 +3089,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "173": {
     "id": "173",
+    "image": "/images/sections/book3_sect173.jpg",
     "text": [
       "La salle du Trône du Brumalmarc est une vaste pièce dans laquelle se dresse une sorte de plateau central constitué de blocs de glace disposés les uns sur les autres. Sur cette plate-forme se trouve le Trône du Brumalmarc, un trône aussi vieux qu'Ikaya elle-même.",
       "Vonotar y est assis, entouré de gros volumes et d'étranges accessoires de nécromancien. Il est absorbé dans son étude et ne vous voit pas entrer. Il reste ainsi quelques instants sans soupçonner votre présence lorsque, soudain, Loi-Kymar éternue.",
@@ -3116,6 +3119,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "174": {
     "id": "174",
+    "image": "/images/sections/book3_sect174.jpg",
     "text": [
       "Le Languabarb est mort, mais l'écho de ses grognements semble toujours résonner dans la caverne. Soudain, vous voyez une autre créature semblable surgir du tunnel et foncer sur vous. C'est la femelle du Languabarb : saisie de rage, elle veut à tout prix venger son compagnon.",
       "Vous n'avez plus à présent qu'un seul moyen de vous enfuir : traverser le lac.",
@@ -3130,6 +3134,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "175": {
     "id": "175",
+    "image": "/images/sections/book3_sect175.jpg",
     "text": [
       "Vous faites un pas de côté pour esquiver la créature et vous lui portez à la tête un coup qui aurait mis hors de combat n'importe quel mortel. Mais, à votre grand dam, le Monstre d'Enfer est indemne et se lance à nouveau à l'attaque. C'est un mort vivant aux pouvoirs redoutables, invulnérable aux armes normales.",
       "Les Maîtres des Ténèbres l'ont envoyé ici en mission pour tuer Vonotar et le punir ainsi de sa défaite dans la bataille du golfe de Holm. A présent qu'il est libéré du pentagramme qui l'emprisonnait, le Monstre d'Enfer peut accomplir sa mission et retourner chez lui pour y recevoir de ses maîtres récompenses et honneurs.",
@@ -3140,6 +3145,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "176": {
     "id": "176",
+    "image": "/images/sections/book3_sect176.jpg",
     "text": [
       "Vous parvenez finalement à atteindre l'autre rive et vous courez vers l'entrée du tunnel en laissant la rivière derrière vous. Le tunnel mène en direction du nord, et vous y marchez des heures durant. Il vous est impossible de deviner l'heure qu'il est, car la perpétuelle clarté qui règne dans les Grottes de Kalte ne varie jamais, qu'il fasse jour ou nuit.",
       "A travers des fissures dans les parois du tunnel, vous parvenez à apercevoir des salles et des grottes, et la taille gigantesque de ce labyrinthe vous émerveille. Vous vous endormez presque debout lorsque vous sentez soudain une odeur de viande rôtie.",
@@ -3160,6 +3166,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "177": {
     "id": "177",
+    "image": "/images/sections/book3_sect177.jpg",
     "text": [
       "Vous reconnaissez aussitôt l'odeur âcre de Ronces des Cimetières distillées. Cette décoction de couleur noire est un poison puissant et vous rebouchez aussitôt la fiole pour empêcher les vapeurs nocives de s'en échapper.",
       "Si vous souhaitez conserver cette Potion, inscrivez-la sur votre Feuille d'Aventure dans la case des objets contenus dans votre Sac à Dos. Retournez à présent au 10 pour faire un nouveau choix."
@@ -3168,6 +3175,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "178": {
     "id": "178",
+    "image": "/images/sections/book3_sect178.jpg",
     "text": [
       "Vous suivez les éclaireurs Barbares depuis presque deux heures lorsqu'un vent furieux et glacé se lève à l'ouest. Le terrain devient très accidenté, et des amas de neige dissimulent des arêtes de glace tranchantes comme des rasoirs ainsi que les inégalités du sol qui risquent à tout moment de vous faire tomber.",
       "Grâce à leurs skis (fabriqués à partir de côtes de mammouths de Kalte), les éclaireurs Barbares n'ont aucune difficulté à parcourir cette surface semée d'embûches. La traverser à pied représente cependant une douloureuse épreuve. Le vent mordant balaie le glacier et apporte avec lui des nuages déversant une neige fine qui réduit sensiblement la visibilité.",
@@ -3183,6 +3191,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "179": {
     "id": "179",
+    "image": "/images/sections/book3_sect179.jpg",
     "text": [
       "Vous imaginez un plan particulièrement audacieux. En vous faisant passer pour un Barbare des Glaces, vous pourriez en effet poser le bol près des gardes ; dans la pénombre du couloir, il leur serait difficile d'apercevoir la fumée. Loi-Kymar approuve votre plan et prépare un mélange d'herbes destiné à vous protéger vous-même contre les vapeurs nocives.",
       "Vêtu des fourrures d'un Barbare des Glaces, vous avancez bientôt dans le couloir, le bol caché sous vos vêtements.",
@@ -3199,6 +3208,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "180": {
     "id": "180",
+    "image": "/images/sections/book3_sect180.jpg",
     "text": [
       "Dans l'obscurité balayée de neige, vous distinguez deux petits points rouges et brillants qui grandissent peu à peu. Puis soudain, une forme se dessine dans l'ombre : vous voyez alors apparaître une grande et hideuse créature quadrupède qui bondit sur vous.",
       "Elle a les yeux étincelants et ouvre une gueule hérissée de dents, exhibant en même temps une énorme langue couverte de poils rêches qu'elle pointe en direction de votre visage.",
