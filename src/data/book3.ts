@@ -376,6 +376,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "21": {
     "id": "21",
+    "image": "/images/sections/book3_sect21.jpg",
     "text": [
       "Vous tombez dans un sifflement glacé et vous il terrissez brutalement sur une surface gelée, près de 10 mètres plus bas. Vous avez le souffle coupé et vous êtes durement secoué, mais vous gardez conscience. Les cris îles guides se transforment bientôt en hurlements de (oie et de surprise lorsqu'ils vous voient vous relever tant bien que mal.",
       "Vous levez les yeux et vous voyez I mor qui saute sans encombre par-dessus la crevasse. Quelques secondes plus tard, on vous descend une corde et vous êtes ramené sain et sauf à la surface. Vous avez perdu vos chiens Kanu, votre traîneau avec les provisions qu'il contenait et 2 points d'ENDURANCE.",
@@ -393,6 +394,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "22": {
     "id": "22",
+    "image": "/images/sections/book3_sect22.jpg",
     "text": [
       "Un pouvoir magique d'une grande puissance empêche votre esprit d'agir sur la serrure. Vous vous concentrez jusqu'à ce que la sueur perle à votre front, mais vous êtes incapable d'obtenir le moindre résultat. Plutôt que d'essayer d'ouvrir le coffre par la force, vous décidez à regret de l'abandonner et vous montez plutôt l'escalier.",
       "Rendez-vous au 323."
@@ -406,6 +408,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "23": {
     "id": "23",
+    "image": "/images/sections/book3_sect23.jpg",
     "text": [
       "Vous avez de la chance. Les Bakanals sont réputés pour leur extraordinaire aptitude au sommeil ; ils peuvent en effet dormir jusqu'à trois jours de suite à n'importe quelle occasion, principalement après avoir fait un copieux repas. Ce Bakanal va dormir encore heures au moins.",
       "Vous pouvez donc passer devant lui sans encombre et quitter la salle.",
@@ -420,6 +423,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "24": {
     "id": "24",
+    "image": "/images/sections/book3_sect24.jpg",
     "text": [
       "Vous visez soigneusement et vous lancez le Diamant dans le couloir. Il rebondit juste devant le Barbare des Glaces et finit sa course derrière l'escalier. Le Barbare, intrigué par le bruit et par l'éclat du Diamant, quitte son poste pour aller voir de quoi il retourne.",
       "Vous saisissez cette occasion pour grimper l'escalier sans vous faire remarquer.",
@@ -434,6 +438,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "25": {
     "id": "25",
+    "image": "/images/sections/book3_sect25.jpg",
     "text": [
       "Vous remarquez que l'une des créatures porte au cou un Triangle de Pierre Bleue attaché à une chaîne. Vous pouvez le prendre si vous le souhaitez et le passer à votre propre cou. Vous l'inscrirez alors sur votre Feuille d'Aventure dans la case Objets Spéciaux.",
       "Vous essuyez ensuite votre arme et vous vous hâtez de poursuivre votre chemin, de peur qu'un autre Languabarb ne se montre.",
@@ -448,6 +453,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "26": {
     "id": "26",
+    "image": "/images/sections/book3_sect26.jpg",
     "text": [
       "En dehors des épées d'os, vous trouvez également un poignard et une masse d'armes, tous deux taillés également dans de l'os. Les Barbares portent aussi à leur poignet gauche de curieux Bracelets. Ils sont tout à fait lisses, sans aucune marque ni inscription et semblent en or massif.",
       "Si vous souhaitez prendre l'un de ces Bracelets, passez-le à votre poignet et notez-le sur votre Feuille d'Aventure dans la case Objets Spéciaux. Rendez- vous ensuite au 187.",
@@ -464,6 +470,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "27": {
     "id": "27",
+    "image": "/images/sections/book3_sect27.jpg",
     "text": [
       "Vous avancez avec difficulté le long des sinistres montagnes pendant presque une heure, sans trouver d'abri pour échapper au vent glacé. A moins que vous ne vous soyez enduit le torse d'huile de Bakanal, vous perdrez 2 points d'ENDURANCE en raison du froid extrême.",
       "Si vous souhaitez poursuivre votre chemin pour essayer de trouver un abri, rendez-vous au 314.",
@@ -482,6 +489,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "28": {
     "id": "28",
+    "image": "/images/sections/book3_sect28.jpg",
     "text": [
       "Essuyant le sang qui vous a éclaboussé le visage, vous sortez de la cellule d'un pas chancelant et vous pénétrez dans le couloir. Au loin, vous apercevez une bifurcation.",
       "Si vous souhaitez fouiller le cadavre du Barbare des Glaces, il va falloir le traîner dans la lumière du couloir en vous rendant au 210.",
@@ -492,6 +500,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "29": {
     "id": "29",
+    "image": "/images/sections/book3_sect29.jpg",
     "text": [
       "La crevasse s'élargit de plus en plus. Vous voyez Fenor sauter et atterrir sans dommage au bord du gouffre. Vous vous apprêtez à bondir à votre tour lorsque vous vous apercevez avec horreur que votre pied gauche se trouve pris dans les cordages du traîneau.",
       "Si vous possédez le Glaive de Sommer, rendez-vous au 43.",
@@ -527,6 +536,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "30": {
     "id": "30",
+    "image": "/images/sections/book3_sect30.jpg",
     "text": [
       "Le passage se prolonge tout droit pendant quelques mètres, puis il tourne brusquement vers l'est. Un peu plus loin, vous apercevez une lueur qui filtre à travers une fente dans le mur. En y regardant de plus près, vous découvrez une porte secrète et un petit levier de pierre.",
       "Vous tirez sur le levier et la porte s'ouvre aussitôt en glissant latéralement, révélant un large couloir bien éclairé. A votre gauche, à moins de 10 mètres, vous remarquez un croisement. A votre droite, vous voyez une porte de pierre fermée.",
