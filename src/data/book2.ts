@@ -4201,6 +4201,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "232": {
     "id": "232",
+    "image": "/images/sections/book2_sect232.jpg",
     "text": [
       "Vous êtes parvenu à moins d'une vingtaine de mètres de la tour lorsque le garde fait un pas en avant et vous demande ce que vous venez faire par ici. Vous remarquez que le soldat porte la vareuse rouge de l'uniforme des armées durenoraises, ce qui signifie que vous avez atteint la frontière du royaume. 11 vous faut à présent trouver le moyen de passer.",
       "Si vous souhaitez prétendre que vous êtes un marchand en route pour Port Bax, rendez-vous au 250. Si vous voulez essayer de le corrompre en lui donnant de l'or, rendez-vous au 68. Si vous pensez qu'il est préférable de lui montrer le Sceau d'Hammardal (en admettant qu'il soit toujours en votre possession), rendez-vous au 223.",
@@ -4227,6 +4228,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "233": {
     "id": "233",
+    "image": "/images/sections/book2_sect233.jpg",
     "text": [
       "« Nous allons à Ragadorn, nous devrions arriver là-bas vers midi, dit-il, le visage presque entièrement dissimulé sous son chapeau à larges bords, le billet coûte 3 Couronnes, mais si vous voulez voyager sur le toit, vous n'aurez qu'une seule couronne à payer. »",
       "Si vous souhaitez faire le voyage à l'intérieur de la diligence, donnez 3 Couronnes au cocher et rendez-vous au 37. Si vous préférez faire le trajet sur le toit, donnez-lui 1 Couronne et rendez-vous au 148.",
@@ -4249,6 +4251,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "234": {
     "id": "234",
+    "image": "/images/sections/book2_sect234.jpg",
     "text": [
       "Avant que vous ayez pu esquisser un geste oour vous défendre, le Monstre d'Enfer s'est jeté sur vous et vous tombez tous deux sur la chaussée en contrebas. Vous éprouverez peut-être quelque consolation en apprenant que votre mort a été soudaine et indolore.",
       "Vous vous êtes rompu le cou dans votre chute et vous n'aurez donc pas le désagrément de sentir les doigts décharnés du Monstre d'Enfer s'enfoncer dans votre gorge en vous déchirant la peau de leurs griffes pointues.",
@@ -4258,6 +4261,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "235": {
     "id": "235",
+    "image": "/images/sections/book2_sect235.jpg",
     "text": [
       "Lorsque vous atteignez le palier de l'étage suivant, la porte cède dans un grand fracas et la populace déchaînée entre en force. En haut des marches, un Sabre est accroché à côté d'une cheminée. Vous pouvez vous emparer de cette arme si vous le désirez.",
       "En jetant ensuite un coup d'œil autour de vous, vous vous apercevez qu'il n'y a qu'un seul moyen de sortir d'ici : sauter par la fenêtre pour atterrir sur la chaussée en contrebas. Si vous souhaitez sauter par la fenêtre, rendez-vous au 132.",
@@ -4276,6 +4280,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "236": {
     "id": "236",
+    "image": "/images/sections/book2_sect236.jpg",
     "text": [
       "La panique s'empare du navire. Saisis d'une véritable frénésie, les marins rassemblent tous les seaux et les couvertures qu'ils peuvent trouver pour combattre l'incendie. Les flammes jaillissent de l'écoutille et il faut plus d'une heure pour maîtriser le feu.",
       "Les dégâts sont considérables. Les vivres et les provisions d'eau douce ont été anéantis et la structure centrale du navire gravement endommagée. Le capitaine émerge alors de la cale enfumée et s'approche de vous, le visage noir de suie.",
@@ -4290,6 +4295,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "237": {
     "id": "237",
+    "image": "/images/sections/book2_sect237.jpg",
     "text": [
       "Les Zombies morts sont étendus à vos pieds. A présent, la peur que les soldats éprouvaient devant les morts vivants a fait place à la haine. Un chœur de cris de guerre retentit sur le pont et vous montez à l'abordage du vaisseau fantôme, suivis par les centaines de soldats ivres de rage.",
       "Les Zombies sont fauchés sous l'assaut comme des épis de blé par une faux. Puis soudain, une silhouette drapée dans une longue cape vous interdit le passage, brandissant dans sa main squelettique une épée à la lame recourbée.",
@@ -4310,6 +4316,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "238": {
     "id": "238",
+    "image": "/images/sections/book2_sect238.jpg",
     "text": [
       "Face au relais de diligence, une rue étroite mène à une maison de jeu sur la façade de laquelle est placardé cet avis: LES ARMES SONT INTERDITES A L'INTÉRIEUR DE CET ÉTABLISSEMENT La perspective de pouvoir gagner un peu d'or vous décide à y entrer sans attendre.",
       "Si vous avez des armes, vous devrez les déposer au vestiaire ; vous aurez le droit de les reprendre en quittant les lieux. En échange d'une Pièce d'Or, on vous donne un jeton d'argent qui vous permet d'entrer dans l'établissement.",
@@ -4334,6 +4341,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "239": {
     "id": "239",
+    "image": "/images/sections/book2_sect239.jpg",
     "text": [
       "Vous essayez d'appliquer la paume de vos mains sur la poitrine de l'homme blessé, mais les Squalls tirent sur les pans de votre cape pour vous éloigner de lui. Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-vous au 77.",
       "Sinon, il vous faudra attaquer les Squalls pour pouvoir ensuite vous occuper du blessé ; rendez-vous alors au 28."
@@ -4351,6 +4359,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "240": {
     "id": "240",
+    "image": "/images/sections/book2_sect240.jpg",
     "text": [
       "Après trois jours en mer durant lesquels il ne s'est rien passé, vous commencez à trouver le temps long. Si vous maîtrisez la Discipline Kaï de la Guérison, vous pouvez récupérer tous les points d'ENDURANCE que vous avez éventuellement perdus depuis le début de votre aventure.",
       "Vous retrouverez dans ce cas le total d'ENDURANCE dont vous disposiez au départ. Si vous ne maîtrisez pas cette Discipline, vous ne récupérerez que la moitié des points d'ENDURANCE perdus (arrondissez au chiffre supérieur si le nombre à diviser par deux est impair).",
@@ -4374,6 +4383,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "241": {
     "id": "241",
+    "image": "/images/sections/book2_sect241.jpg",
     "text": [
       "Le silence se fait dans la taverne lorsque l'homme que vous venez d'accuser se tourne vers vous. « Tu as la langue un peu trop prompte, étranger, dit-il d'un air menaçant, il serait temps de la couper avant qu'elle ne t'attire d'autres ennuis. »",
       "Il dégaine alors un Poignard à la lame recourbée et se jette sur vous. La foule des clients forme aussitôt un cercle autour de vous et il vous est désormais impossible de prendre la fuite. Il vous faut combattre cet homme jusqu'à la mort de l'un d'entre vous.",
