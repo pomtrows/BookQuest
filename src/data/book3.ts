@@ -1760,6 +1760,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "101": {
     "id": "101",
+    "image": "/images/sections/book3_sect101.jpg",
     "text": [
       "Vous avez de la chance, car les Bakanals ont pour particularité de dormir profondément et longtemps, parfois trois jours de suite lorsqu'ils ont fait un bon repas. Aussi n'avez-vous eu aucune difficulté à plonger la créature dans un sommeil éternel : le coup que vous lui avez porté l'a tuée sans qu'elle se rende compte de rien.",
       "Vous pouvez à présent quitter les lieux en vous rendant au 235."
@@ -1768,6 +1769,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "102": {
     "id": "102",
+    "image": "/images/sections/book3_sect102.jpg",
     "text": [
       "Un petit panneau à la base du pilier de gauche vient de coulisser, révélant un compartiment secret. A l'intérieur, vous découvrez une petite statuette : il s'agit d'une Effigie de pierre qui représente une étrange créature dotée de tentacules.",
       "Si vous souhaitez conserver cette Effigie, glissez-la dans votre poche et inscrivez-la sur votre Feuille d'Aventure dans la case Objets Spéciaux.",
@@ -1787,6 +1789,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "103": {
     "id": "103",
+    "image": "/images/sections/book3_sect103.jpg",
     "text": [
       "Le lendemain, un fort vent se lève en provenance du nord. Des heures durant, il vous souffle au visage sans un instant de répit. La banquise de Liouk se transforme peu à peu, au fur et à mesure de votre avance, en une masse de blocs de glace déchiquetés qui pointent leurs arêtes vers le ciel.",
       "Vous ne parvenez à progresser que lentement et avec difficulté. Vers midi, vous tremblez de froid, vos lèvres gercées saignent et les rafales de vent glacé vous ont recouvert des pieds à la tête d'une fine pellicule de neige. Vous dirigez votre traîneau vers un étroit passage qui marque la jonction entre la banquise et la plaine de Hrod.",
@@ -1810,6 +1813,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "104": {
     "id": "104",
+    "image": "/images/sections/book3_sect104.jpg",
     "text": [
       "Vous arrivez enfin devant une grande porte de pierre. A la différence des autres, celle-ci n'est pas actionnée par un levier mais vous remarquez en revanche une petite fente creusée dans le mur, juste à côté de la porte.",
       "Si vous possédez un Disque de Pierre Bleue, rendez-vous au 135.",
@@ -1824,6 +1828,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "105": {
     "id": "105",
+    "image": "/images/sections/book3_sect105.jpg",
     "text": [
       "Vous faites une chute d'une cinquantaine de mètres et vous tombez sur un énorme tas de neige poudreuse. Vous êtes secoué et vous avez le souffle coupé, mais vous n'êtes pas blessé. Il vous faut presque une demi-heure pour vous dégager de cette masse de neige et quand enfin vous en émergez, le spectacle qui s'offre à vos yeux vous laisse bouche bée.",
       "Une immense caverne s'étend devant vous ; de gigantesques stalactites de cristal pendent d'une voûte de glace et la neige fondante qui s'en égoutte peu à peu emplit l'espace d'une étrange musique. Vous êtes en train de contempler un monde inconnu que peu de Sommerlundois ont eu l'occasion de voir : vous venez en effet de tomber dans les Grottes de Kalte.",
@@ -1853,6 +1858,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "106": {
     "id": "106",
+    "image": "/images/sections/book3_sect106.jpg",
     "text": [
       "Lorsque vous franchissez l'ouverture pratiquée dans la porte, vous voyez trois Barbares des Glaces qui avancent vers vous le long du couloir. Ce sont des guerriers vêtus de fourrure et armés d'épées en os qui sont chacune incrustée de dents pointues sur toute la longueur de la lame.",
       "En dépit de la rapidité de leur attaque, vous avez le temps de remarquer un étrange détail : leurs yeux sont complètement blancs et dépourvus de pupilles. Ils vous attaquent comme un seul homme, portant leurs coups et évitant les vôtres d'un même mouvement.",
@@ -1871,6 +1877,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "107": {
     "id": "107",
+    "image": "/images/sections/book3_sect107.jpg",
     "text": [
       "Lorsque vous jetez un regard dans la vaste caverne de glace, un peu plus loin, vous apercevez avec horreur trois grosses créatures à l'aspect repoussant qui sont en train de se battre en échangeant des coups de griffes, Elles se disputent une carcasse déchirée, étalée sur le sol.",
       "Ces créatures sont des Languabarbs, de sauvages 1 prédateurs du pays de Kalte.",
@@ -1892,6 +1899,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "108": {
     "id": "108",
+    "image": "/images/sections/book3_sect108.jpg",
     "text": [
       "Vous voyez passer la patrouille devant vous et vous attendez que le bruit de pas se soit éloigné pour monter l'escalier. Mais soudain, un cri retentit, vous faites volte-l.ice et vous apercevez la silhouette d'un Barbare des Glaces qui vient d'apparaître dans l'obscurité.",
       "Il se précipite sur vous en brandissant une lance à la pointe d'os. BARBARE DES GLACES HABILETÉ : 16 ENDURANCE : 24 Vous avez le droit de fuir après le premier Assaut en montant l'escalier quatre à quatre.",
@@ -1923,6 +1931,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "109": {
     "id": "109",
+    "image": "/images/sections/book3_sect109.jpg",
     "text": [
       "Votre attaque est rapide et mortelle, et les Languabarbs ne s'éveilleront jamais de leur sommeil. Vous fouillez rapidement les lieux, mais vous ne trouvez rien d'intéressant. Un rugissement lointain retentit alors et vous estimez préférable de partir au plus vite en empruntant le tunnel orienté au nord.",
       "Rendez-vous au 235."
@@ -1936,6 +1945,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "110": {
     "id": "110",
+    "image": "/images/sections/book3_sect110.jpg",
     "text": [
       "I a porte de pierre s'ouvre en grinçant sur une petite salle faiblement éclairée. Un monolithe noir de 2,50 mètres environ se dresse devant vous. Il est couvert d'étranges symboles gravés à sa surface. Vous vous en approchez pour l'examiner de plus près lorsque, soudain, la porte commence à se refermer derrière vous.",
       "Or, il n'y a pas de levier de ce côté-ci du mur.",
