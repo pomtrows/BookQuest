@@ -6211,6 +6211,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "343": {
     "id": "343",
+    "image": "/images/sections/book2_sect343.jpg",
     "text": [
       "Vous avez soudain la certitude que la victime désignée de ce prétendu accident n'était autre que vous-même. L'un de vos compagnons de voyage a l'intention de vous tuer ! Rendez-vous au 168."
     ],
@@ -6223,6 +6224,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "344": {
     "id": "344",
+    "image": "/images/sections/book2_sect344.jpg",
     "text": [
       "Votre Sixième Sens vous révèle que ces étrangers sont des Monstres d'Enfer, les féroces serviteurs des Maîtres des Ténèbres, et qu'ils ont pour mission de vous assassiner. Ces immondes créatures ont le pouvoir de prendre à leur guise une apparence humaine et sont par ailleurs invulnérables aux armes habituelles tout autant qu'à la Puissance Psychique.",
       "Vous criez à Rhygar et à ses hommes de prendre garde à ces monstres, puis vous vous enfuyez vers la forêt. Rendez- vous au 183."
@@ -6236,6 +6238,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "345": {
     "id": "345",
+    "image": "/images/sections/book2_sect345.jpg",
     "text": [
       "Une bataille féroce s'est engagée sur le navire tandis que les Gloks s'efforcent de prendre le contrôle du Sceptre Vert. Perchés en haut des mâts, les Kraans sont en train de déchirer les voiles avec leurs serres et leurs dents tranchantes comme des rasoirs ; pendant ce temps, les Bêtalzans retournent vers la Pointe des Naufragés pour aller remplir leurs filets d'autres Gloks avides de participer aux combats.",
       "Bientôt, une silhouette menaçante apparaît sur le pont jonché de cadavres. C'est un DRAKKARIM, un cruel guerrier à la solde des Maîtres des Ténèbres. Il taille en pièces quiconque se trouve sur son chemin, marin ou Glok, et s'avance vers vous en brandissant un glaive d'un noir de jais.",
@@ -6255,6 +6258,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "346": {
     "id": "346",
+    "image": "/images/sections/book2_sect346.jpg",
     "text": [
       "Le cocher hoche la tête et vous rend le billet. L'auberge est bien chauffée, mais pauvrement meublée. Vous allez devoir prendre ici un repas qui vous coûtera 1 Couronne, à moins que vous n'ayez de quoi manger dans votre Sac à Dos.",
       "Si vous ne possédez ni or ni nourriture, vous perdez 3 points d'ENDURANCE. Si vous maîtrisez la Discipline Kaï de la Chasse, vous ne pourrez pas vous en servir tant que vous traverserez le Pays Sauvage, car c'est un désert entièrement aride où ne vivent que des Squalls, des créatures chétives et couardes apparentées aux Gloks et tout à fait impropres à la consommation.",
@@ -6273,6 +6277,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "347": {
     "id": "347",
+    "image": "/images/sections/book2_sect347.jpg",
     "text": [
       "Au bout de cette rue se trouve une grande écurie. A votre droite, la populace déchaînée est en train de fouiller les boutiques et les maisons pour essayer de vous retrouver. Soudain, un homme vous aperçoit et donne l'alerte. « Il est là ! s'écrie-t-il, c'est lui, c'est l'assassin ! »",
       "Vous n'avez pas le temps de réfléchir : vous vous précipitez à l'intérieur de l'écurie et vous détachez un cheval ; vous bondissez aussitôt sur sa croupe et vous filez au galop. Quelqu'un vous lance alors une hache qui vous atteint à l'épaule en n'occasionnant cependant qu'une simple égratignure.",
@@ -6287,6 +6292,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "348": {
     "id": "348",
+    "image": "/images/sections/book2_sect348.jpg",
     "text": [
       "L'homme cesse de sourire et une expression de mépris apparaît sur son visage. D'un mouvement rapide, il s'éloigne de la table. « Peut-être que ni vous ni moi ne sommes celui que nous prétendons être, mais qu'importe, vous ne vivrez pas assez longtemps pour découvrir qui je suis ! » lance-t-il avec hargne.",
       "Vous entendez alors une porte s'ouvrir à la volée derrière vous. Vous faites aussitôt volte-face et vous voyez trois BRIGANDS s'avancer dans votre direction. Chacun d'eux est armé d'un cimeterre et vous allez devoir les combattre en les considérant comme un seul et même adversaire.",
@@ -6310,6 +6316,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "349": {
     "id": "349",
+    "image": "/images/sections/book2_sect349.jpg",
     "text": [
       "Vous avez parcouru environ 5 km lorsque vous apercevez au loin une rangée de chariots. Ils ont été placés en travers de la chaussée pour interdire le passage, et des soldats en uniforme rouge ont pris position sur les toits de chaque véhicule.",
       "Une foule considérable est rassemblée derrière ce barrage et vous entendez la rumeur de conversations animées, répercutées en écho le long du tunnel. Tandis que vous vous approchez, le silence se fait soudain et tous les regards se tournent dans votre direction.",
@@ -6329,6 +6336,7 @@ export const storyDataBook2: Record<string, Section> = {
   },
   "350": {
     "id": "350",
+    "image": "/images/sections/book2_sect350.jpg",
     "text": [
       "La ville de Holmgard a beaucoup souffert depuis votre départ. Le long des quais, nombre de maisons et de boutiques ne sont plus que cendres désormais. L'armée maléfique des Maîtres des Ténèbres encercle les murailles et leurs effroyables machines de guerre maintiennent la cité sous un déluge de feu qui déchire la nuit sans relâche.",
       "Les habitants épuisés et affamés combattent du mieux qu'ils peuvent les incendies qui se déclarent un peu partout dans la ville sous l'effet des projectiles enflammés. Lorsqu'elle entre dans le port, la flotte durenoraise est tout d'abord accueillie par des cris de désespoir; les assiégés ont cru en effet qu'il s'agissait là de vaisseaux ennemis venus en renfort.",
