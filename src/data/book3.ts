@@ -4617,6 +4617,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "262": {
     "id": "262",
+    "image": "/images/sections/book3_sect262.jpg",
     "text": [
       "L'enfant vous donne des coups de pied et vous mord libres en se débattant comme un animal sauvage.",
       "Utilisez la Table de Hasard pour obtenir un chiffre qui vous indiquera si vous allez parvenir à le maîtriser.",
@@ -4642,6 +4643,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "263": {
     "id": "263",
+    "image": "/images/sections/book3_sect263.jpg",
     "text": [
       "Le passage étant étroit, il vous faut combattre I Languabarbs un par un. Leurs langues venimeus. pointées sur vous, ils s'apprêtent à vous piquer. HABILETÉ ENDURANCE Premier LANGUABARB 11 35 Deuxième LANGUABARB 10 32 Troisième LANGUABARB 8 30"
     ],
@@ -4649,6 +4651,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "264": {
     "id": "264",
+    "image": "/images/sections/book3_sect264.jpg",
     "text": [
       "Vous entrez dans une grande salle mal éclairée où règne un froid glacial : c'est un temple secret construit là par les Anciens. Le sol est recouvert de dalles de quartz et de granité; des pierres et des morceaux de glace sont répandus çà et là. Délimitée par deux rangées de hauts piliers, une allée mène à un autel sacrificatoire aménagé dans une alcôve du mur situé au nord.",
       "Sur cet autel repose une étrange statue qui semble avoir été sculptée clans de la pierre blanche et lisse. A la tête et aux pieds de la statue, se dressent des piliers noirs encastrés dans la pierre de l'autel. A la gauche de la statue, un escalier monte vers une arcade plongée dans l'ombre.",
@@ -4673,6 +4676,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "265": {
     "id": "265",
+    "image": "/images/sections/book3_sect265.jpg",
     "text": [
       "Cette étrange créature est un Serpent de Cristal, un nécrophage se nourrissant des restes d'animaux qui ont eu l'imprudence d'entrer dans sa caverne. Sa peau tri s dure est presque transparente et l'on voit ses organe» palpiter à l'intérieur de son corps.",
       "Le monstre ouvre sa gueule de cristal, laissant apparaître deux rangées île dents acérées. Le dos plaqué contre la porte de pieric, vous n'avez aucune possibilité de fuite et il vous faut combattre la créature jusqu'à la mort. Le Serpent ilo Cristal est invulnérable à la Discipline Kaï de l.i Puissance Psychique.",
@@ -4694,6 +4698,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "266": {
     "id": "266",
+    "image": "/images/sections/book3_sect266.jpg",
     "text": [
       "Vous essayez désespérément de vous libérer le pied, m,m le traîneau bascule déjà dans le vide. Dans un dcrnln effort, vous parvenez enfin à vous dégager, mais il eil trop tard et vous tombez dans la crevasse en entendant les cris horrifiés de vos guides.",
       "Rendez-vous au 21."
@@ -4707,6 +4712,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "267": {
     "id": "267",
+    "image": "/images/sections/book3_sect267.jpg",
     "text": [
       "Loi-Kymar montre soudain la poche dans laquelle vous avez rangé la Pierre Rayonnante.",
       "« Pourquoi donc conservez-vous une pierre maudite, Seigneur Kaï ? Ignorez-vous les dangers qu'elle présente ?» Vous retirez aussitôt la Pierre de votre poche et vous la montrez au magicien.",
@@ -4718,6 +4724,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "268": {
     "id": "268",
+    "image": "/images/sections/book3_sect268.jpg",
     "text": [
       "Vous parvenez à briser la cire sans casser la fiole. Il ne vous reste plus qu'à déboucher celle-ci: le liquide noir dégage alors une odeur forte et âcre.",
       "Si vous êtes déjà allé dans le Cimetière des Anciens, rendez-vous au 177 Sinon, vous vous hâtez de reboucher la fiole. Cette odeur en effet vous donne la nausée et vous ne souhaitez pas conserver ce liquide douteux. Retourne,-au 10 et faites un nouveau choix."
@@ -4731,6 +4738,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "269": {
     "id": "269",
+    "image": "/images/sections/book3_sect269.jpg",
     "text": [
       "Vous découvrez un tunnel, de l'autre côté du gouffre, et vous le suivez sur des kilomètres. Vous arrivez en! m dans une immense caverne dont la voûte s'élève à 150 mètres au-dessus de votre tête. Un vent glacial, s'infiltrant à travers les nombreuses fissures de cette voûte, souffle dans la caverne.",
       "Si vous voulez essayer de grimper jusqu'à la voûte pour tenter de vous glissez par l'une de ces fissures et sortir ainsi à l'air libre, rendez-vous au 335.",
@@ -4749,6 +4757,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "270": {
     "id": "270",
+    "image": "/images/sections/book3_sect270.jpg",
     "text": [
       "Les Barbares des Glaces sont pris au dépourvu et vous parvenez à en tuer un avant que l'autre ait eu le temps de réagir. Votre adversaire n'a pas d'arme, mais il est décidé à vous combattre avec acharnement.",
       "BARBARE DES GLACES HABILETÉ : 14 ENDURANCE : 25 Si vous êtes vainqueur, rendez-vous au 340."
@@ -4769,6 +4778,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "271": {
     "id": "271",
+    "image": "/images/sections/book3_sect271.jpg",
     "text": [
       "Votre attaque a fait perdre l'équilibre à l'éclaireur Barbare qui tombe en soulevant une gerbe de neige et de débris provenant de ses skis brisés sous le choc. L'enfant emmitouflé de fourrure est projeté hors du sac à dos de son père et roule sur lui-même en venant s'immobiliser face contre terre à moins de 3 mètres de vous.",
       "L'éclaireur Barbare est quelque peu ébranlé par sa chute, mais il essaie déjà de se relever.",
@@ -4788,6 +4798,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "272": {
     "id": "272",
+    "image": "/images/sections/book3_sect272.jpg",
     "text": [
       "Tandis que l'immonde Akranionor meurt à vos pieds dans un ultime tremblement, Vonotar interrompt son attaque psychique et va se réfugier derrière le Trône du Brumalmarc. Loi-Kymar est commotionné, mais il a survécu à l'épreuve. Il vous rejoint alors au bord du fossé dans lequel il jette une poignée d'herbes.",
       "Quelques secondes plus tard, un enchevêtrement de plantes grimpantes apparaît, formant un pont qui permet de passer de l'autre côté. Vous vous précipitez vers la plateforme, et vous êtes arrivé à mi-chemin lorsque Vonotar se montre à nouveau, brandissant une baguette de cristal.",
@@ -4808,6 +4819,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "273": {
     "id": "273",
+    "image": "/images/sections/book3_sect273.jpg",
     "text": [
       "Vous allez voyager en traîneau jusqu'à Ikaya. Vous disposez de deux traîneaux chargés de vivres et de matériel et tirés par des attelages de chiens Kanu. Il s'agit d'une race de chiens de traîneaux particulièrement robustes que l'on élève uniquement dans les terres de Kalte.",
       "Leur épaisse fourrure fauve et leur puissant poitrail, ainsi que leur ardeur bien connue les rendent parfaitement aptes à accomplir la rude tâche qui les attend. Vos trois guides, Irian, Fenor et Dyce, sont tous des trappeurs expérimentés. Les techniques de survie dans les déserts glacés n'ont plus de secrets pour eux et ils connaissent bien les multiples dangers que recèle le pays de Kalte.",
@@ -4831,6 +4843,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "274": {
     "id": "274",
+    "image": "/images/sections/book3_sect274.jpg",
     "text": [
       "Vous examinez attentivement l'autel et les deux piliers noirs qui se dressent à sa surface. L'éclair qui avait jailli entre ces deux piliers, les reliant par une mystérieuse énergie, s'est éteint au moment précis où vous avez plongé le Glaive de Sommer dans le cyclone démoniaque.",
       "Vous remarquez à présent que deux boutons de pierre dépassent de la surface de l'autel, à l'endroit où la statue était couchée.",
