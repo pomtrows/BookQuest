@@ -4366,6 +4366,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "247": {
     "id": "247",
+    "image": "/images/sections/book3_sect247.jpg",
     "text": [
       "Le vieil homme relève lentement la tête. 11 a les yeux fatigués et meurtris, et sa longue barbe grise est tachée de sang caillé. Avec difficulté, il se remet sur pied et scrute l'obscurité au-dessus de lui.",
       "« Qui se cache là-haut ? Est-ce toi, Vonotar ? Montre-toi, misérable ver de terre ou alors, va-t-en. Je n'ai pas peur de toi et sache que tu m'inspires le plus profond dégoût. Jamais tu ne parviendras à me briser, traître infâme ! » crie-t-il en brandissant un poing décharné.",
@@ -4377,6 +4378,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "248": {
     "id": "248",
+    "image": "/images/sections/book3_sect248.jpg",
     "text": [
       "Vous êtes arrivé à une centaine de mètres du défilé lorsqu'un vertige vous saisit et vous fait perdre l'équilibre. Vous essayez désespérément de vous accrocher à la paroi rocheuse, mais vous avez les mains engourdies par le froid et vous tombez dans la vallée.",
       "Votre corps, parfaitement conservé dans la glace, sera découvert par une équipe d'explorateurs dans environ deux mille ans, à quelques années près. Il va sans dire que votre mission s'achève ici en même temps que votre vie."
