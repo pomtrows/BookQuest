@@ -4181,6 +4181,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "236": {
     "id": "236",
+    "image": "/images/sections/book3_sect236.jpg",
     "text": [
       "Dès que le Bracelet d'Or se referme autour de votre poignet, une douleur fulgurante vous déchire la tête. Vous êtes soumis à l'attaque d'une puissante Force Mentale qui essaie d'annihiler votre volonté.",
       "Si vous maîtrisez la Discipline Kaï du Bouclier Psychique, rendez-vous immédiatement au 345. Sinon, rendez- vous au 9."
@@ -4189,6 +4190,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "237": {
     "id": "237",
+    "image": "/images/sections/book3_sect237.jpg",
     "text": [
       "Vous arrivez bientôt au pied d'un large escalier de pierre qui monte en direction du nord vers un palier situé à une dizaine de mètres au-dessus de vous. Chaque marche a été légèrement creusée en son milieu par les pieds des innombrables créatures qui ont jadis habité les étages inférieurs de la forteresse.",
       "Tandis que vous escaladez ces mêmes marches, vous vous demandez pendant combien de temps encore vous pourrez éviter que votre présence ne soit découverte. Jusqu'à présent vous n'avez pas rencontré âme qui vive dans ces couloirs déserts. Pour l'instant, vous bénéficiez de l'effet de surprise et vous priez le ciel que Vonotar ne soupçonne pas la présence d'un intrus dans les profondeurs de sa propre forteresse.",
@@ -4209,6 +4211,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "238": {
     "id": "238",
+    "image": "/images/sections/book3_sect238.jpg",
     "text": [
       "Les deux jours qui suivent sont un véritable enfer. Des blocs de glace se dressent continuellement sur votre chemin, vous forçant à descendre des traîneaux et à les manœuvrer à la main pour parvenir à passer. Vous avancez lentement et les chiens Kanu sont nerveux, prenant peur à la moindre occasion.",
       "Souvent, les traîneaux se renversent, répandant leur chargement sur le sol. Un brouillard de neige fine réduit la visibilité, provoquant par deux fois la chute de Fenor et d'Irian dans des crevasses ; heureusement, la corde de sécurité permet de les ramener sans dommage à la surface.",
@@ -4226,6 +4229,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "239": {
     "id": "239",
+    "image": "/images/sections/book3_sect239.jpg",
     "text": [
       "Vous perdez très vite conscience. Vous venez en effet de succomber au pouvoir terrifiant d'une ancienne Pierre Maudite, un pouvoir auquel nul être vivant ne peut survivre. La mort est inévitable et ne tardera plus. Peut-être éprouverez-vous malgré tout quelque consolation à apprendre que votre cadavre sera bientôt découvert par un Barbare des Glaces qui l'amènera devant Vonotar (en même temps que la Pierre Maudite).",
       "Le traître éprouvera alors tant de joie à vous voir mort qu'il ordonnera que votre corps soit conservé dans un bloc de glace et exposé dans sa salle du Trône, comme un trophée. Mais les radiations de la Pierre Maudite, restée dans votre poche, atteindront le sorcier maléfique en dépit de la couche de glace et Vonotar devra subir de longues souffrances avant de mourir à son tour.",
@@ -4235,6 +4239,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "240": {
     "id": "240",
+    "image": "/images/sections/book3_sect240.jpg",
     "text": [
       "Vous faites une chute de plus de 10 mètres et vous atterrissez sur le dos au fond de la crevasse, au milieu d'un tas de neige poudreuse. Vous êtes entouré de stalagmites et de pointes de glace qui hérissent les parois, mais par miracle vous êtes indemne.",
       "Quelque peu secoué par le choc, mais reconnaissant d'être toujours en vie, vous vous relevez en vous accrochant à une stalagmite. Vous vous rendez compte alors que vous voyez à peu près clairement autour de vous : une faible lumière filtre en effet à travers une ouverture située à votre gauche.",
@@ -4250,6 +4255,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "241": {
     "id": "241",
+    "image": "/images/sections/book3_sect241.jpg",
     "text": [
       "Le Barbare des Glaces n'a pas eu le temps de se relever lorsque vous l'attaquez; il est encore à genoux et incapable de réagir pendant les deux premiers Assauts. En conséquence, vous ne perdrez aucun point d'ENDURANCE au cours de ces deux premiers Assauts, quelles que soient les indications données par la Table des Coups Portés.",
       "Votre adversaire, en revanche, perdra tous les points d'ENDURANCE indiqués par cette même Table.",
@@ -4271,6 +4277,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "242": {
     "id": "242",
+    "image": "/images/sections/book3_sect242.jpg",
     "text": [
       "La porte de pierre est parfaitement lisse. Impossible de découvrir ni gonds, ni serrure, ni poignée de ce côté-ci du mur.",
       "Si vous disposez du Glaive de Sommer, rendez-vous au 42.",
@@ -4286,6 +4293,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "243": {
     "id": "243",
+    "image": "/images/sections/book3_sect243.jpg",
     "text": [
       "Vous bénéficiez d'une chance exceptionnelle. Vous avez en effet évité de justesse une crevasse profonde que l'obscurité vous cachait. Vous poursuivez donc votre chemin en direction de la lueur sans vous préoccuper des bleus et contusions qui se multiplient sur vos tibias et vos genoux à mesure que vous vous cognes contre les blocs de glace dressés sur votre passage.",
       "Rendez-vous au 235."
@@ -4299,6 +4307,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "244": {
     "id": "244",
+    "image": "/images/sections/book3_sect244.jpg",
     "text": [
       "Vous vous approchez de l'autel à pas prudents. La Statue est froide et apparemment inanimée, mais vous sentez que quelqu'un, ou quelque chose, est enfermé à l'intérieur. Vous avez même l'impression d'entendre des cris désespérés qui implorent la liberté.",
       "Si vous souhaitez fracasser la Statue à l'aide d'une arme, rendez-vous au 150.",
@@ -4317,6 +4326,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "245": {
     "id": "245",
+    "image": "/images/sections/book3_sect245.jpg",
     "text": [
       "La bête, avant de mourir, pousse un dernier cri d'agonie et une odeur pestilentielle vous frappe aussitôt les narines. Même les chiens Kanu froncent le museau en signe de dégoût et se détournent pour essayer d'échapper à l'effroyable puanteur. Irian s'approche alors du cadavre avec un couteau à la main et entreprend de dépecer la créature.",
       "Vous faites une grimace en le voyant découper la peau de l'animal, de la gorge au ventre pour l'arracher ensuite de sa chair. Mais vous n'êtes pas au bout de votre écœurement : Irian, en effet, plonge les mains dans la carcasse béante et en retire une graisse épaisse dont il s'enduit le visage et le corps.",
@@ -4337,6 +4347,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "246": {
     "id": "246",
+    "image": "/images/sections/book3_sect246.jpg",
     "text": [
       "Vous abaissez le levier et la porte de pierre coulisse latéralement, révélant une vaste grotte froide, sale et vide, à l'exception d'un coffre de granité posé contre le mur situé à l'est.",
       "Si vous souhaitez examiner ce coffre, rendez-vous au 45.",
