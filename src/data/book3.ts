@@ -4387,6 +4387,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "249": {
     "id": "249",
+    "image": "/images/sections/book3_sect249.jpg",
     "text": [
       "Vous sentez qu'une patrouille de soldats s'approche, venant du sud. Vous empruntez donc le couloir orienté au nord en vous rendant au 104."
     ],
@@ -4394,6 +4395,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "250": {
     "id": "250",
+    "image": "/images/sections/book3_sect250.jpg",
     "text": [
       "La fiole se fracasse entre vos mains et le liquide noir se répand sur la table de pierre. Maudissant votre malchance, vous reniflez prudemment quelques gouttes de la potion qui sont restées dans un fragment de verre incurvé.",
       "Si vous avez déjà eu l'occasion de traverser le Cimetière des Anciens, rendez-vous au 77. Sinon, l'odeur âcre de ce liquide ne vous inspire guère confiance et vous vous débarrassez de la fiole brisée. Revenez ensuite au 10 pour faire un nouveau choix."
@@ -4407,6 +4409,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "251": {
     "id": "251",
+    "image": "/images/sections/book3_sect251.jpg",
     "text": [
       "Dans l'après-midi, votre voyage en direction du glacier devient peu à peu de plus en plus pénible. Les vaisseaux sanguins de vos yeux se mettent à enfler et bientôt vous avez l'impression qu'on vous pique les globes oculaires à l'aide d'aiguilles chauffées au rouge ou que vos paupières sont couvertes de sable sur leur face intérieure.",
       "Fenor est le premier à s'apercevoir de ce qui vous arrive et il fait arrêter les traîneaux.",
@@ -4425,6 +4428,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "252": {
     "id": "252",
+    "image": "/images/sections/book3_sect252.jpg",
     "text": [
       "« Ton heure est venue ! » crie une voix, mais c'est celle de Loi- Kymar et non celle de Vonotar. Une touffe d'herbes jetée dans les airs vient frapper le mage félon en pleine poitrine. Un instant plus tard, l'infâme traître bossu se trouve empêtré dans un enchevêtrement de plantes qui l'emprisonnent de la tête aux pieds.",
       "Loi-Kymar parvient à son tour à franchir le fossé et vous rejoint sur la plate-forme.",
@@ -4444,6 +4448,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "253": {
     "id": "253",
+    "image": "/images/sections/book3_sect253.jpg",
     "text": [
       "Le Languabarb vous heurte avec tant de force que vous êtes violemment projeté en arrière, sur la mince couche de glace qui recouvre le lac. Assommé pour le compte, vous ne sentez même pas que des dents pointues s'enfoncent dans votre chair. Qui vous a dévoré 1 Le Languabarb, ou la créature du lac dont vous aviez aperçu la silhouette 1 Vous ne le saurez jamais.",
       "La seule chose certaine, c'est que votre mission s'achève ici en même temps que votre vie."
@@ -4452,6 +4457,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "254": {
     "id": "254",
+    "image": "/images/sections/book3_sect254.jpg",
     "text": [
       "Vous découvrez une autre porte de pierre dans le mur ouest du couloir. A travers un judas aménagé en son centre, vous apercevez, de l'autre côté, une cellule. Un vieil homme est recroquevillé dans un coin de la prison, les cheveux et le visage souillés de sang et de crasse.",
       "Sa toge bleue est si sale qu'on ne voit presque plus les croissants de lune et les étoiles dont l'étoffe est brodée.",
@@ -4471,6 +4477,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "255": {
     "id": "255",
+    "image": "/images/sections/book3_sect255.jpg",
     "text": [
       "La mise en pratique de la Discipline Kaï de l'Orientation vous permet de savoir que le tunnel de gauche est orienté au nord tandis que celui de droite mène vers l'est. Or, Ikaya se trouve à environ 80 kilomètres en direction du nord.",
       "Si vous souhaitez prendre le tunnel de gauche, rendez-vous au 125.",
@@ -4489,6 +4496,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "256": {
     "id": "256",
+    "image": "/images/sections/book3_sect256.jpg",
     "text": [
       "La porte claque dans votre dos, vous interdisant désormais de revenir dans le couloir. Peu à peu, vous sentez le sol vibrer, mais cette trépidation n'est que de courte durée : dès qu'elle a cessé, vous entendez un faible déclic et vous voyez aussitôt une fissure apparaître sur le monolithe noir.",
       "La fissure est visible tout autour du bloc de pierre et elle s'élargit de plus en plus.",
@@ -4508,6 +4516,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "257": {
     "id": "257",
+    "image": "/images/sections/book3_sect257.jpg",
     "text": [
       "Un frisson vous parcourt l'échiné tandis que les cris de Dyce s'évanouissent à mesure qu'il tombe dans la gorge. Vous scrutez encore l'obscurité du gouffre lorsqu'Irian s'écrie soudain: « Là !... là-bas ! Je suis sûr que j'ai vu quelque chose. » Vous vous tournez vers lui pour constater qu'il pointe l'index non pas vers le fond de la gorge, mais en direction de l'ouest.",
       "« Regardez ! Là-bas ! » dit à son tour Fenor qui montre une lointaine hauteur. Vous apercevez alors deux guerriers vêtus de fourrure, debout au sommet d'un gros bloc de glace. Ils regardent dans votre direction, alertés sans nul doute par les hurlements de Dyce.",
@@ -4528,6 +4537,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "258": {
     "id": "258",
+    "image": "/images/sections/book3_sect258.jpg",
     "text": [
       "La sueur perle à votre front tandis que vous vous concentrez pour essayer de vous protéger contre cette attaque psychique. Votre agresseur, quel qu'il soit, est un adversaire redoutable et vous êtes conscient qu'il va falloir vous débarrasser du Bracelet si vous voulez survivre à l'épreuve de ce combat mental.",
       "Mais, pour pouvoir ôter le Bracelet d'Or de votre poignet, vous allez devoir pendant un instant relâcher votre concentration. Votre Bouclier Psychique, dès lors, ne vous protégera plus.",
@@ -4544,6 +4554,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "259": {
     "id": "259",
+    "image": "/images/sections/book3_sect259.jpg",
     "text": [
       "Soudain, Fenor se relève d'un bond et saisit son épée.",
       "« C'est un Languabarb ! s'écrie-t-il. Vite ! prenez vos armes ou nous sommes perdus. » Les autres se hâtent d'empoigner leurs armes tandis que Fenor disparaît au-dehors. Presque immédiatement, un hurlement de douleur retentit et quelque chose se trouve violemment projeté contre la toile de la tente qui s'écroule aussitôt sous le choc.",
@@ -4568,6 +4579,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "260": {
     "id": "260",
+    "image": "/images/sections/book3_sect260.jpg",
     "text": [
       "La surprise de votre attaque vous permet de frapper par deux fois le Barbare des Glaces avant qu'il ait eu le temps de réagir. Vous ne perdrez donc aucun point d'ENDURANCE au cours des deux premiers Assauts de ce combat, quelles que soient les indications qui vous seront données par la Table des Coups Portés.",
       "Le Barbare, en revanche, perdra les points d'ENDURANCE indiqués par cette même Table. Si, lors du troisième Assaut, votre adversaire est toujours vivant, il dégainera une épée en os et vous attaquera à son tour. Le combat se déroulera alors à la manière habituelle.",
@@ -4590,6 +4602,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "261": {
     "id": "261",
+    "image": "/images/sections/book3_sect261.jpg",
     "text": [
       "Lorsque vous arrivez au bas des marches, vous trébuchez et vous tombez en vous écorchant le genou. Étalé de toul votre long sur le sol de pierre, vous remarquez alors une ouverture dans le mur de gauche : il s'agit d'une porto habilement dissimulée parmi les sculptures contournées qui ornent la paroi.",
       "En y regardant de plus près, vous découvrez un petit levier que vous tirez aussitôt.",
