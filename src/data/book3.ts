@@ -4869,6 +4869,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "275": {
     "id": "275",
+    "image": "/images/sections/book3_sect275.jpg",
     "text": [
       "Le tunnel, étroit et bas de plafond, descend en pente douce vers une caverne d'où jaillit une lumière. Lorsque vous arrivez au bout du passage, vous jetez un regard prudent à l'intérieur de cette grotte, de peur que votre arrivée ne dérange quelqu'un ou quelque chose qu'il vaudrait mieux laisser tranquille.",
       "Vous avez eu raison d'être prudent car deux grandes créatures à l'épaisse fourrure sont couchées au milieu de cet espace glacé. Les débris d'une carcasse déchiquetée sont répandus sur la neige autour des deux énormes bêtes.",
@@ -4889,6 +4890,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "276": {
     "id": "276",
+    "image": "/images/sections/book3_sect276.jpg",
     "text": [
       "Vous arrivez bientôt au croisement : là, le couloir dans lequel vous vous trouvez aboutit à un autre passage orienté est-ouest.",
       "Si vous souhaitez aller vers l'est, rendez-vous au 349.",
@@ -4913,6 +4915,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "277": {
     "id": "277",
+    "image": "/images/sections/book3_sect277.jpg",
     "text": [
       "Vous vous enfuyez à toutes jambes en revenant sur vos pas, mais les Languabarbs sont familiers des lieux et ils gagnent du terrain. Lorsque vous atteignez la cascade gelée, vous remarquez qu'un gros bloc rocheux aux couleurs argentées forme saillie au-dessus de l'entrée de la grotte.",
       "Si vous possédez une arme, vous pouvez essayer de faire tomber ce roc pour obstruer le passage ; rendez- vous pour cela au 142.",
@@ -4922,6 +4925,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "278": {
     "id": "278",
+    "image": "/images/sections/book3_sect278.jpg",
     "text": [
       "Le premier coup que vous lui portez fracasse le squelette en projetant ses os alentour. Il ne s'agissait que des restes tout à fait inoffensifs d'un ancien gardien de tombeau. En examinant l'épée de plus près, vous vous apercevez que sa couleur noire est simplement due à la rouille qui recouvre sa lame.",
       "Vous abaissez votre arme et vous montez l'escalier à pas lents.",
@@ -4936,6 +4940,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "279": {
     "id": "279",
+    "image": "/images/sections/book3_sect279.jpg",
     "text": [
       "Les Bakanals sont réputés pour leur extraordinaire capacité de sommeil : ils peuvent parfois dormir trois jours de suite après avoir fait un copieux repas. Et, à en juger par la quantité d'os fraîchement rongés qui sont répandus sur le sol, ce Bakanal ne se réveillera probablement pas avant plusieurs heures.",
       "Vous pouvez donc passer sans danger devant la créature et quitter les lieux.",
@@ -4950,6 +4955,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "280": {
     "id": "280",
+    "image": "/images/sections/book3_sect280.jpg",
     "text": [
       "La Clé est recouverte d'un suc digestif particulièrement acide qui transperce vos moufles et vous brûle les doigts. Vous perdez 1 point d'ENDURANCE. Lâchant aussitôt la Clé, vous plongez vos mains dans la neige pour calmer la douleur.",
       "Si vous tenez quand même à conserver cette Clé, essuyez-la dans la neige avant de la glisser dans votre poche, et inscrivez-la sur votre Feuille d'Aventure dans la case Objets Spéciaux. Il vous faut à présent trouver le moyen d'ouvrir la porte de la forteresse.",
@@ -4965,6 +4971,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "281": {
     "id": "281",
+    "image": "/images/sections/book3_sect281.jpg",
     "text": [
       "Vous vous enfouissez le nez dans votre manche et vous vous détournez de la carcasse. Irian a repris connaissance et il se hâte de plonger à son tour les mains dans l'huile de Bakanal dont il s'enduit également le corps. Le jour tombe vite et vous décidez d'établir votre campement ici même.",
       "Un repas est bientôt préparé et, après avoir mangé, vous vous portez volontaire pour monter la garde au cas où des Bakanals reviendraient. Vous préférez de beaucoup, en effet, passer une nuit sans dormir en bravant le souffle du vent plutôt que de dormir sous la tente, dans l'effroyable odeur d'huile de Bakanal que dégagent vos guides.",
@@ -4979,6 +4986,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "282": {
     "id": "282",
+    "image": "/images/sections/book3_sect282.jpg",
     "text": [
       "Le Barbare des Glaces était armé d'une Lance que vous pouvez vous approprier si vous le désirez. En fouillant le cadavre, vous découvrez un étrange Disque de Pierre Bleue.",
       "Si vous souhaitez conserver ce Disque de Pierre Bleue, glissez-le dans votre poche et inscrivez-le sur votre Feuille d'Aventure, dans la case Objets Spéciaux. Une fois parvenu en haut de l'escalier, vous pouvez prendre à gauche, en direction du nord, en vous rendant au 104.",
@@ -4988,6 +4996,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "283": {
     "id": "283",
+    "image": "/images/sections/book3_sect283.jpg",
     "text": [
       "La porte se ferme rapidement et il ne vous reste guère d'espace pour la franchir.",
       "Utilisez la Table de Hasard pour obtenir un chiffre.",
@@ -5013,6 +5022,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "284": {
     "id": "284",
+    "image": "/images/sections/book3_sect284.jpg",
     "text": [
       "Après avoir parcouru une centaine de mètres, vous vous retrouvez dans une immense caverne qui s'étend dans toutes les directions aussi loin que le regard peut porter. Vous venez de pénétrer dans les Grottes de Kalte et vous contemplez en ce moment même un monde inconnu que très peu de Sommerlundais ont eu l'occasion de voir.",
       "Ce gigantesque labyrinthe souterrain fut construit par les Anciens en des temps très reculés, bien avant que les Sommerlundais eussent mis le pied sur les terres de Magnamund. Ses larges tunnels, ses temples, ses cavernes ont abrité une race de créatures pour qui la glace était un environnement naturel et, sous ces voûtes, a retenti l'écho de leurs pas et de leurs voix.",
@@ -5036,6 +5046,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "285": {
     "id": "285",
+    "image": "/images/sections/book3_sect285.jpg",
     "text": [
       "La porte s'ouvre en coulissant latéralement, et vous découvrez avec horreur le regard d'un Barbare des Glaces qui vous fixe de ses yeux blancs totalement dépourvus de pupilles. Un cri rauque, qui ne ressemble à aucun son connu, monte de sa gorge et, un instant plus tard, les Loups Maudits s'éveillent et se mettent à grogner.",
       "Si vous souhaitez vous enfuir, il vous faut faire volte- face et redescendre l'escalier quatre à quatre ; rendez-vous alors au 261.",
@@ -5050,6 +5061,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "286": {
     "id": "286",
+    "image": "/images/sections/book3_sect286.jpg",
     "text": [
       "La lance vous a écorché l'épaule et vous êtes projeté à terre. Tandis que vous vous relevez tant bien que mal, l'éclaireur Barbare s'arrête, enlève ses skis et s'avance vers vous en tenant à la main une épée en os à l'aspect redoutable. Préparez-vous à combattre.",
       "Rendez-vous au 68."
@@ -5063,6 +5075,7 @@ export const storyDataBook3: Record<string, Section> = {
   },
   "287": {
     "id": "287",
+    "image": "/images/sections/book3_sect287.jpg",
     "text": [
       "Le Barbare des Glaces pousse un cri rauque qui ne ressemble à aucun son connu. Il vous a repéré et vous devez à tout prix le neutraliser avant qu'il n'avertisse toute la forteresse de votre présence. Vous vous préparez donc à combattre.",
       "Rendez-vous au 161."
